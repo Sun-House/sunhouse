@@ -1,1 +1,1 @@
-
+alert("Pasta teste!");
