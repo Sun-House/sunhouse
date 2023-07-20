@@ -95,8 +95,8 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 .newslettershowed {
     position: relative !important;
     z-index: 1;
-    padding-top: 60px;
-    margin-top: -90px;
+    padding-top: 60px !important;
+    margin-top: -90px !important;
     background-color: #eceff1;
     padding: unset !important;
 }
@@ -104,8 +104,8 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 .home .newslettershowed {
     position: relative !important;
     z-index: 1;
-    padding-top: 130px !important;
-    margin-top: -110px !important;
+    /*padding-top: 130px !important;
+    margin-top: -110px !important;*/
     background-color: #fff
 }
 
