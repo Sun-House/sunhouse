@@ -2045,6 +2045,11 @@ body.black-friday .catalogIntro {
 /* Ajuste botao WhatsApp Tallos */
 
 /* Banner Promo Fixo All Pages */
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
 .bannerPrdSlick {
     position: fixed !important;
     width: 100%;
@@ -2067,7 +2072,6 @@ body.black-friday .catalogIntro {
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-family: 'Open Sans';
-    /*font-family: "Asap", sans-serif;*/
 }
 
 #mainInfo {
