@@ -1593,34 +1593,6 @@ body.produto div.breadcrumb ul li div.bread-crumb ul li:first-of-type {
     }
 }
 
-.bannerPrd {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #eee;
-    padding: 10px
-}
-
-.bannerPrdInfo {
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-family: 'Open Sans'
-}
-
-#mainInfo {
-    color: #18b858 !important;
-    font-weight: 600
-}
-
-#infoNormal {
-    color: #444
-}
-
-#infoHarder {
-    font-weight: 600
-}
-
 .btnScroll {
     background: 0 0;
     color: #444;
@@ -1647,10 +1619,6 @@ body.produto div.breadcrumb ul li div.bread-crumb ul li:first-of-type {
 }
 
 @media screen and (max-width:1199px) {
-    .bannerPrd {
-        margin-top: 15px
-    }
-
     .productDescription {
         padding-top: 50px
     }

@@ -2043,3 +2043,58 @@ body.black-friday .catalogIntro {
     transition: .2s;
 }
 /* Ajuste botao WhatsApp Tallos */
+
+/* Banner Promo Fixo All Pages */
+.bannerPrdSlick {
+    position: fixed !important;
+    width: 100%;
+    height: 41px;
+    overflow: hidden;
+    z-index: 998;
+    border-bottom: 1px solid #ddd;
+}
+
+.bannerPrd {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px
+}
+
+.bannerPrdInfo {
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: 'Open Sans';
+    /*font-family: "Asap", sans-serif;*/
+}
+
+#mainInfo {
+    color: #18b858 !important;
+    font-weight: 600
+}
+
+#infoNormal {
+    color: #444
+}
+
+#infoHarder {
+    font-weight: 600
+}
+
+@media screen and (max-width:1199px) {
+    .bannerPrdSlick {
+        z-index: 9999 !important;
+        height: 61px;
+    }
+    
+    .bannerPrd {
+        margin-top: 0 !important;
+    }
+
+    /*.bannerPrd {
+        margin-top: 15px
+    }*/
+}
+/* Banner Promo Fixo All Pages */
