@@ -640,7 +640,8 @@ table.group.Escritorio {
 .produto .productContent__images-dimensions li {
     float: left;
     width: 120px;
-    height: 80px;
+    min-height: 120px;
+    /*height: 80px;*/
     border: 1px solid #ccc;
     margin-right: 8px;
     padding: 12px 0
