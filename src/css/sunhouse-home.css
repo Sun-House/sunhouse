@@ -316,9 +316,14 @@
     }
 
     .home .highlightBanners__content {
-        box-sizing: border-box;
-        display: block;
-        padding: 0 16px
+        /*display: block;*/
+        padding: 0 16px; /*pode causar bugs */
+        box-sizing: border-box; /*pode causar bugs */
+        display: flex !important;
+        flex-direction: column;
+        overflow-x: hidden;
+        touch-action: pan-y;
+        height: 460px;
     }
 }
 
