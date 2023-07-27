@@ -779,6 +779,7 @@ table.group.Escritorio {
     line-height: 32px
 }
 
+/* Inutilizado para novo display de preços
 .produto .productContent__infos-price {
     font-size: 20px;
     color: #ff175b;
@@ -795,7 +796,7 @@ table.group.Escritorio {
 
 .produto .productContent__infos-price--listprice strong {
     text-decoration: line-through
-}
+}*/
 
 .produto .productContent__infos-installment {
     padding-top: 6px
