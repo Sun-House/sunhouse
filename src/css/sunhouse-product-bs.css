@@ -870,8 +870,8 @@ table.group.Escritorio {
     background: #00b100;
     line-height: 80px;
     border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px
 }
 
 .produto .productContent__infos-buyButton a:after,
@@ -961,6 +961,12 @@ table.group.Escritorio {
 .produto .productContent__infos-freight {
     padding-top: 40px
 }
+
+/* Ajuste BS */
+.produto .productContent__infos-freight * {
+    box-sizing: unset;
+}
+/* Ajuste BS */
 
 .produto .productContent__infos-freight--message {
     font-size: 16.5px;
@@ -1149,13 +1155,16 @@ table.group.Escritorio {
     color: #ccc
 }
 
+
+
 .produto .productContent__infos-freight fieldset .prefixo .freight-btn {
     float: left;
     border: none;
     font-size: 0;
     background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
     background-position: -354px -95px;
-    width: 36px;
+    /*width: 36px;*/
+    width: 30px;
     height: 36px;
     background-color: transparent;
     margin: 5px 0 0 4px;
@@ -1608,12 +1617,11 @@ body.produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
 
 #btnScrollSt {
     background-color: #e77925;
-    padding: 5px 18px 5px 18px;
+    padding: 0px 18px 0px 18px;
     border-radius: 5px 20px 20px 20px;
     color: #fff;
     margin-top: 20px;
     margin-left: 0;
-    cursor: pointer;
     font-weight: 600
 }
 
@@ -1713,3 +1721,27 @@ body.produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Ajustes BS */
+.footer__content div {
+    margin: 0 20px;
+}
+
+.footer.links,
+.footer.sac,
+.footer.texts {
+    padding: 25px 0 45px !important;
+}
+
+.footer.sac p {
+    padding-bottom: unset !important;
+}
+
+/* SmartHint Bought Together */
+.smarthint .bought-together.products > div:after {
+    height: 45px !important;
+    width: 70px !important;
+}
+/* SmartHint Bought Together */
+
+/* Ajustes BS */
