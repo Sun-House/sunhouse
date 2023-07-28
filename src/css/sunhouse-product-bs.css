@@ -1726,6 +1726,10 @@ th.name-field::after {
     max-width: 635px;
 }
 
+#productMontagem-first p {
+    margin-bottom: unset;
+}
+
 .productMontagem__info {
     display: flex;
     width: 97%;
@@ -1740,6 +1744,10 @@ th.name-field::after {
 }
 
 /* Ajustes BS */
+.produto #backToTop span p {
+    margin-bottom: unset;
+}
+
 .produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
     display: none
 }
