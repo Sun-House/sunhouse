@@ -1531,10 +1531,6 @@ th.name-field::after {
     height: 20px
 }
 
-body.produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
-    display: none
-}
-
 #prodMedidas {
     display: none
 }
@@ -1716,13 +1712,19 @@ body.produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
     }
 }
 
+/* Ajustes BS */
+.produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
+    display: none
+}
+
 .produto .breadcrumb_bs {
     margin-left: 194px;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
 }
 
-/* Ajustes BS */
 .footer__content div {
     margin: 0 20px;
 }
