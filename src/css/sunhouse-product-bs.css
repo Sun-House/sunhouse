@@ -1768,6 +1768,12 @@ th.name-field::after {
     align-items: flex-end;
 }
 
+@media screen and (max-width: 1199px) {
+    .produto .breadcrumb_bs {
+        align-items: flex-start
+    }
+}
+
 .footer__content div {
     margin: 0 20px;
 }
@@ -1792,5 +1798,13 @@ th.name-field::after {
 .produto .bannerPrd p {
     margin-bottom: 0;
 }
+
+/* O ideal e ajustar o abaixo, alguns elementos bugaram, mas fica melhor a leitura da page */
+@media screen and (max-width: 1199px) {
+    .produto #page-content {
+        margin: 0 20px;
+    }
+}
+/* ... */
 
 /* Ajustes BS */
