@@ -1726,7 +1726,8 @@ th.name-field::after {
     .produto .productContent__images .thumbs li:nth-child(32):last-of-type,
     .produto .productContent__images .thumbs li:nth-child(5):last-of-type,
     .produto .productContent__images .thumbs li:nth-child(8):last-of-type {
-        padding-right: 135px
+        /*padding-right: 135px;*/
+        padding-right: 115px;
     }
 }
 
