@@ -924,7 +924,8 @@ table.group.Escritorio {
 }
 
 .produto .productContent__infos-comunication {
-    padding-top: 16px
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
 }
 
 .produto .productContent__infos-comunication>a,
