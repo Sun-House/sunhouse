@@ -646,10 +646,17 @@ table.group.Escritorio {
     width: 120px;
     min-height: 120px;
     /*height: 80px;*/
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
+    border: 0.125rem solid #ddd;
     border-radius: 20px;
     margin-right: 8px;
     padding: 12px 0
+}
+
+#productMontagem-first {
+    /* margin-left: 15px; */
+    /* max-width: 90% !important; */
+    border-radius: 20px;
 }
 
 .produto .productContent__images-dimensions li:last-of-type {
