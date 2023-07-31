@@ -647,6 +647,7 @@ table.group.Escritorio {
     min-height: 120px;
     /*height: 80px;*/
     border: 1px solid #ccc;
+    border-radius: 20px;
     margin-right: 8px;
     padding: 12px 0
 }
