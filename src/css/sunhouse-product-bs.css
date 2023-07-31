@@ -1789,4 +1789,8 @@ th.name-field::after {
 }
 /* SmartHint Bought Together */
 
+.produto .bannerPrd p {
+    margin-bottom: 0;
+}
+
 /* Ajustes BS */
