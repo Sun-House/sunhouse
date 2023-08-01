@@ -962,6 +962,11 @@ table.group.Escritorio {
         padding: 0
     }
 
+    .productContent__infos-comunication a {
+        margin: -15px 15px 0 15px;
+        padding: 0px 0px 10px 0px;
+    }
+
     .produto .productContent__infos-comunication i {
         top: 38px
     }
@@ -1291,6 +1296,18 @@ table.group.Escritorio {
 @media screen and (max-width:1199px) {
     .produto .productContent__options {
         padding-top: 16px
+    }
+
+    .produto .productContent__options-opinions {
+        display: flex;
+        justify-content: unset !important;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .produto .productContent__options-opinions i {
+        margin: 15px 10px 0 0 !important;
+        width: 49px !important;
     }
 }
 
@@ -1629,12 +1646,19 @@ th.name-field::after {
     border: none
 }
 
+#on-title-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 #btnScrollSt {
     background-color: #e77925;
     padding: 0px 18px 0px 18px;
     border-radius: 5px 20px 20px 20px;
     color: #fff;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-left: 0;
     font-weight: 600
 }
