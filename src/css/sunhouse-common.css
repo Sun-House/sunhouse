@@ -2003,9 +2003,9 @@ body.black-friday .catalogIntro {
         overflow-x: clip
     }
 
-    .topbar__content {
+    /*.topbar__content {
         margin-right: 200px
-    }
+    } dando erros para monitores com resolucao pequena */
 
     .fullbody {
         right: 0
