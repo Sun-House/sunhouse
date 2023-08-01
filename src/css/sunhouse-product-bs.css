@@ -699,11 +699,15 @@ table.group.Escritorio {
     margin: 12px auto 8px
 }
 
-.produto .productContent__infos,
-.produto .productContent__options {
+.produto .productContent__infos {
     float: right;
-    width: calc(100% - 736px)
+    width: calc(100% - 736px);
 }
+
+/*.produto .productContent__options {
+    float: right;
+    width: calc(100% - 736px);
+}*/
 
 @media screen and (max-width:1199px) {
 
@@ -1291,7 +1295,9 @@ table.group.Escritorio {
 }
 
 .produto .productContent__options-opinions {
-    cursor: pointer
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .produto .productContent__options-opinions i {
@@ -1309,10 +1315,10 @@ table.group.Escritorio {
     font-weight: 400;
     color: #fff;
     background: #b145c2;
-    padding: 10px 8px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
     margin-top: 28px
 }
 
