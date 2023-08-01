@@ -1895,6 +1895,10 @@ th.name-field::after {
 }
 
 #share-btn {
+    all: unset;
+}
+
+#share-icon {
     font-size: 35px;
     color: #444;
 }
