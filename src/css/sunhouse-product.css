@@ -1711,3 +1711,8 @@ body.produto div.breadcrumb ul li div.bread-crumb ul li:first-of-type {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+#productMontagem-first {
+    margin-left: 15px;
+    max-width: 90% !important;
+}
