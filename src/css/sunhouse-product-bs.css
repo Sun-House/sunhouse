@@ -653,12 +653,6 @@ table.group.Escritorio {
     padding: 12px 0
 }
 
-#productMontagem-first {
-    /* margin-left: 15px; */
-    /* max-width: 90% !important; */
-    border-radius: 20px;
-}
-
 .produto .productContent__images-dimensions li:last-of-type {
     margin-right: unset;
 }
@@ -1808,5 +1802,59 @@ th.name-field::after {
     }
 }
 /* ... */
+
+/* Ajustes card info Montagem */
+.productMontagem__info {
+    display: flex;
+    width: 97%;
+    background: transparent;
+    padding: 5px 15px;
+    margin-top: 25px;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    color: #444;
+    flex-direction: row;
+    align-items: center;
+}
+
+#productMontagem-first {
+    /* margin-left: 15px; */
+    /* max-width: 90% !important; */
+    border-radius: 20px;
+}
+
+#productMontagem-first p {
+    font-weight: 500;
+}
+
+#productMontagem-second {
+    display: none !important;
+}
+
+.productMontagem__info svg {
+    width: 30px;
+    white-space: nowrap;
+    position: relative;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1199px) {
+    .productMontagem__info {
+        width: auto;
+    }
+
+    .productMontagem__info svg {
+        width: 60px;
+    }
+
+    #productMontagem-first {
+        display: none !important;
+    }
+
+    #productMontagem-second {
+        display: flex !important;
+    }
+}
+/* Ajustes card info Montagem */
 
 /* Ajustes BS */
