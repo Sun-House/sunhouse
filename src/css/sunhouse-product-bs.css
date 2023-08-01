@@ -1887,4 +1887,15 @@ th.name-field::after {
 }
 /* Ajustes card info Montagem */
 
+#on-title-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+#share-btn {
+    font-size: 35px;
+    color: #444;
+}
 /* Ajustes BS */
