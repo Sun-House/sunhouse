@@ -1894,9 +1894,9 @@ th.name-field::after {
     justify-content: space-between;
 }
 
-#share-btn {
-    all: unset;
-}
+/*#share-btn {
+    cursor: pointer;
+}*/
 
 #share-icon {
     font-size: 35px;
