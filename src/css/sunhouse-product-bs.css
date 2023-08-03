@@ -1207,6 +1207,19 @@ table.group.Escritorio {
     color: #444
 }
 
+.produto .productContent__infos-similars .outras-cores ul li a img {
+    max-width: 140px;
+    width: auto;
+    height: auto;
+    transition: .1s;
+}
+
+.produto .productContent__infos-similars .outras-cores ul li a img:hover {
+    border: 2px solid #ff175b;
+    scale: 1.06;
+    transition: .2s;
+}
+
 .produto .productContent__infos-designer {
     display: table;
     padding: 16px 24px;
