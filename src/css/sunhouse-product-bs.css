@@ -1791,7 +1791,7 @@ th.name-field::after {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
 }
 
 @media screen and (max-width: 1199px) {
