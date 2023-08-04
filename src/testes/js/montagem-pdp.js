@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
         document.getElementById("btnFreteSimulacao").addEventListener("click", function () {
             checarCep();
         });
-    }, 3000); // 3 segundos de espera
+    }, 1000); // 1 segundos de espera
 });
 
 function checarCep() {
