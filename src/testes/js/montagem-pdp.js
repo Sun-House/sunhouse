@@ -5,7 +5,7 @@
 //window.addEventListener('load', function() {
 //});
 
-window.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById("btnFreteSimulacao").addEventListener("click", function () {
         checarCep();
@@ -28,5 +28,5 @@ window.addEventListener('load', function() {
             document.getElementById("montagem-pdp").classList.remove("montagem_show");
         }
     }
-    
+
 });
