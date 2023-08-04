@@ -1,8 +1,8 @@
-// Função que será executada quando o elemento "txtCep" for adicionado ao DOM
+// Função que será executada quando o elemento abaixo for adicionado ao DOM
 function iniciarChecarCep() {
-    var txtCep = document.getElementById("txtCep");
-    if (txtCep) {
-        txtCep.addEventListener("input", checarCep); // Adiciona o evento de input ao elemento
+    var triggerCep = document.getElementById("btnFreteSimulacao");
+    if (triggerCep) {
+        triggerCep.addEventListener("input", checarCep); // Adiciona o evento de input ao elemento
         checarCep(); // Executa a função inicialmente para realizar a verificação
     } else {
         // Se o elemento ainda não foi adicionado, aguarda mais um tempo e verifica novamente
@@ -25,7 +25,7 @@ function checarCep() {
     }
 }
 
-// Inicia a verificação do elemento "txtCep" após o carregamento do DOM
+// Inicia a verificação do elemento após o carregamento do DOM
 document.addEventListener("DOMContentLoaded", function () {
     iniciarChecarCep();
 });
