@@ -1592,18 +1592,18 @@ th.name-field::after {
     padding: 32px 15px 16px
 }
 
-.produto>div.productInfos>div.fichaTecnica>.prdFichatecnica>tbody>tr>#colUm {
+.produto .prdFichatecnica tbody tr #colUm {
     width: 41.6%
 }
 
-.produto>div.productInfos>div.fichaTecnica>.prdFichatecnica>tbody>tr>#colDois {
+.produto .prdFichatecnica tbody tr #colDois {
     width: 45%
 }
 
 @media screen and (max-width:1199px) {
 
-    .produto>div.productInfos>div.fichaTecnica>.prdFichatecnica>tbody>tr>#colDois,
-    .produto>div.productInfos>div.fichaTecnica>.prdFichatecnica>tbody>tr>#colUm {
+    .produto .prdFichatecnica tbody tr #colDois,
+    .produto .prdFichatecnica tbody tr #colUm {
         display: block;
         width: auto
     }
