@@ -1933,7 +1933,7 @@ th.name-field::after {
     color: #e77925;
 }
 
-#productInfos-tabs #descricao-tab.active {
+#productInfos-tabs .productInfos_tab.active {
     color: #222;
     background-color: #f9ddc840;
     border-right: 0.15rem solid rgba(231, 121, 37, 0.25);
