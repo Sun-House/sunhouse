@@ -1918,4 +1918,28 @@ th.name-field::after {
     font-size: 35px;
     color: #444;
 }
+
+/* Nav-Tabs Product Description Details */
+.nav-tabs {
+    --bs-nav-tabs-border-color: rgba(231, 121, 37, 0.25) !important;
+    --bs-nav-tabs-border-width: 0.15rem !important;
+    --bs-nav-tabs-border-radius: 20px !important;
+}
+
+.nav-tabs .nav-link {
+    font-size: 18px;
+    padding: 15px;
+    min-width: 175px;
+    color: #e77925;
+}
+
+.nav-tabs .nav-link.active {
+    color: #222;
+    background-color: #f9ddc840;
+    border-right: 0.15rem solid rgba(231, 121, 37, 0.25);
+    border-left: 0.15rem solid rgba(231, 121, 37, 0.25);
+    border-top: 0.15rem solid rgba(231, 121, 37, 0.25);
+}
+/* Nav-Tabs Product Description Details */
+
 /* Ajustes BS */
