@@ -1920,20 +1920,20 @@ th.name-field::after {
 }
 
 /* Nav-Tabs Product Description Details */
-.nav-tabs {
+#productInfos-tabs {
     --bs-nav-tabs-border-color: rgba(231, 121, 37, 0.25) !important;
     --bs-nav-tabs-border-width: 0.15rem !important;
     --bs-nav-tabs-border-radius: 20px !important;
 }
 
-.nav-tabs .nav-link {
+#productInfos-tabs #descricao-tab {
     font-size: 18px;
     padding: 15px;
     min-width: 175px;
     color: #e77925;
 }
 
-.nav-tabs .nav-link.active {
+#productInfos-tabs #descricao-tab.active {
     color: #222;
     background-color: #f9ddc840;
     border-right: 0.15rem solid rgba(231, 121, 37, 0.25);
