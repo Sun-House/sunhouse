@@ -104,9 +104,9 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 .home .newslettershowed {
     position: relative !important;
     z-index: 1;
-    /*padding-top: 130px !important;
-    margin-top: -110px !important;*/
-    background-color: #fff
+    background-color: #fff;
+    margin-top: -105px !important;
+    padding-top: 55px !important;
 }
 
 .produto .newslettershowed {
