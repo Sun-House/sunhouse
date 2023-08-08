@@ -1940,4 +1940,18 @@ th.name-field::after {
 }
 /* Ajuste Insta - Migrar para todos os templates */
 
+#container-productInfos-mobile {
+    display: none;
+}
+
+@media screen and (max-width:1199px) {
+    #container-productInfos-desktop {
+        display: none;
+    }
+
+    #container-productInfos-mobile {
+        display: block;
+    }
+}
+
 /* Ajustes BS */
