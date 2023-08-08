@@ -1949,4 +1949,10 @@ th.name-field::after {
     }
 }
 
+/**/
+#modal-installmentsLabel {
+    margin: unset !important;
+}
+/**/
+
 /* Ajustes BS */
