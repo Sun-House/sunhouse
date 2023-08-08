@@ -51,7 +51,7 @@ function fnInserirMedidas() {
     document.getElementById("alturaReal").innerHTML = " " + AltValue + "0 metro") : (AltValue = (AltValue = (AltValue /= 100).toString()).replace(".", ","),
     document.getElementById("alturaReal").innerHTML = " " + AltValue + "0 metros"),
     LargValue <= 99 ? (LargValue = (LargValue = LargValue.toFixed(2)).replace(".", ","),
-    document.getElementById("larguraReal").innerHTML = " " + LargValue + " cent&iacute;metros") : LargValue >= 100 && LargValue <= 199 ? (LargValue = (LargValue = (LargValue /= 100).toString()).replace(".", ","),
+    document.getElementById("larguraReal").innerHTML = " " + LargValue + " centíetros") : LargValue >= 100 && LargValue <= 199 ? (LargValue = (LargValue = (LargValue /= 100).toString()).replace(".", ","),
     document.getElementById("larguraReal").innerHTML = " " + LargValue + "0 metro") : (LargValue = (LargValue = (LargValue /= 100).toString()).replace(".", ","),
     document.getElementById("larguraReal").innerHTML = " " + LargValue + "0 metros"),
     ProfValue <= 99 ? (ProfValue = (ProfValue = ProfValue.toFixed(2)).replace(".", ","),
