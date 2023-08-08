@@ -338,7 +338,7 @@ body.produto {
 }
 
 .nav-tabs .nav-link {
-    color: #fff;
+    color: #fff !important;
 }
 
 .nav-tabs .nav-link.active {
