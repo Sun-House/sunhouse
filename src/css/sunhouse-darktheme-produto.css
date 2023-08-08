@@ -305,3 +305,26 @@ body.produto {
 #button-back i {
     color: #e77925 !important;
 }
+
+
+/**/
+#modal-installments-content {
+    background-color: #333;
+}
+
+#modal-installments-content li,
+#info-progressivo-d3 {
+    background-color: #000;
+}
+
+#modal-installments-content h5,
+#modal-installments-content hr,
+#modal-installments-content p,
+#modal-installments-content strong,
+#modal-installments-content span {
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+}
