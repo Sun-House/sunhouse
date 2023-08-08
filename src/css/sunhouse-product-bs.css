@@ -1804,7 +1804,8 @@ th.name-field::after {
     border-radius: 20px;
 }
 
-#productMontagem-first p {
+#productMontagem-first p,
+#productMontagem-second p {
     margin-bottom: unset;
 }
 
@@ -1832,6 +1833,7 @@ th.name-field::after {
 
     #productMontagem-second {
         display: flex !important;
+        align-items: center;
     }
 }
 /* Ajustes card info Montagem */
