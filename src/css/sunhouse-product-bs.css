@@ -706,15 +706,8 @@ table.group.Escritorio {
     width: calc(100% - 736px);
 }
 
-/*.produto .productContent__options {
-    float: right;
-    width: calc(100% - 736px);
-}*/
-
 @media screen and (max-width:1199px) {
-
-    .produto .productContent__infos,
-    .produto .productContent__options {
+    .produto .productContent__infos {
         width: 100%;
         box-sizing: border-box;
         padding: 24px 16px
