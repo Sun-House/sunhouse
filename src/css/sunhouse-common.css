@@ -1319,9 +1319,10 @@ body>div.breadcrumb>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 
 .newslettershowed {
     font-family: Ubuntu;
-    padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -90px !important;
+    padding-top: 55px !important;
     width: 920px
 }
 
