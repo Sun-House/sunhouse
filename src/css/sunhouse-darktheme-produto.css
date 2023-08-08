@@ -325,6 +325,25 @@ body.produto {
     color: #fff;
 }
 
+#modal-installments-content .modal-header {
+    border-color: #6f6f6f;
+}
+
+#modal-installments-content .modal-header button {
+    background-color: #fff !important;
+}
+
+.nav-tabs {
+    border-color: #6f6f6f;
+}
+
+.nav-tabs .nav-link {
+    color: #fff;
+}
+
 .nav-tabs .nav-link.active {
-    background-color: transparent;
+    background-color: transparent !important;
+    color: #fff;
+    border-color: #6f6f6f;
+    border-bottom-color: #333 !important;
 }
