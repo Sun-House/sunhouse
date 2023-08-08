@@ -865,9 +865,9 @@ table.group.Escritorio {
     }
 }
 
-.produto .productContent__infos-buyButton {
+/*.produto .productContent__infos-buyButton {
     padding-top: 18px
-}
+}*/
 
 .produto .productContent__infos-buyButton a {
     width: 100%;
@@ -1002,7 +1002,8 @@ table.group.Escritorio {
     font-family: Ubuntu;
     font-size: 18px;
     font-weight: 400;
-    padding-top: 24px
+    padding-top: 24px;
+    border-top: 1px solid #ccc;
 }
 
 .produto .productContent__infos-freight .freight-values thead th {
@@ -1089,11 +1090,13 @@ table.group.Escritorio {
 }
 
 .produto .productContent__infos-freight fieldset {
-    padding-top: 28px
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 .produto .productContent__infos-freight fieldset .quantity {
-    float: left
+    float: left;
+    display: none !important; /* Teste Trigo */
 }
 
 @media screen and (max-width:1199px) {
@@ -1152,18 +1155,26 @@ table.group.Escritorio {
     }
 }
 
-.produto .productContent__infos-freight fieldset .prefixo>input {
+/*.produto .productContent__infos-freight fieldset .prefixo>input*/
+.produto .productContent__infos-freight fieldset .prefixo #txtCep {
     float: left;
     font-family: Ubuntu;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 20px;
     font-weight: 700;
     color: #444;
-    width: 160px;
-    height: 40px;
+    /*width: 160px;*/
+    width: auto;
+    min-width: 375px;
+    max-width: 375px;
+    height: 40px;    
     padding: 0 16px;
-    border-radius: 8px;
+    /*border-radius: 8px;
     -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+    -moz-border-radius: 8px;*/
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border: 4px solid #cdcdcd
 }
 
@@ -1733,6 +1744,10 @@ th.name-field::after {
 
 .produto .productContent__infos-freight .freight-values table tbody tr:last-of-type {
     border-bottom: none
+}
+
+.produto .productContent__infos-freight .freight-values .cep-invalido .valor strong {
+    color: #fe0000;
 }
 
 @media screen and (max-width:1199px) {
