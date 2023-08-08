@@ -1777,7 +1777,7 @@ th.name-field::after {
     display: flex;
     width: 97%;
     background: transparent;
-    padding: 5px 15px;
+    padding: 20px 15px;
     margin-top: 25px;
     border: 1px solid #ffc107;
     border-radius: 5px;
@@ -1790,7 +1790,6 @@ th.name-field::after {
 .productMontagem__info i {
     font-size: 30px;
     color: #ffc107;
-    /*width: 30px;*/
     white-space: nowrap;
     position: relative;
     margin-right: 10px;
