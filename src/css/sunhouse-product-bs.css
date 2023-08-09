@@ -1061,7 +1061,8 @@ table.group.Escritorio {
 }
 
 .produto .productContent__infos-freight #popupCalculoFreteWrapper {
-    font-size: 0
+    font-size: 0;
+    margin-bottom: unset !important;
 }
 
 .produto .productContent__infos-freight #popupCalculoFreteWrapper:before {
