@@ -79,7 +79,7 @@ function setInfos() {
         t = (document.domain, window.location);
     $(".productContent__options-socials--pinar a").attr("href", "http://pinterest.com/pin/create/button/?url=" + t + "&media=" + s);
     var u = "OlÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡, seja bem vindo a Sun House. Este ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o nosso WhatsApp do Atendimento ao Cliente e TeleVendas.\n Por aqui poderÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ tirar dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºvidas sobre produtos que estÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o sendo anunciados em nosso site e fazer o orÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§amento completo de acordo com sua busca.\n Temos mais de 3.000 metros quadrados em nossas lojas e mais de 6.000 produtos para lhe atender!\n EndereÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§os e Telefones: Rua Teodoro Sampaio, 1587 -> 11 - 3082-2044\n Rua Teodoro Sampaio, 1749 -> 11 - 2503-2996\n OUTLET: Rua Doutor Gabriel Covelli, 58, Casa Verde\n VocÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© estava visualizando: " + skuJson_0.name;
-    $(".productContent__options-socials--whatsapp a").attr("href", "https://api.whatsapp.com/send?phone=5511994877664&text=" + u), $(".productContent__infos-buyButton .buy-button-ref").text("ADICIONAR AO CARRINHO");
+    $(".productContent__options-socials--whatsapp a").attr("href", "https://api.whatsapp.com/send?phone=5511994877664&text=" + u), $(".productContent__infos-buyButton .buy-button-ref").text("COMPRAR");
     var v, n, o, w = setInterval((function () {
             if ($(".productContent__infos-freight fieldset > .prefixo").length > 0) {
                 $(".frete-calcular").appendTo(".productContent__infos-freight fieldset > .prefixo");
