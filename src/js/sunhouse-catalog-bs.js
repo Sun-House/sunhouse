@@ -37,7 +37,7 @@ function filters() {
         $(this).appendTo(".catalogOptions > .content .categoriesSelect__options")
     })), $(".categoriesSelect__title").click((function () {
         $(this).next(".categoriesSelect__options").slideToggle("fast")
-    })), $('<div class="orderSelect"><div class="orderSelect__title">Ordenar por <i class="bi bi-caret-down" id="caretDown_menu_sh"></i></div><div class="orderSelect__options"></div></div>').appendTo(".catalogFilters > .content"), $(".orderBy:eq(0) > select:eq(0) > option").each((function () {
+    })), $('<div class="orderSelect"><div class="orderSelect__title">Ordenar por&nbsp;<i class="bi bi-caret-down-fill" id="caretDown_menu_sh"></i></div><div class="orderSelect__options"></div></div>').appendTo(".catalogFilters > .content"), $(".orderBy:eq(0) > select:eq(0) > option").each((function () {
         if ("Selecione" != $(this).text()) {
             var a = '<a href="javascript:void(0)" value="' + $(this).attr("value") + '">' + $(this).text() + "</div>";
             $(a).appendTo(".catalogFilters > .content .orderSelect__options")
