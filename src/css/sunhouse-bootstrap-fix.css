@@ -2,6 +2,10 @@ ol, ul {
     padding-left: unset;
 }
 
+#backToTop span p {
+    margin-bottom: unset;
+}
+
 /* Ajustes Menu e Menu Fixed */
 .stickyHeader__menu-content {
     margin-bottom: -15px !important;
