@@ -39,5 +39,10 @@
 /* Ajustes Footer */
 
 /* Ajustes para cada template */
+/* Catalog Geral */
+.resultItemsWrapper .shelf ul {
+    padding-left: unset;
+}
+/* Catalog Geral */
 
 /* Ajustes para cada template */
