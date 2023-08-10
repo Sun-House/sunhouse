@@ -450,12 +450,12 @@
 .catalog .catalogOptions .content .categoriesSelect__options,
 .catalog .catalogOptions .content .orderSelect__options {
     display: none;
-    padding: 16px;
+    /*padding: 16px;*/
     position: absolute;
     background: #f2f1f1;
     z-index: 100;
     top: 35px;
-    width: calc(100% - 32px);
+    /*width: calc(100% - 32px);*/
     border-bottom-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -ms-border-bottom-left-radius: 10px;
@@ -1127,12 +1127,12 @@ Ajuste temporario */
 
 .orderSelect__options {
     display: none;
-    padding: 16px;
+    padding: 30px;
     position: absolute;
     background: #f2f1f1;
     z-index: 100;
     top: 35px;
-    width: calc(100% - 32px);
+    width: 100%;
     border-bottom-left-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -ms-border-bottom-left-radius: 10px;
