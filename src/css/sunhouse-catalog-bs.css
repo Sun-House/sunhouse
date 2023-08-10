@@ -1184,4 +1184,10 @@ Ajuste temporario */
 }
 /* Oculta ultimo filtro */
 
+/* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
+ol, ul {
+    padding-left: unset;
+}
+/* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
+
 /* Ajuste novo display */

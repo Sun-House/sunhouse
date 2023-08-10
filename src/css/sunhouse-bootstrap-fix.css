@@ -1,5 +1,6 @@
-/* sunhouse-bootstrap-fix.css */
-
+ol, ul {
+    padding-left: unset;
+}
 
 /* Ajustes Menu e Menu Fixed */
 .stickyHeader__menu-content {
@@ -39,11 +40,11 @@
 .footer.links,
 .footer.sac,
 .footer.texts {
-    padding: 25px 0 45px!important;
+    padding: 25px 0 45px !important;
 }
 
 .footer.sac p {
-    padding-bottom: unset!important;
+    padding-bottom: unset !important;
 }
 
 #social-list-footer li {
