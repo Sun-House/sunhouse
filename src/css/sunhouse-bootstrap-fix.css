@@ -39,5 +39,14 @@
 /* Ajustes Footer */
 
 /* Ajustes para cada template */
-
+.catalog  .catalogOptions,
+.catalog  .catalogFilters {
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.catalog .catalogFilters,
+.catalogOptions {
+    width: 80% !important;
+    margin: 0 auto;
+}
 /* Ajustes para cada template */
