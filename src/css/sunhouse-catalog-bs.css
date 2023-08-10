@@ -1071,6 +1071,26 @@ body.colecao-dinamica>img {
 
 
 /* Ajuste novo display */
+.catalog  .catalogOptions,
+.catalog  .catalogFilters {
+    /*min-height: 40px;*/
+    min-height: 99.75px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.catalog .catalogFilters,
+.catalog .catalogOptions {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+/* Ajuste temporario - atribuido acima
+.catalogOptions {
+    min-height: 40px;
+}
+Ajuste temporario */
+
 .categoriesSelect {
     display: none !important;
 }
@@ -1129,15 +1149,7 @@ body.colecao-dinamica>img {
     cursor: pointer
 }
 
-/* Ajuste temporario */
-.catalogOptions {
-    min-height: 40px;
-}
-
-/* Ajuste temporario */
-
 .catalog .catalogFilters {
-    min-height: 99.75px;
     padding: 0 !important;
     display: flex !important;
     align-items: center;
