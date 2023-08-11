@@ -62,6 +62,31 @@ ol, ul {
 .resultItemsWrapper .shelf ul {
     padding-left: unset;
 }
+
+/* Breadcrumb BS */
+.breadcrumb_bs {
+    /* width: 100%; */
+    margin-left: 194px !important;
+    margin-right: auto;
+    margin: 0 auto;
+    max-width: 1200px !important;
+    padding: 24px 0 48px;
+    box-sizing: border-box;
+    background-color: inherit!important;
+    display: flex;
+    align-items: flex-end;
+}
+
+.breadcrumb_bs ul li:last-of-type a {
+    color: #e77925;
+    text-decoration: underline !important;
+}
+
+.breadcrumb_bs ul li:last-of-type a::after {
+    display: none;
+}
+/* Breadcrumb BS */
+
 /* Catalog Geral */
 
 /* Ajustes para cada template */
