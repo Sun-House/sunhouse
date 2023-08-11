@@ -1,5 +1,5 @@
 ol, ul {
-    padding-left: unset;
+    padding-left: unset !important;
 }
 
 #backToTop span p {
