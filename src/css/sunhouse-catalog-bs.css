@@ -1190,6 +1190,20 @@ Ajuste temporario */
 ol, ul {
     padding-left: unset;
 }
+
+#button-back i {
+    color: #e77925;
+    font-size: 40px;
+}
+
+.button-hidden i {
+    font-size: 60px !important;
+}
+
+#wrap-button-back {
+    width: 55px;
+    height: 50px;
+}
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
 
 /* Ajuste novo display */
