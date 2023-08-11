@@ -1,6 +1,8 @@
 .catalog .header__menu {
     padding-bottom: 40px;
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .catalog .breadcrumb {
@@ -1116,12 +1118,12 @@ Ajuste temporario */
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
-    padding: 7px 30px;
+    padding: 13px 30px;
     cursor: pointer;
 }
 
 #caretDown_menu_sh {
-    font-size: 30px;
+    font-size: 20px;
     color: #e77925;
 }
 
