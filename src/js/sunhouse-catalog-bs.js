@@ -15,7 +15,7 @@ function notBreak() {
 }
 
 function set() {
-    $(".catalogProducts .busca-vazio").length ? ($(".catalogIntro h1").html('<span>Nenhum resultado encontrado para</span> "' + vtxctx.searchTerm + '"'), $(".catalogIntro h1")) : "" !== vtxctx.searchTerm && $(".catalogIntro h1").html('<span>Resultados para</span> "' + vtxctx.searchTerm + '"')
+    $(".catalogProducts .busca-vazio").length ? ($(".catalogIntro h1").html('<span>Nenhum resultado encontrado para</span> "' + vtxctx.searchTerm + '"'), $(".catalogIntro h1")) : "" !== vtxctx.searchTerm;
 }
 
 function filters() {
