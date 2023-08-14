@@ -393,7 +393,7 @@
     position: relative;
     display: table;
     width: 100%;
-    padding: 24px 0;
+    /*padding: 24px 0;*/
     background: #cfcfcf
 }
 
@@ -552,10 +552,10 @@
     top: -58px
 }
 
-.catalog .pager.bottom {
+/*.catalog .pager.bottom {
     float: right;
     margin-top: 16px
-}
+}*/
 
 @media screen and (max-width:1199px) {
     .catalog .catalogOptions .content .categoriesSelect__options {
