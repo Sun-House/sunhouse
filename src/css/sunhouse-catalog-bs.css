@@ -1200,6 +1200,43 @@ Ajuste temporario */
     width: 55px;
     height: 50px;
 }
+
+/* Paginacao */
+.pages li {
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    margin: -10px;
+    transition: .3s;
+}
+
+.pages li:hover {
+    background-color: #fff;
+    transition: .3s;
+}
+
+.pages .pgCurrent {
+    text-decoration: unset !important;
+    background-color: #e77925;
+}
+
+.pages .pgCurrent:hover {
+    background-color: #e77925;
+}
+
+.catalog .catalogOptions {
+    border-radius: 20px;
+}
+
+.catalog .catalogOptions .content {
+    display: flex !important;
+    max-width: 1190px;
+    min-height: 99.75px;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* Paginacao */
+
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
 
 /* Ajuste novo display */
