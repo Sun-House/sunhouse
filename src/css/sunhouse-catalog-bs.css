@@ -1218,6 +1218,7 @@ Ajuste temporario */
 .pages .pgCurrent {
     text-decoration: unset !important;
     background-color: #e77925;
+    color: #fff !important;
 }
 
 .pages .pgCurrent:hover {
