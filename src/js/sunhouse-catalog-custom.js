@@ -1,22 +1,22 @@
 "use strict";
 
 function breadcrumb() {
-    vtxctx.departmentName;
-    var a = vtxctx.categoryName;
-    $("body").hasClass("busca") ? (vtxctx.searchTerm ? $('<li><a href="javascript:void(0)">' + vtxctx.searchTerm + "</a></li>").appendTo(".breadcrumb ul") : $('<li><a href="javascript:void(0)">' + $("title").text() + "</a></li>").appendTo(".breadcrumb ul"), $(".catalogProducts .busca-vazio").length && $(".catalogOptions").hide()) : $("body").hasClass("department")
+    var b, a = vtxctx.departmentName,
+        c = vtxctx.categoryName;
+    $("body").hasClass("busca") ? (vtxctx.searchTerm ? $('<li><a href="javascript:void(0)">' + vtxctx.searchTerm + "</a></li>").appendTo(".breadcrumb ul") : $('<li><a href="javascript:void(0)">' + $("title").text() + "</a></li>").appendTo(".breadcrumb ul"), $(".catalogProducts .busca-vazio").length && $(".catalogOptions").hide()) : ($("body").hasClass("department") || (b = '<li><a href="/' + a + "/" + c + '">' + c + "</a></li>"), $('<li><a href="/' + a + '">' + a + "</a></li>" + b).appendTo(".breadcrumb ul"))
 }
 
 function notBreak() {
     var a = 0;
-    $(".shelfProduct").each((function () {
+    $(".shelfProduct").each(function () {
         var b = $(this).height();
         b > a && (a = b)
-    })), a < 300 && (a = 386), $(".shelfProduct").css("height", a + "px")
+    }), a < 300 && (a = 386), $(".shelfProduct").css("height", a + "px")
 }
 
-//function set() {
-    //$(".catalogProducts .busca-vazio").length ? ($(".catalogIntro h1").html('<span>Nenhum resultado encontrado para</span> "' + vtxctx.searchTerm + '"'), $(".catalogIntro h1")) : "" !== vtxctx.searchTerm && $(".catalogIntro h1").html('<span>Resultados para</span> "' + vtxctx.searchTerm + '"')
-//}
+function set() {
+    $("body").hasClass("department") ? $(".catalogIntro h1").text(vtxctx.departmentName) : $("body").hasClass("categoria") ? $(".catalogIntro h1").text(vtxctx.categoryName) : $(".catalogProducts .busca-vazio").length ? ($(".catalogIntro h1").html('<span>Nenhum resultado encontrado para</span> "' + vtxctx.searchTerm + '"'), $('<a href="/" style="\n    display:block;\n    width:240px;\n    height:48px;\n    font-size:18px;\n    color:#FFF;\n    font-weight:700;\n    text-align:center;\n    line-height:48px;\n    background:#E77925;\n    margin-top:16px;\n">Ir para o in\xc3\xadcio</a>').insertAfter(".catalogIntro h1")) : vtxctx.searchTerm
+}
 
 function filters() {
     $(".search-multiple-navigator .refino > h5").each((function (a) {
@@ -50,38 +50,28 @@ function filters() {
 }
 
 function mobile() {
-    $('<a href="javascript:void(0)" id="closeFilters"><input class="Xclose" type="radio" id="closeX" checked=""><label class="hambClose" for="closeX"><span class="hambClose-line" id="hambFilter"></span></label></a>').appendTo(".catalogFilters"), $(".catalogOptions:eq(0)").appendTo(".catalogFilters"), $(".catalogOptions:eq(1) .categoriesSelect,.catalogOptions:eq(1) .orderSelect").hide(), $(".catalogProducts .busca-vazio").length || $('<a href="javascript:void(0)" class="btnFilterMobile">Filtrar</a>').insertBefore(".catalogProducts"), $("body").on("click", ".btnFilterMobile", (function () {
-        $(".catalogFilters").addClass("active"), $("#closeFilters").click((function () {
+    $('<a href="javascript:void(0)" id="closeFilters">x</a>').appendTo(".catalogFilters"), $(".catalogOptions:eq(0)").appendTo(".catalogFilters"), $(".catalogOptions:eq(1) .categoriesSelect,.catalogOptions:eq(1) .orderSelect").hide(), $(".catalogProducts .busca-vazio").length || $('<a href="javascript:void(0)" class="btnFilterMobile">Filtrar</a>').insertBefore(".catalogProducts"), $("body").on("click", ".btnFilterMobile", function () {
+        $(".catalogFilters").addClass("active"), $("#closeFilters").click(function () {
             $(".catalogFilters").removeClass("active")
-        }))
-    })), $(".filterSelect label").click((function () {
+        })
+    }), $(".filterSelect label").click(function () {
         $(".catalogFilters").removeClass("active")
-    }))
+    })
 }
-$(document).ready((function () {
+$(document).ready(function () {
     if (breadcrumb(), set(), filters(), window.innerWidth < 1200) mobile();
     else {
         var a = 0;
-        $(".shelfProduct").each((function () {
+        $(".shelfProduct").each(function () {
             var b = $(this).height();
             b > a && (a = b)
-        })), a < 300 && (a = 386), setInterval((function () {
-            $(".shelfProduct").css("height", a + "px"), $(".shelfProduct").each((function () {
+        }), a < 300 && (a = 386), setInterval(function () {
+            $(".shelfProduct").css("height", a + "px"), $(".shelfProduct").each(function () {
                 if (0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && 0 > $(this).find(".shelfProduct__price-installment").text().indexOf("10x de")) {
                     var a = (parseInt($(this).find(".shelfProduct__price-best span").html().replace("R$ ", "").replace(",", "").replace(".", "")) / 1e3).toFixed(2).replace(".", ",");
                     $(this).find(".shelfProduct__price-installment").html("10x de R$ " + a)
                 }
-            }))
-        }), 500)
+            })
+        }, 500)
     }
-})), $(document).ready((function () {
-    window.innerWidth < 1200 && $(".cards-seo").slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: !0,
-        infinite: !0,
-        autoplaySpeed: 3500,
-        arrows: !1,
-        dots: !0
-    })
-}));
+})
