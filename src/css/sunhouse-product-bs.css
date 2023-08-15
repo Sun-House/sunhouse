@@ -1003,7 +1003,7 @@ table.group.Escritorio {
     font-family: Ubuntu;
     font-size: 15px;
     font-weight: 400;
-    padding-top: 5px;
+    /*padding-top: 5px;*/
     background-color: #eee;
     border-radius: 20px;
     margin-bottom: 24px;
@@ -1046,9 +1046,14 @@ table.group.Escritorio {
     height: unset !important;
 }
 
+.produto .productContent__infos-freight .freight-values tbody td {
+    padding: 10px 20px;
+    border: 1px solid;
+}
+
 .produto .productContent__infos-freight .freight-values tbody tr td {
     color: #444;
-    padding-top: 8px
+    padding-top: 12px !important;
 }
 
 .produto .productContent__infos-freight .freight-values tbody tr td:first-of-type {
