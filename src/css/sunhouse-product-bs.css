@@ -1001,13 +1001,23 @@ table.group.Escritorio {
 
 .produto .productContent__infos-freight .freight-values {
     font-family: Ubuntu;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
-    padding-top: 24px;
-    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    background-color: #eee;
+    border-radius: 20px;
+    margin-bottom: 24px;
 }
 
-.produto .productContent__infos-freight .freight-values thead th {
+.produto .productContent__infos-freight .freight-values * {
+    border-color: #fff !important;
+}
+
+.produto .productContent__infos-freight .freight-values thead {
+    display: none;
+}
+
+/*.produto .productContent__infos-freight .freight-values thead th {
     color: #e77925;
     text-align: left;
     white-space: nowrap
@@ -1030,6 +1040,10 @@ table.group.Escritorio {
 .produto .productContent__infos-freight .freight-values thead th:last-of-type:after {
     content: "Nome/Disponibilidade";
     font-size: 18px
+}*/
+
+.produto .productContent__infos-freight .freight-values tbody tr {
+    height: unset !important;
 }
 
 .produto .productContent__infos-freight .freight-values tbody tr td {
@@ -1038,11 +1052,16 @@ table.group.Escritorio {
 }
 
 .produto .productContent__infos-freight .freight-values tbody tr td:first-of-type {
-    font-weight: 700
+    font-weight: 700;
+    border-right: 1px solid #ccc;
 }
 
 .produto .productContent__infos-freight .freight-values tbody tr td:nth-child(2) {
-    padding-left: 40px
+    padding-left: 10px;
+}
+
+.produto .productContent__infos-freight .freight-values tbody tr td:last-of-type {
+    display: none;
 }
 
 .produto .GratisRet {
@@ -1745,10 +1764,10 @@ th.name-field::after {
     border-radius: 20px
 }
 
-.produto .productContent__infos-freight .freight-values table tbody tr {
+/*.produto .productContent__infos-freight .freight-values table tbody tr {
     border-bottom: 1px solid #ccc;
     height: 60px
-}
+}*/
 
 .produto .productContent__infos-freight .freight-values table tbody tr:last-of-type {
     border-bottom: none
