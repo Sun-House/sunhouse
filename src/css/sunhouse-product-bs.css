@@ -991,7 +991,7 @@ table.group.Escritorio {
     padding: 16px 0;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    margin-top: 24px
+    /*margin-top: 24px*/
 }
 
 .produto .productContent__infos-freight--message strong {
