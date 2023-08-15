@@ -196,3 +196,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// Para calcular o frete assim que for inserido no input
+$('#txtCep').on('keypress', function () {
+    var cepValue = $(this).val().replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    if (cepValue.length === 8) {
+        $('#btnFreteSimulacao').click();
+    }
+});
