@@ -176,3 +176,23 @@ $(document).ready((function () {
         })
     }))
 }));
+
+
+// Ajuste de Retirada em SP para Gratis na simulacao de frete:
+
+// Espera o DOM estar completamente carregado
+document.addEventListener("DOMContentLoaded", function () {
+    // Encontra todos os elementos que contêm texto
+    const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
+
+    // Itera através dos elementos para encontrar e substituir o texto
+    elementsWithText.forEach(element => {
+        if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
+            const text = element.childNodes[0].textContent;
+            const newText = text.replace("Retirada em SP", "Grátis");
+            if (newText !== text) {
+                element.childNodes[0].textContent = newText;
+            }
+        }
+    });
+});
