@@ -208,9 +208,6 @@ function displayGratis() {
             if (newText !== text) {
                 element.childNodes[0].textContent = newText;
             }
-            // nova linha testes
-            //else {element.childNodes[0].textContent = newText;}
-            // nova linha testes
         }
     });
 }
