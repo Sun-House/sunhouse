@@ -198,20 +198,22 @@ window.addEventListener("load", function () {
 function displayGratis() {
     const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
     
-    // Itera através dos elementos para encontrar e substituir o texto
-    elementsWithText.forEach(element => {
-        if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
-            const text = element.childNodes[0].textContent;
-            const newText = text.replace("Retirada em SP", "Grátis");
-            
-            if (newText !== text) {
-                element.childNodes[0].textContent = newText;
+    setTimeout(function () {
+        // Itera através dos elementos para encontrar e substituir o texto
+        elementsWithText.forEach(element => {
+            if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
+                const text = element.childNodes[0].textContent;
+                const newText = text.replace("Retirada em SP", "Grátis");
+                
+                if (newText !== text) {
+                    element.childNodes[0].textContent = newText;
+                }
+                // nova linha testes
+                else {element.childNodes[0].textContent = newText;}
+                // nova linha testes
             }
-            // nova linha testes
-            else {element.childNodes[0].textContent = newText;}
-            // nova linha testes
-        }
-    });
+        });
+    }, 2000); // 2 segundos de espera    
 }
 
 // Montagem Service Fn
