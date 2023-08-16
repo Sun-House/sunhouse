@@ -187,28 +187,25 @@ window.addEventListener("load", function () {
 
             if (cepValue.length === 8) {
                 $('#btnFreteSimulacao').click();
+                displayGratis();
             }
         });
 
-    }, 1000); // 2 segundos de espera
+    }, 1000); // 1 segundos de espera
 });
 
 // Substitui 'Retirada em SP' por 'Gratis' no display da table de precos de frete
-$('#txtCep').on('keypress', function () {
-    setTimeout(function () {
-        // Ajuste de Retirada em SP para Gratis na simulacao de frete:        
-        // Encontra todos os elementos que contêm texto
-        const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
-        
-        // Itera através dos elementos para encontrar e substituir o texto
-        elementsWithText.forEach(element => {
-            if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
-                const text = element.childNodes[0].textContent;
-                const newText = text.replace("Retirada em SP", "Grátis");
-                if (newText !== text) {
-                    element.childNodes[0].textContent = newText;
-                }
+function displayGratis() {
+    const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
+    
+    // Itera através dos elementos para encontrar e substituir o texto
+    elementsWithText.forEach(element => {
+        if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
+            const text = element.childNodes[0].textContent;
+            const newText = text.replace("Retirada em SP", "Grátis");
+            if (newText !== text) {
+                element.childNodes[0].textContent = newText;
             }
-        });
-    }, 2000); // 2 segundos de espera
-});
+        }
+    });
+}
