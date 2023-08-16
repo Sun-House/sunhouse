@@ -183,7 +183,7 @@ window.addEventListener("load", function () {
         // Ajuste de Retirada em SP para Gratis na simulacao de frete:
 
         // Espera o DOM estar completamente carregado
-        document.addEventListener("DOMContentLoaded", function () {
+        //document.addEventListener("DOMContentLoaded", function () {
             // Encontra todos os elementos que contêm texto
             const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
 
@@ -197,8 +197,7 @@ window.addEventListener("load", function () {
                     }
                 }
             });
-        });
-
+        //});
 
         // Para calcular o frete assim que for inserido no input
         $('#txtCep').on('keypress', function () {
@@ -209,5 +208,5 @@ window.addEventListener("load", function () {
             }
         });
 
-    }, 2000); // 2 segundos de espera
+    }, 1000); // 2 segundos de espera
 });
