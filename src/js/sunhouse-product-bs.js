@@ -177,27 +177,9 @@ $(document).ready((function () {
     }))
 }));
 
+// Calcula frete automatico ao inserir CEP no input
 window.addEventListener("load", function () {
     setTimeout(function () {
-
-        // Ajuste de Retirada em SP para Gratis na simulacao de frete:
-
-        // Espera o DOM estar completamente carregado
-        //document.addEventListener("DOMContentLoaded", function () {
-            // Encontra todos os elementos que contêm texto
-            const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
-
-            // Itera através dos elementos para encontrar e substituir o texto
-            elementsWithText.forEach(element => {
-                if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
-                    const text = element.childNodes[0].textContent;
-                    const newText = text.replace("Retirada em SP", "Grátis");
-                    if (newText !== text) {
-                        element.childNodes[0].textContent = newText;
-                    }
-                }
-            });
-        //});
 
         // Para calcular o frete assim que for inserido no input
         $('#txtCep').on('keypress', function () {
@@ -209,4 +191,24 @@ window.addEventListener("load", function () {
         });
 
     }, 1000); // 2 segundos de espera
+});
+
+// Substitui 'Retirada em SP' por 'Gratis' no display da table de precos de frete
+$('#txtCep').on('keypress', function () {
+    setTimeout(function () {
+        // Ajuste de Retirada em SP para Gratis na simulacao de frete:        
+        // Encontra todos os elementos que contêm texto
+        const elementsWithText = document.querySelectorAll("*:not(script):not(style)");
+        
+        // Itera através dos elementos para encontrar e substituir o texto
+        elementsWithText.forEach(element => {
+            if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
+                const text = element.childNodes[0].textContent;
+                const newText = text.replace("Retirada em SP", "Grátis");
+                if (newText !== text) {
+                    element.childNodes[0].textContent = newText;
+                }
+            }
+        });
+    }, 2000); // 2 segundos de espera
 });
