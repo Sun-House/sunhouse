@@ -203,9 +203,13 @@ function displayGratis() {
         if (element.childNodes.length === 1 && element.childNodes[0].nodeType === Node.TEXT_NODE) {
             const text = element.childNodes[0].textContent;
             const newText = text.replace("Retirada em SP", "Grátis");
+            
             if (newText !== text) {
                 element.childNodes[0].textContent = newText;
             }
+            // nova linha testes
+            else {element.childNodes[0].textContent = newText;}
+            // nova linha testes
         }
     });
 }
