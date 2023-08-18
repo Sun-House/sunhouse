@@ -30,11 +30,11 @@ function fnInserirMedidasBlocos() {
     const largBloco = document.getElementById("larg-block");
     const profBloco = document.getElementById("prof-block");
     const pesoBloco = document.getElementById("peso-block");
-    
-        altBloco.innerHTML = AlturValue;
-        largBloco.innerHTML = LargurValue;
-        profBloco.innerHTML = ProfunValue;
-        pesoBloco.innerHTML = PesValue;
+
+    altBloco.innerHTML = AlturValue;
+    largBloco.innerHTML = LargurValue;
+    profBloco.innerHTML = ProfunValue;
+    pesoBloco.innerHTML = PesValue;
 }
 
 $(document).ready((function () {
@@ -42,4 +42,20 @@ $(document).ready((function () {
         alterar.montar(),
         fnInserirMedidasTable(),
         fnInserirMedidasBlocos()
+}));
+
+
+// Faz os devidos ajustes nos displays de siglas e valores corretos no Block inicial de medidas PDP
+$(document).ready((function () {
+    const CENTIMETER = "cm",
+        METER = "mt",
+        heightMeasureUnit = "Cent&iacute;metro" === $(".measures-height").text() ? "cm" : "mt",
+        widthMeasureUnit = "Cent&iacute;metro" === $(".measures-width").text() ? "cm" : "mt",
+        lengthMeasureUnit = "Cent&iacute;metro" === $(".measures-length").text() ? "cm" : "mt",
+        alturaReal = $(".lblAlturaReal").text().replace(",00", ""),
+        larguraReal = $(".lblLarguraReal").text().replace(",00", ""),
+        comprimentoReal = $(".lblComprimentoReal").text().replace(",00", "");
+    $(".productContent__images-dimensions--height strong:last").text(alturaReal + heightMeasureUnit),
+        $(".productContent__images-dimensions--width strong:last").text(larguraReal + widthMeasureUnit),
+        $(".productContent__images-dimensions--length strong:last").text(comprimentoReal + lengthMeasureUnit)
 }));
