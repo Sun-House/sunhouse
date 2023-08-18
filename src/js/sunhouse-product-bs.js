@@ -226,16 +226,15 @@ function checarCep() {
     var cepNumerico = cep.replace(/\D/g, ''); // Remove não números do CEP
     cepNumerico = parseInt(cepNumerico); // Converte para número inteiro
 
-    const montagemBlock = document.getElementById("montagem-pdp");
+    const montagemBlock = document.querySelector(".skuService");
+    
     const montagemInfo = document.getElementById("productMontagem-info");
 
     // Verifica se o CEP está nas faixas especificadas
-    if ((cepNumerico >= 1000000 && cepNumerico <= 5999999) ||
-        (cepNumerico >= 8000000 && cepNumerico <= 8499999)) {
-        montagemBlock.classList.add("montagem_show");
+    if ((cepNumerico >= 1000000 && cepNumerico <= 5999999 && montagemBlock) ||
+        (cepNumerico >= 8000000 && cepNumerico <= 8499999 && montagemBlock)) {
         montagemInfo.classList.add("montagem_show");
     } else {
-        montagemBlock.classList.remove("montagem_show");
         montagemInfo.classList.remove("montagem_show");
     }
 }
