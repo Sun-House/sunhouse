@@ -226,7 +226,7 @@ function checarCep() {
     var cepNumerico = cep.replace(/\D/g, ''); // Remove não números do CEP
     cepNumerico = parseInt(cepNumerico); // Converte para número inteiro
 
-    const montagemBlock = document.querySelector(".skuService");
+    const montagemBlock = document.getElementById("openService");
     
     const montagemInfo = document.getElementById("productMontagem-info");
 
