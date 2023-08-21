@@ -52,20 +52,25 @@ function adicionarJSON_LD() {
     document.querySelector("head").appendChild(scriptbox)
 }
 
-$(document).ready((function() {
+$(document).ready((function () {
     alterar = new disableproduto,
-    alterar.montar(),    
-    setTimeout(adicionarJSON_LD, 3e3)
-})), $(document).ready((function() {
-    const CENTIMETER = "cm"
-      , METER = "mt"
-      , heightMeasureUnit = "CentÃ­metro" === $(".measures-height").text() ? "cm" : "mt"
-      , widthMeasureUnit = "CentÃ­metro" === $(".measures-width").text() ? "cm" : "mt"
-      , lengthMeasureUnit = "CentÃ­metro" === $(".measures-length").text() ? "cm" : "mt"
-      , alturaReal = $(".lblAlturaReal").text().replace(",00", "")
-      , larguraReal = $(".lblLarguraReal").text().replace(",00", "")
-      , comprimentoReal = $(".lblComprimentoReal").text().replace(",00", "");
+        alterar.montar(),
+        setTimeout(adicionarJSON_LD, 3e3)
+})), $(document).ready((function () {
+    const CENTIMETER = "cm",
+        METER = "mt",
+        KIRO = "kg"
+        heightMeasureUnit = "Centímetro" === $(".measures-height").text() ? "cm" : "mt",
+        widthMeasureUnit = "Centímetro" === $(".measures-width").text() ? "cm" : "mt",
+        lengthMeasureUnit = "Centímetro" === $(".measures-length").text() ? "cm" : "mt",
+        weightMeasureUnit = "Kilograma" === $(".measures-weight").text() ? "kg" : "g",
+        alturaReal = $(".lblAlturaReal").text().replace(",00", ""),
+        larguraReal = $(".lblLarguraReal").text().replace(",00", ""),
+        comprimentoReal = $(".lblComprimentoReal").text().replace(",00", "");
+        pesofinal = $(".lblPesoReal").text().replace(",00", "");
+
     $(".productContent__images-dimensions--height strong:last").text(alturaReal + heightMeasureUnit),
     $(".productContent__images-dimensions--width strong:last").text(larguraReal + widthMeasureUnit),
-    $(".productContent__images-dimensions--length strong:last").text(comprimentoReal + lengthMeasureUnit)
+    $(".productContent__images-dimensions--length strong:last").text(comprimentoReal + lengthMeasureUnit),
+    $(".productContent__images-dimensions--weight strong:last").text(pesofinal + weightMeasureUnit)
 }));
