@@ -15,7 +15,7 @@ function adicionarJSON_LD() {
     var scriptbox = document.createElement("script"),
     productname = document.querySelector("div.productContent__infos > div.productContent__infos-name > h1").textContent,
     productSKU = document.querySelector("#___rc-p-id").value,
-    productprice = document.querySelector("div.productContent__infos > div.productContent__infos-installment > div:nth-child(4) > p").textContent.replace("R$ ", ""),
+    productprice = document.querySelector(".slip_price").textContent.replace("R$ ", ""),
     productpriceformated = parseFloat(productprice.replace(/[R$.,]/g, "")) / 100,
     productLink = document.querySelector("#image-main").src,
     productDescription = document.querySelector(".productDescription").textContent,
