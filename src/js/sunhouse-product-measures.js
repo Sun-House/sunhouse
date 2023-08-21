@@ -53,6 +53,6 @@ $(document).ready((function () {
 }));
 
 // Executa funcoes blocadas acima
-$(document).ready(function () {
-    fnInserirMedidasBlocos()
-});
+//$(document).ready(function () {
+    //fnInserirMedidasBlocos()
+//});

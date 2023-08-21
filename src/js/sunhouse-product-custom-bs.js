@@ -1,3 +1,4 @@
+// Monta estrutura para produtos colecao Exclusivo Loja Fisica
 function disableproduto() {
     this.montar = function() {
         var estilocss;
@@ -11,6 +12,7 @@ function disableproduto() {
     }
 }
 
+// Cria breadcrumb para pesquisa no Google SEO
 function adicionarJSON_LD() {
     var scriptbox = document.createElement("script"),
     productname = document.querySelector("div.productContent__infos > div.productContent__infos-name > h1").textContent,
@@ -56,7 +58,10 @@ $(document).ready((function () {
     alterar = new disableproduto,
         alterar.montar(),
         setTimeout(adicionarJSON_LD, 3e3)
-})), $(document).ready((function () {
+})),
+
+// Cria medidas para parte abaixo das fotos
+$(document).ready((function () {
     const CENTIMETER = "cm",
         METER = "mt",
         KIRO = "kg"
