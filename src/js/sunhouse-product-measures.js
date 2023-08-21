@@ -20,8 +20,7 @@ $(document).ready(function () {
 });
 
 // Cria medidas do block abaixo da foto do produto
-//function fnInserirMedidasBlocos() {
-$(document).ready(function () {
+function fnInserirMedidasBlocos() {
     var AlturValue = skuJson.skus[0].measures.height,
         LargurValue = skuJson.skus[0].measures.width,
         ProfunValue = skuJson.skus[0].measures.length,
@@ -36,8 +35,7 @@ $(document).ready(function () {
     largBloco.innerHTML = LargurValue;
     profBloco.innerHTML = ProfunValue;
     pesoBloco.innerHTML = PesValue;
-});
-//}
+}
 
 // Faz os devidos ajustes nos displays de siglas e valores corretos no Block inicial de medidas PDP
 $(document).ready((function () {
