@@ -1249,6 +1249,12 @@ table.group.Escritorio {
     cursor: pointer;
 }
 
+@media screen and (max-width:1199px) {
+    .freight-btn {
+        margin: -44px 0 0 4px;
+    }
+}
+
 .produto .productContent__infos-freight .close {
     display: none
 }
