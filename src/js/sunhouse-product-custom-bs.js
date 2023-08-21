@@ -6,7 +6,7 @@ function disableproduto() {
         $(".productContent__infos-comunication").hide(),
         $(".productContent__infos-freight").hide(),
         $(".out_of_stock").hide(),
-        $(".productContent__infos-buyButton").after('<div id="produtoLojaFisica"><h2 id="destaque">Produto <u style="text-decoration: underline; font-style: italic">DISPON&Icirc;EL PARA VENDA EXCLUSIVAMENTE</u> atrav&eacute;s das Nossas Lojas FÃ­sicas ou via Atendimento Corporativo</h2><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/nossas-lojas" target="new"><u>Clique aqui</u></a> e veja as informaÃ§Ãµes sobre as Nossas Lojas FÃ­Â­sicas</strong></p><br><p class="frases"> <strong><u>EndereÃ§os e Telefones de contato:</u><br></strong></p><p class="frases"><strong><u>Loja 1</u></strong>: Rua Teodoro Sampaio, 1587 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 3082-2044 e (11) 3086-0916</p><br><p class="frases"><strong><u>Loja 2</u></strong>: Rua Teodoro Sampaio, 1749 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 2503-2996 e (11) 98111-7604</p><br><p class="frases"><strong><u>Loja 3</u></strong>: Rua Mateus Grou, 413 - Pinheiros - CEP 05405-150 - SP </p><p class="frases">Telefones: (11) 2506-4546 e (11) 96594-4223</p><br><p class="frases"><strong><u>Loja Santana</u></strong>: Rua Doutor Gabriel Covelli, 58 - Parque Peruche - SP</p><p class="frases">Telefones: (11) 3816-2758 ou (11) 98935-8264</p><br><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/vendas-corporativas" target="new"><u>Clique aqui</u></a> e veja as informaÃ§Ãµes sobre o Atendimento Corporativo</strong></p><br><p class="frases">Telefone Corporativo: (11) 2082-0432</p><p class="frases">WhatsApp Corporativo: (11) 98931-0003</p><p class="frases">E-mail Corporativo: <strong><u>Corporativo@SunHouse.com.br</u></strong></p></div>'),
+        $(".productContent__infos-buyButton").after('<div id="produtoLojaFisica"><h2 id="destaque">Produto <u style="text-decoration: underline; font-style: italic">DISPON&iacute;EL PARA VENDA EXCLUSIVAMENTE</u> atrav&eacute;s das Nossas Lojas F&iacute;sicas ou via Atendimento Corporativo</h2><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/nossas-lojas" target="new"><u>Clique aqui</u></a> e veja as informa&ccedil;&otilde;es sobre as Nossas Lojas F&iacute;sicas</strong></p><br><p class="frases"> <strong><u>Endere&ccedil;os e Telefones de contato:</u><br></strong></p><p class="frases"><strong><u>Loja 1</u></strong>: Rua Teodoro Sampaio, 1587 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 3082-2044 e (11) 3086-0916</p><br><p class="frases"><strong><u>Loja 2</u></strong>: Rua Teodoro Sampaio, 1749 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 2503-2996 e (11) 98111-7604</p><br><p class="frases"><strong><u>Loja 3</u></strong>: Rua Mateus Grou, 413 - Pinheiros - CEP 05405-150 - SP </p><p class="frases">Telefones: (11) 2506-4546 e (11) 96594-4223</p><br><p class="frases"><strong><u>Loja Santana</u></strong>: Rua Doutor Gabriel Covelli, 58 - Parque Peruche - SP</p><p class="frases">Telefones: (11) 3816-2758 ou (11) 98935-8264</p><br><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/vendas-corporativas" target="new"><u>Clique aqui</u></a> e veja as informaÃ§Ãµes sobre o Atendimento Corporativo</strong></p><br><p class="frases">Telefone Corporativo: (11) 2082-0432</p><p class="frases">WhatsApp Corporativo: (11) 98931-0003</p><p class="frases">E-mail Corporativo: <strong><u>Corporativo@SunHouse.com.br</u></strong></p></div>'),
         "block" == $(".buy-button").css("display") && ($("#produtoLojaFisica").hide(),
         $(".productContent__infos-comunication").show(),
         $(".productContent__infos-freight").show()))
@@ -55,12 +55,14 @@ function adicionarJSON_LD() {
     document.querySelector("head").appendChild(scriptbox)
 }
 
+// Executa funcao de lojafisica dentro da condicao e funcao pesquisa Google SEO
 $(document).ready((function () {
     alterar = new disableproduto,
         alterar.montar(),
         setTimeout(adicionarJSON_LD, 3e3)
 })),
 
+// Bloco medidas pdp INICIO
 // Cria medidas para parte abaixo das fotos
 $(document).ready((function () {
     const CENTIMETER = "cm",
@@ -80,3 +82,40 @@ $(document).ready((function () {
     $(".productContent__images-dimensions--length strong:last").text(comprimentoReal + lengthMeasureUnit),
     $(".productContent__images-dimensions--weight strong:last").text(pesofinal + weightMeasureUnit)
 }));
+
+// Cria medidas do table da descricao detalhada
+$(document).ready(function () {
+    // Valor elementos origem
+    const altToMove = document.querySelector(".lblAlturaReal").textContent + " " + document.querySelector(".measures-height").textContent;
+    const largToMove = document.querySelector(".lblLarguraReal").textContent + " " + document.querySelector(".measures-width").textContent;
+    const profToMove = document.querySelector(".lblComprimentoReal").textContent + " " + document.querySelector(".measures-length").textContent;
+    const pesoToMove = document.querySelector(".lblPesoReal").textContent + " " + document.querySelector(".measures-weight").textContent;
+
+    // Elementos destino
+    const destAlt = document.getElementById("alturaReal");
+    const destLarg = document.getElementById("larguraReal");
+    const destProf = document.getElementById("profundidadeReal");
+    const destPeso = document.getElementById("pesoReal");
+
+    // Copiando os valores
+    destAlt.textContent = altToMove + "s";
+    destLarg.textContent = largToMove + "s";
+    destProf.textContent = profToMove + "s";
+    destPeso.textContent = pesoToMove + "s";
+});
+
+// Faz os devidos ajustes nos displays de siglas e valores corretos no Block inicial de medidas PDP
+$(document).ready((function () {
+    const CENTIMETER = "cm",
+        METER = "mt",
+        heightMeasureUnit = "Cent&iacute;metro" === $(".measures-height").text() ? "cm" : "mt",
+        widthMeasureUnit = "Cent&iacute;metro" === $(".measures-width").text() ? "cm" : "mt",
+        lengthMeasureUnit = "Cent&iacute;metro" === $(".measures-length").text() ? "cm" : "mt",
+        alturaReal = $(".lblAlturaReal").text().replace(",00", ""),
+        larguraReal = $(".lblLarguraReal").text().replace(",00", ""),
+        comprimentoReal = $(".lblComprimentoReal").text().replace(",00", "");
+    $(".productContent__images-dimensions--height strong:last").text(alturaReal + heightMeasureUnit),
+        $(".productContent__images-dimensions--width strong:last").text(larguraReal + widthMeasureUnit),
+        $(".productContent__images-dimensions--length strong:last").text(comprimentoReal + lengthMeasureUnit)
+}));
+// Bloco medidas pdp FIM
