@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 function breadcrumb() {
     vtxctx.departmentName, vtxctx.categoryName
@@ -27,78 +27,9 @@ function images() {
     }))
 }
 
-function setInfos() {
-    function f(a) {
-        var b = (q - a).toFixed(2),
-            c = (q / 100).toFixed(2);
-        v = (b / c).toFixed(0)
-    }
-    var q = parseFloat(skuJson_0.skus[0].listPriceFormated.replace("R$ ", "").replace(".", "").replace(",", ".")),
-        h = parseFloat(skuJson_0.skus[0].bestPriceFormated.replace("R$ ", "").replace(".", "").replace(",", ".")),
-        r = "<span class='productContent__infos-price--listprice'>De: <strong>" + skuJson_0.skus[0].listPriceFormated + "</strong></span>";
-    //$(".productContent__infos-price").html(r + "<span class='productContent__infos-price--bestprice'>Por:</span>"), "R$ 0,00" === $(".productContent__infos-price--listprice strong").text() && ($(".productContent__infos-price--listprice").hide(), q = h), f(h);
-    var m = "<div><p>" + skuJson_0.skus[0].bestPriceFormated + '</p> <span>em <strong>10x</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>",
-        e = (h - h / 100 * 2).toFixed(2);
-    if (f(e), parseFloat(e) >= 1e4) {
-        var a;
-        (a = e.toString().replace(".", ",")).length > 6 && (a = a.charAt(0) + a.charAt(1) + "." + a.substr(2));
-        var i = "<div><p>R$ " + a + '</p> <span>em <strong>6x</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>",
-            d;
-        f(d = (e - e / 100 * 2).toFixed(2))
-    } else {
-        var a;
-        (a = e.toString().replace(".", ",")).length > 6 && (a = a.charAt(0) + "." + a.substr(1));
-        var i = "<div><p>R$ " + a + '</p> <span>em <strong>6x</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>",
-            d;
-        f(d = (e - e / 100 * 2).toFixed(2))
-    }
-    if (parseFloat(d) >= 1e4) {
-        var b;
-        (b = d.toString().replace(".", ",")).length > 6 && (b = b.charAt(0) + b.charAt(1) + "." + b.substr(2));
-        var j = "<div><p>R$ " + b + '</p> <span>em <strong>3x</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>",
-            g;
-        f(g = (d - d / 100 * 3).toFixed(2))
-    } else {
-        var b;
-        (b = d.toString().replace(".", ",")).length > 6 && (b = b.charAt(0) + "." + b.substr(1));
-        var j = "<div><p>R$ " + b + '</p> <span>em <strong>3x</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>",
-            g;
-        f(g = (d - d / 100 * 3).toFixed(2))
-    }
-    if (parseFloat(g) >= 1e4) {
-        var c;
-        (c = g.toString().replace(".", ",")).length > 6 && (c = c.charAt(0) + c.charAt(1) + "." + c.substr(2));
-        var k, _ = m + i + j + (k = "<div><p>R$ " + c + '</p> <span><strong>no Pix</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>")
-    } else {
-        var c;
-        (c = g.toString().replace(".", ",")).length > 6 && (c = c.charAt(0) + "." + c.substr(1));
-        var k, _ = m + i + j + (k = "<div><p>R$ " + c + '</p> <span><strong>no Pix</strong></span><span class="installmentBenefit"><strong>' + v + "%</strong></span></div>")
-    }
-    $(".productContent__infos-installment").html(_);
-    var s = $(".productContent__images #image img:eq(0)").attr("src"),
-        t = (document.domain, window.location);
-    $(".productContent__options-socials--pinar a").attr("href", "http://pinterest.com/pin/create/button/?url=" + t + "&media=" + s);
-    var u = "OlÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡, seja bem vindo a Sun House. Este ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o nosso WhatsApp do Atendimento ao Cliente e TeleVendas.\n Por aqui poderÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ tirar dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºvidas sobre produtos que estÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o sendo anunciados em nosso site e fazer o orÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§amento completo de acordo com sua busca.\n Temos mais de 3.000 metros quadrados em nossas lojas e mais de 6.000 produtos para lhe atender!\n EndereÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§os e Telefones: Rua Teodoro Sampaio, 1587 -> 11 - 3082-2044\n Rua Teodoro Sampaio, 1749 -> 11 - 2503-2996\n OUTLET: Rua Doutor Gabriel Covelli, 58, Casa Verde\n VocÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© estava visualizando: " + skuJson_0.name;
-    $(".productContent__options-socials--whatsapp a").attr("href", "https://api.whatsapp.com/send?phone=5511994877664&text=" + u), $(".productContent__infos-buyButton .buy-button-ref").text("COMPRAR");
-    var v, n, o, w = setInterval((function () {
-            if ($(".productContent__infos-freight fieldset > .prefixo").length > 0) {
-                $(".frete-calcular").appendTo(".productContent__infos-freight fieldset > .prefixo");
-                var a = '<div class="moreQty">+</div>';
-                $('<div class="minusQty">-</div>').insertBefore(".productContent__infos-freight fieldset > .quantity > input"), $(a).insertAfter(".productContent__infos-freight fieldset > .quantity > input"), 1 == parseInt($(".quantity > input").val()) && $(".minusQty").addClass("disabled"), $(".freight-zip-box").attr("placeholder", "Informe o CEP"), clearInterval(w)
-            }
-        })),
-        p = "",
-        l = "";
-    $(".productInfos").text().indexOf("Kilogramas") > -1 ? l = "kg" : $(".productInfos").text().indexOf("Gramas") > -1 && (l = "g"), $(".productContent__images-dimensions--weight strong:last").text($(".lblPesoReal").text().replace(",00", "") + l), 1 == $(".notifyme").is(":visible") && ($(".notifyme-client-name").val("UsuÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡rio"), $(".productContent__infos-price,.productContent__infos-installment").hide()), $(".productContent__infos-similars").find(".outras-cores").length <= 0 && $(".productContent__infos-similars").hide()
-}
+//function setInfos() { - Removida conforme novo display de precos
 
-function qty() {
-    $("body").on("click", ".quantity .minusQty", (function () {
-        2 == parseInt($(".quantity > input").val()) && $(".minusQty").addClass("disabled"), parseInt($(".quantity > input").val()) > 1 && $(".quantity > input").val(parseInt($(".quantity > input").val()) - 1)
-    })), $("body").on("click", ".quantity .moreQty", (function () {
-        1 == parseInt($(".quantity > input").val()) && $(".minusQty").removeClass("disabled"), $(".quantity > input").val(parseInt($(".quantity > input").val()) + 1)
-    }))
-}
+//function qty() { - Removida conforme nao esta em uso
 
 function shelfs() {
     $(".shelfRecomended ul,.shelfQCCT ul,.shelfRecents ul").slick({
@@ -141,6 +72,7 @@ function mobile() {
         autoplay: !1
     })
 }
+
 $(document).ready((function () {
     if (breadcrumb(), images(), setInfos(), ShippingValue(), qty(), bindEvents(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
         $('<div class="pdpDetalhes"><img src="https://sunhouse.vteximg.com.br/arquivos/pdp-detalhes.png" /></div>').insertAfter(".breadcrumb");

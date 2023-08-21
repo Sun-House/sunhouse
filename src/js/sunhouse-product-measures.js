@@ -1,3 +1,4 @@
+// Cria medidas do table da descricao detalhada
 function fnInserirMedidasTable() {
     var AltValue = skuJson.skus[0].measures.height,
         LargValue = skuJson.skus[0].measures.width,
@@ -20,6 +21,7 @@ function fnInserirMedidasTable() {
             document.getElementById("pesoReal").innerHTML = " " + PesoValue + " kilogramas")
 }
 
+// Cria medidas do block abaixo da foto do produto
 function fnInserirMedidasBlocos() {
     var AlturValue = skuJson.skus[0].measures.height,
         LargurValue = skuJson.skus[0].measures.width,
@@ -37,14 +39,6 @@ function fnInserirMedidasBlocos() {
     pesoBloco.innerHTML = PesValue;
 }
 
-$(document).ready((function () {
-    alterar = new disableproduto,
-        alterar.montar(),
-        fnInserirMedidasTable(),
-        fnInserirMedidasBlocos()
-}));
-
-
 // Faz os devidos ajustes nos displays de siglas e valores corretos no Block inicial de medidas PDP
 $(document).ready((function () {
     const CENTIMETER = "cm",
@@ -58,4 +52,10 @@ $(document).ready((function () {
     $(".productContent__images-dimensions--height strong:last").text(alturaReal + heightMeasureUnit),
         $(".productContent__images-dimensions--width strong:last").text(larguraReal + widthMeasureUnit),
         $(".productContent__images-dimensions--length strong:last").text(comprimentoReal + lengthMeasureUnit)
+}));
+
+// Executa funcoes blocadas acima
+$(document).ready((function () {
+    fnInserirMedidasTable(),
+    fnInserirMedidasBlocos()
 }));
