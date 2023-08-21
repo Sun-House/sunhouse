@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 
 function breadcrumb() {
     vtxctx.departmentName, vtxctx.categoryName
