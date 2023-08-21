@@ -30,6 +30,13 @@ function images() {
 //function setInfos() { - Removida conforme novo display de precos
 
 //function qty() { - Removida conforme nao esta em uso
+function qty() {
+    $("body").on("click", ".quantity .minusQty", (function () {
+        2 == parseInt($(".quantity > input").val()) && $(".minusQty").addClass("disabled"), parseInt($(".quantity > input").val()) > 1 && $(".quantity > input").val(parseInt($(".quantity > input").val()) - 1)
+    })), $("body").on("click", ".quantity .moreQty", (function () {
+        1 == parseInt($(".quantity > input").val()) && $(".minusQty").removeClass("disabled"), $(".quantity > input").val(parseInt($(".quantity > input").val()) + 1)
+    }))
+}
 
 function shelfs() {
     $(".shelfRecomended ul,.shelfQCCT ul,.shelfRecents ul").slick({

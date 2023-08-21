@@ -55,7 +55,7 @@ $(document).ready((function () {
 }));
 
 // Executa funcoes blocadas acima
-$(document).ready((function () {
+$(document).ready(function () {
     fnInserirMedidasTable(),
     fnInserirMedidasBlocos()
-}));
+});
