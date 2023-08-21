@@ -1176,7 +1176,7 @@ table.group.Escritorio {
 }
 
 .produto .productContent__infos-freight fieldset .prefixo {
-    float: right;
+    /*float: right;*/
     font-size: 0
 }
 
@@ -1222,18 +1222,31 @@ table.group.Escritorio {
     color: #ccc
 }
 
-.produto .productContent__infos-freight fieldset .prefixo .freight-btn {
+/*.produto .productContent__infos-freight fieldset .prefixo .freight-btn {
     float: left;
     border: none;
     font-size: 0;
     background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
     background-position: -354px -95px;
-    /*width: 36px;*/
+    *width: 36px;*
     width: 30px;
     height: 36px;
     background-color: transparent;
     margin: 5px 0 0 4px;
     cursor: pointer
+}*/
+
+.freight-btn {
+    float: right;
+    border: none;
+    font-size: 0;
+    background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
+    background-position: -354px -95px;
+    width: 30px;
+    height: 35px;
+    background-color: transparent;
+    margin: 22px 0 0 4px;
+    cursor: pointer;
 }
 
 .produto .productContent__infos-freight .close {
