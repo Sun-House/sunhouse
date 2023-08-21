@@ -143,7 +143,7 @@ function mobile() {
 }
 
 $(document).ready((function () {
-    if (breadcrumb(), images(), setInfos(), ShippingValue(), qty(), bindEvents(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
+    if (breadcrumb(), images(), ShippingValue(), bindEvents(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
         $('<div class="pdpDetalhes"><img src="https://sunhouse.vteximg.com.br/arquivos/pdp-detalhes.png" /></div>').insertAfter(".breadcrumb");
         var a = {
             url: "/api/catalog_system/pub/products/crossselling/similars/" + skuJson.productId,
