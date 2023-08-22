@@ -66,7 +66,11 @@ $(document).ready((function () {
                 var b = (parseInt($(this).find(".shelfProduct__price-best span").html().replace("R$ ", "").replace(",", "").replace(".", "")) / 1e3).toFixed(2).replace(".", ",");
                 $(this).find(".shelfProduct__price-installment").html("10x de R$ " + b);
                 var a = parseFloat($(this).find(".shelfProduct__price-best span").html().replace("R$ ", "").replace(".", "").replace(",", "."));
-                a >= 10735 ? ((a = ((a = ((a = (a - a / 100 * 2).toFixed(2)) - a / 100 * 2).toFixed(2)) - a / 100 * 3).toFixed(2).replace(".", ",")).length > 6 && (a = a.charAt(0) + a.charAt(1) + "." + a.substr(2)), $(this).find(".shelfProduct__price-best span").html("R$ " + a)) : ((a = ((a = ((a = (a - a / 100 * 2).toFixed(2)) - a / 100 * 2).toFixed(2)) - a / 100 * 3).toFixed(2).replace(".", ",")).length > 6 && (a = a.charAt(0) + "." + a.substr(1)), $(this).find(".shelfProduct__price-best span").html("R$ " + a))
+                
+                // Codigo onde é feito o calculo do desconto a vista para a shelf
+                //a >= 10735 ? ((a = ((a = ((a = (a - a / 100 * 2).toFixed(2)) - a / 100 * 2).toFixed(2)) - a / 100 * 3).toFixed(2).replace(".", ",")).length > 6 && (a = a.charAt(0) + a.charAt(1) + "." + a.substr(2)), $(this).find(".shelfProduct__price-best span").html("R$ " + a)) : ((a = ((a = ((a = (a - a / 100 * 2).toFixed(2)) - a / 100 * 2).toFixed(2)) - a / 100 * 3).toFixed(2).replace(".", ",")).length > 6 && (a = a.charAt(0) + "." + a.substr(1)), $(this).find(".shelfProduct__price-best span").html("R$ " + a))
+                a>=10753?(a=(a-a/100*7).toFixed(2).replace(".",","),a.length>6&&(a=a.charAt(0)+a.charAt(1)+"."+a.substr(2)),$(this).find(".shelfProduct__price-best span").html("R$ "+a)):(a=(a-a/100*7).toFixed(2).replace(".",","),a.length>6&&(a=a.charAt(0)+"."+a.substr(1)),$(this).find(".shelfProduct__price-best span").html("R$ "+a));
+                //
             }
         }))
     }), 500), $(".shelfProduct").each((function () {
