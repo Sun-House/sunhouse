@@ -1807,6 +1807,10 @@ th.name-field::after {
     color: #fe0000;
 }
 
+.produto .productContent__infos-freight fieldset #btnFreteSimulacao {
+    background-color: unset
+}
+
 @media screen and (max-width:1199px) {
     .produto .productContent__infos-similars .outras-cores ul {
         display: flex !important;
