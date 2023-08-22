@@ -132,11 +132,11 @@ body.produto {
 }
 
 .bannerPrd {
-    background-color: #333
+    background-color: #333 !important;
 }
 
-#infoNormal {
-    color: #cacaca
+#infoNormal, #infoHarder {
+    color: #cacaca !important;
 }
 
 .frases {
