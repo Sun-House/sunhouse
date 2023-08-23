@@ -1122,7 +1122,8 @@ table.group.Escritorio {
 }
 
 .produto .productContent__infos-freight fieldset {
-    padding-top: 28px;
+    /*padding-top: 28px;*/
+    padding-top: 0 !important;
     padding-bottom: 28px;
 }
 
