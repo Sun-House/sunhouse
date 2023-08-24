@@ -1279,7 +1279,8 @@ Ajuste temporario */
 
 .catalog .catalogOptions .content {
     display: flex !important;
-    max-width: 1190px;
+    /*max-width: 1190px;*/
+    max-width: 1215px;
     min-height: 99.75px;
     align-items: center;
     justify-content: flex-end;
