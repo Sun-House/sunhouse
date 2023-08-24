@@ -453,6 +453,7 @@
 .catalog .catalogOptions .content .orderSelect__options {
     display: none;
     /*padding: 16px;*/
+    padding: 10px !important;
     position: absolute;
     background: #f2f1f1;
     z-index: 100;
@@ -1151,10 +1152,17 @@ Ajuste temporario */
     display: table;
     font-size: 14px;
     color: #444;
-    padding-bottom: 8px;
+    /*padding-bottom: 8px;*/
+    padding: 8px;
     margin-bottom: 6px;
     line-height: 18px;
-    cursor: pointer
+    cursor: pointer;
+    width: 100%;
+}
+
+.orderSelect__options a:hover {
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .catalog .catalogFilters {
