@@ -595,10 +595,11 @@
 }
 
 .catalog .pager li.next {
-    text-transform: capitalize
+    text-transform: capitalize;
+    padding-left: 18px;
 }
 
-.catalog .pager li.next:after {
+/*.catalog .pager li.next:after {
     float: right;
     content: "";
     width: 21px;
@@ -609,6 +610,21 @@
     -ms-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     margin: 5px 5px 0 0
+}*/
+
+.catalog .pager li.next:after {
+    content: "\F231";
+    color: #e77925;
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .catalog .pager .first,
