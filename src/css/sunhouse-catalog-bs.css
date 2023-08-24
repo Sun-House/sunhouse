@@ -594,9 +594,33 @@
     text-decoration: underline
 }
 
+.catalog .pager li.previous-active {
+    display: inline-block !important;
+}
+
+.catalog .pager li.previous {
+    text-transform: capitalize;
+    padding-right: 15px;
+}
+
+.catalog .pager li.previous:before {
+    content: "\F22D";
+    color: #e77925;
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .catalog .pager li.next {
     text-transform: capitalize;
-    padding-left: 18px;
+    padding-left: 15px;
 }
 
 /*.catalog .pager li.next:after {

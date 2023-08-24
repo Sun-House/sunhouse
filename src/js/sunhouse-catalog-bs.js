@@ -84,4 +84,18 @@ $(document).ready((function () {
         arrows: !1,
         dots: !0
     })
-}));
+})),
+
+// Mostra botao pagina anterior caso esteja na pagina 2 ou mais
+$(document).ready(function(){
+    var pageNumber = parseInt(document.querySelector(".page-number.pgCurrent").innerHTML);
+    var previousBtn = document.querySelector(".pager.bottom .previous");
+
+    if (pageNumber > 2) {
+        console.log(pageNumber + " Mostra!");
+        previousBtn.classList.add("previous-active");
+    } else {
+        console.log(pageNumber + " Não mostra!");
+        previousBtn.classList.remove("previous-active");
+    }
+});
