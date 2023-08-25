@@ -231,10 +231,12 @@ window.addEventListener("load", function () {
             btnFreteSimulacao.addEventListener("click", function () {
                 checarCep();
             });
-        } else {
+        } 
+        // Apenas debug:
+        //else {
             // Faça outra coisa aqui, caso o elemento não exista
-            console.log("O elemento btnFreteSimulacao não foi encontrado.");
-        }
+            //console.log("O elemento btnFreteSimulacao não foi encontrado.");
+        //}
     }, 1000); // 1 segundo de espera
 });
 // Montagem Service Fn - TESTES
