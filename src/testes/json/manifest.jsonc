@@ -15,7 +15,7 @@
 
     ".productContent": {
         "children": [
-            + "product-images"
+            "product-images"
         ]
     },
 
