@@ -7,7 +7,7 @@
         "vtex.store-components": "3.x"
     },
 
-    "store.product": {
+    ".produto": {
         "children": [
             ".productContent"
         ]
@@ -21,7 +21,8 @@
 
     "product-images": {
         "props": {
-            "displayThumbnailsArrows": true
+            "displayThumbnailsArrows": true,
+            "displayMode": "carousel"
         }
     }
 }
