@@ -14,7 +14,7 @@ function images() {
         var a = setInterval((function () {
             $(".zoomPad #image-main").each((function () {
                 if ($(this).attr("src").indexOf("495-495/") > 0) {
-                    var b = $(this).attr("src").replace("495-495/", "630-630/");
+                    var b = $(this).attr("src").replace("495-495/", "530-530/");
                     $(this).attr("src", b)
                 } else clearInterval(a)
             }))
