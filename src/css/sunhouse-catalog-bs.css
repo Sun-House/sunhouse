@@ -586,7 +586,8 @@
     font-weight: 500;
     color: #444;
     display: inline-block;
-    margin-right: 14px
+    margin-right: 14px;
+    min-width: 27px;
 }
 
 .catalog .pager li.pgCurrent {
