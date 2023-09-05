@@ -52,6 +52,12 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     border-radius: 30px !important;
 }
 
+#lancamentos:hover,
+#prontaEntrega:hover {
+    transition: .3s !important;
+    opacity: .8;
+}
+
 #lancamentos {
     background-color: #F90041 !important;
 }
@@ -72,6 +78,11 @@ a.caretMain:after {
 .dropdown:hover .dropbtn #departLink {
     color: #f90041;
     transition: .3s;
+}
+
+.dropdown:hover .dropbtn #departLink {
+    color: #f90041 !important;
+    transition: .3s !important;
 }
 
 .breadcrumb_bs ul li:last-of-type a {
@@ -144,3 +155,4 @@ a.caretMain:after {
     --bs-btn-active-color: #000 !important;
 }
 /* Novo botao do Shelf Vtex testes */
+

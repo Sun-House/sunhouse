@@ -103,6 +103,12 @@ ol, ul {
 #benefits_text {
     margin-bottom: unset!important;
 }
+
+@media screen and (min-width: 1201px) {
+    .home #highlightRoundBanners {
+        min-height: 480px !important;
+    }
+}
 /* Home Geral */
 
 /* Catalog Geral */
