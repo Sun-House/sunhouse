@@ -49,24 +49,24 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 
 #lancamentos,
 #prontaEntrega {
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 
 #lancamentos {
-    background-color: #F90041;
+    background-color: #F90041 !important;
 }
 
 #prontaEntrega {
-    background-color: #FFDA00;
-    color: #F90041;
+    background-color: #FFDA00 !important;
+    color: #F90041 !important;
 }
 
 a.caretMain:after {
-    border-top: 4px solid #F90041;
+    border-top: 4px solid #F90041 !important;
 }
 
 .campanhaDestaque {
-    color: #F90041 !important;
+    color: #F90041 !important; /* Esse o important nao funciona - ajustar direto no arquivo sunhouse-menu.css */
 }
 
 .dropdown:hover .dropbtn #departLink {
