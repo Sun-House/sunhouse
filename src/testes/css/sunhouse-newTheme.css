@@ -1,0 +1,125 @@
+/*Cores:
+    #F90041 - Marsala
+    #FFDA00 - Amarelo
+*/
+
+/* Importa fonte Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body * {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat.woff);
+    font-weight: bold;
+}
+/* Importa fonte Montserrat */
+
+#startVoice {
+    padding-left: 15px !important;
+    color: #F90041 !important;
+    font-family: initial !important;
+}
+
+.fa {
+    font-family: initial !important;
+}
+
+.header__search input[type=text] {
+    border-radius: 30px 0 0 30px;
+}
+
+html.smarthint-voice-ativo input#smarthint-search-input {
+    padding-left: 40px;
+}
+
+.header__search input[type=button] {
+    background-color: #F90041;
+    border-radius: 0 30px 30px 0;
+}
+
+.header__cart-items {
+    background-color: #FFDA00;
+    color: #F90041;
+}
+
+#lancamentos,
+#prontaEntrega {
+    border-radius: 30px;
+}
+
+#lancamentos {
+    background-color: #F90041;
+}
+
+#prontaEntrega {
+    background-color: #FFDA00;
+    color: #F90041;
+}
+
+a.caretMain:after {
+    border-top: 4px solid #F90041;
+}
+
+.campanhaDestaque {
+    color: #F90041 !important;
+}
+
+.dropdown:hover .dropbtn #departLink {
+    color: #f90041;
+    transition: .3s;
+}
+
+.breadcrumb_bs ul li:last-of-type a {
+    color: #f90041;
+}
+
+#button-back i {
+    color: #f90041;
+    font-size: 40px;
+}
+
+.catalog .catalogIntro .catalogdescription h1,
+.catalog .catalogIntro .catalogdescription h2,
+.catalog .catalogIntro .catalogdescription h3 {
+    color: #f90041;
+}
+
+#caretDown_menu_sh {
+    color: #f90041;
+}
+
+.view-product {
+    background-color: #000 !important;
+    color: #ffda00 !important;
+}
+
+.checkbox-label {
+    background-color: #ffda00;
+}
+
+.shelfProduct:hover .shelfProduct__image img {
+    border: 4px solid #ffda00;
+}
+
+#backToTop {
+    color: #f90041;
+}
+
+.footer.links,
+.footer.sac,
+.footer.texts {
+    background-color: #ffda00;
+}
+
+.pages .pgCurrent {
+    background-color: #ffda00;
+    background-color: #f90041;
+    /*color: #000 !important;*/
+}
+
+.catalog .pager li.next:after {
+    color: #f90041;
+}
