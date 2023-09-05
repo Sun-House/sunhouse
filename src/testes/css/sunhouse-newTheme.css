@@ -156,3 +156,7 @@ a.caretMain:after {
 }
 /* Novo botao do Shelf Vtex testes */
 
+.oldLogo {
+    width: 90px !important;
+    padding-top: 15px !important;
+}
