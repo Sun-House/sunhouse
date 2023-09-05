@@ -62,6 +62,49 @@ ol, ul {
 /* Ajustes Footer */
 
 /* Ajustes para cada template */
+/* Home Geral */
+.home .benefits ul li {
+    height: 75px !important;
+}
+
+#benefits_big-number {
+    font-size: 50px!important;
+}
+
+#benefits_medium-stext {
+    font-size: 20.5px!important;
+}
+
+#benefits_medium-stext:nth-child(2) {
+    top: 0!important;
+}
+
+#benefits_big-text {
+    font-size: 22px!important;
+}
+
+#benefits_xbig-stext {
+    font-size: 24px!important;
+}
+
+#benefits_medium-number {
+    font-size: 30px!important;
+}
+
+#benefits_xxbig-stext {
+    font-size: 30px!important;
+    top: unset!important;
+}
+
+#benefits_xbig-number {
+    font-size: 40px !important;
+}
+
+#benefits_text {
+    margin-bottom: unset!important;
+}
+/* Home Geral */
+
 /* Catalog Geral */
 .resultItemsWrapper .shelf ul {
     padding-left: unset;
