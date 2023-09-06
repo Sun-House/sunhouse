@@ -1,6 +1,8 @@
 // Abre o modal onscroll e armazena um cookie para nao abrir mais:
-// Verifica se o modal já foi exibido usando cookies
-if (document.cookie.indexOf("modalShown=true") === -1) {
+
+// Verifica se o modal já foi exibido hoje usando localStorage
+var modalShownToday = localStorage.getItem("modalShownToday");
+if (!modalShownToday) {
     // Monitora o evento de rolagem da página
     window.addEventListener('scroll', function () {
         // Verifica a posição de rolagem
@@ -10,10 +12,8 @@ if (document.cookie.indexOf("modalShown=true") === -1) {
         }
     });
 
-    // Define um cookie para rastrear que o modal já foi exibido com prazo de expiração de 1 dia
-    var expirationDate = new Date();
-    expirationDate.setDate(expirationDate.getDate() + 1);
-    document.cookie = "modalShown=true; expires=" + expirationDate.toUTCString();
+    // Define uma variável no localStorage para rastrear que o modal já foi exibido hoje
+    localStorage.setItem("modalShownToday", "true");
 }
 
 // Fecha o modal quando o usuário clica fora dele ou no botão de fechar
