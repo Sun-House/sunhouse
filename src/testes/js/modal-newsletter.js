@@ -6,7 +6,7 @@ if (document.cookie.indexOf("modalShown=true") === -1) {
         // Verifica a posição de rolagem
         if (window.scrollY >= 200) {
             // Abre o modal quando a posição de rolagem atinge 200 pixels
-            $('#myModal').modal('show');
+            $('#modal-news').modal('show');
         }
     });
 
@@ -17,11 +17,11 @@ if (document.cookie.indexOf("modalShown=true") === -1) {
 }
 
 // Fecha o modal quando o usuário clica fora dele ou no botão de fechar
-$('#myModal').on('hidden.bs.modal', function () {
-    $('#myModal').modal('hide');
+$('#modal-news').on('hidden.bs.modal', function () {
+    $('#modal-news').modal('hide');
 });
 
 // Fecha o modal quando o usuário clica no botão de fechar
 $('#modalCloseButton').click(function () {
-    $('#myModal').modal('hide');
+    $('#modal-news').modal('hide');
 });
