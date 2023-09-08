@@ -72,7 +72,9 @@ a.caretMain:after {
 }
 
 .campanhaDestaque {
-    color: #F90041 !important; /* Esse o important nao funciona - ajustar direto no arquivo sunhouse-menu.css */
+    all: unset;
+    color: #f90041 !important;
+    font-weight: 600 !important;
 }
 
 .dropdown:hover .dropbtn #departLink {
@@ -121,12 +123,6 @@ a.caretMain:after {
     color: #f90041;
 }
 
-.footer.links,
-.footer.sac,
-.footer.texts {
-    background-color: #ffda00;
-}
-
 .pages .pgCurrent {
     background-color: #ffda00;
     background-color: #f90041;
@@ -160,3 +156,104 @@ a.caretMain:after {
     width: 90px !important;
     padding-top: 15px !important;
 }
+
+/* Smart Hint */
+#smarthint-search-mostsearchedterms .mostsearchedterm-title {
+    color: #f90041;
+}
+
+#smarthint-search-mostsearchedterms a:hover .term-order {
+    background-color: #f90041 !important;
+}
+/* Smart Hint */
+
+.benefits * {
+    color: #f90041 !important;
+}
+
+.benefits li {
+    border-right: 1px solid #f90041 !important;
+}
+
+.stickyHeader__mobilemenu {
+    filter: invert(12%) sepia(91%) saturate(7453%) hue-rotate(340deg) brightness(97%) contrast(102%) !important;
+}
+
+.home .highlight .slick-arrow {
+    border-top: 6px solid #000;
+    border-right: 6px solid #000;
+}
+
+.home .slick-dots li {
+    border: 1px solid #f90041;
+}
+
+.home .slick-dots li.slick-active {
+    background: #f90041;
+}
+
+.home #highlightRoundBanners h2.RoundBannerTitle {
+    color: #000;
+}
+
+.home .bestSellers h2 {
+    color: #000;
+}
+
+.shelf .slick-arrow {
+    border-top: 6px solid #000;
+    border-right: 6px solid #000;
+}
+
+.home .highlights__content > h2 {
+    color: #000;
+}
+
+.apresentation strong {
+    color: #f90041;
+}
+
+.opinions > h2 {
+    color: #000;
+}
+
+/* Bloco LaDecora */
+#block-info #block-card {
+    max-width: 218px;
+}
+
+.highlights__content-text {
+    max-height: 600px;
+}
+
+#block-info .card {
+    all: unset;
+}
+/* Bloco LaDecora */
+
+/* Footer Home */
+.footer.links *,
+.footer.sac *,
+.footer.texts * {
+    color: #fff !important;
+}
+
+.footer.links strong,
+.footer.sac strong,
+.footer.texts strong {
+    color: #f90041 !important;
+}
+
+.footer.links,
+.footer.sac,
+.footer.texts {
+    background-color: #000;
+}
+
+.footer.links a:hover,
+.footer.sac a:hover,
+.footer.texts a:hover {
+    color: #f90041 !important;
+}
+/* Footer Home */
+
