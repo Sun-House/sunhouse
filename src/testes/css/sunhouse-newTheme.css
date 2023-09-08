@@ -219,11 +219,11 @@ a.caretMain:after {
 
 /* Bloco LaDecora */
 #block-info #block-card {
-    max-width: 218px;
+    max-width: 218px !important;
 }
 
 .highlights__content-text {
-    max-height: 600px;
+    max-height: 600px !important;
 }
 
 #block-info .card {
@@ -256,4 +256,3 @@ a.caretMain:after {
     color: #f90041 !important;
 }
 /* Footer Home */
-
