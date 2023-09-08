@@ -271,3 +271,13 @@ a.caretMain:after {
     }
 }
 /* Header Fixed - Mobile */
+
+/* Catalog Filter Bar e Catalog Options */
+.catalog .catalogFilters {
+    background: -webkit-linear-gradient(315deg,#FFDA00 0,#F90041 100%) !important;
+}
+
+.catalog .catalogOptions {
+    background: -webkit-linear-gradient(315deg,#F90041 0,#FFDA00 100%) !important;
+}
+/* Catalog Filter Bar e Catalog Options */
