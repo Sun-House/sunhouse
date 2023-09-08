@@ -151,4 +151,10 @@ ol, ul {
 
 /* Catalog Geral */
 
+/* Ajuste para Banner Promocional Fixo Header - Todas Paginas BS */
+.bannerPrd p {
+    margin-bottom: 0 !important;
+}
+/* Ajuste para Banner Promocional Fixo Header - Todas Paginas BS */
+
 /* Ajustes para cada template */

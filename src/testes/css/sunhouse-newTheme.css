@@ -256,3 +256,9 @@ a.caretMain:after {
     color: #f90041 !important;
 }
 /* Footer Home */
+
+/* Home Header Grid*/
+.home #highlightRoundBanners__content .box-banner:hover * {
+    color: #f90041 !important;
+}
+/* Home Header Grid*/
