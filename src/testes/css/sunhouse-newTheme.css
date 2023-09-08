@@ -175,7 +175,8 @@ a.caretMain:after {
     border-right: 1px solid #f90041 !important;
 }
 
-.stickyHeader__mobilemenu {
+.header__mobilemenu svg,
+.stickyHeader__mobilemenu svg {
     filter: invert(12%) sepia(91%) saturate(7453%) hue-rotate(340deg) brightness(97%) contrast(102%) !important;
 }
 
@@ -262,3 +263,11 @@ a.caretMain:after {
     color: #f90041 !important;
 }
 /* Home Header Grid*/
+
+/* Header Fixed - Mobile */
+@media screen and (max-width: 1199px) {
+    .topbar__content {
+        background-color: unset !important;
+    }
+}
+/* Header Fixed - Mobile */
