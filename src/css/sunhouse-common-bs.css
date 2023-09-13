@@ -101,8 +101,8 @@ u,
 ul,
 var,
 video {
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0; TESTE POIS TAVA BUGANDO O LAYOUT DA PAGINA DE INSTITUCIONAL MAS PODE BUGAR OUTROS TEMPLATES AO REMOVER */
     border: 0;
     font-family: Ubuntu;
     vertical-align: baseline
