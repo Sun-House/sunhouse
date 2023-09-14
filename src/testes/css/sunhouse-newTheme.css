@@ -167,13 +167,19 @@ a.caretMain:after {
 }
 /* Smart Hint */
 
-.benefits * {
+/* Area abaixo dos banners principais Home */
+.home .benefits * {
     color: #f90041 !important;
 }
 
-.benefits li {
+.home .benefits li {
     border-right: 1px solid #f90041 !important;
 }
+
+.home .benefits li:nth-child(5) {
+    border-right: unset !important;
+}
+/* Area abaixo dos banners principais Home */
 
 .header__mobilemenu svg,
 .stickyHeader__mobilemenu svg {
