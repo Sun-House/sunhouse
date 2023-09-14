@@ -230,6 +230,26 @@ a.caretMain:after {
 #block-info .card {
     all: unset;
 }
+
+#highlight-campanha .card p {
+    margin-bottom: unset !important;
+    line-height: 19px
+}
+
+#highlight-campanha .card-body {
+    padding: 0 0 16px 0;
+}
+
+#highlight-campanha .card-header {
+    background: unset;
+    border: unset;
+    /*color: #F90041; COR NOVA */
+    padding: 0 0 10px 0;
+}
+
+#block-info #block-card {
+    min-height: 540px !important;
+}
 /* Bloco LaDecora */
 
 /* Footer Home */
