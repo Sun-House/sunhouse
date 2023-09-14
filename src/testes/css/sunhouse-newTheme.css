@@ -180,11 +180,6 @@ a.caretMain:after {
     filter: invert(12%) sepia(91%) saturate(7453%) hue-rotate(340deg) brightness(97%) contrast(102%) !important;
 }
 
-/*.home .highlight .slick-arrow {
-    border-top: 6px solid #000;
-    border-right: 6px solid #000;
-}*/
-
 .home .highlight .slick-arrow {
     border-top: 6px solid #fff;
     border-right: 6px solid #fff;
@@ -255,6 +250,24 @@ a.caretMain:after {
 
 #block-info #block-card {
     min-height: 540px !important;
+}
+
+#block-column h3 {
+    color: #F90041 !important;
+}
+
+.card-header, .card-title {
+    color: #F90041 !important;
+}
+
+#block-info .slick-arrow {
+    border-top: 6px solid #F90041 !important;
+    border-right: 6px solid #F90041 !important;
+}
+
+#call-page {
+    background-color: #FFDA00 !important;
+    color: #F90041 !important;
 }
 /* Bloco LaDecora */
 
