@@ -180,9 +180,15 @@ a.caretMain:after {
     filter: invert(12%) sepia(91%) saturate(7453%) hue-rotate(340deg) brightness(97%) contrast(102%) !important;
 }
 
-.home .highlight .slick-arrow {
+/*.home .highlight .slick-arrow {
     border-top: 6px solid #000;
     border-right: 6px solid #000;
+}*/
+
+.home .highlight .slick-arrow {
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    filter: drop-shadow(0px 0px 3px #666666);
 }
 
 .home .slick-dots li {
