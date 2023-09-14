@@ -30,7 +30,7 @@ body * {
 }*/
 
 .header__search input[type=text] {
-    border-radius: 30px 0 0 30px;
+    border-radius: 30px 0 0 30px !important;
 }
 
 html.smarthint-voice-ativo input#smarthint-search-input {
@@ -38,13 +38,13 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 }
 
 .header__search input[type=button] {
-    background-color: #F90041;
-    border-radius: 0 30px 30px 0;
+    background-color: #F90041 !important;
+    border-radius: 0 30px 30px 0 !important;
 }
 
 .header__cart-items {
-    background-color: #FFDA00;
-    color: #F90041;
+    background-color: #FFDA00 !important;
+    color: #F90041 !important;
 }
 
 #lancamentos,
@@ -292,7 +292,7 @@ a.caretMain:after {
 .footer.links,
 .footer.sac,
 .footer.texts {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 .footer.links a:hover,
