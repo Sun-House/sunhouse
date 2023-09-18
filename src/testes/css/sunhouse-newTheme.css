@@ -357,4 +357,13 @@ a.caretMain:after {
 .produto .productContent__images-dimensions li strong {
     font-family: 'Montserrat' !important;
 }
+
+#refund_icon {
+    font-size: 42px;
+    color: #F90041;
+}
+
+.produto .productContent__infos-comunication i {
+    background-image: unset !important;
+}
 /* Produto template */
