@@ -366,4 +366,11 @@ a.caretMain:after {
 .produto .productContent__infos-comunication i {
     background-image: unset !important;
 }
+
+.produto .productInfos #caracteristicas *,
+.produto .productInfos #div_Conteudo_DetalhesDoProduto_pnlDimensoes *,
+.produto .productInfos .productDescription,
+.produto .productInfos .productDescription * {
+    font-family: 'Montserrat' !important;
+}
 /* Produto template */
