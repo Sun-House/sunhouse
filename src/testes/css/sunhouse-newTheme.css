@@ -92,7 +92,7 @@ a.caretMain:after {
 }
 
 #button-back i {
-    color: #f90041;
+    color: #f90041 !important;
     font-size: 40px;
 }
 
@@ -367,10 +367,16 @@ a.caretMain:after {
     background-image: unset !important;
 }
 
+.produto .productContent__infos-freight fieldset .prefixo #txtCep {
+    font-family: 'Montserrat' !important;
+}
+
 .produto .productInfos #caracteristicas *,
 .produto .productInfos #div_Conteudo_DetalhesDoProduto_pnlDimensoes *,
 .produto .productInfos .productDescription,
 .produto .productInfos .productDescription * {
     font-family: 'Montserrat' !important;
 }
+
+
 /* Produto template */
