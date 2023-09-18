@@ -325,3 +325,36 @@ a.caretMain:after {
     background: -webkit-linear-gradient(315deg,#F90041 0,#FFDA00 100%) !important;
 }
 /* Catalog Filter Bar e Catalog Options */
+
+/* Produto template */
+.breadcrumb_bs ul li li:last-of-type a {
+    color: #F90041 !important;
+}
+
+#btnScrollSt {
+    background-color: #FFDA00;
+    color: #F90041
+}
+
+.produto .productContent__infos-freight--message strong {
+    color: #F90041;
+}
+
+.produto .productContent__infos-comunication {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.produto .productContent__infos-comunication strong {
+    color: #F90041;
+}
+
+.produto .productContent__options-opinions p {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.produto .productContent__images-dimensions li strong {
+    font-family: 'Montserrat' !important;
+}
+/* Produto template */
