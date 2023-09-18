@@ -2045,9 +2045,14 @@ body.black-friday .catalogIntro {
 /* Ajuste botao WhatsApp Tallos */
 
 /* Banner Promo Fixo All Pages */
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXE8u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
 }
 
 .bannerPrdSlick {
@@ -2071,7 +2076,8 @@ body.black-friday .catalogIntro {
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
-    font-family: 'Open Sans';
+    /*font-family: 'Open Sans';*/
+    font-family: 'Montserrat';
 }
 
 #mainInfo {
