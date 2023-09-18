@@ -22,7 +22,7 @@
     margin-right: auto;
     padding-bottom: 32px;
     font: normal !important;
-    font-family: Ubuntu
+    font-family: Montserrat
 }
 
 .catalog .catalogIntro .catalogdescription h1,
@@ -98,7 +98,7 @@
     font-weight: 400;
     color: #000;
     font: normal !important;
-    font-family: Ubuntu;
+    font-family: Montserrat;
     padding-top: 16px;
     line-height: 26px;
     text-align: justify
@@ -139,7 +139,7 @@
     .catalog .catalogIntro .catalogdescription p {
         font-size: 13px;
         font: normal !important;
-        font-family: Ubuntu
+        font-family: Montserrat
     }
 
     div.catalogIntro div#show div#content ul {
@@ -213,7 +213,7 @@
     float: left;
     width: auto;
     height: auto;
-    font-family: Ubuntu;
+    font-family: Montserrat;
     font-size: 19px;
     color: #444;
     background: #f2f2f2;
@@ -411,7 +411,7 @@
     float: left;
     width: auto;
     height: auto;
-    font-family: Ubuntu;
+    font-family: Montserrat;
     font-size: 19px;
     color: #444;
     background: #f2f2f2;
@@ -581,7 +581,7 @@
 }
 
 .catalog .pager li {
-    font-family: Ubuntu;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     color: #444;
@@ -789,7 +789,7 @@ body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2) a {
 .busca .breadcrumb > ul:nth-child(2) > li:nth-child(1)::after {
     content: "Resultado de Busca:";
     font-size: 14px;
-    font-family: ubuntu !important;
+    font-family: Montserrat !important;
     color: #444
 }
 
@@ -1144,7 +1144,7 @@ Ajuste temporario */
     float: left;
     width: auto;
     height: auto;
-    font-family: Ubuntu;
+    font-family: Montserrat;
     font-size: 19px;
     color: #444;
     background: #f2f2f2;
