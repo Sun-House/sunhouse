@@ -1718,18 +1718,20 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 
 #backToTop i {
     float: right;
-    background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
+    font-size: 58px;
+    /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
     background-position: -83px -137px;
     width: 58px;
-    height: 58px
+    height: 58px*/
 }
 
 @media screen and (max-width:1199px) {
     #backToTop i {
-        background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
+        font-size: 31px;
+        /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
         background-position: -330px -137px;
         width: 31px;
-        height: 31px
+        height: 31px*/
     }
 }
 
