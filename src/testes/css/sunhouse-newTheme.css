@@ -377,6 +377,10 @@ a.caretMain:after {
 .produto .productInfos .productDescription * {
     font-family: 'Montserrat' !important;
 }
-
-
 /* Produto template */
+
+/* Ajuste Botao Back Page All Templates - HeaderFixed */
+.button-hidden {
+    top: 125px !important;
+}
+/* Ajuste Botao Back Page All Templates - HeaderFixed */
