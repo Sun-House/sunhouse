@@ -1171,7 +1171,7 @@ Ajuste temporario */
 
 .orderSelect__options {
     display: none;
-    padding: 30px;
+    padding: 15px;
     position: absolute;
     background: #f2f1f1;
     z-index: 100;
@@ -1202,7 +1202,8 @@ Ajuste temporario */
 }
 
 .orderSelect__options a:hover {
-    background-color: #fff;
+    background-color: #ffd30273;
+    color: #F90041;
     border-radius: 5px;
 }
 
