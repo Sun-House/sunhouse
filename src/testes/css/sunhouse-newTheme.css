@@ -377,6 +377,25 @@ a.caretMain:after {
 .produto .productInfos .productDescription * {
     font-family: 'Montserrat' !important;
 }
+
+/* Ajuste para nav de Filters BS */
+@media screen and (max-width: 1199px) {
+    .catalog .catalogFilters.active {
+        z-index: 999;
+    }
+    
+    .catalog .catalogFilters .content {
+        display: inline-flex !important;
+        padding: 20px;
+        position: absolute;
+        top: 50px;
+    }
+
+    .catalog .catalogFilters #closeFilters {
+        top: 50px !important;
+    }
+}
+/* Ajuste para nav de Filters BS */
 /* Produto template */
 
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
