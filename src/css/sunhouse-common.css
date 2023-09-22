@@ -2035,6 +2035,15 @@ body.black-friday .catalogIntro {
     scale: 1.1;
     transition: .2s;
 }
+
+@media screen and (max-width: 1199px){
+    #button_whatsapp:hover {
+        right: 10px !important;
+        width: 80px !important;
+        height: 80px !important;
+        bottom: 10px !important;
+    }
+}
 /* Botao WhatsApp All Pages */
 
 /* Banner Promo Fixo All Pages */
