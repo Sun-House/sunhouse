@@ -560,7 +560,8 @@ body>.header {
 
     .header__menu.active {
         left: 0;
-        z-index: 999;
+        /*z-index: 999;*/
+        z-index: 1001;
         overflow-x: hidden
     }
 }

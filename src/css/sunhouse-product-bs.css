@@ -242,6 +242,12 @@ table.group.Escritorio {
     border-bottom: 1px solid #ddd
 }
 
+@media screen and (max-width:1199px) {
+    .produto .header__menu {
+        top: 20px;
+    }
+}
+
 .produto .productContent {
     display: table;
     width: 100%;
