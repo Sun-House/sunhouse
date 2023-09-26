@@ -164,8 +164,7 @@ input:-internal-autofill-selected {
     font-size: 18px !important;
 }
 
-#classicLoginBtn,
-#tryChangePswdBtn {
+#classicLoginBtn {
     all: unset;
     /*position: absolute;*/
     width: 30%;
@@ -185,7 +184,7 @@ input:-internal-autofill-selected {
 }
 
 #classicLoginBtn:hover,
-#tryChangePswdBtn,
+#tryChangePswdBtn:hover,
 a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
 #guestUser:hover::before,
 #loginWithAccessKeyBtn:hover {
@@ -357,7 +356,16 @@ a[data-i18n="vtexid.forgotPswdHelper"] {
     cursor: pointer;
 }
 
-/* Change pswd */
+/* Esqueci minha senha */
+.vtexIdUI-change-pswd .modal-header .vtexid-icon-user {
+    display: none !important;
+}
+
+span[data-i18n="vtexid.confirmChangePswdText"] {
+    font-size: 16px;
+    color: #000;
+}
+
 .vtexid-password-requirements {
     margin-top: 10px;
     margin-left: 15px;
@@ -369,18 +377,39 @@ a[data-i18n="vtexid.forgotPswdHelper"] {
     padding-left: 1rem !important;
 }
 
+form[ng-submit="tryChangePswd()"] .modal-body i {
+    display: none !important;
+}
+
 form[ng-submit="tryChangePswd()"] .modal-footer {
     all: unset !important;
     display: inline-flex !important;
     flex-direction: column-reverse !important;
 }
 
+#tryChangePswdBtn {
+    all: unset;
+    width: 35%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: #F90041;
+    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
+    padding: 5px 18px 5px 18px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 form[ng-submit="tryChangePswd()"] .modal-footer .vtexIdUI-back-link {
     margin: unset !important;
     padding: 10px 30px;
-    margin-top: 30px !important;
+    margin-top: 12px !important;
 }
-/* Change pswd */
+/* Esqueci minha senha */
 
 /* Entrar sem senha */
 form[ng-disabled="isSendingEmailConfirmation"] .modal-footer {
