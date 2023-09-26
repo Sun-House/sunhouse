@@ -34,6 +34,7 @@
     height: 600px !important;
     border-radius: 20px !important;
     border: 1px solid #eeeeee !important;
+    top: 12% !important;
 }
 
 .vtexIdUI .modal-header {
@@ -236,10 +237,10 @@ a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
     height: 70px;
     border-radius: 100% !important;
     background: unset !important;
-    border-color: #ccc !important;
+    /*border-color: #ccc !important;
     border-top-color: #ccc !important;
     box-shadow: 0 4px 0 #ccc !important;
-    /*background: linear-gradient(to bottom, #e1e1ea 0%, #5874b3 1%, #405689 66%, #405689 98%, #5874b3 100%) !important; Relativo para cada icon */
+    background: linear-gradient(to bottom, #e1e1ea 0%, #5874b3 1%, #405689 66%, #405689 98%, #5874b3 100%) !important; Relativo para cada icon */
 }
 
 .vtexIdUI-providers-list li button i {
@@ -249,6 +250,12 @@ a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
 .vtexIdUI-providers-list li button span {
     color: transparent !important;
     text-shadow: none !important;
+}
+
+#vtexIdUI-google-plus {
+    border-color: #ccc !important;
+    border-top-color: #ccc !important;
+    box-shadow: 0 4px 0 #dc503f80 !important;
 }
 
 #vtexIdUI-google-plus::after {
@@ -263,6 +270,12 @@ a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+#vtexIdUI-facebook {
+    border-color: #ccc !important;
+    border-top-color: #ccc !important;
+    box-shadow: 0 4px 0 #1873eb80 !important;
 }
 
 #vtexIdUI-facebook::after {
