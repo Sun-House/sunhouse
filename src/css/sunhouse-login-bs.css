@@ -517,8 +517,9 @@ form[ng-disabled="isSendingEmailConfirmation"] .vtexIdUI-email-field::before {
     font-weight: 500;
 }
 
-p[ng-show="unexpectedError"] {
-    margin-top: 25px !important;
+p[ng-show="unexpectedError"],
+div[ng-show="invalidAccessToken"] {
+    margin-top: 30px !important;
 }
 
 #confirmLoginAccessKeyBtn {

@@ -147,6 +147,14 @@ ol, ul {
 .breadcrumb_bs ul li a span:hover {    
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1199px) {
+    /* Para o template de Catalog BS */
+    .catalog .breadcrumb_bs {
+        margin-left: 25px !important;
+    }
+    /* Para o template de Catalog BS */
+}
 /* Breadcrumb BS */
 
 /* Catalog Geral */
