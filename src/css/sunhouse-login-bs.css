@@ -108,6 +108,7 @@ input:-internal-autofill-selected {
 .vtexIdUI .modal-body {
     min-height: 250px !important;
     overflow: hidden !important;
+    padding: 20px !important; /* pode dar um impacto ruim */
 }
 /* Precisa ajustar para cada tela do modal */
 
