@@ -97,10 +97,14 @@ input:-internal-autofill-selected {
 }*/
 /* Força mostrar o login normal de cara */
 
+
+/* Precisa ajustar para cada tela do modal */
 .vtexIdUI .modal-body {
     min-height: 250px !important;
     overflow: hidden !important;
 }
+/* Precisa ajustar para cada tela do modal */
+
 
 .vtexIdUI .vtexIdUI-page {
     min-height: unset !important;
@@ -377,5 +381,51 @@ form[ng-submit="tryChangePswd()"] .modal-footer {
     flex-direction: column-reverse !important;
 }
 /* Change pswd */
+
+/* Entrar sem senha */
+form[ng-disabled="isSendingEmailConfirmation"] .modal-footer {
+    all: unset !important;
+    display: inline-flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+#sendAccessKeyBtn {
+    all: unset;
+    text-align: center;
+    bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: #F90041;
+    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
+    padding: 5px 18px 5px 18px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.vtexIdUI-back-link { /* Ajustar caminho do css para funcionar apenas nessa tela do modal */
+    margin: unset !important;
+    padding: 10px 30px;
+    margin-top: 30px !important;
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+}
+
+form[ng-disabled="isSendingEmailConfirmation"] .vtexIdUI-email-field::before {
+    content: "Insira abaixo seu e-mail, vamos lhe enviar um codigo de acesso para entrar sem senha em nosso site:";
+    color: #000;
+    display: block;
+    line-height: 22px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+/* Entrar sem senha */
 
 /* Modal Login */
