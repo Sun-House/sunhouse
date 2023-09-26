@@ -351,7 +351,7 @@ a.caretMain:after {
 
 .produto .productContent__options-opinions p {
     font-size: 16px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .produto .productContent__images-dimensions li strong {
