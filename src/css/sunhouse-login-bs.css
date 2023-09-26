@@ -75,7 +75,7 @@
 }
 
 .vtexIdUI label {
-    margin-left: 15px;
+    margin-left: 15px !important;
 }
 
 .vtexIdUI input[type="text"]:focus, .vtexIdUI input[type="password"]:focus, .vtexIdUI input[type="email"]:focus {
@@ -85,6 +85,11 @@
 
 input:-internal-autofill-selected {
     background-color: -internal-light-dark(#ffffff80, #f900414d) !important;
+}
+
+.alert-wrong-pswd {
+    border-radius: 10px !important;
+    margin-bottom: unset !important;
 }
 
 /* Força mostrar o login normal de cara */
@@ -307,6 +312,11 @@ a[data-i18n="vtexid.forgotPswdHelper"] {
     left: 0;
 }
 
+#vtexIdUI-google-plus:hover,
+#vtexIdUI-facebook:hover {
+    scale: 1.05;
+}
+
 #loginWithAccessKeyBtn {
     all: unset;
     position: absolute;
@@ -409,6 +419,11 @@ form[ng-submit="tryChangePswd()"] .modal-footer .vtexIdUI-back-link {
     padding: 10px 30px;
     margin-top: 12px !important;
 }
+
+.vtexIdUI-code-field input {
+    border-radius: 30px !important;
+    margin-top: 15px !important;
+}
 /* Esqueci minha senha */
 
 /* Entrar sem senha */
@@ -456,5 +471,28 @@ form[ng-disabled="isSendingEmailConfirmation"] .vtexIdUI-email-field::before {
     padding-bottom: 20px;
 }
 /* Entrar sem senha */
+
+/* Etapa Codigo de Autenticacao */
+.vtexIdUI-auth-code.vtexIdUI-page.ng-scope.vtexIdUI-page-active .modal-body {
+    min-height: 300px !important;
+}
+
+#changePswdBtn {
+    all: unset;
+    width: 35%;
+    text-align: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    background: #F90041;
+    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
+    padding: 5px 18px 5px 18px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Etapa Codigo de Autenticacao */
 
 /* Modal Login */
