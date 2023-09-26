@@ -148,7 +148,8 @@
     font-size: 18px !important;
 }
 
-#classicLoginBtn {
+#classicLoginBtn,
+#tryChangePswdBtn {
     all: unset;
     /*position: absolute;*/
     width: 30%;
@@ -156,7 +157,6 @@
     bottom: 30px;
     margin-left: 15%;
     margin-right: 15%;
-    background-color: #18b858;
     background: #F90041;
     background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
     padding: 5px 18px 5px 18px;
@@ -166,6 +166,16 @@
     padding: 10px 80px;
     font-size: 18px;
     font-weight: 500;
+}
+
+#classicLoginBtn:hover,
+#tryChangePswdBtn,
+a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
+#guestUser:hover::before,
+#loginWithAccessKeyBtn:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    /*scale: 1.02;*/
 }
 
 a[data-i18n="vtexid.forgotPswd"],
@@ -195,15 +205,6 @@ a[data-i18n="vtexid.forgotPswdHelper"] {
     font-weight: 500;
     / font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif; /
 }*/
-
-#classicLoginBtn:hover,
-a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
-#guestUser:hover::before,
-#loginWithAccessKeyBtn:hover {
-    opacity: 0.8;
-    transition: 0.3s;
-    /*scale: 1.02;*/
-}
 
 #vtexIdUI-auth-selector .modal-body:before {
     content: "Ou acesse usando sua conta:";
@@ -339,5 +340,16 @@ a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
     bottom: 40px;
     cursor: pointer;
 }
+
+/* Change pswd */
+.vtexIdUI input[type="text"]:focus, .vtexIdUI input[type="password"]:focus, .vtexIdUI input[type="email"]:focus {
+    border-color: #f900414d !important;
+    box-shadow: inset 0 1px 1px #00000013, 0 0 8px #f900414d !important;
+}
+
+input:-internal-autofill-selected {
+    background-color: -internal-light-dark(#ffffff80, #f900414d) !important;
+}
+/* Change pswd */
 
 /* Modal Login */
