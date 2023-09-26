@@ -1293,6 +1293,14 @@ Ajuste temporario */
 }
 /* Paginacao */
 
+/* Ajuste Margens da Pagina Mobile */
+@media screen and (max-width: 1199px) {
+    .catalog #page-content {
+        margin: 0 20px;
+    }
+}
+/* Ajuste Margens da Pagina Mobile */
+
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
 
 /* Ajuste novo display */
