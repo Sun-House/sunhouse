@@ -1,0 +1,330 @@
+#bg_full {
+    background: #F90041;
+    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
+    height: 1px;
+}
+
+#vtexIdUI-global-loader {
+    display: none !important;
+}
+
+/* Modal Login */
+/* Ajustes para o BS - Pagina Institucional Apenas */
+.vtexIdUI .modal-header {
+    display: inherit;
+}
+
+#vtexIdUI-global-loader {
+    background-image: none !important;
+    background-color: #000 !important;
+    opacity: 0.5 !important;
+    overflow-y: unset !important;
+}
+
+#vtexIdContainer {
+    position: fixed !important;
+    z-index: unset !important;
+    /* como a pagina so tem esse elemento nao ha necessidade do z-index */
+}
+
+/* Ajustes para o BS */
+
+.vtexIdUI {
+    box-shadow: 1px 0px 10px #ddd !important;
+    height: 600px !important;
+    border-radius: 20px !important;
+    border: 1px solid #eeeeee !important;
+}
+
+.vtexIdUI .modal-header {
+    background: #fff !important;
+    border-bottom: 0px solid #eee !important;
+}
+
+.vtexIdUI .modal-header span {
+    display: none !important;
+}
+
+.vtexIdUI .modal-header:after {
+    content: "Login" !important;
+    font-size: 35px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-top: 12px !important;
+}
+
+.vtexIdUI .modal-header .close {
+    right: 10px !important;
+    top: 10px !important;
+    background: #eee !important;
+    padding: 0px 10px !important;
+    color: #333 !important;
+    font-size: 40px !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+}
+
+.vtexIdUI .modal-header .close:hover {
+    background: #eee !important;
+    opacity: 0.7 !important;
+}
+
+.vtexIdUI .vtexid-icon-lock.bottom-icon {
+    display: none !important;
+}
+
+/* Força mostrar o login normal de cara */
+#vtexIdUI-classic-login {
+    display: block !important;
+}
+
+/*#vtexIdUI-classic-login {
+    z-index: 99999!important;
+}*/
+/* Força mostrar o login normal de cara */
+
+.vtexIdUI .modal-body {
+    min-height: 250px !important;
+    overflow: hidden !important;
+}
+
+.vtexIdUI .vtexIdUI-page {
+    min-height: unset !important;
+}
+
+#vtexIdUI-auth-selector {
+    bottom: -25px !important;
+    z-index: 999999;
+    /* temporario */
+}
+
+#vtexIdUI-auth-selector .modal-header {
+    display: none;
+}
+
+#vtexIdUI-auth-selector .modal-body {
+    background: none;
+}
+
+/* nao ficou legal no flex ainda por isso desativei
+#vtexIdUI-auth-selector .vtexIdUI-providers-list {
+    position: relative;
+    display: flex;
+}*/
+
+.vtexIdUI-confirm-email.vtexIdUI-page-active {
+    z-index: 999999 !important;
+    height: 500px;
+    background: #fff;
+}
+
+#vtexIdUI-auth-selector .modal-body li[ng-show="auth.showClassicAuthentication"] {
+    display: none !important;
+}
+
+/* Botao voltar tela no modal Login */
+/*.vtexIdUI .modal-footer .vtexIdUI-back-link.pull-left { - Oculta todos botoes
+    display: none;
+}*/
+
+#vtexIdUI-form-classic-login .vtexIdUI-back-link {
+    /* Oculta da primeira tela - login classico */
+    display: none;
+}
+
+/* Botao voltar tela no modal Login */
+
+.vtexIdUI .modal-footer {
+    all: unset !important;
+    /* reseta o css padrao da vtex */
+}
+
+.vtexIdUI .vtexIdUI-classic-login-control input,
+.vtexIdUI .vtexIdUI-change-pswd input,
+.vtexIdUI .vtexIdUI-change-exp-pswd input {
+    border-radius: 30px !important;
+    font-size: 18px !important;
+}
+
+#classicLoginBtn {
+    all: unset;
+    /*position: absolute;*/
+    width: 30%;
+    text-align: center;
+    bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #18b858;
+    background: #F90041;
+    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
+    padding: 5px 18px 5px 18px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a[data-i18n="vtexid.forgotPswd"],
+a[data-i18n="vtexid.forgotPswdHelper"] {
+    all: unset;
+    /* reseta o css padrao da vtex */
+    /*visibility: hidden;*/
+    margin-right: 15px;
+}
+
+/*a[data-i18n="vtexid.forgotPswdHelper"]::before { / .control-group .dead-link::before /
+    all: unset; / reseta o css padrao da vtex /
+    visibility: visible !important;
+    position: absolute;
+    margin-top: 8px;
+    right: 15px;
+    content: "Cadastre-se";
+    float: right;
+    background-color: #18b858;
+    padding: 5px 18px 5px 18px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    / font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif; /
+}*/
+
+#classicLoginBtn:hover,
+a[data-i18n="vtexid.forgotPswdHelper"]:hover::before,
+#guestUser:hover::before,
+#loginWithAccessKeyBtn:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    /*scale: 1.02;*/
+}
+
+#vtexIdUI-auth-selector .modal-body:before {
+    content: "Ou acesse usando sua conta:";
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 75px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /*border-top: 1px solid #878787;*/
+}
+
+/* Lista de Logins Alternativos */
+.vtexIdUI-providers-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vtexIdUI-providers-list li {
+    /*all: unset !important;*/
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.vtexIdUI-providers-list li button {
+    width: 70px !important;
+    height: 70px;
+    border-radius: 100% !important;
+    background: unset !important;
+    border-color: #ccc !important;
+    border-top-color: #ccc !important;
+    box-shadow: 0 4px 0 #ccc !important;
+    /*background: linear-gradient(to bottom, #e1e1ea 0%, #5874b3 1%, #405689 66%, #405689 98%, #5874b3 100%) !important; Relativo para cada icon */
+}
+
+.vtexIdUI-providers-list li button i {
+    display: none !important;
+}
+
+.vtexIdUI-providers-list li button span {
+    color: transparent !important;
+    text-shadow: none !important;
+}
+
+#vtexIdUI-google-plus::after {
+    content: "\F3F0";
+    /* display: inline-flex; */
+    /* justify-content: flex-end !important; */
+    font-family: "bootstrap-icons";
+    font-size: 45px;
+    color: #dc503f;
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#vtexIdUI-facebook::after {
+    content: "\f344";
+    /* display: inline-flex; */
+    /* justify-content: flex-end !important; */
+    font-family: "bootstrap-icons";
+    font-size: 70px;
+    color: #1873eb;
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+}
+
+#loginWithAccessKeyBtn {
+    all: unset;
+    position: absolute;
+    top: 20px;
+    width: 30% !important;
+    text-align: center;
+    margin-left: -60px;
+    background: #F90041;
+    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%) !important;
+    padding: 5px 18px 5px 18px;
+    border-radius: 30px !important;
+    box-shadow: unset !important;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+#loginWithAccessKeyBtn::after {
+    content: "Entrar sem senha";
+    color: #fff !important;
+    display: block !important;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+/* Lista de Logins Alternativos */
+
+#guestUser {
+    all: unset;
+    visibility: hidden;
+}
+
+#guestUser::before {
+    visibility: visible !important;
+    content: "Cancelar";
+    color: #fff;
+    font-size: 15px;
+    background: #f11;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+/* Modal Login */
