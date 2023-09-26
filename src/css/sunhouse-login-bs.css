@@ -87,6 +87,7 @@ input:-internal-autofill-selected {
     background-color: -internal-light-dark(#ffffff80, #f900414d) !important;
 }
 
+.alert,
 .alert-wrong-pswd {
     border-radius: 10px !important;
     margin-bottom: unset !important;
@@ -164,7 +165,8 @@ input:-internal-autofill-selected {
 
 .vtexIdUI .vtexIdUI-classic-login-control input,
 .vtexIdUI .vtexIdUI-change-pswd input,
-.vtexIdUI .vtexIdUI-change-exp-pswd input {
+.vtexIdUI .vtexIdUI-change-exp-pswd input,
+#appendedInputButton {
     border-radius: 30px !important;
     font-size: 18px !important;
 }
@@ -424,6 +426,13 @@ form[ng-submit="tryChangePswd()"] .modal-footer .vtexIdUI-back-link {
     border-radius: 30px !important;
     margin-top: 15px !important;
 }
+
+p[ng-show="dontMatchPswd"] {
+    border-radius: 10px !important;
+    margin-top: -10px !important;
+    margin-bottom: -15px !important;
+    padding: 5px 35px 5px 14px !important;
+}
 /* Esqueci minha senha */
 
 /* Entrar sem senha */
@@ -492,6 +501,19 @@ form[ng-disabled="isSendingEmailConfirmation"] .vtexIdUI-email-field::before {
     padding: 10px 80px;
     font-size: 18px;
     font-weight: 500;
+}
+
+p[ng-show="unexpectedError"] {
+    margin-top: 25px !important;
+}
+
+form[ng-submit="confirmAccessKey()"] .modal-footer .vtexIdUI-back-link {
+    margin: unset !important;
+    padding: 10px 30px;
+    margin-top: 30px !important;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
 }
 /* Etapa Codigo de Autenticacao */
 
