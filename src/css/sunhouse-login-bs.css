@@ -365,20 +365,20 @@ a[data-i18n="vtexid.forgotPswdHelper"] {
 
 .vtexid-password-requirements-list {
     margin-left: unset !important;
-    padding-top: 15px;
+    padding-top: 15px !important;
     padding-left: 1rem !important;
-}
-
-.vtexIdUI-back-link {
-    margin: unset !important;
-    padding: 10px 30px;
-    margin-top: 30px !important;
 }
 
 form[ng-submit="tryChangePswd()"] .modal-footer {
     all: unset !important;
     display: inline-flex !important;
     flex-direction: column-reverse !important;
+}
+
+form[ng-submit="tryChangePswd()"] .modal-footer .vtexIdUI-back-link {
+    margin: unset !important;
+    padding: 10px 30px;
+    margin-top: 30px !important;
 }
 /* Change pswd */
 
@@ -408,7 +408,7 @@ form[ng-disabled="isSendingEmailConfirmation"] .modal-footer {
     font-weight: 500;
 }
 
-.vtexIdUI-back-link { /* Ajustar caminho do css para funcionar apenas nessa tela do modal */
+form[ng-disabled="isSendingEmailConfirmation"] .modal-footer .vtexIdUI-back-link { /* Ajustar caminho do css para funcionar apenas nessa tela do modal */
     margin: unset !important;
     padding: 10px 30px;
     margin-top: 30px !important;
