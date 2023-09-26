@@ -624,7 +624,8 @@ table.group.Escritorio {
 @media screen and (max-width:1199px) {
     .produto .productContent__images-dimensions {
         box-sizing: border-box;
-        padding: 24px 16px 0
+        /*padding: 24px 16px 0;*/
+        padding: 0 15px !important;
     }
 }
 
