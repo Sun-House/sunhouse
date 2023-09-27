@@ -372,20 +372,24 @@
     border: 1px solid #e77925
 }
 
-.catalog .btnFilterMobile {
+.catalog .btnFilterMobile { /* Nao tem media queries mas funciona somente dimensao mobile */
     float: left;
     width: 50%;
     height: 40px;
     font-size: 18px;
     font-weight: 500;
     color: #fff;
-    background: #523469;
+    /*background: #523469;*/
+    background: -webkit-linear-gradient(315deg,#ffda00 0,#f90041 100%);
     text-align: center;
     line-height: 40px;
     margin-left: 12px;
-    border-radius: 8px;
+    /*border-radius: 8px;
     -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+    -moz-border-radius: 8px;*/
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     margin-top: 10px
 }
 
@@ -1300,7 +1304,20 @@ Ajuste temporario */
     }
 }
 /* Ajuste Margens da Pagina Mobile */
-
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
+
+/* Precisa ajustar esse para o arquivo Common */
+@media screen and (max-width: 1199px) {
+    .catalog .catalogProducts .shelfProduct {
+        width: 45% !important;
+    }
+
+    .add-to-cart.view-product {
+        font-size: 16px !important;
+        width: 165px;
+        margin-top: 5px !important;
+    }
+}
+/* Precisa ajustar esse para o arquivo Common */
 
 /* Ajuste novo display */
