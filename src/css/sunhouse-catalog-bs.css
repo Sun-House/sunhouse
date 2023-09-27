@@ -1316,6 +1316,10 @@ Ajuste temporario */
         width: 100% !important;
     }
 
+    .catalog .pager.top {
+        display: none !important;
+    }
+
     .catalog .pager.bottom .pages li {
         margin: 2px !important;
     }
