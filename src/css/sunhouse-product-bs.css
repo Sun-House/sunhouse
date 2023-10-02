@@ -1926,7 +1926,8 @@ th.name-field::after {
 }
 
 .produto .breadcrumb_bs {
-    margin-left: 194px;
+    /*margin-left: 194px; - Ajuste para Btn Back */
+    margin-left: 250px; /* Ajuste para Btn Back */
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
