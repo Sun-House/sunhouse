@@ -1102,7 +1102,8 @@ body>.header {
     display: block;
     font-size: 20px;
     font-weight: 700;
-    color: #ff0153;
+    /*color: #ff0153;*/
+    color: #222; /* Pode ser alterada no rebranding */
     text-align: center;
     margin-top: 12px
 }
@@ -1148,6 +1149,21 @@ body>.header {
     padding: 24px 0 48px;
     box-sizing: border-box;
     background-color: inherit !important
+
+    /* Breadcrumb do common padrao sem BS:
+        .breadcrumb {
+            display: flex !important; / Ajuste no Breadcrumb para o Btn Back /
+            justify-content: flex-start !important; / Ajuste no Breadcrumb para o Btn Back /
+            align-items: center !important; / Ajuste no Breadcrumb para o Btn Back /
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+            padding: 15px 0 48px; / Ajuste no Breadcrumb para o Btn Back - padding top de 24px para 15px /
+            box-sizing: border-box;
+            background-color: inherit !important;
+        }
+    */
 }
 
 .breadcrumbCol {
@@ -1231,6 +1247,47 @@ body>.header {
 body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     display: none
 }
+
+/* Back Page Button */
+#button-back {
+    all: unset;
+    /*left: 12%; - aparentemente inutil */
+    padding-right: 20px;
+    cursor: pointer;
+    transition: .3s;
+    transition-timing-function: cubic-bezier(0.97, -0.11, 0, 1.27);
+}
+
+#button-back svg {
+    color: #e77925
+}
+
+.button-hidden {
+    position: fixed !important;
+    top: 70px !important;
+    left: 25px !important;
+    z-index: 999 !important;
+}
+
+.button-hidden svg {
+    width: 60px;
+    height: auto;
+}
+
+@media screen and (max-width: 1199px) {
+    #button-back {
+        transition: .2s;
+        top: -10px;
+        left: -50px;
+    }
+    
+    .button-hidden {
+        top: 70px !important;
+        left: 8px !important;
+        transition-timing-function: cubic-bezier(0.97, -0.11, 0, 1.27);
+    }
+}
+/* Back Page Button */
 
 .opinions {
     display: table;
@@ -1318,13 +1375,28 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     margin-right: 0
 }
 
-.newslettershowed {
+/* Ajuste NewsLetter - Oculta brand do widget footer */
+/*.newslettershowed {
     font-family: Ubuntu;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
     width: 920px
+}*/
+
+.newslettershowed {
+    font-family: Ubuntu;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -90px !important; /* Ajuste NewsLetter - Oculta brand do widget footer */
+    padding-top: 55px !important; /* Ajuste NewsLetter - Oculta brand do widget footer */
+    width: 920px;
+    /* Ajuste NewsLetter - Oculta brand do widget footer */
+    position: relative !important;
+    z-index: 1;
+    /* Ajuste NewsLetter - Oculta brand do widget footer */
 }
+/* Ajuste NewsLetter - Oculta brand do widget footer */
 
 .newslettershowed__infos {
     float: left
@@ -2104,3 +2176,24 @@ body.black-friday .catalogIntro {
     }*/
 }
 /* Banner Promo Fixo All Pages */
+
+/* Botao Ver Produto Vitrines */
+.view-product {
+    background-color: #18b858 !important;
+    opacity: 1 !important;
+    z-index: 1;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: .2s;
+}
+/* Botao Ver Produto Vitrines */
+
+/* Teste comportamental Menu */
+.header__menu * {
+    font-family: 'Open Sans' !important;
+}
+
+#lancamentos, #prontaEntrega {
+    font-weight: unset !important;
+}
+/* Teste comportamental Menu */
