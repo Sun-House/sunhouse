@@ -1085,7 +1085,8 @@ body>.header {
 
 .shelfProduct__name {
     width: 96%;
-    margin: 8px auto 0;
+    /*margin: 8px auto 0;*/
+    margin-top: 8px;
     font-size: 16px;
     font-weight: 600;
     color: #444;
@@ -1104,7 +1105,8 @@ body>.header {
     /*color: #ff0153;*/
     color: #222; /* Pode ser alterada no rebranding */
     text-align: center;
-    margin-top: 12px
+    /*margin-top: 12px;*/
+    margin-top: 2px;
 }
 
 @media screen and (max-width:1199px) {
