@@ -2215,7 +2215,7 @@ Modelo 1 */
 
 #newsletter-plus input:not(input[type="submit"]) {
     border-radius: 30px;
-    border: unset;
+    border: 2px solid #999 !important;
     padding: 10px 20px;
     margin-right: 20px;
     width: 20%;
