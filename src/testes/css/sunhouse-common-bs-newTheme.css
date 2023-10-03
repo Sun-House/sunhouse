@@ -2240,4 +2240,20 @@ Modelo 1 */
 #dformNewsletter .block {
     margin-bottom: unset !important;
 }
+
+.DinamizeDivMessageSuccess {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100% !important;
+    height: 235px;
+    border-radius: 0 !important;
+    margin-top: -110px !important;
+    font-family: 'Montserrat'  !important;
+    font-size: 24px !important;
+    font-weight: 600;
+    padding-top: 90px !important;
+    background-color: #F90041 !important;
+    color: #FFDA00 !important;
+}
 /* Newsletter New - Dinamize */
