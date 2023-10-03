@@ -1279,9 +1279,9 @@ Ajuste temporario */
     color: #fff !important;
 }
 
-.pages .pgCurrent:hover {
+/*.pages .pgCurrent:hover {
     background-color: #F90041;
-}
+}*/
 
 .catalog .catalogOptions {
     border-radius: 20px;
