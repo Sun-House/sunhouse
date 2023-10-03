@@ -30,14 +30,14 @@
     display: block;
     font-size: 30px;
     font-weight: 700;
-    color: #e77925
+    color: #F90041
 }
 
 .catalog .catalogIntro .catalogdescription h2 {
     display: block;
     font-size: 27px;
     font-weight: 600;
-    color: #e77925;
+    color: #F90041;
     padding-top: 25px
 }
 
@@ -45,7 +45,7 @@
     display: block;
     font-size: 20px;
     font-weight: 600;
-    color: #e77925;
+    color: #F90041;
     padding-top: 8px
 }
 
@@ -53,7 +53,7 @@
     display: block;
     font-size: 24px;
     font-weight: 500;
-    color: #e77925;
+    color: #F90041;
     padding-top: 25px
 }
 
@@ -61,7 +61,7 @@
     display: block;
     font-size: 22px;
     font-weight: 450;
-    color: #e77925;
+    color: #F90041;
     padding-top: 30px
 }
 
@@ -369,7 +369,7 @@
 
 .catalog .catalogFilters .content .filterSelect__options label input:checked,
 .catalog .catalogFilters .content .filterSelect__show__options label input:checked {
-    border: 1px solid #e77925
+    border: 1px solid #F90041
 }
 
 .catalog .btnFilterMobile { /* Nao tem media queries mas funciona somente dimensao mobile */
@@ -610,7 +610,7 @@
 
 .catalog .pager li.previous:before {
     content: "\F22D";
-    color: #e77925;
+    color: #F90041;
     display: inline-block;
     font-family: bootstrap-icons !important;
     font-style: normal;
@@ -643,7 +643,7 @@
 
 .catalog .pager li.next:after {
     content: "\F231";
-    color: #e77925;
+    color: #F90041;
     display: inline-block;
     font-family: bootstrap-icons !important;
     font-style: normal;
@@ -785,7 +785,7 @@ body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2) a::after {
 }
 
 body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2) a {
-    color: #e77925;
+    color: #F90041;
     text-decoration: underline !important
 }
 
@@ -1108,12 +1108,12 @@ body.colecao-dinamica>img {
         width: 8px;
         height: 8px;
         border-radius: 100%;
-        border: 1px solid #e77925;
+        border: 1px solid #F90041;
         margin: 0 4px
     }
 
     .catalog .slick-dots li.slick-active {
-        background: #e77925
+        background: #F90041
     }
 }
 
@@ -1170,7 +1170,7 @@ Ajuste temporario */
 
 #caretDown_menu_sh {
     font-size: 20px;
-    color: #e77925;
+    color: #F90041;
 }
 
 .orderSelect__options {
@@ -1242,7 +1242,7 @@ Ajuste temporario */
 
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
 #button-back i {
-    color: #e77925;
+    color: #F90041;
     font-size: 40px;
 }
 
@@ -1275,12 +1275,12 @@ Ajuste temporario */
 
 .pages .pgCurrent {
     text-decoration: unset !important;
-    background-color: #e77925;
+    background-color: #F90041;
     color: #fff !important;
 }
 
 .pages .pgCurrent:hover {
-    background-color: #e77925;
+    background-color: #F90041;
 }
 
 .catalog .catalogOptions {
