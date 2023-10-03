@@ -2187,3 +2187,52 @@ body.black-friday .catalogIntro {
     font-weight: unset !important;
 }
 Teste comportamental Menu */
+
+/* Newsletter New - Dinamize */
+/* Modelo 1
+#newsletter-new {
+    padding: 50px;
+    text-align: center;
+    background-color: #F90041;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+Modelo 1 */
+
+/* Modelo 2 */
+#newsletter-new {
+    padding: 50px;
+    text-align: center;
+    background-color: #F90041;
+    color: #fff;
+
+}
+/* Modelo 2 */
+
+#newsletter-plus input:not(input[type="submit"]) {
+    border-radius: 30px;
+    border: unset;
+    padding: 10px 20px;
+    margin-right: 20px;
+    width: 20%;
+}
+
+#newsletter-plus input[type="submit"] {
+    color: #F90041;
+    background-color: #FFDA00;
+    border: unset;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+#newsletter-plus input[type="submit"]:hover {
+    scale: 1.1;
+    transition: .3s;
+}
+/* Newsletter New - Dinamize */
