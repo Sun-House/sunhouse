@@ -64,7 +64,7 @@ $(document).ready((function () {
             if (0 === $(this).find(".shelfProduct__image.hover img").length && $(this).find(".shelfProduct__image img").clone().appendTo($(this).find(".shelfProduct__image.hover")), 0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && !$(this).hasClass("pc")) {
                 $(this).addClass("pc");
                 var b = (parseInt($(this).find(".shelfProduct__price-best span").html().replace("R$ ", "").replace(",", "").replace(".", "")) / 1e3).toFixed(2).replace(".", ",");
-                $(this).find(".shelfProduct__price-installment").html("12x de R$ " + b);
+                $(this).find(".shelfProduct__price-installment").html("10x R$ " + b);
                 var a = parseFloat($(this).find(".shelfProduct__price-best span").html().replace("R$ ", "").replace(".", "").replace(",", "."));
                 
                 // Codigo onde é feito o calculo do desconto a vista para a shelf
