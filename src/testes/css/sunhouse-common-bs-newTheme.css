@@ -2225,7 +2225,8 @@ Modelo 1 */
     color: #F90041;
     background-color: #FFDA00;
     border: unset;
-    padding: 10px 40px;
+    padding: 0 40px !important;
+    margin: unset !important;
     border-radius: 30px;
     font-weight: 600;
     transition: .3s;
@@ -2234,5 +2235,9 @@ Modelo 1 */
 #newsletter-new input[type="submit"]:hover {
     scale: 1.1;
     transition: .3s;
+}
+
+#dformNewsletter .block {
+    margin-bottom: unset !important;
 }
 /* Newsletter New - Dinamize */
