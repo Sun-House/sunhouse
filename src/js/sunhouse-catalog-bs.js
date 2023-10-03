@@ -67,9 +67,9 @@ $(document).ready((function () {
             b > a && (a = b)
         })), a < 300 && (a = 386), setInterval((function () {
             $(".shelfProduct").css("height", a + "px"), $(".shelfProduct").each((function () {
-                if (0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && 0 > $(this).find(".shelfProduct__price-installment").text().indexOf("10x de")) {
+                if (0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && 0 > $(this).find(".shelfProduct__price-installment").text().indexOf("12x de")) {
                     var a = (parseInt($(this).find(".shelfProduct__price-best span").html().replace("R$ ", "").replace(",", "").replace(".", "")) / 1e3).toFixed(2).replace(".", ",");
-                    $(this).find(".shelfProduct__price-installment").html("10x de R$ " + a)
+                    $(this).find(".shelfProduct__price-installment").html("12x de R$ " + a)
                 }
             }))
         }), 500)

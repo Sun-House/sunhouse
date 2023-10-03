@@ -1941,7 +1941,7 @@ body.black-friday .catalogIntro {
 
 .cc-window {
     box-shadow: 1px 1px 15px 5px #666 !important;
-    border-radius: 10px !important;
+    border-radius: 50px !important;
     margin-bottom: 15px !important;
     margin-left: 15px !important;
     width: 75% !important
@@ -1952,11 +1952,11 @@ body.black-friday .catalogIntro {
 }
 
 .cc-btn {
-    border-radius: 10px !important
+    border-radius: 30px !important
 }
 
 .cc-link {
-    color: #ff6e00 !important
+    color: #F90041 !important
 }
 
 @media screen and (max-width:1199px) {
