@@ -124,9 +124,10 @@ a.caretMain:after {
 }
 
 .pages .pgCurrent {
+    /*background-color: #f90041;*/
     background-color: #ffda00;
-    background-color: #f90041;
-    /*color: #000 !important;*/
+    border: 2px solid #FFDA00;
+    color: #000 !important;
 }
 
 .catalog .pager li.next:after {
