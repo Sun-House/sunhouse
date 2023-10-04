@@ -1785,7 +1785,8 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 
 @media screen and (max-width:1199px) {
     #backToTop i {
-        font-size: 31px;
+        /*font-size: 31px;*/
+        font-size: 40px;
     }
 }
 
@@ -2237,6 +2238,12 @@ Modelo 1 */
     transition: .3s;
 }
 
+#dformNewsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #dformNewsletter .block {
     margin-bottom: unset !important;
 }
@@ -2273,6 +2280,16 @@ Modelo 1 */
     #dformNewsletter input {
         margin-bottom: 10px;
         margin-right: unset !important;
+    }
+
+    #newsletter-send-icon {
+        font-size: 50px;
+    }
+
+    .DinamizeDivMessageSuccess {
+        height: 300px;
+        margin-top: -130px!important;
+        padding-top: 75px!important;
     }
 }
 /* Newsletter New - Dinamize */
