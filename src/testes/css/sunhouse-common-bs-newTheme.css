@@ -2259,12 +2259,16 @@ Modelo 1 */
     /*margin-top: -110px !important;*/
     margin-top: -98px !important;
     /*padding-top: 90px !important;*/
-    padding-top: 60px !important;
+    padding-top: 35px !important;
     font-family: 'Montserrat'  !important;
     font-size: 24px !important;
     font-weight: 600;
     background-color: #F90041 !important;
     color: #FFDA00 !important;
+}
+
+#newsletter-send-icon {
+    font-size: 60px;
 }
 
 @media screen and (max-width: 1199px) {
