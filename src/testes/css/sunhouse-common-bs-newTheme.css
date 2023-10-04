@@ -1572,7 +1572,7 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     .footer.texts {
         box-sizing: border-box;
         padding: 24px 16px;
-        margin-top: 48px
+        /*margin-top: 48px - removido por conta do novo block Newsletter */
     }
 }
 
@@ -2255,5 +2255,24 @@ Modelo 1 */
     padding-top: 90px !important;
     background-color: #F90041 !important;
     color: #FFDA00 !important;
+}
+
+@media screen and (max-width: 1199px) {
+    #newsletter-new {
+        padding: 40px 20px;
+    }
+
+    #newsletter-new h5 {
+        width: 100% !important;
+    }
+
+    #dformNewsletter {
+        flex-direction: column;
+    }
+
+    #dformNewsletter input {
+        margin-bottom: 10px;
+        margin-right: unset !important;
+    }
 }
 /* Newsletter New - Dinamize */
