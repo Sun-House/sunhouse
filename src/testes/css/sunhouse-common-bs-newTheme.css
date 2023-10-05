@@ -1310,11 +1310,12 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     }
 }
 
-.opinions>h2 {
+.opinions > h2 {
     font-size: 30px;
     font-weight: 900;
     color: #4c3767;
-    padding: 72px 0 32px
+    /*padding: 72px 0 32px - pode dar algum bug */
+    padding-top: 32px !important;
 }
 
 .hdNewsletter {

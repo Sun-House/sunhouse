@@ -408,6 +408,20 @@ a.caretMain:after {
     }
 }
 /* Ajuste para nav de Filters BS */
+
+@media screen and (max-width: 1199px){
+    .produto .productContent__infos-freight #popupCalculoFreteWrapper:before {
+        display: none;
+    }
+
+    .produto .productContent__infos-freight #popupCalculoFreteWrapper {
+        padding: 15px 0;
+    }
+
+    .produto .breadcrumb_bs {
+        padding-left: 15px !important;
+    }
+}
 /* Produto template */
 
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
