@@ -416,6 +416,11 @@ a.caretMain:after {
 }
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
 
+/* Para Menu */
+.dropbtn #departLink {
+    font-family: 'Montserrat';
+}
+
 /* Para Menu Mobile */
 @media screen and (max-width: 1199px) {
     .hambX-line,
@@ -430,3 +435,22 @@ a.caretMain:after {
         background-color: #F90041;
     }
 }
+/* Para Menu Mobile */
+/* Para Menu */
+
+/* Para o conteiner do Insta Widget */
+.catalog .highlights.designers#instaContainer, /* a principio nao notei problemas no .catalog */
+.produto .highlights.designers#instaContainer {
+    margin-left: 125px !important;
+    /* margin-left: 140px; --> .catalog*/
+}
+/* Para o conteiner do Insta Widget */
+
+/* Ajuste cor H2 vitrines e Insta no Template PDP */
+.produto .shelfQCCT h2,
+.produto .shelfRecents h2,
+.produto .shelfRecomended h2,
+.highlights__content > h2 {
+    color: #000 !important;
+}
+/* Ajuste cor H2 vitrines e Insta no Template PDP */
