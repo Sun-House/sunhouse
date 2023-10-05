@@ -28,10 +28,17 @@
     visibility: visible !important
 }
 
+/* Teste
 .stickyTopbar .topbar__content {
     scale: .9;
     transition: all .3s cubic-bezier(.12, 1.8, 1, 1.13) !important
+}*/
+
+.topbar__content {
+    scale: .9;
+    transition: all .3s cubic-bezier(.12, 1.8, 1, 1.13) !important
 }
+/* Teste */
 
 .topbar {
     margin-bottom: 12px
