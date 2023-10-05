@@ -204,7 +204,7 @@ div#smarthint-search-result {
         /*margin-top: 5px;*/
         margin-top: 16px;
         margin-bottom: 0 !important;
-        /*padding-left: 10px*/
+        margin-left: 10px; /* Pode dar erro mas sem ele nao fica bom */
     }
 
     .wrapHeaderFixed .stickyHeader .header__mobilemenu {

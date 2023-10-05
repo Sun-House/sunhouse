@@ -42,6 +42,15 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     border-radius: 0 30px 30px 0 !important;
 }
 
+.header__cart {
+    transition: .3s;
+}
+
+.header__cart:hover {
+    scale: 1.07;
+    transition: .3s;
+}
+
 .header__cart-items {
     background-color: #FFDA00 !important;
     color: #F90041 !important;
@@ -50,12 +59,14 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 #lancamentos,
 #prontaEntrega {
     border-radius: 30px !important;
+    transition: .3s;
 }
 
 #lancamentos:hover,
 #prontaEntrega:hover {
-    transition: .3s !important;
-    opacity: .8;
+    /*opacity: .8;*/
+    transition: 1.07;
+    transition: .3s;
 }
 
 #lancamentos {
@@ -404,3 +415,18 @@ a.caretMain:after {
     top: 125px !important;
 }
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
+
+/* Para Menu Mobile */
+@media screen and (max-width: 1199px) {
+    .hambX-line,
+    .hambX-line::before,
+    .hambX-line::after,
+    .hamb-line::before,
+    .hamb-line::after,
+    .side-menu:checked ~ .hamb .hamb-line::before,
+    .side-menu:checked ~ .hamb .hamb-line::after,
+    .side-menu:checked~.hamb2 .hamb-line::before,
+    .side-menu:checked~.hamb2 .hamb-line::after {
+        background-color: #F90041;
+    }
+}
