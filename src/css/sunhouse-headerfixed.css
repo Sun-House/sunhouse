@@ -8,10 +8,11 @@
     visibility: hidden
 }
 
+/* Não oculta menu - pode dar algum BO mas é a forma que encontrei de funcionar o novo menu mobile - validar
 .headerOcult {
     visibility: hidden;
     height: 200px
-}
+}*/
 
 .wrapHeader {
     display: flex;
