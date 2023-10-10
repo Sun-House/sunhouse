@@ -107,6 +107,12 @@ a.caretMain:after {
     font-size: 40px;
 }
 
+@media screen and (max-width: 1199px){
+    #button-back i {
+        font-size: 50px !important;
+    }
+}
+
 .catalog .catalogIntro .catalogdescription h1,
 .catalog .catalogIntro .catalogdescription h2,
 .catalog .catalogIntro .catalogdescription h3 {
@@ -427,6 +433,12 @@ a.caretMain:after {
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
 .button-hidden {
     top: 125px !important;
+}
+
+@media screen and (max-width: 1199px){
+    .button-hidden {
+        top: 140px !important;
+    }
 }
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
 
