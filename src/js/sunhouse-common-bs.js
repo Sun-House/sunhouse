@@ -27,38 +27,10 @@ $(document).ready((function () {
                 window.location = "/checkout"
             }))
         }))
-    })), $(".shelf li:not(.shelfProduct)").remove(), $(".fulltext-search-box").val("Encontre Mesas, Cadeiras, Racks..."), $(".fulltext-search-box").focus((function () {
-        "Encontre Mesas, Cadeiras, Racks..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
-            "" == $(this).val() && $(this).val("Encontre Mesas, Cadeiras, Racks...")
+    })), $(".shelf li:not(.shelfProduct)").remove(), $(".fulltext-search-box").val("Buscar Produtos..."), $(".fulltext-search-box").focus((function () {
+        "Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
+            "" == $(this).val() && $(this).val("Buscar Produtos...")
         }))
-    })), $(".newslettershowed__form > a").click((function () {
-        var a = {};
-        a.email = $(".newslettershowed__form > input").val(), "" != $(".newslettershowed__form > input").val() ? $(".newslettershowed__form > input").val().match(/[^@]+@[^@]+\.[^@]+/) ? ($("#newsletterClientEmail").val(a.email), $("#newsletterButtonOK").click(), $(".newslettershowed__infos").css({
-            width: "auto",
-            "margin-top": "14px"
-        }), window.innerWidth > 1200 ? $(".newslettershowed__infos div").css({
-            width: "auto",
-            "line-height": "56px"
-        }) : $(".newslettershowed__infos div").css({
-            width: "auto",
-            "line-height": "auto"
-        }), $(".newslettershowed__infos div").text("Obrigado! O seu cadastro foi feito com sucesso."), $(".newslettershowed__form").remove()) : alert("Erro! Verifique os dados inseridos e tente novamente.") : alert("Erro! Preencha seu e-mail.")
-    })), window.innerWidth < 1200 ? ($("a.hasSub").attr("href", "javascript:void(0)"), $(".header__menu-dropdown--content:eq(0)").insertAfter(".header__menu-content > ul > li:eq(0)"), $(".header__menu-dropdown--content:eq(1)").insertAfter(".header__menu-content > ul > li:eq(1)"), $(".header__menu-content > ul > li").click((function (a) {
-        $(this).next(".header__menu-dropdown--content").slideToggle()
-    })), $('<a href="javascript:void(0)" id="closeMobileMenu">X</a>').appendTo(".header__menu"), $(".header__mobilemenu").click((function () {
-        $(".header__menu").addClass("active")
-    })), $("#closeMobileMenu").click((function () {
-        $(".header__menu").removeClass("active")
-    }))) : $(".header__menu > div > ul li a").hover((function () {
-        if ($(this).hasClass("hasSub")) {
-            $(".header__menu-dropdown,.header__menu-dropdown--content").removeClass("active");
-            var a = ".header__menu-dropdown--content." + $(this).data("dropdown");
-            $(a).addClass("active"), $(".header__menu-dropdown").addClass("active"), $(".header__menu-dropdown").mouseleave((function () {
-                $(".header__menu-dropdown,.header__menu-dropdown--content").removeClass("active")
-            })), $(".header").hover((function () {
-                $(".header__menu-dropdown,.header__menu-dropdown--content").removeClass("active")
-            }))
-        } else $(".header__menu-dropdown,.header__menu-dropdown--content").removeClass("active")
     })), setInterval((function () {
         $(".shelfProduct").each((function () {
             if (0 === $(this).find(".shelfProduct__image.hover img").length && $(this).find(".shelfProduct__image img").clone().appendTo($(this).find(".shelfProduct__image.hover")), 0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && !$(this).hasClass("pc")) {
