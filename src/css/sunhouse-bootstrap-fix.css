@@ -154,6 +154,12 @@ ol, ul {
         margin-left: 25px !important;
     }
     /* Para o template de Catalog BS */
+
+    /* Para todos templates */
+    .breadcrumb_bs ul {
+        margin-bottom: unset;
+    }
+    /* Para todos templates */
 }
 /* Breadcrumb BS */
 
