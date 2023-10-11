@@ -2058,7 +2058,9 @@ body.black-friday .catalogIntro {
 
 @media screen and (max-width:1350px) {
     * {
-        overflow-x: clip
+        overflow-x: clip;
+        -webkit-overflow-x: clip;
+        -moz-overflow-x: clip;
     }
 
     /*.topbar__content {
