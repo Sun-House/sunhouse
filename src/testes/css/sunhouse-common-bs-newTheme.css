@@ -2323,7 +2323,7 @@ Modelo 1 */
 Modelo com preco 10x */
 
 #cluster_1 {
-    max-width: 240px !important;
+    max-width: 240px;
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;

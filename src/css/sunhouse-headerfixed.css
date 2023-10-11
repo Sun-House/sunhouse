@@ -192,9 +192,9 @@ div#smarthint-search-result {
         margin-right: 15px !important;
     }
 
-    .header__search {
+    /*.header__search { - Acho que deu ruim no novo tema do site - desativei temporariamente
         margin-right: 60px !important
-    }
+    }*/
 
     .wrapHeader .header {
         padding-right: 15px;
