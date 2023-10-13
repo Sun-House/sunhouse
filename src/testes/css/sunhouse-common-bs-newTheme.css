@@ -1155,6 +1155,10 @@ body>.header {
     background-color: inherit !important;
 }
 
+.breadcrumb_bs ul {
+    margin-bottom: unset !important; /* para todos templates */
+}
+
 .breadcrumbCol {
     width: 100%;
     margin-left: auto;
