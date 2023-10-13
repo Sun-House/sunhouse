@@ -2396,3 +2396,11 @@ Btn Comprar */
     }
 }
 /* Template Catalog - Ajustes */
+
+/* Menu Botoes */
+#lancamentos:hover,
+#prontaEntrega:hover {
+    opacity: .8 !important;
+    transition: .3s;
+}
+/* Menu Botoes */
