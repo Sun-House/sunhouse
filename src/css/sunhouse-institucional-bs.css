@@ -91,11 +91,11 @@
     --bs-accordion-inner-border-radius: 20px;
 }
 
-.breadcrumb {
-    padding: 24px 0 12px !important;
+.institucional .breadcrumb_bs {
+    margin-left: 210px !important;
 }
 
-.breadcrumb_bs ul li:last-child a:after {
+.institucional .breadcrumb_bs ul li:last-child a:after {
     display: none;
 }
 
