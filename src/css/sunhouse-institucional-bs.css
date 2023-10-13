@@ -1,3 +1,7 @@
+.institucional .header__menu {
+    border-bottom: 1px solid #ddd;
+}
+
 /* Ajustes Menu e Menu Fixed */
 .stickyHeader__menu-content {
     margin-bottom: -15px !important;
@@ -89,6 +93,10 @@
 
 .breadcrumb {
     padding: 24px 0 12px !important;
+}
+
+.breadcrumb_bs ul li:last-child a:after {
+    display: none;
 }
 
 #content-page h1 {

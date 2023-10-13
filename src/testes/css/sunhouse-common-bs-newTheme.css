@@ -209,7 +209,7 @@ table {
 
 .topbar__content>div a.strong {
     font-weight: 600;
-    color: #e77925
+    color: #F90041
 }
 
 .topbar__content>div a i {
@@ -399,7 +399,7 @@ body>.header {
     float: left;
     width: 50px;
     height: 45px;
-    background-color: #e77925;
+    background-color: #F90041;
     background-image: url(https://sunhouse.vteximg.com.br/arquivos/search.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -506,7 +506,7 @@ body>.header {
     .hambCl {
         position: absolute;
         font-size: 35px;
-        color: #e77925;
+        color: #F90041;
         padding-left: 50%;
         border-radius: 100%;
         bottom: 10%
@@ -610,7 +610,7 @@ body>.header {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #e77925;
+    border-top: 4px solid #F90041;
     clear: both
 }
 
@@ -1157,6 +1157,7 @@ body>.header {
 
 .breadcrumb_bs ul {
     margin-bottom: unset !important; /* para todos templates */
+    font-weight: 500;
 }
 
 .breadcrumbCol {
@@ -1220,7 +1221,7 @@ body>.header {
 }
 
 .breadcrumb_bs ul li li:last-of-type a {
-    color: #e77925 !important;
+    color: #F90041 !important;
     text-decoration: underline !important
 }
 
@@ -1229,7 +1230,7 @@ body>.header {
 }
 
 .breadcrumbCol ul li li:last-of-type a {
-    color: #e77925;
+    color: #F90041;
     text-decoration: underline !important
 }
 
@@ -1252,7 +1253,7 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 }
 
 #button-back svg {
-    color: #e77925
+    color: #F90041
 }
 
 .button-hidden {
@@ -1262,9 +1263,13 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     z-index: 999 !important;
 }
 
-.button-hidden svg {
+/*.button-hidden svg {
     width: 60px;
     height: auto;
+}*/
+
+.button-hidden i {
+    font-size: 60px!important;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1744,7 +1749,7 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     cursor: pointer;
     display: none;
     font-family: Montserrat;
-    color: #e77925;
+    color: #F90041;
     position: fixed;
     right: 16px;
     bottom: 128px;
