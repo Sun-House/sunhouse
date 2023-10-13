@@ -6,6 +6,10 @@
     background: #eceff1
 }
 
+.institucional #instaContainer {
+    background-color: #eceff1;
+}
+
 #bannerInstaTest {
     display: flex
 }
