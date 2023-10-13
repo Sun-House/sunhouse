@@ -359,24 +359,25 @@ table.group.Escritorio {
     content: "BLACK";
     font-size: 13px;
     font-weight: 600;
-    color: #fb004d
+    color: #F90041;
 }
 
 @media screen and (max-width:1199px) {
     .produto .productContent__images-flags .flag.black-friday:before {
-        font-size: 10px
+        font-size: 9px;
+        margin-bottom: -2px;
     }
 }
 
 .produto .productContent__images-flags .flag.black-friday:after {
     content: "FRIDAY";
     font-size: 12px;
-    color: #fff
+    color: #FFDA00
 }
 
 @media screen and (max-width:1199px) {
     .produto .productContent__images-flags .flag.black-friday:after {
-        font-size: 10px
+        font-size: 9px
     }
 
     .produto .productContent__images-flags .flag.flag-30--desconto-off,
