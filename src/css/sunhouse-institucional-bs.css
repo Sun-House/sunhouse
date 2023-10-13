@@ -20,7 +20,6 @@
     background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);
 }
-
 /* Ajustes Menu e Menu Fixed */
 
 /* Ajustes Footer */
@@ -36,12 +35,7 @@
     display: inline-block;
     margin-right: 5px;
 }
-
 /* Ajustes Footer */
-
-/*#backToTop span strong {
-    margin-top: -16px;
-}*/
 
 #content-page {
     margin: 0 200px;
@@ -52,7 +46,7 @@
 }
 
 .card {
-    --bs-card-border-radius: 20px;
+    --bs-card-border-radius: 20px !important;
 }
 
 #rowCards div .card {
@@ -255,7 +249,6 @@
     --bs-btn-disabled-bg: #6c757d;
     --bs-btn-disabled-border-color: #6c757d;
 }
-
 /* Modals */
 
 #btn-go-page {
