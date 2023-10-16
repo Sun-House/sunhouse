@@ -57,6 +57,10 @@
     --bs-card-border-radius: 20px !important;
 }
 
+.main-card {
+    padding: 25px 25px 60px !important;
+}
+
 #rowCards div .card {
     min-height: 260px;
 }
