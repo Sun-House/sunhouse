@@ -101,6 +101,10 @@
     --bs-accordion-inner-border-radius: 20px !important;
 }
 
+.accordion-button:not(.collapsed)::after {
+    filter: invert(100%) sepia(58%) saturate(6723%) hue-rotate(336deg) brightness(103%) contrast(110%) !important;
+}
+
 .institucional .breadcrumb_bs {
     margin-left: 210px !important;
 }
