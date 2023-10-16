@@ -309,3 +309,7 @@
         flex-direction: column;
     }
 }
+
+#modalFaqFull .modal-body {
+    padding: 35px 150px !important;
+}
