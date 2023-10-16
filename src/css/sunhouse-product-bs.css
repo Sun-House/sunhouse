@@ -360,6 +360,7 @@ table.group.Escritorio {
     font-size: 13px;
     font-weight: 600;
     color: #F90041;
+    margin-bottom: -2px;
 }
 
 @media screen and (max-width:1199px) {
