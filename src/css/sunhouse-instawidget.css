@@ -126,7 +126,8 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 }
 
 @media screen and (min-width:1200px) {
-    .home .instaWrap {
+    .home .instaWrap,
+    .institucional .instaWrap {
         margin-left: 70px
     }
 }
