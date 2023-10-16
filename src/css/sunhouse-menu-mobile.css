@@ -1,588 +1,199 @@
-.dropdown-content a:hover,
-div.dropdownLv2:hover,
-div.dropdownLv3:hover {
-    background-color: #fff
-}
-
-div.dropdown-contentLv2:hover~#departLink,
-div.dropdown:hover a #departLink,
-div.dropdownLv2:hover,
-div.dropdownLv3:hover {
-    color: #e77925;
-    transition: .5s
-}
-
-div.dropdownLv2 a:hover {
-    color: #e77925;
-    transition: .5s
-}
-
-.caretRight,
-.caretRightFix,
-.logo {
-    display: none
-}
-
-.hambX {
-    cursor: pointer;
-    float: left;
-    padding: 15px 8px;
-    position: relative;
-    left: 0;
-    top: 50px
-}
-
-.hambX-line {
-    background-color: #e77925;
-    display: block;
-    height: 4px;
-    position: relative;
-    width: 24px
-}
-
-.hambX-line::after,
-.hambX-line::before {
-    background-color: #e77925;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%
-}
-
-.hambX-line::before {
-    top: 5px;
-    border-radius: 10px;
-    width: 30px
-}
-
-.hambX-line::after {
-    top: -5px;
-    border-radius: 10px;
-    width: 30px
-}
-
-.side-menu:checked~.hambX .hambX-line {
-    background: 0 0
-}
-
-.side-menu:checked~.hambX .hambX-line::before {
-    transform: rotate(-45deg);
-    top: 0
-}
-
-.side-menu:checked~.hambX .hambX-line::after {
-    transform: rotate(45deg);
-    top: 0
-}
-
-.hamb {
-    cursor: pointer;
-    float: right;
-    position: relative;
-    padding: 22px 50px
-}
-
-.hamb2 {
-    cursor: pointer;
-    float: right;
-    position: relative;
-    top: -50px;
-    padding: 22px 41px
-}
-
-.hamb-line {
-    display: block;
-    height: 3px;
-    position: relative;
-    width: 24px
-}
-
-.hamb-line::before {
-    background-color: #e77925;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 70%;
-    transform: rotate(-45deg);
-    left: 8px;
-    top: 0;
-    height: 5px
-}
-
-.hamb-line::after {
-    background-color: #e77925;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 70%;
-    transform: rotate(45deg);
-    right: 8px;
-    top: 0;
-    height: 5px
-}
-
-.side-menu {
-    display: none
-}
-
-#side-menu1:checked~#dropdown-content1 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu2:checked~#dropdown-content2 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    overflow-y: scroll
-}
-
-#side-menu3:checked~#dropdown-content3 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu4:checked~#dropdown-content4 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu5:checked~#dropdown-contentLv2-1 {
-    display: block !important;
-    height: auto;
-    left: 0;
-    position: absolute;
-    top: 52px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll
-}
-
-#side-menu6:checked~#dropdown-contentLv2-2 {
-    display: block !important;
-    height: auto;
-    left: 0;
-    position: absolute;
-    top: 100px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu7:checked~#dropdown-contentLv2-3 {
-    display: block !important;
-    height: auto;
-    left: 0;
-    position: absolute;
-    top: 150px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu8:checked~#dropdown-contentLv2-4 {
-    display: block !important;
-    height: auto;
-    left: 0;
-    position: absolute;
-    top: 200px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu9:checked~#dropdown-contentLv2-5 {
-    display: block !important;
-    height: auto;
-    left: 0;
-    position: absolute;
-    top: 250px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll
-}
-
-#side-menu10:checked~#dropdown-contentLv2-6 {
-    display: block !important;
-    height: auto;
-    left: 0;
-    position: absolute;
-    top: 310px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu11:checked~#dropdown-contentLv3-1 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 150px;
-    bottom: 0;
-    padding-left: 20px;
-    overflow-y: scroll
-}
-
-#side-menu12:checked~#dropdown-contentLv3-2 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 255px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu13:checked~#dropdown-contentLv3-3 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 365px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu14:checked~#dropdown-contentLv3-4 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 155px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu15:checked~#dropdown-contentLv3-5 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 260px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu16:checked~#dropdown-contentLv3-6 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 160px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu17:checked~#dropdown-contentLv3-7 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 720px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu18:checked~#dropdown-contentLv3-8 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 100px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu19:checked~#dropdown-contentLv3-9 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 150px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu20:checked~#dropdown-contentLv3-10 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 200px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu21:checked~#dropdown-contentLv3-11 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 150px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu22:checked~#dropdown-contentLv3-4 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 155px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu23:checked~#dropdown-contentLv3-5 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 260px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu24:checked~#dropdown-contentLv3-3 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 365px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu25:checked~#dropdown-contentLv3-6 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 160px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu26:checked~#dropdown-contentLv3-7 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 675px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-#side-menu27:checked~#dropdown-contentLv3-11 {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 150px;
-    padding-left: 20px;
-    overflow-y: scroll;
-    padding-bottom: 100%
-}
-
-.side-menu:checked~.hamb .hamb-line {
-    background: 0 0
-}
-
-.side-menu:checked~.hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top: 0;
-    background-color: #e77925;
-    width: 100%;
-    left: 0;
-    height: 3px
-}
-
-.side-menu:checked~.hamb .hamb-line::after {
-    transform: rotate(45deg);
-    background-color: #e77925;
-    width: 100%;
-    right: 0;
-    height: 3px
-}
-
-.side-menu:checked~.hamb2 .hamb-line {
-    background: 0 0
-}
-
-.side-menu:checked~.hamb2 .hamb-line::before {
-    transform: rotate(-45deg);
-    top: 0;
-    background-color: #e77925;
-    width: 100%;
-    left: 0;
-    height: 3px
-}
-
-.side-menu:checked~.hamb2 .hamb-line::after {
-    transform: rotate(45deg);
-    background-color: #e77925;
-    width: 100%;
-    right: 0;
-    height: 3px
-}
-
-.MenuNew {
-    height: 600px
-}
-
-.headerMobMenu {
-    display: block !important;
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 32px;
-    padding: 5px 5px
-}
-
-.navMobMenu {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin-left: 20px;
-    margin-top: 80px
-}
-
-.dropdown {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px 10px
-}
-
-a.caretMain:after {
-    display: none;
-    position: relative;
-    top: 15px;
-    left: 5px
-}
-
-.dropdown-content {
-    width: 90%;
-    display: none !important;
-    box-shadow: 0 -8px 16px -16px rgb(0 0 0 / 20%)
-}
-
-.dropdown-contentLv2,
-.dropdown-contentLv3 {
-    width: 90%;
-    display: none !important;
-    box-shadow: 0 -8px 16px -16px rgb(0 0 0 / 20%)
-}
-
-#menuBtn {
-    padding-left: 0 !important;
-    padding-top: 15px
-}
-
-.closeMobBtnImg {
-    width: 50px;
-    height: auto
-}
-
-#closeMobBtn {
-    display: block !important;
-    margin-left: 37%;
-    margin-top: 65px;
-    position: relative;
-    bottom: 10%;
-    z-index: 100
-}
-
-.topbar {
-    z-index: 1000;
-    position: relative
-}
-
-.topbar__content {
-    position: fixed;
-    border-bottom: 1px solid #ddd;
-    background-color: #fff
-}
-
-.header__mobilemenu {
-    margin: 9px 24px 0 0 !important
-}
-
-a#closeMobileMenu {
-    display: none
-}
-
-.dropdown-contentLv2>table>tbody>tr>td,
-.dropdown-contentLv3>table>tbody>tr>td {
-    display: block
-}
-
-.tblContent {
-    display: none !important
-}
-
-.mobDisplay {
-    display: block !important
+/* Ajustes Pontuais Menu New Mobile */
+@media screen and (max-width: 1199px) {
+    .navMobMenu {
+        display: none !important;
+    }
+    
+    #menu-mobile-new {
+        display: block !important;
+    }
+    
+    /* Precisa ajustar no arquivo Css do Menu-mobile */
+    .caretRight {
+        display: block !important;
+    }
+    /* Precisa ajustar no arquivo Css do Menu-mobile */
+
+    /* TESTE */
+    .wrapHeader .header {
+        width: 90%;
+    }
+
+    .header__mobilemenu {
+        /*width: 30px !important;*/
+        height: 30px !important;
+    }
+    /* TESTE */
+    
+    /* Ajusta para mostrar o Menu sempre quando ativo - Mobile */
+    #swrapHeader { 
+        position: relative !important;
+        z-index: 1001 !important;
+    }
+    /* Ajusta para mostrar o Menu sempre quando ativo - Mobile */
+}
+/* Ajustes Pontuais Menu New Mobile */
+
+@media screen and (max-width: 1199px) {
+    .sh-animate-left {
+        position: relative;
+        animation: animateleft 0.4s forwards;
+    }
+
+    @keyframes animateleft {
+        from {
+            left: -300px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    .sh-animate-left-hide {
+        animation: animateleft-hide 0.4s forwards;
+    }
+
+    @keyframes animateleft-hide {
+        from {
+            left: 0;
+            opacity: 1;
+        }
+
+        to {
+            left: -300px;
+            opacity: 0;
+        }
+    }
+
+    .sh-sidebar {
+        height: 85%;
+        width: 88%;
+        background-color: #fff;
+        position: fixed !important;
+        z-index: 9998 !important;
+        overflow: auto;
+        padding: 85px 20px 50px;
+        padding-right: 40px !important;
+    }
+
+    .produto .sh-sidebar {
+        height: 85% !important;
+        width: 88% !important;
+    }
+
+    .sh-sidebar hr {
+        width: 90%;
+        margin: 16px auto !important;
+    }
+
+    .sh-bar-block .sh-bar-item {
+        /*width: 100%;*/
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0;
+        font-size: 22px;
+    }
+
+    .sh-bar-item.sh-button:hover,
+    .sh-bar-item.sh-button:focus {
+        color: #e77925 !important;
+    }
+
+    .sh-large i {
+        font-size: 50px;
+        position: relative;
+        left: -15px;
+        top: -10px;
+        color: #e77925;
+    }
+
+    .sh-large span {
+        font-size: 35px !important;
+        position: relative;
+        left: -5px;
+        top: 0;
+    }
+
+    .sh-large span {
+        left: -5px !important;
+    }
+
+    .sh-large span,
+    .caretRight {
+        color: #e77925;
+    }
+
+    .sh-large {
+        font-size: 18px !important;
+    }
+
+    .sh-btn,
+    .sh-button {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .sh-btn,
+    .sh-button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .caretRight {
+        float: right;
+        margin: auto;
+    }
+
+    /* Temporario - precisa ajustar no arquivo CDN depois */
+    .header__menu {
+        height: unset !important;
+        background: unset !important;
+    }
+    
+    .header__menu.active {
+        margin-top: unset !important;
+        left: unset !important;
+        z-index: 1000 !important;
+    }
+    /* Temporario - precisa ajustar no arquivo CDN depois */
+
+    /* Ajustes botoes lancamento e pronta entrega */
+    /* Esse ficou legal tambem
+    .btnMenu {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        scale: 1.1;
+        align-items: stretch;
+        max-width: 55%;
+        margin-left: 10px;
+    }*/
+
+    .btnMenu {
+        display: inline-block;
+        scale: 1.1;
+        margin-left: 10px;
+        margin-top: 15px
+    }
+    /* Ajustes botoes lancamento e pronta entrega */
 }
