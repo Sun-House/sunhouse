@@ -80,8 +80,8 @@
     }
 
     .produto .sh-sidebar {
-        height: 85% !important;
-        width: 88% !important;
+        height: 100% !important;
+        width: 100% !important;
     }
 
     .sh-sidebar hr {
