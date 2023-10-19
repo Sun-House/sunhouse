@@ -1,8 +1,8 @@
-.accordion-header {
+.preblack .accordion-header {
     padding-top: unset !important;
 }
 
-.accordion {
+.preblack .accordion {
     --bs-accordion-border-color: #d2d2d2 !important;
     --bs-accordion-btn-bg: none !important;
     --bs-accordion-border-radius: 20px !important;
@@ -13,10 +13,77 @@
     --bs-accordion-inner-border-radius: 20px !important;
 }
 
-#accordionContainer {
+.preblack #accordionContainer {
     padding-top: 20px;
 }
 
-.breadcrumb_bs { /* a principio ocultei pois tava ruim de estilizar */
+.preblack .breadcrumb_bs { /* a principio ocultei pois tava ruim de estilizar */
     display: none !important;
 }
+
+.preblack .catalogFilters {
+    background-color: #f90041;
+}
+
+.preblack .pages .pgCurrent {
+    background-color: #f2f2f2 !important;
+    color: #000 !important;
+}
+
+/* Template Catalog - Ajustes */
+.shelfProduct__price-installment {
+    display: none !important;
+}
+
+.shelfProduct__price-best,
+.shelfProduct__price-best span {
+    font-size: 38px;
+    font-family: "Bebas Neue";
+}
+
+#cluster_1 {
+    max-width: 240px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+#cluster_1 .shelfProduct__price {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.shelfProduct__name {
+    text-align: start !important;
+    color: #222 !important;
+    max-width: 210px !important;
+}
+
+.shelfProduct__price {
+    color: #222 !important;
+}
+
+.shelfProduct__price-installment {
+    font-size: 38px;
+    font-family: "Bebas Neue";
+}
+
+@media screen and (max-width: 1199px) {
+    #cluster_1 {
+        max-width: 130px !important;
+        margin-left: 20px;
+    }
+
+    .shelfProduct__name {
+        -webkit-line-clamp: 3;
+    }
+
+    .shelfProduct__price-best,
+    .shelfProduct__price-best span {
+        font-size: 27px;
+        white-space: nowrap;
+    }
+}
+/* Template Catalog - Ajustes */
