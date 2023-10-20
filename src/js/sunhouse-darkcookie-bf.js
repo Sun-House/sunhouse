@@ -46,15 +46,18 @@ function removerCookie() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    const cookieExists = document.cookie.includes("cDark=darktheme");
+
     // Checa se o cookie existe e mantem tema
-    if (document.cookie.indexOf("cDark=darktheme") !== -1) {
+    if (cookieExists) {
         // Se o cookie existe, mantém o tema escuro ativado
         document.getElementById("blackSH").removeAttribute("disabled");
         document.querySelectorAll('.ball').classList.add('cat');
         document.querySelectorAll(".checkbox").checked = true;
     } 
+    
     //BLACK FRIDAY
-    else if (document.cookie.indexOf("cDark=darktheme") === -1) {
+    if (!cookieExists) {
         // Se o cookie não existe, cria o cookie e mantém o tema escuro ativado
         criarCookie();
     }
