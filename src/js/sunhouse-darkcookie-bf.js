@@ -52,10 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("blackSH").removeAttribute("disabled");
         document.querySelectorAll('.ball').classList.add('cat');
         document.querySelectorAll(".checkbox").checked = true;
-    } else { //BLACK FRIDAY
+    } 
+    //BLACK FRIDAY
+    else if (document.cookie.indexOf("cDark=darktheme") === -1) {
         // Se o cookie não existe, cria o cookie e mantém o tema escuro ativado
         criarCookie();
     }
+    //BLACK FRIDAY
     
     // Checa se o cookie existe e caso nao existe, volta o tema original
     if (document.cookie.indexOf("cDark=darktheme") === -1) {
