@@ -115,3 +115,46 @@
     font-family: unset !important
 }
 /* Template Catalog - Ajustes */
+
+/* Flag Pre Black */
+.shelfProductImages .flag.pre-black-friday {
+    display: flex;
+    font-size: 0;
+    border-radius: unset;
+    background: #000;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    text-align: center;
+    transform: rotate(-60deg);
+    margin: 8px;
+}
+
+.shelfProductImages .flag.pre-black-friday::before,
+.shelfProductImages .flag.pre-black-friday::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    background: #000;
+}
+
+.shelfProductImages .flag.pre-black-friday::after {
+    content: "Pré Black";
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFDA00;
+    line-height: 16px;
+    padding-top: 5px;
+}
+
+.shelfProductImages .flag.pre-black-friday::before {
+    transform: rotate(30deg);
+}
+
+.shelfProductImages .flag.pre-black-friday::after {
+    transform: rotate(60deg);
+}
+/* Flag Pre Black */
