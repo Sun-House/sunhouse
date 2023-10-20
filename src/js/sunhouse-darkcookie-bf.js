@@ -12,7 +12,7 @@ function criarCookie() {
     const pdpHeaderBgColor = window.getComputedStyle(document.querySelector('.wrapTemp')).getPropertyValue('background-color');
     const isPdpDarkMode = pdpHeaderBgColor === 'rgb(13, 17, 23)';
     
-    if (isDarkMode == true || isPdpDarkMode == true) {
+    if (isDarkMode == false || isPdpDarkMode == false) {
         // Cria o cookie
         document.cookie = `${nomeCookie}=${valorCookie}; expires=${dataExpiracao.toUTCString()}; path=/`;
 
@@ -48,11 +48,13 @@ function removerCookie() {
 document.addEventListener("DOMContentLoaded", function () {
     // Checa se o cookie existe e mantem tema
     if (document.cookie.indexOf("cDark=darktheme") !== -1) {
+        // Se o cookie existe, mantém o tema escuro ativado
         document.getElementById("blackSH").removeAttribute("disabled");
-        //document.getElementById('ball').classList.add('cat');
         document.querySelectorAll('.ball').classList.add('cat');
-        //document.getElementById("checkbox").checked = true;
         document.querySelectorAll(".checkbox").checked = true;
+    } else { //BLACK FRIDAY
+        // Se o cookie não existe, cria o cookie e mantém o tema escuro ativado
+        criarCookie();
     }
     
     // Checa se o cookie existe e caso nao existe, volta o tema original
