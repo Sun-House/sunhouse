@@ -59,6 +59,7 @@
     text-align: start !important;
     color: #222 !important;
     max-width: 210px !important;
+    margin: 8px 0 !important;
 }
 
 .shelfProduct__price {
@@ -108,5 +109,9 @@
     --bs-btn-border-color: #000 !important;
     --bs-btn-hover-border-color: #F90041 !important;
     --bs-btn-active-color: #000 !important;
+}
+
+.preblack .pager li {
+    font-family: unset !important
 }
 /* Template Catalog - Ajustes */
