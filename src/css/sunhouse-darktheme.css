@@ -293,3 +293,12 @@ body.institucional>.content a {
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #0d1117 !important;
 }
 /* LP Pre Black */
+
+/* Menu */
+@media screen and (max-width: 1199px) {
+    .sh-sidebar {
+        background-color: #0d1117;
+        color: #fff;
+    }
+}
+/* Menu */
