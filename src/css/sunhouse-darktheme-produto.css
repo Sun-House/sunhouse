@@ -354,3 +354,7 @@ body.produto {
 .produto .productContent__infos-freight .freight-values * {
     border-color: #0d1117 !important;
 }
+
+.produto .productContent__infos-designer {
+    color: #dbdbdb !important;
+}
