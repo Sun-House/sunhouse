@@ -159,3 +159,17 @@
     transform: rotate(60deg);
 }
 /* Flag Pre Black */
+
+/* Display Shelf Out of Stock - Ja ajustado no Common New Theme */
+.preblack #cluster_1 .outStock {
+    color: #F90041 !important;
+    display: flex !important;
+    flex-direction: row;
+    padding: unset !important; 
+}
+
+.preblack #cluster_1 .outStock span {
+    padding: unset !important;
+    margin-right: 5px;
+}
+/* Display Shelf Out of Stock */
