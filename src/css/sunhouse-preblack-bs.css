@@ -22,7 +22,8 @@
 }
 
 .preblack .catalogFilters {
-    background-color: #f90041;
+    /*background-color: #f90041 !important;*/
+    background-color: #e77925 !important;
 }
 
 .preblack .pages .pgCurrent {
