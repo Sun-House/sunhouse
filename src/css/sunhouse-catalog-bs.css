@@ -1277,6 +1277,7 @@ Ajuste temporario */
 .pages li:hover {
     background-color: #fff;
     transition: .3s;
+    color: #F90041;
 }
 
 .pages .pgCurrent {
