@@ -174,3 +174,10 @@
     margin-right: 5px;
 }
 /* Display Shelf Out of Stock */
+
+@media screen and (max-width: 1199px) {
+    .preblack .sh-sidebar {
+        height: 100%!important;
+        width: 100%!important;
+    }
+}
