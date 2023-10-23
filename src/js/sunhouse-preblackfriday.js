@@ -17,9 +17,6 @@ function fnAddPromoLink() {
     });
 }
 
-
-
-
 function fnCatalogPrice() {
     var $priceSpans = $('.shelfProduct__price-best span');
     
