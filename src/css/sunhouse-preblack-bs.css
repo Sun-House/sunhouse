@@ -195,3 +195,7 @@
         width: 100%!important;
     }
 }
+
+.preblack .pages li:hover {
+    color: #e77925 !important;
+}
