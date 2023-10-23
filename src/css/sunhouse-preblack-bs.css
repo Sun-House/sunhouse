@@ -159,6 +159,20 @@
 .shelfProductImages .flag.pre-black-friday::after {
     transform: rotate(60deg);
 }
+
+@media screen and (max-width: 1199px) {
+    .shelfProductImages .flag.pre-black-friday,
+    .shelfProductImages .flag.pre-black-friday::after,
+    .shelfProductImages .flag.pre-black-friday::before {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .shelfProductImages .flag.pre-black-friday::after {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
 /* Flag Pre Black */
 
 /* Display Shelf Out of Stock - Ja ajustado no Common New Theme */
