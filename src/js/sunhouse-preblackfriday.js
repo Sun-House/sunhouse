@@ -32,9 +32,13 @@ function fnCatalogPrice() {
     });
 }
 
-$(document).ready(function () {
+setTimeout(function(){
     if (window.location.pathname == "/landing/lista-vip") {
         fnAddPromoLink();
         fnCatalogPrice();
+        window.addEventListener("hashchange", function(){
+            fnAddPromoLink();
+            fnCatalogPrice();
+        });
     }
-});
+}, 2000);
