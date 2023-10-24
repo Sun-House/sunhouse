@@ -42,7 +42,7 @@
     font-family: "Bebas Neue";
 }
 
-#cluster_1 {
+.shelfProduct__wrap {
     max-width: 240px;
     display: flex !important;
     flex-direction: column;
@@ -50,7 +50,7 @@
     margin-left: 50px;
 }
 
-#cluster_1 .shelfProduct__price {
+.shelfProduct__wrap .shelfProduct__price {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
@@ -73,7 +73,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-    #cluster_1 {
+    .shelfProduct__wrap {
         max-width: 130px !important;
         margin-left: 20px;
     }
@@ -178,15 +178,15 @@
 }
 /* Flag Pre Black */
 
-/* Display Shelf Out of Stock - Ja ajustado no Common New Theme */
-.preblack #cluster_1 .outStock {
+/* Display Shelf Out of Stock - Ja ajustado no Common New Theme - TIRAR DAQUI */
+.preblack .shelfProduct__wrap .outStock {
     color: #F90041 !important;
     display: flex !important;
     flex-direction: row;
     padding: unset !important; 
 }
 
-.preblack #cluster_1 .outStock span {
+.preblack .shelfProduct__wrap .outStock span {
     padding: unset !important;
     margin-right: 5px;
 }
@@ -210,17 +210,11 @@
     }
 }
 
-
-/* Teste Correcao Navegacao Mobile - temporario pois precisa de ajustes em outros elementos para nunca ocorrer o transbordo a direita */
+/* Isso precisa ir para um style geral ou pelo menos para o style da page da Black Friday */
 @media screen and (max-width: 1199px) {
-    body {
-        overflow-x: hidden !important;
-    }
-
-    .preblack #page-content {
-        /*margin: 0 20px;
-        margin: unset !important;*/
-        overflow-x: hidden !important;
+    #container_faq .col {
+        padding-right: unset !important;
+        padding-left: unset !important;
     }
 }
-/* Teste Correcao Navegacao Mobile */
+/* */

@@ -2333,7 +2333,7 @@ Modelo 1 */
 }
 Modelo com preco 10x */
 
-#cluster_1 {
+.shelfProduct__wrap {
     max-width: 240px;
     display: flex !important;
     flex-direction: column;
@@ -2341,20 +2341,20 @@ Modelo com preco 10x */
     margin-left: 50px;
 }
 
-#cluster_1 .shelfProduct__price {
+.shelfProduct__wrap .shelfProduct__price {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#cluster_1 .outStock {
+.shelfProduct__wrap .outStock {
     color: #F90041 !important;
     display: flex !important;
     flex-direction: row;
     padding: unset !important; 
 }
 
-#cluster_1 .outStock span {
+.shelfProduct__wrap .outStock span {
     padding: unset !important;
     margin-right: 5px;
 }
@@ -2392,7 +2392,7 @@ Modelo com preco 10x */
 Btn Comprar */
 
 @media screen and (max-width: 1199px) {
-    #cluster_1 {
+    .shelfProduct__wrap {
         max-width: 130px !important;
         margin-left: 20px;
     }
@@ -2405,6 +2405,7 @@ Btn Comprar */
     .shelfProduct__price-best span {
         font-size: 27px;
         white-space: nowrap;
+        letter-spacing: -1px;
     }
 }
 /* Template Catalog - Ajustes */

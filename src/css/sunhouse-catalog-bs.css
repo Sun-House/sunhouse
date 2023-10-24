@@ -1308,6 +1308,7 @@ Ajuste temporario */
 @media screen and (max-width: 1199px) {
     .catalog #page-content {
         margin: 0 20px;
+        overflow-x: hidden !important;
     }
 }
 /* Ajuste Margens da Pagina Mobile */
