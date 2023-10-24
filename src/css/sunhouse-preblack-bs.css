@@ -174,7 +174,7 @@
     .shelfProductImages .flag.pre-black-friday::after {
         font-size: 12px;
         line-height: 12px;
-        padding-top: 0;
+        padding-top: 0 !important;
     }
 }
 /* Flag Pre Black */
