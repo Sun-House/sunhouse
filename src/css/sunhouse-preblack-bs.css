@@ -203,10 +203,22 @@
     color: #e77925 !important;
 }
 
+@media screen and (max-width: 1199px) {
+    .preblack .btnFilterMobile {
+        background: unset;
+        background-color: #e77925 !important;
+    }
+}
+
+
 /* Teste Correcao Navegacao Mobile - temporario pois precisa de ajustes em outros elementos para nunca ocorrer o transbordo a direita */
 @media screen and (max-width: 1199px) {
     body {
         overflow-x: hidden !important;
+    }
+
+    .preblack #page-content {
+        margin: unset !important;
     }
 }
 /* Teste Correcao Navegacao Mobile */
