@@ -1,7 +1,7 @@
 // Ativar somente em epoca de Black
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout (function() {
-        var cookieExists = document.cookie.includes("cDark=darktheme");
+    //setTimeout (function() {
+        const cookieExists = document.cookie.includes("cDark=darktheme");
 
         if (cookieExists === true) {
             alert("If: ja tem o cookie");
@@ -9,5 +9,5 @@ document.addEventListener("DOMContentLoaded", function () {
             criarCookie();
             alert("Else: cookie criado agora");
         }
-    }, 2000)
+    //}, 2000)
 });
