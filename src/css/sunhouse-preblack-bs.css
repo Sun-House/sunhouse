@@ -86,6 +86,7 @@
     .shelfProduct__price-best span {
         font-size: 27px;
         white-space: nowrap;
+        letter-spacing: -1px;
     }
 }
 
@@ -205,7 +206,7 @@
 
 @media screen and (max-width: 1199px) {
     .preblack .btnFilterMobile {
-        background: unset;
+        background: unset !important;
         background-color: #e77925 !important;
     }
 }
@@ -217,4 +218,4 @@
         padding-left: unset !important;
     }
 }
-/* */
+/* Isso precisa ir para um style geral ou pelo menos para o style da page da Black Friday */
