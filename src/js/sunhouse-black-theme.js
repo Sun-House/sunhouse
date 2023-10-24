@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
         var cookieExists = document.cookie.includes("cDark=darktheme");
 
         if (cookieExists === true) {
-            alert = "ja tem o cookie"
+            alert("If: ja tem o cookie");
         } else {
             criarCookie();
+            alert("Else: cookie criado agora");
         }
     }, 2000)
 });
