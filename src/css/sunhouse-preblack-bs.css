@@ -218,7 +218,9 @@
     }
 
     .preblack #page-content {
-        margin: unset !important;
+        /*margin: 0 20px;
+        margin: unset !important;*/
+        overflow-x: hidden !important;
     }
 }
 /* Teste Correcao Navegacao Mobile */
