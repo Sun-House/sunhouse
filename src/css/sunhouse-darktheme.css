@@ -302,3 +302,9 @@ body.institucional>.content a {
     }
 }
 /* Menu */
+
+/* Novo Tema Catalog BS */
+.catalog .view-product {
+    --bs-btn-border-color: #F90041 !important;
+}
+/* Novo Tema Catalog BS */
