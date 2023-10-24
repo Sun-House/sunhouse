@@ -96,7 +96,10 @@
     height: 48px;
     font-size: 18px !important;
     padding: 10px !important;
-    margin: 0 auto;
+    /*margin: 0 auto;
+     TESTE */
+    margin: unset !important;
+    /* TESTE */
     left: 0;
     right: 0;
     border-radius: 30px !important;
@@ -195,3 +198,15 @@
         width: 100%!important;
     }
 }
+
+.preblack .pages li:hover {
+    color: #e77925 !important;
+}
+
+/* Teste Correcao Navegacao Mobile - temporario pois precisa de ajustes em outros elementos para nunca ocorrer o transbordo a direita */
+@media screen and (max-width: 1199px) {
+    body.preblack {
+        overflow-x: clip !important;
+    }
+}
+/* Teste Correcao Navegacao Mobile */

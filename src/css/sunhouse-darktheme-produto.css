@@ -367,3 +367,9 @@ body.produto {
     }
 }
 /* Menu */
+
+/* Novo Tema Catalog BS */
+.produto .view-product {
+    --bs-btn-border-color: #F90041 !important;
+}
+/* Novo Tema Catalog BS */
