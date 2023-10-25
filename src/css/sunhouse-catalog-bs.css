@@ -1268,6 +1268,7 @@ Ajuste temporario */
 /* Paginacao */
 .pages li {
     background-color: #f2f2f2;
+    color: #000;
     padding: 8px;
     border-radius: 5px;
     margin: -10px;
@@ -1275,20 +1276,22 @@ Ajuste temporario */
 }
 
 .pages li:hover {
-    background-color: #fff;
-    transition: .3s;
+    background-color: #FFDA00;
     color: #F90041;
+    transition: .3s;
 }
 
 .pages .pgCurrent {
     text-decoration: unset !important;
-    background-color: #F90041;
+    background-color: transparent !important;
     color: #fff !important;
+    border: 2px solid #FFDA00;
 }
 
-/*.pages .pgCurrent:hover {
-    background-color: #F90041;
-}*/
+.pages .pgCurrent:hover {
+    background-color: #FFDA00 !important;
+    color: #F90041 !important;
+}
 
 .catalog .catalogOptions {
     border-radius: 20px;
