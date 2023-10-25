@@ -1304,14 +1304,14 @@ Ajuste temporario */
 }
 /* Paginacao */
 
-/* Ajuste Margens da Pagina Mobile */
+/* Ajuste Margens da Pagina Mobile - ele que da erro no mobile -- EM TESTES
 @media screen and (max-width: 1199px) {
     .catalog #page-content {
         margin: 0 20px;
         overflow-x: hidden !important;
         -webkit-overflow-x: hidden !important;
     }
-}
+}*/
 /* Ajuste Margens da Pagina Mobile */
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
 
