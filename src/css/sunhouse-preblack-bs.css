@@ -26,6 +26,11 @@
     background-color: #e77925 !important;
 }
 
+.preblack .orderSelect__options a:hover {
+    background-color: #e77925 !important;
+    color: #fff !important;
+}
+
 .preblack .pages .pgCurrent {
     background-color: #f2f2f2 !important;
     color: #444 !important;
@@ -174,7 +179,7 @@
         line-height: 12px;*/
         font-size: 11px;
         line-height: 11px;
-        padding-top: 0 !important;
+        padding-top: 2.5px !important;
     }
 }
 /* Flag Pre Black */

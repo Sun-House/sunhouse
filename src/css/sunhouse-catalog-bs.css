@@ -1312,6 +1312,16 @@ Ajuste temporario */
     body {
         overflow-x: hidden !important;
     }
+
+    .wrapHeader,
+    .wrapHeaderFixed {
+        overflow-x: hidden !important;
+    }
+
+    /*.wrapHeader *,
+    .wrapHeaderFixed * {
+        overflow-x: hidden !important;
+    }*/
 }
 
 /*@media screen and (max-width: 1199px) {
