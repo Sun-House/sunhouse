@@ -86,13 +86,29 @@ $(document).ready((function () {
     })
 })),
 
+// INATIVO - Depreciou
+    // Mostra botao pagina anterior caso esteja na pagina 2 ou mais
+    //$(document).ready(function(){
+        //var pageNumber = parseInt(document.querySelector(".page-number.pgCurrent").innerHTML);
+        //var previousBtn = document.querySelector(".pager.bottom .previous");
+
+        //if (pageNumber > 2) {
+            //console.log(pageNumber + " Mostra!");
+            //previousBtn.classList.add("previous-active");
+        //} else {
+            //console.log(pageNumber + " Não mostra!");
+            //previousBtn.classList.remove("previous-active");
+        //}
+    //}),
+// INATIVO - Depreciou
+
 // Mostra botao pagina anterior quando pagina url for igual ou maior que 2
 $(document).ready(function () {
     window.addEventListener('popstate', function() {
         var novaPagina = window.location.hash;
             if (novaPagina !== '#1') {
             setTimeout(function () {
-                document.querySelectorAll('.previous').style.display = 'inline-block';
+                document.querySelector('.previous').style.display = 'inline-block';
             }, 2000);
         }
     });
