@@ -1309,6 +1309,7 @@ Ajuste temporario */
     .catalog #page-content {
         margin: 0 20px;
         overflow-x: hidden !important;
+        -webkit-overflow-x: hidden !important;
     }
 }
 /* Ajuste Margens da Pagina Mobile */

@@ -98,4 +98,16 @@ $(document).ready(function(){
         console.log(pageNumber + " Não mostra!");
         previousBtn.classList.remove("previous-active");
     }
+}),
+
+// Mostra botao pagina anterior quando pagina url for igual ou maior que 2
+$(document).ready(function () {
+    window.addEventListener('popstate', function() {
+        var novaPagina = window.location.hash;
+            if (novaPagina !== '#1') {
+            setTimeout(function () {
+                document.querySelectorAll('.previous').style.display = 'inline-block';
+            }, 2000);
+        }
+    });
 });
