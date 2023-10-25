@@ -40,7 +40,8 @@ div.backgroundFix {
 .instaContTitle,
 .newslettershowed__infos div,
 .shelfProduct__price,
-.topbar__content * {
+.topbar__content *,
+.busca .breadcrumb>ul:nth-child(2)>li:nth-child(1)::after {
     color: #fff !important
 }
 
@@ -147,7 +148,8 @@ body div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after {
     border: 1px solid #fff
 }
 
-body.busca div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after {
+.busca div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after,
+.busca .breadcrumb>ul:nth-child(2)>li:nth-child(1) {
     color: #fff
 }
 
