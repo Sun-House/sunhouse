@@ -119,6 +119,10 @@
     --bs-btn-active-color: #000 !important;
 }
 
+.preblack .view-product:hover {
+    background-color: #F90041 !important;
+}
+
 .preblack .pager li,
 .preblack .catalogIntro .catalogdescription p {
     font-family: unset !important
