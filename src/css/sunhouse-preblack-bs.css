@@ -32,8 +32,9 @@
 }
 
 .preblack .pages .pgCurrent {
-    background-color: #f2f2f2 !important;
-    color: #444 !important;
+    background-color: #e77925 !important;
+    color: #fff !important;
+    border: 2px solid #fff;
 }
 
 /* Template Catalog - Ajustes */
@@ -207,6 +208,7 @@
 
 .preblack .pages li:hover {
     color: #e77925 !important;
+    background-color: #fff !important;
 }
 
 @media screen and (max-width: 1199px) {
