@@ -606,6 +606,7 @@
 .catalog .pager li.previous {
     text-transform: capitalize;
     padding-right: 15px;
+    border-radius: 20px 5px 5px 20px !important;
 }
 
 .catalog .pager li.previous:before {
@@ -626,6 +627,7 @@
 .catalog .pager li.next {
     text-transform: capitalize;
     padding-left: 15px;
+    border-radius: 5px 20px 20px 5px !important;
 }
 
 /*.catalog .pager li.next:after {
