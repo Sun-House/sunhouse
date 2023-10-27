@@ -57,7 +57,8 @@ div.backgroundFix {
 .catalog .header__menu,
 .institucional .header__menu,
 .topbar {
-    border-bottom: 1px solid #333 !important
+    /*border-bottom: 1px solid #333 !important;*/
+    border-bottom: 1px solid #333;
 }
 
 .topbar__content>div .btnZap:hover {
