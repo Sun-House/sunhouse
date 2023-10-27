@@ -1,4 +1,18 @@
+/* Vitrines Geral - Rebrand */
+#oldShelf-SH {
+    display: none;
+}
+
+#newShelf-SH {
+    display: block !important;
+}
+/* Vitrines Geral - Rebrand */
+
 /* Recomendacao - Vitrine Promocional */
+.sh-promotionalbox .bestSellers.shelfRecomended {
+    max-width: 925px !important;
+}
+
 .smarthint-promotionalbox-container {
     display: flex;
     max-width: 1200px;
