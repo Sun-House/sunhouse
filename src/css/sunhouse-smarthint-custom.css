@@ -1,0 +1,19 @@
+/* Recomendacao - Vitrine Promocional */
+.smarthint-promotionalbox-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.smarthint-promotionalbox {
+    float: left;
+    display: block;
+    width: auto;
+    margin: 20px 75px 20px 0px !important;
+}
+
+.smarthint-promotionalbox img {
+    height: 500px !important;
+    width: auto !important;
+}
+/* Recomendacao - Vitrine Promocional */
