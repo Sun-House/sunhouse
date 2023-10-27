@@ -1,3 +1,11 @@
+.preblack .header__menu {
+    border-bottom: unset !important;
+}
+
+.preblack .catalogIntro {
+    display: none !important;
+}
+
 .preblack .accordion-header {
     padding-top: unset !important;
 }
