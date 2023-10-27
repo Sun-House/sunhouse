@@ -179,6 +179,7 @@ a.caretMain:after {
 }
 /* Smart Hint */
 
+/* Home */
 /* Area abaixo dos banners principais Home */
 .home .benefits * {
     color: #f90041 !important;
@@ -319,6 +320,17 @@ a.caretMain:after {
     color: #f90041 !important;
 }
 /* Home Header Grid*/
+
+/* Ajuste Vitrines Smart Hint */
+#oldShelf-SH {
+    display: none;
+}
+
+#newShelf-SH {
+    display: block !important;
+}
+/* Ajuste Vitrines Smart Hint */
+/* Home */
 
 /* Header Fixed - Mobile */
 @media screen and (max-width: 1199px) {

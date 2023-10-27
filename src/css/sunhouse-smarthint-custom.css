@@ -9,7 +9,8 @@
 /* Vitrines Geral - Rebrand */
 
 /* Recomendacao - Vitrine Promocional */
-.preblack .smarthint .sh-promotionalbox .bestSellers.shelfRecomended {
+/*.preblack .smarthint .sh-promotionalbox .bestSellers.shelfRecomended*/
+.smarthint .sh-promotionalbox .bestSellers.shelfRecomended {
     max-width: 820px !important;
 }
 
@@ -34,16 +35,21 @@
 
 /* Cronometro */
 .promotionalbox-cronometro {
-    font-size: 40px;
+    font-size: 100px;
     font-weight: 500;
     position: relative;
-    bottom: 42%;
+    bottom: 50%;
     width: 100%;
-    background-color: #f28417;
+    height: 0;
+    /*background-color: #f28417;*/
     color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.promotionalbox-cronometro span {
+    font-family: "Bebas Neue";
 }
 
 .day,
@@ -59,7 +65,8 @@
 }
 /* Cronometro */
 
-.preblack .smarthint .sh-promotionalbox .bestSellers.shelfRecomended .shelfProduct .view-product__cart {
+/*.preblack .smarthint .sh-promotionalbox .bestSellers.shelfRecomended .shelfProduct .view-product__cart*/
+.smarthint .sh-promotionalbox .bestSellers.shelfRecomended .shelfProduct .view-product__cart {
     display: none !important;
 }
 
