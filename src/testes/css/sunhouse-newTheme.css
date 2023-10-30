@@ -323,7 +323,7 @@ a.caretMain:after {
 
 /* Ajuste Vitrines Smart Hint */
 #oldShelf-SH {
-    display: none;
+    display: none !important;
 }
 
 #newShelf-SH {

@@ -2,7 +2,7 @@
     border-bottom: unset !important;
 }
 
-.preblack .catalogIntro {
+.preblack .catalogIntro:nth-child(1) {
     display: none !important;
 }
 
