@@ -1,38 +1,39 @@
-//timer js
-//importado de w3schools: https://www.w3schools.com/howto/howto_js_countdown.asp
-
-// Set the date we're counting down to
+// Configura a data que a contagem ira acabar
 var diaExpiraElement = document.getElementById("diaExpira");
 var diaExpiraString = diaExpiraElement.innerHTML;
 var countDownDate = new Date(diaExpiraString).getTime();
-//var countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+// Atualiza a contagem a cada 1 segundo
+var x = setInterval(function () {
+    // Pega o data atual
+    var now = new Date().getTime();
 
-  // Get today's date and time
-  var now = new Date().getTime();
+    // Encontra a distancia entre agora e a data onde acaba a contagem
+    var distance = countDownDate - now;
+
+    // Calcula os dias, horas, minutos e segundos
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Aloca a o resultado dos calculos nos elementos devidamente apontados abaixo
+    var cronoElementDay = document.getElementById("croTimerDay");
+    var cronoElementHour = document.getElementById("croTimerHour");
+    var cronoElementMinute = document.getElementById("croTimerMin");
+    var cronoElementSecond = document.getElementById("croTimerSec");
+
+    cronoElementDay.innerHTML = days;
+    cronoElementHour.innerHTML = hours;
+    cronoElementMinute.innerHTML = minutes;
+    cronoElementSecond.innerHTML = seconds;
     
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="croTimer"
-  var cronoElement = [document.getElementById("croTimer"),document.getElementById("croTimerMob")];
-  //cronoElement[0].innerHTML = "<pre>Faltam:</pre>" + days + " dias, " + hours + " horas e " + minutes + " minutos\nPara acabar! Corre!!";
-  //cronoElement[0].innerHTML = "<pre>Faltam:</pre>" + days + "<pre> dias, " + hours + " horas e " + minutes + " minutos</pre>Para acabar! Corre!!";
-  cronoElement[0].innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-  cronoElement[1].innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    cronoElement[0].innerHTML = "Encerrada :(";
-    cronoElement[1].innerHTML = "Encerrada :(";
-  }
+    //cronoElement[0].innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+    // Se a contagem zerou, escreve algum texto - por hora nao pretendo usar
+    //if (distance < 0) {
+        //clearInterval(x);
+        //cronoElement[0].innerHTML = "Encerrada :(";
+        //cronoElement[1].innerHTML = "Encerrada :(";
+    //}
 }, 1000);
