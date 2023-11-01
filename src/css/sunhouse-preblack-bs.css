@@ -78,12 +78,12 @@
     align-items: flex-start;
 }
 
-.shelfProduct__name {
+.preblack .shelfProduct__name {
     font-size: 22px;
     text-align: start !important;
     text-decoration: line-through;
     /*color: #222 !important;*/
-    color: #F90041!important;
+    color: #F90041 !important;
     max-width: 210px !important;
     /*margin: 8px 0 !important;*/
     margin-top: 10px !important;
