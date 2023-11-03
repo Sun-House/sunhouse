@@ -953,8 +953,28 @@ body>.header {
     content: "60%"
 }
 
+.shelfProductImages>div .promocao-65-off:after {
+    content: "65%"
+}
+
 .shelfProductImages>div .promocao-70-off:after {
     content: "70%"
+}
+
+.shelfProductImages>div .promocao-75-off:after {
+    content: "75%"
+}
+
+.shelfProductImages>div .promocao-80-off:after {
+    content: "80%"
+}
+
+.shelfProductImages>div .promocao-85-off:after {
+    content: "85%"
+}
+
+.shelfProductImages>div .promocao-90-off:after {
+    content: "90%"
 }
 
 .shelfProductImages>div .promocao-10-off,
@@ -969,7 +989,12 @@ body>.header {
 .shelfProductImages>div .promocao-50-off,
 .shelfProductImages>div .promocao-55-off,
 .shelfProductImages>div .promocao-60-off,
-.shelfProductImages>div .promocao-70-off {
+.shelfProductImages>div .promocao-65-off,
+.shelfProductImages>div .promocao-70-off,
+.shelfProductImages>div .promocao-75-off,
+.shelfProductImages>div .promocao-80-off,
+.shelfProductImages>div .promocao-85-off,
+.shelfProductImages>div .promocao-90-off {
     display: flex;
     background: #fe0000;
     border-radius: 100%;
@@ -990,7 +1015,12 @@ body>.header {
 .shelfProductImages>div .promocao-50-off:after,
 .shelfProductImages>div .promocao-55-off:after,
 .shelfProductImages>div .promocao-60-off:after,
-.shelfProductImages>div .promocao-70-off:after {
+.shelfProductImages>div .promocao-65-off:after,
+.shelfProductImages>div .promocao-70-off:after,
+.shelfProductImages>div .promocao-75-off:after,
+.shelfProductImages>div .promocao-80-off:after,
+.shelfProductImages>div .promocao-85-off:after,
+.shelfProductImages>div .promocao-90-off:after {
     display: block;
     font-size: 22px;
     font-weight: 600;
@@ -1013,7 +1043,12 @@ body>.header {
     .shelfProductImages>div .promocao-50-off:after,
     .shelfProductImages>div .promocao-55-off:after,
     .shelfProductImages>div .promocao-60-off:after,
-    .shelfProductImages>div .promocao-70-off:after {
+    .shelfProductImages>div .promocao-65-off:after,
+    .shelfProductImages>div .promocao-70-off:after,    
+    .shelfProductImages>div .promocao-75-off:after,
+    .shelfProductImages>div .promocao-80-off:after,
+    .shelfProductImages>div .promocao-85-off:after,
+    .shelfProductImages>div .promocao-90-off:after {
         font-size: 10px
     }
 
