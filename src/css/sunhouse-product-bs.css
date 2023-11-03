@@ -393,7 +393,12 @@ table.group.Escritorio {
     .produto .productContent__images-flags .flag.promocao-50-off,
     .produto .productContent__images-flags .flag.promocao-55-off,
     .produto .productContent__images-flags .flag.promocao-60-off,
-    .produto .productContent__images-flags .flag.promocao-70-off {
+    .produto .productContent__images-flags .flag.promocao-65-off,
+    .produto .productContent__images-flags .flag.promocao-70-off,
+    .produto .productContent__images-flags .flag.promocao-75-off,
+    .produto .productContent__images-flags .flag.promocao-80-off,
+    .produto .productContent__images-flags .flag.promocao-85-off,
+    .produto .productContent__images-flags .flag.promocao-90-off {
         top: 16px;
         left: 16px
     }
@@ -449,7 +454,27 @@ table.group.Escritorio {
 }
 
 .produto .productContent__images-flags .flag.promocao-70-off:after {
+    content: "65%"
+}
+
+.produto .productContent__images-flags .flag.promocao-70-off:after {
     content: "70%"
+}
+
+.produto .productContent__images-flags .flag.promocao-70-off:after {
+    content: "75%"
+}
+
+.produto .productContent__images-flags .flag.promocao-70-off:after {
+    content: "80%"
+}
+
+.produto .productContent__images-flags .flag.promocao-70-off:after {
+    content: "85%"
+}
+
+.produto .productContent__images-flags .flag.promocao-70-off:after {
+    content: "90%"
 }
 
 .produto .productContent__images-flags .flag.flag-30--desconto-off,
@@ -464,7 +489,12 @@ table.group.Escritorio {
 .produto .productContent__images-flags .flag.promocao-50-off,
 .produto .productContent__images-flags .flag.promocao-55-off,
 .produto .productContent__images-flags .flag.promocao-60-off,
-.produto .productContent__images-flags .flag.promocao-70-off {
+.produto .productContent__images-flags .flag.promocao-65-off,
+.produto .productContent__images-flags .flag.promocao-70-off,
+.produto .productContent__images-flags .flag.promocao-75-off,
+.produto .productContent__images-flags .flag.promocao-80-off,
+.produto .productContent__images-flags .flag.promocao-85-off,
+.produto .productContent__images-flags .flag.promocao-90-off {
     display: flex;
     background: #fe0000;
     border-radius: 100%;
@@ -485,7 +515,12 @@ table.group.Escritorio {
 .produto .productContent__images-flags .flag.promocao-50-off:after,
 .produto .productContent__images-flags .flag.promocao-55-off:after,
 .produto .productContent__images-flags .flag.promocao-60-off:after,
-.produto .productContent__images-flags .flag.promocao-70-off:after {
+.produto .productContent__images-flags .flag.promocao-65-off:after,
+.produto .productContent__images-flags .flag.promocao-70-off:after,
+.produto .productContent__images-flags .flag.promocao-75-off:after,
+.produto .productContent__images-flags .flag.promocao-80-off:after,
+.produto .productContent__images-flags .flag.promocao-85-off:after,
+.produto .productContent__images-flags .flag.promocao-90-off:after {
     display: block;
     font-size: 22px;
     font-weight: 600;
@@ -508,7 +543,12 @@ table.group.Escritorio {
     .produto .productContent__images-flags .flag.promocao-50-off:after,
     .produto .productContent__images-flags .flag.promocao-55-off:after,
     .produto .productContent__images-flags .flag.promocao-60-off:after,
-    .produto .productContent__images-flags .flag.promocao-70-off:after {
+    .produto .productContent__images-flags .flag.promocao-65-off:after,
+    .produto .productContent__images-flags .flag.promocao-70-off:after
+    .produto .productContent__images-flags .flag.promocao-75-off:after,
+    .produto .productContent__images-flags .flag.promocao-80-off:after,
+    .produto .productContent__images-flags .flag.promocao-85-off:after,
+    .produto .productContent__images-flags .flag.promocao-90-off:after {
         font-size: 15px
     }
 
