@@ -114,7 +114,8 @@
 
     .shelfProduct__price-best,
     .shelfProduct__price-best span {
-        font-size: 27px;
+        /*font-size: 27px;*/
+        font-size: 29px;
         white-space: nowrap;
         letter-spacing: -1px;
     }
@@ -246,7 +247,7 @@
     }
 }
 
-/* Isso precisa ir para um style geral ou pelo menos para o style da page da Black Friday */
+/* Isso precisa ir para um style geral ou pelo menos para o style da page da Black Friday -- ok */
 @media screen and (max-width: 1199px) {
     #container_faq .col {
         padding-right: unset !important;
@@ -254,3 +255,15 @@
     }
 }
 /* Isso precisa ir para um style geral ou pelo menos para o style da page da Black Friday */
+
+@media screen and (max-width: 1199px) {
+    .preblack #page-content {
+        margin: 0 20px;
+        overflow-x: hidden !important;
+        -webkit-overflow-x: hidden !important;
+    }
+
+    .preblack .shelfProduct__name {
+        font-size: 16px;
+    }
+}
