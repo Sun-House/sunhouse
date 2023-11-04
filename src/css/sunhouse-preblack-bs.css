@@ -2,9 +2,9 @@
     border-bottom: unset !important;
 }
 
-.preblack .catalogIntro:nth-child(1) {
+/*.preblack .catalogIntro:nth-child(1) {
     display: none !important;
-}
+}*/
 
 .preblack .accordion-header {
     padding-top: unset !important;
