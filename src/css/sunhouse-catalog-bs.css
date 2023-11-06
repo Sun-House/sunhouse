@@ -1129,11 +1129,15 @@ body.colecao-dinamica>img {
     margin-top: 15px;
 }
 
-.catalog .catalogFilters,
 .catalog .catalogOptions {
     width: 80% !important;
     margin: 0 auto;
 }
+
+/*.catalog .catalogFilters { DESATIVADO TEMPORARIAMENTE
+    width: 80% !important;
+    margin: 0 auto;
+}*/
 
 /* Ajuste temporario - atribuido acima
 .catalogOptions {
