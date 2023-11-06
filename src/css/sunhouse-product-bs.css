@@ -1980,7 +1980,16 @@ th.name-field::after {
 
 @media screen and (max-width: 1199px) {
     .produto .breadcrumb_bs {
-        align-items: flex-start
+        align-items: flex-start;
+        padding: 24px 20px 10px !important;
+    }
+
+    .produto .breadcrumb_bs ul {
+        margin-left: 10px;
+    }
+    
+    .produto .breadcrumb_bs ul:nth-child(1) {
+        margin-left: 0px !important;
     }
 }
 
