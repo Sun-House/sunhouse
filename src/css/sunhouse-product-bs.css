@@ -1161,6 +1161,10 @@ table.group.Escritorio {
     .produto .productContent__infos-freight #popupCalculoFreteWrapper:before {
         display: none
     }
+
+    .produto .productContent__infos-freight #popupCalculoFreteWrapper {
+        margin-bottom: 1rem;
+    }
 }
 
 .produto .productContent__infos-freight #popupCalculoFreteWrapper:after {
@@ -1301,7 +1305,8 @@ table.group.Escritorio {
 
 @media screen and (max-width:1199px) {
     .freight-btn {
-        margin: -44px 0 0 4px;
+        /*margin: -44px 0 0 4px;*/
+        margin: -44px 5px 0 4px;
     }
 }
 
