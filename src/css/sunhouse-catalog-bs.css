@@ -1134,10 +1134,13 @@ body.colecao-dinamica>img {
     margin: 0 auto;
 }
 
-/*.catalog .catalogFilters { DESATIVADO TEMPORARIAMENTE
-    width: 80% !important;
-    margin: 0 auto;
-}*/
+@media screen and (min-width: 1200px) {
+    .catalog .catalogFilters {
+        /*width: 80% !important;*/
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 /* Ajuste temporario - atribuido acima
 .catalogOptions {
