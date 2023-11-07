@@ -18,7 +18,8 @@ var x = setInterval(function () {
     //var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Calcula os dias, horas, minutos e segundos com zero a esquerda
-    var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24)); // sem zero a esquerda
+    //var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0'); // com zero a esquerda
     var hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
     var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
     var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
