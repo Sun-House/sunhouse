@@ -12,12 +12,19 @@ var x = setInterval(function () {
     var distance = countDownDate - now;
 
     // Calcula os dias, horas, minutos e segundos
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Calcula os dias, horas, minutos e segundos com zero a esquerda
+    var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    var hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+    var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).padStart(2, '0');
+    var seconds = String(Math.floor((distance % (1000 * 60)) / 1000).padStart(2, '0');
 
     // Aloca a o resultado dos calculos nos elementos devidamente apontados abaixo
+    var cronoElementInfo = docuemnt.gerElementById("croTimerInfo");
     var cronoElementDay = document.getElementById("croTimerDay");
     var cronoElementHour = document.getElementById("croTimerHour");
     var cronoElementMinute = document.getElementById("croTimerMin");
@@ -27,13 +34,14 @@ var x = setInterval(function () {
     cronoElementHour.innerHTML = hours;
     cronoElementMinute.innerHTML = minutes;
     cronoElementSecond.innerHTML = seconds;
-    
-    //cronoElement[0].innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 
     // Se a contagem zerou, escreve algum texto - por hora nao pretendo usar
-    //if (distance < 0) {
-        //clearInterval(x);
-        //cronoElement[0].innerHTML = "Encerrada :(";
-        //cronoElement[1].innerHTML = "Encerrada :(";
-    //}
+    if (distance < 0) {
+        clearInterval(x);
+        cronoElementInfo.innerHTML = "Encerrada";
+        cronoElementDay.innerHTML = "0";
+        cronoElementHour.innerHTML = "0";
+        cronoElementMinute.innerHTML = "0";
+        cronoElementSecond.innerHTML = "0";
+    }
 }, 1000);
