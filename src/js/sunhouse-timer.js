@@ -20,8 +20,8 @@ var x = setInterval(function () {
     // Calcula os dias, horas, minutos e segundos com zero a esquerda
     var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
     var hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-    var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).padStart(2, '0');
-    var seconds = String(Math.floor((distance % (1000 * 60)) / 1000).padStart(2, '0');
+    var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+    var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
 
     // Aloca a o resultado dos calculos nos elementos devidamente apontados abaixo
     var cronoElementInfo = docuemnt.gerElementById("croTimerInfo");
@@ -38,7 +38,7 @@ var x = setInterval(function () {
     // Se a contagem zerou, escreve algum texto - por hora nao pretendo usar
     if (distance < 0) {
         clearInterval(x);
-        cronoElementInfo.innerHTML = "Encerrada";
+        cronoElementInfo.innerHTML = "Encerrado";
         cronoElementDay.innerHTML = "0";
         cronoElementHour.innerHTML = "0";
         cronoElementMinute.innerHTML = "0";
