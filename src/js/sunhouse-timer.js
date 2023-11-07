@@ -24,7 +24,7 @@ var x = setInterval(function () {
     var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
 
     // Aloca a o resultado dos calculos nos elementos devidamente apontados abaixo
-    var cronoElementInfo = document.gerElementById("croTimerInfo");
+    var cronoElementInfo = document.getElementById("croTimerInfo");
     var cronoElementDay = document.getElementById("croTimerDay");
     var cronoElementHour = document.getElementById("croTimerHour");
     var cronoElementMinute = document.getElementById("croTimerMin");
