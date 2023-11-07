@@ -55,6 +55,10 @@
     padding-top: 25px
 }
 
+.catalog .catalogIntro .catalogdescription h3 a {
+    color: #e77925 !important;
+}
+
 .catalog .catalogIntro .catalogdescription h4 {
     display: block;
     font-size: 22px;
