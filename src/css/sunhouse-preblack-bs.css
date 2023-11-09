@@ -284,3 +284,9 @@
         font-size: 16px;
     }
 }
+
+/* Oculta Flag da Black Oficial nessa page */
+.preblack .shelfProductImages .black-friday {
+    display: none !important;
+}
+/* Oculta Flag da Black Oficial nessa page */
