@@ -21,7 +21,7 @@
     /*padding: 64px 0 48px;*/
     padding: 0px 0 48px;
     border-top: 1px solid #ccc; /* Para o template de homologacao precisa remover essa linha o comentar */
-    border-bottom: 1px solid #ccc
+    /*border-bottom: 1px solid #ccc; - removido apos ajuste de posicao do Trust */
 }
 
 .produto .productInfos #caracteristicas tr,
@@ -2102,3 +2102,9 @@ th.name-field::after {
     margin-bottom: unset !important;
 }
 /* Ajustes BS */
+
+/* Ajuste bloco Opinions Trust */
+.ts-customer-questions-form-wrapper .ts-input[data-v-7b6506c8] {
+    border-radius: 30px !important;
+}
+/* Ajuste bloco Opinions Trust */
