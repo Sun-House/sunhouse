@@ -99,6 +99,7 @@
     .sh-sidebar hr {
         width: 90%;
         margin: 16px auto !important;
+        margin-bottom: 30px !important;
     }
 
     .sh-bar-block .sh-bar-item {
@@ -201,11 +202,20 @@
         margin-left: 10px;
     }*/
 
-    .btnMenu {
+    /*.btnMenu {
         display: inline-block;
         scale: 1.1;
         margin-left: 10px;
         margin-top: 15px
+    }*/
+
+    /* Para Black Friday */
+    .btnMenu {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-right: 130px;
+        align-items: stretch;
     }
+    /* Para Black Friday */
     /* Ajustes botoes lancamento e pronta entrega */
 }
