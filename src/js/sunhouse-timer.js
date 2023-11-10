@@ -41,8 +41,8 @@ var x = setInterval(function () {
         clearInterval(x);
         cronoElementInfo.innerHTML = "Encerrado";
         cronoElementDay.innerHTML = "0";
-        cronoElementHour.innerHTML = "0";
-        cronoElementMinute.innerHTML = "0";
-        cronoElementSecond.innerHTML = "0";
+        cronoElementHour.innerHTML = "00";
+        cronoElementMinute.innerHTML = "00";
+        cronoElementSecond.innerHTML = "00";
     }
 }, 1000);
