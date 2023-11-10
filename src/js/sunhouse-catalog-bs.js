@@ -114,9 +114,8 @@ $(document).ready(function () {
     });
 });
 
-// Inicia Popper Tooltips    
-//$(window).load(function () {
-$(document).ready(function () {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-});
+// Inicia Popper Tooltips - inativo ate subir tema novo site - Usando o do Custom Elements - iniciaPopperTooltips
+//$(document).ready(function () {
+    //const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    //const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+//});
