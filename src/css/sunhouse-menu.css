@@ -250,3 +250,15 @@ a.caretMain:after {
 .campanhaDestaque:hover {
     opacity: .9
 }
+
+/* Botao Black Friday */
+.black-friday-btn {
+    background-color: #000 !important;
+    color: #FFDA00 !important;
+}
+
+.black-friday-btn:hover {
+    background-color: #F90041 !important;
+    opacity: 1 !important;
+}
+/* Botao Black Friday */

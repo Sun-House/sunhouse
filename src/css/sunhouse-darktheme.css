@@ -311,3 +311,9 @@ body.institucional>.content a {
     --bs-btn-border-color: #F90041 !important;
 }
 /* Novo Tema Catalog BS */
+
+/* Menu Black Friday */
+.black-friday-btn {
+    border: 2px solid #F90041
+}
+/* Menu Black Friday */
