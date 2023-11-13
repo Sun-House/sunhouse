@@ -174,7 +174,7 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 
     #instaMob {
         display: block !important;
-        padding: 20px; /* TESTE */
+        scale: 0.9; /* TESTE */
     }
 
     #bannerInstaTest iframe {
