@@ -49,11 +49,13 @@
     font-size: 32px;
     margin-top: 55px;
     text-align: center;
-    -webkit-background-clip: text;
+    /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/bgInstaLow.jpg);
+    background-size: 45px; - Old modo de efeito no insta widget title */
+    color: transparent;
+    background: -webkit-linear-gradient(315deg,#F90041 30%,#FFDA00 100%);
     background-clip: text;
-    background-image: url(https://sunhouse.vteximg.com.br/arquivos/bgInstaLow.jpg);
-    background-size: 45px;
-    color: transparent
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .instaLinkBanner:hover {
@@ -171,7 +173,8 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
     }
 
     #instaMob {
-        display: block !important
+        display: block !important;
+        padding: 20px; /* TESTE */
     }
 
     #bannerInstaTest iframe {
@@ -196,4 +199,10 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
         border: unset !important;
     }
     /* Botao Carregar Mais */
+
+    /* TESTE */
+    .newslettershowed {
+        display: none !important;
+    }
+    /* TESTE */
 }

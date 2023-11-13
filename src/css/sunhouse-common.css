@@ -1420,7 +1420,8 @@ body>div.breadcrumb>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     .newslettershowed {
         width: 100%;
         box-sizing: border-box;
-        padding: 48px 16px
+        padding: 48px 16px;
+        margin-top: -80px !important; /* Ajuste NewsLetter - Oculta brand do widget footer */
     }
 
     .newslettershowed__infos {
