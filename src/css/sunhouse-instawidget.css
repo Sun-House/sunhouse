@@ -133,7 +133,6 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 }
 
 @media screen and (max-width:1199px) {
-
     .highlightBanners h2.RoundBannerTitle,
     .instaContTitle {
         font-size: 24px !important;
@@ -188,4 +187,13 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
         position: absolute;
         left: 0
     }
+
+    /* Botao Carregar Mais - Novo Widget 13.11.23 */
+    .css-qbuaef {
+        background-color: #FFDA00;
+        color: #F90041;
+        padding: 8px 40px !important;
+        border: unset !important;
+    }
+    /* Botao Carregar Mais */
 }
