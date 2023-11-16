@@ -131,10 +131,14 @@
 }
 
 .catalog .catalogFilters {
-    display: table;
+    /*display: table;*/
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 24px 0 8px;
-    background: #523469
+    /*padding: 24px 0 8px;*/
+    padding: 0;
+    background: #523469;
+    min-height: 99.75px;
 }
 
 @media screen and (max-width:1199px) {
@@ -189,11 +193,16 @@
 }
 
 .catalog .catalogFilters .content {
-    display: table;
+    /*display: table;*/
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 970px
+    /*max-width: 970px*/
+    max-width: 1190px
 }
 
 .catalog .catalogFilters .content>ul {
@@ -222,8 +231,25 @@
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    margin: 0 24px 24px 0;
+    /*margin: 0 24px 24px 0;*/
     box-sizing: border-box
+}
+
+.catalog .catalogFilters .content ul {
+    margin: unset !important;
+}
+
+.catalog .catalogFilters .content .filterSelect {
+    margin: unset;
+    margin-right: 24px !important;
+}
+
+.catalog .catalogFilters .content .filterSelect:last-of-type {
+    display: none;
+}
+
+.catalog .catalogFilters .content .filterSelect__show {
+    margin: 0 24px 24px 0;
 }
 
 @media screen and (max-width:1199px) {
@@ -396,7 +422,8 @@
     display: table;
     width: 100%;
     padding: 24px 0;
-    background: #cfcfcf
+    background: #cfcfcf;
+    min-height: 40px;
 }
 
 .catalog .catalogOptions .content {
@@ -407,8 +434,13 @@
     max-width: 970px
 }
 
-.catalog .catalogOptions .content .categoriesSelect,
-.catalog .catalogOptions .content .orderSelect {
+.catalog .content .categoriesSelect {
+    display: none /* Ajuste Trigo */
+}
+
+/*.catalog .catalogOptions .content .categoriesSelect,*/
+/*.catalog .catalogOptions .content .orderSelect {*/
+.catalog .content .orderSelect {
     position: relative;
     float: left;
     width: auto;
@@ -421,19 +453,19 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     margin: 0 24px 0 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 @media screen and (max-width:1199px) {
-
     .catalog .catalogOptions .content .categoriesSelect,
     .catalog .catalogOptions .content .orderSelect {
         background: 0 0
     }
 }
 
-.catalog .catalogOptions .content .categoriesSelect__title,
-.catalog .catalogOptions .content .orderSelect__title {
+/*.catalog .catalogOptions .content .categoriesSelect__title,
+.catalog .catalogOptions .content .orderSelect__title {*/
+.catalog .content .orderSelect__title {
     cursor: pointer;
     padding: 10px 60px 10px 14px;
     background-image: url(https://sunhouse.vteximg.com.br/arquivos/select-arrow.png);
@@ -451,8 +483,9 @@
     }
 }
 
-.catalog .catalogOptions .content .categoriesSelect__options,
-.catalog .catalogOptions .content .orderSelect__options {
+/*.catalog .catalogOptions .content .categoriesSelect__options,
+.catalog .catalogOptions .content .orderSelect__options {*/
+.catalog .content .orderSelect__options {
     display: none;
     padding: 16px;
     position: absolute;
@@ -482,10 +515,12 @@
     }
 }
 
-.catalog .catalogOptions .content .categoriesSelect__options h4,
+/*.catalog .catalogOptions .content .categoriesSelect__options h4,
 .catalog .catalogOptions .content .categoriesSelect__options>a,
 .catalog .catalogOptions .content .orderSelect__options h4,
-.catalog .catalogOptions .content .orderSelect__options>a {
+.catalog .catalogOptions .content .orderSelect__options>a {*/
+.catalog .content .orderSelect__options h4,
+.catalog .content .orderSelect__options a {
     position: relative;
     display: table;
     font-size: 14px;
