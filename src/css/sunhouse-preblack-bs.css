@@ -70,6 +70,10 @@
 }
 
 /* Template Catalog - Ajustes */
+.preblack .shelfProduct {
+    height: 440px !important;
+}
+
 .shelfProduct__price-installment {
     display: none !important;
 }
@@ -92,10 +96,13 @@
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0 !important;
 }
 
 .preblack .shelfProduct__name {
-    font-size: 20px;
+    font-family: 'Bebas Neue' !important;
+    font-size: 25px;
+    /*font-size: 20px;*/
     text-align: start !important;
     /*color: #222 !important;*/
     color: #F90041 !important;
@@ -106,6 +113,8 @@
 }
 
 .preblack .shelfProduct__name span {
+    font-family: 'Bebas Neue' !important;
+    font-size: 25px;
     text-decoration: line-through;
 }
 
