@@ -1,95 +1,121 @@
-@media screen and (min-width: 1200px){
+/*@media screen and (min-width: 1200px){*/
+.RoundBannerTitle,
+.highlightBanners__content {
+    display: none !important;
+}
+
+#smarthint-position-1 {
+    /*display: block;*/
+    margin-top: -20px;
+}
+
+.home #highlightRoundBanners {
+    height: 560px;
+}
+
+/*#smarthint-position-1,*/
+#smarthint-position-5 {
+    display: none !important;
+}
+
+.smarthint-promotionalbox-container {
+    /*max-width: 72%;*/
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
+.smarthint-promotionalbox-container .bestSellers h2 {
+    margin-left: 30px;
+}
+
+.smarthint-promotionalbox-container .shelf .slick-arrow.slick-prev {
+    left: -340px
+}
+
+.smarthint-promotionalbox-container .shelf .slick-arrow.slick-next {
+    right: -30px;
+}
+
+.smarthint-promotionalbox-container .sh-promotionalbox {
+    margin-left: 10px;
+}
+
+#promotionalbox-img-banner-805 {
+    max-width: unset !important;
+    width: 300px !important;
+    margin-left: -35px;
+}
+
+/* Timer */
+.promotionalbox-cronometro {
+    margin-bottom: -30px;
+}
+
+.day {
+    font-size: 35px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    top: 0px;
+    left: 50px;
+}
+
+.day::after {
+    content: "Dias";
+    padding-left: 10px;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-weight: 600;
+}
+
+.hour,
+.minute,
+.second {
+    font-size: 52px !important;
+    left: 12px;
+    position: relative;
+}
+
+.hour::after,
+.minute::after {
+    content: ':';
+}
+
+.day-text,
+.hour-text,
+.minute-text,
+.second-text {
+    display: none;
+}
+/* Timer */
+/*}*/
+
+@media screen and (max-width: 1199px) {
     .RoundBannerTitle,
-    .highlightBanners__content {
-        display: none !important;
-    }
-    
-    #smarthint-position-1 {
-        /*display: block;*/
-        margin-top: -20px;
-    }
-    
-    .home #highlightRoundBanners {
-        height: 560px;
-    }
-    
-    /*#smarthint-position-1,*/
-    #smarthint-position-5 {
-        display: none !important;
-    }
-    
-    .smarthint-promotionalbox-container {
-        /*max-width: 72%;*/
-        max-width: 1145px;
-        margin: 0 auto;
-    }
-    
-    .smarthint-promotionalbox-container .bestSellers h2 {
-        margin-left: 30px;
-    }
-    
-    .smarthint-promotionalbox-container .shelf .slick-arrow.slick-prev {
-        left: -340px
-    }
-    
-    .smarthint-promotionalbox-container .shelf .slick-arrow.slick-next {
-        right: -30px;
-    }
-    
-    .smarthint-promotionalbox-container .sh-promotionalbox {
-        margin-left: 10px;
-    }
-    
-    #promotionalbox-img-banner-805 {
-        max-width: unset !important;
-        width: 300px !important;
-        margin-left: -35px;
-    }
-    
-    /* Timer */
-    .day {
-        font-size: 35px;
-        position: relative;
-        margin: 0 auto;
-        display: flex;
-        top: 0px;
-        left: 50px;
-    }
-    
-    .day::after {
-        content: "Dias";
-        padding-left: 10px;
-    }
-    
+    .home .highlightBanners__content,
+    .smarthint-promotionalbox,
+    #promotionalbox-img-banner-805,
     .promotionalbox-cronometro {
-        margin-bottom: -30px;
+        display: none !important;
     }
-    
-    .day,
-    .hour,
-    .minute,
-    .second {
-        font-weight: 600;
+
+    #highlightRoundBanners {
+        margin-top: -30px !important;
     }
-    
-    .hour,
-    .minute,
-    .second {
-        font-size: 52px !important;
-        left: 12px;
-        position: relative;
+
+    .sh-promotionalbox {
+        max-width: 100% !important;
     }
-    
-    .hour::after,
-    .minute::after {
-        content: ':';
+
+    .home #highlightRoundBanners {
+        height: auto !important;
     }
-    
-    .day-text,
-    .hour-text,
-    .minute-text,
-    .second-text {
-        display: none;
+
+    .sh-promotionalbox .bestSellers {
+        padding-top: 10px !important;
     }
-    /* Timer */
 }
