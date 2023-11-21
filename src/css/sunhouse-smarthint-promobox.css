@@ -19,7 +19,8 @@
     }
     
     .smarthint-promotionalbox-container {
-        max-width: 72%;
+        /*max-width: 72%;*/
+        max-width: 1145px;
         margin: 0 auto;
     }
     
