@@ -46,6 +46,11 @@
     margin-left: -35px;
 }
 
+.catalog .smarthint-promotionalbox-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 /* Timer */
 .promotionalbox-cronometro {
     margin-bottom: -30px;
