@@ -146,6 +146,7 @@
     }
 
     .preblack .shelfProduct {
+        min-height: 300px !important; /* sem o nome do produto */
         height: 320px !important; /* sem o nome do produto */
     }
 
