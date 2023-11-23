@@ -144,6 +144,16 @@
         white-space: nowrap;
         letter-spacing: -1px;
     }
+
+    .preblack .shelfProduct {
+        height: 320px !important; /* sem o nome do produto */
+    }
+
+    .preblack .shelfProduct__name,
+    .preblack .shelfProduct__name span {
+        font-size: 20px !important;
+        white-space: nowrap;
+    }
 }
 
 .preblack .view-product {
