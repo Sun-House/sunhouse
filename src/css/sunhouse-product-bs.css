@@ -2050,7 +2050,7 @@ th.name-field::after {
 /* Nav-Tabs Product Description Details */
 #productInfos-tabs {
     --bs-nav-tabs-border-color: rgba(231, 121, 37, 0.25) !important;
-    --bs-nav-tabs-border-width: 0.15rem !important;
+    /*--bs-nav-tabs-border-width: 0.15rem !important;*/
     --bs-nav-tabs-border-radius: 20px !important;
 }
 
@@ -2067,6 +2067,10 @@ th.name-field::after {
     border-right: 0.15rem solid rgba(231, 121, 37, 0.25);
     border-left: 0.15rem solid rgba(231, 121, 37, 0.25);
     border-top: 0.15rem solid rgba(231, 121, 37, 0.25);
+}
+
+.productInfos hr {
+    margin-top: 65px;
 }
 /* Nav-Tabs Product Description Details */
 
