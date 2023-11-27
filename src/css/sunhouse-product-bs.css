@@ -2103,8 +2103,8 @@ th.name-field::after {
     }
 
     #productInfos-accordion .accordion-item:first-of-type .accordion-button {
-        border-top-left-radius: 20px !important;
-        border-top-right-radius: 20px !important;
+        border-top-left-radius: 18px !important;
+        border-top-right-radius: 18px !important;
     }
     
     #productInfos-accordion .accordion-button:not(.collapsed) {
