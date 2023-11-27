@@ -2,7 +2,7 @@
 function moveElementos() {
     const prodDesc = document.getElementById('product-description');
     const prodFicha = document.getElementById('product-ficha');
-    const prodRate = document.getElementById('_trustvox_widget');
+    const prodRate = document.getElementById('product-rate');
 
     if (window.matchMedia('(max-width: 1199px)').matches) {
         // Verifica se a largura da tela é no máximo 1199px
