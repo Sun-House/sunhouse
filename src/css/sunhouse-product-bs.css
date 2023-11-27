@@ -2103,8 +2103,18 @@ th.name-field::after {
 }
 /* Ajustes BS */
 
-/* Ajuste bloco Opinions Trust */
+/* Bloco Trust Rates PDP */
 .ts-customer-questions-form-wrapper .ts-input[data-v-7b6506c8] {
     border-radius: 30px !important;
+    padding: 20px !important;
 }
-/* Ajuste bloco Opinions Trust */
+
+.ts-customer-questions-form-wrapper button[disabled][data-v-7b6506c8],
+.ts-customer-questions-form-wrapper button[data-v-7b6506c8] {
+    border-radius: 30px !important;
+}
+
+.ts-customer-questions-form-wrapper button[data-v-7b6506c8]:hover {
+    scale: 1.1;
+}
+/* Bloco Trust Rates PDP */
