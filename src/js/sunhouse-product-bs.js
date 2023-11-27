@@ -215,15 +215,6 @@ function displayGratis() {
 }
 
 // Montagem Service Fn
-//window.addEventListener("load", function () {
-    //setTimeout(function () {
-        //document.getElementById("btnFreteSimulacao").addEventListener("click", function () {
-            //checarCep();
-        //});
-    //}, 1000); // 1 segundos de espera
-//});
-
-// Montagem Service Fn - TESTES
 window.addEventListener("load", function () {
     setTimeout(function () {
         var btnFreteSimulacao = document.getElementById("btnFreteSimulacao");
@@ -231,15 +222,9 @@ window.addEventListener("load", function () {
             btnFreteSimulacao.addEventListener("click", function () {
                 checarCep();
             });
-        } 
-        // Apenas debug:
-        //else {
-            // Faça outra coisa aqui, caso o elemento não exista
-            //console.log("O elemento btnFreteSimulacao não foi encontrado.");
-        //}
+        }
     }, 1000); // 1 segundo de espera
 });
-// Montagem Service Fn - TESTES
 
 function checarCep() {
     var cep = document.getElementById("txtCep").value;
