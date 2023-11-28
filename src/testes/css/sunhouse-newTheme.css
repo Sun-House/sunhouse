@@ -169,15 +169,23 @@ a.caretMain:after {
     padding-top: 15px !important;
 }
 
-/* Smart Hint */
+/* Smart Hint dropdown barra de busca */
+#smarthint-search-mostsearchedterms .mostsearchedterm-list {
+    border-radius: 0px 0px 20px 20px !important;
+}
+
 #smarthint-search-mostsearchedterms .mostsearchedterm-title {
-    color: #f90041;
+    color: #f90041 !important;
+}
+
+#smarthint-search-mostsearchedterms .term-order {
+    border-radius: 30px !important;
 }
 
 #smarthint-search-mostsearchedterms a:hover .term-order {
     background-color: #f90041 !important;
 }
-/* Smart Hint */
+/* Smart Hint dropdown barra de busca */
 
 /* Home */
 /* Area abaixo dos banners principais Home */
