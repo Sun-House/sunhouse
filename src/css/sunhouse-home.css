@@ -779,6 +779,7 @@
     }
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
+        max-width: 1399px;
         text-align: left;
         margin: auto;
         padding-bottom: 30px;
