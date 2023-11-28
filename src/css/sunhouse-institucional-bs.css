@@ -128,7 +128,7 @@
     line-height: 28px;
     font-weight: 400;
     color: #000;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 #btnCard {
