@@ -184,6 +184,7 @@ a.caretMain:after {
 
 #smarthint-search-mostsearchedterms .mostsearchedterm-list li:hover {
     border-radius: 100px !important;
+    background-color: #FFDA0080 !important;
 }
 
 #smarthint-search-mostsearchedterms .term-order {
