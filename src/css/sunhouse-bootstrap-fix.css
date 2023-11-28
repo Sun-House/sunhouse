@@ -119,7 +119,7 @@ ol, ul {
 /* Breadcrumb BS */
 .breadcrumb_bs {
     /* width: 100%; */
-    margin-left: 194px !important;
+    /*margin-left: 194px !important; - esta dando uns erros nao sei pra que serve entao desabilitei */
     margin-right: auto;
     margin: 0 auto;
     max-width: 1200px !important;
