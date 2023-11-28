@@ -1,5 +1,6 @@
 .institucional .header__menu {
     border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
 }
 
 .content {
@@ -45,10 +46,10 @@
 }
 /* Ajustes Footer */
 
-#content-page {
-    /*margin: 0 200px;*/
+/*#content-page { melhor ficar sem por hora
+    margin: 0 200px;
     margin: 0 635px;
-}
+}*/
 
 .container {
     padding-top: 25px;
