@@ -115,12 +115,20 @@
     display: none;
 }
 
-#content-page h1 {
-    font-size: 30px;
+#content-page h1,
+#content-page #title-h2 {
     font-weight: 700;
     line-height: 48px;
     color: #F90041 !important;
     box-sizing: border-box;
+}
+
+#content-page h1 {
+    font-size: 30px
+}
+
+#content-page #title-h2 {
+    font-size: 25px
 }
 
 #content-page p {
