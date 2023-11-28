@@ -357,6 +357,12 @@ a.caretMain:after {
 /* Header Fixed - Mobile */
 
 /* Catalog Filter Bar e Catalog Options */
+.catalog .catalogFilters,
+.catalog .catalogOptions {
+    max-width: 1350px;
+    min-width: 1250px;
+}
+
 .catalog .catalogFilters {
     background: -webkit-linear-gradient(315deg,#FFDA00 0,#F90041 100%) !important;
 }
