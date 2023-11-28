@@ -779,7 +779,8 @@
     }
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
-        max-width: 1399px;
+        /*max-width: 1399px;*/
+        max-width: 1590px;
         text-align: left;
         margin: auto;
         padding-bottom: 30px;
@@ -827,6 +828,7 @@
 @media screen and (min-width: 1200px) {
     .review-card[data-v-629a8615] {
         border-radius: 30px !important;
+        background-color: #eceff1 !important;
     }
 
     .carousel__slide--active,
