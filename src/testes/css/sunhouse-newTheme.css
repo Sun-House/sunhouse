@@ -64,8 +64,7 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 
 #lancamentos:hover,
 #prontaEntrega:hover {
-    /*opacity: .8;*/
-    transition: 1.07;
+    scale: 1.05;
     transition: .3s;
 }
 
