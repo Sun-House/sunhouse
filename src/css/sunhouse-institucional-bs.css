@@ -312,5 +312,13 @@
 }
 
 #modalFaqFull .modal-body {
-    padding: 35px 150px !important;
+    padding: 35px 150px !important
+}
+
+#modalFaqFull .modal-dialog .modal-content {
+    border-radius: 30px
+}
+
+#modalFaqFull .modal-dialog .modal-content .modal-header h5 {
+    margin-left: 15px
 }
