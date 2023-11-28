@@ -178,6 +178,14 @@ a.caretMain:after {
     color: #f90041 !important;
 }
 
+#smarthint-search-mostsearchedterms .mostsearchedterm-list li {
+    margin-left: 5px !important;
+}
+
+#smarthint-search-mostsearchedterms .mostsearchedterm-list li:hover {
+    border-radius: 100px !important;
+}
+
 #smarthint-search-mostsearchedterms .term-order {
     border-radius: 30px !important;
 }
