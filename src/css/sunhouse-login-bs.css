@@ -1,6 +1,7 @@
 #bg_full {
     background: #F90041;
-    background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);
+    /*background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%);*/
+    background: -webkit-linear-gradient(315deg, #ffda00 0, #f90041 115%);
     height: 1px;
 }
 
