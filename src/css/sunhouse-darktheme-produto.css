@@ -362,7 +362,7 @@ body.produto {
 /* Menu */
 @media screen and (max-width: 1199px) {
     .sh-sidebar {
-        background-color: #0d1117;
+        background-color: #0d1117 !important;
         color: #fff;
     }
 }
