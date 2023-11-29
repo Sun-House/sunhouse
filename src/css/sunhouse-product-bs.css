@@ -278,8 +278,10 @@ table.group.Escritorio {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 56px;
-    height: 56px;
+    /*width: 56px;
+    height: 56px;*/
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -332,8 +334,10 @@ table.group.Escritorio {
     }
 
     .produto .productContent__images-flags .flag {
-        width: 40px;
-        height: 40px
+        /*width: 40px;
+        height: 40px*/
+        width: 60px;
+        height: 60px
     }
 
     .produto .productContent__images-flags .flag.pronta-entrega:after {
@@ -522,7 +526,8 @@ table.group.Escritorio {
 .produto .productContent__images-flags .flag.promocao-85-off:after,
 .produto .productContent__images-flags .flag.promocao-90-off:after {
     display: block;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
     color: #fff;
@@ -530,7 +535,6 @@ table.group.Escritorio {
 }
 
 @media screen and (max-width:1199px) {
-
     .produto .productContent__images-flags .flag.flag-30--desconto-off:after,
     .produto .productContent__images-flags .flag.promocao-10-off:after,
     .produto .productContent__images-flags .flag.promocao-15-off:after,
@@ -549,7 +553,8 @@ table.group.Escritorio {
     .produto .productContent__images-flags .flag.promocao-80-off:after,
     .produto .productContent__images-flags .flag.promocao-85-off:after,
     .produto .productContent__images-flags .flag.promocao-90-off:after {
-        font-size: 15px
+        /*font-size: 15px*/
+        font-size: 23px
     }
 
     .produto .productContent__images-flags .flag.vitrine-home---lancamento {
