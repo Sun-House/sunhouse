@@ -574,8 +574,12 @@ table.group.Escritorio {
 }
 
 .produto .productContent__images .thumbs {
-    display: table;
-    margin: 24px auto 0
+    /*display: table;
+    margin: 24px auto 0;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px auto 0;
 }
 
 @media screen and (max-width:1199px) {
