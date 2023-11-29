@@ -30,11 +30,16 @@
 @media screen and (max-width:1199px) {
     .home .highlight {
         width: 100%;
-        margin: 24px auto 0
+        margin: 24px auto 0;
+        /*max-height: 185px; acredito que seja desnecessario */
+        padding: 10px
     }
 
     .home .highlight img {
-        width: 100%
+        width: 100%;
+        border-radius: 20px;
+        padding-right: 1px;
+        padding-left: 1px
     }
 
     .home .highlight .slick-arrow {
