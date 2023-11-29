@@ -549,5 +549,37 @@ form[ng-submit="confirmAccessKey()"] .modal-footer .vtexIdUI-back-link {
     bottom: -60px;
 }
 /* Etapa Codigo de Autenticacao */
-
 /* Modal Login */
+
+/* Mobile */
+@media screen and (max-width: 1199px) {
+    .vtexIdUI {
+        width: 370px !important;
+        margin-left: -185px !important;
+    }
+    
+    #classicLoginBtn {
+        margin-left: 49px !important;
+    }
+
+    #loginWithAccessKeyBtn {
+        margin-left: -55px !important;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .vtexIdUI {
+        width: 320px !important;
+        margin-left: -160px !important;
+        top: 5% !important;
+    }
+
+    #classicLoginBtn {
+        margin-left: 31px !important;
+    }
+
+    #loginWithAccessKeyBtn {
+        margin-left: -48px !important;
+    }
+}
+/* Mobile */
