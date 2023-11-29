@@ -384,7 +384,14 @@ a.caretMain:after {
 
 #btnScrollSt {
     background-color: #FFDA00;
-    color: #F90041
+    /*color: #F90041*/
+    color: #000;
+    transition: .3s;
+}
+
+#btnScrollSt:hover {
+    scale: 1.05;
+    transition: .3s;
 }
 
 .produto .productContent__infos-freight--message strong {
