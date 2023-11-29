@@ -110,6 +110,7 @@ ul.list-contentCat {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    color: #F90041;
     transition: .5s;
     border-radius: 10px
 }
