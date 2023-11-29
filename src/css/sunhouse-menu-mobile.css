@@ -215,6 +215,7 @@
         flex-direction: column-reverse;
         padding-right: 130px;
         align-items: stretch;
+        padding-bottom: 12px;
     }
     /* Para Black Friday */
     /* Ajustes botoes lancamento e pronta entrega */
