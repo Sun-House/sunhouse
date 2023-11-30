@@ -325,19 +325,19 @@
 /* Ajuste todos Big Info Modals */
 
 /* Para Paginas de Conteudo */
-.content#content-page {
+.sub #content-page {
     max-width: 1060px;
 }
 
-.content#imgLojas img {
+.sub #imgLojas img {
     border-radius: 30px;
 }
 
-.content#imgMap {
+.sub #imgMap {
     padding-bottom: 40px;
 }
 
-.content#imgMap * {
+.sub #imgMap * {
     width: 100% !important;
     max-width: 1059px !important;
     border-radius: 30px 30px 0 30px;
