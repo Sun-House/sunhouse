@@ -1244,7 +1244,7 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 
 .breadcrumb_bs ul li:last-of-type a {
     color: #f90041 !important;
-    text-decoration: underline !important;
+    /*text-decoration: underline !important;*/
 }
 
 /*.breadcrumb_bs ul li:first-child a:hover { ATIVADO NO sunhouse-newTheme.css
