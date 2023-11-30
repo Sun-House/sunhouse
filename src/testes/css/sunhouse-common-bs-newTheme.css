@@ -1247,10 +1247,10 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     text-decoration: underline !important;
 }
 
-.breadcrumb_bs ul li:first-child a:hover {
+/*.breadcrumb_bs ul li:first-child a:hover { ATIVADO NO sunhouse-newTheme.css
     color: #F90041;
     text-decoration: underline;
-}
+}*/
 
 /* Back Page Button */
 #button-back {

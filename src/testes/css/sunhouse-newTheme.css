@@ -97,9 +97,13 @@ a.caretMain:after {
     transition: .3s !important;
 }
 
-.breadcrumb_bs ul li:first-child a:hover {
+/*.breadcrumb_bs ul li:first-child a:hover {
     color: #F90041;
     text-decoration: underline;
+} - Usando o abaixo: */
+
+.breadcrumb_bs ul li a:hover {
+    color: #F90041;
 }
 
 .breadcrumb_bs ul li:last-of-type a {
