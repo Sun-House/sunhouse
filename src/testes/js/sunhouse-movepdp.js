@@ -1,3 +1,5 @@
+// Mover essa function para o arquivo sunhouse-product.js final
+
 // Função para mover os elementos
 function moveElementos() {
     const prodDesc = document.getElementById('product-description');
@@ -16,11 +18,13 @@ function moveElementos() {
         prodRateMob.appendChild(prodRate);
     } //else {
         // Se a largura da tela for maior que 1199px, restaura a posição original dos elementos
-        //const posicaoOriginal = document.getElementById('posicaoOriginal');
+        //const prodDescDesk = document.getElementById('');
+        //const prodFichaDesk = document.getElementById('');
+        //const prodRateDesk = document.getElementById('');
 
-        //posicaoOriginal.appendChild(prodDesc);
-        //posicaoOriginal.appendChild(prodFicha);
-        //posicaoOriginal.appendChild(prodRate);
+        //prodDescDesk.appendChild(prodDesc);
+        //prodFichaDesk.appendChild(prodFicha);
+        //prodRateDesk.appendChild(prodRate);
     //}
 }
 

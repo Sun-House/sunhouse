@@ -51,6 +51,12 @@
     margin: 0 635px;
 }*/
 
+#content-page { /* igual do institucional antigo */
+    width: 90%;
+    max-width: 1224px;
+    margin: 0 auto;
+}
+
 .container {
     padding-top: 25px;
 }
@@ -304,6 +310,48 @@
     padding: 10px 25px;
 }
 
+/* Ajuste todos Big Info Modals */
+.modal .modal-body {
+    padding: 35px 150px !important;
+}
+
+.modal .modal-dialog .modal-content {
+    border-radius: 30px
+}
+
+.modal .modal-dialog .modal-content .modal-header h5 {
+    margin-left: 15px
+}
+/* Ajuste todos Big Info Modals */
+
+/* Responsivo */
+@media screen and (max-width: 1399px) {
+    #content-page {
+        max-width: 924px;
+    }
+
+    .mobile-block {
+        flex-direction: column;
+    }
+    
+    .mobile-block .col:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile-block .col:nth-child(1) .row:nth-child(1) {
+        padding-right: 40px;
+    }
+
+    .mobile-block .col:nth-child(1) .row:nth-child(2) {
+        padding-right: 25px;
+    }
+
+    .mobile-block .col:nth-child(1) .row .card {
+        width: 920px !important;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     #content-page {
         margin: 0 20px;
@@ -319,17 +367,4 @@
         flex-direction: column;
     }
 }
-
-/* Ajuste todos Big Info Modals */
-.modal .modal-body {
-    padding: 35px 150px !important;
-}
-
-.modal .modal-dialog .modal-content {
-    border-radius: 30px
-}
-
-.modal .modal-dialog .modal-content .modal-header h5 {
-    margin-left: 15px
-}
-/* Ajuste todos Big Info Modals */
+/* Responsivo */
