@@ -322,6 +322,10 @@
 .modal .modal-dialog .modal-content .modal-header h5 {
     margin-left: 15px
 }
+
+.modal .modal-dialog .modal-content .modal-header button {
+    margin-right: 1px
+}
 /* Ajuste todos Big Info Modals */
 
 /* Para Paginas de Conteudo */

@@ -2174,3 +2174,13 @@ th.name-field::after {
     scale: 1.1;
 }
 /* Bloco Trust Rates PDP */
+
+/* Ajuste todos Modals */
+.modal .modal-dialog .modal-content {
+    border-radius: 30px
+}
+
+.modal .modal-dialog .modal-content .modal-header button {
+    margin-right: 1px
+}
+/* Ajuste todos Modals */
