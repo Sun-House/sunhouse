@@ -259,6 +259,10 @@ a.caretMain:after {
     color: #000;
 }
 
+.home .opinions > h2 {
+    padding-bottom: 40px;
+}
+
 /* Bloco LaDecora */
 #block-info #block-card {
     max-width: 218px !important;
