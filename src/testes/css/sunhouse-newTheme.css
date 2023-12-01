@@ -369,7 +369,7 @@ a.caretMain:after {
 }
 /* Header Fixed - Mobile */
 
-/* Catalog Filter Bar e Catalog Options */
+/* Catalog Filter Bar e Catalog Options - Erros no Mobile, desativei*/
 .catalog .catalogFilters,
 .catalog .catalogOptions {
     max-width: 1350px;
@@ -446,6 +446,13 @@ a.caretMain:after {
 
 /* Ajuste para nav de Filters BS */
 @media screen and (max-width: 1199px) {
+    /* Corrige erro no mobile */
+    .catalog .catalogFilters,
+    .catalog .catalogOptions {
+        max-width: unset !important;
+        min-width: unset !important;
+    }
+
     .catalog .catalogFilters.active {
         z-index: 999;
     }
