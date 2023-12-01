@@ -155,6 +155,12 @@ ol, ul {
     }
     /* Para o template de Catalog BS */
 
+    /* Para o template de Institucional BS */
+    .institucional .breadcrumb_bs {
+        margin-left: 28px !important;
+    }
+    /* Para o template de Institucional BS */
+
     /* Para todos templates */
     .breadcrumb_bs ul {
         margin-bottom: unset;

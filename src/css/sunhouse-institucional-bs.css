@@ -354,7 +354,8 @@
 /* Para Paginas de Conteudo */
 
 /* Responsivo */
-@media screen and (max-width: 1399px) {
+/*@media screen and (max-width: 1399px) {*/
+@media screen and (min-width: 1399px) {
     #content-page {
         max-width: 924px;
     }
