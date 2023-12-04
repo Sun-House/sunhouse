@@ -574,11 +574,10 @@ table.group.Escritorio {
 }
 
 .produto .productContent__images .thumbs {
-    /*display: table;
-    margin: 24px auto 0;*/
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;*/
+    display: table;
     margin: 24px auto 0;
 }
 
@@ -606,9 +605,15 @@ table.group.Escritorio {
     margin-right: 0
 }
 
+.produto .productContent__images .thumbs li:nth-child(3) {
+    margin-right: 0 !important;
+}
+
 .produto .productContent__images .thumbs li img {
-    width: 175px;
-    height: 175px;
+    /*width: 175px;
+    height: 175px;*/
+    width: 208px;
+    height: auto;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
