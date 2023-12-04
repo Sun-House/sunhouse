@@ -1,0 +1,89 @@
+/* Ajustes Display Payment Methods e Template Produto com BS */
+.produto .plugin-preco {
+    display: none;
+}
+
+#button-back i {
+    color: #e77925;
+    font-size: 40px;
+}
+
+.button-hidden i {
+    font-size: 60px !important;
+}
+
+#first-wrap-opinion #trustRate {
+    display: flex !important;
+}
+
+.produto .productContent__images-flags .flag {
+    margin-bottom: unset !important;
+}
+
+#wrap-button-back {
+    width: 55px;
+    height: 50px;
+}
+
+/* Display Montagem SP */
+.montagem_show {
+    display: flex !important;
+}
+/* Display Montagem SP */
+/* Ajustes Display Payment Methods e Template Produto com BS */
+    
+/* TESTE DESCRIÇÃO NOVA BUGADA */
+.produto .productInfos .productDescription h2 {
+    padding-bottom: 20px;
+}
+.produto .productInfos .productDescription h4,
+.produto .productInfos .productDescription h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.produto .productInfos .productDescription p,
+.produto .productInfos .productDescription li {
+    font-size: 12pt !important;
+}
+/* TESTE DESCRIÇÃO NOVA BUGADA */
+
+
+/* Temporario - Ajustes */
+/* Ajuste font-size prices */
+.shelfProduct__price-installment {
+    font-size: 18px !important;
+}
+
+.shelfProduct__price.in {
+    font-size: 21px !important;
+}
+/* Product ajuste font-size prices */
+
+/* Ajuste botao add to cart */
+.produto #add-to-cartBtn a {
+    font-size: 18px !important;
+    white-space: normal !important;
+}
+/* Ajuste botao add to cart */
+    
+.produto .productContent__infos-price,
+.produto .productContent__infos-installment div p {
+    /*color: #222 !important;*/
+    color: #444 !important;
+}
+
+#smarthint-search-sort {
+    left: 20px !important;
+    top: 10px !important;
+}
+
+.produto .breadcrumb {
+    margin-left: 0px !important;
+}
+
+@media screen and (max-width: 1199px) {
+    .produto .breadcrumb_bs {
+        margin-left: 0px !important;
+    }
+}
+/* Temporario - Ajustes */
