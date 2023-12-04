@@ -415,5 +415,9 @@
     #rowCards div .card {
         padding-bottom: 20px;
     }
+
+    .carousel-item a img {
+        height: auto !important;
+    }
 }
 /* Responsivo */
