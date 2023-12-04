@@ -114,6 +114,7 @@
     filter: invert(100%) sepia(58%) saturate(6723%) hue-rotate(336deg) brightness(103%) contrast(110%) !important;
 }
 
+/* Breadcrumb */
 /*.institucional .breadcrumb_bs { dando erros quando em monitores diferentes do convencional
     margin-left: 210px !important;
 }*/
@@ -121,6 +122,12 @@
 .institucional .breadcrumb_bs ul li:last-child a:after {
     display: none;
 }
+
+.sub .breadcrumb_bs ul li:last-of-type a {
+    color: #f90041 !important;
+    text-decoration: underline !important;
+}
+/* Breadcrumb */
 
 #content-page h1,
 #content-page #title-h2 {
