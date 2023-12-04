@@ -205,4 +205,9 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
         display: none !important;
     }
     /* TESTE */
+
+    .catalog .highlights.designers#instaContainer,
+    .produto .highlights.designers#instaContainer {
+        margin-top: 0px
+    }
 }

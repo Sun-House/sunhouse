@@ -2109,13 +2109,13 @@ th.name-field::after {
 }
 /* Nav-Tabs Product Description Details */
 
-/* Ajuste Insta - Migrar para todos os templates */
+/* Ajuste Insta - Migrar para todos os templates
 @media screen and (max-width:1199px) {
     .produto .instaWrap .imgRound {
         display: none;
     }
 }
-/* Ajuste Insta - Migrar para todos os templates */
+Ajuste Insta - Migrar para todos os templates */
 
 #container-productInfos-mobile {
     display: none;
