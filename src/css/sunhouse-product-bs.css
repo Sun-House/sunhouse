@@ -1878,7 +1878,11 @@ th.name-field::after {
 }
 
 .produto .productContent__infos-freight .freight-values .cep-invalido .valor strong {
+    display: block !important;
     color: #fe0000;
+    background-color: #ffc10770 !important;
+    border-radius: 20px;
+    padding: 20px
 }
 
 .produto .productContent__infos-freight fieldset #btnFreteSimulacao {
