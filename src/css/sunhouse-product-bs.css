@@ -1177,7 +1177,7 @@ table.group.Escritorio {
     }
 
     .produto .productContent__infos-freight #popupCalculoFreteWrapper {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
 }
 
@@ -1321,6 +1321,7 @@ table.group.Escritorio {
     .freight-btn {
         /*margin: -44px 0 0 4px;*/
         margin: -44px 5px 0 4px;
+        margin: -44px 10px 0 4px !important;
     }
 }
 
@@ -1779,9 +1780,9 @@ th.name-field::after {
         font-size: 10pt
     }
 
-    #medidasNEW>ul>li>span {
-        margin-left: 48.7%;
-        width: auto;
+    #medidasNEW ul li span {
+        /*margin-left: 48.7%;
+        width: auto;*/
         white-space: nowrap
     }
 }
