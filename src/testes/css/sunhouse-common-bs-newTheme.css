@@ -2068,6 +2068,12 @@ body.black-friday .catalogIntro {
 }
 
 @media screen and (max-width:1199px) {
+    * {
+        overflow-x: clip;
+        -webkit-overflow-x: clip !important;
+        -moz-overflow-x: clip !important;
+    }
+    
     .fullbody {
         position: fixed;
         right: 7px !important;
@@ -2078,8 +2084,8 @@ body.black-friday .catalogIntro {
 @media screen and (max-width:1350px) {
     * {
         overflow-x: clip;
-        -webkit-overflow-x: clip;
-        -moz-overflow-x: clip;
+        -webkit-overflow-x: clip !important;
+        -moz-overflow-x: clip !important;
     }
 
     /*.topbar__content {

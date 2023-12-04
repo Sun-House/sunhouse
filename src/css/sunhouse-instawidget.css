@@ -192,13 +192,6 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
     }
 
     /* Botao Carregar Mais - Novo Widget 13.11.23
-    /*.css-qbuaef {
-        background-color: #FFDA00;
-        color: #F90041;
-        padding: 8px 40px !important;
-        border: unset !important;
-    } - NAO FUNCIONOU POR ESSE ARQUIVO */
-
     .css-qbuaef {
         border: unset !important;
         padding: 10px 40px !important;
@@ -207,7 +200,7 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
         color: #FFDA00 !important;
         font-weight: 600 !important;
         font-size: 16px !important;
-    }
+    } - NAO FUNCIONOU POR ESSE ARQUIVO */
     /* Botao Carregar Mais */
 
     /* TESTE */
