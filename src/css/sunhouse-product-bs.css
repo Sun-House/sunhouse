@@ -605,7 +605,16 @@ table.group.Escritorio {
     margin-right: 0
 }
 
-.produto .productContent__images .thumbs li:nth-child(3) {
+.produto .productContent__images .thumbs li:nth-child(3),
+.produto .productContent__images .thumbs li:nth-child(6),
+.produto .productContent__images .thumbs li:nth-child(9),
+.produto .productContent__images .thumbs li:nth-child(12), 
+.produto .productContent__images .thumbs li:nth-child(15),
+.produto .productContent__images .thumbs li:nth-child(18),
+.produto .productContent__images .thumbs li:nth-child(21),
+.produto .productContent__images .thumbs li:nth-child(24),
+.produto .productContent__images .thumbs li:nth-child(27),
+.produto .productContent__images .thumbs li:nth-child(30) {
     margin-right: 0 !important;
 }
 
