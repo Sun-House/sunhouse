@@ -2069,7 +2069,7 @@ body.black-friday .catalogIntro {
 
 @media screen and (max-width:1199px) {
     * {
-        overflow-x: clip;
+        overflow-x: clip !important;
         -webkit-overflow-x: clip !important;
         -moz-overflow-x: clip !important;
     }
@@ -2083,7 +2083,7 @@ body.black-friday .catalogIntro {
 
 @media screen and (max-width:1350px) {
     * {
-        overflow-x: clip;
+        overflow-x: clip !important;
         -webkit-overflow-x: clip !important;
         -moz-overflow-x: clip !important;
     }
