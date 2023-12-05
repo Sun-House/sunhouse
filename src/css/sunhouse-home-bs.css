@@ -860,4 +860,11 @@
         margin-right: 120px !important;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .review-card[data-v-629a8615] {
+        border-radius: 30px !important;
+        background-color: #eceff1 !important;
+    }
+}
 /* Bloco Trust Home */
