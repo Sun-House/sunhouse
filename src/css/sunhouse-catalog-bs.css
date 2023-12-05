@@ -691,8 +691,10 @@
         font-weight: 400
     }
 
-    .catalog .catalogProducts>.main {
-        width: 100vw
+    /*.catalog .catalogProducts>.main {*/
+    .catalog .catalogProducts .main {
+        /*width: 100vw;*/
+        width: 110vw;
     }
 
     .catalog .catalogProducts .shelfProduct {
