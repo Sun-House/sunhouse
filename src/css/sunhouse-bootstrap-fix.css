@@ -116,6 +116,14 @@ ol, ul {
     padding-left: unset;
 }
 
+/* Apenas templates Catalog*/
+@media screen and (max-width: 1199px) {
+    .resultItemsWrapper .shelf ul {
+        padding-left: 2rem !important;
+    }
+}
+/* Apenas templates Catalog*/
+
 /* Breadcrumb BS */
 .breadcrumb_bs {
     /* width: 100%; */
