@@ -52,7 +52,8 @@
 .catalog .catalogIntro .catalogdescription h3 {
     display: block;
     font-size: 24px;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    font-weight: 600;
     color: #F90041;
     padding-top: 25px
 }
