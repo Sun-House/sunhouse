@@ -87,3 +87,9 @@
     }
 }
 /* Temporario - Ajustes */
+
+/* Ajustes pre rebranding */
+.produto .productInfos {
+    border-top: unset !important;
+}
+/* Ajustes pre rebranding */

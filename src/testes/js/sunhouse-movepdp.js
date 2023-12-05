@@ -1,4 +1,5 @@
 // Mover essa function para o arquivo sunhouse-product.js final
+// Fazer o mencionado acima apenas apos rebranding
 
 // Função para mover os elementos
 function moveElementos() {

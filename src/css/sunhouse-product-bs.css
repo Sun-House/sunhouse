@@ -304,13 +304,19 @@ table.group.Escritorio {
     display: flex;
     float: right;
     font-size: 0;
-    background-size: cover;
+    /*background-size: cover;
     -webkit-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
     border-radius: 100%;
     -webkit-border-radius: 100%;
-    -moz-border-radius: 100%
+    -moz-border-radius: 100%*/
+
+    /*TESTE*/    
+    background-position: -5px -5px;
+    background-repeat: no-repeat;
+    background-size: 112%;
+    /*TESTE*/
 }
 
 .produto .productContent__images-flags .flag.lp-outlet {
@@ -1382,10 +1388,12 @@ table.group.Escritorio {
     color: #444;
     line-height: 32px;
     border: 1px solid #ccc;
-    /*border-radius: 4px;*/
-    border-radius: 20px;
+    /*border-radius: 4px;
     -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    -moz-border-radius: 4px;*/
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
     /*margin-top: 16px;*/
     margin-top: 30px;
 }
