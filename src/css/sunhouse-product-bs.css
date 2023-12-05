@@ -103,9 +103,11 @@ table.group.Escritorio {
     }
 }
 
-#prodEspec>div>ul>li {
+/*#prodEspec>div>ul>li {*/
+#prodEspec div ul li {
     background-color: #eee;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-radius: 20px;
     margin-bottom: 10px !important;
     width: 48.5%;
     padding: 5px !important;
@@ -115,13 +117,15 @@ table.group.Escritorio {
     text-overflow: ellipsis
 }
 
-#prodEspec>div>ul>li>span {
+/*#prodEspec>div>ul>li>span {*/
+#prodEspec div ul li span {
     float: left !important;
     margin-right: 5px !important;
     font-weight: 700;
     padding: 5px !important;
     padding-left: 10px !important;
-    border-radius: 5px 0 0 5px;
+    /*border-radius: 5px 0 0 5px;*/
+    border-radius: 20px 0 0 20px;
     width: 47.6%;
     text-align: initial;
     margin: -5px;
