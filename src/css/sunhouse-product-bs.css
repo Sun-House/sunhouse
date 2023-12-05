@@ -63,15 +63,19 @@ table.group.Escritorio {
     text-align: left
 }
 
-#caracteristicas>table>tbody>tr>th {
+/*#caracteristicas>table>tbody>tr>th {*/
+#caracteristicas table tbody tr th {
     width: auto;
-    border-radius: 5px 0 0 5px;
+    /*border-radius: 5px 0 0 5px;*/
+    border-radius: 20px 0 0 20px;
     padding-left: 10px !important;
     border-right: 5px solid #fff
 }
 
-#caracteristicas>table>tbody>tr>td {
-    border-radius: 0 5px 5px 0;
+/*#caracteristicas>table>tbody>tr>td {*/
+#caracteristicas table tbody tr td {
+    /*border-radius: 0 5px 5px 0;*/
+    border-radius: 0 20px 20px 0;
     padding: 5px 10px 5px 5px;
     white-space: normal;
     width: 50%
@@ -143,20 +147,24 @@ table.group.Escritorio {
     }
 }
 
-#prodEspec>div>dl>dd {
+/*#prodEspec>div>dl>dd {*/
+#prodEspec div dl dd {
     background-color: #eee;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-radius: 20px;
     margin-bottom: 10px !important;
     padding: 5px !important
 }
 
-#prodEspec>div>dl>dd>span {
+/*#prodEspec>div>dl>dd>span {*/
+#prodEspec div dl dd span {
     float: left !important;
     margin-right: 5px !important;
     font-weight: 700;
     padding: 5px !important;
     padding-left: 10px !important;
-    border-radius: 5px 0 0 5px;
+    /*border-radius: 5px 0 0 5px;*/
+    border-radius: 20px 0 0 20px;
     width: 47.6%;
     text-align: initial;
     margin: -5px;
@@ -1763,7 +1771,8 @@ th.name-field::after {
     background-color: #eee;
     padding: 5px;
     padding-left: 10px !important;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-radius: 20px;
     margin-bottom: 10px;
     text-align: start !important;
     font-weight: 700
@@ -1780,7 +1789,8 @@ th.name-field::after {
     background-color: #eee;
     width: 52%;
     float: right;
-    border-radius: 0 5px 5px 0;
+    /*border-radius: 0 5px 5px 0;*/
+    border-radius: 0 20px 20px 0;
 }
 
 @media screen and (max-width:1199px) {
