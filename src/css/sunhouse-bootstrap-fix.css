@@ -149,6 +149,13 @@ ol, ul {
 }
 
 @media screen and (max-width: 1199px) {
+    /* Para todos os templates - correcao eixo x UX */
+    .breadcrumb_bs {
+        max-width: unset !important;
+        width: auto !important;
+    }
+    /* Para todos os templates - correcao eixo x UX */
+
     /* Para o template de Catalog BS */
     .catalog .breadcrumb_bs {
         margin-left: 25px !important;
