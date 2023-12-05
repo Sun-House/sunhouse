@@ -2080,6 +2080,12 @@ body.black-friday .catalogIntro {
         -webkit-overflow-x: clip !important;
         -moz-overflow-x: clip !important;
     }
+
+    .catalog #page-content {
+        overflow-x: clip !important;
+        -webkit-overflow-x: clip !important;
+        -moz-overflow-x: clip !important;
+    }
     /*TESTE*/
     
     .fullbody {
