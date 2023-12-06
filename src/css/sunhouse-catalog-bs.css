@@ -5,6 +5,17 @@
     margin: 0 auto;
 }
 
+/* Breadcrumb BS - Catalog-BS Geral */
+.catalog .breadcrumb_bs ul li:last-of-type a {
+    color: #f90041 !important;
+    text-decoration: underline !important;
+}
+
+.catalog .breadcrumb_bs ul li:last-of-type a::after {
+    display: none !important;
+}
+/* Breadcrumb BS */
+
 .catalog .breadcrumb {
     max-width: 1200px
 }
