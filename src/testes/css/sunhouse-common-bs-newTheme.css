@@ -147,9 +147,9 @@ q {
     quotes: none
 }
 
-blockquote:after,
+blockquote::after,
 blockquote:before,
-q:after,
+q::after,
 q:before {
     content: "";
     content: none
@@ -604,7 +604,7 @@ body>.header {
     margin-right: 10px
 }
 
-.header__menu ul li a.hasSub:after {
+.header__menu ul li a.hasSub::after {
     content: "";
     position: absolute;
     top: 10px;
@@ -637,7 +637,7 @@ body>.header {
     background: #00b147
 }
 
-.header__menu ul li a.promo:after,
+.header__menu ul li a.promo::after,
 .header__menu ul li a.promo:before {
     position: relative;
     top: 1px;
@@ -653,7 +653,7 @@ body>.header {
     margin-right: 4px
 }
 
-.header__menu ul li a.promo:after {
+.header__menu ul li a.promo::after {
     margin-left: 4px
 }
 
@@ -838,7 +838,7 @@ body>.header {
     font-size: 0
 }
 
-.shelfProductImages>div .pronta-entrega:after {
+.shelfProductImages>div .pronta-entrega::after {
     content: "PRONTA ENTREGA";
     display: block;
     font-size: 11px;
@@ -859,7 +859,7 @@ body>.header {
         height: 32px
     }
 
-    .shelfProductImages>div .pronta-entrega:after {
+    .shelfProductImages>div .pronta-entrega::after {
         font-size: 7px;
         line-height: 7px
     }
@@ -896,67 +896,67 @@ body>.header {
     }
 }
 
-.shelfProductImages>div .black-friday:after {
+.shelfProductImages>div .black-friday::after {
     content: "FRIDAY";
     font-size: 12px;
     color: #fff
 }
 
 @media screen and (max-width:1199px) {
-    .shelfProductImages>div .black-friday:after {
+    .shelfProductImages>div .black-friday::after {
         font-size: 7px
     }
 }
 
-.shelfProductImages>div .promocao-5-off:after {
+.shelfProductImages>div .promocao-5-off::after {
     content: "5%"
 }
 
-.shelfProductImages>div .promocao-10-off:after {
+.shelfProductImages>div .promocao-10-off::after {
     content: "10%"
 }
 
-.shelfProductImages>div .promocao-15-off:after {
+.shelfProductImages>div .promocao-15-off::after {
     content: "15%"
 }
 
-.shelfProductImages>div .promocao-20-off:after {
+.shelfProductImages>div .promocao-20-off::after {
     content: "20%"
 }
 
-.shelfProductImages>div .promocao-25-off:after {
+.shelfProductImages>div .promocao-25-off::after {
     content: "25%"
 }
 
-.shelfProductImages>div .promocao-30-off:after {
+.shelfProductImages>div .promocao-30-off::after {
     content: "30%"
 }
 
-.shelfProductImages>div .promocao-35-off:after {
+.shelfProductImages>div .promocao-35-off::after {
     content: "35%"
 }
 
-.shelfProductImages>div .promocao-40-off:after {
+.shelfProductImages>div .promocao-40-off::after {
     content: "40%"
 }
 
-.shelfProductImages>div .promocao-45-off:after {
+.shelfProductImages>div .promocao-45-off::after {
     content: "45%"
 }
 
-.shelfProductImages>div .promocao-50-off:after {
+.shelfProductImages>div .promocao-50-off::after {
     content: "50%"
 }
 
-.shelfProductImages>div .promocao-55-off:after {
+.shelfProductImages>div .promocao-55-off::after {
     content: "55%"
 }
 
-.shelfProductImages>div .promocao-60-off:after {
+.shelfProductImages>div .promocao-60-off::after {
     content: "60%"
 }
 
-.shelfProductImages>div .promocao-70-off:after {
+.shelfProductImages>div .promocao-70-off::after {
     content: "70%"
 }
 
@@ -981,19 +981,19 @@ body>.header {
     font-size: 0
 }
 
-.shelfProductImages>div .promocao-10-off:after,
-.shelfProductImages>div .promocao-15-off:after,
-.shelfProductImages>div .promocao-20-off:after,
-.shelfProductImages>div .promocao-25-off:after,
-.shelfProductImages>div .promocao-30-off:after,
-.shelfProductImages>div .promocao-35-off:after,
-.shelfProductImages>div .promocao-40-off:after,
-.shelfProductImages>div .promocao-45-off:after,
-.shelfProductImages>div .promocao-5-off:after,
-.shelfProductImages>div .promocao-50-off:after,
-.shelfProductImages>div .promocao-55-off:after,
-.shelfProductImages>div .promocao-60-off:after,
-.shelfProductImages>div .promocao-70-off:after {
+.shelfProductImages>div .promocao-10-off::after,
+.shelfProductImages>div .promocao-15-off::after,
+.shelfProductImages>div .promocao-20-off::after,
+.shelfProductImages>div .promocao-25-off::after,
+.shelfProductImages>div .promocao-30-off::after,
+.shelfProductImages>div .promocao-35-off::after,
+.shelfProductImages>div .promocao-40-off::after,
+.shelfProductImages>div .promocao-45-off::after,
+.shelfProductImages>div .promocao-5-off::after,
+.shelfProductImages>div .promocao-50-off::after,
+.shelfProductImages>div .promocao-55-off::after,
+.shelfProductImages>div .promocao-60-off::after,
+.shelfProductImages>div .promocao-70-off::after {
     display: block;
     font-size: 22px;
     font-weight: 600;
@@ -1004,19 +1004,19 @@ body>.header {
 
 @media screen and (max-width:1199px) {
 
-    .shelfProductImages>div .promocao-10-off:after,
-    .shelfProductImages>div .promocao-15-off:after,
-    .shelfProductImages>div .promocao-20-off:after,
-    .shelfProductImages>div .promocao-25-off:after,
-    .shelfProductImages>div .promocao-30-off:after,
-    .shelfProductImages>div .promocao-35-off:after,
-    .shelfProductImages>div .promocao-40-off:after,
-    .shelfProductImages>div .promocao-45-off:after,
-    .shelfProductImages>div .promocao-5-off:after,
-    .shelfProductImages>div .promocao-50-off:after,
-    .shelfProductImages>div .promocao-55-off:after,
-    .shelfProductImages>div .promocao-60-off:after,
-    .shelfProductImages>div .promocao-70-off:after {
+    .shelfProductImages>div .promocao-10-off::after,
+    .shelfProductImages>div .promocao-15-off::after,
+    .shelfProductImages>div .promocao-20-off::after,
+    .shelfProductImages>div .promocao-25-off::after,
+    .shelfProductImages>div .promocao-30-off::after,
+    .shelfProductImages>div .promocao-35-off::after,
+    .shelfProductImages>div .promocao-40-off::after,
+    .shelfProductImages>div .promocao-45-off::after,
+    .shelfProductImages>div .promocao-5-off::after,
+    .shelfProductImages>div .promocao-50-off::after,
+    .shelfProductImages>div .promocao-55-off::after,
+    .shelfProductImages>div .promocao-60-off::after,
+    .shelfProductImages>div .promocao-70-off::after {
         font-size: 10px
     }
 
@@ -1193,9 +1193,9 @@ body>.header {
     color: #444
 }
 
-.breadcrumb_bs ul li a:after {
+.breadcrumb_bs ul li a::after {
     position: relative;
-    top: -2px;
+    top: -1px;
     margin: 0 4px;
     content: ">";
     font-size: 10px;
@@ -1208,7 +1208,7 @@ body>.header {
     color: #444
 }
 
-.breadcrumbCol ul li a:after {
+.breadcrumbCol ul li a::after {
     position: relative;
     top: -2px;
     margin: 0 4px;
@@ -1228,7 +1228,7 @@ body>.header {
     text-decoration: underline !important
 }
 
-.breadcrumb_bs ul li li:last-of-type a:after {
+.breadcrumb_bs ul li li:last-of-type a::after {
     content: ""
 }
 
@@ -1237,11 +1237,12 @@ body>.header {
     text-decoration: underline !important
 }
 
-.breadcrumbCol ul li li:last-of-type a:after {
+.breadcrumbCol ul li li:last-of-type a::after {
     content: ""
 }
 
-body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
+/*body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {*/
+.breadcrumb_bs ul li:nth-child(2) div ul li:nth-child(1) {
     display: none
 }
 
@@ -1835,7 +1836,7 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
     padding: 0 20px 48px
 }
 
-.content>ul li:hover div:after {
+.content>ul li:hover div::after {
     content: "";
     position: absolute;
     top: 0;
