@@ -341,7 +341,10 @@ body>.header {
     }
 
     fieldset.busca {
-        margin-top: 15px
+        /*margin-top: 15px;*/
+        min-width: 180px !important;
+        width: auto !important;
+        margin: 15px auto 0;
     }
 }
 
