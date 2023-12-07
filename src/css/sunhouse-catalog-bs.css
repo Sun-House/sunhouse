@@ -6,14 +6,16 @@
 }
 
 /* Breadcrumb BS - Catalog-BS Geral */
-.catalog .breadcrumb_bs ul li:last-of-type a {
+/*.catalog .breadcrumb_bs ul li:last-of-type a {*/
+.catalog .breadcrumb_bs ul li.last a {
     color: #f90041 !important;
     text-decoration: underline !important;
 }
 
-/*.catalog .breadcrumb_bs ul li:last-of-type a::after {
+/*.catalog .breadcrumb_bs ul li:last-of-type a::after {*/
+.catalog .breadcrumb_bs ul li.last a::after {
     display: none !important;
-}*/
+}
 /* Breadcrumb BS */
 
 .catalog .breadcrumb {
@@ -1353,13 +1355,13 @@ Ajuste temporario */
     }*/
 }
 
-/*@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     .catalog #page-content {
         margin: 0 20px;
-        overflow-x: hidden !important;
-        -webkit-overflow-x: hidden !important;
+        /*overflow-x: hidden !important;
+        -webkit-overflow-x: hidden !important;*/
     }
-}*/
+}
 /* Ajuste Margens da Pagina Mobile */
 /* Ajuste para praticamente todas as paginas mas pode bugar para todos templates */
 
