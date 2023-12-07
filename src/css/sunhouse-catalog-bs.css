@@ -11,9 +11,9 @@
     text-decoration: underline !important;
 }
 
-.catalog .breadcrumb_bs ul li:last-of-type a::after {
+/*.catalog .breadcrumb_bs ul li:last-of-type a::after {
     display: none !important;
-}
+}*/
 /* Breadcrumb BS */
 
 .catalog .breadcrumb {
@@ -1212,6 +1212,12 @@ Ajuste temporario */
     -webkit-border-bottom-right-radius: 10px;
     -ms-border-bottom-right-radius: 10px;
     -moz-border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    .orderSelect__options {
+        position: unset !important;
+    }
 }
 
 .orderSelect__options h4,
