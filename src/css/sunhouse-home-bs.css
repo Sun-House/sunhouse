@@ -432,7 +432,7 @@
     width: 100%;
     background: #eceff1;
     margin-top: 24px;
-    padding-bottom: 40px
+    /*padding-bottom: 40px*/
 }
 
 @media screen and (max-width:1199px) {
