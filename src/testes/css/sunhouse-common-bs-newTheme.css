@@ -2412,9 +2412,13 @@ Modelo com preco 10x */
 Btn Comprar */
 
 @media screen and (max-width: 1199px) {
-    .shelfProduct__wrap {
+    /*.shelfProduct__wrap {
         max-width: 130px !important;
         margin-left: 20px;
+    } Dando erro no Mobile da Home */
+
+    .shelfProduct__wrap {
+        max-width: unset;
     }
 
     .shelfProduct__name {
