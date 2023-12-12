@@ -108,13 +108,14 @@ ul.list-contentCat {
     color: #444
 }
 
-/* Para Novo Tema Rebrand
 .dropdown-content a:hover {
-    background-color: #ddd;
-    color: #F90041;
+    /*background-color: #ddd; - Muito escuro para o hover de text color */
+    background-color: #eee;
+    /* Para Novo Tema Rebrand color: #F90041;*/
+    color: #e77925;
     transition: .5s;
     border-radius: 10px
-}*/
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
