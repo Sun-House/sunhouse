@@ -43,6 +43,10 @@
     right: 0
 }
 
+.home #add-to-cartBtn a.add-to-cart {
+    position: unset !important;
+}
+
 .shelfProduct {
     height: 455px !important
 }
