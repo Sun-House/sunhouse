@@ -868,3 +868,11 @@
     }
 }
 /* Bloco Trust Home */
+
+/* Smart Hint Voice */
+@media screen and (max-width: 1199px) {
+    .home #startVoiceSpan i {
+        margin-top: 48px !important;
+    }
+}
+/* Smart Hint Voice */
