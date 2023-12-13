@@ -190,6 +190,7 @@ div#smarthint-search-result {
     .header__logo {
         /*margin-right: 10px !important;*/
         margin-right: 15px !important;
+        min-width: 90px;
     }
 
     .header__search {
