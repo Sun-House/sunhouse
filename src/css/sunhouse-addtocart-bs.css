@@ -122,12 +122,14 @@
     .home .shelfProduct {
         height: auto !important;
         /*min-height: 535px*/
-        min-height: 560px
+        /*min-height: 560px*/
+        min-height: 590px
     }
 
     .home .shelfProduct__price * {
         /*font-size: 20px !important*/
-        font-size: 38px !important
+        /*font-size: 38px !important*/
+        font-size: 54px !important
     }
 
     .home #add-to-cartBtn a.add-to-cart {
