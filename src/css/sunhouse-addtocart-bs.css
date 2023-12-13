@@ -136,6 +136,10 @@
         font-size: 54px !important
     }
 
+    .home .shelfProduct__name {
+        max-width: unset !important;
+    }
+
     .home #add-to-cartBtn a.add-to-cart {
         bottom: 0 !important
     }
