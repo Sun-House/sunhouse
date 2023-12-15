@@ -705,10 +705,10 @@
     }
 
     /*.catalog .catalogProducts>.main {*/
-    .catalog .catalogProducts .main {
-        /*width: 100vw;*/
-        width: 110vw;
-    }
+    /*.catalog .catalogProducts .main {
+        / width: 100vw; /
+        / width: 110vw; -- Erros no Mobile - em validacao /
+    }*/
 
     .catalog .catalogProducts .shelfProduct {
         width: 50%;
