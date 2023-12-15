@@ -2225,3 +2225,16 @@ Ajuste Insta - Migrar para todos os templates */
     margin-right: 1px
 }
 /* Ajuste todos Modals */
+
+/* Area Info Produto Esgotado */
+.unavailable-button {
+    visibility: hidden
+}
+
+.unavailable-button::after {
+    content: "Deseja saber sobre disponibilidade ou opções similares desse produto? Nos chame no WhatsApp clicando abaixo!";
+    visibility: visible !important;
+    display: block !important;
+    margin-top: -20px
+}
+/* Area Info Produto Esgotado */
