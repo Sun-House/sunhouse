@@ -335,7 +335,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-    #modalQuemSomos {
+    .modal.fade.show { /* Talvez bugue futuramente */
         z-index: 999999 !important;
     }
     
