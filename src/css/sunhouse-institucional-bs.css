@@ -413,7 +413,8 @@
     /* Para Paginas de Conteudo */
 
     #rowCards div .card {
-        padding-bottom: 20px;
+        /*padding-bottom: 20px;*/
+        margin-bottom: 20px;
     }
 
     .carousel-item a img {
