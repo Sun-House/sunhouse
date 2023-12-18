@@ -17,16 +17,31 @@
     background-color: #f4a460;
     border: 0;
     font-size: 18px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    border-radius: 30px;
     z-index: 100;
     position: relative;
     color: #fff
 }
 
-#add-to-cartBtn a:hover {
+#add-to-cartBtn a {
+    width: 250px !important;
+    height: 48px;
+    font-size: 18px !important;
+    padding: 12px !important;
+    border-radius: 30px !important;
+    border: 1px solid #000;
+}
+
+/*#add-to-cartBtn a:hover {
     scale: 1.02;
     opacity: .9;
     background-color: #ff8216
+}*/
+
+#add-to-cartBtn a:hover {
+    scale: 1;
+    border-color: #ffda00 !important;
 }
 
 #add-to-cartBtn a:first-of-type {
