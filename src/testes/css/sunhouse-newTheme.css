@@ -159,6 +159,7 @@ a.caretMain:after {
     /*display: block;*/
     display: flex !important;
     align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     width: 250px;
