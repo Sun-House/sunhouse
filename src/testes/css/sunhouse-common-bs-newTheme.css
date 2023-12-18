@@ -2436,10 +2436,10 @@ Btn Comprar */
 }
 /* Template Catalog - Ajustes */
 
-/* Menu Botoes */
-#lancamentos:hover,
+/* Menu Botoes - Alterado para hover scale no arquivo sunhouse-newTheme */
+/*#lancamentos:hover,
 #prontaEntrega:hover {
     opacity: .8 !important;
     transition: .3s;
-}
+}*/
 /* Menu Botoes */
