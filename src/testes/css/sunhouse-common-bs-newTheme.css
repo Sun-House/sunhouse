@@ -2419,6 +2419,8 @@ Btn Comprar */
 
     .shelfProduct__wrap {
         max-width: unset;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .shelfProduct__name {

@@ -710,6 +710,10 @@
         / width: 110vw; -- Erros no Mobile - em validacao /
     }*/
 
+    .catalog .catalogProducts {
+        padding-top: 45px
+    }
+
     .catalog .catalogProducts .shelfProduct {
         width: 50%;
         box-sizing: border-box;
@@ -1368,9 +1372,9 @@ Ajuste temporario */
 
 /* Precisa ajustar esse para o arquivo Common */
 @media screen and (max-width: 1199px) {
-    .catalog .catalogProducts .shelfProduct {
+    /*.catalog .catalogProducts .shelfProduct {
         width: 45% !important;
-    }
+    }*/
 
     .catalog .catalogOptions {
         width: 100% !important;

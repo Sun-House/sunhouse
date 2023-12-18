@@ -179,6 +179,13 @@ a.caretMain:after {
     font-weight: 200 !important;
     padding-left: 5px
 }
+
+@media screen and (max-width: 1199px) {
+    #buy_now {
+        width: 85% !important;
+    }
+}
+
 /* Novo botao do Shelf Vtex testes */
 
 .oldLogo {
