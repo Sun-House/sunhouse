@@ -243,3 +243,20 @@ function checarCep() {
         montagemInfo.classList.remove("montagem_show");
     }
 }
+
+// Mostra botao Wpp quando produto esgotado
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        // Verifica se o elemento com a classe .unavailable-button possui display: block no HTML
+        var unavailableButton = document.querySelector('.unavailable-button');
+
+        if (unavailableButton && getComputedStyle(unavailableButton).display === 'block') {
+            // Se verdadeiro, adiciona a classe showWpp ao elemento .unavailable-whatsapp-button
+            var whatsappButton = document.querySelector('.unavailable-whatsapp-button');
+
+            if (whatsappButton) {
+                whatsappButton.classList.add('showWpp');
+            }
+        }
+    }, 1000); // 1 segundo de espera
+});
