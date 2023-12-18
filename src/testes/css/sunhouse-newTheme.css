@@ -402,6 +402,14 @@ a.caretMain:after {
     transition: .3s;
 }
 
+.produto .productContent__infos-buyButton a {
+    font-family: "Montserrat" !important;
+    text-transform: uppercase;
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+}
+
 .produto .productContent__infos-freight--message strong {
     color: #F90041;
 }
