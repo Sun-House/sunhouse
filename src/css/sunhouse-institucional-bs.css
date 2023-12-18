@@ -333,6 +333,21 @@
 .modal .modal-dialog .modal-content .modal-header button {
     margin-right: 1px
 }
+
+@media screen and (max-width: 1199px) {
+    #modalQuemSomos {
+        z-index: 999999 !important;
+    }
+    
+    .modal .modal-dialog .modal-content {
+        margin-top: 50px;
+        max-height: 90%;
+    }
+
+    .modal .modal-body {
+        padding: 25px 30px !important;
+    }
+}
 /* Ajuste todos Big Info Modals */
 
 /* Para Paginas de Conteudo */
