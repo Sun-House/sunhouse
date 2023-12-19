@@ -580,7 +580,8 @@ form[ng-submit="confirmAccessKey()"] .modal-footer .vtexIdUI-back-link {
     .vtexIdUI {
         width: 370px !important;
         margin-left: -185px !important;
-        top: 15% !important;
+        /*top: 15% !important;*/
+        scale: 0.85;
     }
     
     #classicLoginBtn {
@@ -600,7 +601,8 @@ form[ng-submit="confirmAccessKey()"] .modal-footer .vtexIdUI-back-link {
     .vtexIdUI {
         width: 320px !important;
         margin-left: -160px !important;
-        top: 10% !important;
+        /*top: 10% !important;*/
+        scale: 0.85;
     }
 
     #classicLoginBtn {
