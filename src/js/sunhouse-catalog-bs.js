@@ -20,7 +20,7 @@ function set() {
 
 function filters() {
     $(".search-multiple-navigator .refino > h5").each((function (a) {
-        var b = '<div class="filterSelect__title">' + $(this).text().replace(":", "") + "</div>",
+        var b = '<div class="filterSelect__title">' + $(this).text().replace(":", "") + "&nbsp;<i class='bi bi-caret-down-fill' id='caretDown_menu_sh'></i></div>",
             c = '<div class="filterSelect__options">' + $(this).parents("fieldset").find("div").html() + "</div>";
         $('<div class="filterSelect">' + b + c + "</div>").appendTo(".catalogFilters > .content"), a !== parseInt($(".search-multiple-navigator .refino > h5").length / 2) && a + 1 !== $(".search-multiple-navigator .refino > h5").length || $(".catalogFilters > .content > .filterSelect").wrapAll("<ul></ul>")
     })), $(".search-multiple-navigator .refino > h5").length > 2 && $('<a class="filterSelect__show show"><span></span> <strong></strong></a>').appendTo(".catalogFilters > .content > ul"), $(".filterSelect__title").click((function () {
