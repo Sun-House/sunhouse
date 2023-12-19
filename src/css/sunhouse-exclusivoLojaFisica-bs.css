@@ -1,0 +1,44 @@
+#produtoLojaFisica {
+    /*width: 500px;*/
+    width: 464px;
+    /*background-color: #ffda0035;*/
+    border: 2px solid #FFDA00;
+    padding: 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+#destaque {
+    color: red;
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.frases {
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Montserrat';
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.frases:last-child {
+    text-align: unset !important;
+}
+
+#detalheProdutoTopo {
+    height: 398px;
+}
+
+.frases strong a {
+    color: #F90041;
+}
+
+/*#produtoLojaFisica p strong u {
+    text-decoration: underline !important;
+}*/
