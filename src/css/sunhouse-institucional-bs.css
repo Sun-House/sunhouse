@@ -373,6 +373,15 @@
     border-radius: 30px !important;
     margin-top: 10px;
 }
+
+.sub ol li {
+    line-height: 1.5rem;
+    margin-bottom: 10px
+}
+
+.sub ol li:last-child {
+    margin-bottom: 100px
+}
 /* Para Paginas de Conteudo */
 
 /* Responsivo */

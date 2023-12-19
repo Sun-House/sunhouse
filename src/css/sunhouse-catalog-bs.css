@@ -246,12 +246,12 @@
     }
 
     .catalog .catalogFilters .content ul div {
-        background-color: #f2f2f2;
+        background-color: #f2f2f2 !important;
         min-width: 198.72px;
-        color: #000;
+        color: #000 !important;
         min-height: 51px;
-        margin-top: 10px;
-        border-radius: 10px;
+        margin-top: 10px !important;
+        border-radius: 10px !important;
     }
 
     /*.catalog .catalogFilters .content .filterSelect,
