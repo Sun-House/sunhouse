@@ -239,12 +239,26 @@
 }
 
 @media screen and (max-width:1199px) {
+    .catalog .catalogFilters .content {
+        display: flex !important;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 
-    .catalog .catalogFilters .content .filterSelect,
+    .catalog .catalogFilters .content ul div {
+        background-color: #f2f2f2;
+        min-width: 198.72px;
+        color: #000;
+        min-height: 51px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    /*.catalog .catalogFilters .content .filterSelect,
     .catalog .catalogFilters .content .filterSelect__show {
         background: 0 0;
         color: #fff
-    }
+    }*/
 }
 
 .catalog .catalogFilters .content .filterSelect__show,
