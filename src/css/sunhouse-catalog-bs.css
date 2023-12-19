@@ -261,7 +261,7 @@
     }*/
 }
 
-.catalog .catalogFilters .content .filterSelect__show,
+/*.catalog .catalogFilters .content .filterSelect__show,
 .catalog .catalogFilters .content .filterSelect__show__show,
 .catalog .catalogFilters .content .filterSelect__show__title,
 .catalog .catalogFilters .content .filterSelect__title {
@@ -270,7 +270,7 @@
     background-image: url(https://sunhouse.vteximg.com.br/arquivos/select-arrow.png);
     background-repeat: no-repeat;
     background-position: center right 20px
-}
+}*/
 
 @media screen and (max-width:1199px) {
 
@@ -1187,7 +1187,8 @@ Ajuste temporario */
     display: none !important;
 }
 
-.orderSelect {
+.orderSelect,
+.filterSelect {
     position: relative;
     float: left;
     width: auto;
@@ -1203,7 +1204,8 @@ Ajuste temporario */
     box-sizing: border-box;
 }
 
-.orderSelect__title {
+.orderSelect__title,
+.filterSelect__title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1217,7 +1219,8 @@ Ajuste temporario */
     color: #F90041;
 }
 
-.orderSelect__options {
+.orderSelect__options,
+.filterSelect__options {
     display: none;
     padding: 15px;
     position: absolute;
