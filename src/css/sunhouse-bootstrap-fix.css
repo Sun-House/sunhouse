@@ -15,9 +15,18 @@ ol, ul {
     height: 3.3rem;
 }
 
-/*.dropdownLv3:hover .dropdown-contentLv3 { - dando erros para bootstrap
+.dropdownLv3:hover .dropdown-contentLv3 {
     margin-top: -4.5rem !important;
-}*/
+}
+
+#dropdown-contentLv3-3,
+#dropdown-contentLv3-4,
+#dropdown-contentLv3-5,
+#dropdown-contentLv3-6,
+#dropdown-contentLv3-7,
+#dropdown-contentLv3-11 {
+    margin-top: -3.25rem !important;
+}
 
 .dropdown-content a.btn {
     color: #fff;
