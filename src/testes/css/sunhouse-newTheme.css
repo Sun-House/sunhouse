@@ -478,7 +478,7 @@ a.caretMain:after {
     }
 
     .catalog .catalogFilters.active {
-        z-index: 999;
+        z-index: 9991;
     }
     
     .catalog .catalogFilters .content {
