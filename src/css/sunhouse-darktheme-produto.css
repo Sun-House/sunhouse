@@ -37,6 +37,11 @@ div.backgroundFix {
     border-bottom: 1px solid #333 !important
 }
 
+.produto .stickyHeader {
+    background-color: #0d1117 !important;
+    box-shadow: 1px 10px 10px #333333 !important;
+}
+
 .topbar__content>div .btnZap:hover {
     color: #00bf3b !important
 }
@@ -92,9 +97,10 @@ body.busca div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after {
     background: #000 !important
 }
 
-body.produto .wrapTemp {
+body.produto .wrapTemp { /* REMOVER DO HTML DEPOIS */
     width: 100%;
-    height: 262px;
+    /*height: 262px;*/
+    height: 0 !important;
     background-color: #0d1117;
     position: absolute;
     top: 0;
