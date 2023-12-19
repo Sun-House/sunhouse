@@ -25,6 +25,12 @@ body * {
     font-family: initial !important;
 }
 
+@media screen and (max-width: 1199px){
+    #startVoice {
+        top: 160px !important;
+    }
+}
+
 /*.fa {
     font-family: initial !important;
 }*/
