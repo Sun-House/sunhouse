@@ -319,8 +319,22 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 }
 
 @media screen and (max-width: 1199px) {
+    /* Temporario ate desenvolver */
     .home .benefits-new {
         display: none;
+    }
+    /* Temporario ate desenvolver */
+
+    .home .benefits-new {
+        margin: 35px 20px 0;
+        width: auto;
+    }
+    
+    .home .benefits-new ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 40px 0 60px 40px;
     }
 }
 
