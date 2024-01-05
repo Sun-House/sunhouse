@@ -58,6 +58,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+.instaLinkBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .instaLinkBanner:hover {
     opacity: .9;
     transition: .3s

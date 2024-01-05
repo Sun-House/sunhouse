@@ -318,6 +318,12 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     line-height: 30px
 }
 
+@media screen and (max-width: 1199px) {
+    .home .benefits-new {
+        display: none;
+    }
+}
+
 .home .areas,
 .home .areas a:nth-child(1) strong,
 .home .areas a:nth-child(2) strong {
