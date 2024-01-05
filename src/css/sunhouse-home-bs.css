@@ -77,6 +77,11 @@
     transform: rotate(45deg)
 }
 
+
+
+
+
+/*
 .home .benefits {
     display: table;
     width: 100%;
@@ -169,12 +174,6 @@
     padding: 7px 8px
 }
 
-.home .areas,
-.home .areas a:nth-child(1) strong,
-.home .areas a:nth-child(2) strong {
-    padding-top: 24px
-}
-
 .home .benefits li:nth-child(5) {
     width: 21%;
     border: 0
@@ -207,6 +206,122 @@
 
 .home .benefits li>span {
     float: left
+}
+PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
+
+.home .benefits-new {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eceff1;
+    border-radius: 60px;
+    padding-top: 16px
+}
+
+.home .benefits-new * {
+    color: #000 !important
+}
+
+.home .benefits-new li {
+    float: left;
+    width: 20%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 6px 0 6px 15px
+}
+
+.home .benefits-new li i {
+    font-size: 40px
+}
+
+.home .benefits-new li p {
+    margin-bottom: 0
+}
+
+.home .benefits-new li:last-child {
+    border: unset !important
+}
+
+.home .benefits-new .benefits-round-bg {
+    min-width: 70px !important;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px
+}
+
+.home .benefits-new .benefits-round-content #benefits__merc-number {
+    font-size: 22px;
+    text-transform: uppercase
+}
+
+.home .benefits-new .benefits-round-content #benefits__merc-text {
+    font-size: 20.5px
+}
+
+.home .benefits-new .benefits-round-content #benefits__lojas-number {
+    float: left;
+    font-size: 43px;
+    line-height: 38px;
+    font-weight: 900;
+    padding-right: 6px
+}
+
+.home .benefits-new .benefits-round-content #benefits__lojas-main {
+    font-size: 20px;
+    text-transform: uppercase
+}
+
+.home .benefits-new .benefits-round-content #benefits__dev-number {
+    float: left;
+    font-size: 47px;
+    line-height: 40px;
+    font-weight: 900;
+    padding-right: 6px
+}
+
+.home .benefits-new .benefits-round-content #benefits__dev-wrap {
+    float: left
+}
+
+.home .benefits-new .benefits-round-content #benefits__cli-number {
+    font-size: 29.5px;
+    text-transform: uppercase
+}
+
+.home .benefits-new .benefits-round-content #benefits__cli-text {
+    font-size: 14px
+}
+
+.home .benefits-new .benefits-round-content #benefits__desc-text {
+    font-size: 17px
+}
+
+.home .benefits-new .benefits-round-content #benefits__desc-number {
+    float: left;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 900;
+    padding-right: 6px
+}
+
+.home .benefits-new .benefits-round-content #benefits__desc-pix {
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 30px
+}
+
+.home .areas,
+.home .areas a:nth-child(1) strong,
+.home .areas a:nth-child(2) strong {
+    padding-top: 24px
 }
 
 .home .areas {
