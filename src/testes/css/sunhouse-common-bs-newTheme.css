@@ -2395,11 +2395,19 @@ Modelo com preco 10x */
     color: #F90041 !important;
     display: flex !important;
     flex-direction: row;
-    padding: unset !important; 
+    /*padding: unset !important; */
+    padding: 10px !important;
+    margin-top: 20px;
+    background-color: #FFDA0040;
+    border-radius: 20px;
 }
 
 .shelfProduct__wrap .outStock span {
     padding: unset !important;
+    /*margin-right: 5px;*/
+}
+
+.shelfProduct__wrap .outStock span:first-child {
     margin-right: 5px;
 }
 
