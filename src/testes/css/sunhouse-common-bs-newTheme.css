@@ -2392,6 +2392,8 @@ Modelo com preco 10x */
 }
 
 .shelfProduct__wrap .outStock {
+    position: relative;
+    left: -10px;
     color: #F90041 !important;
     display: flex !important;
     flex-direction: row;
