@@ -1266,7 +1266,8 @@ Ajuste temporario */
 
 .catalog .catalogFilters {
     padding: 0 !important;
-    display: flex !important;
+    /*display: flex !important;*/
+    display: flex;
     align-items: center;
 }
 
