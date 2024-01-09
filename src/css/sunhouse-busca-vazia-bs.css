@@ -82,9 +82,9 @@
 }
 
 .busca div.buscaVazia h2 {
-    color: #F90041;
-    font-size: 30px;
-    font-weight: 500;
+    color: #F90041 !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
     padding-top: 20px
 }
 
