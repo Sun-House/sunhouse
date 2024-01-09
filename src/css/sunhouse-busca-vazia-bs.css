@@ -9,10 +9,6 @@
     margin-top: -25px
 }
 
-.busca .catalogFilters { /* Pode dar erro */
-    display: none !important;
-}
-
 .areas {
     display: flex;
     flex-direction: row;
