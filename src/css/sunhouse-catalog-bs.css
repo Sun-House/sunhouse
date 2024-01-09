@@ -18,12 +18,12 @@
 }
 /* Breadcrumb BS */
 
-.catalog .breadcrumb {
+.catalog .breadcrumb_bs { /* Pode dar erros */
     max-width: 1200px
 }
 
 @media screen and (max-width:1199px) {
-    .catalog .breadcrumb {
+    .catalog .breadcrumb_bs {
         padding-bottom: 24px
     }
 }
@@ -813,33 +813,33 @@ body.catalog.busca>.catalogIntro:nth-child(14) {
     display: none !important
 }
 
-body.colecao-fixa>div.breadcrumb>ul>li:nth-child(3),
-body.colecao-fixa>div.breadcrumb>ul>li:nth-child(4) {
+body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(3),
+body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(4) {
     display: none
 }
 
-body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2) a::after {
+body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(2) a::after {
     display: none !important
 }
 
-body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2) a {
+body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(2) a {
     color: #F90041;
     text-decoration: underline !important
 }
 
 /* Ajuste display Resultado de Busca Vtex */
-.busca .breadcrumb > ul:nth-child(2) > li:nth-child(1)::after {
+.busca .breadcrumb_bs > ul:nth-child(2) > li:nth-child(1)::after {
     content: "Resultado de Busca:";
     font-size: 14px;
     font-family: Montserrat !important;
     color: #444
 }
 
-.busca .breadcrumb > ul:nth-child(2) > li:nth-child(2) {
+.busca .breadcrumb_bs > ul:nth-child(2) > li:nth-child(2) {
     cursor: pointer;
 }
 
-.busca .breadcrumb > ul:nth-child(2) > li:nth-child(3) {
+.busca .breadcrumb_bs > ul:nth-child(2) > li:nth-child(3) {
     display: none
 }
 /* Ajuste display Resultado de Busca Vtex */
@@ -850,7 +850,7 @@ body.busca div.bread-crumb>ul:nth-child(1)>li:nth-child(2)>a:nth-child(1) {
     pointer-events: none !important
 }
 
-body.busca div.breadcrumb>ul:nth-child(1)>li:nth-child(3)>a:nth-child(1) {
+body.busca div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(3)>a:nth-child(1) {
     display: none
 }
 
