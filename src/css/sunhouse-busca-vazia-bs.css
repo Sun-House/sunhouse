@@ -9,6 +9,10 @@
     margin-top: -25px
 }
 
+/*.busca .catalogFilters {  -> Pode dar erro - deu erro
+    display: none !important;
+}*/
+
 .areas {
     display: flex;
     flex-direction: row;
@@ -23,7 +27,7 @@
 }
 
 .areas span:hover * {
-    color: #F90041;
+    color: #F90041 !important;
     filter: none
 }
 
@@ -67,7 +71,7 @@
     display: block;
     width: 100%;
     font-weight: 900;
-    color: #999;
+    color: #3a3a3a !important;
     text-align: center
 }
 
@@ -85,7 +89,7 @@
 }
 
 .busca div.buscaVazia h3 {
-    color: #8f8f8f !important;
+    color: #3a3a3a !important;
     font-size: 20px !important;
     font-weight: 500 !important;
 }
@@ -106,7 +110,7 @@
 }
 
 .black .buscaVazia h2 {
-    color: #8f8f8f !important;
+    color: #3a3a3a !important;
     font-size: 20px !important;
     font-weight: 400 !important
 }

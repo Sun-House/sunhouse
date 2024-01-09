@@ -208,9 +208,11 @@
     max-width: 970px
 }
 
+/* Apenas até ajustar a visualizacao - apos isso remover important */
 .catalog .catalogFilters .content>ul {
-    display: none
+    display: none !important 
 }
+/* Apenas até ajustar a visualizacao - apos isso remover important */
 
 .catalog .catalogFilters .content>ul.showing,
 .catalog .catalogFilters .content>ul:first-of-type {
