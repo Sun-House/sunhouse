@@ -118,7 +118,7 @@
     border: none;
     text-transform: uppercase;
     border-radius: 5px;
-    background: #e77925;
+    background: #F90041;
     margin: 0 auto;
     transition: all .1s;
     line-height: 1
@@ -148,7 +148,7 @@
     letter-spacing: .4px;
     font-size: 12px;
     border-radius: 0;
-    background: #e77925;
+    background: #F90041;
     color: #fff;
     box-shadow: none;
     border: none;
@@ -384,7 +384,7 @@
     text-transform: uppercase;
     text-shadow: none;
     border-radius: 0;
-    background: #e77925;
+    background: #F90041;
     transition: all .1s
 }
 
@@ -499,7 +499,7 @@
     letter-spacing: .3px;
     text-transform: uppercase;
     border-radius: 0;
-    background: #e77925;
+    background: #F90041;
     transition: all .1s;
     text-shadow: none
 }
@@ -657,10 +657,10 @@
     text-transform: uppercase;
     color: #fff;
     padding: 13px;
-    border: 1px solid #e77925;
+    border: 1px solid #F90041;
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: #e77925;
+    background-color: #F90041;
     letter-spacing: .3px
 }
 
@@ -790,7 +790,7 @@
     border: none;
     text-transform: uppercase;
     border-radius: 0 10px 10px 0;
-    background: #e77925;
+    background: #F90041;
     margin: 0 auto;
     transition: all .1s;
     height: 100%;
@@ -1137,7 +1137,7 @@
     text-transform: uppercase;
     border-radius: 5px;
     letter-spacing: .4px;
-    background: #e77925;
+    background: #F90041;
     margin: 24px auto 16px;
     transition: all .1s
 }
@@ -1223,7 +1223,7 @@
     text-transform: uppercase;
     text-shadow: none;
     border-radius: 0;
-    background: #e77925;
+    background: #F90041;
     transition: all .1s
 }
 
@@ -1356,7 +1356,7 @@
 }
 
 #app-container .card-flags input[type=radio]:checked {
-    background: #e77925
+    background: #F90041
 }
 
 #app-container .PaymentCardFlags input {
@@ -1522,7 +1522,7 @@ span.error {
     /*font-family: Ubuntu, sans-serif;*/
     font-family: Montserrat;
     font-size: 14px;
-    background-color: #e77925;
+    background-color: #F90041;
     display: block;
     cursor: pointer;
     transition: all 250ms !important
@@ -1580,7 +1580,7 @@ span.error {
 .cconf-continue-button:hover,
 .cconf-myorders-button:hover {
     text-decoration: none;
-    background-color: #e77925;
+    background-color: #F90041;
     color: #fff;
     opacity: .9
 }
@@ -1683,7 +1683,7 @@ body.body-checkout-confirmation .w-70-ns {
 }
 
 .link-coupon-add {
-    background: #e77925 !important
+    background: #F90041 !important
 }
 
 header {
@@ -2026,7 +2026,7 @@ header .seloTrustvox {
 #checkoutMainContainer>div.container.container-main.container-cart>div.checkout-container.row-fluid.cart-active>div.cart-template.full-cart.span12.active>div.summary-template-holder>div>div.span5.totalizers.summary-totalizers.cart-totalizers.pull-right>div.forms.coupon-column.summary-coupon-wrap.text-center>div.coupon.summary-coupon>form>fieldset>div>p.coupon-fields>span.info>span {
     text-transform: uppercase;
     font-size: 12pt !important;
-    color: #e77925;
+    color: #F90041;
     margin-bottom: 25px
 }
 
@@ -2053,7 +2053,7 @@ div>p.coupon-fields {
 }
 
 #cartLoadedDiv>div.cart>table>tbody>tr>td.product-name>p.add-service-container>a {
-    background-color: #e77925 !important;
+    background-color: #F90041 !important;
     color: #fff;
     border-radius: 30px;
     background: 0 0;
@@ -2172,6 +2172,6 @@ div>p.coupon-fields {
 }
 
 .vtex-omnishipping-1-x-deliveryChannelsTogglePickup {
-    background: #e77925;
-    border: solid 1px #e77925
+    background: #F90041;
+    border: solid 1px #F90041
 }
