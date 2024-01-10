@@ -307,7 +307,13 @@ body.produto {
 /* New Price Block */
 .slip_price,
 .slip_info,
-.credit_info {
+.credit_info,
+#modal-installments-content h5,
+#modal-installments-content hr,
+#modal-installments-content p,
+#modal-installments-content strong,
+#modal-installments-content span,
+.unavailable-button {
     color: #fff;
 }
 
@@ -315,8 +321,6 @@ body.produto {
     color: #e77925 !important;
 }
 
-
-/**/
 #modal-installments-content {
     background-color: #333;
 }
@@ -326,14 +330,6 @@ body.produto {
     background-color: #000;
 }
 
-#modal-installments-content h5,
-#modal-installments-content hr,
-#modal-installments-content p,
-#modal-installments-content strong,
-#modal-installments-content span {
-    color: #fff;
-}
-
 #modal-installments-content .modal-header {
     border-color: #6f6f6f;
 }
@@ -341,6 +337,7 @@ body.produto {
 #modal-installments-content .modal-header button {
     background-color: #fff !important;
 }
+/* New Price Block */
 
 .nav-tabs {
     border-color: #6f6f6f;
@@ -385,3 +382,14 @@ body.produto {
     border: 2px solid #F90041 !important
 }
 /* Menu Black Friday */
+
+/* BacktoTop Produto */
+.produto #backToTop span {
+    background-color: #0d1117 !important;
+    box-shadow: 0 0 15px #0d1117 !important;
+}
+
+.produto #backToTop span p {
+    font-weight: 600
+}
+/* BacktoTop Produto */

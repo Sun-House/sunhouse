@@ -328,3 +328,10 @@ body.institucional>.content a {
     box-shadow: 0px 0px 20px #f77000;
 }
 /* SmartHint - Black Friday */
+
+/* BacktoTop Geral */
+#backToTop span {
+    background-color: #0d1117 !important;
+    box-shadow: 0 0 15px #0d1117 !important;
+}
+/* BacktoTop Geral */
