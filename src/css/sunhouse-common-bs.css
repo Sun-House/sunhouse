@@ -104,7 +104,8 @@ video {
     /*margin: 0;
     padding: 0; TESTE POIS TAVA BUGANDO O LAYOUT DA PAGINA DE INSTITUCIONAL MAS PODE BUGAR OUTROS TEMPLATES AO REMOVER */
     border: 0;
-    font-family: Montserrat;
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
     vertical-align: baseline
 }
 
@@ -130,7 +131,8 @@ ul.ui-autocomplete {
 
 body {
     line-height: 1.25 !important;
-    font-family: Montserrat
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
 }
 
 a {
@@ -376,7 +378,8 @@ body>.header {
     width: calc(100% - 50px);
     height: 45px;
     padding: 0 16px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
     font-size: 18px;
     color: #444;
     font-style: italic;
@@ -1386,7 +1389,8 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 }*/
 
 .newslettershowed {
-    font-family: Montserrat;
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
     margin-left: auto;
     margin-right: auto;
     margin-top: -90px !important; /* Ajuste NewsLetter - Oculta brand do widget footer */
@@ -1462,7 +1466,8 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 }
 
 .newslettershowed__form input {
-    font-family: Montserrat;
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
     float: left;
     width: calc(100% - 160px);
     height: 60px;
@@ -1565,7 +1570,8 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 .footer.links,
 .footer.sac,
 .footer.texts {
-    font-family: Montserrat;
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
     padding: 24px 0 64px;
     background: #f4a460
 }
@@ -1750,7 +1756,8 @@ body>div.breadcrumb_bs>ul>li:nth-child(2)>div>ul>li:nth-child(1)>a {
 #backToTop {
     cursor: pointer;
     display: none;
-    font-family: Montserrat;
+    font-family: Ubuntu;
+    /*font-family: Montserrat; - Rebranding */
     color: #e77925;
     position: fixed;
     right: 16px;
