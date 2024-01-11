@@ -10,11 +10,12 @@
 .default-modal,
 .default-modal #btn-identified-user-button,
 .header-checkout {
+    /*font-family: Montserrat !important - esse important bugou o fontawesome*/
     font-family: Montserrat
 }
 
 .cart-template .summary-template-holder .summary-coupon .link-coupon-add:hover,
-.container-cart .cart-template .empty-cart-content #cart-choose-products:hover {
+.container-cart .cart-template .empty-cart-content #cart-choose-prsoducts:hover {
     opacity: .9
 }
 

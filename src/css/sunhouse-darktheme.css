@@ -31,6 +31,8 @@ div.backgroundFix {
 .apresentation ul,
 .breadcrumb *,
 .breadcrumb>ul>li>a,
+.breadcrumb_bs *,
+.breadcrumb_bs>ul>li>a,
 .cc-window,
 .footer.links *,
 .footer.sac *,
@@ -41,8 +43,13 @@ div.backgroundFix {
 .newslettershowed__infos div,
 .shelfProduct__price,
 .topbar__content *,
-.busca .breadcrumb>ul:nth-child(2)>li:nth-child(1)::after {
+.busca .breadcrumb>ul:nth-child(2)>li:nth-child(1)::after,
+.busca .breadcrumb_bs>ul:nth-child(2)>li:nth-child(1)::after {
     color: #fff !important
+}
+
+.breadcrumb_bs ul li a:hover {
+    color: #F90041 !important;
 }
 
 .shelfProduct__name {
@@ -79,14 +86,18 @@ fieldset.busca>input {
 
 .header__search input[type=button] {
     background-color: #e77925 !important
+    /*background-color: #F90041 !important*/
 }
 
 #button-back svg *,
 .campanhaDestaque,
 body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2)>a,
 body.especial>div.breadcrumb>ul>li:nth-child(3)>a,
+body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(2)>a,
+body.especial>div.breadcrumb_bs>ul>li:nth-child(3)>a,
 div.dropdown:hover .dropbtn #departLink {
     color: #e77925 !important
+    /*color: #F90041 !important*/
 }
 
 #smarthint-search-header,
@@ -102,7 +113,8 @@ body>div.BannerEspecial>img {
     margin-bottom: -5px
 }
 
-body div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after {
+body div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after,
+body div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after {
     color: #fff
 }
 
@@ -150,12 +162,15 @@ body div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after {
 }
 
 .busca div.breadcrumb>ul:nth-child(1)>li:nth-child(1)::after,
-.busca .breadcrumb>ul:nth-child(2)>li:nth-child(1) {
+.busca .breadcrumb>ul:nth-child(2)>li:nth-child(1),
+.busca div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after,
+.busca .breadcrumb_bs>ul:nth-child(2)>li:nth-child(1) {
     color: #fff
 }
 
 body.institucional>.content * {
-    color: #fff
+    /*color: #fff*/
+    color: #fff !important
 }
 
 body.institucional>.content a {
@@ -325,7 +340,8 @@ body.institucional>.content a {
 
 #promotionalbox-img-banner-805 {
     border-radius: 30px;
-    box-shadow: 0px 0px 20px #f77000;
+    /*box-shadow: 0px 0px 20px #f77000;*/
+    box-shadow: 0px 0px 20px #F90041;
 }
 /* SmartHint - Black Friday */
 
