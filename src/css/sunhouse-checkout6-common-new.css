@@ -735,7 +735,8 @@
 }
 
 .client-pre-email {
-    border: none !important
+    border: none !important;
+    top: 0; /* Pode bugar algumas coisas - principalmente mobile */
 }
 
 @media screen and (max-width:768px) {
@@ -777,7 +778,7 @@
 
 .client-email #btn-client-pre-email {
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 32px;
     font-weight: 400;
     color: #fff;
@@ -991,7 +992,7 @@
     font-size: 22px;
     height: 54px;
     width: 97%;
-    border-radius: 5px 5px
+    border-radius: 30px 30px
 }
 
 .orderform-template .orderform-template-holder .client-profile-data input.success,
