@@ -1419,7 +1419,8 @@ span.error {
 }
 
 .cart-template.mini-cart .accordion-group {
-    width: 100% !important
+    width: 100% !important;
+    float: unset !important
 }
 
 .cart-template.mini-cart .accordion-group .totalizers-list {
