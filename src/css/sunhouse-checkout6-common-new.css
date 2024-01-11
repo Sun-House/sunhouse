@@ -14,8 +14,9 @@
     font-family: Montserrat
 }
 
+/*.container-cart .cart-template .empty-cart-content #cart-choose-prsoducts:hover*/
 .cart-template .summary-template-holder .summary-coupon .link-coupon-add:hover,
-.container-cart .cart-template .empty-cart-content #cart-choose-prsoducts:hover {
+    .container-cart .cart-template .empty-cart-content #cart-choose-products:hover {
     opacity: .9
 }
 
@@ -474,6 +475,14 @@
     box-shadow: none !important
 }
 
+.cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form .ship-postalCode #ship-postalCode {
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #bdbdbd !important;
+    box-shadow: none !important;
+    width: 235px;
+    height: 40px
+}
+
 .cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form .ship-postalCode #ship-postalCode.success {
     background-image: url(/arquivos/icon-ok.png);
     background-position: 96% center
@@ -486,23 +495,6 @@
     font-weight: 400;
     color: #797b7b;
     text-decoration: underline
-}
-
-.cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form #cart-shipping-calculate {
-    position: relative;
-    top: -2px;
-    display: block;
-    font-size: 12px;
-    padding: 0 12px;
-    font-weight: 400;
-    color: #fff;
-    border: none;
-    letter-spacing: .3px;
-    text-transform: uppercase;
-    border-radius: 0;
-    background: #F90041;
-    transition: all .1s;
-    text-shadow: none
 }
 
 .cart-template .summary-template-holder #shipping-preview-container #shipping-calculate-link {
@@ -1136,7 +1128,7 @@
     color: #fff;
     border: none;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 30px;
     letter-spacing: .4px;
     background: #F90041;
     margin: 24px auto 16px;
@@ -1955,10 +1947,11 @@ header .seloTrustvox {
     font-size: 10pt;
     text-transform: uppercase;
     color: #444;
-    border-radius: 5px 0 0 5px;
+    border-radius: 30px 0 0 30px;
     border: 1px solid #bdbdbd;
     box-shadow: none !important;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    padding-left: 15px
 }
 
 .cart-template .summary-template-holder .summary-coupon .link-coupon-add {
@@ -1987,7 +1980,7 @@ header .seloTrustvox {
     letter-spacing: .3px;
     text-transform: uppercase;
     text-shadow: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 30px 30px 0;
     background: #00b147;
     transition: all .1s
 }
@@ -2028,7 +2021,8 @@ header .seloTrustvox {
     text-transform: uppercase;
     font-size: 12pt !important;
     color: #F90041;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+
 }
 
 div>p.coupon-fields {
@@ -2047,7 +2041,7 @@ div>p.coupon-fields {
     letter-spacing: .3px;
     text-transform: uppercase;
     text-shadow: none;
-    border-radius: 5px;
+    border-radius: 30px;
     background: #00b147;
     transition: all .1s;
     line-height: 1
@@ -2113,14 +2107,6 @@ div>p.coupon-fields {
     color: #797b7b
 }
 
-.cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form .ship-postalCode #ship-postalCode {
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #bdbdbd !important;
-    box-shadow: none !important;
-    width: 235px;
-    height: 40px
-}
-
 .cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form #cart-shipping-calculate {
     position: absolute;
     top: 20px;
@@ -2132,12 +2118,29 @@ div>p.coupon-fields {
     border: none;
     letter-spacing: .3px;
     text-transform: uppercase;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 30px 30px 0;
     background: #00b147 !important;
     transition: .1s;
     text-shadow: none;
     margin-left: 235px !important;
     height: 40px
+}
+
+.cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form #cart-shipping-calculate {
+    position: relative;
+    top: -2px;
+    display: block;
+    font-size: 12px;
+    padding: 0 12px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: #F90041;
+    transition: all .1s;
+    text-shadow: none
 }
 
 .link-print-cart-wrapper #cart-print {
