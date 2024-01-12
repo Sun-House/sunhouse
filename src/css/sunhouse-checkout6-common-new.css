@@ -624,7 +624,7 @@
 
 .cart-template .summary-template-holder .cart-totalizers .accordion-group .accordion-inner tbody tr .monetary,
 .cart-template .summary-template-holder .cart-totalizers .accordion-group .accordion-inner tfoot tr .monetary {
-    font-size: 14px;
+    /*font-size: 14px; Pode dar erros em outros elementos */
     color: #b2b3b3;
     text-align: right;
     padding: 10px 0 !important /* Pode dar BO no elemento da segunda linha */
@@ -925,10 +925,16 @@
     border-radius: 0
 }
 
+.orderform-template .orderform-template-holder .shipping-data .vtex-omnishipping-1-x-leanShippingGroupList .shp-lean-option {
+    display: flex !important
+}
+
 .orderform-template .orderform-template-holder .client-profile-data .vtex-omnishipping-1-x-leanShippingGroupList .shp-lean-option,
 .orderform-template .orderform-template-holder .shipping-data .vtex-omnishipping-1-x-leanShippingGroupList .shp-lean-option {
     background: 0 0;
-    border: 1px solid #e0e0e0
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    margin-bottom: 8px
 }
 
 .orderform-template .orderform-template-holder .client-profile-data .vtex-omnishipping-1-x-leanShippingGroupList .shp-lean-option .vtex-omnishipping-1-x-leanShippingText,
@@ -2220,6 +2226,6 @@ div>p.coupon-fields {
 
 .monetary {
     font-family: 'Bebas Neue';
-    font-size: 23px !important;
+    font-size: 23px
 }
 /* Ajuste de Fonte */
