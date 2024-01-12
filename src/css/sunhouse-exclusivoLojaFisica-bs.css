@@ -42,3 +42,14 @@
 /*#produtoLojaFisica p strong u {
     text-decoration: underline !important;
 }*/
+
+/* Mobile */
+@media screen and (max-width: 1199px) {
+    #produtoLojaFisica {
+        width: auto
+    }
+
+    #destaque {
+        font-size: 19px;
+    }
+}

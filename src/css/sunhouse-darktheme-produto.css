@@ -149,7 +149,8 @@ body.produto {
 }
 
 .frases {
-    color: #a3a3a3
+    /*color: #a3a3a3;*/
+    color: #fff;
 }
 
 .produto .productContent__images-dimensions .productContent__images-dimensions--height i,

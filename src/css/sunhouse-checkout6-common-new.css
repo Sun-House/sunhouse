@@ -203,18 +203,22 @@
     }
 }
 
+.cart-template .cart .cart-items tbody tr.product-item td {
+    padding-top: 20px !important;
+}
+
 .cart-template .cart .cart-items tbody tr.item-service td,
 .cart-template .cart .cart-items tbody tr.product-item td {
     font-size: 14px;
+    /*text-transform: uppercase*/
     font-weight: 400;
-    color: #b2b3b3;
-    text-transform: uppercase
+    color: #b2b3b3
 }
 
 .cart-template .cart .cart-items tbody tr.item-service td.bundle-item-name span,
 .cart-template .cart .cart-items tbody tr.product-item td.product-name a {
     font-size: 14px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 400;
     color: #b2b3b3
 }
@@ -481,7 +485,8 @@
     border: 1px solid #bdbdbd !important;
     box-shadow: none !important;
     width: 235px;
-    height: 40px
+    height: 40px;
+    padding-left: 15px
 }
 
 .cart-template .summary-template-holder #shipping-preview-container .srp-postal-code__form .ship-postalCode #ship-postalCode.success {
@@ -621,7 +626,8 @@
 .cart-template .summary-template-holder .cart-totalizers .accordion-group .accordion-inner tfoot tr .monetary {
     font-size: 14px;
     color: #b2b3b3;
-    text-align: right
+    text-align: right;
+    padding: 10px 0 !important /* Pode dar BO no elemento da segunda linha */
 }
 
 .cart-template .summary-template-holder .cart-totalizers .accordion-group .accordion-inner tbody tr td.empty,
@@ -1422,7 +1428,8 @@ span.error {
 
 .cart-template.mini-cart .accordion-group {
     width: 100% !important;
-    float: unset !important
+    float: unset !important;
+    margin-left: -10px
 }
 
 .cart-template.mini-cart .accordion-group .totalizers-list {
@@ -1655,18 +1662,21 @@ body.body-checkout-confirmation .w-70-ns {
     display: none
 }
 
+/* EM PROCESSO */
 .footer-checkout {
     text-align: center;
-    padding-bottom: 16px;
-    width: 80%;
-    margin: 0 auto
+    padding-bottom: 50px !important;
+    padding: 30px 200px;
+    margin: 0 auto;
+    background-color: #0d1117;
+    /*background-color: #FFDA00;*/
+
 }
 
 .footer-checkout p {
     font-family: Montserrat;
-    font-weight: 300;
-    font-size: 12px;
-    color: #b2b3b3
+    font-size: 16px;
+    color: #EEEEEE
 }
 
 .footer-checkout p strong {
@@ -1677,6 +1687,27 @@ body.body-checkout-confirmation .w-70-ns {
 .footer-checkout p--sac {
     font-size: 11px
 }
+
+.paymentMethods {
+    display: flex;
+    flex-direction: row
+}
+
+.paymentMethods p {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #EEEEEE
+}
+
+.paymentMethods span {
+    display: inline-block;
+    background-size: 550px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-image: url(https://sunhouse.vteximg.com.br/arquivos/Payments-New.png)
+}
+/* EM PROCESSO */
 
 .link-coupon-add {
     background: #F90041 !important
@@ -1791,26 +1822,6 @@ header .seloTrustvox {
 
 .how-much-discount {
     display: none !important
-}
-
-.paymentMethods {
-    display: flex;
-    flex-direction: row
-}
-
-.paymentMethods p {
-    font-family: Montserrat;
-    font-weight: 300;
-    font-size: 12px;
-    color: #b2b3b3
-}
-
-.paymentMethods span {
-    display: inline-block;
-    background-position: -90px 0;
-    width: 307px;
-    height: 20px;
-    background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png)
 }
 
 #btn-client-pre-email,
@@ -2125,7 +2136,8 @@ div>p.coupon-fields {
     background: #00b147 !important;
     transition: .1s;
     text-shadow: none;
-    margin-left: 235px !important;
+    /*margin-left: 235px !important;*/
+    margin-left: 100px !important;
     height: 40px
 }
 
@@ -2140,7 +2152,7 @@ div>p.coupon-fields {
     border: none;
     letter-spacing: .3px;
     text-transform: uppercase;
-    border-radius: 0;
+    /*border-radius: 0;*/
     background: #F90041;
     transition: all .1s;
     text-shadow: none
@@ -2182,3 +2194,31 @@ div>p.coupon-fields {
     background: #F90041;
     border: solid 1px #F90041
 }
+
+.onda-v1 .b--yellow {
+    border-radius: 30px;
+    font-size: 16px;
+    /* Essa parte pode dar erros */
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    /* Essa parte pode dar erros */
+}
+
+/* Ajuste de Fonte */
+.new-product-price,
+.old-product-price,
+.total-selling-price {
+    font-family: 'Bebas Neue';
+    font-size: 21px !important
+}
+
+.old-product-price {
+    font-size: 19px !important
+}
+
+.monetary {
+    font-family: 'Bebas Neue';
+    font-size: 23px !important;
+}
+/* Ajuste de Fonte */
