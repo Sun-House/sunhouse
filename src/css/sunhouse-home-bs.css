@@ -222,7 +222,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 }
 
 .home .benefits-new * {
-    color: #000 !important
+    /*color: #000 !important*/
+    color: #000
 }
 
 .home .benefits-new li {

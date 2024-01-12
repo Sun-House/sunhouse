@@ -133,8 +133,13 @@ body div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after {
 }
 
 .home .highlightBanners,
-.home .highlights {
+.home .highlights,
+.home .benefits-new {
     background-color: #000 !important
+}
+
+.home .benefits-new * {
+    color: #fff !important;
 }
 
 #highlightRoundBanners h2.RoundBannerTitle,
