@@ -2104,7 +2104,8 @@ div>p.coupon-fields {
 
 .cart tr.item-service {
     height: 60px;
-    background-color: #f9f9f9
+    /*background-color: #f9f9f9*/
+    background-color: #FFDA0030
 }
 
 .cart-template .cart .cart-items tbody tr.item-service td.bundle-item-image::before {
