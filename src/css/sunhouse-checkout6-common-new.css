@@ -1840,7 +1840,8 @@ header .seloTrustvox {
 
 .cart tr.item-service {
     height: 100px;
-    background-color: #f9f9f9
+    /*background-color: #f9f9f9*/
+    background-color: #FFDA0030
 }
 
 @media screen and (max-width:768px) {
