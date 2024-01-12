@@ -1810,12 +1810,29 @@ body>.header {
     }
 
     #backToTop {
-        right: 8px;
-        bottom: 8px
+        /*right: 8px;*/
+        bottom: 8px;
+        right: -1px !important;
+        padding-right: 10px;
     }
 
     #backToTop span {
-        display: none !important
+        /*display: none !important*/
+        margin: -8px 0;
+        padding: 5px 120px 15px 12px;
+        transition: 0 !important;
+    }
+    
+    #backToTop:hover span,
+    #backToTop:hover span p,
+    #backToTop:hover span strong {
+        transition: 0 !important;
+        left: 190px !important
+    }
+    
+    #backToTop:hover span p,
+    #backToTop:hover span strong {
+        visibility: hidden !important
     }
 }
 
