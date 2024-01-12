@@ -275,7 +275,8 @@ body.produto {
 }
 
 @media screen and (max-width:1199px) {
-    .topbar__content {
+    .topbar__content,
+    .topbar-mobile-fix {
         background-color: #0d1117 !important;
         /*border-bottom: 1px solid #333 !important*/
     }
