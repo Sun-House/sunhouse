@@ -2213,7 +2213,7 @@ div>p.coupon-fields {
     /* Essa parte pode dar erros */
 }
 
-/* Ajuste de Fonte */
+/* Ajuste de Fonte de Valores */
 .new-product-price,
 .old-product-price,
 .total-selling-price {
@@ -2229,4 +2229,8 @@ div>p.coupon-fields {
     font-family: 'Bebas Neue';
     font-size: 23px
 }
-/* Ajuste de Fonte */
+
+.full-cart .totalizers tfoot td.monetary {
+    font-size: 23px !important
+}
+/* Ajuste de Fonte de Valores */
