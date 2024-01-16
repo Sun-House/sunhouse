@@ -1674,9 +1674,13 @@ body.body-checkout-confirmation .w-70-ns {
     padding-bottom: 50px !important;
     padding: 30px 200px;
     margin: 0 auto;
-    background-color: #0d1117;
-    /*background-color: #FFDA00;*/
+    background-color: #0d1117
+}
 
+.footer-checkout .footer-checkout_wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between
 }
 
 .footer-checkout p {
@@ -1694,24 +1698,32 @@ body.body-checkout-confirmation .w-70-ns {
     font-size: 11px
 }
 
-.paymentMethods {
-    display: flex;
-    flex-direction: row
-}
-
 .paymentMethods p {
     font-family: Montserrat;
     font-size: 16px;
     color: #EEEEEE
 }
 
-.paymentMethods span {
-    display: inline-block;
-    background-size: 550px;
-    background-repeat: no-repeat;
-    width: 100%;
+.paymentMethods ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 -8px !important;
+}
+
+.paymentMethods ul li {
+    width: 55px;
     height: auto;
-    background-image: url(https://sunhouse.vteximg.com.br/arquivos/Payments-New.png)
+    padding: 8px
+}
+
+.footer-checkout_brand {
+    margin: 0 auto;
+    width: 175px;
+    font-weight: 600;
+    padding-top: 35px !important
 }
 /* EM PROCESSO */
 
