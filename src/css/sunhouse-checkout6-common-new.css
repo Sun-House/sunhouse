@@ -1672,7 +1672,6 @@ body.body-checkout-confirmation .w-70-ns {
     display: none
 }
 
-/* EM PROCESSO */
 .footer-checkout {
     text-align: center;
     padding-bottom: 50px !important;
@@ -1693,13 +1692,17 @@ body.body-checkout-confirmation .w-70-ns {
     color: #EEEEEE
 }
 
-.footer-checkout p strong {
+/*.footer-checkout p strong {
     font-family: Montserrat;
     font-weight: 400
 }
 
 .footer-checkout p--sac {
     font-size: 11px
+}*/
+
+.footer-checkout--sac {
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1749,7 +1752,6 @@ body.body-checkout-confirmation .w-70-ns {
     font-weight: 600;
     padding-top: 35px !important
 }
-/* EM PROCESSO */
 
 .link-coupon-add {
     background: #F90041 !important
