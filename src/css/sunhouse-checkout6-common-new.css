@@ -16,7 +16,7 @@
 
 /*.container-cart .cart-template .empty-cart-content #cart-choose-prsoducts:hover*/
 .cart-template .summary-template-holder .summary-coupon .link-coupon-add:hover,
-    .container-cart .cart-template .empty-cart-content #cart-choose-products:hover {
+.container-cart .cart-template .empty-cart-content #cart-choose-products:hover {
     opacity: .9
 }
 
@@ -53,6 +53,10 @@
         top: 4px;
         max-width: 142px;
         height: auto
+    }
+
+    .body-cart {
+        padding-bottom: 0 !important
     }
 }
 
@@ -1698,6 +1702,26 @@ body.body-checkout-confirmation .w-70-ns {
     font-size: 11px
 }
 
+@media screen and (max-width: 1199px) {
+    .footer-checkout {
+        position: relative;
+        z-index: 9999;
+        padding: 30px 30px
+    }
+
+    .footer-checkout .footer-checkout_wrap {
+        display: unset;
+    }
+
+    .footer-checkout .footer-checkout_wrap .paymentMethods {
+        padding-bottom: 30px
+    }
+
+    .footer-checkout_brand {
+        padding-top: 75px !important
+    }
+}
+
 .paymentMethods p {
     font-family: Montserrat;
     font-size: 16px;
@@ -1775,7 +1799,7 @@ header .seloTrustvox {
 @media screen and (max-width:768px) {
     .callCard {
         margin-top: 0;
-        margin-bottom: 24px
+        /*margin-bottom: 24px*/
     }
 }
 
