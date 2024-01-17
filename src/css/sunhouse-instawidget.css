@@ -83,10 +83,15 @@ body.black-friday #instaContainer {
     background: 0 !important
 }
 
+.home .highlights.designers#instaContainer {
+    padding-bottom: 25px
+}
+
 .catalog .highlights.designers#instaContainer,
 .produto .highlights.designers#instaContainer {
     margin-top: 25px;
-    margin-left: 140px
+    margin-left: 140px;
+    padding-bottom: 25px
 }
 
 #bannerInstaTest iframe {
