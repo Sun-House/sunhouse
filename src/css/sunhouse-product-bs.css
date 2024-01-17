@@ -2302,4 +2302,34 @@ Ajuste Insta - Migrar para todos os templates */
     color: #FFDA00;
     cursor: pointer
 }
+
+@media screen and (max-width: 1199px) {
+    #promo-cta {
+        width: 90%;
+        border-radius: 30px;
+        margin-top: 25px !important;
+        margin: 35px 20px;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    #promo-cta p {
+        left: unset;
+    }
+
+    #promo-cta #info {
+        margin: 0;
+        padding: 10px;
+        color: #000;
+    }
+
+    #promo-cta #info::before {
+        color: #fff !important
+    }
+
+    #promo-cta #info:hover,
+    #promo-cta #info:focus {
+        color: #000 !important
+    }
+}
 /* Faixa Destaque Promocional */
