@@ -1500,10 +1500,19 @@ span.error {
     color: #797b7b
 }
 
-.cart-template.mini-cart .summary-template-holder .info,
+/*.cart-template.mini-cart .summary-template-holder .info,
 .cart-template.mini-cart .summary-template-holder .monetary {
     font-size: 12px !important;
     font-weight: 400 !important
+}*/
+
+.cart-template.mini-cart .summary-template-holder .info {
+    font-size: 14px !important
+}
+
+.cart-template.mini-cart .accordion-group .monetary {
+    font-size: 21px !important;
+    font-weight: 600 !important
 }
 
 .cart-template.mini-cart .quantity.badge {
