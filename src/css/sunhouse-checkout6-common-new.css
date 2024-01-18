@@ -516,7 +516,7 @@
     border: none;
     letter-spacing: .3px;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 30px;
     background: #00b147;
     transition: all .1s
 }
