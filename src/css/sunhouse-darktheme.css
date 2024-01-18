@@ -244,13 +244,15 @@ body.institucional>.content a {
 
 .home .footer.links,
 .home .footer.sac,
-.home .footer.texts {
+.home .footer.texts,
+.home .footer.brand {
     background-color: #000 !important
 }
 
 .catalog .footer.links,
 .catalog .footer.sac,
-.catalog .footer.texts {
+.catalog .footer.texts,
+.catalog .footer.brand {
     background-color: #0d1117 !important
 }
 
