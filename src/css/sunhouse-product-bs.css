@@ -1950,7 +1950,6 @@ th.name-field::after {
     }
 }
 
-
 /* Ajustes card info Montagem */
 .productMontagem__info {
     display: flex;
@@ -1958,17 +1957,19 @@ th.name-field::after {
     background: transparent;
     padding: 20px 15px;
     margin-top: 25px;
-    border: 1px solid #ffc107;
+    /*border: 1px solid #ffc107;*/
+    border: 1px solid #69BD44;
     border-radius: 5px;
     color: #444;
     flex-direction: row;
     align-items: flex-end;
     /*align-items: center;*/
+    background-color: #69bd4424
 }
 
 .productMontagem__info i {
     font-size: 30px;
-    color: #ffc107;
+    color: #69BD44;
     white-space: nowrap;
     position: relative;
     margin-right: 10px;
