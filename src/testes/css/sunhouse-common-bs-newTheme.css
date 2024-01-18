@@ -2213,7 +2213,8 @@ body.black-friday .catalogIntro {
 }
 
 #mainInfo {
-    color: #18b858 !important;
+    /*color: #18b858 !important;*/
+    color: #F90041 !important;
     font-weight: 600
 }
 
