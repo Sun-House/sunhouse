@@ -1149,7 +1149,8 @@
     border-radius: 30px;
     letter-spacing: .4px;
     background: #F90041;
-    margin: 24px auto 16px;
+    /*margin: 24px auto 16px;*/
+    margin: 34px auto 16px;
     transition: all .1s
 }
 
