@@ -58,7 +58,8 @@ fieldset.busca>input {
 }
 
 .header__search input[type=button] {
-    background-color: #e77925 !important
+    /*background-color: #e77925 !important -sh old colors*/
+    background-color: #F90041 !important
 }
 
 #button-back svg *,
@@ -66,7 +67,8 @@ fieldset.busca>input {
 body.especial>div.breadcrumb>ul>li:nth-child(3)>a,
 body.especial>div.breadcrumb_bs>ul>li:nth-child(3)>a,
 div.dropdown:hover .dropbtn #departLink {
-    color: #e77925 !important
+    /*color: #e77925 !important - sh old colors*/
+    color: #F90041 !important
 }
 
 #infoHarder,
@@ -111,7 +113,8 @@ body.produto .wrapTemp { /* REMOVER DO HTML DEPOIS */
 
 body.produto .breadcrumb ul li li:last-of-type a span,
 body.produto .breadcrumb_bs ul li li:last-of-type a span {
-    color: #e77925 !important;
+    /*color: #e77925 !important; - sh old colors*/
+    color: #F90041 !important;
     text-decoration: underline !important
 }
 
@@ -320,7 +323,8 @@ body.produto {
 }
 
 #button-back i {
-    color: #e77925 !important;
+    /*color: #e77925 !important; - sh old colors*/
+    color: #F90041 !important
 }
 
 #modal-installments-content {
