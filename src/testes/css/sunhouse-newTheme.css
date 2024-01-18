@@ -372,6 +372,17 @@ a.caretMain:after {
     height: auto;
     padding: 8px
 }
+
+.footer.brand {
+    background-color: #0d1117 !important;
+    padding: 0 0 15px !important;
+    text-align: center
+}
+
+.footer.brand p {
+    color: #F90041;
+    font-weight: 500
+}
 /* Footer Home */
 
 /* Home Header Grid*/
