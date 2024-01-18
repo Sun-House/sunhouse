@@ -261,7 +261,8 @@ body.produto {
 
 .produto .footer.links,
 .produto .footer.sac,
-.produto .footer.texts {
+.produto .footer.texts,
+.produto .footer.brand {
     background-color: #000 !important
 }
 
