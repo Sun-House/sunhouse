@@ -85,8 +85,8 @@ fieldset.busca>input {
 }
 
 .header__search input[type=button] {
-    background-color: #e77925 !important
-    /*background-color: #F90041 !important*/
+    /*background-color: #e77925 !important - old sh colors*/
+    background-color: #F90041 !important
 }
 
 #button-back svg *,
@@ -96,8 +96,8 @@ body.especial>div.breadcrumb>ul>li:nth-child(3)>a,
 body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(2)>a,
 body.especial>div.breadcrumb_bs>ul>li:nth-child(3)>a,
 div.dropdown:hover .dropbtn #departLink {
-    color: #e77925 !important
-    /*color: #F90041 !important*/
+    /*color: #e77925 !important - sh old colors*/
+    color: #F90041 !important
 }
 
 #smarthint-search-header,
