@@ -2276,7 +2276,7 @@ Ajuste Insta - Migrar para todos os templates */
 #promo-cta {
     width: 100%;
     /*border: 1px solid #ffc107 !important;*/
-    border-radius: 20px;
+    border-radius: 50px;
     margin-bottom: 35px;
     /*flex-direction: row;*/
     align-items: center;
@@ -2285,7 +2285,7 @@ Ajuste Insta - Migrar para todos os templates */
 
 #promo-cta p {
     position: relative;
-    left: -45px;
+    /*left: -45px; - a principio nao esta legal para estilo geral da frase */
     margin-bottom: 0
 }
 
