@@ -37,7 +37,8 @@ div.backgroundFix {
     border-bottom: 1px solid #333 !important
 }
 
-.produto .stickyHeader {
+.produto .stickyHeader,
+.produto .stickyHeader__menu {
     background-color: #0d1117 !important;
     box-shadow: 1px 10px 10px #333333 !important;
 }
