@@ -350,13 +350,27 @@ a.caretMain:after {
 .footer.links,
 .footer.sac,
 .footer.texts {
-    background-color: #000 !important;
+    /*background-color: #000 !important;*/
+    background-color: #0d1117 !important
 }
 
 .footer.links a:hover,
 .footer.sac a:hover,
 .footer.texts a:hover {
     color: #f90041 !important;
+}
+
+.footer .paymentMethods ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 -30px !important
+}
+
+.footer .paymentMethods ul li {
+    height: auto;
+    padding: 8px
 }
 /* Footer Home */
 
