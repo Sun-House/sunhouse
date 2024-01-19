@@ -383,6 +383,11 @@ a.caretMain:after {
     color: #F90041;
     font-weight: 500
 }
+
+.custom-tooltip__footer {
+    --bs-tooltip-bg: #ffffffd1;
+    --bs-tooltip-color: #000
+}
 /* Footer Home */
 
 /* Home Header Grid*/

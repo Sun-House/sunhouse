@@ -2,7 +2,7 @@
 .produto .productInfos #div_Conteudo_DetalhesDoProduto_pnlDimensoes *,
 .produto .productInfos .productDescription,
 .produto .productInfos .productDescription * {
-    font-family: Ubuntu !important;
+    /*font-family: Ubuntu !important; - ta herdando a fonte do arquivo geral*/
     border-collapse: inherit
 }
 
@@ -18,8 +18,9 @@
     max-width: 1200px;
     /*margin-top: 110px;*/
     margin-top: 50px;
-    /*padding: 64px 0 48px;*/
-    padding: 0px 0 48px;
+    /*padding: 64px 0 48px;
+    padding: 0px 0 48px;*/
+    padding: 0;
     border-top: 1px solid #ccc; /* Para o template de homologacao precisa remover essa linha o comentar */
     /*border-bottom: 1px solid #ccc; - removido apos ajuste de posicao do Trust */
 }
@@ -1957,14 +1958,13 @@ th.name-field::after {
     background: transparent;
     padding: 20px 15px;
     margin-top: 25px;
-    /*border: 1px solid #ffc107;*/
-    border: 1px solid #69BD44;
+    border: 1px solid #ffc107;
+    background-color: #ffc1072b;
     border-radius: 5px;
     color: #444;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-end
     /*align-items: center;*/
-    background-color: #69bd4424
 }
 
 .productMontagem__info i {
@@ -2281,7 +2281,9 @@ Ajuste Insta - Migrar para todos os templates */
     margin-bottom: 35px;
     /*flex-direction: row;*/
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    border: 1px solid #69bd44;
+    background-color: #69bd4424
 }
 
 #promo-cta p {
