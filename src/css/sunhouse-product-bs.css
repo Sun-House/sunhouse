@@ -2293,7 +2293,7 @@ Ajuste Insta - Migrar para todos os templates */
     margin-bottom: 0
 }
 
-#promo-cta i {
+#promo-cta .bi-info-circle-fill:first-child {
     color: #69bd44 !important
 }
 
