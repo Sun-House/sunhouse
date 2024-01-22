@@ -1969,7 +1969,8 @@ th.name-field::after {
 
 .productMontagem__info i {
     font-size: 30px;
-    color: #69BD44;
+    /*color: #69BD44;*/
+    color: #ffc107 !important;
     white-space: nowrap;
     position: relative;
     margin-right: 10px;
@@ -2290,6 +2291,10 @@ Ajuste Insta - Migrar para todos os templates */
     position: relative;
     /*left: -45px; - a principio nao esta legal para estilo geral da frase */
     margin-bottom: 0
+}
+
+#promo-cta i {
+    color: #69bd44 !important
 }
 
 #promo-cta #info {
