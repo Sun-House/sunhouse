@@ -130,11 +130,12 @@
 /* Breadcrumb */
 
 #content-page h1,
-#content-page #title-h2 {
+#content-page #title-h2,
+#content-page #title-h3 {
     font-weight: 700;
     line-height: 48px;
     color: #F90041 !important;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 #content-page h1 {
@@ -143,6 +144,10 @@
 
 #content-page #title-h2 {
     font-size: 25px
+}
+
+#content-page #title-h3 {
+    font-size: 21px
 }
 
 #content-page p {
