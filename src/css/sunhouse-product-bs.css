@@ -1970,7 +1970,7 @@ th.name-field::after {
 .productMontagem__info i {
     font-size: 30px;
     /*color: #69BD44;*/
-    color: #ffc107 !important;
+    /*color: #ffc107 !important;*/
     white-space: nowrap;
     position: relative;
     margin-right: 10px;
