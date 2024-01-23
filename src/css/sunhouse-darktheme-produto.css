@@ -271,6 +271,7 @@ body.produto {
     position: relative
 }
 
+.produto .stickyHeader,
 .footer.sac {
     border-top: 1px solid #333 !important
 }
