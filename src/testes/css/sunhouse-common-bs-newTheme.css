@@ -2511,6 +2511,20 @@ Btn Comprar */
         display: none !important
     }*/
 
+    .shelf .slick-arrow {
+        position: unset;
+        width: unset;
+        height: unset;
+        font-size: unset;
+        top: unset;
+        cursor: unset;
+        border: unset;
+        background: unset;
+        border-top: unset;
+        border-right: unset;
+        z-index: unset
+    }
+
     .shelf .arrow-custom {
         position: absolute!important;
         font-size: 50px!important;
