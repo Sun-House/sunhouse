@@ -1817,9 +1817,11 @@ body>.header {
     }
 
     #backToTop span {
-        /*display: none !important*/
+        /*display: none !important
         margin: -8px 0;
-        padding: 5px 120px 15px 12px;
+        padding: 5px 120px 15px 12px;*/
+        margin: -2px 0;
+        padding: 0px 130px 2px 5px;
         transition: 0 !important;
     }
     
