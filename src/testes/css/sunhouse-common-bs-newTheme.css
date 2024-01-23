@@ -2517,7 +2517,7 @@ Btn Comprar */
         position: unset;
         width: unset;
         height: unset;
-        font-size: unset;
+        font-size: 0;
         top: unset;
         cursor: unset;
         border: unset;
