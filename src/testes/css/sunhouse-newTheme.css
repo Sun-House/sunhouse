@@ -601,3 +601,21 @@ a.caretMain:after {
     color: #000 !important;
 }
 /* Ajuste cor H2 vitrines e Insta no Template PDP */
+
+@media screen and (max-width:1360px) {
+    .shelf .slick-arrow {
+        border-top: unset !important;
+        border-right: unset !important
+    }
+
+    .home .highlight .slick-arrow {
+        border-top: unset !important;
+        border-right: unset !important;
+        filter: unset !important
+    }
+
+    #block-info .slick-arrow {
+        border-top: unset !important;
+        border-right: unset !important
+    }
+}

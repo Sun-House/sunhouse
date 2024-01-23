@@ -119,14 +119,18 @@
         min-height: 540px
     }
 
+    /* Ajustes de Vitrines - em DEV */
     .home #add-to-cartBtn {
-        width: 80% !important
+        /*width: 80% !important*/
+        width: 95% !important
     }
 
     .home #add-to-cartBtn a {
         font-size: 18px;
-        white-space: normal
+        white-space: normal;
+        width: unset !important
     }
+    /* Ajustes de Vitrines */
 
     .home .highlights__content-highlight .shelf {
         height: auto !important;
@@ -146,9 +150,12 @@
     }
 
     .home .shelfProduct__price * {
-        /*font-size: 20px !important*/
-        /*font-size: 38px !important*/
-        font-size: 54px !important
+        /*font-size: 20px !important
+        font-size: 38px !important
+        font-size: 54px !important*/
+        /* Ajustes de Vitrines */
+        font-size: 35px !important
+        /* Ajustes de Vitrines */
     }
 
     .home .shelfProduct__name {
