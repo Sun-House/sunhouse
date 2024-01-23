@@ -133,7 +133,8 @@
 }
 
 div#smarthint-search-result {
-    top: 85px !important;
+    /*top: 85px !important;*/
+    top: 170px !important;
     height: calc(100% - 85px) !important
 }
 

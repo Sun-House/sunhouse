@@ -24,6 +24,12 @@
     font-weight: 500 !important
 }
 
+#smarthint-search-header {
+    background: unset !important;
+    margin-top: 150px !important; /* esse pode dar erro pois ja tem outro important*/
+    margin-bottom: -100px !important
+}
+
 @media screen and (max-width:1199px) {
     .buscaVazia {
         display: flex;
