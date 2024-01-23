@@ -402,3 +402,14 @@ body.produto {
     font-weight: 600
 }
 /* BacktoTop Produto */
+
+/* Troca de Logo por Tema */
+.newLogo,
+.stickyLogoOld {
+    display: none !important
+}
+
+.logo__darkmode {
+    display: block !important
+}
+/* Troca de Logo por Tema */

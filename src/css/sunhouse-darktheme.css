@@ -363,3 +363,14 @@ body.institucional>.content a {
     box-shadow: 0 0 15px #0d1117 !important;
 }
 /* BacktoTop Geral */
+
+/* Troca de Logo por Tema */
+.newLogo,
+.stickyLogoOld {
+    display: none !important
+}
+
+.logo__darkmode {
+    display: block !important
+}
+/* Troca de Logo por Tema */
