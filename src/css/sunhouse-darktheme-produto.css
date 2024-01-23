@@ -412,4 +412,9 @@ body.produto {
 .logo__darkmode {
     display: block !important
 }
+
+.header__mobilemenu svg,
+.stickyHeader__mobilemenu svg {
+    filter: invert(88%) sepia(10%) saturate(5069%) hue-rotate(357deg) brightness(102%) contrast(102%) !important;
+}
 /* Troca de Logo por Tema */
