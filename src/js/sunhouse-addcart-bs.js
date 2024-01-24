@@ -1,4 +1,3 @@
-// IMPORTADO PARA CDN MAS NAO ESTA EM USO
 function fnAddtoCart() {
     $("body").on("click", ".add-to-cart", (function (a) {
         a.preventDefault();

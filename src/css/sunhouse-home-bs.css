@@ -480,7 +480,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 }
 
 .home .highlightBanners__content .box-banner:last-child {
-    margin-right: unset !important
+    /*margin-right: unset !important;*/
+    margin-right: 15px !important
 }
 
 .home .highlightBanners__content .box-banner img {
