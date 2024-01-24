@@ -464,16 +464,23 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         /*flex-direction: column;*/
         flex-direction: row;
         /*overflow-x: hidden;*/
-        touch-action: pan-y;
-        /*height: 460px;*/
-        width: 800px;
+        overflow-x: auto;
+        /*touch-action: pan-y;
+        height: 460px;
+        width: 800px;*/
     }
 }
 
 .home .highlightBanners__content .box-banner {
     width: 33.3%;
     display: inline-block;
-    transition: opacity .1s
+    transition: opacity .1s;
+    flex: none;
+    margin-right: 35px
+}
+
+.home .highlightBanners__content .box-banner:last-child {
+    margin-right: unset !important
 }
 
 .home .highlightBanners__content .box-banner img {
@@ -492,9 +499,11 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 @media screen and (max-width:1199px) {
     .home .highlightBanners__content .box-banner img {
-        /*width: 100%;*/
-        width: 75%;
-        height: auto
+        /*width: 100%;
+        width: 75%;*/
+        width: 120px;
+        height: auto;
+        margin: unset
     }
 
     .home .bestSellers {
@@ -896,18 +905,6 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         margin-right: auto
     }
 
-    .home #highlightRoundBanners__content .box-banner .RoundBannerSubtitle {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: stretch;
-        justify-content: center;
-        color: #444;
-        font-size: 19px;
-        font-weight: 500;
-        margin-top: 320px
-    }
-
     .home #highlightRoundBanners__content .box-banner:hover * {
         scale: 1.04;
         transition: .3s;
@@ -967,7 +964,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         font-weight: 500;
         margin-top: 0 !important;
         margin-bottom: -30px;
-        text-align: center
+        text-align: center;
+        max-width: 120px
     }
 }
 
