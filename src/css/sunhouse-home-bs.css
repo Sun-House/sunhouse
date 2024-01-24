@@ -461,10 +461,12 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         padding: 0 16px; /*pode causar bugs */
         box-sizing: border-box; /*pode causar bugs */
         display: flex !important;
-        flex-direction: column;
-        overflow-x: hidden;
+        /*flex-direction: column;*/
+        flex-direction: row;
+        /*overflow-x: hidden;*/
         touch-action: pan-y;
-        height: 460px;
+        /*height: 460px;*/
+        width: 800px;
     }
 }
 
@@ -490,7 +492,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 @media screen and (max-width:1199px) {
     .home .highlightBanners__content .box-banner img {
-        width: 100%;
+        /*width: 100%;*/
+        width: 75%;
         height: auto
     }
 
@@ -935,7 +938,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 @media screen and (max-width:1199px) {
     .home #highlightRoundBanners {
         /*height: 550px*/
-        height: 355px
+        /*height: 355px*/
+        height: 270px
     }
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
@@ -962,7 +966,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         font-size: 19px;
         font-weight: 500;
         margin-top: 0 !important;
-        margin-bottom: -30px
+        margin-bottom: -30px;
+        text-align: center
     }
 }
 

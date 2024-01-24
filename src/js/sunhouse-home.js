@@ -9,15 +9,15 @@ $(document).ready(function () {
             pauseOnHover: false
         });
 
-        $(".highlightBanners__content").slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 3800,
-            arrows: false,
-            dots: true
-        });
+        //$(".highlightBanners__content").slick({
+            //slidesToShow: 2,
+            //slidesToScroll: 1,
+            //infinite: true,
+            //autoplay: true,
+            //autoplaySpeed: 3800,
+            //arrows: false,
+            //dots: true
+        //});
 
         $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
             slidesToShow: 2,
