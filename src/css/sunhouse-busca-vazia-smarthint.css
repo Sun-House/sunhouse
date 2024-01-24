@@ -32,6 +32,12 @@
     margin-bottom: -100px !important
 }
 
+#smarthint-search-result-message {
+    width: unset !important;
+    display: unset !important;
+    position: unset !important
+}
+
 @media screen and (max-width:1199px) {
     .buscaVazia {
         display: flex;
