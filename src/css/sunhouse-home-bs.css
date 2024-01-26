@@ -987,5 +987,27 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         margin-top: 48px !important;
     }
 }
-
 /* Smart Hint Voice */
+
+@media screen and (max-width:1199px) {
+    .home .highlightBanners__content {
+        flex-direction: row !important;
+        width: 800px !important;
+        height: auto !important
+    }
+    
+    .home .highlightBanners__content .box-banner img {
+        width: 120px !important;
+        height: auto !important;
+        margin: unset !important
+    }
+
+    .home #highlightRoundBanners {
+        height: 270px !important
+    }
+
+    .home #highlightRoundBanners__content .box-banner .RoundBannerSubtitle {
+        text-align: center !important;
+        max-width: 120px !important
+    }
+}
