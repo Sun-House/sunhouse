@@ -9,6 +9,14 @@ $(document).ready(function () {
             pauseOnHover: false
         });
 
+        $("#banner_mobile").slick({
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            pauseOnHover: false
+        });
+
+        // Slick das categorias em destaque
         //$(".highlightBanners__content").slick({
             //slidesToShow: 2,
             //slidesToScroll: 1,
