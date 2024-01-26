@@ -27,14 +27,16 @@ $(document).ready(function () {
             //dots: true
         //});
 
-        $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
-            slidesToShow: 2,
-            dots: true,
-            arrows: true,
-                prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
-                nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
-            autoplay: false
-        });
+        setTimeout(function () {
+            $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
+                slidesToShow: 2,
+                dots: true,
+                arrows: true,
+                    prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
+                    nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
+                autoplay: false
+            });
+        }, 3000);
 
         $(".highlights__content-slide").slick({
             dots: true,
