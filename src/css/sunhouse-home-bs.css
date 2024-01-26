@@ -474,7 +474,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     .home .bestSellers {
         display: block;
         box-sizing: border-box;
-        padding: 56px 16px 24px
+        /*padding: 56px 16px 24px*/
+        padding: 16px 16px 24px
     }
 
     .home .bestSellers .slick-dots {

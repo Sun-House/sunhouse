@@ -146,7 +146,8 @@
         height: auto !important;
         /*min-height: 535px*/
         /*min-height: 560px*/
-        min-height: 590px
+        /*min-height: 590px*/
+        min-height: 380px
     }
 
     .home .shelfProduct__price * {
@@ -154,7 +155,8 @@
         font-size: 38px !important
         font-size: 54px !important*/
         /* Ajustes de Vitrines */
-        font-size: 35px !important
+        /*font-size: 35px !important*/
+        font-size: 32px !important
         /* Ajustes de Vitrines */
     }
 

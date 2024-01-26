@@ -846,7 +846,8 @@ body>.header {
 
 @media screen and (max-width:1199px) {
     .shelfProductImages>div.shelfProductImages__flagsright {
-        right: 18px
+        /*right: 18px*/
+        right: 11px
     }
 
     .shelfProductImages>div .flag {
