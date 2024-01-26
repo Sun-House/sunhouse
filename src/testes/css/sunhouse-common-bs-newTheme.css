@@ -1820,16 +1820,16 @@ body>.header {
         /*display: none !important
         margin: -8px 0;
         padding: 5px 120px 15px 12px;*/
-        margin: -2px 0;
-        padding: 0px 130px 2px 5px;
-        transition: 0 !important;
+        margin: 1px 0;
+        padding: 0px 128px 25px 5px;
+        transition: 0 !important
     }
     
     #backToTop:hover span,
     #backToTop:hover span p,
     #backToTop:hover span strong {
         transition: 0 !important;
-        left: 190px !important
+        left: 209px !important
     }
     
     #backToTop:hover span p,
@@ -1850,12 +1850,13 @@ body>.header {
     font-size: 65px;
 }
 
-@media screen and (max-width:1199px) {
-    #backToTop i {
-        /*font-size: 31px;*/
-        font-size: 40px;
+/*@media screen and (max-width:1199px) {
+    /#backToTop i {
+        / font-size: 31px; /
+        / font-size: 40px; /
+        font-size: 60px;
     }
-}
+}*/
 
 .trustvox-certificate__modal-btn-js {
     right: 8px !important;
@@ -2005,7 +2006,8 @@ body.black-friday .catalogIntro {
 @media screen and (max-width:1199px) {
     #backToTop {
         bottom: 100px !important;
-        right: 15px !important
+        /*right: 15px !important*/
+        right: 5px !important
     }
 }
 
