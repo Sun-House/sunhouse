@@ -438,8 +438,9 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         /*pode causar bugs */
         display: flex !important;
         flex-direction: column;
-        overflow-x: hidden;
-        touch-action: pan-y;
+        /*overflow-x: hidden;
+        touch-action: pan-y;*/
+        overflow-x: auto !important;
         height: 460px;
     }
 }
@@ -992,7 +993,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 @media screen and (max-width:1199px) {
     .home .highlightBanners__content {
         flex-direction: row !important;
-        width: 800px !important;
+        /*width: 800px !important;*/
         height: auto !important
     }
     
@@ -1013,6 +1014,6 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
     .home #highlightRoundBanners__content .box-banner {
         flex: none;
-        overflow-x: auto !important
+        width: 165px;
     }
 }
