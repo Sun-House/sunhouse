@@ -9,7 +9,8 @@ $(document).ready(function () {
             pauseOnHover: false
         });
 
-        // Slick das categorias em destaque
+        // Slick das categorias em destaque - desativado e usando
+        // carrosel nativo html e css
         //$(".highlightBanners__content").slick({
             //slidesToShow: 2,
             //slidesToScroll: 1,
@@ -20,11 +21,11 @@ $(document).ready(function () {
             //dots: true
         //});
 
-        setTimeout(function () {
-            $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick('unslick', function () {
-                // Esta função de retorno de chamada será executada após 'unslick'
-                // Inicia slick novamente
-                $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
+        //setTimeout(function () {
+            $(".slick-it").each(function () { $(this).slick('unslick'); });
+            
+            $(".slick-it").each(function () {
+                $(this).slick({
                     slidesToShow: 2,
                     dots: true,
                     arrows: true,
@@ -33,7 +34,7 @@ $(document).ready(function () {
                     autoplay: false
                 });
             });
-        }, 3000);
+        //}, 3000);
 
         $(".highlights__content-slide").slick({
             dots: true,
