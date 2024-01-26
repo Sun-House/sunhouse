@@ -151,10 +151,10 @@ div#smarthint-search-result {
         width: auto
     }
 
-    .stickyHeaderSearch #smarthint-search-mostsearchedterms.active {
+    /*.stickyHeaderSearch #smarthint-search-mostsearchedterms.active {
         top: 74px !important;
         left: 15px
-    }
+    }*/
 }
 
 @media screen and (max-width:1199px) {
