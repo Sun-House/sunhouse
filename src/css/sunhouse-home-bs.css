@@ -77,10 +77,6 @@
     transform: rotate(45deg)
 }
 
-
-
-
-
 /*
 .home .benefits {
     display: table;
@@ -88,7 +84,6 @@
     max-width: 1200px;
     padding-top: 16px
 }
-
 .home .benefits li {
     float: left;
     width: 20%;
@@ -96,22 +91,18 @@
     border-right: 1px solid #e77925;
     padding: 6px 0 16px 16px
 }
-
 @media screen and (max-width:1199px) {
     .home .benefits {
         display: none
     }
-
     .home .benefits li {
         width: 100% !important
     }
 }
-
 .home .benefits li:nth-child(1) {
     padding-left: 0;
     width: 19%
 }
-
 .home .benefits li:nth-child(1)>strong {
     float: left;
     font-family: Ubuntu;
@@ -121,51 +112,41 @@
     font-weight: 900;
     padding-right: 4px
 }
-
 .home .benefits li:nth-child(1)>p {
     font-size: 22px;
     line-height: 28px
 }
-
 .home .benefits li:nth-child(2) strong {
     font-size: 27px;
     display: block
 }
-
 .home .benefits li:nth-child(3) {
     width: 22%
 }
-
 .home .benefits li:nth-child(3) strong {
     display: block
 }
-
 .home .benefits li:nth-child(3) strong:first-of-type {
     position: relative;
     top: -6px;
     font-size: 32px;
     padding: 0 18px
 }
-
 .home .benefits li:nth-child(3) strong:first-of-type span {
     font-size: 36px
 }
-
 .home .benefits li:nth-child(3) strong:last-of-type {
     position: relative;
     top: 3px;
     left: 18px
 }
-
 .home .benefits li:nth-child(4) {
     width: 18%
 }
-
 .home .benefits li:nth-child(4) p {
     font-size: 30px;
     padding: 0 26px
 }
-
 .home .benefits li:nth-child(4) strong {
     position: relative;
     top: 2px;
@@ -173,21 +154,17 @@
     font-size: 30px;
     padding: 7px 8px
 }
-
 .home .benefits li:nth-child(5) {
     width: 21%;
     border: 0
 }
-
 .home .benefits li:nth-child(5) p {
     font-size: 14px !important
 }
-
 .home .benefits li:nth-child(5) strong {
     font-size: 44px !important;
     padding-left: 20px
 }
-
 .home .benefits li p,
 .home .benefits li strong {
     font-size: 24px;
@@ -195,20 +172,16 @@
     font-family: Raleway;
     color: #e77925
 }
-
 .home .benefits li p {
     font-weight: 300
 }
-
 .home .benefits li strong {
     font-weight: 900
 }
-
 .home .benefits li>span {
     float: left
 }
 PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
-
 .home .benefits-new {
     display: grid;
     width: 100%;
@@ -320,17 +293,18 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 }
 
 @media screen and (max-width: 1199px) {
+
     /* Temporario ate desenvolver */
     .home .benefits-new {
         display: none;
     }
-    /* Temporario ate desenvolver */
 
+    /* Temporario ate desenvolver */
     .home .benefits-new {
         margin: 35px 20px 0;
         width: auto;
     }
-    
+
     .home .benefits-new ul {
         display: flex;
         flex-direction: column;
@@ -458,30 +432,22 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
     .home .highlightBanners__content {
         /*display: block;*/
-        padding: 0 16px; /*pode causar bugs */
-        box-sizing: border-box; /*pode causar bugs */
+        padding: 0 16px;
+        /*pode causar bugs */
+        box-sizing: border-box;
+        /*pode causar bugs */
         display: flex !important;
-        /*flex-direction: column;*/
-        flex-direction: row;
-        /*overflow-x: hidden;*/
-        overflow-x: auto;
-        /*touch-action: pan-y;
+        flex-direction: column;
+        overflow-x: hidden;
+        touch-action: pan-y;
         height: 460px;
-        width: 800px;*/
     }
 }
 
 .home .highlightBanners__content .box-banner {
     width: 33.3%;
     display: inline-block;
-    transition: opacity .1s;
-    flex: none;
-    margin-right: 35px
-}
-
-.home .highlightBanners__content .box-banner:last-child {
-    /*margin-right: unset !important;*/
-    margin-right: 15px !important
+    transition: opacity .1s
 }
 
 .home .highlightBanners__content .box-banner img {
@@ -500,11 +466,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 @media screen and (max-width:1199px) {
     .home .highlightBanners__content .box-banner img {
-        /*width: 100%;
-        width: 75%;*/
-        width: 120px;
-        height: auto;
-        margin: unset
+        width: 100%;
+        height: auto
     }
 
     .home .bestSellers {
@@ -906,6 +869,18 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         margin-right: auto
     }
 
+    .home #highlightRoundBanners__content .box-banner .RoundBannerSubtitle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+        color: #444;
+        font-size: 19px;
+        font-weight: 500;
+        margin-top: 320px
+    }
+
     .home #highlightRoundBanners__content .box-banner:hover * {
         scale: 1.04;
         transition: .3s;
@@ -935,9 +910,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 @media screen and (max-width:1199px) {
     .home #highlightRoundBanners {
-        /*height: 550px*/
-        /*height: 355px*/
-        height: 270px
+        height: 550px
     }
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
@@ -964,9 +937,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         font-size: 19px;
         font-weight: 500;
         margin-top: 0 !important;
-        margin-bottom: -30px;
-        text-align: center;
-        max-width: 120px
+        margin-bottom: -30px
     }
 }
 
@@ -1008,12 +979,13 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         background-color: #eceff1 !important;
     }
 }
-/* Bloco Trust Home */
 
+/* Bloco Trust Home */
 /* Smart Hint Voice */
 @media screen and (max-width: 1199px) {
     .home #startVoiceSpan i {
         margin-top: 48px !important;
     }
 }
+
 /* Smart Hint Voice */
