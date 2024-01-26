@@ -1010,4 +1010,9 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         text-align: center !important;
         max-width: 120px !important
     }
+
+    .home #highlightRoundBanners__content .box-banner {
+        flex: none;
+        overflow-x: auto !important
+    }
 }
