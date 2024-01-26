@@ -2306,16 +2306,19 @@ Modelo 1 */
     color: #F90041;
     background-color: #FFDA00;
     border: unset;
+    border: 2px solid #FFDA00;
     padding: 0 40px !important;
     margin: unset !important;
     border-radius: 30px;
     font-weight: 600;
     transition: .3s;
+    scale: 1.1
 }
 
 #newsletter-new input[type="submit"]:hover {
-    scale: 1.1;
     transition: .3s;
+    background-color: #F90041;
+    color: #FFDA00
 }
 
 #dformNewsletter {
