@@ -1,5 +1,6 @@
 #instaContainer {
-    background: #fff
+    /*background: #fff*/
+    background: unset !important /* Pode dar BO */
 }
 
 .busca #instaContainer {
@@ -15,8 +16,10 @@
 }
 
 .imgRound {
-    border-radius: 20% 20% 100% 100%;
-    height: 300px;
+    /*border-radius: 20% 20% 100% 100%;
+    height: 300px;*/
+    border-radius: unset;
+    height: auto;
     width: 300px
 }
 
@@ -46,16 +49,18 @@
 }
 
 .instaLink {
-    font-size: 32px;
-    margin-top: 55px;
+    font-size: 32px !important;
+    /*margin-top: 55px;*/
+    margin-top: 30px;
     text-align: center;
     /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/bgInstaLow.jpg);
     background-size: 45px; - Old modo de efeito no insta widget title */
     color: transparent;
+    font-weight: 600 !important;
     background: -webkit-linear-gradient(315deg,#F90041 30%,#FFDA00 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent
 }
 
 .instaLinkBanner {
@@ -139,9 +144,15 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
 }
 
 @media screen and (min-width:1200px) {
-    .home .instaWrap,
+    /*.home .instaWrap,
     .institucional .instaWrap {
         margin-left: 70px
+    }*/
+
+    .home .instaWrap,
+    .institucional .instaWrap,
+    .produto .instaWrap {
+        margin-left: 55px
     }
 }
 
