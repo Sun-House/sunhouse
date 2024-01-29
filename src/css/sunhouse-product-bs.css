@@ -182,9 +182,10 @@ table.group.Escritorio {
         padding-left: 10px !important
     }
 
-    #prodEspec>div>dl>dd>span {
+    #prodEspec div dl dd span {
         width: 100%;
-        padding-left: 5px !important
+        padding-left: 5px !important;
+        border-right: unset !important
     }
 
     #prodEspec>div>dl>dd>span::after {
