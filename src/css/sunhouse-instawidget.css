@@ -95,7 +95,7 @@ body.black-friday #instaContainer {
 .catalog .highlights.designers#instaContainer,
 .produto .highlights.designers#instaContainer {
     margin-top: 25px;
-    margin-left: 140px;
+    /*margin-left: 140px;*/
     padding-bottom: 25px
 }
 

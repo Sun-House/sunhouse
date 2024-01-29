@@ -582,11 +582,11 @@ a.caretMain:after {
 /* Para Menu */
 
 /* Para o conteiner do Insta Widget */
-.catalog .highlights.designers#instaContainer, /* a principio nao notei problemas no .catalog */
+/*.catalog .highlights.designers#instaContainer, / a principio nao notei problemas no .catalog /
 .produto .highlights.designers#instaContainer {
     margin-left: 125px !important;
-    /* margin-left: 140px; --> .catalog*/
-}
+    / margin-left: 140px; --> .catalog /
+}*/
 /* Para o conteiner do Insta Widget */
 
 /* Ajuste cor H2 vitrines e Insta no Template PDP */
