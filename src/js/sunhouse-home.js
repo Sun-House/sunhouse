@@ -39,7 +39,7 @@ $(document).ready(function () {
                 nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
                 autoplay: false
             });
-        }, 2000);
+        }, 4000);
 
         $(".highlights__content-slide").slick({
             dots: true,
