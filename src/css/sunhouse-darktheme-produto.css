@@ -32,6 +32,10 @@ div.backgroundFix {
     color: #fff !important
 }
 
+.productInfos hr {
+    border-color: #dbdbdb !important
+}
+
 .produto .header__menu,
 .topbar {
     border-bottom: 1px solid #333 !important
