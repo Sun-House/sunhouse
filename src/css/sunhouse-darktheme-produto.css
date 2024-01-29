@@ -418,3 +418,25 @@ body.produto {
     filter: invert(88%) sepia(10%) saturate(5069%) hue-rotate(357deg) brightness(102%) contrast(102%) !important;
 }
 /* Troca de Logo por Tema */
+
+/* Abas Descricao Produto */
+#productInfos-tabs {
+    --bs-nav-tabs-border-color: #ffda00a3 !important
+}
+
+#productInfos-tabs .nav-link:hover {
+    border-color: #ffda0069 !important
+}
+
+#productInfos-tabs .nav-link:focus {
+    border-bottom-color: #0d1117 !important;
+}
+
+#productInfos-tabs .productInfos_tab.active {
+    background-color: #ffda001f !important;
+    border-right: 0.15rem solid #ffda00a3;
+    border-left: 0.15rem solid #ffda00a3;
+    border-top: 0.15rem solid #ffda00a3;
+    border-bottom-color: #0d1117 !important;
+}
+/* Abas Descricao Produto */
