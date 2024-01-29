@@ -267,10 +267,6 @@ a.caretMain:after {
     border-right: 6px solid #000;
 }
 
-.home .highlights__content > h2 {
-    color: #000;
-}
-
 .apresentation strong {
     color: #f90041;
 }
@@ -594,11 +590,19 @@ a.caretMain:after {
 /* Para o conteiner do Insta Widget */
 
 /* Ajuste cor H2 vitrines e Insta no Template PDP */
-.produto .shelfQCCT h2,
+/*.produto .shelfQCCT h2,
 .produto .shelfRecents h2,
 .produto .shelfRecomended h2,
 .highlights__content > h2 {
     color: #000 !important;
+}*/
+
+.produto .shelfQCCT h2,
+.produto .shelfRecents h2,
+.produto .shelfRecomended h2,
+.highlights__content > h2,
+.home .highlights__content > h2 {
+    color: #000
 }
 /* Ajuste cor H2 vitrines e Insta no Template PDP */
 
