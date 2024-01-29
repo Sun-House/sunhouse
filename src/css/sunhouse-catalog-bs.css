@@ -854,8 +854,13 @@ body.busca div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(3)>a:nth-child(1) {
     display: none
 }
 
+/* Depreciou
 body.busca #smarthint-position-1 {
     display: block !important
+}*/
+
+.busca #smarthint-position-1 {
+    display: none !important
 }
 
 body.busca #smarthint-position-2,
