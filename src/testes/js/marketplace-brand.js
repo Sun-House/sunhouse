@@ -44,7 +44,7 @@ setTimeout(function () {
 
         linkElement.textContent = brandName;
     } else {
-        var linkElementDf = document.getElementById("product_brand_link__sh");
+        var linkElementDf = document.getElementById("brand_sunhouse_notlinked");
 
         linkElementDf.style.display = 'block';
     }
