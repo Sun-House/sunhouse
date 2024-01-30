@@ -33,7 +33,7 @@ setTimeout(function () {
         return item.productBrandName;
     });
 
-    if (itemComDados && itemComDados.productBrandName && !itemComDados.productBrandName == "Sun House") {
+    if (itemComDados && itemComDados.productBrandName && !(itemComDados.productBrandName == "Sun House")) {
         var brandName = itemComDados.productBrandName;
 
         var formattedBrandName = brandName.replace(/\s+/g, '-');
