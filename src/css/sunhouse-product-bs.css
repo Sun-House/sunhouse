@@ -877,7 +877,8 @@ table.group.Escritorio {
     font-size: 26px;
     font-weight: 400;
     color: #000;
-    line-height: 32px
+    line-height: 32px;
+    padding-bottom: 20px
 }
 
 /* Inutilizado para novo display de preços
