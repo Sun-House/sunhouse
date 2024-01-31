@@ -108,7 +108,8 @@ $(document).ready(function () {
         var novaPagina = window.location.hash;
             if (novaPagina !== '#1') {
             setTimeout(function () {
-                document.querySelector('.previous').style.display = 'inline-block';
+                //document.querySelector('.previous').style.display = 'inline-block'; - pode dar ruim na linha abaixo
+                document.querySelectorAll('.previous').style.display = 'inline-block';
             }, 2000);
         }
     });
