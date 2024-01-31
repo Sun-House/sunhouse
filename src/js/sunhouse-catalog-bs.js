@@ -114,8 +114,20 @@ $(document).ready(function () {
     });
 });
 
-// Inicia Popper Tooltips - inativo ate subir tema novo site - Usando o do Custom Elements - iniciaPopperTooltips
-//$(document).ready(function () {
-    //const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    //const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-//});
+// Inicia Popper Tooltips - situacional pois ele inicia por outro arquivo
+function iniciaPopper() {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+};
+
+// Inicia Popper Tooltips - executa function assim que muda de numero de pagina no catalogo
+$(document).ready(function () {
+    function carregarPopperURL() {
+        setTimeout(function () {
+            iniciaPopper();
+        }, 2500);
+    }
+    
+    window.addEventListener("popstate", carregarPopperURL);
+    window.addEventListener("hashchange", carregarPopperURL);
+});
