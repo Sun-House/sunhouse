@@ -35,17 +35,14 @@ setTimeout(function () {
 
     if (itemComDados && itemComDados.productBrandName && !(itemComDados.productBrandName == "Sun House")) {
         var brandName = itemComDados.productBrandName;
-
         var formattedBrandName = brandName.replace(/\s+/g, '-');
-
         var linkElement = document.getElementById("product_brand_link");
-
-        linkElement.href = "https://www.sunhouse.com.br/lojista/" + formattedBrandName;
-
-        linkElement.textContent = brandName;
-    } else {
         var linkElementDf = document.getElementById("brand_sunhouse_notlinked");
 
+        linkElement.href = "https://www.sunhouse.com.br/lojista/" + formattedBrandName;
+        linkElement.textContent = brandName;
+    } else {
         linkElementDf.style.display = 'block';
+        linkElement.style.display= 'none';
     }
 }, 2000);
