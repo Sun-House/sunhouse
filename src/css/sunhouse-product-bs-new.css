@@ -4,7 +4,7 @@
 }
 
 #button-back i {
-    color: #e77925;
+    /*color: #e77925;*/
     font-size: 40px;
 }
 
@@ -28,6 +28,7 @@
 /* Display Montagem SP */
 .montagem_show {
     display: flex !important;
+    background-color: unset !important
 }
 /* Display Montagem SP */
 /* Ajustes Display Payment Methods e Template Produto com BS */
@@ -88,8 +89,8 @@
 }
 /* Temporario - Ajustes */
 
-/* Ajustes pre rebranding */
+/* Ajustes pre rebranding - desativado ate relato de bugs
 .produto .productInfos {
     border-top: unset !important;
 }
-/* Ajustes pre rebranding */
+Ajustes pre rebranding */
