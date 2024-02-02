@@ -621,7 +621,7 @@ a.caretMain:after {
 
 /* Custom Tooltip Styles */
 .custom-tooltip__footer {
-    --bs-tooltip-bg: #ffffffd1 ;
+    --bs-tooltip-bg: #ffffffd1;
     --bs-tooltip-color: #000
 }
 /* Custom Tooltip Styles */

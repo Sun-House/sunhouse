@@ -21,7 +21,7 @@
     /*padding: 64px 0 48px;
     padding: 0px 0 48px;*/
     padding: 0;
-    border-top: 1px solid #ccc; /* Para o template de homologacao precisa remover essa linha o comentar */
+    /*border-top: 1px solid #ccc;*/
     /*border-bottom: 1px solid #ccc; - removido apos ajuste de posicao do Trust */
 }
 
