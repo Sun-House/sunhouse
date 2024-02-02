@@ -212,6 +212,10 @@ body.produto {
     border-color: #888 !important
 }
 
+#rate-produto {
+    background-color: #333
+}
+
 .productMontagem__info p,
 .produto .productContent__infos-freight #popupCalculoFreteWrapper::after {
     color: #dbdbdb
