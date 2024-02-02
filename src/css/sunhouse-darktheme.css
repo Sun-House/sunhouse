@@ -379,3 +379,23 @@ body.institucional>.content a {
     filter: invert(88%) sepia(10%) saturate(5069%) hue-rotate(357deg) brightness(102%) contrast(102%) !important;
 }
 /* Troca de Logo por Tema */
+
+/* Ajustes Institucional */
+.card,
+.accordion-button,
+.accordion-body,
+.accordion-button:not(.collapsed) {
+    background-color: #333 !important
+}
+
+.accordion-item:last-child .accordion-body {
+    border-radius: 0 0 20px 20px
+}
+
+#btnCard {
+    --bs-btn-hover-color: #333 !important;
+    --bs-btn-hover-border-color: #333 !important;
+    --bs-btn-active-color: #333 !important;
+    --bs-btn-disabled-color: #333 !important
+}
+/* Ajustes Institucional */
