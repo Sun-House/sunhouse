@@ -319,12 +319,29 @@
     --bs-btn-disabled-border-color: #FFDA00;
     --bs-btn-border-radius: 1.875rem;
     margin-top: 35px;
-    padding: 10px 25px;
+    padding: 10px 25px
+}
+
+.btn-wpp {
+    background-color: #40c351!important;
+    border-color: #49c858!important;
+    --bs-btn-bg: #49c858!important;
+    --bs-btn-border-color: #49c858!important;
+    --bs-btn-hover-bg: #49c858!important;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-bg: #49c858!important;
+    --bs-btn-disabled-bg: #49c858!important;
+    --bs-btn-disabled-border-color: #49c858 !important
+}
+
+.btn-wpp:hover {
+    /*border-color: #fff;*/
+    opacity: 0.9;
 }
 
 /* Ajuste todos Big Info Modals */
 .modal .modal-body {
-    padding: 35px 150px !important;
+    padding: 35px 150px !important
 }
 
 .modal .modal-dialog .modal-content {
