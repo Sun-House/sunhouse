@@ -14,12 +14,12 @@
 }
 
 .lojista .brand-content-col {
-    padding: 30px;
+    padding: 30px
     /* margin-top: 35px; */
 }
 
 .lojista #bc_col_um div {
-    padding-top: 25px;
+    padding-top: 25px
 }
 
 .lojista #bc_col_um img {
@@ -33,6 +33,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center
+}
+
+.lojista #bc_col_dois pre {
+    /*margin-top: -5px !important;
+    margin-bottom: -12px !important;*/
+    font-size: 18px;
+    letter-spacing: -1px
 }
 
 .lojista #bc_col_dois p:first-child {
