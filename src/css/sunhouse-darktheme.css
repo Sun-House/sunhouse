@@ -338,6 +338,10 @@ body.institucional>.content a {
 .catalog .view-product {
     --bs-btn-border-color: #F90041 !important
 }
+
+:not(.btn-check)+#buy_now:active {
+    border-color: #0d1117 !important
+}
 /* Novo Tema Catalog BS */
 
 /* Menu Black Friday */

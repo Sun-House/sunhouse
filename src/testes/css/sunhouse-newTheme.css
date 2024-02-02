@@ -180,6 +180,10 @@ a.caretMain:after {
     padding-left: 5px
 }
 
+:not(.btn-check)+#buy_now:active {
+    border-color: #fff
+}
+
 @media screen and (max-width: 1199px) {
     #buy_now {
         width: 85% !important;
