@@ -1,7 +1,4 @@
 #brand_bg_full {
-    /* esse trecho fica direto no html do template */
-    background: url(https://sunhouse.vteximg.com.br/arquivos/brand-homolog.jpg); 
-    /* esse trecho fica direto no html do template */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,7 +27,7 @@
 
 .lojista #bc_col_dois {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center
 }

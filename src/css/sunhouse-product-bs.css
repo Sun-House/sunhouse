@@ -974,7 +974,13 @@ table.group.Escritorio {
     line-height: 80px;
     border-radius: 4px;
     -webkit-border-radius: 20px;
-    -moz-border-radius: 20px
+    -moz-border-radius: 20px;
+    transition: .2s
+}
+
+.produto .productContent__infos-buyButton a:active {
+    scale: 0.95;
+    transition: .2s
 }
 
 .produto .productContent__infos-buyButton a:after,
