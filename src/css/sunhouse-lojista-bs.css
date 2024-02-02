@@ -7,7 +7,8 @@
 }
 
 .lojista .header__menu {
-    padding-bottom: 20px !important
+    padding-bottom: 20px !important;
+    border-bottom: unset !important
 }
 
 .lojista .brand-content-col {
