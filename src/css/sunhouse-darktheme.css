@@ -48,8 +48,9 @@ div.backgroundFix {
     color: #fff !important
 }
 
-.breadcrumb_bs ul li a:hover {
-    color: #F90041 !important;
+.breadcrumb_bs ul li a:hover,
+#btn-go-page {
+    color: #F90041 !important
 }
 
 .shelfProduct__name {
@@ -69,7 +70,7 @@ div.backgroundFix {
 .institucional .header__menu,
 .topbar {
     /*border-bottom: 1px solid #333 !important;*/
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #333
 }
 
 .topbar__content>div .btnZap:hover {
@@ -143,7 +144,7 @@ body div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after {
 }
 
 .home .benefits-new * {
-    color: #fff !important;
+    color: #fff !important
 }
 
 #highlightRoundBanners h2.RoundBannerTitle,
@@ -289,7 +290,7 @@ body.institucional>.content a {
 
     .topbar__content,
     .topbar-mobile-fix {
-        background-color: #0d1117 !important;
+        background-color: #0d1117 !important
         /*border-bottom: 1px solid #333 !important*/
     }
 
@@ -306,21 +307,21 @@ body.institucional>.content a {
 .preblack .accordion {
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #ffffff40 !important;
     --bs-accordion-active-bg: #F9004120333 !important;
-    --bs-accordion-active-color: #fff !important;
+    --bs-accordion-active-color: #fff !important
 }
 
 .preblack .accordion-item {
     background-color: #444 !important;
-    border-color: #444 !important;
+    border-color: #444 !important
 }
 
 .preblack .accordion-button {
     background-color: #333 !important;
-    color: #fff !important;
+    color: #fff !important
 }
 
 .preblack .accordion-button:not(.collapsed) {
-    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #0d1117 !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #0d1117 !important
 }
 /* LP Pre Black */
 
@@ -328,14 +329,14 @@ body.institucional>.content a {
 @media screen and (max-width: 1199px) {
     .sh-sidebar {
         background-color: #0d1117;
-        color: #fff;
+        color: #fff
     }
 }
 /* Menu */
 
 /* Novo Tema Catalog BS */
 .catalog .view-product {
-    --bs-btn-border-color: #F90041 !important;
+    --bs-btn-border-color: #F90041 !important
 }
 /* Novo Tema Catalog BS */
 
@@ -347,20 +348,20 @@ body.institucional>.content a {
 
 /* SmartHint - Black Friday */
 .promotionalbox-cronometro {
-    color: #fff;
+    color: #fff
 }
 
 #promotionalbox-img-banner-805 {
     border-radius: 30px;
     /*box-shadow: 0px 0px 20px #f77000;*/
-    box-shadow: 0px 0px 20px #F90041;
+    box-shadow: 0px 0px 20px #F90041
 }
 /* SmartHint - Black Friday */
 
 /* BacktoTop Geral */
 #backToTop span {
     background-color: #0d1117 !important;
-    box-shadow: 0 0 15px #0d1117 !important;
+    box-shadow: 0 0 15px #0d1117 !important
 }
 /* BacktoTop Geral */
 
@@ -376,7 +377,7 @@ body.institucional>.content a {
 
 .header__mobilemenu svg,
 .stickyHeader__mobilemenu svg {
-    filter: invert(88%) sepia(10%) saturate(5069%) hue-rotate(357deg) brightness(102%) contrast(102%) !important;
+    filter: invert(88%) sepia(10%) saturate(5069%) hue-rotate(357deg) brightness(102%) contrast(102%) !important
 }
 /* Troca de Logo por Tema */
 
