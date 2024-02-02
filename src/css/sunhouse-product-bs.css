@@ -2225,6 +2225,19 @@ Ajuste Insta - Migrar para todos os templates */
 .ts-customer-questions-form-wrapper button[data-v-7b6506c8]:hover {
     scale: 1.1;
 }
+
+/* news */
+#rate-produto {
+    background-color: #eeeeee;
+    padding: 10px 60px;
+    border-radius: 30px
+}
+
+.ts-questions-list-item[data-v-2d2b06c4] {
+    background-color: #ffda004f !important;
+    border-radius: 30px !important
+}
+/* news */
 /* Bloco Trust Rates PDP */
 
 /* Ajuste todos Modals */
@@ -2449,3 +2462,33 @@ Ajuste Insta - Migrar para todos os templates */
 }
 Ajustes pre rebranding */
 /* sunhouse-product-bs-new.css - migrado */
+
+/* Lojista Info Display */
+#product_brand pre {
+    margin-top: -5px !important;
+    margin-bottom: -12px !important;
+    font-size: 18px;
+    letter-spacing: -1px
+}
+
+#product_brand span {
+    font-size: 14px !important;
+    font-weight: 500;
+    display: inline-flex
+}
+
+#product_brand span a,
+#product_brand #brand_sunhouse_notlinked {
+    font-weight: 600 !important;
+    padding-left: 4px
+}
+
+#product_brand span a {
+    color: #009FB7;
+    text-decoration: underline !important
+}
+
+#product_brand #brand_sunhouse_notlinked {
+    color: #F90041
+}
+/* Lojista Info Display */
