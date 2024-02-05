@@ -87,3 +87,34 @@
     opacity: .9
 }
 /* Para o display de filtros rapidos na pagina da marca */
+
+@media screen and (max-width: 1199px) {
+    .lojista.brand_intro {
+        height: 175px
+    }
+
+    .lojista #brand_bg_full {
+        position: absolute;
+        left: 0
+    }
+    
+    .lojista #page-content {
+        margin-top: 30px
+    }
+
+    .lojista #page-content .container div {
+        display: flex;
+        flex-direction: column
+    }
+
+    .lojista .brand-content-col {
+        width: unset;
+        padding: 0
+    }
+
+    .lojista #bc_col_um img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto
+    }
+}
