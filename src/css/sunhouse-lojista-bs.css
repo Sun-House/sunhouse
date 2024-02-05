@@ -58,18 +58,30 @@
     margin-right: 20px
 }
 
-.lojista #btn_qf {
+.lojista #btn_qf,
+.lojista #select_qf {
     background-color: #000;
     border: 1px solid #000;
-    /*color: #fff;*/
     color: #FFDA00;
-    /*padding: 5px 18px 5px 18px;*/
-    padding: 10px 50px;
     border-radius: 30px;
     transition: .3s
 }
 
-.lojista #btn_qf:hover {
+.lojista #btn_qf {
+    padding: 10px 50px
+}
+
+.lojista #select_qf {
+    padding: 8px 30px
+}
+
+.lojista #select_qf option {
+    background-color: #000;
+    color: #fff
+}
+
+.lojista #btn_qf:hover,
+.lojista #select_qf:hover {
     border: 1px solid #fff;
     transition: .3s;
     opacity: .9
