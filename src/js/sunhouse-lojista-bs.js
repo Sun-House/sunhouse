@@ -16,15 +16,29 @@ function obterConteudoFinalDaURL() {
     window.conteudoFinalDaURL = conteudoFinal;
 
     // Adicionar o valor ao final do atributo 'value' de todos os elementos <option> com id "opt_qf"
-    var selectOptions = document.querySelectorAll('.option_qf');
-    selectOptions.forEach(function (slOption) {
-        slOption.value += conteudoFinal;
-    });
+    //var selectOptions = document.querySelectorAll('.option_qf');
+    //selectOptions.forEach(function (slOption) {
+        //slOption.value += conteudoFinal;
+    //});
+
+    //var linkHrefs = document.querySelectorAll('.button-qf');
+    //linkHrefs.forEach(function (linkHr) {
+        //linkHr.href += conteudoFinal;
+    //});
+
+    var selectOptions = document.querySelectorAll('.option-qf');
+    if (selectOptions.length > 0) {
+        selectOptions.forEach(function (slOption) {
+            slOption.value += conteudoFinal;
+        });
+    }
 
     var linkHrefs = document.querySelectorAll('.button-qf');
-    linkHrefs.forEach(function (linkHr) {
-        linkHr.href += conteudoFinal;
-    });
+    if (linkHrefs.length > 0) {
+        linkHrefs.forEach(function (linkHr) {
+            linkHr.href += conteudoFinal;
+        });
+    }
 }
 
 // Chamar a função quando a página carregar
