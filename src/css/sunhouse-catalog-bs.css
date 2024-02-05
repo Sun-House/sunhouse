@@ -832,7 +832,8 @@ body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(2) a {
     content: "Resultado de Busca:";
     font-size: 14px;
     font-family: Montserrat !important;
-    color: #444
+    color: #444;
+    margin-right: 5px
 }
 
 .busca .breadcrumb_bs > ul:nth-child(2) > li:nth-child(2) {

@@ -15,17 +15,7 @@ function obterConteudoFinalDaURL() {
     // Armazenar a variável para uso posterior
     window.conteudoFinalDaURL = conteudoFinal;
 
-    // Adicionar o valor ao final do atributo 'value' de todos os elementos <option> com id "opt_qf"
-    //var selectOptions = document.querySelectorAll('.option_qf');
-    //selectOptions.forEach(function (slOption) {
-        //slOption.value += conteudoFinal;
-    //});
-
-    //var linkHrefs = document.querySelectorAll('.button-qf');
-    //linkHrefs.forEach(function (linkHr) {
-        //linkHr.href += conteudoFinal;
-    //});
-
+    // Ajusta o valor de value em todos os elementos option do select abaixo
     var selectOptions = document.querySelectorAll('.option-qf');
     if (selectOptions.length > 0) {
         selectOptions.forEach(function (slOption) {
@@ -33,12 +23,16 @@ function obterConteudoFinalDaURL() {
         });
     }
 
-    var linkHrefs = document.querySelectorAll('.button-qf');
-    if (linkHrefs.length > 0) {
-        linkHrefs.forEach(function (linkHr) {
-            linkHr.href += conteudoFinal;
-        });
-    }
+    // Ajusta o valor do Href dos elementos abaixo marcados
+    var linkProntaEntrega = document.getElementById('button_qf_pe');
+    if (linkProntaEntrega) {
+        linkProntaEntrega.href += conteudoFinal + "/218?map=b,productClusterIds";
+    };
+
+    var linkLancamentos = document.getElementById('button_qf_lanc');
+    if (linkLancamentos) {
+        linkLancamentos.href += conteudoFinal + "/212?map=b,productClusterIds";
+    };
 }
 
 // Chamar a função quando a página carregar
