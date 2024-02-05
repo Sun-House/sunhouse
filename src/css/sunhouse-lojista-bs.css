@@ -44,15 +44,34 @@
     padding-top: 65px
 }
 
-
-
-
 /* Para o display de filtros rapidos na pagina da marca */
-#brand_quick_filter {
-    position: relative;
-    bottom: -45px;
-    background-color: #000;
-    padding: 10px 50px;
-    color: #FFDA00;
-    border-radius: 30px
+.lojista #bc_col_dois p {
+    margin-bottom: 35px
 }
+
+.lojista #bc_col_dois div {
+    position: relative;
+    bottom: -35px
+}
+
+.lojista #bc_col_dois div a {
+    margin-right: 20px
+}
+
+.lojista #btn_qf {
+    background-color: #000;
+    border: 1px solid #000;
+    /*color: #fff;*/
+    color: #FFDA00;
+    /*padding: 5px 18px 5px 18px;*/
+    padding: 10px 50px;
+    border-radius: 30px;
+    transition: .3s
+}
+
+.lojista #btn_qf:hover {
+    border: 1px solid #fff;
+    transition: .3s;
+    opacity: .9
+}
+/* Para o display de filtros rapidos na pagina da marca */
