@@ -1,4 +1,4 @@
-//Obtem final da URL com Marca alvo
+//Obtem final da URL com Marca alvo e adiciona aos elementos alvo da pagina
 function obterConteudoFinalDaURL() {
     // URL da sua string
     var url = window.location.href;
@@ -15,14 +15,20 @@ function obterConteudoFinalDaURL() {
     // Armazenar a variável para uso posterior
     window.conteudoFinalDaURL = conteudoFinal;
 
-    // Imprimir no console para verificar
-    console.log("Conteúdo Final da URL:", conteudoFinal);
+    // Adicionar o valor ao final do atributo 'value' de todos os elementos <option> com id "opt_qf"
+    var selectOptions = document.querySelectorAll('.option_qf');
+    selectOptions.forEach(function (slOption) {
+        slOption.value += conteudoFinal;
+    });
+
+    var linkHrefs = document.querySelectorAll('.button-qf');
+    linkHrefs.forEach(function (linkHr) {
+        linkHr.href += conteudoFinal;
+    });
 }
 
 // Chamar a função quando a página carregar
 window.onload = obterConteudoFinalDaURL;
-
-//
 
 // Redireciona para cada Categoria + Marca alvo
 function redirecionaCategBrand() {
