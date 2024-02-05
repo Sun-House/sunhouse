@@ -89,7 +89,7 @@
 /* Para o display de filtros rapidos na pagina da marca */
 
 @media screen and (max-width: 1199px) {
-    .lojista.brand_intro {
+    .lojista .brand_intro {
         height: 175px
     }
 
