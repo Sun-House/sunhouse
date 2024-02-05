@@ -250,7 +250,11 @@ body.institucional>.content a {
 .home .footer.links,
 .home .footer.sac,
 .home .footer.texts,
-.home .footer.brand {
+.home .footer.brand,
+.institucional .footer.links,
+.institucional .footer.sac,
+.institucional .footer.texts,
+.institucional .footer.brand {
     background-color: #000 !important
 }
 

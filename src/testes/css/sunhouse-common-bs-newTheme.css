@@ -1575,7 +1575,8 @@ body>.header {
 .footer.texts {
     font-family: Montserrat;
     padding: 24px 0 64px;
-    background: #f4a460
+    /*background: #f4a460 - old theme */
+    background-color: #0d1117
 }
 
 .footer__box ul li a.instagram,

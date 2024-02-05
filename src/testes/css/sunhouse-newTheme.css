@@ -347,12 +347,12 @@ a.caretMain:after {
     color: #f90041 !important;
 }
 
-.footer.links,
+/*.footer.links,
 .footer.sac,
 .footer.texts {
-    /*background-color: #000 !important;*/
+    / background-color: #000 !important; /
     background-color: #0d1117 !important
-}
+}*/
 
 .footer.links a:hover,
 .footer.sac a:hover,

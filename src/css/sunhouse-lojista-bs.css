@@ -43,3 +43,16 @@
 .lojista #bc_col_dois p:first-child {
     padding-top: 65px
 }
+
+
+
+
+/* Para o display de filtros rapidos na pagina da marca */
+#brand_quick_filter {
+    position: relative;
+    bottom: -45px;
+    background-color: #000;
+    padding: 10px 50px;
+    color: #FFDA00;
+    border-radius: 30px
+}
