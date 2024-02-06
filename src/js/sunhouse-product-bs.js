@@ -261,6 +261,13 @@ window.addEventListener("load", function () {
     }, 1000); // 1 segundo de espera
 });
 
+// Abre direto a aba de avaliacoes quando clica no link Ver todas avaliacoes
+$(document).ready(function () {
+    $("#all_opinions").click(function () {
+        $("#rate-tab").tab("show");
+    });
+});
+
 // Mostra info de Marca e Loja do produto - Marketplace
 //window.addEventListener("load", function () {
     setTimeout(function () {
