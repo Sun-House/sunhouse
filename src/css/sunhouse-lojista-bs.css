@@ -180,4 +180,15 @@
         height: auto;
         margin: 0 auto
     }
+
+    .lojista #page-content hr {
+        display: block !important
+    }
+
+    /* Oculto por hora ate ser totalmente ajustado - Pos Producao */
+    .lojista #page-content .container #bc_qf_block,
+    .lojista #bc_col_dois span {
+        display: none !important
+    }
+    /* Oculto por hora ate ser totalmente ajustado */
 }
