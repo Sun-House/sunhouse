@@ -448,3 +448,10 @@ body.produto {
     border-bottom-color: #0d1117 !important;
 }
 /* Abas Descricao Produto */
+
+/* Marca e Seller - Marketplace */
+#product_brand span,
+#product_brand pre {
+    color: #fff
+}
+/* Marca e Seller - Marketplace */
