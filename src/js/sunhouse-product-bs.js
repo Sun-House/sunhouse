@@ -276,7 +276,7 @@ $(document).ready(function () {
         });
 
         const brandLinked = document.getElementById("product_brand_link");
-        var brandDisplayInfo = document.querySelectorAll(".brandNameDisplay");
+        //var brandDisplayInfo = document.querySelectorAll(".brandNameDisplay");
 
         function removerAcentos(str) {
             return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -288,7 +288,7 @@ $(document).ready(function () {
 
             brandLinked.href = "https://www.sunhouse.com.br/lojista/" + formattedBrandName;
             brandLinked.textContent = brandName;
-            brandDisplayInfo.textContent = brandName;
+            //brandDisplayInfo.textContent = brandName;
         } else {
             var brandNotLinked = document.getElementById("brand_sunhouse_notlinked");
 
