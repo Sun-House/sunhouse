@@ -125,7 +125,8 @@ body div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after {
 
 .catalog .catalogIntro .catalogdescription li,
 .catalog .catalogIntro .catalogdescription p,
-.catalog .catalogIntro .catalognav p {
+.catalog .catalogIntro .catalognav p,
+.lojista pre {
     color: #fff
 }
 
@@ -425,3 +426,14 @@ body.institucional>.content a {
     border-color: #333 !important
 }
 /* Ajustes Institucional */
+
+/* Pagina Lojistas - Marketplace */
+.lojista #bc_col_dois span {
+    color: #DDDDDD !important
+}
+
+.lojista #btn_qf:hover,
+.lojista #select_qf:hover {
+    border: 1px solid #0D1117 !important
+}
+/* Pagina Lojistas - Marketplace */
