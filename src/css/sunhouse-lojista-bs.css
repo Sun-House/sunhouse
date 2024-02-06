@@ -60,9 +60,6 @@
 
 .lojista #btn_qf,
 .lojista #select_qf {
-    /*background-color: #000;
-    border: 1px solid #000;
-    color: #FFDA00;*/
     border-radius: 30px;
     transition: .3s
 }
@@ -77,6 +74,15 @@
 
 /* Variacoes dos Botoes de Filtros Rapidos */
 /* v1
+.lojista #btn_qf,
+.lojista #select_qf {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #FFDA00;
+}*/
+/* v1 */
+
+/* v2
 .lojista #button_qf_pe button {
     background-color: #69BD44;
     border: 1px solid #69BD44;
@@ -94,9 +100,9 @@
     border: 1px solid #FF69B4;
     color: #fff
 }*/
-/* v1 */
+/* v2 */
 
-/* v2
+/* v3
 .lojista #button_qf_pe button {
     background-color: #00b700;
     border: 1px solid #00b700;
@@ -114,9 +120,9 @@
     border: 1px solid #212121;
     color: #fff
 }*/
-/* v2 */
-
 /* v3 */
+
+/* v4 */
 .lojista #button_qf_pe button {
     background-color: #feb10d;
     border: 1px solid #feb10d;
@@ -134,7 +140,7 @@
     border: 1px solid #fa183a;
     color: #fff
 }
-/* v3 */
+/* v4 */
 /* Variacoes dos Botoes de Filtros Rapidos */
 
 .lojista #select_qf option {
