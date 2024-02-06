@@ -158,7 +158,8 @@
 
 @media screen and (max-width: 1199px) {
     .lojista .brand_intro {
-        height: 175px
+        height: 175px;
+        margin-top: 25px
     }
         
     .lojista #page-content {
