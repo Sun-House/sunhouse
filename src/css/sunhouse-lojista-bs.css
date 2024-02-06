@@ -60,9 +60,9 @@
 
 .lojista #btn_qf,
 .lojista #select_qf {
-    background-color: #000;
+    /*background-color: #000;
     border: 1px solid #000;
-    color: #FFDA00;
+    color: #FFDA00;*/
     border-radius: 30px;
     transition: .3s
 }
@@ -75,8 +75,70 @@
     padding: 8px 30px
 }
 
+/* Variacoes dos Botoes de Filtros Rapidos */
+/* v1
+.lojista #button_qf_pe button {
+    background-color: #69BD44;
+    border: 1px solid #69BD44;
+    color: #fff
+}
+
+.lojista #button_qf_lanc button {
+    background-color: #009FB7;
+    border: 1px solid #009FB7;
+    color: #fff
+}
+
+.lojista #select_qf {
+    background-color: #FF69B4;
+    border: 1px solid #FF69B4;
+    color: #fff
+}*/
+/* v1 */
+
+/* v2
+.lojista #button_qf_pe button {
+    background-color: #00b700;
+    border: 1px solid #00b700;
+    color: #fff
+}
+
+.lojista #button_qf_lanc button {
+    background-color: #fb5826;
+    border: 1px solid #fb5826;
+    color: #fff
+}
+
+.lojista #select_qf {
+    background-color: #212121;
+    border: 1px solid #212121;
+    color: #fff
+}*/
+/* v2 */
+
+/* v3 */
+.lojista #button_qf_pe button {
+    background-color: #feb10d;
+    border: 1px solid #feb10d;
+    color: #fff
+}
+
+.lojista #button_qf_lanc button {
+    background-color: #fc6a21;
+    border: 1px solid #fc6a21;
+    color: #fff
+}
+
+.lojista #select_qf {
+    background-color: #fa183a;
+    border: 1px solid #fa183a;
+    color: #fff
+}
+/* v3 */
+/* Variacoes dos Botoes de Filtros Rapidos */
+
 .lojista #select_qf option {
-    background-color: #000;
+    background-color: #fa183a;
     color: #fff !important
 }
 
