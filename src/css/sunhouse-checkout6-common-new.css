@@ -1573,7 +1573,7 @@ span.error {
 .cconf-myorders-button span,
 .cconf-continue-button::before {
     position: relative;
-    top: -12px
+    top: -15px
 }
 /* Pedido Realizado - VALIDAR CONFIG DUPLICADAS NESSE ARQUIVO */
 
