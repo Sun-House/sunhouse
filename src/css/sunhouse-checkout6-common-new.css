@@ -1529,7 +1529,8 @@ span.error {
 /* Pedido Realizado - VALIDAR CONFIG DUPLICADAS NESSE ARQUIVO */
 .body-checkout-confirmation * {
     font-weight: 400 !important;
-    font-family: 'Montserrat' !important
+    font-family: 'Montserrat' !important;
+    color: #000
 }
 
 .body-checkout-confirmation h3 * {
