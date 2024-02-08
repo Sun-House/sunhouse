@@ -1526,9 +1526,55 @@ span.error {
     font-weight: 400
 }
 
+/* Pedido Realizado - VALIDAR CONFIG DUPLICADAS NESSE ARQUIVO */
 .body-checkout-confirmation * {
-    font-weight: 400 !important
+    font-weight: 400 !important;
+    font-family: 'Montserrat'
 }
+
+.body-checkout-confirmation h3 * {
+    font-weight: 600 !important
+}
+
+.body-checkout-confirmation h3 {
+    margin-bottom: 35px !important;
+}
+
+#app-container article.w-100 {
+    border-radius: 30px;
+    min-height: 250px;
+}
+
+.cconf-myorders-button,
+.cconf-continue-button {
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 25px 0px !important;
+    width: 30%;
+}
+
+.cconf-continue-button {
+    font-size: 0
+}
+
+.cconf-myorders-button {
+    font-size: 16px
+}
+
+.cconf-continue-button::before {
+    font-size: 16px
+}
+
+.cconf-continue-button::before {
+    content: "voltar ao inicio"
+}
+
+.cconf-myorders-button span,
+.cconf-continue-button::before {
+    position: relative;
+    top: -12px
+}
+/* Pedido Realizado - VALIDAR CONFIG DUPLICADAS NESSE ARQUIVO */
 
 #print-bank-invoice,
 .cconf-continue-button,
