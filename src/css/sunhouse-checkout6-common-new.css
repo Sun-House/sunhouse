@@ -1558,7 +1558,7 @@ span.error {
 }
 
 .cconf-myorders-button {
-    font-size: 16px
+    font-size: 16px !important
 }
 
 .cconf-continue-button::before {
