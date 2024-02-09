@@ -2587,9 +2587,11 @@ Btn Comprar */
     }
 }
 
-@media screen and (max-width: 1350px) {
-    .MenuNew * {
-        overflow-x: visible !important
+@media screen and (max-width: 1270px) {
+    * {
+        overflow-x: visible !important;
+        -webkit-overflow-x: visible !important;
+        -moz-overflow-x: visible !important
     }
 }
 /* Ajustes resolucoes especificas - Responsivo */
