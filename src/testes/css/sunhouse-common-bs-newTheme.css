@@ -2563,3 +2563,33 @@ Btn Comprar */
     }
 }
 /* Ajustes de Vitrines */
+
+/* Ajustes resolucoes especificas - Responsivo */
+@media screen and (max-width: 1420px) {
+    .topbar {
+        right: 5% !important
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .home #highlightRoundBanners__content {
+        width: 1065px !important;
+        min-width: 1065px !important
+    }
+
+    .home #highlightRoundBanners__content .box-banner img {
+        width: 275px !important;
+        height: auto !important
+    }
+
+    .home #highlightRoundBanners h2.RoundBannerTitle {
+        padding-left: 25px !important
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .MenuNew * {
+        overflow-x: visible !important
+    }
+}
+/* Ajustes resolucoes especificas - Responsivo */
