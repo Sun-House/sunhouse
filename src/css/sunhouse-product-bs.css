@@ -110,7 +110,8 @@ table.group.Escritorio {
     /*border-radius: 5px;*/
     border-radius: 20px;
     margin-bottom: 10px !important;
-    width: 48.5%;
+    width: auto;
+    max-width: 596px;
     padding: 5px !important;
     text-align: start;
     white-space: nowrap;
@@ -127,7 +128,8 @@ table.group.Escritorio {
     padding-left: 10px !important;
     /*border-radius: 5px 0 0 5px;*/
     border-radius: 20px 0 0 20px;
-    width: 47.6%;
+    /*width: 47.6%;*/
+    width: 51%;
     text-align: initial;
     margin: -5px;
     border-right: 5px solid #fff
@@ -202,8 +204,14 @@ table.group.Escritorio {
     font-weight: 600
 }*/
 
-.produto #prodEspec>div {
+/*.produto #prodEspec>div {
     padding-top: 20px !important
+}*/
+
+.produto #prodEspec {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 15px
 }
 
 .produto .pdpDetalhes {
@@ -213,6 +221,10 @@ table.group.Escritorio {
 }
 
 @media screen and (max-width:1199px) {
+    .produto #prodEspec {
+        display: none !important /* temporario até ajuste de layout */
+    }
+
     .produto .pdpDetalhes {
         width: 100%;
         box-sizing: border-box;

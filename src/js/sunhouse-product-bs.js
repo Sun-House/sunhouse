@@ -301,7 +301,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     //function moverOldFichaMS() {
         var oldFicha = document.getElementById('prodEspec');
-        var newFichaBlock = document.getElementById('oldFichaMS');
+        var newFichaBlock = document.getElementById('colDois');
     
         // Move o elemento para dentro do contêiner
         newFichaBlock.appendChild(oldFicha);
