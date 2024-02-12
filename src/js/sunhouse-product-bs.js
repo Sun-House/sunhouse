@@ -298,14 +298,26 @@ $(document).ready(function () {
     }, 2000);
 //});
 
-$(document).ready(function () {
+// APAGAR ESSE SE O BLOCO ABAIXO DO MESMO FUNCIONAR
+//$(document).ready(function () {
     //function moverOldFichaMS() {
-        var oldFicha = document.getElementById('prodEspec');
-        var newFichaBlock = document.getElementById('colDois');
+        //var oldFicha = document.getElementById('prodEspec');
+        //var newFichaBlock = document.getElementById('colDois');
     
         // Move o elemento para dentro do contêiner
-        newFichaBlock.appendChild(oldFicha);
+        //newFichaBlock.appendChild(oldFicha);
     //}
     
     //moverOldFichaMS();
+//});
+
+// Move Ficha Tecnica antiga do MS para novo display de Ficha Tecnica
+$(document).ready(function () {
+    var oldFicha = document.getElementById("prodEspec");
+
+    // Verifica se o elemento com ID "prodEspec" existe no DOM
+    if (oldFicha !== null) {
+        // Realiza ação apenas se o elemento existir
+        document.getElementById("colDois").appendChild(oldFicha);
+    }
 });
