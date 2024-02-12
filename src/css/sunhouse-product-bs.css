@@ -209,6 +209,7 @@ table.group.Escritorio {
 }*/
 
 .produto #prodEspec {
+    display: none !important; /* temporario até ajuste de layout */
     position: absolute;
     margin-top: -10px;
     margin-left: 15px
