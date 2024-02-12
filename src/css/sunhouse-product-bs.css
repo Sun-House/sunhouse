@@ -196,11 +196,11 @@ table.group.Escritorio {
     }
 }
 
-.produto #prodEspec::before {
+/*.produto #prodEspec::before {
     content: "Ficha Tecnica";
     font-size: 16pt;
     font-weight: 600
-}
+}*/
 
 .produto #prodEspec>div {
     padding-top: 20px !important
