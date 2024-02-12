@@ -297,3 +297,15 @@ $(document).ready(function () {
         }
     }, 2000);
 //});
+
+$(document).ready(function () {
+    //function moverOldFichaMS() {
+        var oldFicha = document.getElementById('prodEspec');
+        var newFichaBlock = document.getElementById('oldFichaMS');
+    
+        // Move o elemento para dentro do contêiner
+        newFichaBlock.appendChild(oldFicha);
+    //}
+    
+    //moverOldFichaMS();
+});
