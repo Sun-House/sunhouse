@@ -2572,10 +2572,12 @@ Btn Comprar */
 }
 
 @media screen and (max-width: 1270px) {
+    /* desativado por estar bugando carrossel de categorias
     .home #highlightRoundBanners__content {
         width: 1065px !important;
         min-width: 1065px !important
     }
+    */
 
     .home #highlightRoundBanners__content .box-banner img {
         width: 275px !important;

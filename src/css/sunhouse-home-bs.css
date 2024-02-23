@@ -1003,18 +1003,20 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         height: auto !important;
         margin: unset !important
     }
-
+    /* desativado por estar bugando carrossel de categorias
     .home #highlightRoundBanners {
         height: 270px !important
     }
+    */
 
+    /* removido max-width */
     .home #highlightRoundBanners__content .box-banner .RoundBannerSubtitle {
         text-align: center !important;
-        max-width: 120px !important
     }
 
+    /* alterado de 165px para 300px */
     .home #highlightRoundBanners__content .box-banner {
         flex: none;
-        width: 165px;
+        width: 300px;
     }
 }
