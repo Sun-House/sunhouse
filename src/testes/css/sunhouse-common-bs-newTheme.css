@@ -2367,6 +2367,20 @@ Modelo 1 */
     font-size: 60px;
 }
 
+#newsletter-new form.formIntegration2 .field-error {
+    border-color: #ffc107 !important
+}
+
+#newsletter-new .field-error + .showOnlyError {
+    display: block !important;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 90px;
+    color: #ffc107;
+    font-weight: 600
+}
+
 @media screen and (max-width: 1199px) {
     #newsletter-new {
         padding: 40px 20px;
