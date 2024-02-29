@@ -2408,6 +2408,10 @@ Modelo 1 */
         margin-top: -130px!important;
         padding-top: 75px!important;
     }
+
+    #newsletter-new .field-error + .showOnlyError {
+        display: none !important
+    }
 }
 /* Newsletter New - Dinamize */
 
