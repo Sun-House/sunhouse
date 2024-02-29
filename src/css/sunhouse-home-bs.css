@@ -912,7 +912,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 @media screen and (max-width:1199px) {
     .home #highlightRoundBanners {
-        height: 550px
+        /*height: 550px;*/
+        height: auto
     }
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
