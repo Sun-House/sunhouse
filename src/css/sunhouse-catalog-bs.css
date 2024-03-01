@@ -694,6 +694,16 @@
     display: none
 }
 
+.catalog .pager .previous-display {
+    display: inline-block !important
+}
+
+@media screen and (max-width: 1199px) {
+    .catalog .pager .previous-display {
+        display: none !important
+    }
+}
+
 .catalog .catalogProducts {
     position: relative;
     display: table;
