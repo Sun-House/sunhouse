@@ -1,5 +1,10 @@
+/* Dando erros gerais na pagina
 .account * {
     font-family: 'Montserrat' !important
+}*/
+
+.account .vtex-pageHeader__title {
+    font-family: 'Montserrat';
 }
 
 .account .request-cancel-link>a {
