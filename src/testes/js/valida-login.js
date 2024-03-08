@@ -21,9 +21,6 @@ function userLoginArea() {
 
             // Verifica se a entrada "visitorLoginState" existe e possui o valor true
             if (dataLayer[i].visitorLoginState === true) {
-
-                // Faça algo se a condição for atendida
-                //console.log("TRUE. Esta logado");
                 //document.getElementById('login__notLogged').style.display = 'none';
                 //document.getElementById('login__loggedIn').style.display = 'block';
 
@@ -33,7 +30,7 @@ function userLoginArea() {
                 loginNotLogged.forEach(function(loginNotLogged_alvo) {
                     loginNotLogged_alvo.style.display = 'none';
                 });
-                
+
                 loginNotLogged.forEach(function(loginLoggedIn_alvo) {
                     loginLoggedIn_alvo.style.display = 'block';
                 });
@@ -49,12 +46,13 @@ function userLoginArea() {
                     $('#logged_in').popover('hide');
                 }, 5000);
 
-                // Se desejar interromper a iteração após encontrar a primeira ocorrência,
-                // você pode usar o break
+                console.log("TRUE. Esta logado");
+
+                // Se desejar interromper a iteração após encontrar a primeira ocorrência, usar o break
                 break;
-            } //else { // else apenas para teste e depuracao
-                //console.log('FALSE. Não esta logado');
-            //}
+            } else { // else apenas para teste e depuracao
+                console.log('FALSE. Não esta logado');
+            }
         }
     }
 }
