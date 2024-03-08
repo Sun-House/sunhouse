@@ -3,8 +3,14 @@
     font-family: 'Montserrat' !important
 }*/
 
+.account #page-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .account .vtex-pageHeader__title {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat'
 }
 
 .account .request-cancel-link>a {
@@ -157,4 +163,17 @@
 div.w-100.fl.w-60-ns.pv3-ns.pr0>ul>li:nth-child(2),
 a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.f6.fw4.flex.items-center.mb5 {
     display: none !important
+}
+
+/* New 2024 - Alguns ficaram no inicio desse arquivo Css */
+.account .vtex-account__menu.pv9.pv0-m-2.ph9.ph7-m.ph8-l.w-20-m.w-100 {
+    width: unset !important
+}
+
+.account .vtex-account__page-body article {
+    border-radius: 30px !important
+}
+
+.account div.backgroundFix {
+    background-color: #eceff1 !important
 }
