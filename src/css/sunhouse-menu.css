@@ -111,8 +111,8 @@ ul.list-contentCat {
 .dropdown-content a:hover {
     /*background-color: #ddd; - Muito escuro para o hover de text color */
     background-color: #eee;
-    /* Para Novo Tema Rebrand color: #F90041;*/
-    color: #e77925;
+    color: #F90041;
+    /* Old Tema - color: #e77925; */
     transition: .5s;
     border-radius: 10px
 }
@@ -152,7 +152,8 @@ ul.list-contentCat {
 }
 
 #lancamentos {
-    background-color: #e77925
+    /* Old Tema - background-color: #e77925*/
+    background-color: #F90041
 }
 
 #prontaEntrega {
@@ -166,7 +167,8 @@ ul.list-contentCat {
 
 #lancamentos:hover {
     transition: .5s;
-    background-color: #ff950b
+    /* Old Tem - background-color: #ff950b */
+    background-color: #F90041 /* pode precisar de ajustes */
 }
 
 div.dropdownLv2:hover,
@@ -177,7 +179,8 @@ div.dropdownLv3:hover {
 }
 
 div.dropdown:hover .dropbtn #departLink {
-    color: #e77925;
+    /* Old Tema - color: #e77925;*/
+    color: #F90041;
     transition: .5s
 }
 
@@ -202,7 +205,8 @@ a.caretMain:after {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #e77925;
+    /* Old Tema - border-top: 4px solid #e77925;*/
+    border-top: 4px solid #F90041;
     clear: both
 }
 
@@ -219,18 +223,21 @@ a.caretMain:after {
 }
 
 #mobBackBtn span {
-    color: #e77925
+    /* Old Tem - color: #e77925 */
+    color: #F90041
 }
 
 #mobBackBtn .backBtn:hover,
 #mobBackBtn span:hover,
 #mobBackBtn:hover {
-    color: #ff950b;
+    /* Old Tema - color: #ff950b;*/
+    color: #F90041; /* Pode precisar de ajustes */
     transition: .5s
 }
 
 .backBtn {
-    color: #e77925
+    /* Old Tema - color: #e77925 */
+    color: #F90041
 }
 
 .noHover {
@@ -246,7 +253,8 @@ a.caretMain:after {
 
 .campanhaDestaque {
     font-weight: 600;
-    color: #e77925 !important;
+    /* Old Tema - color: #e77925 !important; */
+    color: #F90041 !important;
     display: flex
 }
 
