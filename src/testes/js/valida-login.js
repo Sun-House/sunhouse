@@ -17,6 +17,8 @@ function userLoginArea() {
 
                 // Faça algo se a condição for atendida
                 console.log("TRUE. Esta logado");
+                document.getElementById('login__notLogged').style.display = 'none';
+                document.getElementById('login__loggedIn').style.display = 'block';
 
                 // Inicialize o popover no botão
                 $('#logged_in').popover();
@@ -32,9 +34,9 @@ function userLoginArea() {
                 // Se desejar interromper a iteração após encontrar a primeira ocorrência,
                 // você pode usar o break
                 break;
-            } else { // else apenas para teste e depuracao
-                console.log('FALSE. Não esta logado');
-            }
+            } //else { // else apenas para teste e depuracao
+                //console.log('FALSE. Não esta logado');
+            //}
         }
     }
 }
