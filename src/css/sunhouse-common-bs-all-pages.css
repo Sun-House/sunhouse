@@ -417,20 +417,20 @@ body>.header {
 
 .header__cart {
     float: left;
-    background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
-    background-position: -196px -137px;
+    /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
+    background-position: -196px -137px;*/
     width: 53px;
-    height: 54px;
+    height: 54px; /* Validar remocao depois */
     margin-top: 24px
 }
 
 @media screen and (max-width:1199px) {
     .header__cart {
         float: right;
-        background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
-        background-position: -295px -137px;
+        /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
+        background-position: -295px -137px;*/
         width: 35px;
-        height: 35px;
+        height: 35px; /* Validar remocao depois */
         margin-top: 8px
     }
 }
