@@ -293,14 +293,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 }
 
 @media screen and (max-width: 1199px) {
-
-    /* Temporario ate desenvolver */
-    .home .benefits-new {
-        display: none;
-    }
-
-    /* Temporario ate desenvolver */
-    .home .benefits-new {
+    /*.home .benefits-new {
         margin: 35px 20px 0;
         width: auto;
     }
@@ -310,6 +303,34 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         flex-direction: column;
         align-items: flex-start;
         margin: 40px 0 60px 40px;
+    }*/
+
+    .home .benefits-new {
+        width: 90% !important; /* Checar se é isso mesmo */
+        height: 110px;
+        margin-top: 10px !important;
+        padding-top: unset !important;
+        display: inline-block !important;
+        overflow-x: overlay !important;
+        overflow-y: hidden
+    }
+    
+    .home .benefits-new ul {
+        display: flex;
+        width: 100% !important;
+        min-width: fit-content;
+        flex-direction: row;
+        margin: 18px 0 0 10px
+    }
+
+    .home .benefits-new ul li {
+        float: unset !important; /* Ver se vai bugar */
+        width: 260px !important;
+        min-width: 260px !important;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        padding: 6px 0 6px 15px
     }
 }
 
