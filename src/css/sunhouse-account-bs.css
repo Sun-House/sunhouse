@@ -9,6 +9,13 @@
     margin: 0 auto;
 }
 
+.account #page-content .content {
+    border: 3px solid #eee;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 60px
+}
+
 .account .vtex-pageHeader__title {
     font-family: 'Montserrat'
 }

@@ -437,3 +437,14 @@ body.institucional>.content a {
     border: 1px solid #0D1117 !important
 }
 /* Pagina Lojistas - Marketplace */
+
+/* Pagina Minha Conta */
+.account #page-content .content {
+    background-color: #333 !important;
+    border-color: #333 !important
+}
+
+.account #page-content .content * {
+    color: #fff !important
+}
+/* Pagina Minha Conta */
