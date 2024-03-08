@@ -628,7 +628,8 @@ body>.header {
 
 .header__menu ul li a.new {
     padding: 8px 24px;
-    background: #e77925
+    /* Old Tema - background: #e77925*/
+    background: #F90041
 }
 
 .header__menu ul li a.promo,
@@ -708,7 +709,8 @@ body>.header {
     font-size: 16px !important;
     text-transform: uppercase;
     font-weight: 600;
-    color: #e77925;
+    /* Old Tema - color: #e77925;*/
+    color: #F90041;
     line-height: 20px;
     padding-left: 18px
 }
@@ -728,7 +730,8 @@ body>.header {
 
 .header__menu-dropdown--content ul li a:hover {
     opacity: 1;
-    color: #e77925
+    /* Old Tema - color: #e77925*/
+    color: #F90041
 }
 
 @media screen and (max-width:1199px) {
@@ -2075,7 +2078,8 @@ body.black-friday .catalogIntro {
 }
 
 .checkbox-label {
-    background-color: #e77925;
+    /* Olt Tema - background-color: #e77925; */
+    background-color: #F90041;
     width: 45px;
     height: 25px;
     border-radius: 50px;
