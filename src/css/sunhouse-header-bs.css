@@ -161,4 +161,32 @@
     }
 }
 /* New BS Cart Icon */
+
+/* Estilo do Login Widget */
+.login-block {
+    position: relative;
+    /*background-color: #cccccc7d;*/
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-top: 22px;
+    margin-left: 25px
+}
+
+.login-new {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    color: #777777e0
+}
+
+.login-block .dropdown-content {
+    left: 50%;
+    transform: translatex(-50%)
+}
+/* Estilo do Login Widget */
 /* Style padrão novo */
