@@ -1042,3 +1042,29 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         width: 300px;
     }
 }
+
+/* Estilo Banner Mobile - PODE SER NECESSARIO INATIVAR */
+@media screen and (max-width: 1199px) {
+    .home .highlight {
+        display: none
+    }
+    
+    .home #banner_mobile {
+        /*height: 334px;*/
+        /*height: 370px;*/
+        height: 455px;
+        overflow: hidden;
+        display: block !important
+    }
+    
+    .home #banner_mobile {
+        width: 98%;
+        margin: 24px auto 0;
+        padding: 15px
+    }
+
+    .home #banner_mobile .box-banner img {
+        border-radius: 30px
+    }
+}
+/* Estilo Banner Mobile */
