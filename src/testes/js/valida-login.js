@@ -23,9 +23,20 @@ function userLoginArea() {
             if (dataLayer[i].visitorLoginState === true) {
 
                 // Faça algo se a condição for atendida
-                console.log("TRUE. Esta logado");
-                document.getElementById('login__notLogged').style.display = 'none';
-                document.getElementById('login__loggedIn').style.display = 'block';
+                //console.log("TRUE. Esta logado");
+                //document.getElementById('login__notLogged').style.display = 'none';
+                //document.getElementById('login__loggedIn').style.display = 'block';
+
+                var loginNotLogged = document.querySelectorAll('.login-notLogged');
+                var loginNotLogged = document.querySelectorAll('.login-loggedIn');
+
+                loginNotLogged.forEach(function(loginNotLogged_alvo) {
+                    loginNotLogged_alvo.style.display = 'none';
+                });
+                
+                loginNotLogged.forEach(function(loginLoggedIn_alvo) {
+                    loginLoggedIn_alvo.style.display = 'block';
+                });
 
                 // Inicialize o popover no botão
                 $('#logged_in').popover();
