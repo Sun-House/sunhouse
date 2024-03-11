@@ -495,7 +495,9 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 @media screen and (max-width:1199px) {
     .home .highlightBanners__content .box-banner img {
-        width: 100%;
+        /*width: 100%;
+        height: auto*/
+        width: 165px;
         height: auto
     }
 
@@ -1046,7 +1048,9 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     /* alterado de 165px para 300px */
     .home #highlightRoundBanners__content .box-banner {
         flex: none;
-        width: 300px;
+        /*width: 300px;*/
+        width: 165px;
+        margin-right: 15px
     }
 }
 

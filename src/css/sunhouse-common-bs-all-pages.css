@@ -2602,10 +2602,11 @@ Btn Comprar */
     }
     */
 
+    /* Ativado diretamente no sunhouse-home-bs.css
     .home #highlightRoundBanners__content .box-banner img {
         width: 275px !important;
         height: auto !important
-    }
+    }*/
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
         padding-left: 25px !important
