@@ -310,7 +310,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         height: 110px;
         margin-top: 10px !important;
         padding-top: unset !important;
-        display: inline-block !important;
+        /*display: inline-block !important;*/
+        display: block !important;
         overflow-x: overlay !important;
         overflow-y: hidden
     }
