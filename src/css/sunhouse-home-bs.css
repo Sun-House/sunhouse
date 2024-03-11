@@ -1079,3 +1079,28 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     }
 }
 /* Estilo Banner Mobile */
+
+/* Bloco video Institucional Video */
+#apresentation_block #custom_video div iframe {
+    border-radius: 25px
+}
+
+#apresentation_block .col-5 {
+    padding: 0 25px
+}
+
+@media screen and (max-width: 1199px) {
+    #apresentation_block .row {
+        display: flex !important;
+        flex-direction: column
+    }
+
+    #apresentation_block .col-5 {
+        width: 100%
+    }
+
+    #apresentation_block #custom_video {
+        margin-bottom: 25px
+    }
+}
+/* Bloco video Institucional Video */
