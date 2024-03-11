@@ -197,5 +197,25 @@
     position: absolute !important;
     top: 0 !important
 }
+
+#login__dropdown-content {
+    background-color: #ffda00;
+    border-radius: 30px;
+    z-index: 99
+}
+
+#login__dropdown-content hr {
+    width: 85%;
+    margin: 0 auto
+}
+
+#login__dropdown-content a {
+    border: 6px solid #FFDA00;
+    border-radius: 30px
+}
+
+#login__dropdown-content a:hover {
+    background-color: #fff
+}
 /* Estilo do Login Widget */
 /* Style padrão novo */
