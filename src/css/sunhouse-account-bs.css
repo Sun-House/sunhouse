@@ -184,3 +184,11 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
 .account div.backgroundFix {
     background-color: #eceff1 !important
 }
+
+.account .vtex-account__profile main .w-40-ns {
+    display: none
+}
+
+.account .vtex-account__profile main .w-60-ns {
+    width: 100% !important
+}
