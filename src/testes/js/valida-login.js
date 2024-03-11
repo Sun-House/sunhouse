@@ -3,15 +3,15 @@
 // Valida se o usuario esta logado, se ESTIVER, ele faz algo
 // nesse bloco do if, colocar a acao de trocar os elementos html que se referem ao usuario logado e ao usuario deslogado
 
-document.addEventListener('DOMContentLoaded', function () {
-    userLoginArea();
-});
-
-//document.addEventListener("DOMContentLoaded", function () {
-    //setTimeout(function () {
-        //userLoginArea();
-    //}, 2000); // 2 segundos
+//document.addEventListener('DOMContentLoaded', function () {
+    //userLoginArea();
 //});
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        userLoginArea();
+    }, 2000); // 2 segundos
+});
 
 //function userLoginArea() {
     //if (typeof dataLayer !== 'undefined') {

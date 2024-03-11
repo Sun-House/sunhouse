@@ -1857,17 +1857,16 @@ body>.header {
 #backToTop i {
     float: right;
     /*font-size: 58px;*/
-    /*font-size: 65px;*/
-    font-size: 45px
+    font-size: 64px
 }
 
-/*@media screen and (max-width:1199px) {
-    /#backToTop i {
-        / font-size: 31px; /
-        / font-size: 40px; /
-        font-size: 60px;
+@media screen and (max-width:1199px) {
+    #backToTop i {
+        /* font-size: 31px; */
+        /* font-size: 40px; */
+        font-size: 45px
     }
-}*/
+}
 
 .trustvox-certificate__modal-btn-js {
     right: 8px !important;
