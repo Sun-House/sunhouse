@@ -156,7 +156,7 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
     }
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width: 1199px) {
     .highlightBanners h2.RoundBannerTitle,
     .instaContTitle {
         font-size: 24px !important;
@@ -224,15 +224,17 @@ div[data-mc-cmp-id=mission-control-component-6389b37c-69b1-4322-8af9-e1942bee056
         font-size: 16px !important;
     } - NAO FUNCIONOU POR ESSE ARQUIVO */
     /* Botao Carregar Mais */
-
-    /* TESTE */
+    
     .newslettershowed {
         display: none !important;
     }
-    /* TESTE */
 
     .catalog .highlights.designers#instaContainer,
     .produto .highlights.designers#instaContainer {
         margin-top: 0px
+    }
+
+    .home .highlights.designers#instaContainer {
+        display: none
     }
 }
