@@ -1311,7 +1311,9 @@ body>.header {
 
 @media screen and (max-width:1199px) {
     .opinions {
-        display: block !important
+        display: block !important;
+        background-color: #eceff1;
+        padding-bottom: 12px
     }
 }
 
