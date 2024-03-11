@@ -313,7 +313,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         /*display: inline-block !important;*/
         display: block !important;
         overflow-x: overlay !important;
-        overflow-y: hidden
+        overflow-y: hidden;
+        border: 15px solid #eceff1
     }
     
     .home .benefits-new ul {
@@ -321,7 +322,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         width: 100% !important;
         min-width: fit-content;
         flex-direction: row;
-        margin: 18px 0 0 10px
+        /*margin: 18px 0 0 10px*/
+        margin: 3px 0 0 10px
     }
 
     .home .benefits-new ul li {
@@ -332,6 +334,10 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         display: flex;
         align-items: center;
         padding: 6px 0 6px 15px
+    }
+
+    .home .benefits-new li:last-child {
+        min-width: 260px !important
     }
 }
 
