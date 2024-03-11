@@ -86,7 +86,8 @@ function userLoginArea() {
             });
             
             // Inicia o popover
-            $('#logged_in').popover();
+            // Teoricamente iniciando pelo sunhouse-custom.js ::
+            // $('#logged_in').popover();
 
             // Executa o popover
             $('#logged_in').popover('show');
