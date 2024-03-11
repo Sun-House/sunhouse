@@ -75,13 +75,13 @@ function userLoginArea() {
 
         if (isLoggedIn) {
             var loginNotLogged = document.querySelectorAll('.login-notLogged');
-            var loginNotLogged = document.querySelectorAll('.login-loggedIn');
+            var loginLoggedIn = document.querySelectorAll('.login-loggedIn');
 
             loginNotLogged.forEach(function(loginNotLogged_alvo) {
                 loginNotLogged_alvo.style.display = 'none';
             });
 
-            loginNotLogged.forEach(function(loginLoggedIn_alvo) {
+            loginLoggedIn.forEach(function(loginLoggedIn_alvo) {
                 loginLoggedIn_alvo.style.display = 'block';
             });
             

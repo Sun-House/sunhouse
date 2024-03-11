@@ -192,5 +192,10 @@
     left: 50%;
     transform: translatex(-50%)
 }
+
+.login-block #login__dropdown {
+    position: absolute !important;
+    top: 0 !important
+}
 /* Estilo do Login Widget */
 /* Style padrão novo */
