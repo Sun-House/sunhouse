@@ -143,14 +143,18 @@ function flagsp() {
     //})
 //}
 
+//function mobile() {
+    //$(".productContent__images-dimensions").insertAfter(".productContent__infos").slick({
+        //slidesToShow: 1,
+        //slidesToScroll: 1,
+        //dots: !0,
+        //arrows: !1,
+        //autoplay: !1
+    //})
+//}
+
 function mobile() {
-    $(".productContent__images-dimensions").insertAfter(".productContent__infos").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: !0,
-        arrows: !1,
-        autoplay: !1
-    })
+    $(".productContent__images-dimensions").insertAfter(".productContent__infos");
 }
 
 // Ajusta quantidades de produtos da Vitrine SmartHint
@@ -180,12 +184,15 @@ $(document).ready((function () {
         }))
     }
     //window.innerWidth < 1200 ? mobile() : shelfs()
-    if (window.innerWidth < 1200) {
-        mobile();
-        vitrinePdpSmartHint();
-    } else {
-        shelfs();
-    }
+
+    window.innerWidth < 1200 ? [mobile(), vitrinePdpSmartHint()] : shelfs()
+
+    //if (window.innerWidth < 1200) {
+        //mobile();
+        //vitrinePdpSmartHint();
+    //} else {
+        //shelfs();
+    //}
 })), $(document).ready((function () {
     let btn = document.querySelector(".btnScroll"),
         itn = document.querySelector(".productDescription");
