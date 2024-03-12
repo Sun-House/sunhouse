@@ -1055,15 +1055,15 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     }
 }
 
-/* Estilo Banner Mobile - PODE SER NECESSARIO INATIVAR */
+/* Estilo Banner Mobile - PODE SER NECESSARIO INATIVAR - INATIVO POIS PRECISA AGENCIA ADERIR AO MODELO
 @media screen and (max-width: 1199px) {
     .home .highlight {
         display: none
     }
     
     .home #banner_mobile {
-        /*height: 334px;*/
-        /*height: 370px;*/
+        / height: 334px; /
+        / height: 370px; /
         height: 455px;
         overflow: hidden;
         display: block !important
@@ -1079,7 +1079,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         border-radius: 30px
     }
 }
-/* Estilo Banner Mobile */
+Estilo Banner Mobile */
 
 /* Bloco video Institucional Video */
 #apresentation_block #custom_video div iframe {
