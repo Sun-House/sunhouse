@@ -24,22 +24,24 @@ $(document).ready(function () {
         // Aqui ficava o slick antigo das prateleiras nativas Vtex
         
         // Valida e cria novas prateleiras SmartHint
-        setTimeout(function () {
-            var prateleira = $('.slick-it');
+        //setTimeout(function () {
+            //var prateleira = $('.slick-it');
+            var prateleiraSM = $('.shelf.n12colunas');
             
-            if (prateleira.hasClass('slick-initialized')) {
-                prateleira.slick('unslick');
+            if (prateleiraSM.hasClass('slick-initialized')) {
+                prateleiraSM.slick('unslick');
             }
             
-            prateleira.slick({
-                slidesToShow: 2,
+            prateleiraSM.slick({
+                slidesToShow: 6,
+                slidesToScroll: 2,
                 dots: true,
                 arrows: true,
                 prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
                 nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
                 autoplay: false
             });
-        }, 4000);
+        //}, 5000);
 
         $(".highlights__content-slide").slick({
             dots: true,
@@ -60,14 +62,12 @@ $(document).ready(function () {
             autoplay: false
         });
 
-        $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
+        //$(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
             //slidesToShow: 4,
             //slidesToScroll: 4,
-            slidesToShow: 6,
-            slidesToScroll: 6,
-            dots: false,
-            arrows: true,
-            autoplay: false
-        });
+            //dots: false,
+            //arrows: true,
+            //autoplay: false
+        //});
     }
 });
