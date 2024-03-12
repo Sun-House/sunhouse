@@ -61,8 +61,10 @@ $(document).ready(function () {
         });
 
         $(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            //slidesToShow: 4,
+            //slidesToScroll: 4,
+            slidesToShow: 6,
+            slidesToScroll: 6,
             dots: false,
             arrows: true,
             autoplay: false
