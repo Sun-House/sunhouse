@@ -441,76 +441,76 @@ table.group.Escritorio {
 }
 
 .produto .productContent__images-flags .flag.promocao-5-off:after {
-    content: "5%"
+    content: "-5%"
 }
 
 .produto .productContent__images-flags .flag.promocao-10-off:after {
-    content: "10%"
+    content: "-10%"
 }
 
 .produto .productContent__images-flags .flag.promocao-15-off:after {
-    content: "15%"
+    content: "-15%"
 }
 
 .produto .productContent__images-flags .flag.promocao-20-off:after {
-    content: "20%"
+    content: "-20%"
 }
 
 .produto .productContent__images-flags .flag.promocao-25-off:after {
-    content: "25%"
+    content: "-25%"
 }
 
 .produto .productContent__images-flags .flag.flag-30--desconto-off:after,
 .produto .productContent__images-flags .flag.promocao-30-off:after {
-    content: "30%"
+    content: "-30%"
 }
 
 .produto .productContent__images-flags .flag.promocao-35-off:after {
-    content: "35%"
+    content: "-35%"
 }
 
 .produto .productContent__images-flags .flag.promocao-40-off:after {
-    content: "40%"
+    content: "-40%"
 }
 
 .produto .productContent__images-flags .flag.promocao-45-off:after {
-    content: "45%"
+    content: "-45%"
 }
 
 .produto .productContent__images-flags .flag.promocao-50-off:after {
-    content: "50%"
+    content: "-50%"
 }
 
 .produto .productContent__images-flags .flag.promocao-55-off:after {
-    content: "55%"
+    content: "-55%"
 }
 
 .produto .productContent__images-flags .flag.promocao-60-off:after {
-    content: "60%"
+    content: "-60%"
 }
 
 .produto .productContent__images-flags .flag.promocao-65-off:after {
-    content: "65%"
+    content: "-65%"
 }
 
 .produto .productContent__images-flags .flag.promocao-70-off:after {
-    content: "70%"
+    content: "-70%"
 }
 
 .produto .productContent__images-flags .flag.promocao-75-off:after {
-    content: "75%"
+    content: "-75%"
 }
 
 .produto .productContent__images-flags .flag.promocao-80-off:after {
-    content: "80%"
+    content: "-80%"
 }
 
 .produto .productContent__images-flags .flag.promocao-85-off:after {
-    content: "85%"
+    content: "-85%"
 }
 
 .produto .productContent__images-flags .flag.promocao-90-off:after {
-    content: "90%"
+    content: "-90%"
 }
 
 .produto .productContent__images-flags .flag.flag-30--desconto-off,
@@ -558,8 +558,8 @@ table.group.Escritorio {
 .produto .productContent__images-flags .flag.promocao-85-off:after,
 .produto .productContent__images-flags .flag.promocao-90-off:after {
     display: block;
-    /*font-size: 22px;*/
-    font-size: 25px;
+    font-size: 22px;
+    /*font-size: 25px;*/
     font-weight: 600;
     text-align: center;
     color: #fff;

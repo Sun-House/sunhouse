@@ -911,55 +911,75 @@ body>.header {
 }
 
 .shelfProductImages>div .promocao-5-off:after {
-    content: "5%"
+    content: "-5%"
 }
 
 .shelfProductImages>div .promocao-10-off:after {
-    content: "10%"
+    content: "-10%"
 }
 
 .shelfProductImages>div .promocao-15-off:after {
-    content: "15%"
+    content: "-15%"
 }
 
 .shelfProductImages>div .promocao-20-off:after {
-    content: "20%"
+    content: "-20%"
 }
 
 .shelfProductImages>div .promocao-25-off:after {
-    content: "25%"
+    content: "-25%"
 }
 
 .shelfProductImages>div .promocao-30-off:after {
-    content: "30%"
+    content: "-30%"
 }
 
 .shelfProductImages>div .promocao-35-off:after {
-    content: "35%"
+    content: "-35%"
 }
 
 .shelfProductImages>div .promocao-40-off:after {
-    content: "40%"
+    content: "-40%"
 }
 
 .shelfProductImages>div .promocao-45-off:after {
-    content: "45%"
+    content: "-45%"
 }
 
 .shelfProductImages>div .promocao-50-off:after {
-    content: "50%"
+    content: "-50%"
 }
 
 .shelfProductImages>div .promocao-55-off:after {
-    content: "55%"
+    content: "-55%"
 }
 
 .shelfProductImages>div .promocao-60-off:after {
-    content: "60%"
+    content: "-60%"
+}
+
+.shelfProductImages>div .promocao-65-off:after {
+    content: "-65%"
 }
 
 .shelfProductImages>div .promocao-70-off:after {
-    content: "70%"
+    content: "-70%"
+}
+
+.shelfProductImages>div .promocao-75-off:after {
+    content: "-75%"
+}
+
+.shelfProductImages>div .promocao-80-off:after {
+    content: "-80%"
+}
+
+.shelfProductImages>div .promocao-85-off:after {
+    content: "-85%"
+}
+
+.shelfProductImages>div .promocao-90-off:after {
+    content: "-90%"
 }
 
 .shelfProductImages>div .promocao-10-off,
@@ -997,7 +1017,7 @@ body>.header {
 .shelfProductImages>div .promocao-60-off:after,
 .shelfProductImages>div .promocao-70-off:after {
     display: block;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 600;
     text-align: center;
     color: #fff;

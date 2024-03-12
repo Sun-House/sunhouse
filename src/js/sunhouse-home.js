@@ -33,16 +33,14 @@ $(document).ready(function () {
             }
             
             prateleiraSM.slick({
-                slidesToShow: 6,
-                slidesToScroll: 2,
+                slidesToShow: 4,
+                slidesToScroll: 4,
                 dots: true,
                 arrows: true,
                 prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
                 nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
                 autoplay: false
-            }).done(function(){
-                console.log('teste 1 SM: realizado')
-            });
+            }), console.log('teste 1 SM: realizado');
         //}, 5000);
 
         $(".highlights__content-slide").slick({
