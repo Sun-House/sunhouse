@@ -133,10 +133,31 @@ function flagsp() {
     $(".productContent__images-flags .flag.black-friday").length > 0 && $(".productContent__images-flags .flag.black-friday").appendTo(".productContent__images-flags"), $(".productContent__images-flags .flag.vitrine-home---lancamento").length > 0 && $(".productContent__images-flags .flag.vitrine-home---lancamento").appendTo(".productContent__images-flags"), $(".productContent__images-flags .flag.designerFlag").length > 0 && $(".productContent__images-flags .flag.designerFlag").parent("a").appendTo(".productContent__images-flags"), $(".productContent__images-flags .flag.pronta-entrega").length > 0 && $(".productContent__images-flags .flag.pronta-entrega").appendTo(".productContent__images-flags"), $(".productContent__images-flags .flag-moveis-sustentaveis").length > 0 && $(".productContent__images-flags .flag-moveis-sustentaveis").appendTo(".productContent__images-flags")
 }
 
+//function mobile() {
+    //$(".productContent__images-dimensions").insertAfter(".productContent__infos"), $(".shelfRecomended ul,.shelfQCCT ul,.shelfRecents ul").slick({
+        //slidesToShow: 1,
+        //slidesToScroll: 1,
+        //dots: !0,
+        //arrows: !1,
+        //autoplay: !1
+    //})
+//}
+
 function mobile() {
-    $(".productContent__images-dimensions").insertAfter(".productContent__infos"), $(".shelfRecomended ul,.shelfQCCT ul,.shelfRecents ul").slick({
+    $(".productContent__images-dimensions").insertAfter(".productContent__infos").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: !0,
+        arrows: !1,
+        autoplay: !1
+    })
+}
+
+// Ajusta quantidades de produtos da Vitrine SmartHint
+function vitrinePdpSmartHint() {
+    $(".shelfRecomended ul,.shelfQCCT ul,.shelfRecents ul").slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
         dots: !0,
         arrows: !1,
         autoplay: !1
@@ -158,7 +179,13 @@ $(document).ready((function () {
             a[0].link && $('<a href="' + a[0].link + '" style="display:block;width:335px;height:55px;font-size:18px;font-weight:400;color:#FFF;text-align:center;line-height:55px;background:#E47621;border-radius:4px;margin-top:24px;">VISITAR PRODUTO NOVO</a>}').insertBefore(".productContent__infos-comunication")
         }))
     }
-    window.innerWidth < 1200 ? mobile() : shelfs()
+    //window.innerWidth < 1200 ? mobile() : shelfs()
+    if (window.innerWidth < 1200) {
+        mobile();
+        vitrinePdpSmartHint();
+    } else {
+        shelfs();
+    }
 })), $(document).ready((function () {
     let btn = document.querySelector(".btnScroll"),
         itn = document.querySelector(".productDescription");
