@@ -36,9 +36,10 @@ function userLoginArea() {
                 $('#logged_in').popover('hide');
             }, 5000);
 
+            // Log apenas para teste e depuracao
             console.log("TRUE. Esta logado");
         } else {
-            // else apenas para teste e depuracao
+            // Log apenas para teste e depuracao
             console.log('FALSE. Não está logado');
         }
     }
@@ -56,3 +57,8 @@ function customLogout() {
         window.location.reload(); // Isso recarrega a página atual, mantendo-a dinâmica
     });
 }
+
+// Executa function de Validar Login
+document.addEventListener('DOMContentLoaded', function () {
+    userLoginArea();
+});
