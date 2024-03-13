@@ -1,6 +1,48 @@
 // Verifica se esta logado
-// Codigo de validação de Login aqui
+function userLoginArea() {
+    if (typeof dataLayer !== 'undefined') {
+        var isLoggedIn = false; // Adicione uma variável para controlar o estado de login
 
+        // Itera sobre as entradas no dataLayer
+        for (var i = 0; i < dataLayer.length; i++) {
+            // Verifica se a entrada "visitorLoginState" existe e possui o valor true
+            if (dataLayer[i].visitorLoginState === true) {
+                // ... Se a condição for atendida ...
+                isLoggedIn = true; // Atualiza o estado de login
+                break; // Se desejar interromper a iteração após encontrar a primeira ocorrência, usar o break
+            }
+        }
+
+        if (isLoggedIn) {
+            var loginNotLogged = document.querySelectorAll('.login-notLogged');
+            var loginLoggedIn = document.querySelectorAll('.login-loggedIn');
+
+            loginNotLogged.forEach(function(loginNotLogged_alvo) {
+                loginNotLogged_alvo.style.display = 'none';
+            });
+
+            loginLoggedIn.forEach(function(loginLoggedIn_alvo) {
+                loginLoggedIn_alvo.style.display = 'block';
+            });
+            
+            // Inicia o popover
+            // Teoricamente iniciando pelo sunhouse-custom.js ::
+            // $('#logged_in').popover();
+
+            // Executa o popover
+            $('#logged_in').popover('show');
+            
+            setTimeout(function () {
+                $('#logged_in').popover('hide');
+            }, 5000);
+
+            console.log("TRUE. Esta logado");
+        } else {
+            // else apenas para teste e depuracao
+            console.log('FALSE. Não está logado');
+        }
+    }
+}
 
 // Botao para Sair-Deslogar
 function customLogout() {
