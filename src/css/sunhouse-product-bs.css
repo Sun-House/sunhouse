@@ -2521,9 +2521,9 @@ Ajustes pre rebranding */
 
 /* Ajuste CRO Rafa - Reposicionamento Mobile Outras Cores */
 @media screen and (max-width: 1199px) {
-    /*.productContent__outras-cores-mobile {
+    .productContent__outras-cores-mobile {
         display: inline-block !important
-    }*/
+    }
 
     #productContent__infos-similars-block p {
         font-size: 18px
