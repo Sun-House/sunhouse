@@ -23,8 +23,16 @@ $(document).ready(function () {
 
         // Aqui ficava o slick antigo das prateleiras nativas Vtex
         
+        
+
+        $(".highlights__content-slide").slick({
+            dots: true,
+            arrows: false,
+            autoplay: false
+        });
+
         // Valida e cria novas prateleiras SmartHint
-        //setTimeout(function () {
+        setTimeout(function () {
             //var prateleira = $('.slick-it');
             var prateleiraSM = $('.shelf.n12colunas');
             
@@ -41,13 +49,7 @@ $(document).ready(function () {
                 nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
                 autoplay: false
             }), console.log('teste 1 SM: realizado');
-        //}, 5000);
-
-        $(".highlights__content-slide").slick({
-            dots: true,
-            arrows: false,
-            autoplay: false
-        });
+        }, 5000);
     } else {
         $(".highlight").slick({
             dots: true,
