@@ -22,8 +22,6 @@ $(document).ready(function () {
         //});
 
         // Aqui ficava o slick antigo das prateleiras nativas Vtex
-        
-        
 
         $(".highlights__content-slide").slick({
             dots: true,
@@ -41,15 +39,15 @@ $(document).ready(function () {
             }
             
             prateleiraSM.slick({
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 2,
+                slidesToScroll: 2,
                 dots: true,
                 arrows: true,
-                prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
-                nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
+                //prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
+                //nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
                 autoplay: false
             }), console.log('teste 1 SM: realizado');
-        }, 5000);
+        }, 3000);
     } else {
         $(".highlight").slick({
             dots: true,
