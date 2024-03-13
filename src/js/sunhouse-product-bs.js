@@ -355,3 +355,21 @@ $(document).ready(function () {
         document.getElementById("colDois").appendChild(oldFicha);
     }
 });
+
+// Reposicionamento Mobile Outras Cores
+function moveOutrasCores() {
+    if ($(window).width() <= 1199) {
+        $("#productContent__infos-similars-block").appendTo(".productContent__outras-cores-mobile");
+    } else {
+        // Volte o conteúdo para o local original se a largura for maior que 1199px
+        $("#productContent__infos-similars-block").appendTo(".productContent__infos-similars");
+    }
+}
+
+$(document).ready(function () {
+    moveOutrasCores();
+});
+
+$(window).resize(function () {
+    moveOutrasCores();
+});

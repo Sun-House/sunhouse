@@ -282,6 +282,14 @@ table.group.Escritorio {
     margin-right: auto
 }
 
+/* Quick Fix Mobile */
+@media screen and (max-width: 1199px) {
+    .produto .productContent {
+        display: block
+    }
+}
+/* Quick Fix Mobile */
+
 .produto .productContent__images {
     position: relative;
     float: left;
@@ -2510,3 +2518,49 @@ Ajustes pre rebranding */
     color: #F90041
 }
 /* Lojista Info Display */
+
+/* Ajuste CRO Rafa - Reposicionamento Mobile Outras Cores */
+@media screen and (max-width: 1199px) {
+    /*.productContent__outras-cores-mobile {
+        display: inline-block !important
+    }*/
+
+    #productContent__infos-similars-block p {
+        font-size: 18px
+    }
+    
+    #productContent__infos-similars-block pre {
+        display: block !important;
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+        font-size: 18px;
+        letter-spacing: -1px
+    }
+
+    .productContent__outras-cores-mobile {
+        width: 100%
+    }
+    
+    .outras-cores {
+        display: block !important;
+        overflow-x: overlay !important;
+        overflow-y: hidden
+    }
+    
+    .outras-cores ul {
+        display: flex;
+        flex-direction: row;
+        width: 100% !important;
+        min-width: fit-content
+    }
+    
+    .outras-cores ul li {
+        min-width: 110px
+    }
+    
+    .produto .productContent__infos .outras-cores ul li a img {
+        width: 90%;
+        height: auto
+    }
+}
+/* Ajuste CRO Rafa */
