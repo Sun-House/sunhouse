@@ -2,6 +2,10 @@
     border-bottom: 1px solid #ddd
 }
 
+.autor .breadcrumb_bs ul li:last-child a::after {
+    display: none
+}
+
 .autores .authors,
 .autores .content,
 .content > ul {
