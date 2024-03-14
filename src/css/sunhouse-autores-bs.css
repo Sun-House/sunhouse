@@ -1,3 +1,7 @@
+.autor .header__menu {
+    border-bottom: 1px solid #ddd
+}
+
 .autores .authors,
 .autores .content,
 .content > ul {
@@ -59,7 +63,7 @@
 .autor > .content .phl {
     display: flex;
     flex-direction: row;
-    padding: 88px 0 40px;
+    padding: 35px 0 50px;
     border-bottom: 1px solid #cdcdcd
 }
 
@@ -98,7 +102,8 @@
 
 .autor > .content .pcollection {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-bottom: 35px
 }
 
 .autor > .content .pcollection div:nth-child(1) {
@@ -123,9 +128,9 @@
     text-align: center;
     line-height: 50px;
     background: #ff004e;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     margin: 16px auto 0
 }
 
@@ -268,8 +273,9 @@
     height: 100%;
     top: 0;
     left: 0;
-    /*background: rgba(255, 90, 56, .8)*/
-    background: #ff5a38cc;
+    /*background: rgba(255, 90, 56, .8)
+    background: #ff5a38cc;*/
+    background: #f90041bd;
     border-radius: 30px;
     padding-top: 80px
 }
