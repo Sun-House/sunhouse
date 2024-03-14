@@ -1,6 +1,6 @@
 .autores .authors,
 .autores .content,
-.content>ul {
+.content > ul {
     max-width: 1200px;
     width: 100%
 }
@@ -12,7 +12,7 @@
 }
 
 .autores .authors,
-.content>ul li {
+.content  >  ul li {
     display: flex;
     flex-direction: column
 }
@@ -22,14 +22,14 @@
     text-align: center
 }
 
-.autores .authors>span {
+.autores .authors > span {
     font-size: 30px;
     font-weight: 300;
     padding-top: 64px
 }
 
 @media screen and (max-width: 1199px) {
-    .autores .authors>span {
+    .autores .authors > span {
         font-size: 24px
     }
 }
@@ -48,7 +48,7 @@
     }
 }
 
-.autor>.content {
+.autor > .content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -56,31 +56,31 @@
     margin: 0 auto
 }
 
-.autor>.content .phl {
+.autor > .content .phl {
     display: flex;
     flex-direction: row;
     padding: 88px 0 40px;
     border-bottom: 1px solid #cdcdcd
 }
 
-.autor>.content .phl__avatar {
+.autor > .content .phl__avatar {
     display: flex;
     padding-right: 18px
 }
 
-.autor>.content .phl__avatar img {
+.autor > .content .phl__avatar img {
     width: 100%;
     min-width: 179px;
     max-width: 179px;
     height: auto
 }
 
-.autor>.content .phl__description {
+.autor > .content .phl__description {
     display: flex;
     flex-direction: column
 }
 
-.autor>.content .phl__description h2 {
+.autor > .content .phl__description h2 {
     width: auto !important;
     font-size: 32px;
     font-weight: 700;
@@ -88,7 +88,7 @@
     padding-top: 14px
 }
 
-.autor>.content .phl__description p {
+.autor > .content .phl__description p {
     font-size: 16px;
     font-weight: 400;
     color: #b1b1b1;
@@ -96,12 +96,12 @@
     padding-top: 12px
 }
 
-.autor>.content .pcollection {
+.autor > .content .pcollection {
     display: flex;
     flex-direction: column
 }
 
-.autor>.content .pcollection>h2 {
+.autor > .content .pcollection > h2 {
     font-size: 24px;
     font-weight: 300;
     color: #444;
@@ -109,7 +109,7 @@
     padding: 48px 0 56px
 }
 
-.autor>.content .pcollection>a {
+.autor > .content .pcollection > a {
     display: block;
     width: 428px;
     height: 50px;
@@ -126,25 +126,25 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .autor>.content .pcollection>h2 {
+    .autor > .content .pcollection > h2 {
         font-size: 18px;
         padding: 24px 16px
     }
 
-    .autor>.content .pcollection>a {
+    .autor > .content .pcollection > a {
         width: 80%
     }
 }
 
-.autor>.content .pcollection>a:hover {
+.autor > .content .pcollection > a:hover {
     opacity: .8
 }
 
-.autor>.content .pcollection .shelfAutor {
+.autor > .content .pcollection .shelfAutor {
     display: block
 }
 
-.autor>.content .pcollection .shelfAutor .slick-arrow {
+.autor > .content .pcollection .shelfAutor .slick-arrow {
     position: absolute;
     width: 28px;
     height: 28px;
@@ -159,29 +159,29 @@
 }
 
 @media screen and (max-width: 1360px) {
-    .autor>.content .pcollection .shelfAutor .slick-arrow {
+    .autor > .content .pcollection .shelfAutor .slick-arrow {
         display: none !important
     }
 }
 
-.autor>.content .pcollection .shelfAutor .slick-arrow.slick-prev {
+.autor > .content .pcollection .shelfAutor .slick-arrow.slick-prev {
     left: -40px;
     transform: rotate(225deg)
 }
 
-.autor>.content .pcollection .shelfAutor .slick-arrow.slick-next {
+.autor > .content .pcollection .shelfAutor .slick-arrow.slick-next {
     right: -40px;
     transform: rotate(45deg)
 }
 
-.autor>.content .pcollection .shelfAutor .slick-dots {
+.autor > .content .pcollection .shelfAutor .slick-dots {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center
 }
 
-.autor>.content .pcollection .shelfAutor .slick-dots li {
+.autor > .content .pcollection .shelfAutor .slick-dots li {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -190,43 +190,43 @@
     margin: 0 4px 6px
 }
 
-.autor>.content .pcollection .shelfAutor .slick-dots li.slick-active {
+.autor > .content .pcollection .shelfAutor .slick-dots li.slick-active {
     background: #e77925
 }
 
-.autor>.content .pcollection .shelfAutor .slick-dots li button,
-.autor>.content .pcollection .shelfAutor>h2 {
+.autor > .content .pcollection .shelfAutor .slick-dots li button,
+.autor > .content .pcollection .shelfAutor > h2 {
     display: none
 }
 
-.autor>.content .pcollection .shelfAutorItem a {
+.autor > .content .pcollection .shelfAutorItem a {
     position: relative;
     display: table;
     width: 238px;
     height: 238px;
     border: 1px solid #b3b3b3;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     margin: 0 auto 32px
 }
 
 @media screen and (max-width: 1199px) {
-    .autor>.content .pcollection .shelfAutorItem a {
+    .autor > .content .pcollection .shelfAutorItem a {
         width: 80%;
         margin-bottom: 16px
     }
 }
 
-.autor>.content .pcollection .shelfAutorItem a:hover {
+.autor > .content .pcollection .shelfAutorItem a:hover {
     border: 1px solid #ff5a38
 }
 
-.autor>.content .pcollection .shelfAutorItem a:hover .shelfAutorItem__hover {
+.autor > .content .pcollection .shelfAutorItem a:hover .shelfAutorItem__hover {
     display: block
 }
 
-.autor>.content .pcollection .shelfAutorItem__infos--name {
+.autor > .content .pcollection .shelfAutorItem__infos--name {
     font-size: 16px;
     font-weight: 500;
     color: #444;
@@ -241,18 +241,18 @@
     margin: 16px auto 12px
 }
 
-.autor>.content .pcollection .shelfAutorItem__infos--img {
+.autor > .content .pcollection .shelfAutorItem__infos--img {
     display: flex;
     margin: 0 auto
 }
 
-.autor>.content .pcollection .shelfAutorItem__infos--img img {
+.autor > .content .pcollection .shelfAutorItem__infos--img img {
     width: 90%;
     height: auto;
     margin: 0 auto
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover {
+.autor > .content .pcollection .shelfAutorItem__hover {
     display: none;
     position: absolute;
     width: 100%;
@@ -262,8 +262,8 @@
     background: rgba(255, 90, 56, .8)
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover--bestprice,
-.autor>.content .pcollection .shelfAutorItem__hover--listprice {
+.autor > .content .pcollection .shelfAutorItem__hover--bestprice,
+.autor > .content .pcollection .shelfAutorItem__hover--listprice {
     display: block;
     font-weight: 300;
     color: #fff;
@@ -271,26 +271,26 @@
     margin: 0 auto
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover--bestprice strong,
-.autor>.content .pcollection .shelfAutorItem__hover--listprice strong {
+.autor > .content .pcollection .shelfAutorItem__hover--bestprice strong,
+.autor > .content .pcollection .shelfAutorItem__hover--listprice strong {
     font-weight: 600
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover--listprice {
+.autor > .content .pcollection .shelfAutorItem__hover--listprice {
     font-size: 16px;
     margin-top: 72px
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover--listprice>span {
+.autor > .content .pcollection .shelfAutorItem__hover--listprice > span {
     text-decoration: line-through
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover--bestprice {
+.autor > .content .pcollection .shelfAutorItem__hover--bestprice {
     font-size: 20px;
     margin-top: 8px
 }
 
-.autor>.content .pcollection .shelfAutorItem__hover--fakebtn {
+.autor > .content .pcollection .shelfAutorItem__hover--fakebtn {
     display: block;
     width: 168px;
     height: 40px;
@@ -312,7 +312,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .autor>.content .phl {
+    .autor > .content .phl {
         flex-direction: column;
         padding: 48px 16px 32px
     }
