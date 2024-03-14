@@ -212,7 +212,8 @@
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
-    margin: 0 auto 32px
+    margin: 0 auto 32px;
+    transition: .1s
 }
 
 @media screen and (max-width: 1199px) {
@@ -225,7 +226,7 @@
 .autor > .content .pcollection .shelfAutorItem a:hover {
     border: 1px solid #ff5a38;
     scale: 1.05;
-    transition: .2s
+    transition: .3s
 }
 
 .autor > .content .pcollection .shelfAutorItem a:hover .shelfAutorItem__hover {
