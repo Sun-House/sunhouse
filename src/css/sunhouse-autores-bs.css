@@ -101,12 +101,16 @@
     flex-direction: column
 }
 
+.autor > .content .pcollection div:nth-child(1) {
+    margin-top: 10px
+}
+
 .autor > .content .pcollection > h2 {
-    font-size: 24px;
-    font-weight: 300;
-    color: #444;
+    font-size: 26px;
+    font-weight: 400;
+    color: #000;
     text-align: center;
-    padding: 48px 0 56px
+    padding: 40px 0 25px
 }
 
 .autor > .content .pcollection > a {
@@ -219,7 +223,9 @@
 }
 
 .autor > .content .pcollection .shelfAutorItem a:hover {
-    border: 1px solid #ff5a38
+    border: 1px solid #ff5a38;
+    scale: 1.05;
+    transition: .2s
 }
 
 .autor > .content .pcollection .shelfAutorItem a:hover .shelfAutorItem__hover {
