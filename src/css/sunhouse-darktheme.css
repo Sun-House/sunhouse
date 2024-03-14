@@ -448,3 +448,30 @@ body.institucional>.content a {
     color: #fff !important
 }
 /* Pagina Minha Conta */
+
+/* Pagina Designers */
+.autor > .content .pcollection .shelfAutorItem__hover {
+    background: #ffda00d9 !important
+}
+
+.autor > .content .pcollection .shelfAutorItem__hover--bestprice,
+.autor > .content .pcollection .shelfAutorItem__hover--listprice,
+.autor > .content .pcollection .shelfAutorItem__hover--fakebtn {
+    color: #000 !important
+}
+
+.autor > .content .pcollection .shelfAutorItem__hover--fakebtn {
+    border-color: #000 !important
+}
+
+.autor > .content .phl__description p,
+.autor > .content .pcollection > h2,
+.autor > .content .pcollection .shelfAutorItem__infos--name {
+    color: #fff !important
+}
+
+.autor .header__menu,
+.autor > .content .phl {
+    border-bottom: 1px solid #333 !important
+}
+/* Pagina Designers */
