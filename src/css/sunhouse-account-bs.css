@@ -204,7 +204,7 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
 }
 
 /* Pode não funcionar */
-.popover {
+.account .popover {
     --bs-popover-max-width: 250px;
     max-width: var(--bs-popover-max-width);
     --bs-popover-bg: #fff0;
@@ -224,7 +224,7 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
     line-height: 1.0
 }
 
-.popover-header {
+.account .popover-header {
     --bs-popover-border-width: 2px;
     border-bottom: 2px;
     --bs-popover-inner-border-radius: 17px;
@@ -232,12 +232,12 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
     border-top-right-radius: 17px   
 }
 
-.popover-body {
+.account .popover-body {
     --bs-popover-body-color: #000;
     color: #000
 }
 
-.custom-popover {
+.account .custom-popover {
     --bs-popover-header-color: #c422ff !important;
     --bs-popover-header-bg: #00ff5a !important;
     --bs-popover-body-color: #2c0eff !important;
