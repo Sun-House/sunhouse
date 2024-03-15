@@ -33,7 +33,7 @@ function userLoginArea() {
                     var popElements = $(this);
                     setTimeout(function() {
                         popElements.popover('hide');
-                    }, 5000);
+                    }, 3000);
                 });
             }
         }
