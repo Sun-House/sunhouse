@@ -24,7 +24,8 @@
     height: 38px !important;
     top: 0;
     position: fixed;
-    z-index: 999;
+    /*z-index: 999;*/
+    z-index: 1072;
     border-bottom: none !important;
     visibility: visible !important
 }

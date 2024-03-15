@@ -1,6 +1,7 @@
 /* Style padrão novo - Apenas Header */
 .topbar {
-    z-index: 999;
+    /*z-index: 999;*/
+    z-index: 1072;
     top: 2.5px !important;
     min-width: 150px !important;
     width: auto !important;
