@@ -184,7 +184,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 55px;
+    /*font-size: 55px;*/
+    font-size: 60px;
     color: #777777e0
 }
 
