@@ -2559,6 +2559,7 @@ Ajustes pre rebranding */
     }
     
     .produto .productContent__infos .outras-cores ul li a img {
+        max-width: 99px;
         width: 90%;
         height: auto
     }
