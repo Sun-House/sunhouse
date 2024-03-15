@@ -25,23 +25,16 @@ function userLoginArea() {
                 loginLoggedIn.forEach(function(loginLoggedIn_alvo) {
                     loginLoggedIn_alvo.style.display = 'block';
                 });
-                
-                // Inicia o popover
-                // Teoricamente iniciando pelo sunhouse-custom.js ::
-                // $('#logged_in').popover();
     
-                // Executa o popover
-                $('#logged_in').popover('show');
-                
-                setTimeout(function () {
-                    $('#logged_in').popover('hide');
-                }, 5000);
-    
-                // Log apenas para teste e depuracao
-                console.log("TRUE. Esta logado");
-            } else {
-                // Log apenas para teste e depuracao
-                console.log('FALSE. Não está logado');
+                // Seleciona todos os elementos com a Classe "logged-in" e executa o popover em cada um
+                $('.logged-in').each(function() {
+                    $(this).popover('show');
+                    
+                    var popElements = $(this);
+                    setTimeout(function() {
+                        popElements.popover('hide');
+                    }, 5000);
+                });
             }
         }
     }, 2000);
