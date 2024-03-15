@@ -213,7 +213,8 @@
 
 #login__dropdown-content a {
     border: 6px solid #FFDA00;
-    border-radius: 30px
+    border-radius: 30px;
+    padding: 12px 16px !important
 }
 
 #login__dropdown-content a:hover {
