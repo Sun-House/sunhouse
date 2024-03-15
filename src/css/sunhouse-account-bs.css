@@ -203,55 +203,44 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
     align-items: center
 }
 
-/* Pode não funcionar */
-.account .popover {
-    --bs-popover-max-width: 250px;
-    max-width: var(--bs-popover-max-width);
-    --bs-popover-bg: #fff0;
-    background-color: var(--bs-popover-bg);
-    --bs-popover-border-width: 2px;
-    --bs-popover-border-color: #d8d8d8;
-    --bs-popover-border-radius: 20px;
-    border: var(--bs-popover-border-width) solid var(--bs-popover-border-color);
-    border-radius: var(--bs-popover-border-radius);
-    --bs-popover-inner-border-radius: 17px;
-    --bs-popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    --bs-popover-header-font-size: 1rem;
-    --bs-popover-header-color: #000;
-    --bs-popover-header-bg: #ffda00;
-    --bs-popover-body-color: #000;
-    font-weight: 400;
-    line-height: 1.0
-}
-
-.account .popover-header {
-    --bs-popover-border-width: 2px;
-    border-bottom: 2px;
-    --bs-popover-inner-border-radius: 17px;
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px   
-}
-
-.account .popover-body {
-    --bs-popover-body-color: #000;
-    color: #000
-}
-
-.account .custom-popover {
-    --bs-popover-header-color: #c422ff !important;
-    --bs-popover-header-bg: #00ff5a !important;
-    --bs-popover-body-color: #2c0eff !important;
-}
-
-/* DarkTheme
+/* Mover para arquivo de Css geral de todas as paginas */
 .popover {
-    --bs-popover-border-color: #6a6b6b;
-    --bs-popover-header-color: #fff;
-    --bs-popover-header-bg: #F90041;
-    --bs-popover-body-color: #fff
+    --bs-popover-max-width: 250px !important;
+    max-width: var(--bs-popover-max-width) !important;
+    --bs-popover-bg: #fff0 !important;
+    background-color: var(--bs-popover-bg) !important;
+    --bs-popover-border-width: 2px !important;
+    --bs-popover-border-color: #d8d8d8 !important;
+    --bs-popover-border-radius: 20px !important;
+    border: var(--bs-popover-border-width) solid var(--bs-popover-border-color) !important;
+    border-radius: var(--bs-popover-border-radius) !important;
+    --bs-popover-inner-border-radius: 17px !important;
+    --bs-popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    --bs-popover-header-font-size: 1rem !important;
+    --bs-popover-header-color: #000 !important;
+    --bs-popover-header-bg: #ffda00 !important;
+    --bs-popover-body-color: #000 !important;
+    font-weight: 400 !important;
+    line-height: 1.0 !important
+}
+
+.popover-header {
+    --bs-popover-border-width: 2px !important;
+    border-bottom: 2px !important;
+    --bs-popover-inner-border-radius: 17px !important;
+    border-top-left-radius: 17px !important;
+    border-top-right-radius: 17px !important
 }
 
 .popover-body {
-    --bs-popover-body-color: #fff;
-    color: #fff
-} */
+    --bs-popover-body-color: #000 !important;
+    color: #000 !important
+}
+
+/* Aplicar custom para tooltips
+.account .custom-popover {
+    --bs-popover-header-color: #c422ff !important;
+    --bs-popover-header-bg: #00ff5a !important;
+    --bs-popover-body-color: #2c0eff !important
+}*/
+/* Mover para arquivo de Css geral de todas as paginas */

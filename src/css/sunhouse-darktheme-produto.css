@@ -455,3 +455,17 @@ body.produto {
     color: #fff
 }
 /* Marca e Seller - Marketplace */
+
+/* Popover Login */
+.popover {
+    --bs-popover-border-color: #6a6b6b !important;
+    --bs-popover-header-color: #fff !important;
+    --bs-popover-header-bg: #F90041 !important;
+    --bs-popover-body-color: #fff !important
+}
+
+.popover-body {
+    --bs-popover-body-color: #fff !important;
+    color: #fff !important
+}
+/* Popover Login */

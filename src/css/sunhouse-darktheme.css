@@ -475,3 +475,17 @@ body.institucional>.content a {
     border-bottom: 1px solid #333 !important
 }
 /* Pagina Designers */
+
+/* Popover Login */
+.popover {
+    --bs-popover-border-color: #6a6b6b !important;
+    --bs-popover-header-color: #fff !important;
+    --bs-popover-header-bg: #F90041 !important;
+    --bs-popover-body-color: #fff !important
+}
+
+.popover-body {
+    --bs-popover-body-color: #fff !important;
+    color: #fff !important
+}
+/* Popover Login */
