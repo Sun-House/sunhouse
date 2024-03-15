@@ -57,7 +57,8 @@
 }
 
 .account .vtex-pageHeader__container {
-    margin-top: -70px !important
+    /*margin-top: -70px !important*/
+    margin-top: -35px !important
 }
 
 .account .vtex-pageHeader__container.pa5.pa7-ns {
@@ -201,3 +202,56 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
 .account .vtex-account__user-info {
     align-items: center
 }
+
+/* Pode não funcionar */
+.popover {
+    --bs-popover-max-width: 250px;
+    max-width: var(--bs-popover-max-width);
+    --bs-popover-bg: #fff0;
+    background-color: var(--bs-popover-bg);
+    --bs-popover-border-width: 2px;
+    --bs-popover-border-color: #d8d8d8;
+    --bs-popover-border-radius: 20px;
+    border: var(--bs-popover-border-width) solid var(--bs-popover-border-color);
+    border-radius: var(--bs-popover-border-radius);
+    --bs-popover-inner-border-radius: 17px;
+    --bs-popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --bs-popover-header-font-size: 1rem;
+    --bs-popover-header-color: #000;
+    --bs-popover-header-bg: #ffda00;
+    --bs-popover-body-color: #000;
+    font-weight: 400;
+    line-height: 1.0
+}
+
+.popover-header {
+    --bs-popover-border-width: 2px;
+    border-bottom: 2px;
+    --bs-popover-inner-border-radius: 17px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px   
+}
+
+.popover-body {
+    --bs-popover-body-color: #000;
+    color: #000
+}
+
+.custom-popover {
+    --bs-popover-header-color: #c422ff !important;
+    --bs-popover-header-bg: #00ff5a !important;
+    --bs-popover-body-color: #2c0eff !important;
+}
+
+/* DarkTheme
+.popover {
+    --bs-popover-border-color: #6a6b6b;
+    --bs-popover-header-color: #fff;
+    --bs-popover-header-bg: #F90041;
+    --bs-popover-body-color: #fff
+}
+
+.popover-body {
+    --bs-popover-body-color: #fff;
+    color: #fff
+} */
