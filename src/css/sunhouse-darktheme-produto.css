@@ -456,7 +456,7 @@ body.produto {
 }
 /* Marca e Seller - Marketplace */
 
-/* Popover Login */
+/* Popover Login - Na verdade esse estilo vai replicar para qualquer Popover do site */
 .popover {
     --bs-popover-border-color: #6a6b6b !important;
     --bs-popover-header-color: #fff !important;
@@ -469,3 +469,11 @@ body.produto {
     color: #fff !important
 }
 /* Popover Login */
+
+/* Estilo Tooltips site */
+.tooltip {
+    --bs-tooltip-color: #000 !important;
+    --bs-tooltip-bg: #FFDA00 !important;
+    --bs-tooltip-border-radius: 20px !important
+}
+/* Estilo Tooltips site */
