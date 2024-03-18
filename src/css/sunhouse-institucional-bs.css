@@ -468,3 +468,13 @@
     }
 }
 /* Responsivo */
+
+/* Fix para Display dos Modais Informativos */
+.institucional .bannerPrdSlick {
+    z-index: 1048 !important
+}
+
+.institucional .topbar {
+    z-index: 1049 !important
+}
+/* Fix para Display dos Modais Informativos */
