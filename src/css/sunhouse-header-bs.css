@@ -220,5 +220,17 @@
 #login__dropdown-content a:hover {
     background-color: #fff
 }
+
+@media screen and (max-width: 1199px) {
+    #login__loggedIn {
+        position: absolute;
+        right: 100px;
+        top: 53px
+    }
+    
+    #login__loggedIn i {
+        font-size: 55px
+    }
+}
 /* Estilo do Login Widget */
 /* Style padrão novo */

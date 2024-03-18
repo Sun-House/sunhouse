@@ -228,12 +228,16 @@ div#smarthint-search-result {
     }
 
     .header__mobilemenu {
-        background-image: none !important
+        background-image: none !important;
+        /*width: 40px !important;*/
+        height: 20px !important
     }
 
     .header__mobilemenu svg {
         position: absolute;
-        width: 30px
+        /*width: 30px;*/
+        width: 35px;
+        top: 85px;
     }
 
     .header__menu.active {
