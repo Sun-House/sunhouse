@@ -2655,3 +2655,46 @@ Btn Comprar */
     border-radius: 20px
 }
 /* Estilo Tooltips site */
+
+/* Popover Login - Na verdade esse estilo vai replicar para qualquer Popover do site */
+.popover {
+    --bs-popover-max-width: 250px !important;
+    max-width: var(--bs-popover-max-width) !important;
+    /*--bs-popover-bg: #fff0 !important;*/
+    background-color: var(--bs-popover-bg) !important;
+    --bs-popover-border-width: 2px !important;
+    --bs-popover-border-color: #d8d8d8 !important;
+    --bs-popover-border-radius: 20px !important;
+    border: var(--bs-popover-border-width) solid var(--bs-popover-border-color) !important;
+    border-radius: var(--bs-popover-border-radius) !important;
+    --bs-popover-inner-border-radius: 17px !important;
+    --bs-popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    --bs-popover-header-font-size: 1rem !important;
+    --bs-popover-header-color: #000 !important;
+    --bs-popover-header-bg: #ffda00 !important;
+    --bs-popover-body-color: #000 !important;
+    font-weight: 400 !important;
+    line-height: 1.0 !important
+}
+
+.popover-header {
+    --bs-popover-border-width: 2px !important;
+    border-bottom: 2px !important;
+    --bs-popover-inner-border-radius: 17px !important;
+    border-top-left-radius: 17px !important;
+    border-top-right-radius: 17px !important;
+    padding-bottom: 5px !important
+}
+
+.popover-body {
+    --bs-popover-body-color: #000 !important;
+    color: #000 !important
+}
+
+/* Aplicar custom para tooltips - validar se sera necessario
+.account .custom-popover {
+    --bs-popover-header-color: #c422ff !important;
+    --bs-popover-header-bg: #00ff5a !important;
+    --bs-popover-body-color: #2c0eff !important
+}*/
+/* Popover Login */

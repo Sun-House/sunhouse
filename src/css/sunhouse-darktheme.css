@@ -478,6 +478,7 @@ body.institucional>.content a {
 
 /* Popover Login - Na verdade esse estilo vai replicar para qualquer Popover do site */
 .popover {
+    --bs-popover-bg: #000 !important;
     --bs-popover-border-color: #6a6b6b !important;
     --bs-popover-header-color: #fff !important;
     --bs-popover-header-bg: #F90041 !important;
