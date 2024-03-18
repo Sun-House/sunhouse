@@ -497,3 +497,13 @@ body.institucional>.content a {
     --bs-tooltip-border-radius: 20px !important
 }
 /* Estilo Tooltips site */
+
+/* Dropdown Opcoes de Usuario Logado */
+#login__dropdown-content {
+    background-color: #ffda00 !important
+}
+
+#login__dropdown-content a:hover {
+    background-color: #000 !important
+}
+/* Dropdown Opcoes de Usuario Logado */
