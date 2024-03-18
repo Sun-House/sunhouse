@@ -202,3 +202,10 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
 .account .vtex-account__user-info {
     align-items: center
 }
+
+@media screen and (max-width: 1199px) {
+    .account #page-content .content {
+        margin-right: 30px;
+        margin-left: 30px
+    }
+}
