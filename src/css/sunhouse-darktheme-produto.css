@@ -473,9 +473,32 @@ body.produto {
 
 /* Estilo Tooltips site */
 .tooltip {
-    --bs-tooltip-color: #000 !important;
-    --bs-tooltip-bg: #FFDA00 !important;
-    --bs-tooltip-border-radius: 20px !important
+    color: #000 !important
+}
+
+.tooltip-inner {
+    color: #000 !important;
+    background-color: #FFDA00 !important
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #FFDA00 !important
+}
+
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+    border-right-color: #FFDA00 !important
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+    border-top-color: #FFDA00 !important
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+    border-bottom-color: #FFDA00 !important
 }
 /* Estilo Tooltips site */
 
