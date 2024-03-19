@@ -2700,16 +2700,16 @@ Btn Comprar */
     line-height: 1.0 !important
 }
 
-.custom-popover {
+/*.custom-popover .popover-header {
     --bs-popover-border-width: 2px !important;
     border-bottom: 2px !important;
     --bs-popover-inner-border-radius: 17px !important;
     border-top-left-radius: 17px !important;
     border-top-right-radius: 17px !important;
     padding-bottom: 5px !important
-}
+}*/
 
-.custom-popover {
+.custom-popover .popover-body {
     --bs-popover-body-color: #000 !important;
     color: #000 !important
 }
