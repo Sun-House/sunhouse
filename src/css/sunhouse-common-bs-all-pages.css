@@ -2700,7 +2700,7 @@ Btn Comprar */
     line-height: 1.0 !important
 }
 
-/*.custom-popover .popover-header {
+/*.custom-popover .popover-header { - Desnecessario pelo que testei no front
     --bs-popover-border-width: 2px !important;
     border-bottom: 2px !important;
     --bs-popover-inner-border-radius: 17px !important;
