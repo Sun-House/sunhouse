@@ -1,3 +1,5 @@
+// ARQUIVO DEPRECIOU - conforme info abaixo
+
 // Mover essa function para o arquivo sunhouse-product.js final
 // Fazer o mencionado acima apenas apos rebranding
 
