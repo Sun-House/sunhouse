@@ -1,4 +1,5 @@
-.autor .header__menu {
+.autor .header__menu,
+.designers .header__menu {
     border-bottom: 1px solid #ddd
 }
 
