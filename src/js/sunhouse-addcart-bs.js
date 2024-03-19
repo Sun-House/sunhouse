@@ -1,3 +1,4 @@
+// Nao sei se este arquivo esta em uso
 function fnAddtoCart() {
     $("body").on("click", ".add-to-cart", (function (a) {
         a.preventDefault();
