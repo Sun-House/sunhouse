@@ -2680,7 +2680,7 @@ Btn Comprar */
 /* Estilo Tooltips site */
 
 /* Popover Login - Na verdade esse estilo vai replicar para qualquer Popover do site */
-.popover {
+.custom-popover {
     --bs-popover-max-width: 250px !important;
     max-width: var(--bs-popover-max-width) !important;
     /*--bs-popover-bg: #fff0 !important;*/
@@ -2700,7 +2700,7 @@ Btn Comprar */
     line-height: 1.0 !important
 }
 
-.popover-header {
+.custom-popover {
     --bs-popover-border-width: 2px !important;
     border-bottom: 2px !important;
     --bs-popover-inner-border-radius: 17px !important;
@@ -2709,13 +2709,13 @@ Btn Comprar */
     padding-bottom: 5px !important
 }
 
-.popover-body {
+.custom-popover {
     --bs-popover-body-color: #000 !important;
     color: #000 !important
 }
 
 /* Aplicar custom para tooltips - validar se sera necessario
-.account .custom-popover {
+.custom-popover {
     --bs-popover-header-color: #c422ff !important;
     --bs-popover-header-bg: #00ff5a !important;
     --bs-popover-body-color: #2c0eff !important
