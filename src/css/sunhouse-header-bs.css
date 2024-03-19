@@ -222,13 +222,13 @@
 }
 
 @media screen and (max-width: 1199px) {
-    #login__loggedIn {
+    .login-block {
         position: absolute;
         right: 100px;
         top: 53px
     }
     
-    #login__loggedIn i {
+    .login-block i {
         font-size: 55px
     }
 }
