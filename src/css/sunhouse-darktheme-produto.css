@@ -508,6 +508,7 @@ body.produto {
 }
 
 #login__dropdown-content a:hover {
-    background-color: #000 !important
+    background-color: #333 !important;
+    color: #fff !important
 }
 /* Dropdown Opcoes de Usuario Logado */
