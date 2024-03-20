@@ -1,0 +1,81 @@
+.designers .header__menu {
+    border-bottom: 1px solid #ddd
+}
+
+.autores .authors,
+.autores .content,
+.content > ul {
+    max-width: 1200px;
+    width: 100%
+}
+
+.autores .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto
+}
+
+.autores .authors,
+.content > ul li {
+    display: flex;
+    flex-direction: column
+}
+
+.autores .authors {
+    color: #000;
+    /*text-align: center*/
+}
+
+.autores .authors > span {
+    font-size: 24px;
+    font-weight: 300;
+    /*padding-top: 64px*/
+    text-align: center
+}
+
+.autores .authors .authorsName {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 72px;
+    text-align: center;
+    color: #F90041
+}
+
+/* Importado do CMS direto */
+.authorsDesc {
+    padding-bottom: 40px
+}
+
+.authorsDesc p {
+    padding-bottom: 20px;
+    font-size: 13pt
+}
+
+#overimage {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none
+}
+
+#designerbox:hover #overimage {
+    display: block
+}
+
+.content > ul li:hover div:before,
+.content > ul li:hover div:after {
+    display: none
+}
+/* Importado do CMS direto */
+
+@media screen and (max-width: 1199px) {
+    .autores .authors > span {
+        font-size: 24px
+    }
+
+    .autores .authors .authorsName {
+        font-size: 40px;
+        padding-bottom: 40px
+    }
+}
