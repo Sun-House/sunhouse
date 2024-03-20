@@ -113,6 +113,7 @@ a.caretMain:after {
 #button-back i {
     color: #f90041 !important;
     font-size: 40px;
+    transition: .2s
 }
 
 .catalog .catalogIntro .catalogdescription h1,
