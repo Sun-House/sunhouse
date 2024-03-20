@@ -1,5 +1,9 @@
-.designers .header__menu {
+.autores .header__menu {
     border-bottom: 1px solid #ddd
+}
+
+.autores .breadcrumb_bs ul li:last-child a::after {
+    display: none
 }
 
 .autores .authors,
