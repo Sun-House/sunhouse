@@ -532,3 +532,7 @@ body.institucional>.content a {
     color: #fff !important
 }
 /* Dropdown Opcoes de Usuario Logado */
+
+.institucional .btn-ra {
+    border-color: #00743F !important
+}

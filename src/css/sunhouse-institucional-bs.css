@@ -478,3 +478,21 @@
     z-index: 1049 !important
 }
 /* Fix para Display dos Modais Informativos */
+
+.institucional .btn-ra {
+    background: -webkit-linear-gradient(315deg, #8FBB1F 0, #00743F 100%);
+    border-color: #8FBB1F;
+    margin-right: 10px;
+    transition: .2s
+}
+
+.institucional .btn-ra:hover {
+    opacity: .9;
+    transition: .2s
+}
+
+.institucional .external-link-icon {
+    font-size: 13px;
+    vertical-align: text-top;
+    padding-left: 7px
+}
