@@ -2,7 +2,7 @@
     max-width: 1224px
 }
 
-.faq #container_faq p {
+.faq #container_faq #faq_paragraph {
     margin-bottom: 60px
 }
 
