@@ -1,0 +1,52 @@
+.sub.faq #content-page {
+    max-width: 1224px
+}
+
+#container_faq p {
+    margin-bottom: 60px
+}
+
+.col-6 {
+    padding: 30px
+}
+
+#col_faq-direita-pre {
+    padding-right: 30px;
+    transition: .3s
+}
+
+#col_faq-direita-pos {
+    /*border-left: 2px solid #eee;*/
+    padding-left: 30px;
+    transition: .3s
+}
+
+#col_faq-direita-pre:hover,
+#col_faq-direita-pos:hover {
+    background-color: #ffda0059; /* Mudar ou ajustar cor + dimensao do efeito hover */
+    box-shadow: 0px 0px 5px 5px #ffda0059;
+    border-radius: 40px;
+    transition: .3s
+}
+
+#col_faq-direita-pre h2,
+#col_faq-direita-pos h2 {
+    text-align:center
+}
+
+.hr-vertical {
+    all: unset; /* Pode dar bugs */
+    height: 610px;
+    border-left: 2px solid #d2d2d299;
+    position: absolute;
+    left: 50%;
+    top: 700px;
+    transition: .3s;
+    z-index: -1
+}
+
+#col_faq-direita-pre:hover ~ .hr-vertical,
+#col_faq-direita-pos:hover ~ .hr-vertical{
+    border-color: transparent;
+    transition: .2s
+}
