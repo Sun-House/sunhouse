@@ -71,10 +71,14 @@
 }
 
 .account .br2 {
-    border-radius: 0 !important;
+    /*border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
-    -moz-border-radius: 0 !important
+    -moz-border-radius: 0 !important*/
+    border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    -moz-border-radius: 30px !important
 }
 
 .account .vtex-pageHeader-link__container span {
