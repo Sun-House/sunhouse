@@ -169,7 +169,8 @@ ol, ul {
 @media screen and (max-width: 1199px) {
     /* Para todos os templates - correcao eixo x UX */
     .breadcrumb_bs {
-        max-width: unset !important;
+        /*max-width: unset !important;*/
+        max-width: 86.5% !important; /* Pode resultar em bugs */
         width: auto !important;
     }
     /* Para todos os templates - correcao eixo x UX */
