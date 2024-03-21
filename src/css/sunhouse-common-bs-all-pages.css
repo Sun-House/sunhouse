@@ -2721,3 +2721,11 @@ Btn Comprar */
     --bs-popover-body-color: #2c0eff !important
 }*/
 /* Popover Login */
+
+/* Oculta Microfone SmartHnt no Mobile - Considerar remover a funcionalidade via App SmartHint */
+@media screen and (max-width: 1199px) {
+    #startVoice {
+        display: none !important
+    }
+}
+/* Oculta Microfone SmartHnt no Mobile */
