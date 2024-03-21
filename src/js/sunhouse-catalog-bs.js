@@ -93,10 +93,10 @@ $(document).ready((function () {
         var previousBtn = document.querySelector(".pager.bottom .previous");
 
         if (pageNumber > 2) {
-            console.log(pageNumber + " Mostra!");
+            //console.log(pageNumber + " Mostra!");
             previousBtn.classList.add("previous-active");
         } else {
-            console.log(pageNumber + " Não mostra!");
+            //console.log(pageNumber + " Não mostra!");
             previousBtn.classList.remove("previous-active");
         }
     }),

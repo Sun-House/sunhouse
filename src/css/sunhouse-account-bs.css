@@ -49,7 +49,8 @@
 }
 
 .account .bg-action-primary {
-    background: #F90041
+    background: #F90041;
+    border-radius: 30px !important
 }
 
 .account .b--action-primary {
@@ -88,6 +89,11 @@
 
 .account .c-action-primary {
     color: #F90041
+}
+
+.account .c-action-primary span,
+.account .c-action-primary div {
+    text-decoration: unset !important
 }
 
 .account .mb8 label {
@@ -142,6 +148,26 @@
 .account .vtex-account__address-edit main.ph7.pv6 div.mt5 button {
     background: #666;
     border: none
+}
+
+.account .vtex-account__address-list .flex-ns {
+    display: block;
+    margin: 20px
+}
+
+.account .vtex-account__address-list .address-summary {
+    font-size: 17px;
+    min-width: 400px;
+    max-width: max-content;
+    width: auto
+}
+
+.account .vtex-account__address-list .c-action-primary {
+    color: #f90041;
+    background-color: #FFDA00 !important;
+    border-radius: 30px !important;
+    padding: 5px 15px;
+    margin: 5px
 }
 
 .account .vtex-account__cards-list,
