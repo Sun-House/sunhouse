@@ -1575,6 +1575,16 @@ span.error {
     position: relative;
     top: -15px
 }
+
+.fr.mt4.mt0-ns.w-30-ns .dark-green {
+    background-color: #ffda006b;
+    padding: 20px;
+    border-radius: 30px
+}
+
+.fr.mt4.mt0-ns.w-30-ns .dark-green strong span {
+    font-weight: 700 !important
+}
 /* Pedido Realizado - VALIDAR CONFIG DUPLICADAS NESSE ARQUIVO */
 
 #print-bank-invoice,
@@ -1596,6 +1606,10 @@ span.error {
     display: block;
     cursor: pointer;
     transition: all 250ms !important
+}
+
+#print-bank-invoice span {
+    font-size: 17px !important
 }
 
 @media screen and (max-width:768px) {
@@ -1685,9 +1699,9 @@ body.body-checkout-confirmation .w-70-ns {
     background-color: #fff;
     border-color: transparent;
     line-height: 1.4;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     margin-bottom: 16px
 }
 

@@ -127,6 +127,11 @@
     color: #f90041 !important;
     text-decoration: underline !important;
 }
+
+.institucional #wrap-button-back {
+    width: 55px;
+    height: 50px
+}
 /* Breadcrumb */
 
 #content-page h1,
