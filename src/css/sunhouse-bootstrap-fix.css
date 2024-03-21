@@ -1,22 +1,22 @@
 ol, ul {
-    padding-left: unset !important;
+    padding-left: unset !important
 }
 
 #backToTop span p {
-    margin-bottom: unset;
+    margin-bottom: unset
 }
 
 /* Ajustes Menu e Menu Fixed */
 .stickyHeader__menu-content {
-    margin-bottom: -15px !important;
+    margin-bottom: -15px !important
 }
 
 .dropdownLv2, .dropdownLv3, .dropdownLv4 {
-    height: 3.3rem;
+    height: 3.3rem
 }
 
 .dropdownLv3:hover .dropdown-contentLv3 {
-    margin-top: -4.5rem !important;
+    margin-top: -4.5rem !important
 }
 
 #dropdown-contentLv3-3,
@@ -25,13 +25,13 @@ ol, ul {
 #dropdown-contentLv3-6,
 #dropdown-contentLv3-7,
 #dropdown-contentLv3-11 {
-    margin-top: -3.25rem !important;
+    margin-top: -3.25rem !important
 }
 
 .dropdown-content a.btn {
     color: #fff;
     margin: 10px 10px 15px 10px;
-    padding: 5px 0px !important;
+    padding: 5px 0px !important
 }
 
 .dropdown-content a.btn:hover {
@@ -43,7 +43,7 @@ ol, ul {
 
 /* Ajustes Footer */
 .footer__content {
-    max-width: 1250px;
+    max-width: 1250px
 }
 
 .footer__content div {
@@ -51,85 +51,85 @@ ol, ul {
 }
 
 .footer__box {
-    margin-right: 0;
+    margin-right: 0
 }
 
 .footer.links,
 .footer.sac,
 .footer.texts {
-    padding: 25px 0 45px !important;
+    padding: 25px 0 45px !important
 }
 
 .footer.sac p {
-    padding-bottom: unset !important;
+    padding-bottom: unset !important
 }
 
 #social-list-footer li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 5px
 }
 /* Ajustes Footer */
 
 /* Ajustes para cada template */
 /* Home Geral */
 .home .benefits ul li {
-    height: 75px !important;
+    height: 75px !important
 }
 
 #benefits_big-number {
-    font-size: 50px!important;
+    font-size: 50px!important
 }
 
 #benefits_medium-stext {
-    font-size: 20.5px!important;
+    font-size: 20.5px!important
 }
 
 #benefits_medium-stext:nth-child(2) {
-    top: 0!important;
+    top: 0!important
 }
 
 #benefits_big-text {
-    font-size: 22px!important;
+    font-size: 22px!important
 }
 
 #benefits_xbig-stext {
-    font-size: 24px!important;
+    font-size: 24px!important
 }
 
 #benefits_medium-number {
-    font-size: 30px!important;
+    font-size: 30px!important
 }
 
 #benefits_xxbig-stext {
     font-size: 30px!important;
-    top: unset!important;
+    top: unset!important
 }
 
 #benefits_xbig-number {
-    font-size: 40px !important;
+    font-size: 40px !important
 }
 
 #benefits_text {
-    margin-bottom: unset!important;
+    margin-bottom: unset!important
 }
 
 @media screen and (min-width: 1201px) {
     .home #highlightRoundBanners {
-        min-height: 480px !important;
+        min-height: 480px !important
     }
 }
 /* Home Geral */
 
 /* Catalog Geral */
 .resultItemsWrapper .shelf ul {
-    padding-left: unset;
+    padding-left: unset
 }
 
 /* Apenas templates Catalog*/
 @media screen and (max-width: 1199px) {
     .resultItemsWrapper .shelf ul {
         /*padding-left: 2rem !important;*/
-        padding-left: 0.2rem !important;
+        padding-left: 0.2rem !important
     }
 }
 /* Apenas templates Catalog*/
@@ -145,25 +145,25 @@ ol, ul {
     box-sizing: border-box;
     background-color: inherit!important;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end
 }
 
-.breadcrumb_bs ul li:last-of-type a {
-    color: #e77925;
-    /*text-decoration: underline !important;*/
-}
+/*.breadcrumb_bs ul li:last-of-type a {
+    color: #e77925
+    / text-decoration: underline !important; /
+}*/
 
 .breadcrumb_bs ul li:last-of-type a::after {
     /*display: none;*/
-    text-decoration: none;
+    text-decoration: none
 }
 
 .breadcrumb_bs ul li a:after {
-    text-decoration: none;
+    text-decoration: none
 }
 
 .breadcrumb_bs ul li a span:hover {    
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 @media screen and (max-width: 1199px) {
@@ -171,25 +171,25 @@ ol, ul {
     .breadcrumb_bs {
         /*max-width: unset !important;*/
         max-width: 86.5% !important; /* Pode resultar em bugs */
-        width: auto !important;
+        width: auto !important
     }
     /* Para todos os templates - correcao eixo x UX */
 
     /* Para o template de Catalog BS */
     .catalog .breadcrumb_bs {
-        margin-left: 25px !important;
+        margin-left: 25px !important
     }
     /* Para o template de Catalog BS */
 
     /* Para o template de Institucional BS */
     .institucional .breadcrumb_bs {
-        margin-left: 28px !important;
+        margin-left: 28px !important
     }
     /* Para o template de Institucional BS */
 
     /* Para todos templates */
     .breadcrumb_bs ul {
-        margin-bottom: unset;
+        margin-bottom: unset
     }
     /* Para todos templates */
 }
@@ -199,7 +199,7 @@ ol, ul {
 
 /* Ajuste para Banner Promocional Fixo Header - Todas Paginas BS */
 .bannerPrd p {
-    margin-bottom: 0 !important;
+    margin-bottom: 0 !important
 }
 /* Ajuste para Banner Promocional Fixo Header - Todas Paginas BS */
 
