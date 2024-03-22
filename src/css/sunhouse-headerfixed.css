@@ -217,10 +217,11 @@ div#smarthint-search-result {
 
     .stickyHeader__mobilemenu svg {
         position: absolute;
-        width: 30px;
+        width: 30px !important;
         /*margin-top: 15px;*/
         margin-top: 18px;
-        left: 10px
+        left: 10px;
+        top: inherit !important
     }
 
     .stickyHeader__menu {
