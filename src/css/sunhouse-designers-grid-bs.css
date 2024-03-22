@@ -74,6 +74,19 @@
 /* Importado do CMS direto */
 
 @media screen and (max-width: 1199px) {
+    .autores #page_content {
+        margin: 0 30px
+    }
+    
+    .autores .authorsDesc p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        line-height: 26px;
+        padding-top: 16px;
+        text-align: justify
+    }
+
     .autores .authors > span {
         font-size: 24px
     }
