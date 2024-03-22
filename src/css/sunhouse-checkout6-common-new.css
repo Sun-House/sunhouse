@@ -11,7 +11,7 @@
 .default-modal #btn-identified-user-button,
 .header-checkout {
     /*font-family: Montserrat !important - esse important bugou o fontawesome*/
-    font-family: Montserrat
+    font-family: 'Montserrat'
 }
 
 /*.container-cart .cart-template .empty-cart-content #cart-choose-prsoducts:hover*/
@@ -233,7 +233,7 @@
 }
 
 .cart-template .cart .cart-items tbody tr.product-item td.quantity input {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #b2b3b3;
     border: 1px solid #f0f0f0;
     border-radius: 0 !important;
@@ -354,7 +354,7 @@
 
 .cart-template .summary-template-holder .checkout__vendor-edit {
     padding: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #797b7b;
     border: none;
     background: 0 0
@@ -373,7 +373,7 @@
 }
 
 .cart-template .summary-template-holder .vendor__checkout .vendor__input {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     text-transform: uppercase;
     color: #b2b3b3;
@@ -384,7 +384,7 @@
 }
 
 .cart-template .summary-template-holder .vendor__checkout .vendor__button {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     width: 80px;
     height: 28px;
     font-size: 12px;
@@ -578,7 +578,7 @@
 }
 
 .cart-template .summary-template-holder .cart-totalizers .coupon-fieldset>div #cart-coupon {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     text-transform: uppercase;
     color: #b2b3b3;
@@ -588,7 +588,7 @@
 }
 
 .cart-template .summary-template-holder .cart-totalizers .coupon-fieldset>div #cart-coupon-add {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 400;
     color: #fff;
@@ -613,7 +613,7 @@
 
 .cart-template .summary-template-holder .cart-totalizers .accordion-group .accordion-inner tbody tr,
 .cart-template .summary-template-holder .cart-totalizers .accordion-group .accordion-inner tfoot tr {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #b3b2b2;
     border-bottom: 1px solid #b3b2b2 !important
 }
@@ -722,7 +722,7 @@
 
 #orderform-to-cart {
     display: none;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     color: #797b7b;
     margin-top: -32px
@@ -734,7 +734,7 @@
 }
 
 .client-pre-email-h {
-    font-family: Montserrat
+    font-family: 'Montserrat'
 }
 
 .client-pre-email-h label {
@@ -778,7 +778,7 @@
 }
 
 .client-email #client-pre-email {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 200;
     border-radius: 0;
     border: 1px solid #e0e0e0;
@@ -787,7 +787,7 @@
 }
 
 .client-email #btn-client-pre-email {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     padding: 0 32px;
     font-weight: 400;
@@ -803,7 +803,7 @@
 }
 
 .client-email .help.error {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     padding-top: 8px;
     text-transform: uppercase;
@@ -811,7 +811,7 @@
 }
 
 .emailInfo {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     border: none !important;
     background: #fff !important;
     text-align: center !important
@@ -870,7 +870,7 @@
 }
 
 .orderform-template .orderform-template-holder {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     background: #fff
 }
 
@@ -892,7 +892,7 @@
 }
 
 .orderform-template .orderform-template-holder .corporate-info-box input {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     border-radius: 0;
     height: 40px;
@@ -994,7 +994,7 @@
 
 .orderform-template .orderform-template-holder .client-profile-data input,
 .orderform-template .orderform-template-holder .shipping-data input {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     border-radius: 0;
     height: 40px;
@@ -1069,7 +1069,7 @@
 
 .orderform-template .orderform-template-holder .client-profile-data .box-client-info-pf input,
 .orderform-template .orderform-template-holder .shipping-data .box-client-info-pf input {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     border-radius: 0;
     height: 40px;
@@ -1137,7 +1137,7 @@
 .orderform-template .orderform-template-holder .shipping-data #go-to-shipping,
 .orderform-template .orderform-template-holder .shipping-data .btn-go-to-payment {
     display: block;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     float: right;
     width: 100%;
     font-size: 14px;
@@ -1201,7 +1201,7 @@
 }
 
 .orderform-template .orderform-template-holder .gift-card-section #payment-discounts-code {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     padding: 0 8px;
     height: 32px;
     border-radius: 0;
@@ -1224,7 +1224,7 @@
 }
 
 .orderform-template .orderform-template-holder .gift-card-section #btn-add-gift-card {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     width: auto;
     height: 32px;
     font-size: 12px;
@@ -1554,6 +1554,15 @@ span.error {
     width: 30%;
 }
 
+@media screen and (max-width: 1199px) {
+    .cconf-continue-button,
+    .cconf-myorders-button {
+        line-height: 30px !important;
+        width: 100% !important;
+        padding: 20px 10px !important
+    }
+}
+
 .cconf-continue-button {
     font-size: 0 !important
 }
@@ -1592,15 +1601,18 @@ span.error {
 .cconf-myorders-button {
     color: #fff;
     border: none;
-    border-radius: 4px;
+    /*border-radius: 4px;
     -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    -moz-border-radius: 4px;*/
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     text-align: center;
     height: 30px;
     line-height: 30px;
     padding: 0 16px;
     /*font-family: Ubuntu, sans-serif;*/
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     background-color: #F90041;
     display: block;
@@ -1639,8 +1651,8 @@ span.error {
 .cconf-myorders-button span {
     display: block;
     color: #fff !important;
-    font-family: Ubuntu, sans-serif;
-    font-family: Montserrat;
+    /*font-family: Ubuntu, sans-serif;*/
+    font-family: 'Montserrat';
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -1692,7 +1704,7 @@ body.body-checkout-confirmation .w-70-ns {
 
 #app-top {
     /*font-family: Ubuntu, sans-serif*/
-    font-family: Montserrat
+    font-family: 'Montserrat'
 }
 
 #app-top .cconf-alert {
@@ -1758,7 +1770,7 @@ body.body-checkout-confirmation .w-70-ns {
 }
 
 .footer-checkout p {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     color: #EEEEEE
 }
@@ -1797,7 +1809,7 @@ body.body-checkout-confirmation .w-70-ns {
 }
 
 .paymentMethods p {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     color: #EEEEEE
 }
@@ -2075,7 +2087,7 @@ header .seloTrustvox {
 }
 
 .cart-template .summary-template-holder .cart-totalizers .coupon-fieldset>div #cart-coupon {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 10pt;
     text-transform: uppercase;
     color: #444;
@@ -2104,7 +2116,7 @@ header .seloTrustvox {
 }
 
 .cart-template .summary-template-holder .cart-totalizers .coupon-fieldset>div #cart-coupon-add {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 400;
     color: #fff;
@@ -2164,7 +2176,7 @@ div>p.coupon-fields {
 
 .cart-template .cart-links-bottom #cart-to-orderform,
 .orderform-template #payment-data-submit {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 0;
     padding: 15px 32px;
     font-weight: 400;
@@ -2280,7 +2292,7 @@ div>p.coupon-fields {
 .link-print-cart-wrapper #cart-print {
     position: absolute;
     display: table;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 400;
     color: #797b7b;
     letter-spacing: .3px;
