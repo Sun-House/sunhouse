@@ -2400,3 +2400,9 @@ div>p.coupon-fields {
     }
 }
 /* Ajustes Finos Display Mobile */
+
+/* Quick Fix Erro Dinamize */
+img[src^="https://receiver.posclick.dinamize.com/tagmanager/access"] {
+    display: none
+}
+/* Quick Fix Erro Dinamize */
