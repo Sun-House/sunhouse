@@ -88,17 +88,6 @@
     margin: 16px auto 0
 }
 
-@media screen and (max-width: 1199px) {
-    .autor > .content .pcollection > h2 {
-        font-size: 18px;
-        padding: 24px 16px
-    }
-
-    .autor > .content .pcollection > a {
-        width: 80%
-    }
-}
-
 .autor > .content .pcollection > a:hover {
     opacity: .8
 }
@@ -119,12 +108,6 @@
     border-top: 6px solid #4c3767;
     border-right: 6px solid #4c3767;
     z-index: 2
-}
-
-@media screen and (max-width: 1360px) {
-    .autor > .content .pcollection .shelfAutor .slick-arrow {
-        display: none !important
-    }
 }
 
 .autor > .content .pcollection .shelfAutor .slick-arrow.slick-prev {
@@ -149,12 +132,12 @@
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    border: 1px solid #e77925;
+    border: 1px solid #F90041;
     margin: 0 4px 6px
 }
 
 .autor > .content .pcollection .shelfAutor .slick-dots li.slick-active {
-    background: #e77925
+    background: #F90041
 }
 
 .autor > .content .pcollection .shelfAutor .slick-dots li button,
@@ -173,13 +156,6 @@
     -moz-border-radius: 30px;
     margin: 0 auto 32px;
     transition: .1s
-}
-
-@media screen and (max-width: 1199px) {
-    .autor > .content .pcollection .shelfAutorItem a {
-        width: 80%;
-        margin-bottom: 16px
-    }
 }
 
 .autor > .content .pcollection .shelfAutorItem a:hover {
@@ -284,8 +260,46 @@
 }
 
 @media screen and (max-width: 1199px) {
+    .autor > .content {
+        width: auto !important;
+        margin: 0 30px !important
+    }
+
     .autor > .content .phl {
         flex-direction: column;
-        padding: 48px 16px 32px
+        padding: 48px 16px 32px;
+        padding-top: 0 !important
+    }
+
+    .autor .phl__avatar {
+        margin: 0 auto;
+        padding-bottom: 25px
+    }
+
+    .autor .content .phl__description p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        line-height: 26px;
+        padding-top: 16px;
+        text-align: justify
+    }
+
+    .autor > .content .pcollection > h2 {
+        font-size: 18px;
+        padding: 24px 16px
+    }
+
+    .autor > .content .pcollection > a {
+        width: 80%
+    }
+
+    .autor > .content .pcollection .shelfAutor .slick-arrow {
+        display: none !important
+    }
+
+    .autor > .content .pcollection .shelfAutorItem a {
+        width: 80%;
+        margin-bottom: 16px
     }
 }
