@@ -2646,36 +2646,36 @@ Btn Comprar */
 
 /* Estilo Tooltips site */
 .tooltip {
-    color: #fff;
-    border-radius: 20px;
-    background-color: transparent
+    color: #fff !important;
+    border-radius: 20px !important;
+    background-color: transparent !important
 }
 
 .tooltip-inner {
     color: #fff;
-    background-color: #f90041;
-    border-radius: 30px;
-    box-shadow: 2px 2px 15px #eee
+    background-color: #f90041 !important;
+    border-radius: 30px !important;
+    box-shadow: 2px 2px 15px #eee !important
 }
 
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
 .bs-tooltip-start .tooltip-arrow::before {
-    border-left-color: #F90041
+    border-left-color: #F90041 !important
 }
 
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
 .bs-tooltip-start .tooltip-arrow::before {
-    border-right-color: #F90041
+    border-right-color: #F90041 !important
 }
 
 .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
 .bs-tooltip-start .tooltip-arrow::before {
-    border-top-color: #F90041
+    border-top-color: #F90041 !important
 }
 
 .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
 .bs-tooltip-start .tooltip-arrow::before {
-    border-bottom-color: #F90041
+    border-bottom-color: #F90041 !important
 }
 /* Estilo Tooltips site */
 
