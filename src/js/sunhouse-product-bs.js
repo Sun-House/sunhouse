@@ -303,7 +303,8 @@ function verificarFrasesMont() {
         if (encontrouFrase) {
             const ocultaCardMont = document.querySelectorAll('.productMontagem__nao-mostra');
             ocultaCardMont.forEach(cardMont => {
-                cardMont.style.display = "none !important";
+                //cardMont.style.display = "none";
+                cardMont.style.setProperty('display', 'none', 'important');
             });
             //console.log('Ocultado pois produto é entregue montado!');
             return; // Sai da função após ocultar o elemento
