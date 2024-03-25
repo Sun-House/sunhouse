@@ -278,6 +278,46 @@ function checarCep() {
     }
 }
 
+// Oculta Montagem quando tiver o atributo de montagem apontado para Nao
+// Verifica se as frases existem no DOM
+function verificarFrasesMont() {
+    const frases = [
+        "Não Necessita Montagem",
+        "Necessita Montagem? Não, produto entregue montado"
+    ];
+
+    for (let i = 0; i < frases.length; i++) {
+        const frase = frases[i];
+        const elementos = document.querySelectorAll("*");
+        let encontrouFrase = false; // Flag para indicar se a frase foi encontrada
+
+        for (let j = 0; j < elementos.length; j++) {
+            const elemento = elementos[j];
+            
+            if (elemento.textContent.trim() === frase) {
+                encontrouFrase = true; // Indica que a frase foi encontrada
+                break; // Para a verificação para esta frase
+            }
+        }
+
+        if (encontrouFrase) {
+            const ocultaCardMont = document.querySelectorAll('.productMontagem__nao-mostra');
+            ocultaCardMont.forEach(cardMont => {
+                cardMont.style.display = "none";
+            });
+            //console.log('Ocultado pois produto é entregue montado!');
+            return; // Sai da função após ocultar o elemento
+        } //else {
+            //console.log('Não oculta pois produto é entregue desmontado!');
+        //}
+    }
+}
+
+//document.addEventListener('DOMContentLoaded', verificarFrasesMont);
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(verificarFrasesMont, 1000);
+});
+
 // Mostra botao Wpp quando produto esgotado
 window.addEventListener("load", function () {
     setTimeout(function () {
