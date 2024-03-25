@@ -283,7 +283,9 @@ function checarCep() {
 function verificarFrasesMont() {
     const frases = [
         "Não Necessita Montagem",
-        "Necessita Montagem? Não, produto entregue montado"
+        "Necessita Montagem? Não (produto entregue montado)",
+        "Necessita Montagem? Nao (produto entregue montado)",
+        "NECESSITA MONTAGEM? NAO (PRODUTO ENTREGUE MONTATO)"
     ];
 
     for (let i = 0; i < frases.length; i++) {
