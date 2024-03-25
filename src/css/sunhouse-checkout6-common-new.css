@@ -1604,9 +1604,9 @@ span.error {
     /*border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;*/
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
+    border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
     text-align: center;
     height: 30px;
     line-height: 30px;
@@ -2402,7 +2402,11 @@ div>p.coupon-fields {
 /* Ajustes Finos Display Mobile */
 
 /* Quick Fix Erro Dinamize */
-img[src^="https://receiver.posclick.dinamize.com/tagmanager/access"] {
+/*img[src^="https://receiver.posclick.dinamize.com/tagmanager/access"] {
+    display: none
+}*/
+
+img[src^="https://receiver.posclick.dinamize.com/"] {
     display: none
 }
 /* Quick Fix Erro Dinamize */
