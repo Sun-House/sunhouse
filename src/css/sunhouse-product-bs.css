@@ -156,6 +156,9 @@ table.group.Escritorio {
 
 /*#prodEspec>div>dl>dd {*/
 #prodEspec div dl dd {
+    /* New 25.03.24 - Pode bugar o mobile */
+    display: flex;
+    /* New 25.03.24 */
     background-color: #eee;
     /*border-radius: 5px;*/
     border-radius: 20px;
@@ -165,6 +168,11 @@ table.group.Escritorio {
 
 /*#prodEspec>div>dl>dd>span {*/
 #prodEspec div dl dd span {
+    /* New 25.03.24 - Pode bugar o mobile */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* New 25.03.24 */
     float: left !important;
     margin-right: 5px !important;
     font-weight: 700;
@@ -173,6 +181,8 @@ table.group.Escritorio {
     /*border-radius: 5px 0 0 5px;*/
     border-radius: 20px 0 0 20px;
     width: 47.6%;
+    /*width: 51%; - New 25.03.24 - Pode bugar o mobile */
+    min-width: 51%; /* New 25.03.24 - Pode bugar o mobile */
     text-align: initial;
     margin: -5px;
     border-right: 5px solid #fff
