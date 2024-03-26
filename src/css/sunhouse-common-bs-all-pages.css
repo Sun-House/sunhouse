@@ -1793,7 +1793,7 @@ body>.header {
     /*right: 16px;
     bottom: 128px;
     right: 28px;*/
-    right: 115px;
+    right: -115px;
     bottom: 115px;
     z-index: 100;
     width: 215px;
