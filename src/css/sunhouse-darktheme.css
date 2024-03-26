@@ -551,3 +551,25 @@ body.institucional>.content a {
     color: #991d3d !important
 }
 /* Busca Vazia 2024 */
+
+/* Menu Mobile */
+@media screen and (max-width: 1199px) {
+    .sh-bar-block .sh-bar-item {
+        color: #FFDA00 !important
+    }
+
+    .caretRight,
+    .sh-large i,
+    .sh-large span {
+        color: #F90041 !important
+    }
+
+    .sh-dark-grey,
+    .sh-hover-dark-grey:hover,
+    .sh-dark-gray,
+    .sh-hover-dark-gray:hover {
+        background-color: #000 ;
+        background: -webkit-linear-gradient(90deg, #333 0%, #0d1117 100%) !important
+    }
+}
+/* Menu Mobile */
