@@ -536,3 +536,18 @@ body.institucional>.content a {
 .institucional .btn-ra {
     border-color: #00743F !important
 }
+
+/* Busca Vazia 2024 */
+.busca div.buscaVazia h3 {
+    color: #fff !important
+}
+
+.areas a img {
+    -webkit-filter: grayscale(50%) !important;
+    filter: grayscale(50%) !important
+}
+
+.areas a strong {
+    color: #991d3d !important
+}
+/* Busca Vazia 2024 */

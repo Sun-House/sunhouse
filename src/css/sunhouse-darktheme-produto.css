@@ -512,3 +512,18 @@ body.produto {
     color: #fff !important
 }
 /* Dropdown Opcoes de Usuario Logado */
+
+/* Busca Vazia 2024 */
+.busca div.buscaVazia h3 {
+    color: #fff !important
+}
+
+.areas a img {
+    -webkit-filter: grayscale(50%) !important;
+    filter: grayscale(50%) !important
+}
+
+.areas a strong {
+    color: #991d3d !important
+}
+/* Busca Vazia 2024 */
