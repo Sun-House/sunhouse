@@ -230,6 +230,10 @@
     
     .login-block i {
         font-size: 55px
+    }    
+    
+    .stickyHeader .login-block {
+        display: none !important
     }
 }
 /* Estilo do Login Widget */
