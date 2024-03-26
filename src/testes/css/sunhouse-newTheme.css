@@ -56,26 +56,26 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     color: #F90041 !important;
 }
 
-#lancamentos,
+/*#lancamentos,
 #prontaEntrega {
     border-radius: 30px !important;
     transition: .3s;
-}
+}*/
 
-#lancamentos:hover,
+/*#lancamentos:hover,
 #prontaEntrega:hover {
     scale: 1.05;
     transition: .3s;
-}
+}*/
 
-#lancamentos {
+/*#lancamentos {
     background-color: #F90041 !important;
-}
+}*/
 
-#prontaEntrega {
+/*#prontaEntrega {
     background-color: #FFDA00 !important;
     color: #F90041 !important;
-}
+}*/
 
 a.caretMain:after {
     border-top: 4px solid #F90041 !important;

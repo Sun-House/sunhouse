@@ -1964,8 +1964,10 @@ th.name-field::after {
 
 .produto .productContent__infos-freight .freight-values .cep-invalido .valor strong {
     display: block !important;
-    color: #fe0000;
-    background-color: #ffc10770 !important;
+    /*color: #fe0000;
+    background-color: #ffc10770 !important;*/
+    color: #F0C808;
+    background-color: #ffc1074a !important;
     border-radius: 20px;
     padding: 20px
 }
@@ -2262,7 +2264,6 @@ Ajuste Insta - Migrar para todos os templates */
     scale: 1.1;
 }
 
-/* news */
 #rate-produto {
     background-color: #eeeeee;
     padding: 10px 60px;
@@ -2273,7 +2274,12 @@ Ajuste Insta - Migrar para todos os templates */
     background-color: #ffda004f !important;
     border-radius: 30px !important
 }
-/* news */
+
+.ts-product-reviews-list-item .ts-block-two .ts-reply[data-v-2da2c25e] {
+    background: #f9004147 !important;
+    background-color: #f9004147 !important;
+    border-radius: 0 30px 30px 0
+}
 /* Bloco Trust Rates PDP */
 
 /* Ajuste todos Modals */

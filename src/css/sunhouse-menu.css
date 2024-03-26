@@ -142,33 +142,41 @@ ul.list-contentCat {
 
 #lancamentos,
 #prontaEntrega {
-    background-color: #18b858;
+    /*background-color: #18b858;*/
     padding: 5px 18px 5px 18px;
     border-radius: 10px;
     color: #fff;
     margin-left: 12px;
     cursor: pointer;
-    font-weight: 600
+    font-weight: 600;
+    border-radius: 30px !important;
+    transition: .2s
 }
 
 #lancamentos {
     /* Old Tema - background-color: #e77925*/
-    background-color: #F90041
+    background-color: #F90041;
+    border: 2px solid #F90041
 }
 
 #prontaEntrega {
-    background-color: #18b858
-}
-
-#prontaEntrega:hover {
-    transition: 1.5s;
-    background-color: #14d360
+    /*background-color: #18b858;*/
+    background-color: #FFDA00;
+    color: #F90041;
+    border: 2px solid #FFDA00
 }
 
 #lancamentos:hover {
-    transition: .5s;
-    /* Old Tem - background-color: #ff950b */
-    background-color: #F90041 /* pode precisar de ajustes */
+    transition: .3s;
+    /* Old Tema - background-color: #ff950b */
+    /*background-color: #F90041 */
+    border: 2px solid #fff
+}
+
+#prontaEntrega:hover {
+    transition: .3s;
+    /*background-color: #14d360*/
+    border: 2px solid #fff
 }
 
 div.dropdownLv2:hover,
