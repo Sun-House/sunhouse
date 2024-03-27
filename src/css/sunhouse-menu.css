@@ -162,20 +162,13 @@ ul.list-contentCat {
 #prontaEntrega {
     /*background-color: #18b858;*/
     background-color: #FFDA00;
-    color: #F90041;
+    color: #F90041 !important;
     border: 2px solid #FFDA00
 }
 
-#lancamentos:hover {
-    transition: .3s;
-    /* Old Tema - background-color: #ff950b */
-    /*background-color: #F90041 */
-    border: 2px solid #fff
-}
-
+#lancamentos:hover,
 #prontaEntrega:hover {
     transition: .3s;
-    /*background-color: #14d360*/
     border: 2px solid #fff
 }
 

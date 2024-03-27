@@ -573,3 +573,8 @@ body.institucional>.content a {
     }
 }
 /* Menu Mobile */
+
+#lancamentos:hover,
+#prontaEntrega:hover {
+    border: 2px solid #0d1117 !important
+}
