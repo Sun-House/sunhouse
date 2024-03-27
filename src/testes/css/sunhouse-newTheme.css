@@ -81,11 +81,11 @@ a.caretMain:after {
     border-top: 4px solid #F90041 !important;
 }
 
-.campanhaDestaque {
+/*.campanhaDestaque {
     all: unset;
     color: #f90041 !important;
     font-weight: 600 !important;
-}
+}*/
 
 .dropdown:hover .dropbtn #departLink {
     color: #f90041;

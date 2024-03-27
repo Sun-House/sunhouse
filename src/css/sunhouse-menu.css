@@ -259,15 +259,36 @@ a.caretMain:after {
     display: none !important
 }
 
+/*.campanhaDestaque:hover {
+    opacity: .9
+}*/
+
 .campanhaDestaque {
-    font-weight: 600;
+    /*all: unset;*/
     /* Old Tema - color: #e77925 !important; */
-    color: #F90041 !important;
-    display: flex
+    font-weight: 600;
+    color: #F90041;
+    /*display: flex;*/
+    display: inline-block;
+    position: relative
 }
 
-.campanhaDestaque:hover {
-    opacity: .9
+.campanhaDestaque::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F90041;
+    transform-origin: bottom center;
+    transition: transform 0.2s ease-out
+}
+
+.campanhaDestaque:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center
 }
 
 /* Botao Black Friday */
