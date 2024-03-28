@@ -2482,10 +2482,10 @@ Ajuste Insta - Migrar para todos os templates */
     color: #444 !important;
 }
 
-#smarthint-search-sort {
+/*#smarthint-search-sort { - 
     left: 20px !important;
     top: 10px !important;
-}
+}*/
 
 .produto .breadcrumb {
     margin-left: 0px !important;
