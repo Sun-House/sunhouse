@@ -200,6 +200,12 @@
     top: 0 !important
 }
 
+@media screen and (min-width: 1200px) {
+    .login-block #login__dropdown:hover {
+        margin-top: -8px
+    }
+}
+
 #login__dropdown-content {
     background-color: #ffda00;
     border-radius: 30px;
