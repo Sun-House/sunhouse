@@ -2079,6 +2079,7 @@ th.name-field::after {
 /* Ajustes BS */
 .produto #backToTop span p {
     margin-bottom: unset;
+    font-weight: 400 !important
 }
 
 .produto div.breadcrumb_bs ul li div.bread-crumb ul li:first-of-type {
