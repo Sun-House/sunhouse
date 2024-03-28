@@ -2301,6 +2301,22 @@ body.black-friday .catalogIntro {
         margin-top: 15px
     }*/
 }
+
+/* Fix para Dispositivos Moveis mais finos */
+@media screen and (max-width: 401px) {
+    .bannerPrdSlick {
+        height: 75px
+    }
+
+    .header {
+        padding-top: 95px
+    }
+
+    .header__mobilemenu svg {
+        top: 105px
+    }
+}
+/* Fix para Dispositivos Moveis mais finos */
 /* Banner Promo Fixo All Pages */
 
 /* Botao Ver Produto Vitrines -  pode bugar no novo tema rebranding */
