@@ -148,6 +148,12 @@ body div.breadcrumb_bs>ul:nth-child(1)>li:nth-child(1)::after {
     color: #fff !important
 }
 
+@media screen and (max-width: 1199px) {
+    .home .benefits-new {
+        border-color: #000 !important
+    }
+}
+
 #highlightRoundBanners h2.RoundBannerTitle,
 .catalog .smarthint .bestSellers.shelfRecomended h2,
 .home .bestSellers h2 {

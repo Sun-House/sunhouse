@@ -910,7 +910,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         color: #444;
         font-size: 19px;
         font-weight: 500;
-        margin-top: 320px
+        /*margin-top: 320px*/
+        margin-top: 300px
     }
 
     .home #highlightRoundBanners__content .box-banner:hover * {
@@ -924,7 +925,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         right: auto;
         position: absolute;
         padding: 5px;
-        margin-left: -30px
+        margin-left: -30px;
+        transition: .2s
     }
 
     .home #highlightRoundBanners h2.RoundBannerTitle {
