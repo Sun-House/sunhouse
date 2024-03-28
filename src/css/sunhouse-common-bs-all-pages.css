@@ -1845,6 +1845,12 @@ body>.header {
     left: -110px
 }
 
+#backToTop span strong {
+    font-weight: 700;
+    font-size: 27px;
+    display: block
+}
+
 @media screen and (max-width:1199px) {
     .box-banner img {
         width: 100%;
@@ -1856,6 +1862,8 @@ body>.header {
         bottom: 8px;
         right: -1px !important;
         padding-right: 10px;
+        width: auto !important;
+        height: auto !important
     }
 
     #backToTop span {
@@ -1866,6 +1874,13 @@ body>.header {
         padding: 0px 128px 25px 5px;
         transition: 0 !important;
         visibility: hidden !important /* Ajustes Rafa Trigo */
+    }
+
+    #backToTop i {
+        /*font-size: 45px*/
+        font-size: 48px;
+        right: -2px !important;
+        width: auto !important
     }
     
     #backToTop:hover span,
@@ -1878,20 +1893,6 @@ body>.header {
     #backToTop:hover span p,
     #backToTop:hover span strong {
         visibility: hidden !important
-    }
-}
-
-#backToTop span strong {
-    font-weight: 700;
-    font-size: 27px;
-    display: block
-}
-
-@media screen and (max-width:1199px) {
-    #backToTop i {
-        /* font-size: 31px; */
-        /* font-size: 40px; */
-        font-size: 45px
     }
 }
 
