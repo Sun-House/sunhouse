@@ -44,7 +44,8 @@ div.backgroundFix {
 .shelfProduct__price,
 .topbar__content *,
 .busca .breadcrumb>ul:nth-child(2)>li:nth-child(1)::after,
-.busca .breadcrumb_bs>ul:nth-child(2)>li:nth-child(1)::after {
+.busca .breadcrumb_bs>ul:nth-child(2)>li:nth-child(1)::after,
+#container-productInfos-mobile h2.accordion-header button::after {
     color: #fff !important
 }
 
