@@ -42,19 +42,19 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     border-radius: 0 30px 30px 0 !important;
 }
 
-.header__cart {
+/*.header__cart {
     transition: .3s;
-}
+}*/
 
-.header__cart:hover {
+/*.header__cart:hover {
     scale: 1.07;
     transition: .3s;
-}
+}*/
 
-.header__cart-items {
+/*.header__cart-items {
     background-color: #FFDA00 !important;
     color: #F90041 !important;
-}
+}*/
 
 /*#lancamentos,
 #prontaEntrega {
