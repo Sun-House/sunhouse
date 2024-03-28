@@ -30,7 +30,8 @@ div.backgroundFix {
 .smarthint .bought-together .result h3,
 .topbar__content *,
 .productMontagem__info i,
-#container-productInfos-mobile h2.accordion-header button {
+#container-productInfos-mobile h2.accordion-header button,
+#container-productInfos-mobile h2.accordion-header button::after {
     color: #fff !important
 }
 
