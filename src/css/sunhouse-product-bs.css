@@ -1900,7 +1900,9 @@ th.name-field::after {
     }
 
     .produto .productContent__images-dimensions--rating {
-        width: 100% !important
+        width: 100% !important;
+        min-height: unset !important;
+        height: 95px !important
     }
 }
 

@@ -28,7 +28,9 @@ div.backgroundFix {
 .produto .productContent__infos-freight .freight-values>table>tbody>tr>td,
 .shelfProduct__price,
 .smarthint .bought-together .result h3,
-.topbar__content * {
+.topbar__content *,
+.productMontagem__info i,
+#container-productInfos-mobile h2.accordion-header button {
     color: #fff !important
 }
 
