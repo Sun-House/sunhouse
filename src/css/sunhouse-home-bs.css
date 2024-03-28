@@ -576,7 +576,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     width: 100%;
     background: #eceff1;
     margin-top: 24px;
-    /*padding-bottom: 40px*/
+    margin-bottom: 24px /* Ajuste para novo modelo de Bloco Destaques 2024 */
 }
 
 @media screen and (max-width:1199px) {
@@ -1105,3 +1105,22 @@ Estilo Banner Mobile */
     }
 }
 /* Bloco video Institucional Video */
+
+/* Bloco Destaques */
+#highlights__content_destaques {
+    padding: 35px
+}
+
+#highlights__content_destaques a img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px
+}
+
+@media screen and (max-width: 1199px){
+    .home .highlights,
+    #highlights__content_destaques {
+        display: none
+    }
+}
+/* Bloco Destaques */
