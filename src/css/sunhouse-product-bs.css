@@ -2225,7 +2225,8 @@ Ajuste Insta - Migrar para todos os templates */
     }
 
     #productInfos-accordion .accordion-button:not(.collapsed) {
-        color: #F90041 !important;
+        /*color: #F90041 !important;*/
+        color: #000;
         background-color: #FFDA0030 !important;
         box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #FFDA00 !important
     }
