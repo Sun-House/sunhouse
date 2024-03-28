@@ -74,12 +74,19 @@ fieldset.busca>input {
 }
 
 #button-back svg *,
-.campanhaDestaque,
 body.especial>div.breadcrumb>ul>li:nth-child(3)>a,
 body.especial>div.breadcrumb_bs>ul>li:nth-child(3)>a,
 div.dropdown:hover .dropbtn #departLink {
     /*color: #e77925 !important - sh old colors*/
     color: #F90041 !important
+}
+
+.campanhaDestaque {
+    color: #FFDA00 !important
+}
+
+.campanhaDestaque::after {
+    background-color: #FFDA00 !important
 }
 
 #infoHarder,

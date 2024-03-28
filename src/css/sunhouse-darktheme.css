@@ -99,7 +99,6 @@ fieldset.busca>input {
 }
 
 #button-back svg *,
-.campanhaDestaque,
 body.colecao-fixa>div.breadcrumb>ul>li:nth-child(2)>a,
 body.especial>div.breadcrumb>ul>li:nth-child(3)>a,
 body.colecao-fixa>div.breadcrumb_bs>ul>li:nth-child(2)>a,
@@ -107,6 +106,14 @@ body.especial>div.breadcrumb_bs>ul>li:nth-child(3)>a,
 div.dropdown:hover .dropbtn #departLink {
     /*color: #e77925 !important - sh old colors*/
     color: #F90041 !important
+}
+
+.campanhaDestaque {
+    color: #FFDA00 !important
+}
+
+.campanhaDestaque::after {
+    background-color: #FFDA00 !important
 }
 
 /*#smarthint-search-header,*/
