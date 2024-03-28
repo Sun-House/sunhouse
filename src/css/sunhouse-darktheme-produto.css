@@ -30,9 +30,12 @@ div.backgroundFix {
 .smarthint .bought-together .result h3,
 .topbar__content *,
 .productMontagem__info i,
-#container-productInfos-mobile h2.accordion-header button,
-#container-productInfos-mobile h2.accordion-header button::after {
+#container-productInfos-mobile h2.accordion-header button {
     color: #fff !important
+}
+
+#container-productInfos-mobile h2.accordion-header button::after {
+    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(102%) contrast(105%)
 }
 
 .productInfos hr {
