@@ -411,8 +411,22 @@ body.institucional>.content a {
 .card,
 .accordion-button,
 .accordion-body,
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed),
+.institucional .modal-content,
+.institucional .modal-header,
+.institucional .modal-body,
+.institucional .modal-footer {
     background-color: #333 !important
+}
+
+.institucional .modal-header,
+.institucional .modal-body,
+.institucional .modal-footer {
+    border-color: #0d1117
+}
+
+.institucional .btn-close {
+    filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(100%) contrast(1105%)
 }
 
 .accordion-item:last-child .accordion-body {
