@@ -87,7 +87,7 @@ a.caretMain:after {
     font-weight: 600 !important;
 }*/
 
-.dropdown:hover .dropbtn #departLink {
+/*.dropdown:hover .dropbtn #departLink {
     color: #f90041;
     transition: .3s;
 }
@@ -95,7 +95,7 @@ a.caretMain:after {
 .dropdown:hover .dropbtn #departLink {
     color: #f90041 !important;
     transition: .3s !important;
-}
+}*/
 
 /*.breadcrumb_bs ul li:first-child a:hover {
     color: #F90041;
