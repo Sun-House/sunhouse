@@ -30,14 +30,16 @@
     transform: translatex(-50%)
 }
 
-.login-block #login__dropdown {
+.login-block #login__dropdown,
+.login-block #login__goLogin {
     position: absolute !important;
     top: 0 !important;
     transition: .2s
 }
 
 @media screen and (min-width: 1200px) {
-    .login-block #login__dropdown:hover {
+    .login-block #login__dropdown:hover,
+    .login-block #login__goLogin:hover {
         margin-top: -8px;
         transition: .2s
     }
