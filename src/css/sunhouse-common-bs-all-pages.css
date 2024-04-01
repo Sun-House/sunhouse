@@ -2503,9 +2503,10 @@ Modelo com preco 10x */
 }
 
 .shelfProduct__wrap .shelfProduct__price {
-    display: flex !important;
+    /*display: flex !important;*/
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 .shelfProduct__wrap .outStock {
