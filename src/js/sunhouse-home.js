@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 $(document).ready(function () {
     if (window.innerWidth < 1200) {
@@ -9,20 +9,6 @@ $(document).ready(function () {
             pauseOnHover: false
         });
 
-        // Slick das categorias em destaque - desativado e usando
-        // carrosel nativo html e css
-        //$(".highlightBanners__content").slick({
-            //slidesToShow: 2,
-            //slidesToScroll: 1,
-            //infinite: true,
-            //autoplay: true,
-            //autoplaySpeed: 3800,
-            //arrows: false,
-            //dots: true
-        //});
-
-        // Aqui ficava o slick antigo das prateleiras nativas Vtex
-
         $(".highlights__content-slide").slick({
             dots: true,
             arrows: false,
@@ -30,24 +16,24 @@ $(document).ready(function () {
         });
 
         // Valida e cria novas prateleiras SmartHint
-        setTimeout(function () {
+        //setTimeout(function () {
             //var prateleira = $('.slick-it');
-            var prateleiraSM = $('.shelf.n12colunas');
+            //var prateleiraSM = $('.shelf.n12colunas');
             
-            if (prateleiraSM.hasClass('slick-initialized')) {
-                prateleiraSM.slick('unslick');
-            }
+            //if (prateleiraSM.hasClass('slick-initialized')) {
+                //prateleiraSM.slick('unslick');
+            //}
             
-            prateleiraSM.slick({
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                dots: true,
-                arrows: true,
+            //prateleiraSM.slick({
+                //slidesToShow: 2,
+                //slidesToScroll: 2,
+                //dots: true,
+                //arrows: true,
                 //prevArrow: "<i id='prev_arrow__custom' class='fa-solid fa-circle-chevron-left arrow-custom'></i>",
                 //nextArrow: "<i id='next_arrow__custom' class='fa-solid fa-circle-chevron-right arrow-custom'></i>",
-                autoplay: false
-            }), console.log('teste 1 SM: realizado');
-        }, 3000);
+                //autoplay: false
+            //}), console.log('teste 1 SM: realizado');
+        //}, 3000);
     } else {
         $(".highlight").slick({
             dots: true,
@@ -62,6 +48,7 @@ $(document).ready(function () {
             autoplay: false
         });
 
+        // SmartHint ??
         //$(".bestSellers .shelf ul, .shelfNews .shelf ul").slick({
             //slidesToShow: 4,
             //slidesToScroll: 4,
