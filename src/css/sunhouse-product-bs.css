@@ -260,12 +260,14 @@ table.group.Escritorio {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    border: 1px solid #e77925;
+    /*border: 1px solid #e77925;*/
+    border: 1px solid #F90041;
     margin: 0 4px
 }
 
 .produto .slick-dots li.slick-active {
-    background: #e77925
+    /*background: #e77925*/
+    background: #F90041
 }
 
 .produto .slick-dots li button {
@@ -1068,7 +1070,8 @@ table.group.Escritorio {
 
 .produto .productContent__infos-comunication strong {
     font-weight: 700;
-    color: #e77925;
+    /*color: #e77925;*/
+    color: #F90041;
     margin-right: 4px
 }
 
@@ -1125,7 +1128,8 @@ table.group.Escritorio {
 
 .produto .productContent__infos-freight--message strong {
     font-weight: 700;
-    color: #e77925
+    /*color: #e77925*/
+    color: #F90041
 }
 
 .produto .productContent__infos-freight .freight-values {
@@ -1876,7 +1880,8 @@ th.name-field::after {
 }
 
 #btnScrollSt {
-    background-color: #e77925;
+    /*background-color: #e77925;*/
+    background-color: #F90041;
     padding: 0px 18px 0px 18px;
     border-radius: 5px 20px 20px 20px;
     color: #fff;

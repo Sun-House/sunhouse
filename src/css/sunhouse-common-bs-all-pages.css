@@ -2625,19 +2625,16 @@ Btn Comprar */
     }
 
     .shelf .arrow-custom {
-        position: absolute!important;
-        font-size: 50px!important;
-        z-index: 99!important;
-        opacity: .5!important;
-        top: 15%!important;
-    }
-    
-    .shelf #prev_arrow__custom {
-        left: -10!important;
+        position: absolute !important;
+        font-size: 50px !important;
+        z-index: 99 !important;
+        opacity: .5 !important;
+        /*top: 15% !important;*/
+        top: 47.5% !important
     }
     
     .shelf #next_arrow__custom {
-        right: 0 !important;
+        right: 0 !important
     }
 }
 /* Ajustes de Vitrines */
