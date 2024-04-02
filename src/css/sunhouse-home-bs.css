@@ -339,6 +339,10 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     .home .benefits-new li:last-child {
         min-width: 260px !important
     }
+
+    .home .benefits-new .benefits-round-content #benefits__desc-number {
+        padding-right: 4px !important
+    }
 }
 
 .home .areas,
