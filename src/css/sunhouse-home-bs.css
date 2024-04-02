@@ -520,7 +520,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 .home .bestSellers h2 {
     font-size: 30px;
     font-weight: 900;
-    color: #4c3767;
+    /*color: #4c3767;*/
+    color: #000;
     padding-bottom: 32px
 }
 
@@ -563,7 +564,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 .home .shelfNews h2 {
     font-size: 30px;
     font-weight: 900;
-    color: #4c3767;
+    /*color: #4c3767;*/
+    color: #000;
     padding-bottom: 32px
 }
 
@@ -593,7 +595,7 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     margin-top: 16px
 }
 
-.home .highlights>a {
+.home .highlights > a {
     display: table;
     width: 420px;
     height: 48px;
@@ -602,7 +604,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     color: #fff;
     text-align: center;
     line-height: 48px;
-    background: #4c3767;
+    /*background: #4c3767;*/
+    background: #000;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -632,8 +635,10 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     cursor: pointer;
     border: none;
     background: 0 0;
-    border-top: 6px solid #4c3767;
-    border-right: 6px solid #4c3767;
+    /*border-top: 6px solid #4c3767;
+    border-right: 6px solid #4c3767;*/
+    border-top: 6px solid #000;
+    border-right: 6px solid #000;
     z-index: 2
 }
 
@@ -653,10 +658,11 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     transform: rotate(45deg)
 }
 
-.home .highlights__content>h2 {
+.home .highlights__content > h2 {
     font-size: 30px;
     font-weight: 900;
-    color: #4c3767;
+    /*color: #4c3767;*/
+    color: #000;
     padding: 32px 0
 }
 
@@ -693,8 +699,10 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
     margin: 32px auto 0;
     font-size: 17px;
     font-weight: 600;
-    color: #4c3767;
-    border: 1px solid #4c3767;
+    /*color: #4c3767;
+    border: 1px solid #4c3767;*/
+    color: #000;
+    border: 1px solid #000;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px
@@ -785,7 +793,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 .home .highlights.architects .highlights__content-highlight--logo p,
 .home .highlights.designers .highlights__content-highlight--logo p {
     font-size: 28px;
-    color: #4c3767;
+    /*color: #4c3767;*/
+    color: #000;
     text-align: center;
     padding-top: 8px
 }
@@ -942,7 +951,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         padding-left: 192px;
         font-size: 30px;
         font-weight: 900;
-        color: #4c3767
+        /*color: #4c3767*/
+        color: #000
     }
 }
 
@@ -959,7 +969,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         padding-left: 0 !important;
         font-size: 30px;
         font-weight: 900;
-        color: #4c3767
+        /*color: #4c3767*/
+        color: #000
     }
 
     .home #highlightRoundBanners__content .box-banner {

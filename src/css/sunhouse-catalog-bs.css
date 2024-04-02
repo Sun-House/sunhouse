@@ -1433,3 +1433,9 @@ Ajuste temporario */
 /* Precisa ajustar esse para o arquivo Common */
 
 /* Ajuste novo display */
+
+.catalog hr#break_line {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto
+}
