@@ -1130,3 +1130,8 @@ Estilo Banner Mobile */
     }
 }
 /* Bloco Destaques */
+
+.home hr#break_line {
+    width: 85%;
+    margin: 0 auto
+}
