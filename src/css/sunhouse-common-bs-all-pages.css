@@ -448,6 +448,15 @@ table {
 
 /* Mobile */
 @media screen and (max-width:1199px) {
+    #topbar-mobile-fixed {
+        /*display: block;*/
+        display: none !important; /* A principio nao precisa - esta dentro do menu mobile */
+        position: absolute;
+        top: 80px;
+        right: 95px;
+        padding: 2px 10px 10px 5px
+    }
+
     #topbar-mobile {
         display: block;
         position: absolute;
