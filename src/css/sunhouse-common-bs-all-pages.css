@@ -227,7 +227,8 @@ table {
     align-items: flex-end;
     justify-content: space-around;
     /* scale: .9; - removido para modelo Header 2024 */
-    scale: 1;
+    scale: .9; /* Remover apos migrar de Header 2023 para Header 2024 */
+    /*scale: 1;*/ /* Ativar apos migrar de Header 2023 para Header 2024 */
     transition: all .3s cubic-bezier(.12,1.8,1,1.13) !important
 }
 
