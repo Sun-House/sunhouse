@@ -1135,9 +1135,17 @@ Estilo Banner Mobile */
 }
 
 @media screen and (max-width: 1199px){
-    .home .highlights,
+    /*.home .highlights,
     #highlights__content_destaques {
         display: none
+    }*/
+
+    #highlights__content_destaques a img {
+        width: 100%
+    }
+
+    #highlights__content_destaques {
+        padding: 20px
     }
 }
 /* Bloco Destaques */
