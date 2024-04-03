@@ -232,7 +232,10 @@ table {
 }
 
 .topbar__content .bi.bi-info-circle-fill {
-    float: left
+    /*float: left*/
+    color: #666 !important;
+    margin-right: 1px;
+    margin-left: 5px
 }
 
 .topbar__content > div {
@@ -407,12 +410,12 @@ table {
 
 /* Estilo para Header Fixado */
 .stickyTopbar {
-    height: 38px !important;
+    /*height: 38px !important;*/
     top: 0;
     position: fixed;
     /*z-index: 999;*/
     z-index: 1072;
-    border-bottom: none !important;
+    /*border-bottom: none !important;*/
     visibility: visible !important
 }
 /* Estilo para Header Fixado */
@@ -448,9 +451,15 @@ table {
     #topbar-mobile {
         display: block;
         position: absolute;
-        right: 50px;
-        top: 85px;
-        color: #fff !important
+        /*right: 50px;
+        top: 85px;*/
+        top: 80px;
+        right: 15px;
+        color: #fff !important;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 1px 1px 10px #939393;
+        padding: 2px 10px 10px 5px
     }
     
     /* Pode fazer falta
