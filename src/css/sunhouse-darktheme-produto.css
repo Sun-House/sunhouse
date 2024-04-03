@@ -57,6 +57,10 @@ div.backgroundFix {
     color: #00bf3b !important
 }
 
+.topbar {
+    border-color: #333 !important
+}
+
 .dropdown-content a:hover,
 div.dropdownLv2:hover,
 div.dropdownLv3:hover {

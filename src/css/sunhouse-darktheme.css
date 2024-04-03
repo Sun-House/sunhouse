@@ -81,6 +81,10 @@ div.backgroundFix {
     color: #00bf3b !important
 }
 
+.topbar {
+    border-color: #333 !important
+}
+
 .bannerPrd,
 .dropdown-content a:hover,
 div.dropdownLv2:hover,
