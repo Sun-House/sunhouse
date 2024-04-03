@@ -219,6 +219,7 @@ table {
     /* display: table; - removido para modelo Header 2024 */
     /*width: 100%;*/
     width: unset !important;
+    margin-top: 1px;
     margin-left: auto;
     /* margin-right: 8px; - removido para modelo Header 2024 */
     max-width: 1186px;
@@ -227,7 +228,7 @@ table {
     align-items: flex-end;
     justify-content: space-around;
     /* scale: .9; - removido para modelo Header 2024 */
-    scale: .9; /* Remover apos migrar de Header 2023 para Header 2024 */
+    scale: .95; /* Remover apos migrar de Header 2023 para Header 2024 */
     /*scale: 1;*/ /* Ativar apos migrar de Header 2023 para Header 2024 */
     transition: all .3s cubic-bezier(.12,1.8,1,1.13) !important
 }
@@ -251,6 +252,11 @@ table {
     color: #444;
     line-height: 42px;
     margin-right: 32px
+}
+
+.topbar__content div #wrap-topbar a {
+    display: flex;
+    flex-direction: row
 }
 
 .topbar__content > div a i,
