@@ -372,6 +372,12 @@ table {
     align-items: center
 }
 
+/* Em testes */
+#checkbox:checked + .checkbox-label {
+    background-color: #FFDA00
+}
+/* Em testes */
+
 .fa-moon {
     color: #f1c40f
 }
