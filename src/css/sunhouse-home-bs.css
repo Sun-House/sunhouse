@@ -1134,6 +1134,10 @@ Estilo Banner Mobile */
     border-radius: 40px
 }
 
+#highlights__content_destaques a img#destaque_mob {
+    display: none !important
+}
+
 @media screen and (max-width: 1199px){
     /*.home .highlights,
     #highlights__content_destaques {
@@ -1142,6 +1146,10 @@ Estilo Banner Mobile */
 
     #highlights__content_destaques a img {
         width: 100%
+    }
+
+    #highlights__content_destaques a img#destaque_desk {
+        display: none !important
     }
 
     #highlights__content_destaques {
