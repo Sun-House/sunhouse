@@ -310,10 +310,8 @@ body.institucional>.content a {
         background-color: #0d1117 !important
     }
 
-    .topbar__content,
     .topbar-mobile-fix {
         background-color: #0d1117 !important
-        /*border-bottom: 1px solid #333 !important*/
     }
 
     .header__menu {
