@@ -404,9 +404,9 @@ table {
     background-image: url(https://sunhouse.vteximg.com.br/arquivos/Light_Icon_1.png)
 }
 
-#topbar-mobile { /* Oculta esse topbar no desktop ja que é de mobile */
+/*#topbar-mobile {
     display: none
-}
+}*/
 
 /* Estilo para Header Fixado */
 .stickyTopbar {
@@ -448,14 +448,15 @@ table {
 
 /* Mobile */
 @media screen and (max-width:1199px) {
+    /* A principio nao precisa desse elemento - esta dentro do menu mobile */
     #topbar-mobile-fixed {
         /*display: block;*/
-        display: none !important; /* A principio nao precisa - esta dentro do menu mobile */
         position: absolute;
         top: 80px;
         right: 95px;
         padding: 2px 10px 10px 5px
     }
+    /* A principio nao precisa desse elemento */
 
     #topbar-mobile {
         display: block;
@@ -466,7 +467,7 @@ table {
         right: 15px;
         color: #fff !important;
         background: #fff;
-        border-radius: 30px;
+        border-radius: 30px 10px 30px 30px;
         box-shadow: 1px 1px 10px #939393;
         padding: 2px 10px 10px 5px
     }
