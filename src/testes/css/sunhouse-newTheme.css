@@ -131,9 +131,9 @@ a.caretMain:after {
     color: #ffda00 !important;
 }
 
-.checkbox-label {
+/*.checkbox-label { - migrado para o arquivo common-bs-all-pages
     background-color: #f90041;
-}
+}*/
 
 .shelfProduct:hover .shelfProduct__image img {
     border: 4px solid #ffda00;
@@ -404,11 +404,11 @@ a.caretMain:after {
 /* Home */
 
 /* Header Fixed - Mobile */
-@media screen and (max-width: 1199px) {
+/*@media screen and (max-width: 1199px) { - migrado para o arquivo common-bs-all-pages
     .topbar__content {
         background-color: unset !important;
     }
-}
+}*/
 /* Header Fixed - Mobile */
 
 /* Catalog Filter Bar e Catalog Options - Erros no Mobile, desativei*/
