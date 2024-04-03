@@ -20,7 +20,11 @@ function criarCookie() {
         document.getElementById("blackSH").removeAttribute("disabled");
 
         // Muda botao para modo Noite
-        document.getElementById('ball').classList.add('cat');
+        //document.getElementById('ball').classList.add('cat');
+
+        document.querySelectorAll('.ball').forEach(function(element) {
+            element.classList.add('cat');
+        });
     }
 }
 
@@ -41,7 +45,11 @@ function removerCookie() {
         document.getElementById("blackSH").setAttribute("disabled", true);
 
         // Muda botao para modo Dia
-        document.getElementById('ball').classList.remove('cat');
+        //document.getElementById('ball').classList.remove('cat');
+
+        document.querySelectorAll('.ball').forEach(function(element) {
+            element.classList.remove('cat');
+        });
     }
 }
 
@@ -49,10 +57,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Checa se o cookie existe e mantem tema
     if (document.cookie.indexOf("cDark=darktheme") !== -1) {
         document.getElementById("blackSH").removeAttribute("disabled");
+        
         //document.getElementById('ball').classList.add('cat');
-        document.querySelectorAll('.ball').classList.add('cat');
+        //document.querySelectorAll('.ball').classList.add('cat');
         //document.getElementById("checkbox").checked = true;
-        document.querySelectorAll(".checkbox").checked = true;
+        //document.querySelectorAll(".checkbox").checked = true;
+
+        document.querySelectorAll('.ball').forEach(function(element) {
+            element.classList.add('cat');
+        });
+
+        document.querySelectorAll(".checkbox").forEach(function(checkbox) {
+            checkbox.checked = true;
+        });
     }
     
     // Checa se o cookie existe e caso nao existe, volta o tema original
