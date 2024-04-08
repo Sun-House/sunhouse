@@ -1152,6 +1152,10 @@ Estilo Banner Mobile */
         display: none !important
     }
 
+    #highlights__content_destaques a img#destaque_mob {
+        display: block !important
+    }
+
     #highlights__content_destaques {
         padding: 20px
     }
