@@ -192,11 +192,26 @@ div#smarthint-search-result {
         scale: 1.1
     }
 
-    .header__logo {
-        /*margin-right: 10px !important;*/
+    /* Mover para arquivo common-bs-all-pages */
+    /*.header__logo {
+        / margin-right: 10px !important; /
         margin-right: 15px !important;
         min-width: 90px;
+    }*/
+
+    .header__logo {
+        min-width: 90px;
+        width: 100%;
+        position: absolute
     }
+    
+    .header__logo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 83%
+    }
+    /* Mover para arquivo common-bs-all-pages */
 
     .header__search {
         margin-right: 60px !important
