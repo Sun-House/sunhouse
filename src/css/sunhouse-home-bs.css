@@ -1134,9 +1134,9 @@ Estilo Banner Mobile */
     border-radius: 40px
 }
 
-#highlights__content_destaques a img#destaque_mob {
+/*#highlights__content_destaques a img#destaque_mob {
     display: none !important
-}
+}*/
 
 @media screen and (max-width: 1199px){
     /*.home .highlights,
