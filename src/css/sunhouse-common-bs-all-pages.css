@@ -373,6 +373,10 @@ table {
 }
 
 /* Em testes */
+#checkbox:not-checked+.checkbox-label {
+    background-color: #F90041
+}
+
 #checkbox:checked + .checkbox-label {
     background-color: #FFDA00
 }
