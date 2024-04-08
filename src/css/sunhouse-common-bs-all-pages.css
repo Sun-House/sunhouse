@@ -1018,8 +1018,10 @@ body>.header {
     cursor: pointer;
     border: none;
     background: 0 0;
-    border-top: 6px solid #4c3767;
-    border-right: 6px solid #4c3767;
+    /*border-top: 6px solid #4c3767;
+    border-right: 6px solid #4c3767;*/
+    border-top: 6px solid #000;
+    border-right: 6px solid #000;
     z-index: 2
 }
 /* Ajustes de .slick-arrow no final do arquivo */
@@ -1613,7 +1615,8 @@ body>.header {
 .opinions > h2 {
     font-size: 30px;
     font-weight: 900;
-    color: #4c3767;
+    /*color: #4c3767;*/
+    color: #000;
     /*padding: 72px 0 32px - pode dar algum bug */
     padding-top: 32px !important;
 }
