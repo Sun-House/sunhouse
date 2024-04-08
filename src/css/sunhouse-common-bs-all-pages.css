@@ -567,10 +567,10 @@ body>.header {
     .header__mobilemenu {
         display: block;
         float: left;
-        background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png);
+        /*background-image: url(https://sunhouse.vteximg.com.br/arquivos/sprite.png); - Ja nao esta em uso mais */
         background-position: -126px -196px;
-        width: 27px;
-        height: 19px;
+        /*width: 27px;
+        height: 19px;*/
         margin: 28px 24px 0 0
     }
 
