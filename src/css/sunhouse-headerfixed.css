@@ -147,15 +147,18 @@ div#smarthint-search-result {
 
 @media screen and (max-width:1199px) {
     #smarthint-search-mostsearchedterms.active {
-        min-width: 384px;
+        /*min-width: 384px;
         max-width: 80%;
-        width: auto
+        width: auto*/
+        min-width: 250px;
+        width: calc(90% - 32px)
     }
 
-    /*.stickyHeaderSearch #smarthint-search-mostsearchedterms.active {
-        top: 74px !important;
-        left: 15px
-    }*/
+    .stickyHeaderSearch #smarthint-search-mostsearchedterms.active {
+        width: calc(90% - 65px) !important;
+        top: 90px !important;
+        left: 50px
+    }
 }
 
 @media screen and (max-width:1199px) {
