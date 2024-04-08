@@ -209,6 +209,16 @@ div#smarthint-search-result {
         align-items: center;
         width: 83%
     }
+
+    .wrapHeader .header__mobilemenu svg {
+        position: relative;
+        top: -18px;
+        z-index: 99
+    }
+
+    .wrapHeaderFixed .header__mobilemenu {
+        width: 30px
+    }
     /* Mover para arquivo common-bs-all-pages */
 
     .header__search {
@@ -250,12 +260,12 @@ div#smarthint-search-result {
         height: 20px !important
     }
 
-    .header__mobilemenu svg {
+    /*.header__mobilemenu svg {
         position: absolute;
-        /*width: 30px;*/
+        / width: 30px; /
         width: 35px;
         top: 85px;
-    }
+    }*/
 
     .header__menu.active {
         visibility: visible !important;
