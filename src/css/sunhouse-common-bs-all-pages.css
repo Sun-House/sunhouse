@@ -372,7 +372,7 @@ table {
     align-items: center
 }
 
-/* Em testes */
+/* Em testes - Nao deu certo
 #checkbox:not-checked+.checkbox-label {
     background-color: #F90041
 }
@@ -380,7 +380,7 @@ table {
 #checkbox:checked + .checkbox-label {
     background-color: #FFDA00
 }
-/* Em testes */
+Em testes */
 
 .fa-moon {
     color: #f1c40f
