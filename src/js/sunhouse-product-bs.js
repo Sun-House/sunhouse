@@ -449,3 +449,12 @@ $(document).ready(function () {
 $(window).resize(function () {
     moveOutrasCores();
 });
+
+// Exibe texto de outras cores de acordo com presenca da Shelf Outras Cores
+$(document).ready(function () {
+    var shelfOutrasCores = document.querySelector(".outras-cores");
+
+    if (shelfOutrasCores) {
+        document.getElementById("title_outras-cores").style.display = "block";
+    }
+});
