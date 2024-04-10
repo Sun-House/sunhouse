@@ -611,3 +611,24 @@ body.institucional>.content a {
 #prontaEntrega:hover {
     border: 2px solid #0d1117 !important
 }
+
+/* Pagina de Conta do Usuario */
+.vtex-account__orders-list .myo-order-card {
+    border-color: #212529
+}
+
+.vtex-account__orders-list .myo-order-header {
+    background-color: #212529;
+    border-color: #212529
+}
+
+.vtex-account__orders-list .cf.pa5.pa6-l.bg-base.bt-0 {
+    background-color: #464646
+}
+
+.vtex-account__orders-list .myo-collapsed-order {
+    border-radius: 50px;
+    background-color: #212529;
+    border-color: #212529
+}
+/* Pagina de Conta do Usuario */

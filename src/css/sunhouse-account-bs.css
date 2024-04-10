@@ -233,6 +233,17 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
     align-items: center
 }
 
+/* Area de Autenticacao - Senhas - Pode nao funcionar pois essa area gera um iframe com outro html */
+.account .flex.items-center.justify-center.h-100.pv1.ttn.ph2,
+.account button.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-small.t-action--small.bg-transparent.b--transparent.c-action-primary.hover-b--transparent.hover-bg-action-secondary.hover-b--action-secondary.pointer {
+    color: #F90041 !important
+}
+
+.account section.ba.bw1.br2.t-body.flex.flex-column.b--muted-4.vtex-my-authentication-1-x-box_container.vtex_my-authentication_box_container {
+    border-radius: 30px !important
+}
+/* Area de Autenticacao - Senhas */
+
 @media screen and (max-width: 1199px) {
     .account #page-content .content {
         /*margin-right: 30px;
