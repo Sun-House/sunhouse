@@ -626,6 +626,10 @@ body.institucional>.content a {
     background-color: #464646
 }
 
+.vtex-account__orders-list .myo-details-btn {
+    background-color: #f90041 !important
+}
+
 .vtex-account__orders-list .myo-collapsed-order {
     border-radius: 50px;
     background-color: #212529;
