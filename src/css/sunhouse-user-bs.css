@@ -94,5 +94,9 @@
     #desk-login__loggedIn {
         display: none
     }
+
+    #login__dropdown-content hr {
+        margin: 0 auto !important
+    }
 }
 /* Estilo do Login Widget */
