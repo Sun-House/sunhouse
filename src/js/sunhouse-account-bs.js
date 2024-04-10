@@ -44,7 +44,6 @@ function userLoginArea() {
                 });
             }
 
-            // Reposiciona Elementos
             function moveLoggedBlock() {
                 if ($(window).width() <= 1199) {
                     $("#login__loggedIn").appendTo("#mobile-login__loggedIn");

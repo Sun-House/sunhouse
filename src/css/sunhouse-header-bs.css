@@ -83,8 +83,12 @@
         padding-top: 75px;
     }
 
-    .stickyHeader {
+    /*.stickyHeader {
         padding-top: 15px !important;
+    }*/
+
+    .stickyHeader {
+        padding-top: 8px !important
     }
 
     .header__cart {
@@ -150,7 +154,9 @@
     }
     
     .wrapHeaderFixed .stickyHeader .stickyHeaderCart {
-        right: 10px !important;
+        /*right: 10px !important;*/
+        right: 8px !important;
+        top: 28px !important
     }
 
     .header__cart-items {

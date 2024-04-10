@@ -90,5 +90,9 @@
     .stickyHeader .login-block {
         display: none !important
     }
+
+    #desk-login__loggedIn {
+        display: none
+    }
 }
 /* Estilo do Login Widget */
