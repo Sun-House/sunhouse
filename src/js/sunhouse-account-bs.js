@@ -28,21 +28,14 @@ function userLoginArea() {
     
                 // Seleciona todos os elementos com a Classe "logged-in" e executa o popover em cada um
                 $('.logged-in').each(function() {
-                    //$(this).popover('show');
+                    if ($(window).width() >= 1200) {
+                        $(this).popover('show');
                     
-                    //var popElements = $(this);
-                    //setTimeout(function() {
-                        //popElements.popover('hide');
-                    //}, 3000);
-
-                    var popElement = $(this);
-
-                    popElement.popover('show');
-                    
-                    setTimeout(function() {
-                        popElement.popover('hide');
-                        popElement.popover('destroy');
-                    }, 3000);
+                        var popElements = $(this);
+                        setTimeout(function() {
+                            popElements.popover('hide');
+                        }, 3000);
+                    };
 
                     document.querySelector('#wrap-topbar a').style.setProperty('display', 'none', 'important');
 
