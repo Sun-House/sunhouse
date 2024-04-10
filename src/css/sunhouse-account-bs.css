@@ -262,6 +262,10 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
         margin-top: unset !important
     }
 
+    .account .vtex-account__user-greeting {
+        margin-right: 6px
+    }
+
     .account .vtex-account__address-list {
         padding: 0
     }
@@ -273,7 +277,7 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
     .account .vtex-account__user-info div:not([class]) {
         display: flex;
         flex-direction: row;
-        align-items: center
+        align-items: flex-start
     }
     
     .account .vtex-account__user-info div:not([class]) * {
