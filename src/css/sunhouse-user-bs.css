@@ -66,6 +66,10 @@
     background-color: #fff
 }
 
+#desk-login__loggedIn {
+    all: unset
+}
+
 @media screen and (max-width: 1199px) {
     .login-block {
         position: absolute;
