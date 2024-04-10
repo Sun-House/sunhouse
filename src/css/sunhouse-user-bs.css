@@ -79,7 +79,13 @@
     
     .login-block i {
         font-size: 55px
-    }    
+    }
+
+    #mobile-login__loggedIn .login-block i {
+        padding-top: 2px;
+        font-size: 50px !important;
+        color: #fff
+    }
     
     .stickyHeader .login-block {
         display: none !important
