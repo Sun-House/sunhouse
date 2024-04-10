@@ -235,7 +235,41 @@ a.myo-cancel-btn.c-danger.hover-c-danger.pa0.bg-transparent.bn.cf.db.link.tl.w5.
 
 @media screen and (max-width: 1199px) {
     .account #page-content .content {
-        margin-right: 30px;
-        margin-left: 30px
+        /*margin-right: 30px;
+        margin-left: 30px;*/
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 10px
+    }
+
+    .account .vtex-account {
+        min-height: 500px;
+        height: auto
+    }
+
+    .account .vtex-pageHeader__container {
+        margin-top: unset !important
+    }
+
+    .account .vtex-account__address-list {
+        padding: 0
+    }
+
+    .account .vtex-account__address-list main {
+        padding: 20px !important
+    }
+
+    .account .vtex-account__user-info div:not([class]) {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+    
+    .account .vtex-account__user-info div:not([class]) * {
+        font-size: 20px !important
+    }
+    
+    .account .vtex-account__menu .vtex-account__menu-links a {
+        font-size: 20px;
     }
 }
