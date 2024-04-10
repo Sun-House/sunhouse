@@ -44,7 +44,7 @@ function userLoginArea() {
                         popElement.popover('destroy');
                     }, 3000);
 
-                    document.querySelector('#wrap-topbar a').style.display = 'none';
+                    document.querySelector('#wrap-topbar a').style.setProperty('display', 'none', 'important');
 
                     moveLoggedBlock();
                 });
