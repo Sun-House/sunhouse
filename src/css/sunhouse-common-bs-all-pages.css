@@ -2898,7 +2898,8 @@ Btn Comprar */
 
 .custom-popover .popover-body {
     --bs-popover-body-color: #000 !important;
-    color: #000 !important
+    /*color: #000 !important*/
+    color: #000
 }
 
 /* Aplicar custom para tooltips - validar se sera necessario
