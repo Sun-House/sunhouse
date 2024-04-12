@@ -33,7 +33,7 @@ function userLoginArea() {
                     
                         var popElements = $(this);
                         setTimeout(function() {
-                            popElements.popover('hide');
+                            //popElements.popover('hide');
                             popElements.popover('dispose');
                         }, 3000);
                     };
@@ -48,7 +48,6 @@ function userLoginArea() {
                 if ($(window).width() <= 1199) {
                     $("#login__loggedIn").appendTo("#mobile-login__loggedIn");
                 } else {
-                    // Volte o conteúdo para o local original se a largura for maior que 1199px
                     $("#login__loggedIn").appendTo("#desk-login__loggedIn");
                 }
             }
