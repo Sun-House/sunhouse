@@ -98,5 +98,9 @@
     #login__dropdown-content hr {
         margin: 0 auto !important
     }
+
+    #login__notLogged {
+        display: none
+    }
 }
 /* Estilo do Login Widget */
