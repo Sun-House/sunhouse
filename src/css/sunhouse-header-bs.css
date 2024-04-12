@@ -3,35 +3,35 @@
     /*z-index: 999;*/
     z-index: 1072;
     top: 2.5px !important;
-    min-width: 150px !important;
+    /*min-width: 150px !important;*/
     width: auto !important;
     right: 12% !important;
     border-radius: 100px !important;
-    height: 35px !important;
+    height: 35px !important
 }
 
 #topbar-mobile {
-    display: none;
+    display: none
 }
 
 .topbar__content {
-    width: unset !important;
+    width: unset !important
 }
 
 #wrap-topbar {
     display: flex;
     align-items: center;
-    margin-top: 3px;
+    margin-top: 3px
 }
 
 .topbar__content div a {
     line-height: unset !important;
     padding-right: 15px !important;
-    padding-left: 5px !important;
+    padding-left: 5px !important
 }
 
 .topbar__content>div a .icon-user {
-    padding-left: 5px !important;
+    padding-left: 5px !important
 }
 
 /*.login-text {
@@ -40,7 +40,7 @@
 
 .fullbody {
     position: unset !important;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 .header {
@@ -51,7 +51,7 @@
 /* Style para Desk Screen */
 @media screen and (min-width: 1200px) {
     .topbar {
-        position: fixed !important;
+        position: fixed !important
     }
 }
 /* Style para Desk Screen */
@@ -64,14 +64,14 @@
         box-shadow: 1px 1px 10px #939393;
         padding: 2px 10px 10px 1px;
         background: #fff;
-        border-radius: 30px;
+        border-radius: 30px
     }
 
     .topbar-mobile-fix-new {
         top: 112px;
         right: 20px !important;
         padding: 2px 10px 10px 1px;
-        border-radius: 30px;
+        border-radius: 30px
     }
 
     .header__menu.active {
@@ -80,7 +80,7 @@
 
     .header {
         /*padding-top: 75px !important;*/
-        padding-top: 75px;
+        padding-top: 75px
     }
 
     /*.stickyHeader {
@@ -93,39 +93,39 @@
 
     .header__cart {
         margin-top: 5px !important;
-        margin-right: 5px !important;
+        margin-right: 5px !important
     }
 
     #topbar-desk, #stopbar {
-        display: none;
+        display: none
     }
 
     #topbar-mobile {
         /*all: unset !important;*/
         display: block;
         position: absolute;
-        right: 100px;
+        right: 100px
     }
 
     .topbar__content {
         position: unset !important;
         border-bottom: unset !important;
-        margin-right: unset;
+        margin-right: unset
     }
     
     .topbar__content div {
         padding: 0 !important;
         width: unset !important;
-        float: unset !important;
+        float: unset !important
     }
 
     .topbar__content div a {
-        display: flex !important;
+        display: flex !important
     }
     
     #wrap-topbar {
         margin-top: 5px !important;
-        margin-left: 5px !important;
+        margin-left: 5px !important
     }
 }
 /* Style para Mobile Screen */
@@ -138,7 +138,7 @@
     /*color: #666;*/
     /*color: #777;*/
     color: #777777e0;
-    margin-top: -5px;
+    margin-top: -5px
 }
 
 /*.header__cart {
