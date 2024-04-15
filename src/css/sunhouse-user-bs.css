@@ -70,6 +70,12 @@
     all: unset
 }
 
+.header__cart:hover i,
+.login-block:hover i {
+    color: #FFDA00;
+    filter: drop-shadow(1px 1px 1px #9c9c9c)
+}
+
 @media screen and (max-width: 1199px) {
     .login-block {
         position: absolute;
