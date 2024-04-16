@@ -33,8 +33,8 @@ function userLoginArea() {
                     
                         var popElements = $(this);
                         setTimeout(function() {
-                            //popElements.popover('hide');
-                            popElements.popover('dispose');
+                            popElements.popover('hide');
+                            //popElements.popover('dispose');
                         }, 3000);
                     };
 
