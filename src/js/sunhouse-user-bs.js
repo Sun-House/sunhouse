@@ -60,6 +60,9 @@ function userLoginArea() {
                 moveLoggedBlock();
             });
         }
+        
+        // Pode dar ruim
+        $(".popover").remove();
     }, 2000);
 }
 
