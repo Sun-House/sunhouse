@@ -2594,7 +2594,8 @@ Ajustes pre rebranding */
 /* Wishlist Heart Button */
 .produto #wishlist_add {
     position: relative;
-    left: -50px
+    /*left: -50px; - Para quando a funcao de Share Icons for apresentada */
+    right: 150px
 }
 
 .produto #wishlist_add .fa-heart-o,
