@@ -2590,3 +2590,36 @@ Ajustes pre rebranding */
     }
 }
 /* Ajuste CRO Rafa */
+
+/* Wishlist Heart Button */
+.produto #wishlist_add {
+    position: relative;
+    left: -50px
+}
+
+.produto #wishlist_add .fa-heart-o,
+.produto #wishlist_add .fa-heart {
+    font-size: 32px;
+    font-weight: bolder;
+    transition: .3s
+}
+
+.produto #wishlist_add .fa-heart-o {
+    color: #444
+}
+
+.produto #wishlist_add .fa-heart-o:hover {
+    color: #F90041
+}
+
+.produto #wishlist_add .fa-heart-o:hover + .fa-heart {
+    display: block !important
+}
+
+.produto #wishlist_add .fa-heart {
+    position: absolute;
+    top: 0;
+    color: #F90041;
+    z-index: -1
+}
+/* Wishlist Heart Button */
