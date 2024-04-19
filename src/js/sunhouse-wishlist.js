@@ -16,10 +16,29 @@ function clicarSeWishlistExiste() {
             // Informar ao usuario que foi adicionado a wishlist - usar Toastr
             alert("Produto adicionado a wishlist");
         } else {
-            console.log("Aqui sera criado o bloco onde cria a wishlist com o nome wishlist");
+            //console.log("Aqui sera criado o bloco onde cria a wishlist com o nome wishlist");
 
-            // Informar ao usuario que foi criada a lista com nome wishlist e adicionado o produto - usar Toastr
-            alert("Criada a wishlist e produto adicionado");
+            // Aqui sera realizada a operação de criação da Wishlist para novos usuarios
+            // e sera adicionado o produto em que o usuario tiver clicado para adicionar
+            // todas listas terao o nome de 'wishlist' e serao criadas apenas nesse momento
+            // codigo abaixo - EM TESTES:
+
+
+            // Encontrar o input com o título "nome da lista" e definir seu valor como "wishlist"
+            var inputNomeLista = document.querySelector('input[title="nome da lista"]');
+            if (inputNomeLista) {
+                inputNomeLista.value = "wishlist";
+
+                // Encontrar e clicar no elemento <a> com a classe ".glis-submit-new"
+                var submitNewLink = document.querySelector('.glis-submit-new');
+                if (submitNewLink) {
+                    submitNewLink.click();
+                } else {
+                    console.log("Elemento '.glis-submit-new' não encontrado.");
+                }
+            } else {
+                console.log("Elemento input com título 'nome da lista' não encontrado.");
+            }
         }
 
         // Informar ao usuário que a operação foi concluída - usar Toastr
