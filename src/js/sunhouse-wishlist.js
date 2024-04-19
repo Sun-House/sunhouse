@@ -14,7 +14,8 @@ function clicarSeWishlistExiste() {
             wishlistLink.click();
 
             // Informar ao usuario que foi adicionado a wishlist - usar Toastr
-            alert("Produto adicionado a wishlist");
+            // Apenas para o processo de implementacao
+            console.log(" Bloco if executado com sucesso - ja tinha a lista e produto foi adicionado");
         } else {
             //console.log("Aqui sera criado o bloco onde cria a wishlist com o nome wishlist");
 
@@ -33,6 +34,9 @@ function clicarSeWishlistExiste() {
                 var submitNewLink = document.querySelector('.glis-submit-new');
                 if (submitNewLink) {
                     submitNewLink.click();
+                    
+                    // Apenas para o processo de implementacao
+                    console.log(" Bloco else executado com sucesso - nao tinha a lista, ela foi criada e produto foi adicionado");
                 } else {
                     console.log("Elemento '.glis-submit-new' não encontrado.");
                 }
