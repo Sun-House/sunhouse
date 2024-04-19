@@ -14,12 +14,12 @@ function clicarSeWishlistExiste() {
             wishlistLink.click();
 
             // Informar ao usuario que foi adicionado a wishlist - usar Toastr
-            //alert("Verificação concluída!");
+            alert("Produto adicionado a wishlist");
         } else {
             console.log("Aqui sera criado o bloco onde cria a wishlist com o nome wishlist");
 
             // Informar ao usuario que foi criada a lista com nome wishlist e adicionado o produto - usar Toastr
-            //alert("Verificação concluída!");
+            alert("Criada a wishlist e produto adicionado");
         }
 
         // Informar ao usuário que a operação foi concluída - usar Toastr
