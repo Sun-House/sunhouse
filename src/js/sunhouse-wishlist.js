@@ -24,7 +24,24 @@ function clicarSeWishlistExiste() {
 
         // Informar ao usuário que a operação foi concluída - usar Toastr
         //alert("Verificação concluída!");
-    }, 4000);
+        toastr.options = {
+            closeButton: !0,
+            debug: !1,
+            newestOnTop: !1,
+            progressBar: !0,
+            positionClass: "toast-top-center",
+            preventDuplicates: !1,
+            onclick: null,
+            showDuration: "500",
+            hideDuration: "1000",
+            timeOut: "5000",
+            extendedTimeOut: "0",
+            showEasing: "swing",
+            hideEasing: "linear",
+            showMethod: "fadeIn",
+            hideMethod: "fadeOut"
+        }, toastr.success("Produto adicionado à sua Lista de Desejos!")
+    }, 1000);
 }
 
 // Função para executar quando o botão for clicado
