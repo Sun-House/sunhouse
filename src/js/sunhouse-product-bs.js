@@ -362,6 +362,19 @@ $(document).ready(function () {
         if (itemComDados && itemComDados.productBrandName && !(itemComDados.productBrandName == "Sun House")) {
             var brandName = itemComDados.productBrandName;
             var formattedBrandName = removerAcentos(brandName).replace(/\s+/g, '-');
+            
+            // Verifica se a variável formattedBrandName é igual a "OR-Design"
+            if (formattedBrandName === "OR-Design") {
+                // Seleciona o elemento <a> pelo seletor de classe
+                var buyButton = document.querySelector('.buy-button-ref');
+                // Obtém o valor atual do atributo href
+                var hrefValue = buyButton.getAttribute('href');
+                // Substitui "sc=1" por "sc=2" no valor do atributo href
+                var newHrefValue = hrefValue.replace('sc=1', 'sc=2');
+                // Define o novo valor do atributo href
+                buyButton.setAttribute('href', newHrefValue);
+                console.log('Href da OR:', newHrefValue);
+            }
 
             brandLinked.href = "https://www.sunhouse.com.br/lojista/" + formattedBrandName;
             brandLinked.textContent = brandName;
@@ -373,19 +386,6 @@ $(document).ready(function () {
             brandLinked.style.display = 'none';
         }
     }, 2000);
-//});
-
-// APAGAR ESSE SE O BLOCO ABAIXO DO MESMO FUNCIONAR
-//$(document).ready(function () {
-    //function moverOldFichaMS() {
-        //var oldFicha = document.getElementById('prodEspec');
-        //var newFichaBlock = document.getElementById('colDois');
-    
-        // Move o elemento para dentro do contêiner
-        //newFichaBlock.appendChild(oldFicha);
-    //}
-    
-    //moverOldFichaMS();
 //});
 
 // Move Ficha Tecnica antiga do MS para novo display de Ficha Tecnica
