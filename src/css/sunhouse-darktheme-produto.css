@@ -569,3 +569,10 @@ body.produto {
 #prontaEntrega:hover {
     border: 2px solid #0d1117 !important
 }
+
+/* Bloco Avaliacoes TrustVox */
+.ts-product-reviews-list-item .ts-block-two .ts-reply[data-v-2da2c25e],
+.ts-questions-list-item[data-v-2d2b06c4] {
+    background: #444 !important
+}
+/* Bloco Avaliacoes TrustVox */
