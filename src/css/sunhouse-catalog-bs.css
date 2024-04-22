@@ -1382,18 +1382,18 @@ Ajuste temporario */
 /* Ajuste Margens da Pagina Mobile - ele que da erro no mobile -- EM TESTES */
 @media screen and (max-width: 1199px) {
     body {
-        overflow-x: hidden !important;
+        overflow-x: hidden !important
     }
 
-    .wrapHeader,
+    /*.wrapHeader,
     .wrapHeaderFixed {
         overflow-x: hidden !important;
-    }
+    } - dando erros com a funcionalidade de termos mais buscados da smarthint */
 
     /*.wrapHeader *,
     .wrapHeaderFixed * {
         overflow-x: hidden !important;
-    }*/
+    } - dando erros com a funcionalidade de termos mais buscados da smarthint */
 }
 
 @media screen and (max-width: 1199px) {
