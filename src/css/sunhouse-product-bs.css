@@ -1973,7 +1973,8 @@ th.name-field::after {
     display: block !important;
     /*color: #fe0000;
     background-color: #ffc10770 !important;*/
-    color: #F0C808;
+    /*color: #F0C808;*/
+    color: #ff0000;
     background-color: #ffc1074a !important;
     border-radius: 20px;
     padding: 20px
