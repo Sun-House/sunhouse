@@ -63,6 +63,14 @@
     transition: .3s
 }
 
+/* Fix para desktop */
+@media screen and (min-width: 1200px) {
+    .stickyHeader {
+        padding-top: 0 !important
+    }
+}
+/* Fix para desktop */
+
 .stickyHeaderCart {
     margin-top: 5px !important
 }
