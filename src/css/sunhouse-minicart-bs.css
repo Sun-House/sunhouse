@@ -1,11 +1,9 @@
-/*
 .offcanvas.show {
-    z-index: 1099 !important
-}*/
+    z-index: 999999 !important
+}
 
-/* Ajustes visuais no modulo nativo Minicart V2 */
 .vtexsc-productList thead {
-    height: 38px;
+    height: 38px
 }
 
 .vtexsc-productList tr {
@@ -88,7 +86,8 @@ th.cartSkuActions {
 
 .cartFooter {
     position: fixed;
-    width: 270px;
+    /*width: 270px;*/
+    width: 370px;
     bottom: 20px;
     background-color: #eee;
     text-align: center;
@@ -102,7 +101,7 @@ th.cartSkuActions {
     /*margin-bottom: 25px;*/
     margin-bottom: 15px;
     background-color: #fff;
-    /*max-width: 65%;*/
+    max-width: 70%;
     width: auto;
     margin-right: auto;
     margin-left: auto;
@@ -131,4 +130,3 @@ th.cartSkuActions {
     border-radius: 30px !important;
     transition: .2s
 }
-/* Ajustes visuais no modulo nativo Minicart V2 */
