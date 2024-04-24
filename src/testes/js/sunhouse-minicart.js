@@ -1,5 +1,7 @@
 // Em processo de DEV
 
+// Funciona mas quando o cart atualiza dinamicamente precisa rodar
+// de novo esse script de forma a atualizar o carrinho tambem
 document.addEventListener('DOMContentLoaded', function () {
     // Selecione o elemento que deseja mover
     var nativeMiniCartv2 = document.querySelector('.v2-vtexsc-cart .vtexsc-center');
