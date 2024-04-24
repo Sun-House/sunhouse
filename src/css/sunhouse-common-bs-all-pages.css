@@ -2408,8 +2408,9 @@ body.black-friday .catalogIntro {
     height: 41px;
     overflow: hidden;
     /*z-index: 998;
-    z-index: 999;*/
-    z-index: 1071;
+    z-index: 999;
+    z-index: 1071;*/
+    z-index: 1001;
     border-bottom: 1px solid #ddd;
 }
 
