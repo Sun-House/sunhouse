@@ -2,6 +2,13 @@
     z-index: 999999 !important
 }
 
+.offcanvas-header h5 {
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 600;
+    color: #F90041
+}
+
 .vtexsc-productList thead {
     height: 38px
 }
@@ -21,13 +28,17 @@
     scale: 1.02
 }
 
+.vtexsc-productList tbody tr:hover .cartSkuImage img {
+    border-color: #F90041
+}
+
 /*.cartSkuImage {
     vertical-align: top
 }*/
 
 .cartSkuImage img {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 15px;
     padding: 5px;
     margin-right: 10px
@@ -46,6 +57,13 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical
+}
+
+.cartSkuName h4 a {
+    color: #000;
+    margin-right: 10px;
+    display: block;
+    font-size: 14px
 }
 
 /*.cartSkuName,*/
