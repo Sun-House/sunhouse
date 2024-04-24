@@ -106,7 +106,8 @@ th.cartSkuActions {
 .cartFooter {
     position: fixed;
     /*width: 270px;*/
-    width: 370px;
+    /*width: 370px;*/
+    width: 360px;
     bottom: 20px;
     background-color: #eee;
     text-align: center;
@@ -149,3 +150,17 @@ th.cartSkuActions {
     border-radius: 30px !important;
     transition: .2s
 }
+
+
+/* Precisa criar essa div dentro do body do sidebar */
+
+/*#minicart_bg_fix {
+    background-color: #fff;
+    width: 380px;
+    height: 160px;
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    font-size: 0;
+    margin-left: -10px;
+}*/
