@@ -1,7 +1,3 @@
-/*.offcanvas.show {
-    z-index: 999999 !important
-}*/
-
 #mini-cart__sidebar.show {
     z-index: 999999 !important
 }
@@ -16,6 +12,20 @@
 #mini-cart__sidebar .offcanvas-body {
     border-bottom: 160px solid #fff
 }
+
+/* Promo Highlight */
+#minicart__promo-cta {
+    border-radius: 30px;
+    padding: 10px 20px
+}
+
+#minicart__promo-cta #minicart__promo-cta_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px
+}
+/* Promo Highlight */
 
 .vtexsc-productList thead {
     height: 38px;
@@ -160,18 +170,6 @@ th.cartSkuActions {
     border-radius: 30px !important;
     transition: .2s
 }
-
-/* Elemento removido
-#mini-cart__bg-fix {
-    background-color: #fff;
-    width: 380px;
-    height: 160px;
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-    font-size: 0;
-    margin-left: -10px
-}*/
 
 #mini-cart__empty-cart img {
     display: block;
