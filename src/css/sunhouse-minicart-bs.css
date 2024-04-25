@@ -1,3 +1,10 @@
+/* Fix para nao ocultar MiniCart */
+.v2-vtexsc-cart.vtexsc-cart.mouseActivated.preLoaded {
+    overflow: visible !important;
+    display: inherit !important
+}
+/* Fix para nao ocultar MiniCart */
+
 #mini-cart__sidebar.show {
     z-index: 999999 !important
 }

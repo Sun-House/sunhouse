@@ -1,6 +1,6 @@
 // Em processo de DEV
 
-// V2:
+// V2 - Nao sendo utilizado esse bloco:
 document.addEventListener('DOMContentLoaded', function () {
     // Função para copiar o elemento
     function copyElement() {
@@ -54,3 +54,4 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("Elemento pai não encontrado.");
     }
 });
+// V2 - Nao sendo utilizado esse bloco:
