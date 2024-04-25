@@ -1,12 +1,20 @@
-.offcanvas.show {
+/*.offcanvas.show {
+    z-index: 999999 !important
+}*/
+
+#mini-cart__sidebar.show {
     z-index: 999999 !important
 }
 
-.offcanvas-header h5 {
+#mini-cart__sidebar .offcanvas-header h5 {
     margin: 0 auto;
     font-size: 28px;
     font-weight: 600;
     color: #F90041
+}
+
+#mini-cart__sidebar .offcanvas-body {
+    border-bottom: 160px solid #fff
 }
 
 .vtexsc-productList thead {
@@ -112,7 +120,8 @@ th.cartSkuActions {
     background-color: #eee;
     text-align: center;
     padding: 15px;
-    border-radius: 30px
+    border-radius: 30px;
+    z-index: 11
 }
 
 .cartTotal {
@@ -151,13 +160,14 @@ th.cartSkuActions {
     transition: .2s
 }
 
+/* Elemento removido
 #mini-cart__bg-fix {
     background-color: #fff;
     width: 380px;
     height: 160px;
     position: fixed;
     bottom: 0;
-    z-index: 12;
+    z-index: 10;
     font-size: 0;
     margin-left: -10px
-}
+}*/
