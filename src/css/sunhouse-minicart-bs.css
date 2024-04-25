@@ -18,7 +18,8 @@
 }
 
 .vtexsc-productList thead {
-    height: 38px
+    height: 38px;
+    display: none
 }
 
 .vtexsc-productList tr {
