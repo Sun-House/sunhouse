@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("Elemento a ser copiado:", nativeMiniCartv2);
 
         // Selecione o elemento de destino
-        var sideBarMiniCart = document.getElementById('mini-cart__block');
+        //var sideBarMiniCart = document.getElementById('mini-cart__block');
+        var sideBarMiniCart = document.getElementById('mini-cart__block-test');
         console.log("Elemento de destino:", sideBarMiniCart);
 
         // Verifique se o elemento de origem e o elemento de destino existem
