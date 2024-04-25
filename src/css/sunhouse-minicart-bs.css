@@ -5,9 +5,9 @@
 }
 /* Fix para nao ocultar MiniCart */
 
-#mini-cart__sidebar.show {
+/*#mini-cart__sidebar.show {
     z-index: 999999 !important
-}
+}*/
 
 #mini-cart__sidebar .offcanvas-header {
     border-bottom: 1px solid #ddd
@@ -50,7 +50,8 @@
 /* Promo Highlight */
 #minicart__promo-cta {
     border-radius: 30px;
-    padding: 10px 20px
+    padding: 10px 20px;
+    margin-bottom: 12px
 }
 
 #minicart__promo-cta #minicart__promo-cta_wrap {
@@ -58,6 +59,13 @@
     flex-direction: row;
     align-items: center;
     border-radius: 30px
+}
+
+#minicart__promo-cta i:first-child {
+    position: relative;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-right: 10px
 }
 /* Promo Highlight */
 
@@ -128,10 +136,6 @@
     display: none
 }
 
-.cartSkuRemove a {
-    display: block !important
-}
-
 th.cartSkuActions {
     display: none
 }
@@ -141,7 +145,13 @@ th.cartSkuActions {
 }
 
 .cartSkuRemove {
+    display: block;
+    margin-top: -5px;
     font-size: 0
+}
+
+.cartSkuRemove a {
+    display: block !important
 }
 
 .cartSkuRemove a::after {
