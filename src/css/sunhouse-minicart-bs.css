@@ -77,8 +77,8 @@
 
 .vtexsc-productList tbody tr:hover {
     background-color: #eee;
-    border-radius: 20px;
-    scale: 1.02
+    border-radius: 20px
+    /*scale: 1.02 - Pensar se mantem o nao */
 }
 
 .vtexsc-productList tbody tr:hover .cartSkuImage img {
