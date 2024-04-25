@@ -17,6 +17,29 @@
     border-bottom: 160px solid #fff
 }
 
+/* Loading Gif*/
+#mini-cart__sidebar #minicart__loading_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.9;
+    z-index: 1099 !important
+}
+
+#mini-cart__sidebar #minicart__loading_bg img {
+    position: relative;
+    top: 30%;
+    bottom: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 390px;
+    width: auto
+}
+/* Loading Gif*/
+
 /* Promo Highlight */
 #minicart__promo-cta {
     border-radius: 30px;
