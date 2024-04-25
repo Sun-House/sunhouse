@@ -151,10 +151,7 @@ th.cartSkuActions {
     transition: .2s
 }
 
-
-/* Precisa criar essa div dentro do body do sidebar */
-
-/*#minicart_bg_fix {
+#mini-cart__bg-fix {
     background-color: #fff;
     width: 380px;
     height: 160px;
@@ -162,5 +159,5 @@ th.cartSkuActions {
     bottom: 0;
     z-index: 12;
     font-size: 0;
-    margin-left: -10px;
-}*/
+    margin-left: -10px
+}
