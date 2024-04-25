@@ -2,6 +2,10 @@
     z-index: 999999 !important
 }
 
+#mini-cart__sidebar .offcanvas-header {
+    border-bottom: 1px solid #ddd
+}
+
 #mini-cart__sidebar .offcanvas-header h5 {
     margin: 0 auto;
     font-size: 28px;
@@ -171,6 +175,7 @@ th.cartSkuActions {
     transition: .2s
 }
 
+/* Carrinho Vazio */
 #mini-cart__empty-cart img {
     display: block;
     margin: 30px auto;
@@ -184,3 +189,4 @@ th.cartSkuActions {
     font-size: 24px;
     color: #F90041
 }
+/* Carrinho Vazio */
