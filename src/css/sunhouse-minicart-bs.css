@@ -93,12 +93,12 @@
 }
 /* Promo Highlight */
 
-.vtexsc-productList thead {
+#mini-cart__sidebar .vtexsc-productList thead {
     height: 38px;
     display: none
 }
 
-.vtexsc-productList tr {
+#mini-cart__sidebar .vtexsc-productList tr {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -107,21 +107,21 @@
     padding-right: 10px
 }
 
-.vtexsc-productList tbody tr:hover {
+#mini-cart__sidebar .vtexsc-productList tbody tr:hover {
     background-color: #eee;
     border-radius: 20px
     /*scale: 1.02 - Pensar se mantem o nao */
 }
 
-.vtexsc-productList tbody tr:hover .cartSkuImage img {
+#mini-cart__sidebar .vtexsc-productList tbody tr:hover .cartSkuImage img {
     border-color: #F90041
 }
 
-/*.cartSkuImage {
+/*#mini-cart__sidebar .cartSkuImage {
     vertical-align: top
 }*/
 
-.cartSkuImage img {
+#mini-cart__sidebar .cartSkuImage img {
     background-color: #fff;
     border: 2px solid #ccc;
     border-radius: 15px;
@@ -129,11 +129,11 @@
     margin-right: 10px
 }
 
-/*.cartSkuName {
+/*#mini-cart__sidebar .cartSkuName {
     border-bottom: 1px solid #ccc;
 }*/
 
-.cartSkuName h4 {
+#mini-cart__sidebar .cartSkuName h4 {
     all: unset;
     font-size: 15px;
     margin-top: 15px;
@@ -144,7 +144,7 @@
     -webkit-box-orient: vertical
 }
 
-.cartSkuName h4 a {
+#mini-cart__sidebar .cartSkuName h4 a {
     color: #000;
     margin-right: 10px;
     display: block;
@@ -152,33 +152,33 @@
 }
 
 /*.cartSkuName,*/
-.cartSkuPrice {
+#mini-cart__sidebar .cartSkuPrice {
     text-align: center
 }
 
-.cartSkuQuantity {
+#mini-cart__sidebar .cartSkuQuantity {
     display: none
 }
 
-th.cartSkuActions {
+#mini-cart__sidebar th.cartSkuActions {
     display: none
 }
 
-.cartSkuPrice .cartSkuUnitPrice {
+#mini-cart__sidebar .cartSkuPrice .cartSkuUnitPrice {
     white-space: nowrap
 }
 
-.cartSkuRemove {
+#mini-cart__sidebar .cartSkuRemove {
     display: block;
     margin-top: -5px;
     font-size: 0
 }
 
-.cartSkuRemove a {
+#mini-cart__sidebar .cartSkuRemove a {
     display: block !important
 }
 
-.cartSkuRemove a::after {
+#mini-cart__sidebar .cartSkuRemove a::after {
     content: "\f00d";
     font-family: "fontawesome";
     font-size: 24px;
@@ -186,11 +186,11 @@ th.cartSkuActions {
     margin-left: 15px
 }
 
-.cartSkuRemove a:hover::after {
+#mini-cart__sidebar .cartSkuRemove a:hover::after {
     color: #FF0000
 }
 
-.cartFooter {
+#mini-cart__sidebar .cartFooter {
     position: fixed;
     /*width: 270px;*/
     /*width: 370px;*/
@@ -203,7 +203,7 @@ th.cartSkuActions {
     z-index: 11
 }
 
-.cartTotal {
+#mini-cart__sidebar .cartTotal {
     font-weight: bold;
     font-size: 18px;
     /*margin-bottom: 25px;*/
@@ -217,18 +217,18 @@ th.cartSkuActions {
     border-radius: 30px
 }
 
-.cartTotal .vtexsc-totalCart::before {
+#mini-cart__sidebar .cartTotal .vtexsc-totalCart::before {
     content: ":";
     margin-right: 8px
 }
 
-.cartCheckout {
+#mini-cart__sidebar .cartCheckout {
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.cartCheckout::after {
+#mini-cart__sidebar .cartCheckout::after {
     content: "Finalizar Compra";
     background-color: #00b100;
     text-transform: uppercase;
@@ -257,11 +257,19 @@ th.cartSkuActions {
 
 /* Mobile */
 @media screen and (max-width: 1199px) {
-    /* Teste Full Width Mobile */
     #mini-cart__sidebar {
-        --bs-offcanvas-width: 101% !important;
-        width: 101%
+        /*--bs-offcanvas-width: 101% !important;
+        width: 101%*/
+        --bs-offcanvas-width: 100% !important;
+        width: 100%
     }
-    /* Teste Full Width Mobile */
+
+    #minicart__promo-cta-btn {
+        display: block !important
+    }
+
+    #mini-cart__sidebar .cartFooter {
+        width: 380px !important
+    }
 }
 /* Mobile */
