@@ -67,6 +67,28 @@
     white-space: nowrap;
     margin-right: 10px
 }
+
+#minicart__promo-cta p {
+    margin-bottom: unset !important
+}
+
+#minicart__promo-cta i#info {
+    margin-left: 10px
+}
+
+#minicart__promo-cta-btn {
+    display: block;
+    margin: 10px 0 auto;
+    text-align: center;
+    background-color: #f90041;
+    padding: 5px 18px 5px 18px;
+    color: #fff;
+    border-radius: 30px !important    
+}
+
+#minicart__promo-cta_wrap:hover + #minicart__promo-cta-btn {
+    display: block !important
+}
 /* Promo Highlight */
 
 .vtexsc-productList thead {
