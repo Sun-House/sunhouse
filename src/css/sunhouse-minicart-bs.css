@@ -80,13 +80,15 @@
     display: block;
     margin: 10px 0 auto;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 16px !important;
     background-color: #f90041;
-    padding: 5px 18px 5px 18px;
     color: #fff;
-    border-radius: 30px !important    
+    padding: 5px 18px 5px 18px;    
+    border-radius: 30px !important
 }
 
-#minicart__promo-cta_wrap:hover + #minicart__promo-cta-btn {
+#minicart__promo-cta:hover #minicart__promo-cta-btn {
     display: block !important
 }
 /* Promo Highlight */
@@ -252,3 +254,14 @@ th.cartSkuActions {
     color: #F90041
 }
 /* Carrinho Vazio */
+
+/* Mobile */
+@media screen and (max-width: 1199px) {
+    /* Teste Full Width Mobile */
+    #mini-cart__sidebar {
+        --bs-offcanvas-width: 101% !important;
+        width: 101%
+    }
+    /* Teste Full Width Mobile */
+}
+/* Mobile */
