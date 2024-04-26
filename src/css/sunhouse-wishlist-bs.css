@@ -1,3 +1,9 @@
+/* Oculta vitrine bugada SmartHint - temporario */
+.wishlist #smarthint-last-viewed {
+    display: none
+}
+/* Oculta vitrine bugada SmartHint */
+
 .wishlist .header__menu {
     padding-bottom: 40px;
     border-bottom: 1px solid #ddd
@@ -12,6 +18,31 @@
 .giftlistproductsv2 thead {
     display: none
 }*/
+
+.wishlist .giftlistproductsv2 thead th:first-child::before {
+    content: "Imagem"
+}
+
+.wishlist .giftlistproductsv2 thead th:nth-child(3),
+.wishlist .giftlistproductsv2 thead th:nth-child(4) {
+    display: none
+}
+
+.wishlist .giftlistproductsv2 tr {
+    display: inline-flex;
+    width: 100%;
+    padding: 20px !important;
+    border-radius: 30px !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s
+}
+
+.wishlist .giftlistproductsv2 tr:hover {
+    background-color: #fff;
+    transition: .2s
+}
 
 .wishlist .giftlistproductsv2 td {
     padding-right: 8px;
@@ -37,8 +68,31 @@
     display: none
 }
 
-.wishlist .giftlistproductsv2 .price {
+.wishlist .giftlistproductsv2 td.name {
+    min-width: 600px;
+    max-width: 600px
+}
+
+.wishlist .giftlistproductsv2 td.price {
+    min-width: 150px;
+    max-width: 150px;
     white-space: nowrap
+}
+
+.wishlist .giftlistproductsv2 .deletethissku {
+    font-size: 0
+}
+
+.wishlist .giftlistproductsv2 .deletethissku::after {
+    content: "\f00d";
+    font-family: fontawesome;
+    font-size: 24px;
+    color: #666;
+    margin-left: 15px
+}
+
+.wishlist .giftlistproductsv2 .deletethissku:hover::after {
+    color: #FF0000
 }
 
 .wishlist #giftlistremovecheckedskus[disabled="disabled"],
