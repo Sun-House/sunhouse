@@ -2447,12 +2447,12 @@ body.black-friday .catalogIntro {
 
 @media screen and (max-width:1199px) {
     .bannerPrdSlick {
-        /*z-index: 9999 !important;*/
-        height: 61px;
+        z-index: 9999 !important;
+        height: 61px
     }
     
     .bannerPrd {
-        margin-top: 0 !important;
+        margin-top: 0 !important
     }
 
     /*.bannerPrd {

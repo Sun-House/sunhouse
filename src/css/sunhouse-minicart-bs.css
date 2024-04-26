@@ -261,7 +261,8 @@
         /*--bs-offcanvas-width: 101% !important;
         width: 101%*/
         --bs-offcanvas-width: 100% !important;
-        width: 100%
+        width: 100%;
+        margin-top: 58px !important
     }
 
     #minicart__promo-cta-btn {
