@@ -2626,4 +2626,10 @@ Ajustes pre rebranding */
     color: #F90041;
     z-index: -1
 }
+
+@media screen and (max-width: 1199px) {
+    .produto #wishlist_add {
+        right: 35px
+    }
+}
 /* Wishlist Heart Button */

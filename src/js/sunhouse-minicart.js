@@ -1,7 +1,4 @@
-// Em processo de DEV
-
 document.addEventListener('DOMContentLoaded', function () {
-
     function alteraDisplaysMiniCart () {
         // Seleciona o tbody da tabela
         var tbody = document.querySelector('div.portal-minicart-ref div.v2-vtexsc-cart div.vtexsc-center div.vtexsc-wrap table.vtexsc-productList tbody');
@@ -11,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // Verifica se existe pelo menos um elemento tr dentro do tbody
         if (tbody && tbody.querySelectorAll('tr').length > 0) {
             // Se houver pelo menos um tr, faça algo aqui
-            console.log('Pelo menos 1 elemento <tr> encontrado.');
+            //console.log('Pelo menos 1 elemento <tr> encontrado.');
             
             promoBar.style.display = 'block';
             emptyCartSad.style.display = 'none';
         } else {
             // Se não houver nenhum tr, faça algo aqui
-            console.log('Nenhum elemento <tr> encontrado.');
+            //console.log('Nenhum elemento <tr> encontrado.');
             
             promoBar.style.display = 'none';
             emptyCartSad.style.display = 'block';
@@ -27,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Bloco do MutationObserver
     // Ouvinte de evento para detectar alterações na estrutura
     var observer = new MutationObserver(function () {
-        console.log("Alteração detectada na estrutura. Funcoes executadas");
+        //console.log("Alteração detectada na estrutura. Funcoes executadas");
         // Se houver alterações, execute algo abaixo
         alteraDisplaysMiniCart();
     });
@@ -42,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             subtree: true
         });
     } else {
-        console.log("Elemento pai não encontrado.");
+        //console.log("Elemento pai não encontrado.");
     }
     // Bloco do MutationObserver
-    
 });
