@@ -19,7 +19,9 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     padding: 30px 60px !important;
+    border-radius: 20px;
     background-color: #eeeeee6e
 }
 
