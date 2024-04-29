@@ -101,3 +101,14 @@ function addtoCartWishlist(skuId) {
         //behavior: 'smooth'
     //});
 //});
+
+document.addEventListener('click', function (event) {
+    // Verifica se o elemento clicado é o elemento desejado
+    if (event.target.matches('.ko-grid-pageLinks')) {
+        // Executa a ação desejada
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+});
