@@ -1,10 +1,8 @@
 // Cria o botao de Adicionar ao Carrinho
 $(document).ready(function () {
-//document.addEventListener("DOMContentLoaded", function () {
     // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
     var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
     
-
     // Para cada elemento <tr> encontrado - cria botao
     productTrInput.forEach(function (element) {
         // Criar o elemento <button>
@@ -31,14 +29,9 @@ $(document).ready(function () {
         // Adicionar o botão após o elemento <tr>
         element.parentNode.insertBefore(button, element.nextSibling);
     });
-//});
-});
 
-// Atribui o ouvinte de function a cada botao criado
-$(document).ready(function () {
-//document.addEventListener("DOMContentLoaded", function () {
+    // Atribui o ouvinte de function a cada botao criado
     var productTr = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"]');
-
     setTimeout(function () {
         // Para cada elemento <tr> encontrado - aciona botao
         productTr.forEach(function (element) {
@@ -54,10 +47,12 @@ $(document).ready(function () {
             });
         });
     }, 2000);
-//});
 });
-//
 
+//$(document).ready(function () {
+//document.addEventListener("DOMContentLoaded", function () {
+//});
+//});
 
 // Adiciona ao Carrinho v2 - Native Vtex
 function addtoCartWishlist(skuId) {
