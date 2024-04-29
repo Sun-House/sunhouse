@@ -1,5 +1,5 @@
 // Cria o botao de Adicionar ao Carrinho e atribui o ouvinte de function a cada um
-//document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
     var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
     var productTr = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"]');
@@ -45,8 +45,8 @@
                 addtoCartWishlist(skuId);
             });
         });
-    }, 1000);
-//});
+    }, 2000);
+});
 
 // Adiciona ao Carrinho v2 - Native Vtex
 function addtoCartWishlist(skuId) {
