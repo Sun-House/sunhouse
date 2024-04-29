@@ -93,22 +93,22 @@ function addtoCartWishlist(skuId) {
 };
 
 // Rola para o topo apos mudar de pagina de wishlist
-//wishPagination = document.querySelector('.ko-grid-pageLinks');
+wishPagination = document.querySelector('.ko-grid-pageLinks *');
 
-//wishPagination.addEventListener('click', function () {
-    //window.scrollTo({
-        //top: 0,
-        //behavior: 'smooth'
-    //});
-//});
-
-document.addEventListener('click', function (event) {
-    // Verifica se o elemento clicado é o elemento desejado
-    if (event.target.matches('.ko-grid-pageLinks')) {
-        // Executa a ação desejada
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
+wishPagination.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
+
+//document.addEventListener('click', function (event) {
+    // Verifica se o elemento clicado é o elemento desejado
+    //if (event.target.matches('.ko-grid-pageLinks')) {
+        // Executa a ação desejada
+        //window.scrollTo({
+            //top: 0,
+            //behavior: 'smooth'
+        //});
+    //}
+//});
