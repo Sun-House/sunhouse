@@ -93,11 +93,11 @@ function addtoCartWishlist(skuId) {
 };
 
 // Rola para o topo apos mudar de pagina de wishlist
-wishPagination = document.querySelector('.ko-grid-pageLinks');
+//wishPagination = document.querySelector('.ko-grid-pageLinks');
 
-wishPagination.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
+//wishPagination.addEventListener('click', function () {
+    //window.scrollTo({
+        //top: 0,
+        //behavior: 'smooth'
+    //});
+//});
