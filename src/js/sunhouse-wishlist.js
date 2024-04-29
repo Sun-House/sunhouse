@@ -95,4 +95,14 @@ function addtoCartWishlist(skuId) {
             }, toastr.success("Produto adicionado ao carrinho!")
         }))
     }));
-}
+};
+
+// Rola para o topo apos mudar de pagina de wishlist
+wishPagination = document.querySelector('.ko-grid-pageLinks');
+
+wishPagination.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
