@@ -203,3 +203,35 @@
     margin-left: 8px !important
 }
 /* Bloco Lista de Produtos */
+
+/* Paginacao */
+.wishlist .ko-grid-pageLinks {
+    text-align: center
+}
+
+.wishlist .ko-grid-pageLinks span {
+    display: none
+}
+
+.wishlist .ko-grid-pageLinks a {
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    /*min-width: 27px;*/
+    background-color: #e8e8e8;
+    color: #000;
+    padding: 8px;
+    border-radius: 5px;
+    transition: .3s
+}
+
+.wishlist .ko-grid-pageLinks a:hover {
+    background-color: #f9004142
+}
+
+.wishlist .ko-grid-pageLinks a.selected {
+    background-color: #F90041;
+    border: 2px solid #F90041;
+    color: #fff
+}
+/* Paginacao */
