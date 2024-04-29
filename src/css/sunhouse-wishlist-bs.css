@@ -106,7 +106,8 @@
 }
 
 .wishlist .giftlistproductsv2 .purchased,
-.wishlist .giftlistproductsv2 .wished {
+.wishlist .giftlistproductsv2 .wished input,
+.wishlist .giftlistproductsv2 .wished .inputedit {
     display: none
 }
 
