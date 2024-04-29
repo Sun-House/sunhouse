@@ -120,8 +120,11 @@
     min-width: 150px;
     max-width: 150px;
     white-space: nowrap;
-    font-size: 19px;
-    font-weight: 500;
+    /*font-size: 19px;
+    font-weight: 500;*/
+    font-family: "bebas neue";
+    font-size: 28px;
+    font-weight: 600;
     color: #F90041
 }
 
