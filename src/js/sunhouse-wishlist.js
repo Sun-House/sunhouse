@@ -1,5 +1,6 @@
 // Cria o botao de Adicionar ao Carrinho
-$(document).ready(function () {
+//$(document).ready(function () {
+function functionWrap() {
     // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
     var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
     
@@ -47,11 +48,7 @@ $(document).ready(function () {
             });
         });
     }, 2000);
-});
-
-//$(document).ready(function () {
-//document.addEventListener("DOMContentLoaded", function () {
-//});
+}
 //});
 
 // Adiciona ao Carrinho v2 - Native Vtex
