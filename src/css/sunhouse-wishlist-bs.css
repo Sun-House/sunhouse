@@ -9,15 +9,43 @@
     border-bottom: 1px solid #ddd
 }
 
-.wishlist #page_grid {
-    padding: 30px 60px !important
+.wishlist #wrap-button-back {
+    width: 55px;
+    height: 50px
 }
 
-/* Bloco Lista de Produtos */
-/* Remover comentario apos implementacao
-.giftlistproductsv2 thead {
-    display: none
+.wishlist #page_grid {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 60px !important;
+    background-color: #eeeeee6e
+}
+
+.wishlist #page_grid h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+    padding-bottom: 32px
+}
+
+/*
+.wishlist #page_grid,
+.grid #page_grid {
+    background-color: #eee;
+    height: auto;
+    min-height: 100px;
+    width: auto;
+    margin: 0 200px 30px 200px;
+    padding: 30px;
+    border-radius: 30px
 }*/
+
+/* Bloco Lista de Produtos */
+.wishlist .giftlistproductsv2 thead {
+    display: none
+}
 
 .wishlist .giftlistproductsv2 thead th:first-child::before {
     content: "Imagem"
@@ -31,11 +59,15 @@
 .wishlist .giftlistproductsv2 tr {
     display: inline-flex;
     width: 100%;
-    padding: 20px !important;
+    border: 1px solid #eee;
     border-radius: 30px !important;
+    box-shadow: 1px 0px 6px #eee;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 20px !important;
+    margin-bottom: 15px;
+    background-color: #fff;
     transition: .2s
 }
 
