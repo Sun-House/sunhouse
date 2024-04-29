@@ -119,23 +119,40 @@
 .wishlist .giftlistproductsv2 td.price {
     min-width: 150px;
     max-width: 150px;
-    white-space: nowrap
+    white-space: nowrap;
+    font-size: 19px;
+    font-weight: 500;
+    color: #F90041
 }
 
 .wishlist .giftlistproductsv2 .deletethissku {
     font-size: 0
 }
 
-.wishlist .giftlistproductsv2 .deletethissku::after {
+/*.wishlist .giftlistproductsv2 .deletethissku::after {
     content: "\f00d";
     font-family: fontawesome;
     font-size: 24px;
+    color: #666;
+    margin-left: 15px
+}*/
+
+.wishlist .giftlistproductsv2 .deletethissku::after {
+    content: "\F770";
+    font-family: bootstrap-icons !important;
+    font-size: 28px;
     color: #666;
     margin-left: 15px
 }
 
 .wishlist .giftlistproductsv2 .deletethissku:hover::after {
     color: #FF0000
+}
+
+/* Check ao lado do produto e botao de remover produtos em lote - ver se vale a pena manter ou ocultar */
+.wishlist .checkuncheck,
+.wishlist .giftlist-remove-sku {
+    display: none !important
 }
 
 .wishlist #giftlistremovecheckedskus[disabled="disabled"],
@@ -162,6 +179,7 @@
     background-color: #f90041;
     color: #fff
 }
+/* Check ao lado do produto e botao de remover produtos em lote */
 
 .wishlist .urlproduct::after {
     content: "\f1c5";
