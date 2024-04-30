@@ -254,3 +254,31 @@
     color: #fff
 }
 /* Paginacao */
+
+/* Mobile */
+@media screen and (max-width: 1199px) {
+    .wishlist #page_grid {
+        width: auto;
+        padding: 30px 15px !important;
+        border-radius: 00px;
+        background-color: #eeeeee6e
+    }
+
+    .wishlist .giftlistproductsv2 td {
+        padding-right: 0px;
+        padding-left: 0px
+    }
+
+    .wishlist .giftlistproductsv2 td.name {
+        min-width: unset;
+        max-width: unset
+    }
+
+    .wishlist .giftlistproductsv2 td.price {
+        min-width: unset;
+        max-width: unset;
+        white-space: nowrap;
+        font-size: 28px
+    }
+}
+/* Mobile */
