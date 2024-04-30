@@ -218,7 +218,8 @@ div#smarthint-search-result {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 83%
+        /*width: 83%*/
+        width: 90%
     }
 
     .wrapHeader .header__mobilemenu svg {
