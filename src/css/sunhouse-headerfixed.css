@@ -203,13 +203,15 @@ div#smarthint-search-result {
 
     /* Mover para arquivo common-bs-all-pages */
     .header__logo {
-        margin-right: 15px !important;
+        /*margin-right: 15px !important;*/
         min-width: 90px;
     }
 
     .wrapHeader .header__logo {
-        width: 100%;
-        position: absolute
+        /*width: 100%;*/
+        width: inherit;
+        position: absolute;
+        margin-right: unset !important
     }
     
     .wrapHeader .header__logo a {
