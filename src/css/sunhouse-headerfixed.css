@@ -231,7 +231,8 @@ div#smarthint-search-result {
     /* Mover para arquivo common-bs-all-pages */
 
     .header__search {
-        margin-right: 60px !important
+        /*margin-right: 60px !important;*/
+        margin-right: unset !important
     }
 
     .wrapHeader .header {
