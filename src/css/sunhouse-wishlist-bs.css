@@ -297,6 +297,10 @@
         border-radius: 00px;
         background-color: #eeeeee6e
     }
+
+    .wishlist #page_grid h1 {
+        text-align: center
+    }
     
     .wishlist .giftlistproductsv2 tr {
         align-items: flex-start;
@@ -335,6 +339,24 @@
         white-space: nowrap;
         font-size: 28px
     }
+
+    /* Lista sem Produtos */
+    .wishlist .listaVazia {
+        padding: 30px 20px
+    }
+
+    .wishlist .listaVazia img {
+        width: 100px !important
+    }
+
+    .wishlist .listaVazia h2 {
+        font-size: 26px
+    }
+
+    .wishlist .listaVazia h3 {
+        font-size: 18px
+    }
+    /* Lista sem Produtos */
 }
 
 /* Pode ser que seja necessario ser mais preciso com a regra abaixo para ficar legal */
