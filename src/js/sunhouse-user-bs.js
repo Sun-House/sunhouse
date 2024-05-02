@@ -28,15 +28,14 @@ function userLoginArea() {
     
                 // Seleciona todos os elementos com a Classe "logged-in" e executa o popover em cada um
                 $('.logged-in').each(function() {
-                    if ($(window).width() >= 1200) {
-                        $(this).popover('show');
+                    //if ($(window).width() >= 1200) {
+                        //$(this).popover('show');
                     
-                        var popElements = $(this);
-                        setTimeout(function() {
-                            popElements.popover('hide');
-                            //popElements.popover('dispose');
-                        }, 3000);
-                    };
+                        //var popElements = $(this);
+                        //setTimeout(function() {
+                            //popElements.popover('hide');
+                        //}, 3000);
+                    //};
 
                     document.querySelector('#wrap-topbar a').style.setProperty('display', 'none', 'important');
 
@@ -77,7 +76,7 @@ function customLogout() {
         url: "/no-cache/user/logout"
     }).done(function () {
         // Aqui você pode adicionar qualquer lógica personalizada que deseja executar após a conclusão da requisição AJAX
-        console.log("Logout realizado com sucesso!");
+        //console.log("Logout realizado com sucesso!");
 
         // Agora, redirecione para a página atual
         window.location.reload(); // Isso recarrega a página atual, mantendo-a dinâmica
