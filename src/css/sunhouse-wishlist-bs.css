@@ -69,6 +69,13 @@
     transition: .2s
 }
 
+/* Fix para quando so tem 1 produto na lista - Pode bugar ocasionalmente */
+/*.wishlist .giftlistproductsv2 tr:nth-child(1)*/
+.wishlist .giftlistproductsv2 tr {
+    min-width: 1080px
+}
+/* Fix para quando so tem 1 produto na lista */
+
 .wishlist .giftlistproductsv2 tr:hover {
     background-color: #fff;
     transition: .2s
