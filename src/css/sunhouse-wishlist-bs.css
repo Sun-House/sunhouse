@@ -260,7 +260,7 @@
     display: none
 }
 
-.wishlist .listaVazia {
+.wishlist #lista_vazia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,7 +269,7 @@
     padding: 40px 150px
 }
 
-.wishlist .listaVazia h2 {
+.wishlist #lista_vazia h2 {
     color: #f90041;
     font-size: 30px;
     font-weight: 500;
@@ -277,13 +277,14 @@
     padding-bottom: 25px
 }
 
-.wishlist .listaVazia h3 {
+.wishlist #lista_vazia h3 {
     color: #3a3a3a;
     font-size: 20px;
     font-weight: 500
 }
 
-.wishlist .listaVazia h2, .wishlist .listaVazia h3 {
+.wishlist #lista_vazia h2,
+.wishlist #lista_vazia h3 {
     text-align: center;
     line-height: 35px
 }
@@ -341,19 +342,19 @@
     }
 
     /* Lista sem Produtos */
-    .wishlist .listaVazia {
+    .wishlist #lista_vazia {
         padding: 30px 20px
     }
 
-    .wishlist .listaVazia img {
+    .wishlist #lista_vazia img {
         width: 100px !important
     }
 
-    .wishlist .listaVazia h2 {
+    .wishlist #lista_vazia h2 {
         font-size: 26px
     }
 
-    .wishlist .listaVazia h3 {
+    .wishlist #lista_vazia h3 {
         font-size: 18px
     }
     /* Lista sem Produtos */

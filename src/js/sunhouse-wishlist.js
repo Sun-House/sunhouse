@@ -1,6 +1,7 @@
+// NAO ESTA FUNCIONANDO - abaixo
 // Cria o botao de Adicionar ao Carrinho
-//$(document).ready(function () {
-function functionWrap() {
+$(document).ready(function () {
+//function functionWrap() {
     // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
     var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
     
@@ -48,8 +49,9 @@ function functionWrap() {
             });
         });
     }, 2000);
-}
-//});
+//}
+});
+// NAO ESTA FUNCIONANDO - acima
 
 // Adiciona ao Carrinho v2 - Native Vtex
 function addtoCartWishlist(skuId) {
@@ -90,15 +92,6 @@ function addtoCartWishlist(skuId) {
 };
 
 // Rola para o topo apos mudar de pagina de wishlist
-//wishPagination = document.querySelector('.ko-grid-pageLinks *');
-
-//wishPagination.addEventListener('click', function () {
-    //window.scrollTo({
-        //top: 0,
-        //behavior: 'smooth'
-    //});
-//});
-
 document.addEventListener('click', function (event) {
     // Verifica se o elemento clicado é o elemento desejado
     if (event.target.matches('.ko-grid-pageLinks *')) {
@@ -109,3 +102,5 @@ document.addEventListener('click', function (event) {
         });
     }
 });
+
+// Mostra bloco de Lista Vazia quando a nao tiver produtos na lista
