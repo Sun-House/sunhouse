@@ -270,16 +270,25 @@
 
     .wishlist .giftlistproductsv2 td {
         padding-right: 0px;
-        padding-left: 0px;
+        padding-left: 0px
+    }
+
+    .wishlist .giftlistproductsv2 td.name {
+        min-width: unset;
+        max-width: unset
+    }
+
+    .wishlist .giftlistproductsv2 td.name a {
+        overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical
     }
 
-    .wishlist .giftlistproductsv2 td.name {
-        min-width: unset;
-        max-width: unset
+    .wishlist .urlproduct::after,
+    .wishlist .giftlistproductsv2 td.name a::after {
+        display: none
     }
 
     .wishlist .giftlistproductsv2 td.price {
