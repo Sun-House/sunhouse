@@ -271,7 +271,6 @@
     .wishlist .giftlistproductsv2 td {
         padding-right: 0px;
         padding-left: 0px;
-        overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 4;
