@@ -228,6 +228,11 @@ div#smarthint-search-result {
         z-index: 99
     }
 
+    .wrapHeaderFixed .header__logo {
+        margin-right: 15px !important;
+        min-width: 90px
+    }
+
     .wrapHeaderFixed .header__mobilemenu {
         width: 30px
     }
