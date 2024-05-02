@@ -233,6 +233,10 @@ div#smarthint-search-result {
         min-width: 90px
     }
 
+    .wrapHeaderFixed .header__search {
+        margin-right: 60px !important
+    }
+
     .wrapHeaderFixed .header__mobilemenu {
         width: 30px
     }
