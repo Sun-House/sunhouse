@@ -104,3 +104,11 @@ document.addEventListener('click', function (event) {
 });
 
 // Mostra bloco de Lista Vazia quando a nao tiver produtos na lista
+$(document).ready(function () {
+    var listaVazia = document.querySelector('.no-product');
+
+    if (listaVazia) {
+        var infoLista = document.getElementById('lista_vazia');
+        infoLista.style.cssText = 'display: block !important;';
+    }
+});
