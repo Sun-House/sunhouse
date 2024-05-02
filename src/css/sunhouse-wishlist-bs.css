@@ -263,10 +263,19 @@
         border-radius: 00px;
         background-color: #eeeeee6e
     }
+    
+    .wishlist .giftlistproductsv2 tr {
+        align-items: flex-start
+    }
 
     .wishlist .giftlistproductsv2 td {
         padding-right: 0px;
-        padding-left: 0px
+        padding-left: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical
     }
 
     .wishlist .giftlistproductsv2 td.name {
@@ -275,6 +284,9 @@
     }
 
     .wishlist .giftlistproductsv2 td.price {
+        position: absolute;
+        margin-left: 105px;
+        margin-top: 90px;
         min-width: unset;
         max-width: unset;
         white-space: nowrap;
