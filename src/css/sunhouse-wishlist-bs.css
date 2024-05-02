@@ -255,6 +255,40 @@
 }
 /* Paginacao */
 
+/* Lista sem Produtos */
+.wishlist .no-product.message {
+    display: none
+}
+
+.wishlist .listaVazia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 30px;
+    padding: 40px 150px
+}
+
+.wishlist .listaVazia h2 {
+    color: #f90041;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 25px
+}
+
+.wishlist .listaVazia h3 {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-weight: 500
+}
+
+.wishlist .listaVazia h2, .wishlist .listaVazia h3 {
+    text-align: center;
+    line-height: 35px
+}
+/* Lista sem Produtos */
+
 /* Mobile */
 @media screen and (max-width: 1199px) {
     .wishlist #page_grid {
@@ -304,6 +338,9 @@
 }
 
 /* Pode ser que seja necessario ser mais preciso com a regra abaixo para ficar legal */
+/*
+AJUSTAR MARGINS DO NOME DO PRODUTO
+*/
 @media screen and (min-width: 730px) {
     .wishlist .giftlistproductsv2 td.price {
         position: unset;
