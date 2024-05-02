@@ -265,7 +265,8 @@
     }
     
     .wishlist .giftlistproductsv2 tr {
-        align-items: flex-start
+        align-items: flex-start;
+        min-height: 165px
     }
 
     .wishlist .giftlistproductsv2 td {
