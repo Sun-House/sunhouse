@@ -302,4 +302,18 @@
         font-size: 28px
     }
 }
+
+/* Pode ser que seja necessario ser mais preciso com a regra abaixo para ficar legal */
+@media screen and (min-width: 730px) {
+    .wishlist .giftlistproductsv2 td.price {
+        position: unset;
+        margin-left: unset;
+        margin-top: unset
+    }
+    
+    .wishlist .giftlistproductsv2 tr {
+        align-items: center;
+        min-height: unset
+    }
+}
 /* Mobile */
