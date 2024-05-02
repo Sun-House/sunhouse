@@ -109,6 +109,6 @@ $(document).ready(function () {
 
     if (listaVazia) {
         var infoLista = document.getElementById('lista_vazia');
-        infoLista.style.cssText = 'display: block !important;';
+        infoLista.style.cssText = 'display: flex !important;';
     }
 });
