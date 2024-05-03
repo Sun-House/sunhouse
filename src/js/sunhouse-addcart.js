@@ -17,23 +17,41 @@ function fnAddtoCart() {
                 seller: "1"
             };
             vtexjs.checkout.addToCart([b], null, 1).done((function (a) {
-                toastr.options = {
-                    closeButton: !0,
-                    debug: !1,
-                    newestOnTop: !1,
-                    progressBar: !0,
-                    positionClass: "toast-top-center",
-                    preventDuplicates: !1,
-                    onclick: null,
-                    showDuration: "500",
-                    hideDuration: "1000",
-                    timeOut: "5000",
-                    extendedTimeOut: "0",
-                    showEasing: "swing",
-                    hideEasing: "linear",
-                    showMethod: "fadeIn",
-                    hideMethod: "fadeOut"
-                }, toastr.success("Produto adicionado ao carrinho!")
+                // Lib Sweetalert2
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top-center",
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                });
+                Toast.fire({
+                    icon: "success",
+                    title: "Produto adicionado ao carrinho!"
+                });
+
+                // Lib Toastr
+                //toastr.options = {
+                    //closeButton: !0,
+                    //debug: !1,
+                    //newestOnTop: !1,
+                    //progressBar: !0,
+                    //positionClass: "toast-top-center",
+                    //preventDuplicates: !1,
+                    //onclick: null,
+                    //showDuration: "500",
+                    //hideDuration: "1000",
+                    //timeOut: "5000",
+                    //extendedTimeOut: "0",
+                    //showEasing: "swing",
+                    //hideEasing: "linear",
+                    //showMethod: "fadeIn",
+                    //hideMethod: "fadeOut"
+                //}, toastr.success("Produto adicionado ao carrinho!")
             }))
         }))
     }))

@@ -80,7 +80,6 @@ function addtoCartWishlist(skuId) {
             seller: "1"
         };
         vtexjs.checkout.addToCart([skuId], null, 1).done((function (a) {
-            // Lib Sweetalert2
             const Toast = Swal.mixin({
                 toast: true,
                 position: "top-end",
@@ -96,24 +95,6 @@ function addtoCartWishlist(skuId) {
                 icon: "success",
                 title: "Produto adicionado ao carrinho!"
             });
-            // Lib Toastr
-            //toastr.options = {
-                //closeButton: !0,
-                //debug: !1,
-                //newestOnTop: !1,
-                //progressBar: !0,
-                //positionClass: "toast-top-center",
-                //preventDuplicates: !1,
-                //onclick: null,
-                //showDuration: "500",
-                //hideDuration: "1000",
-                //timeOut: "5000",
-                //extendedTimeOut: "0",
-                //showEasing: "swing",
-                //hideEasing: "linear",
-                //showMethod: "fadeIn",
-                //hideMethod: "fadeOut"
-            //}, toastr.success("Produto adicionado ao carrinho!")
         }))
     }));
 };
