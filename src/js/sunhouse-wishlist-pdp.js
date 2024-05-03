@@ -1,8 +1,18 @@
 // EM TESTES
+
 function clicarSeWishlistExiste() {
     // Encontrar e clicar no elemento que abre o pop-up da wishlist
     var wishlistPopup = document.querySelector('.glis-popup-link');
-    wishlistPopup.click();
+    
+    if (wishlistPopup) {
+        wishlistPopup.click();
+    } else {
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+    }
 
     // Esperar um pouco antes de verificar a presença do elemento da wishlist
     setTimeout(function () {
