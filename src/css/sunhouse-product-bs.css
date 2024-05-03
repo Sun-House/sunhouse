@@ -2628,8 +2628,13 @@ Ajustes pre rebranding */
 }
 
 @media screen and (max-width: 1199px) {
+    #on-title-wrap {
+        justify-content: flex-start
+    }
+    
     .produto #wishlist_add {
-        right: 35px
+        right: unset;
+        margin-left: 15px
     }
 }
 /* Wishlist Heart Button */
