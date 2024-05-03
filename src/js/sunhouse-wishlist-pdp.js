@@ -1,6 +1,6 @@
 // EM TESTES
 
-function clicarSeWishlistExiste() {
+function wishListAddorCreate() {
     // Encontrar e clicar no elemento que abre o pop-up da wishlist
     var wishlistPopup = document.querySelector('.glis-popup-link');
     
@@ -26,6 +26,7 @@ function clicarSeWishlistExiste() {
             // Informar ao usuario que foi adicionado a wishlist - usar Toastr
             // Apenas para o processo de implementacao
             console.log(" Bloco if executado com sucesso - ja tinha a lista e produto foi adicionado");
+            swalPopup();
         } else {
             //console.log("Aqui sera criado o bloco onde cria a wishlist com o nome wishlist");
 
@@ -47,6 +48,7 @@ function clicarSeWishlistExiste() {
                     
                     // Apenas para o processo de implementacao
                     console.log(" Bloco else executado com sucesso - nao tinha a lista, ela foi criada e produto foi adicionado");
+                    swalPopup();
                 } else {
                     console.log("Elemento '.glis-submit-new' não encontrado.");
                 }
@@ -54,29 +56,30 @@ function clicarSeWishlistExiste() {
                 console.log("Elemento input com título 'nome da lista' não encontrado.");
             }
         }
-
-        // Informar ao usuário que a operação foi concluída
-        const Toast = Swal.mixin({
-            toast: true,
-            position: "top-end",
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.onmouseenter = Swal.stopTimer;
-                toast.onmouseleave = Swal.resumeTimer;
-            }
-        });
-        Toast.fire({
-            icon: "success",
-            title: "Produto adicionado à sua Lista de Desejos!"
-        });
     }, 1000);
+}
+
+function swalPopup() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
+        icon: "success",
+        title: "Produto adicionado à sua Lista de Desejos!"
+    });
 }
 
 // Função para executar quando o botão for clicado
 function executarVerificacao() {
-    clicarSeWishlistExiste();
+    wishListAddorCreate();
 }
 
 document.getElementById('wishlist_add').addEventListener('click', executarVerificacao);
