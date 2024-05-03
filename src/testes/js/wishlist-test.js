@@ -79,11 +79,12 @@ function executeCode() {
             }, 2000);
         }, 2000);
     //
-    window.onload(); // Chamada da função onload para garantir que o código seja executado
+    //window.onload(); // Chamada da função onload para garantir que o código seja executado
 }
 
 // Chame a função para observar as alterações na estrutura do elemento #giftlistproduct
 observeChanges();
+window.onload = executeCode;
 // EM TESTES
 
 
