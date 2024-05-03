@@ -9,6 +9,9 @@ function observeChanges() {
             mutations.forEach(function(mutation) {
                 if (mutation.type === 'childList') {
                     executeCode();
+                    console.log('validou a mutacao com sucesso');
+                } else {
+                    console.log('nao validou a mutacao');
                 }
             });
         });
