@@ -61,7 +61,9 @@ function setup() {
 
 // Executar a função quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', function () {
-    setup();
+    setTimeout(function () {
+        setup();
+    }, 3000);
 });
 // EM TESTES
 
