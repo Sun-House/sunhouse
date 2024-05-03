@@ -1439,3 +1439,9 @@ Ajuste temporario */
     margin-right: auto;
     margin-left: auto
 }
+
+/* Oculta da lista de filtros: Avaliacoes */
+.catalog a[value="OrderByReviewRateDESC"] {
+    display: none !important
+}
+/* Oculta da lista de filtros: Avaliacoes */
