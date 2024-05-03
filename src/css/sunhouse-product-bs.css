@@ -2640,6 +2640,10 @@ Ajustes pre rebranding */
     border-radius: 50px !important
 }
 
+.produto div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus {
+    box-shadow: 0 0 0 3px #f9004154 !important
+}
+
 @media screen and (max-width: 1199px) {
     #on-title-wrap {
         justify-content: flex-start
