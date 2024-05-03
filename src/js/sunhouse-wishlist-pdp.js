@@ -14,6 +14,10 @@ function wishListAddorCreate() {
             iconColor: "#FFDA00",
             confirmButtonText: "Entre ou Cadastre-se",
             confirmButtonColor: "#F90041"
+        }).then(function(result) {
+            if(result.isConfirmed) {
+                window.location.replace('/login');
+            }
         });
     }
 
