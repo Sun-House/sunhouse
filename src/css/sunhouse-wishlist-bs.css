@@ -322,6 +322,14 @@ Opcao caso o script de add to cart nao funcione mesmo */
 }
 /* Lista sem Produtos */
 
+.wishlist .swal2-popup {
+    border-radius: 30px
+}
+
+.wishlist div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border-radius: 50px !important
+}
+
 /* Mobile */
 @media screen and (max-width: 1199px) {
     .wishlist #page_grid {
