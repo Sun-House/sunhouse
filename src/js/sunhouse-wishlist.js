@@ -51,7 +51,7 @@ window.onload = function() {
             });
         }, 2000);
 
-    }, 3000);
+    }, 1000);
 };
 // NAO ESTA FUNCIONANDO - acima
 
