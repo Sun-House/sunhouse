@@ -1,6 +1,22 @@
 // ARQUIVO DE TESTES
 
 // EM TESTES
+// Esse tava funcionando - apenas nao executa na alteracao da pagina
+function observeChanges() {
+    setTimeout(function () {
+        var target = document.querySelector('.giftlistproductsv2 *');
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'childList') {
+                    executeCode();
+                }
+            });
+        });
+        var config = { childList: true, subtree: true };
+        observer.observe(target, config);
+    }, 2000);
+}
+
 function executeCode() {
     setTimeout(function () {
         var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
@@ -37,21 +53,8 @@ function executeCode() {
     }, 2000);
 }
 
-function observeChanges() {
-    setTimeout(function () {
-        var target = document.querySelector('.giftlistproductsv2');
-        var observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'childList') {
-                    executeCode();
-                }
-            });
-        });
-        var config = { childList: true, subtree: true };
-        observer.observe(target, config);
-    }, 2000);
-}
-
+// Chame a função executeCode diretamente para garantir que o código seja executado no carregamento inicial
+executeCode();
 // Chame a função para observar as alterações na estrutura do elemento .giftlistproductsv2
 observeChanges();
 // EM TESTES
