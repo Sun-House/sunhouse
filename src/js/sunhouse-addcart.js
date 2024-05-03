@@ -20,7 +20,7 @@ function fnAddtoCart() {
                 // Lib Sweetalert2
                 const Toast = Swal.mixin({
                     toast: true,
-                    position: "top-center",
+                    position: "top",
                     showConfirmButton: false,
                     timer: 3000,
                     timerProgressBar: true,
@@ -33,7 +33,7 @@ function fnAddtoCart() {
                     icon: "success",
                     title: "Produto adicionado ao carrinho!"
                 });
-
+                
                 // Lib Toastr
                 //toastr.options = {
                     //closeButton: !0,
