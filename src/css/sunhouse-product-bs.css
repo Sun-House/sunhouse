@@ -2632,6 +2632,14 @@ Ajustes pre rebranding */
     display: none !important
 }
 
+.produto .swal2-popup {
+    border-radius: 30px
+}
+            
+.produto div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border-radius: 50px !important
+}
+
 @media screen and (max-width: 1199px) {
     #on-title-wrap {
         justify-content: flex-start
@@ -2750,8 +2758,9 @@ Ajustes pre rebranding */
 }
 
 .discount_color {
-    color: #30b6a8 !important
-    /*color: #00b100*/
+    color: #30b6a8 !important;
+    /*color: #00b100;*/
+    background-color: unset !important
 }
 
 #highlight_discount {
