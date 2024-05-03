@@ -3,74 +3,55 @@
 
 // EM TESTES
 // Função para criar botões e adicionar ouvintes de eventos
+// Função para criar botões e adicionar ouvintes de eventos
 function createButtonsAndListeners() {
-    // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
     var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
 
-    // Para cada elemento <tr> encontrado - cria botao
     productTrInput.forEach(function (element) {
-        // Criar o elemento <button>
         var button = document.createElement("button");
-
-        // Adicionar o evento de clique ao botão
         button.setAttribute("class", "wishlist--add-to-cart-button");
         button.setAttribute("id", "wishlist__add-to-cart-button");
 
-        // Criar o elemento <a> dentro do botão
         var link = document.createElement("a");
-
-        // Adicionar os atributos ao elemento <a>
         link.setAttribute("target", "_self");
         link.setAttribute("class", "wishlist-add-to-cart");
         link.setAttribute("id", "wishlist__add-to-cart");
         link.setAttribute("href", "javascript:void(0)");
         link.setAttribute("style", "display: block");
-        link.textContent = "Adicionar ao Carrinho"; // Adicionar o texto dentro do elemento <a>
+        link.textContent = "Adicionar ao Carrinho";
 
-        // Adicionar o elemento <a> dentro do botão
         button.appendChild(link);
 
-        // Adicionar o botão após o elemento <tr>
         element.parentNode.insertBefore(button, element.nextSibling);
     });
 
-    // Atribui o ouvinte de function a cada botao criado
     var productTr = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"]');
 
-    // Para cada elemento <tr> encontrado - aciona botao
     productTr.forEach(function (element) {
-        // Adiciona um evento de clique para cada botão de adicionar ao carrinho
         var addToCartButton = element.querySelector('.wishlist--add-to-cart-button');
         addToCartButton.addEventListener('click', function () {
-            // Encontra o input associado a este botão
             var input = element.querySelector('.giftlistsku-input-wishedamt');
-            // Obtém o valor do atributo "name" do input
             var skuId = input.getAttribute('name');
-            // Chama a função que adiciona ao carrinho, passando o skuId
             addtoCartWishlist(skuId);
         });
     });
 }
 
-// Função para verificar se o elemento com id "#giftlistproduct" existe e adicionar um observador de mutação
-function addMutationObserver() {
-    // Verifica se o elemento com id "#giftlistproduct" existe
+// Função para criar botões e ouvintes de eventos e adicionar observador de mutação
+function setup() {
+    createButtonsAndListeners();
+
     var giftListProduct = document.getElementById('giftlistproduct');
 
-    // Se o elemento existir, adiciona um observador de mutação
     if (giftListProduct) {
-        // Cria um observador de mutação
         var observer = new MutationObserver(function (mutationsList, observer) {
-            // Para cada mutação, verifica se é uma remoção de nó
             for (var mutation of mutationsList) {
                 if (mutation.type === 'childList') {
-                    // Se for uma remoção de nó, chama a função para criar botões e ouvintes de eventos
                     createButtonsAndListeners();
                 }
             }
         });
 
-        // Configura o observador para observar alterações na estrutura do elemento
         observer.observe(giftListProduct, {
             childList: true,
             subtree: true
@@ -78,16 +59,10 @@ function addMutationObserver() {
     }
 }
 
-// Executar a função quando a página estiver completamente carregada
-window.onload = function () {
-    // Delay para executar senão não cria os botões
-    setTimeout(function () {
-        createButtonsAndListeners();
-    }, 2000);
-};
-
-// Chamar a função para adicionar o observador de mutação
-addMutationObserver();
+// Executar a função quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', function () {
+    setup();
+});
 // EM TESTES
 
 
