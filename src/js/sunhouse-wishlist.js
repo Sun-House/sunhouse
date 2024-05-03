@@ -1,8 +1,7 @@
-// NAO ESTA FUNCIONANDO - abaixo
 // Cria o botao de Adicionar ao Carrinho
 window.onload = function() {
+    // Delay para executar senao nao cria os botoes
     setTimeout(function () {
-
         // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
         var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
         
@@ -50,10 +49,8 @@ window.onload = function() {
                 });
             });
         }, 2000);
-
-    }, 1000);
+    }, 2000);
 };
-// NAO ESTA FUNCIONANDO - acima
 
 // Adiciona ao Carrinho v2 - Native Vtex
 function addtoCartWishlist(skuId) {
