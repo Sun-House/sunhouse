@@ -45,25 +45,22 @@ function clicarSeWishlistExiste() {
             }
         }
 
-        // Informar ao usuário que a operação foi concluída - usar Toastr
-        //alert("Verificação concluída!");
-        toastr.options = {
-            closeButton: !0,
-            debug: !1,
-            newestOnTop: !1,
-            progressBar: !0,
-            positionClass: "toast-top-center",
-            preventDuplicates: !1,
-            onclick: null,
-            showDuration: "500",
-            hideDuration: "1000",
-            timeOut: "5000",
-            extendedTimeOut: "0",
-            showEasing: "swing",
-            hideEasing: "linear",
-            showMethod: "fadeIn",
-            hideMethod: "fadeOut"
-        }, toastr.success("Produto adicionado à sua Lista de Desejos!")
+        // Informar ao usuário que a operação foi concluída
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "success",
+            title: "Produto adicionado à sua Lista de Desejos!"
+        });
     }, 1000);
 }
 
