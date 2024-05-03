@@ -8,9 +8,9 @@ function wishListAddorCreate() {
         wishlistPopup.click();
     } else {
         Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
+            title: "Faça login para favoritar",
+            text: "Clique abaixo para realizar <b>Login</b> ou <b>Criar a sua Conta</b>. É super rápido!",
+            icon: "info"
         });
     }
 
