@@ -2830,6 +2830,12 @@ Ajustes pre rebranding */
 }
 /* Produto sem Estoque */
 
+@media screen and (max-width: 420px) {
+    #highlight_discount {
+        margin-left: 0 !important
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .modal-content {
         margin: 75px 5px;
