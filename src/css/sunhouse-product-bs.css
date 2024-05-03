@@ -2594,7 +2594,7 @@ Ajustes pre rebranding */
 }
 /* Ajuste CRO Rafa */
 
-/* Wishlist Heart Button */
+/* Wishlist */
 .produto #wishlist_add {
     position: relative;
     /*left: -50px; - Para quando a funcao de Share Icons for apresentada */
@@ -2627,6 +2627,11 @@ Ajustes pre rebranding */
     z-index: -1
 }
 
+.produto #TB_overlay,
+.produto #TB_window {
+    display: none !important
+}
+
 @media screen and (max-width: 1199px) {
     #on-title-wrap {
         justify-content: flex-start
@@ -2637,4 +2642,4 @@ Ajustes pre rebranding */
         margin-left: 15px
     }
 }
-/* Wishlist Heart Button */
+/* Wishlist */
