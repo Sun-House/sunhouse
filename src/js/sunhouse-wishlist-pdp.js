@@ -10,7 +10,10 @@ function wishListAddorCreate() {
         Swal.fire({
             title: "Faça login para favoritar",
             text: "Clique abaixo para realizar <b>Login</b> ou <b>Criar a sua Conta</b>. É super rápido!",
-            icon: "info"
+            icon: "info",
+            iconColor: "#FFDA00",
+            confirmButtonText: "Entre ou Cadastre-se",
+            confirmButtonColor: "#F90041"
         });
     }
 
