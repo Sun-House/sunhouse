@@ -1,50 +1,55 @@
 // ARQUIVO DE TESTES
 
-
 // EM TESTES
 function executeCode() {
-    var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
-    
-    productTrInput.forEach(function (element) {
-        var button = document.createElement("button");
-        button.setAttribute("class", "wishlist--add-to-cart-button");
-        button.setAttribute("id", "wishlist__add-to-cart-button");
+    setTimeout(function () {
+        var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
+        
+        productTrInput.forEach(function (element) {
+            var button = document.createElement("button");
+            button.setAttribute("class", "wishlist--add-to-cart-button");
+            button.setAttribute("id", "wishlist__add-to-cart-button");
 
-        var link = document.createElement("a");
-        link.setAttribute("target", "_self");
-        link.setAttribute("class", "wishlist-add-to-cart");
-        link.setAttribute("id", "wishlist__add-to-cart");
-        link.setAttribute("href", "javascript:void(0)");
-        link.setAttribute("style", "display: block");
-        link.textContent = "Adicionar ao Carrinho";
+            var link = document.createElement("a");
+            link.setAttribute("target", "_self");
+            link.setAttribute("class", "wishlist-add-to-cart");
+            link.setAttribute("id", "wishlist__add-to-cart");
+            link.setAttribute("href", "javascript:void(0)");
+            link.setAttribute("style", "display: block");
+            link.textContent = "Adicionar ao Carrinho";
 
-        button.appendChild(link);
+            button.appendChild(link);
 
-        element.parentNode.insertBefore(button, element.nextSibling);
-    });
-
-    var productTr = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"]');
-    productTr.forEach(function (element) {
-        var addToCartButton = element.querySelector('.wishlist--add-to-cart-button');
-        addToCartButton.addEventListener('click', function () {
-            var input = element.querySelector('.giftlistsku-input-wishedamt');
-            var skuId = input.getAttribute('name');
-            addtoCartWishlist(skuId);
+            element.parentNode.insertBefore(button, element.nextSibling);
         });
-    });
+
+        var productTr = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"]');
+        setTimeout(function () {
+            productTr.forEach(function (element) {
+                var addToCartButton = element.querySelector('.wishlist--add-to-cart-button');
+                addToCartButton.addEventListener('click', function () {
+                    var input = element.querySelector('.giftlistsku-input-wishedamt');
+                    var skuId = input.getAttribute('name');
+                    addtoCartWishlist(skuId);
+                });
+            });
+        }, 2000);
+    }, 2000);
 }
 
 function observeChanges() {
-    var target = document.querySelector('.giftlistproductsv2');
-    var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            if (mutation.type === 'childList') {
-                executeCode();
-            }
+    setTimeout(function () {
+        var target = document.querySelector('.giftlistproductsv2');
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'childList') {
+                    executeCode();
+                }
+            });
         });
-    });
-    var config = { childList: true, subtree: true };
-    observer.observe(target, config);
+        var config = { childList: true, subtree: true };
+        observer.observe(target, config);
+    }, 2000);
 }
 
 // Chame a função para observar as alterações na estrutura do elemento .giftlistproductsv2
