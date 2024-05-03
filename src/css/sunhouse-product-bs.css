@@ -2750,7 +2750,7 @@ Ajustes pre rebranding */
 }
 
 .discount_color {
-    color: #30b6a8
+    color: #30b6a8 !important
     /*color: #00b100*/
 }
 
