@@ -2643,3 +2643,227 @@ Ajustes pre rebranding */
     }
 }
 /* Wishlist */
+
+/* Price Block */
+.skuListPrice {
+    text-decoration: line-through;
+}
+
+.payment_infos {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.payment_infos_list li {
+    padding-bottom: 5px;
+}
+
+#payment-list-rmv {
+    display: none;
+}
+
+#payment-list #payment-list-rmv {
+    display: block;
+}
+
+#product-name div {
+    margin: 5px 0px 25px 0;
+}
+
+#bump {
+    width: 85%;
+    margin-left: 35px;
+}
+
+#discount-1,
+#discount-2 {
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+#discount-1 {
+    background-color: #35ba4a;
+}
+
+#discount-2 {
+    background-color: #458ffd;
+}
+
+#info-progressivo * {
+    font-family: 'Open Sans';
+    line-height: 25px;
+}
+
+#info-progressivo-d1,
+#info-progressivo-d2,
+#info-progressivo-d3 {
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-align: start;
+}
+
+#info-progressivo-d1 {
+    background-color: #35ba4a;
+}
+
+#info-progressivo-d2 {
+    background-color: #458ffd;
+}
+
+#info-progressivo-d3 {
+    background-color: #dddddd;
+    color: #000;
+}
+
+.full_price {
+    text-decoration: line-through;
+    color: #ff004d;
+}
+
+.slip_price {
+    font-size: 38px;
+}
+
+/*.discount_color {
+    color: #00b100;
+}*/
+
+/*.discount_color {
+    color: #00b100;
+    background-color: #00b10033;
+    border-radius: 5px;
+    /font-size: 17px;/
+    font-size: 19px;
+    padding: 4px 10px
+}*/
+
+.slip_price,
+.discount_color,
+.credit_price,
+.full_price {
+    font-weight: 500 !important;
+}
+
+.discount_color {
+    color: #30b6a8
+    /*color: #00b100*/
+}
+
+#highlight_discount {
+    color: #fff;
+    /*background-color: #00b100;*/
+    background-color: #30b6a8;
+    padding: 0 15px;
+    border-radius: 8px;
+    margin-left: 3px
+}
+
+.installment_modal {
+    font-size: 18px;
+}
+
+#nav-cartao {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#nav-cartao ul {
+    padding-left: 2rem !important;
+}
+
+#nav-cartao ul li {
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+#list-type-bg,
+#list-type-nobg {
+    background-color: #ddd;
+    padding: 4px 10px;
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+}
+
+#list-type-nobg {
+    background-color: transparent !important;
+}
+
+#info-progressivo {
+    margin: 40px 25px;
+    text-align: justify;
+}
+
+#modal-installments-content {
+    min-height: 753px;
+}
+
+/* Produto sem Estoque */
+.out_of_stock {
+    padding: 5px 0 25px;
+}
+
+.out_of_stock-show {
+    display: block !important;
+}
+
+.out_of_stock-title {
+    font-size: 32px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.out_of_stock-face {
+    font-size: 32px;
+    color: #444444;
+}
+
+.out_of_stock-noDisplay {
+    display: none !important;
+}
+/* Produto sem Estoque */
+
+@media screen and (max-width: 1199px) {
+    .modal-content {
+        margin: 75px 5px;
+    }
+
+    #nav-cartao {
+        margin-right: -13px;
+    }
+    
+    #nav-cartao ul {
+        padding-left: 0 !important;
+    }
+
+    #nav-tab {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #nav-tab button {
+        width: 50%;
+    }
+
+    .tax_info {
+        display: none !important;
+    }
+
+    #discount-1,
+    #discount-2 {
+        font-size: 13px;
+        margin-top: -4px;
+        margin-left: 5px;
+        color: #fff;
+        padding: 6px 8px;
+    }
+}
+/* Price Block */
