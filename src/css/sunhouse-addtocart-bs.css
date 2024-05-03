@@ -176,3 +176,9 @@
         bottom: 0 !important
     }
 }
+
+/* Adicionado para Lib Sweetalert2 */
+.swal2-toast {
+    border-radius: 20px
+}
+/* Adicionado para Lib Sweetalert2 */
