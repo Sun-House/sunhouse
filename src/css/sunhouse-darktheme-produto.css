@@ -577,3 +577,11 @@ body.produto {
     background: #444 !important
 }
 /* Bloco Avaliacoes TrustVox */
+
+/* Icones Contraste */
+.produto .cart-new,
+.produto .login-new,
+.produto #wishlist_add .fa-heart-o {
+    color: #c9c9c9
+}
+/* Icones Contraste */
