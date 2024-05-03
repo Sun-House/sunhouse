@@ -228,6 +228,31 @@
 .wishlist .name .urlproduct::after {
     margin-left: 8px !important
 }
+
+/* Opcao caso o script de add to cart nao funcione mesmo
+.wishlist .image .urlproduct::after {
+    content: "COMPRAR";
+    font-size: 15px;
+    color: #fff !important;
+    display: block;
+    background-color: #F90041;
+    padding: 8px 32px;
+    position: absolute;
+    margin-left: 765px;
+    margin-top: -45px;
+    border-radius: 50px;
+    border: 2px solid #F90041;
+    transition: .2s
+}
+
+.wishlist .image .urlproduct:hover::after {
+    border: 2px solid white;
+}
+
+.wishlist .giftlistproductsv2 td.price {
+    margin-top: -45px !important
+}
+Opcao caso o script de add to cart nao funcione mesmo */
 /* Bloco Lista de Produtos */
 
 /* Paginacao */
