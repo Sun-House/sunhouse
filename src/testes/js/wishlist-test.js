@@ -5,7 +5,8 @@
 // Função para executar o código quando ocorrer uma alteração na estrutura do elemento #giftlistproduct
 function observeChanges() {
     // Selecione o elemento alvo
-    var target = document.getElementById('giftlistproduct');
+    //var target = document.getElementById('giftlistproduct');
+    var target = document.querySelector('.giftlistproductsv2');
 
     // Crie uma instância de MutationObserver e passe uma função de callback
     var observer = new MutationObserver(function(mutations) {
@@ -79,12 +80,11 @@ function executeCode() {
             }, 2000);
         }, 2000);
     //
-    //window.onload(); // Chamada da função onload para garantir que o código seja executado
+    window.onload(); // Chamada da função onload para garantir que o código seja executado
 }
 
 // Chame a função para observar as alterações na estrutura do elemento #giftlistproduct
 observeChanges();
-window.onload = executeCode;
 // EM TESTES
 
 
