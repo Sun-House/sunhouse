@@ -362,7 +362,8 @@ Opcao caso o script de add to cart nao funcione mesmo */
     
     .wishlist .giftlistproductsv2 tr {
         align-items: flex-start;
-        min-height: 165px
+        min-height: 165px;
+        min-width: unset !important
     }
 
     .wishlist .giftlistproductsv2 td {

@@ -1,10 +1,10 @@
 // Executa a function de Criar o botao de Adicionar ao Carrinho no carregamento do DOM
 window.onload = function() {
-    reloadButtons();
+    loadButtons();
 };
 
 // Cria o botao de Adicionar ao Carrinho
-function reloadButtons() {
+function loadButtons() {
     // Delay para executar senao nao cria os botoes
     setTimeout(function () {
         // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
@@ -81,7 +81,7 @@ function reloadButtons() {
                 });
             });
         }, 1000);
-    }, 1000);
+    }, 2000);
 }
 
 // Adiciona ao Carrinho v2 - Native Vtex
@@ -156,14 +156,14 @@ document.addEventListener('click', function (event) {
             top: 0,
             behavior: 'smooth'
         });
-        reloadButtons();
+        loadButtons();
     }
 });
 
 // Faz o mesmo que o bloco acima, da parte de executar a function
 //var reloadButton = document.querySelector('.ko-grid-pageLinks');    
 //reloadButton.addEventListener('click', function () {
-    //reloadButtons();
+    //loadButtons();
 //});
 
 // Mostra bloco de Lista Vazia quando a nao tiver produtos na lista
