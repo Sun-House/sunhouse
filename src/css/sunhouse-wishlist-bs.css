@@ -169,6 +169,10 @@
     font-size: 28px;
     color: #666;
     margin-left: 15px
+}
+
+.wishlist .giftlistproductsv2 .deletethissku:hover::after {
+    color: #FF0000
 }*/
 
 .wishlist .giftlistproductsv2 #wishlist__remove-product-button::after {
@@ -179,8 +183,9 @@
     margin-left: 15px
 }
 
-.wishlist .giftlistproductsv2 .deletethissku:hover::after {
-    color: #FF0000
+.wishlist .giftlistproductsv2 #wishlist__remove-product-button:hover::after {
+    color: #FF0000;
+    cursor: pointer
 }
 
 /* Check ao lado do produto e botao de remover produtos em lote - ver se vale a pena manter ou ocultar */
