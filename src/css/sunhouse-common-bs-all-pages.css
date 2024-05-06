@@ -2938,7 +2938,8 @@ Btn Comprar */
 /* Show on Loading some Pages - Mostra um gif de carregamento que cobre toda a tela */
 /* Wishlist Pages - Style pode servir para outras pages */
 .wishlist #loading_bg {
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
