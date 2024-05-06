@@ -81,6 +81,8 @@ function loadButtons() {
                 });
             });
         }, 1000);
+        var loadingBg = document.getElementById('loading_bg');
+        loadingBg.style.display = 'none';
     }, 2000);
 }
 
