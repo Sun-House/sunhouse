@@ -2447,7 +2447,7 @@ body.black-friday .catalogIntro {
 
 @media screen and (max-width:1199px) {
     .bannerPrdSlick {
-        z-index: 9999 !important;
+        /*z-index: 9999 !important; - bugando diversas coisas no site*/
         height: 61px
     }
     
