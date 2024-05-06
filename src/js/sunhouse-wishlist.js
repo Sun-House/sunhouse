@@ -4,6 +4,7 @@ window.onload = function() {
     setTimeout(function () {
         // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
         var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
+        var productTrRmv = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .deletethissku')
         
         // Para cada elemento <tr> encontrado - cria botao
         productTrInput.forEach(function (element) {
@@ -30,6 +31,19 @@ window.onload = function() {
 
             // Adicionar o botão após o elemento <tr>
             element.parentNode.insertBefore(button, element.nextSibling);
+        });
+        
+        //Cria botao custom para remover da wishlist
+        productTrRmv.forEach(function (element) {
+            // Criar o elemento <button>
+            var rmvButton = document.createElement("a");
+
+            // Adicionar o evento de clique ao botão
+            rmvButton.setAttribute("class", "wishlist--remove-product-button");
+            rmvButton.setAttribute("id", "wishlist__remove-product-button");
+
+            // Adicionar o botão após o elemento <tr>
+            element.parentNode.insertBefore(rmvButton, element.nextSibling);
         });
 
         // Atribui o ouvinte de function a cada botao criado
