@@ -53,6 +53,10 @@ window.onload = function() {
             productTr.forEach(function (element) {
                 // Adiciona um evento de clique para cada botão de adicionar ao carrinho
                 var addToCartButton = element.querySelector('.wishlist--add-to-cart-button');
+                var rmvFromListButton = element.querySelector('.wishlist--remove-product-button');
+
+                //var nomeVar = element.querySelector('.checkuncheckthis').getAttribute('value');
+
                 addToCartButton.addEventListener('click', function () {
                     // Encontra o input associado a este botão
                     var input = element.querySelector('.giftlistsku-input-wishedamt');
@@ -60,6 +64,15 @@ window.onload = function() {
                     var skuId = input.getAttribute('name');
                     // Chama a função que adiciona ao carrinho, passando o skuId
                     addtoCartWishlist(skuId);
+                });
+
+                rmvFromListButton.addEventListener('click', function () {
+                    // Encontra o input associado a este botão
+                    var input = element.querySelector('.checkuncheckthis');
+                    // Obtém o valor do atributo "value" do input
+                    var skuId = input.getAttribute('value');
+                    // Chama a função que remove produto da lista, passando o skuId
+                    removeFromWishlist(skuId);
                 });
             });
         }, 2000);
@@ -101,6 +114,33 @@ function addtoCartWishlist(skuId) {
         }))
     }));
 };
+
+//
+function removeFromWishlist(skuId) {
+    var userListId = document.getElementById('gid').getAttribute('value');
+
+    // Montar a URL com base nas variáveis
+    var url = `https://www.sunhouse.com.br/no-cache/giftlistv2/changewishedamount/${userListId}/${skuId}/0`;
+
+    // Realizar a solicitação POST usando fetch() com a URL dinâmica
+    fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                // Se a resposta foi bem-sucedida, recarrega a página
+                //window.location.reload();
+                console.log('Deu certo');
+            } else {
+                // Se houve um problema com a resposta, lança um erro
+                throw new Error('Erro na solicitação POST');
+            }
+        })
+        .catch(error => console.error('Erro:', error));
+}
+//
 
 // Rola para o topo apos mudar de pagina de wishlist
 document.addEventListener('click', function (event) {

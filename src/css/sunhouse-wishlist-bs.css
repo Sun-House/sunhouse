@@ -149,6 +149,10 @@
     font-size: 30px;
     color: #666
 }
+
+.wishlist #wishlist__add-to-cart-button #wishlist__add-to-cart:hover::after {
+    color: #69BD44
+}
 /* Botao Adicionar ao Carrinho */
 
 .wishlist .giftlistproductsv2 .deletethissku {
