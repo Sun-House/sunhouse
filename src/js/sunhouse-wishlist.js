@@ -131,10 +131,11 @@ function removeFromWishlist(skuId) {
         }).then(response => {
             if (response.ok) {
                 // Se a resposta foi bem-sucedida, recarrega a página
-                //window.location.reload();
-                console.log('Deu certo');
+                window.location.reload();
+                //console.log('Deu certo');
             } else {
                 // Se houve um problema com a resposta, lança um erro
+                //console.log('Erro ao remover produto');
                 throw new Error('Erro na solicitação POST');
             }
         })
