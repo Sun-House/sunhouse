@@ -1,11 +1,16 @@
-// Cria o botao de Adicionar ao Carrinho
+// Executa a function de Criar o botao de Adicionar ao Carrinho no carregamento do DOM
 window.onload = function() {
+    reloadButtons();
+};
+
+// Cria o botao de Adicionar ao Carrinho
+function reloadButtons() {
     // Delay para executar senao nao cria os botoes
     setTimeout(function () {
         // Selecionar todos os elementos <tr> com o atributo data-bind="foreach: $parent.columns"
         var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
         var productTrRmv = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .deletethissku')
-        
+
         // Para cada elemento <tr> encontrado - cria botao de add to cart
         productTrInput.forEach(function (element) {
             // Criar o elemento <button>
@@ -32,7 +37,7 @@ window.onload = function() {
             // Adicionar o botão após o elemento <tr>
             element.parentNode.insertBefore(button, element.nextSibling);
         });
-        
+
         // Para cada elemento <tr> encontrado - cria botao custom para remover da wishlist
         productTrRmv.forEach(function (element) {
             // Criar o elemento <button>
@@ -75,9 +80,9 @@ window.onload = function() {
                     removeFromWishlist(skuId);
                 });
             });
-        }, 2000);
-    }, 2000);
-};
+        }, 1000);
+    }, 1000);
+}
 
 // Adiciona ao Carrinho v2 - Native Vtex
 function addtoCartWishlist(skuId) {
@@ -115,7 +120,7 @@ function addtoCartWishlist(skuId) {
     }));
 };
 
-//
+// Remove produto da Lista assincronamente via comando API POST e recarrega a pagina
 function removeFromWishlist(skuId) {
     var userListId = document.getElementById('gid').getAttribute('value');
 
@@ -141,7 +146,6 @@ function removeFromWishlist(skuId) {
         })
         .catch(error => console.error('Erro:', error));
 }
-//
 
 // Rola para o topo apos mudar de pagina de wishlist
 document.addEventListener('click', function (event) {
@@ -152,8 +156,15 @@ document.addEventListener('click', function (event) {
             top: 0,
             behavior: 'smooth'
         });
+        reloadButtons();
     }
 });
+
+// Faz o mesmo que o bloco acima, da parte de executar a function
+//var reloadButton = document.querySelector('.ko-grid-pageLinks');    
+//reloadButton.addEventListener('click', function () {
+    //reloadButtons();
+//});
 
 // Mostra bloco de Lista Vazia quando a nao tiver produtos na lista
 $(document).ready(function () {
