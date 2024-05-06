@@ -158,6 +158,8 @@ document.addEventListener('click', function (event) {
             top: 0,
             behavior: 'smooth'
         });
+        var loadingBg = document.getElementById('loading_bg');
+        loadingBg.style.display = 'block';
         loadButtons();
     }
 });
