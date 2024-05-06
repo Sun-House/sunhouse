@@ -6,7 +6,7 @@ window.onload = function() {
         var productTrInput = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .inputedit');
         var productTrRmv = document.querySelectorAll('tr[data-bind="foreach: $parent.columns"] .deletethissku')
         
-        // Para cada elemento <tr> encontrado - cria botao
+        // Para cada elemento <tr> encontrado - cria botao de add to cart
         productTrInput.forEach(function (element) {
             // Criar o elemento <button>
             var button = document.createElement("button");
@@ -33,7 +33,7 @@ window.onload = function() {
             element.parentNode.insertBefore(button, element.nextSibling);
         });
         
-        //Cria botao custom para remover da wishlist
+        // Para cada elemento <tr> encontrado - cria botao custom para remover da wishlist
         productTrRmv.forEach(function (element) {
             // Criar o elemento <button>
             var rmvButton = document.createElement("a");
