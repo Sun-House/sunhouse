@@ -163,7 +163,15 @@
     margin-left: 15px
 }*/
 
-.wishlist .giftlistproductsv2 .deletethissku::after {
+/*.wishlist .giftlistproductsv2 .deletethissku::after {
+    content: "\F770";
+    font-family: bootstrap-icons !important;
+    font-size: 28px;
+    color: #666;
+    margin-left: 15px
+}*/
+
+.wishlist .giftlistproductsv2 #wishlist__remove-product-button::after {
     content: "\F770";
     font-family: bootstrap-icons !important;
     font-size: 28px;
