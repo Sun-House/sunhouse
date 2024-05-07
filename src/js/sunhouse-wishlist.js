@@ -19,10 +19,10 @@ function loadButtons() {
             // Adicionar o evento de clique ao botão
             button.setAttribute("class", "wishlist--add-to-cart-button");
             button.setAttribute("id", "wishlist__add-to-cart-button");
-            button.setAttribute("data-bs-toggle", "tooltip");
-            button.setAttribute("data-bs-placement", "bottom");
-            button.setAttribute("data-bs-title", "Adicionar ao Carrinho");
-            button.setAttribute("data-bs-custom-class", "add-to-cart-tooltip");
+            //button.setAttribute("data-bs-toggle", "tooltip");
+            //button.setAttribute("data-bs-placement", "bottom");
+            //button.setAttribute("data-bs-title", "Adicionar ao Carrinho");
+            //button.setAttribute("data-bs-custom-class", "add-to-cart-tooltip");
 
             // Criar o elemento <a> dentro do botão
             var link = document.createElement("a");
@@ -50,10 +50,10 @@ function loadButtons() {
             // Adicionar o evento de clique ao botão
             rmvButton.setAttribute("class", "wishlist--remove-product-button");
             rmvButton.setAttribute("id", "wishlist__remove-product-button");
-            rmvButton.setAttribute("data-bs-toggle", "tooltip");
-            rmvButton.setAttribute("data-bs-placement", "bottom");
-            rmvButton.setAttribute("data-bs-title", "Remover da Lista");
-            rmvButton.setAttribute("data-bs-custom-class", "remove-from-list-tooltip");
+            //rmvButton.setAttribute("data-bs-toggle", "tooltip");
+            //rmvButton.setAttribute("data-bs-placement", "bottom");
+            //rmvButton.setAttribute("data-bs-title", "Remover da Lista");
+            //rmvButton.setAttribute("data-bs-custom-class", "remove-from-list-tooltip");
 
             // Adicionar o botão após o elemento <tr>
             element.parentNode.insertBefore(rmvButton, element.nextSibling);
