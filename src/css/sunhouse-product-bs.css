@@ -2595,14 +2595,17 @@ Ajustes pre rebranding */
 /* Ajuste CRO Rafa */
 
 /* Wishlist */
-.produto #wishlist_add {
+.produto #wishlist_add,
+.produto #wishlist_remove {
     position: relative;
     /*left: -50px; - Para quando a funcao de Share Icons for apresentada */
     right: 150px
 }
 
 .produto #wishlist_add .fa-heart-o,
-.produto #wishlist_add .fa-heart {
+.produto #wishlist_add .fa-heart,
+.produto #wishlist_remove .fa-heart,
+.produto #wishlist_remove .fa-heart-o {
     font-size: 32px;
     font-weight: bolder;
     transition: .3s
@@ -2612,15 +2615,22 @@ Ajustes pre rebranding */
     color: #444
 }
 
-.produto #wishlist_add .fa-heart-o:hover {
+.produto #wishlist_add .fa-heart-o:hover,
+.produto #wishlist_remove .fa-heart {
     color: #F90041
 }
 
-.produto #wishlist_add .fa-heart-o:hover + .fa-heart {
+.produto #wishlist_add .fa-heart-o:hover + .fa-heart,
+.produto #wishlist_remove .fa-heart:hover + .fa-heart-o {
     display: block !important
 }
 
-.produto #wishlist_add .fa-heart {
+.produto #wishlist_remove .fa-heart:hover {
+    color: transparent
+}
+
+.produto #wishlist_add .fa-heart,
+.produto #wishlist_remove .fa-heart-o {
     position: absolute;
     top: 0;
     color: #F90041;
