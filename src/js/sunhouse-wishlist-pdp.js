@@ -185,7 +185,13 @@ function executarVerificacao() {
 }
 
 // Remove produto da Lista de Desejos
-function removeFromWishlistPdp(skuId) {
+function removeFromWishlistPdp() {
+    var iframe = document.getElementById('iframe_wishlistId');
+    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    var listId = iframeDocument.querySelector('.giftlist-body-id').innerHTML;
+
+    var skuId = document.getElementById('___rc-p-id').getAttribute('value');
+    
     var urlRmv = `https://www.sunhouse.com.br/no-cache/giftlistv2/changewishedamount/${listId}/${skuId}/0`;
 
     // Realizar a solicitação POST usando fetch() com a URL dinâmica
