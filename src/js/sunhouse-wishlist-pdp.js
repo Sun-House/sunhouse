@@ -1,5 +1,3 @@
-// EM TESTES
-
 window.onload = function() {
     listSkusFromWishlistPdp()
 };
@@ -38,7 +36,7 @@ function wishListAddorCreate() {
 
             // Informar ao usuario que foi adicionado a wishlist - usar Toastr
             // Apenas para o processo de implementacao
-            console.log(" Bloco if executado com sucesso - ja tinha a lista e produto foi adicionado");
+            //console.log(" Bloco if executado com sucesso - ja tinha a lista e produto foi adicionado");
             swalPopupAdd();
             document.getElementById('wishlist_add').style.display = 'none';
             document.getElementById('wishlist_remove').style.display = 'block';
@@ -62,15 +60,15 @@ function wishListAddorCreate() {
                     submitNewLink.click();
                     
                     // Apenas para o processo de implementacao
-                    console.log(" Bloco else executado com sucesso - nao tinha a lista, ela foi criada e produto foi adicionado");
+                    //console.log(" Bloco else executado com sucesso - nao tinha a lista, ela foi criada e produto foi adicionado");
                     swalPopupAdd();
                     document.getElementById('wishlist_add').style.display = 'none';
                     document.getElementById('wishlist_remove').style.display = 'block';
                 } else {
-                    console.log("Elemento '.glis-submit-new' não encontrado.");
+                    //console.log("Elemento '.glis-submit-new' não encontrado.");
                 }
             } else {
-                console.log("Elemento input com título 'nome da lista' não encontrado.");
+                //console.log("Elemento input com título 'nome da lista' não encontrado.");
             }
         }
     }, 1000);
