@@ -2654,6 +2654,10 @@ Ajustes pre rebranding */
     box-shadow: 0 0 0 3px #f9004154 !important
 }
 
+.produto #iframe_wishlistId {
+    display: none !important
+}
+
 @media screen and (max-width: 1199px) {
     #on-title-wrap {
         justify-content: flex-start
