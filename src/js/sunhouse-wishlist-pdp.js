@@ -72,24 +72,31 @@ function wishListAddorCreate() {
 function listSkusFromWishlistPdp() {
     var iframe = document.getElementById('iframe_wishlistId');
     var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-    var listId = iframeDocument.querySelector('.giftlist-body-id').innerHTML;
+    //var listId = iframeDocument.querySelector('.giftlist-body-id').innerHTML;
+    //var urlGet = `https://www.sunhouse.com.br/no-cache/giftlistv2/getskulist/${listId}/3/10/true`;
+    var listIdElement = iframeDocument.querySelector('.giftlist-body-id');
 
-    var urlGet = `https://www.sunhouse.com.br/no-cache/giftlistv2/getskulist/${listId}/3/10/true`;
+    if (listIdElement !== null) {
+        var listId = listIdElement.innerHTML;
+        var urlGet = `https://www.sunhouse.com.br/no-cache/giftlistv2/getskulist/${listId}/3/10/true`;
 
-    // Função para verificar se o valor existe em qualquer nível do array
-    function searchValueInArray(array, value) {
-        for (let i = 0; i < array.length; i++) {
-            const item = array[i];
-            if (typeof item === 'object') {
-                if (searchValueInObject(item, value)) {
+        // Função para verificar se o valor existe em qualquer nível do array
+        function searchValueInArray(array, value) {
+            for (let i = 0; i < array.length; i++) {
+                const item = array[i];
+                if (typeof item === 'object') {
+                    if (searchValueInObject(item, value)) {
+                        return true;
+                    }
+                } else if (item === value) {
                     return true;
                 }
-            } else if (item === value) {
-                return true;
             }
+            return false;
         }
-        return false;
-    }
+    } //else {
+        //console.log("Elemento listId não encontrado.");
+    //}
 
     // Função para verificar se o valor existe em qualquer nível do objeto
     function searchValueInObject(object, value) {
