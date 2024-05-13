@@ -41,14 +41,6 @@ function wishListAddorCreate() {
             document.getElementById('wishlist_add').style.display = 'none';
             document.getElementById('wishlist_remove').style.display = 'block';
         } else {
-            //console.log("Aqui sera criado o bloco onde cria a wishlist com o nome wishlist");
-
-            // Aqui sera realizada a operação de criação da Wishlist para novos usuarios
-            // e sera adicionado o produto em que o usuario tiver clicado para adicionar
-            // todas listas terao o nome de 'wishlist' e serao criadas apenas nesse momento
-            // codigo abaixo - EM TESTES:
-
-
             // Encontrar o input com o título "nome da lista" e definir seu valor como "wishlist"
             var inputNomeLista = document.querySelector('input[title="nome da lista"]');
             if (inputNomeLista) {
@@ -66,9 +58,11 @@ function wishListAddorCreate() {
                     document.getElementById('wishlist_remove').style.display = 'block';
                 } else {
                     //console.log("Elemento '.glis-submit-new' não encontrado.");
+                    swalAnyError();
                 }
             } else {
                 //console.log("Elemento input com título 'nome da lista' não encontrado.");
+                swalAnyError();
             }
         }
     }, 1000);
@@ -134,6 +128,7 @@ function listSkusFromWishlistPdp() {
                 document.getElementById('wishlist_remove').style.display = 'block';
             } else {
                 //console.log(`O valor ${skuId} não foi encontrado no array.`);
+                swalAnyError();
             }
         })
         .catch(error => {
@@ -179,6 +174,18 @@ function swalPopupRmv() {
     });
 }
 
+// Mostra Toast de Erro inesperado
+function swalAnyError() {
+    Swal.fire({
+        title: "Houve um erro inesperado!",
+        text: "Tente novamente mais tarde.",
+        icon: "error",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        confirmButtonText: "OK"
+    });
+}
+
 // Função para executar quando o botão de ADD for clicado
 function executarVerificacao() {
     wishListAddorCreate();
@@ -210,6 +217,7 @@ function removeFromWishlistPdp() {
             } else {
                 // Se houve um problema com a resposta, lança um erro
                 //console.log('Erro ao remover produto');
+                swalAnyError();
                 throw new Error('Erro na solicitação POST');
             }
         })
