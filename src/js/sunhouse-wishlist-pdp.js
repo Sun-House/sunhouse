@@ -128,7 +128,7 @@ function listSkusFromWishlistPdp() {
                 document.getElementById('wishlist_add').style.display = 'none';
                 document.getElementById('wishlist_remove').style.display = 'block';
             } else {
-                //console.log(`O valor ${skuId} não foi encontrado no array.`);
+                console.log(`O valor ${skuId} não foi encontrado no array.`);
                 swalAnyError();
             }
         })
@@ -217,7 +217,7 @@ function removeFromWishlistPdp() {
                 document.getElementById('wishlist_add').style.display = 'block';
             } else {
                 // Se houve um problema com a resposta, lança um erro
-                //console.log('Erro ao remover produto');
+                console.log('Erro ao remover produto');
                 swalAnyError();
                 throw new Error('Erro na solicitação POST');
             }
