@@ -56,14 +56,14 @@ function wishListAddorCreate() {
                     swalPopupAdd();
                     document.getElementById('wishlist_add').style.display = 'none';
                     document.getElementById('wishlist_remove').style.display = 'block';
-                } else {
+                } //else {
                     //console.log("Elemento '.glis-submit-new' não encontrado.");
-                    swalAnyError();
-                }
-            } else {
+                    //swalAnyError();
+                //}
+            } //else {
                 //console.log("Elemento input com título 'nome da lista' não encontrado.");
-                swalAnyError();
-            }
+                //swalAnyError();
+            //}
         }
     }, 1000);
 }
@@ -112,6 +112,7 @@ function listSkusFromWishlistPdp() {
     fetch(urlGet)
         .then(response => {
             if (!response.ok) {
+                swalAnyError();
                 throw new Error('Erro ao carregar os dados da requisição');
             }
             return response.json();
