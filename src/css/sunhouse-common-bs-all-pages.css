@@ -2984,3 +2984,14 @@ Btn Comprar */
 }
 /* Wishlist Pages */
 /* Show on Loading some Pages */
+
+/* Highlight Promocional Minicart */
+#minicart__promo-cta {
+    border: 1px solid #69bd44;
+    background-color: #69bd4424
+}
+
+#minicart__promo-cta i:first-child {
+    color: #69bd44
+}
+/* Highlight Promocional Minicart */
