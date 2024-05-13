@@ -2663,7 +2663,8 @@ Ajustes pre rebranding */
         justify-content: flex-start
     }
     
-    .produto #wishlist_add {
+    .produto #wishlist_add,
+    .produto #wishlist_remove {
         right: unset;
         margin-left: 15px
     }
