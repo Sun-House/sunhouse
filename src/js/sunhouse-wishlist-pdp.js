@@ -94,53 +94,51 @@ function listSkusFromWishlistPdp() {
             }
             return false;
         }
+
+        // Função para verificar se o valor existe em qualquer nível do objeto
+        function searchValueInObject(object, value) {
+            for (const key in object) {
+                if (object.hasOwnProperty(key)) {
+                    const item = object[key];
+                    if (typeof item === 'object') {
+                        if (searchValueInObject(item, value)) {
+                            return true;
+                        }
+                    } else if (key === 'SkuId' && item === value) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        // Realiza um GET usando fetch() com a URL dinâmica
+        fetch(urlGet)
+            .then(response => {
+                if (!response.ok) {
+                    swalAnyError();
+                    throw new Error('Erro ao carregar os dados da requisição');
+                }
+                return response.json();
+            }).then(data => {
+                //console.log(data);
+                var skuIdString = document.getElementById('___rc-p-id').getAttribute('value');
+                var skuId = parseInt(skuIdString);
+
+                const exists = searchValueInArray(data.Items, skuId);
+                if (exists) {
+                    //console.log(`O valor ${skuId} existe no array.`);
+                    document.getElementById('wishlist_add').style.display = 'none';
+                    document.getElementById('wishlist_remove').style.display = 'block';
+                } //else {
+                    //console.log(`O valor ${skuId} não foi encontrado no array.`);
+                //}
+            }).catch(error => {
+                console.error('Ocorreu um erro:', error);
+            });
     } //else {
         //console.log("Elemento listId não encontrado.");
     //}
-
-    // Função para verificar se o valor existe em qualquer nível do objeto
-    function searchValueInObject(object, value) {
-        for (const key in object) {
-            if (object.hasOwnProperty(key)) {
-                const item = object[key];
-                if (typeof item === 'object') {
-                    if (searchValueInObject(item, value)) {
-                        return true;
-                    }
-                } else if (key === 'SkuId' && item === value) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    // Realiza um GET usando fetch() com a URL dinâmica
-    fetch(urlGet)
-        .then(response => {
-            if (!response.ok) {
-                swalAnyError();
-                throw new Error('Erro ao carregar os dados da requisição');
-            }
-            return response.json();
-        })
-        .then(data => {
-            //console.log(data);
-            var skuIdString = document.getElementById('___rc-p-id').getAttribute('value');
-            var skuId = parseInt(skuIdString);
-
-            const exists = searchValueInArray(data.Items, skuId);
-            if (exists) {
-                //console.log(`O valor ${skuId} existe no array.`);
-                document.getElementById('wishlist_add').style.display = 'none';
-                document.getElementById('wishlist_remove').style.display = 'block';
-            } //else {
-                //console.log(`O valor ${skuId} não foi encontrado no array.`);
-            //}
-        })
-        .catch(error => {
-            console.error('Ocorreu um erro:', error);
-        });
 }
 
 // Mostra Toast de Add a Lista de Desejos
