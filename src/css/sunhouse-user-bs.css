@@ -76,6 +76,28 @@
     filter: drop-shadow(1px 1px 1px #9c9c9c)
 }
 
+/* Texto com Saudacao e Nome do Usuario Logado */
+.login-block #login__dropdown .client-name {
+    white-space: nowrap;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    transition: .5s ease;
+    opacity: 0
+}
+
+.login-block #login__dropdown .client-name p {
+    font-weight: 500;
+    color: #F90041
+}
+
+.login-block #login__dropdown:hover .client-name {
+    left: 65px;
+    transition: .2s ease;
+    opacity: 1
+}
+/* Texto com Saudacao e Nome do Usuario Logado */
+
 @media screen and (max-width: 1199px) {
     .login-block {
         position: absolute;
