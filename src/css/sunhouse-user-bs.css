@@ -92,7 +92,8 @@
 }
 
 .login-block #login__dropdown:hover .client-name {
-    left: 65px;
+    top: 24px;
+    left: 78px;
     transition: .2s ease;
     opacity: 1
 }
