@@ -96,6 +96,20 @@
     transition: .2s ease;
     opacity: 1
 }
+
+.login-block #login__dropdown #name_caret {
+    color: #777777e0;
+    position: absolute;
+    top: 40%;
+    right: -15px;
+    transition: .2s ease
+}
+
+.login-block #login__dropdown:hover #name_caret {
+    transform: rotate(-90deg);
+    transition: .2s ease;
+    color: #FFDA00
+}
 /* Texto com Saudacao e Nome do Usuario Logado */
 
 @media screen and (max-width: 1199px) {
