@@ -20,12 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function incrementQtdPrd() {
-        vtexjs.checkout.getOrderForm().done((function (a) {
-            $(".header__cart-items").text(a.items.length);
-        }));
-    }
-
     // Bloco do MutationObserver
     // Ouvinte de evento para detectar alterações na estrutura
     var observer = new MutationObserver(function () {
@@ -49,3 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // Bloco do MutationObserver
 });
+
+function incrementQtdPrd() {
+    vtexjs.checkout.getOrderForm().done((function (a) {
+        $(".header__cart-items").text(a.items.length);
+    }));
+}
