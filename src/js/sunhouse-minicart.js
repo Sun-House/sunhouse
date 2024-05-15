@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    function alteraDisplaysMiniCart () {
+    function alteraDisplaysMiniCart() {
         // Seleciona o tbody da tabela
         var tbody = document.querySelector('div.portal-minicart-ref div.v2-vtexsc-cart div.vtexsc-center div.vtexsc-wrap table.vtexsc-productList tbody');
         var promoBar = document.getElementById('mini-cart__promo-highlight');
@@ -9,16 +9,21 @@ document.addEventListener('DOMContentLoaded', function () {
         if (tbody && tbody.querySelectorAll('tr').length > 0) {
             // Se houver pelo menos um tr, faça algo aqui
             //console.log('Pelo menos 1 elemento <tr> encontrado.');
-            
+
             promoBar.style.display = 'block';
             emptyCartSad.style.display = 'none';
         } else {
             // Se não houver nenhum tr, faça algo aqui
             //console.log('Nenhum elemento <tr> encontrado.');
-            
             promoBar.style.display = 'none';
             emptyCartSad.style.display = 'block';
         }
+    }
+
+    function incrementQtdPrd() {
+        vtexjs.checkout.getOrderForm().done((function (a) {
+            $(".header__cart-items").text(a.items.length);
+        }));
     }
 
     // Bloco do MutationObserver
@@ -27,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //console.log("Alteração detectada na estrutura. Funcoes executadas");
         // Se houver alterações, execute algo abaixo
         alteraDisplaysMiniCart();
+        incrementQtdPrd()
     });
 
     // Selecione o elemento pai que contém a estrutura que sofre alteração
