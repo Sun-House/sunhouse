@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //console.log("Alteração detectada na estrutura. Funcoes executadas");
         // Se houver alterações, execute algo abaixo
         alteraDisplaysMiniCart();
-        incrementQtdPrd()
+        incrementQtdPrd();
     });
 
     // Selecione o elemento pai que contém a estrutura que sofre alteração
