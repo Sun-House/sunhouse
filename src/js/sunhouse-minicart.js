@@ -21,31 +21,46 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Bloco do MutationObserver
-    // Ouvinte de evento para detectar alterações na estrutura
     var observer = new MutationObserver(function () {
-        //console.log("Alteração detectada na estrutura. Funcoes executadas");
-        // Se houver alterações, execute algo abaixo
-        alteraDisplaysMiniCart();
-        incrementQtdPrd();
+        // Desconecta o observador para evitar loops
+        observer.disconnect();
+        try {
+            incrementQtdPrd();
+        } catch (error) {
+            console.error('Erro ao incrementar a quantidade de produtos:', error);
+        } finally {
+            // Reconecta o observador depois das modificações
+            observe();
+        }
     });
 
     // Selecione o elemento pai que contém a estrutura que sofre alteração
     var portalMiniCartRef = document.querySelector('.portal-minicart-ref');
 
-    // Se o elemento pai existir, observe alterações em seu conteúdo
-    if (portalMiniCartRef) {
-        observer.observe(portalMiniCartRef, {
-            childList: true,
-            subtree: true
-        });
-    } else {
-        //console.log("Elemento pai não encontrado.");
+    // Função para configurar o observador
+    function observe() {
+        if (portalMiniCartRef) {
+            observer.observe(portalMiniCartRef, {
+                childList: true,
+                subtree: true
+            });
+        }
     }
+    
+    observe();
     // Bloco do MutationObserver
 });
 
 function incrementQtdPrd() {
-    vtexjs.checkout.getOrderForm().done((function (a) {
-        $(".header__cart-items").text(a.items.length);
-    }));
+    vtexjs.checkout.getOrderForm().done(function (orderForm) {
+        // Verifica se o elemento ".header__cart-items" existe
+        var headerCartItems = document.querySelector('.header__cart-items');
+        if (headerCartItems) {
+            headerCartItems.textContent = orderForm.items.length;
+        } else {
+            console.error('Elemento ".header__cart-items" não encontrado.');
+        }
+    }).fail(function (error) {
+        console.error('Erro ao obter o orderForm:', error);
+    });
 }
