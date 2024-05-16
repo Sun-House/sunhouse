@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Bloco do MutationObserver
     var observer = new MutationObserver(function () {
+        alteraDisplaysMiniCart();
+
         // Desconecta o observador para evitar loops
         observer.disconnect();
         try {
             incrementQtdPrd();
-        } catch (error) {
-            console.error('Erro ao incrementar a quantidade de produtos:', error);
         } finally {
             // Reconecta o observador depois das modificações
             observe();
@@ -46,21 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-    
+
+    // Inicializa a observação
     observe();
     // Bloco do MutationObserver
 });
 
 function incrementQtdPrd() {
     vtexjs.checkout.getOrderForm().done(function (orderForm) {
-        // Verifica se o elemento ".header__cart-items" existe
-        var headerCartItems = document.querySelector('.header__cart-items');
-        if (headerCartItems) {
-            headerCartItems.textContent = orderForm.items.length;
-        } else {
-            console.error('Elemento ".header__cart-items" não encontrado.');
-        }
-    }).fail(function (error) {
-        console.error('Erro ao obter o orderForm:', error);
+        $(".header__cart-items").text(orderForm.items.length);
     });
 }
