@@ -33,6 +33,7 @@ function fnAddtoCart() {
                         icon: "success",
                         title: "Produto adicionado ao carrinho!"
                     });
+                    setTimeout(showMinicart, 2000);
                 }));
             } else {
                 const Toast = Swal.mixin({
@@ -53,4 +54,16 @@ function fnAddtoCart() {
             }
         }))
     }))
+}
+
+function showMinicart() {
+    var miniCartBSOffCanvas = document.getElementById('mini-cart__sidebar');
+
+    // Verifica se o carrinho já está visível
+    if (miniCartBSOffCanvas.classList.contains('show')) {
+        return; // Se estiver visível, retorna sem fazer mais nada
+    }
+
+    var bsOffcanvas = new bootstrap.Offcanvas(miniCartBSOffCanvas)
+    bsOffcanvas.show();
 }

@@ -57,19 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
             subtree: true
         });
     }
-
-    // Bloco btn Add to Cart
-    function showMinicart() {
-        var miniCartBSOffCanvas = document.getElementById('mini-cart__sidebar');
-    
-        // Verifica se o carrinho já está visível
-        if (miniCartBSOffCanvas.classList.contains('show')) {
-            return; // Se estiver visível, retorna sem fazer mais nada
-        }
-    
-        var bsOffcanvas = new bootstrap.Offcanvas(miniCartBSOffCanvas)
-        bsOffcanvas.show();
-    }
     
     document.getElementById("minicart__promo-cta-btn").onclick = function () {
         vtexjs.checkout.getOrderForm().then(function (orderForm) {
@@ -95,9 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Toast.fire({
                 icon: "success",
                 title: "Cupom adicionado ao carrinho!"
-            })
-            
-            showMinicart()
+            });
         });
     };
 });
