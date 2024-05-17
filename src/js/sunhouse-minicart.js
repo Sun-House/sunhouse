@@ -20,40 +20,75 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Bloco do MutationObserver
-    var observer = new MutationObserver(function () {
-        alteraDisplaysMiniCart();
+    function incrementQtdPrd() {
+        // Seleciona o tbody da tabela
+        var tbody = document.querySelector('#mini-cart__sidebar .vtexsc-productList tbody');
 
-        // Desconecta o observador para evitar loops
-        observer.disconnect();
-        try {
-            incrementQtdPrd();
-        } finally {
-            // Reconecta o observador depois das modificações
-            observe();
-        }
-    });
+        // Conta o número de elementos <tr> dentro do tbody
+        var rowCount = tbody.getElementsByTagName('tr').length;
 
-    // Selecione o elemento pai que contém a estrutura que sofre alteração
-    var portalMiniCartRef = document.querySelector('.portal-minicart-ref');
+        // Converte o número de linhas para uma string
+        var rowCountStr = rowCount.toString();
 
-    // Função para configurar o observador
-    function observe() {
-        if (portalMiniCartRef) {
-            observer.observe(portalMiniCartRef, {
-                childList: true,
-                subtree: true
-            });
-        }
+        // Seleciona os elementos com a classe "header__cart-items"
+        var cartItems = document.querySelectorAll('.header__cart-items');
+
+        // Itera sobre cada elemento da lista e atribui o valor rowCountStr a eles
+        cartItems.forEach(function (item) {
+            item.textContent = rowCountStr;
+        });
     }
 
-    // Inicializa a observação
-    observe();
     // Bloco do MutationObserver
-});
-
-function incrementQtdPrd() {
-    vtexjs.checkout.getOrderForm().done(function (orderForm) {
-        $(".header__cart-items").text(orderForm.items.length);
+    // Ouvinte de evento para detectar alterações na estrutura
+    var observer = new MutationObserver(function () {
+        //console.log("Alteração detectada na estrutura. Funcoes executadas");
+        // Se houver alterações, execute algo abaixo
+        alteraDisplaysMiniCart();
+        incrementQtdPrd();
     });
-}
+    
+    // Selecione o elemento pai que contém a estrutura que sofre alteração
+    var portalMiniCartRef = document.querySelector('.portal-minicart-ref');
+    
+    // Se o elemento pai existir, observe alterações em seu conteúdo
+    if (portalMiniCartRef) {
+        observer.observe(portalMiniCartRef, {
+            childList: true,
+            subtree: true
+        });
+    }
+    // Bloco do MutationObserver
+
+
+    // Bloco btn Add to Cart
+    //$(document).ready(function() {
+    document.getElementById("minicart__promo-cta-btn").onclick = function () {
+        vtexjs.checkout.getOrderForm().then(function (orderForm) {
+            var code = "ARRAIAL10"
+            return vtexjs.checkout.addDiscountCoupon(code)
+        }).then(function (orderForm) {
+            console.log(orderForm)
+            console.log(orderForm.paymentData)
+            console.log(orderForm.totalizers)
+
+            const Toast = Swal.mixin({
+                toast: true,
+                //position: "top-end",
+                position: "top",
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: true,
+                didOpen: function (toast) {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                }
+            });
+            Toast.fire({
+                icon: "success",
+                title: "Cupom adicionado ao carrinho!"
+            });
+        });
+    };
+    //});
+});
