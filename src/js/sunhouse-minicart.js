@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (tbody && tbody.querySelectorAll('tr').length > 0) {
             // Se houver pelo menos um tr, faça algo aqui
             //console.log('Pelo menos 1 elemento <tr> encontrado.');
-
             promoBar.style.display = 'block';
             emptyCartSad.style.display = 'none';
         } else {
@@ -39,6 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function showMinicart() {
+        var miniCartBSOffCanvas = document.getElementById('mini-cart__sidebar');
+    
+        // Verifica se o carrinho já está visível
+        if (miniCartBSOffCanvas.classList.contains('show')) {
+            return; // Se estiver visível, retorna sem fazer mais nada
+        }
+    
+        var bsOffcanvas = new bootstrap.Offcanvas(miniCartBSOffCanvas)
+        bsOffcanvas.show();
+    }
+
     // Bloco do MutationObserver
     // Ouvinte de evento para detectar alterações na estrutura
     var observer = new MutationObserver(function () {
@@ -58,11 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
             subtree: true
         });
     }
-    // Bloco do MutationObserver
-
 
     // Bloco btn Add to Cart
-    //$(document).ready(function() {
     document.getElementById("minicart__promo-cta-btn").onclick = function () {
         vtexjs.checkout.getOrderForm().then(function (orderForm) {
             var code = "ARRAIAL10"
@@ -88,7 +96,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 icon: "success",
                 title: "Cupom adicionado ao carrinho!"
             });
+            
+            showMinicart();
         });
     };
-    //});
 });
