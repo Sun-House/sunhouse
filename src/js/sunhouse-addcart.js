@@ -33,7 +33,7 @@ function fnAddtoCart() {
                         icon: "success",
                         title: "Produto adicionado ao carrinho!"
                     });
-                    setTimeout(showMinicart, 2000);
+                    setTimeout(showMinicart, 1000);
                 }));
             } else {
                 const Toast = Swal.mixin({
