@@ -1,6 +1,5 @@
-// Teste:
 function fnAddtoCart() {
-    //$("body").on("click", ".add-to-cart", (function (a) {
+    $("body").on("click", ".add-to-cart", (function (a) {
         a.preventDefault();
         var b = $(this).parents(".shelfProduct").attr("data-id");
         $.ajax({
@@ -12,7 +11,7 @@ function fnAddtoCart() {
                 "Content-Type": "application/json"
             }
         }).done((function (a) {
-            if (a) {
+            if (a && a.length > 0 && a[0].items && a[0].items.length > 0 && a[0].items[0].itemId) {
                 var b = {
                     id: a[0].items[0].itemId,
                     quantity: 1,
@@ -49,9 +48,9 @@ function fnAddtoCart() {
                 });
                 Toast.fire({
                     icon: "error",
-                    title: "Produto está indisponível"
+                    title: "Produto indisponível"
                 });
             }
         }))
-    //}))
+    }))
 }
