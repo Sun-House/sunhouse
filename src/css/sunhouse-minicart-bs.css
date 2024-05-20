@@ -245,8 +245,17 @@
         margin-top: 58px !important
     }
 
-    #minicart__promo-cta-btn {
+    /*#minicart__promo-cta-btn {
         display: block !important
+    }*/
+
+    #minicart__promo-cta {
+        height: 105px
+    }
+
+    #minicart__promo-cta-btn {
+        margin-top: 10px;
+        opacity: 1
     }
 
     #mini-cart__sidebar .cartFooter {
