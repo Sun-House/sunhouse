@@ -251,7 +251,10 @@
 
     #mini-cart__sidebar .cartFooter {
         width: 380px !important
-        /**/
+    }
+    
+    .offcanvas-backdrop.show {
+        opacity: 0 !important
     }
 }
 /* Mobile */
