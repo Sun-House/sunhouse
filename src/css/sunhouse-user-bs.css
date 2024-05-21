@@ -129,6 +129,28 @@
         font-size: 50px !important;
         color: #fff
     }
+
+    #mobile-login__loggedIn .client-name {
+        white-space: nowrap;
+        position: absolute;
+        top: 90px;
+        margin-left: 50px;
+        margin-right: 170px;
+        width: -webkit-fill-available;
+        text-align: center
+        /*opacity: 1*/
+    }
+    
+    #mobile-login__loggedIn .client-name p {
+        color: #fff !important;
+        font-size: 20px;
+        font-weight: 500;
+        float: right
+    }
+    
+    #mobile-login__loggedIn #login__dropdown #name_caret {
+        display: none
+    }
     
     .stickyHeader .login-block {
         display: none !important
