@@ -47,12 +47,12 @@ function userLoginArea() {
                 if ($(window).width() <= 1199) {
                     $("#login__loggedIn").appendTo("#mobile-login__loggedIn");
                     
-                    var loggedUsername = document.getElementById('client_name');
+                    var loggedUsername = document.querySelector('#client_name p');
                     loggedUsername.style.setProperty('display', 'block', 'important');
                 } else {
                     $("#login__loggedIn").appendTo("#desk-login__loggedIn");
                     
-                    var loggedUsername = document.getElementById('client_name');
+                    var loggedUsername = document.querySelector('#client_name p');
                     loggedUsername.style.setProperty('display', 'none', 'important');
                 }
             }
