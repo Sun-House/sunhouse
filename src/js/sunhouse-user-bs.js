@@ -46,8 +46,14 @@ function userLoginArea() {
             function moveLoggedBlock() {
                 if ($(window).width() <= 1199) {
                     $("#login__loggedIn").appendTo("#mobile-login__loggedIn");
+                    
+                    var loggedUsername = document.getElementById('client_name');
+                    loggedUsername.style.setProperty('display', 'block', 'important');
                 } else {
                     $("#login__loggedIn").appendTo("#desk-login__loggedIn");
+                    
+                    var loggedUsername = document.getElementById('client_name');
+                    loggedUsername.style.setProperty('display', 'none', 'important');
                 }
             }
 
