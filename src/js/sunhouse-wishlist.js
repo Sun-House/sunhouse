@@ -19,10 +19,6 @@ function loadButtons() {
             // Adicionar o evento de clique ao botão
             button.setAttribute("class", "wishlist--add-to-cart-button");
             button.setAttribute("id", "wishlist__add-to-cart-button");
-            //button.setAttribute("data-bs-toggle", "tooltip");
-            //button.setAttribute("data-bs-placement", "bottom");
-            //button.setAttribute("data-bs-title", "Adicionar ao Carrinho");
-            //button.setAttribute("data-bs-custom-class", "add-to-cart-tooltip");
 
             // Criar o elemento <a> dentro do botão
             var link = document.createElement("a");
@@ -33,7 +29,7 @@ function loadButtons() {
             link.setAttribute("id", "wishlist__add-to-cart");
             link.setAttribute("href", "javascript:void(0)");
             link.setAttribute("style", "display: block");
-            link.textContent = "Adicionar ao Carrinho"; // Adicionar o texto dentro do elemento <a>
+            //link.textContent = "Adicionar ao Carrinho"; // Adicionar o texto dentro do elemento <a>
 
             // Adicionar o elemento <a> dentro do botão
             button.appendChild(link);
@@ -50,10 +46,6 @@ function loadButtons() {
             // Adicionar o evento de clique ao botão
             rmvButton.setAttribute("class", "wishlist--remove-product-button");
             rmvButton.setAttribute("id", "wishlist__remove-product-button");
-            //rmvButton.setAttribute("data-bs-toggle", "tooltip");
-            //rmvButton.setAttribute("data-bs-placement", "bottom");
-            //rmvButton.setAttribute("data-bs-title", "Remover da Lista");
-            //rmvButton.setAttribute("data-bs-custom-class", "remove-from-list-tooltip");
 
             // Adicionar o botão após o elemento <tr>
             element.parentNode.insertBefore(rmvButton, element.nextSibling);
@@ -105,15 +97,34 @@ function addtoCartWishlist(skuId) {
             "Content-Type": "application/json"
         }
     }).done((function (a) {
-        var skuId = {
-            id: a[0].items[0].itemId,
-            quantity: 1,
-            seller: "1"
-        };
-        vtexjs.checkout.addToCart([skuId], null, 1).done((function (a) {
+        if (a && a.length > 0 && a[0].items && a[0].items.length > 0 && a[0].items[0].itemId) {
+            var skuId = {
+                id: a[0].items[0].itemId,
+                quantity: 1,
+                seller: "1"
+            };
+            vtexjs.checkout.addToCart([skuId], null, 1).done((function (a) {
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top",
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                });
+                Toast.fire({
+                    icon: "success",
+                    title: "Produto adicionado ao carrinho!"
+                });
+                //setTimeout(showMinicart, 1000);
+            }));
+        } else {
             const Toast = Swal.mixin({
                 toast: true,
-                position: "top-end",
+                position: "top",
                 showConfirmButton: false,
                 timer: 3000,
                 timerProgressBar: true,
@@ -123,12 +134,23 @@ function addtoCartWishlist(skuId) {
                 }
             });
             Toast.fire({
-                icon: "success",
-                title: "Produto adicionado ao carrinho!"
+                icon: "error",
+                title: "Produto indisponível"
             });
-        }))
+        }
     }));
 };
+
+function showMinicart() {
+    var miniCartBSOffCanvas = document.getElementById('mini-cart__sidebar');
+
+    if (miniCartBSOffCanvas.classList.contains('show')) {
+        return;
+    }
+
+    var bsOffcanvas = new bootstrap.Offcanvas(miniCartBSOffCanvas);
+    bsOffcanvas.show();
+}
 
 // Remove produto da Lista assincronamente via comando API POST e recarrega a pagina
 function removeFromWishlist(skuId) {
