@@ -176,7 +176,7 @@
     /* Temporario - precisa ajustar no arquivo CDN depois */
 
     /* Ajustes botoes lancamento e pronta entrega */
-    /* Esse ficou legal tambem
+    /* v1 */
     .btnMenu {
         display: flex;
         padding-top: 10px;
@@ -184,14 +184,16 @@
         scale: 1.1;
         align-items: stretch;
         max-width: 55%;
-        margin-left: 10px;
-    }*/
-
+        margin-left: 10px
+    }
+    
+    /* v2
     .btnMenu {
         display: inline-block;
         scale: 1.1;
         margin-left: 10px;
-        margin-top: 15px
-    }
+        margin-top: 15px;
+        width: -webkit-fill-available / podem ocorrer bugs /
+    }*/
     /* Ajustes botoes lancamento e pronta entrega */
 }
