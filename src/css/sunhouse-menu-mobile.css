@@ -1,26 +1,26 @@
 @media screen and (max-width: 1199px) {
     .navMobMenu {
-        display: none !important;
+        display: none !important
     }
     
     #menu-mobile-new {
-        display: block !important;
+        display: block !important
     }
     
     /* Precisa ajustar no arquivo Css do Menu-mobile */
     .caretRight {
-        display: block !important;
+        display: block !important
     }
     /* Precisa ajustar no arquivo Css do Menu-mobile */
 
     /* TESTE */
     .wrapHeader .header {
-        width: 90%;
+        width: 90%
     }
 
     .header__mobilemenu {
         /*width: 30px !important;*/
-        height: 30px !important;
+        height: 30px !important
     }
     /* TESTE */
     
@@ -46,7 +46,7 @@
 
     .sh-animate-left {
         position: relative;
-        animation: animateleft 0.4s forwards;
+        animation: animateleft 0.4s forwards
     }
     
     @keyframes animateleft {
@@ -62,18 +62,18 @@
     }
 
     .sh-animate-left-hide {
-        animation: animateleft-hide 0.4s forwards;
+        animation: animateleft-hide 0.4s forwards
     }
 
     @keyframes animateleft-hide {
         from {
             left: 0;
-            opacity: 1;
+            opacity: 1
         }
 
         to {
             left: -300px;
-            opacity: 0;
+            opacity: 0
         }
     }
 
@@ -85,7 +85,7 @@
         /*z-index: 9998 !important;*/
         z-index: 1000 !important;
         overflow: auto;
-        padding: 75px 20px 50px;
+        padding: 75px 20px 50px
     }
 
     .sh-bar-block .sh-bar-item {
@@ -97,13 +97,13 @@
         white-space: normal;
         float: none;
         outline: 0;
-        font-size: 22px;
+        font-size: 22px
     }
 
     .sh-bar-item.sh-button:hover,
     .sh-bar-item.sh-button:focus { /* tava bugando .sh-bar-item.sh-button:visited */
         color: #fff !important;
-        text-shadow: 1px 1px 5px #fff;
+        text-shadow: 1px 1px 5px #fff
     }
 
     .sh-large i {
@@ -111,7 +111,7 @@
         position: relative;
         left: -15px;
         top: -10px;
-        color: #fff !important;
+        color: #fff !important
     }
 
     .sh-large span {
@@ -119,11 +119,11 @@
         position: relative;
         left: -5px !important;
         top: 0;
-        color: #fff !important;
+        color: #fff !important
     }
 
     .sh-large {
-        font-size: 18px !important;
+        font-size: 18px !important
     }
 
     .sh-btn,
@@ -133,7 +133,7 @@
         -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-        user-select: none;
+        user-select: none
     }
 
     .sh-btn,
@@ -148,30 +148,30 @@
         background-color: inherit;
         text-align: center;
         cursor: pointer;
-        white-space: nowrap;
+        white-space: nowrap
     }
 
     .caretRight {
         float: right;
         margin: auto;
-        color: #fff !important;
+        color: #fff !important
     }
 
     .sh-sidebar hr {
         width: 90%;
-        margin: 16px auto !important;
+        margin: 16px auto !important
     }
 
     /* Temporario - precisa ajustar no arquivo CDN depois */
     .header__menu {
         height: unset !important;
-        background: unset !important;
+        background: unset !important
     }
     
     .header__menu.active {
         margin-top: unset !important;
         left: unset !important;
-        z-index: 1000 !important;
+        z-index: 1000 !important
     }
     /* Temporario - precisa ajustar no arquivo CDN depois */
 
