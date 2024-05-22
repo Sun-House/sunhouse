@@ -25,6 +25,12 @@ function userLoginArea() {
                 loginLoggedIn.forEach(function(loginLoggedIn_alvo) {
                     loginLoggedIn_alvo.style.display = 'block';
                 });
+
+                // Mostra nome do cliente caso esteja logado e entao tamanho da tela mobile
+                if ($(window).width() <= 1199) {
+                    var loggedUsername = document.getElementById('client_name');
+                    loggedUsername.style.setProperty('display', 'block', 'important');
+                }
     
                 // Seleciona todos os elementos com a Classe "logged-in" e executa o popover em cada um
                 $('.logged-in').each(function() {
@@ -46,14 +52,8 @@ function userLoginArea() {
             function moveLoggedBlock() {
                 if ($(window).width() <= 1199) {
                     $("#login__loggedIn").appendTo("#mobile-login__loggedIn");
-                    
-                    var loggedUsername = document.querySelector('#client_name p');
-                    loggedUsername.style.setProperty('display', 'block', 'important');
                 } else {
                     $("#login__loggedIn").appendTo("#desk-login__loggedIn");
-                    
-                    var loggedUsername = document.querySelector('#client_name p');
-                    loggedUsername.style.setProperty('display', 'none', 'important');
                 }
             }
 
