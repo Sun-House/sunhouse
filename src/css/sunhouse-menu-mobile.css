@@ -1,4 +1,3 @@
-/* Ajustes Pontuais Menu New Mobile */
 @media screen and (max-width: 1199px) {
     .navMobMenu {
         display: none !important;
@@ -28,30 +27,28 @@
     /* Ajusta para mostrar o Menu sempre quando ativo - Mobile */
     #swrapHeader { 
         position: relative !important;
-        z-index: 1001 !important;
+        /*z-index: 1001 !important;*/
+        z-index: 999 !important
     }
     /* Ajusta para mostrar o Menu sempre quando ativo - Mobile */
-
-    /* Botao Black Friday */
-    .black-friday-btn {
-        background-color: #000 !important;
-        color: #FFDA00 !important;
-    }
-
-    .black-friday-btn:hover {
-        background-color: #F90041 !important;
-        opacity: 1 !important;
-    }
-    /* Botao Black Friday */
 }
 /* Ajustes Pontuais Menu New Mobile */
 
 @media screen and (max-width: 1199px) {
+    .sh-dark-grey,
+    .sh-hover-dark-grey:hover,
+    .sh-dark-gray,
+    .sh-hover-dark-gray:hover {
+        color: #fff !important;
+        /*background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%) !important;*/
+        background: -webkit-linear-gradient(315deg, #FFDA00 0, #F90041 100%)
+    }
+
     .sh-animate-left {
         position: relative;
         animation: animateleft 0.4s forwards;
     }
-
+    
     @keyframes animateleft {
         from {
             left: -300px;
@@ -81,29 +78,18 @@
     }
 
     .sh-sidebar {
-        height: 85%;
-        width: 88%;
-        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        /*background-color: #fff;*/
         position: fixed !important;
-        z-index: 9998 !important;
+        /*z-index: 9998 !important;*/
+        z-index: 1000 !important;
         overflow: auto;
-        padding: 85px 20px 50px;
-        padding-right: 40px !important;
-    }
-
-    .produto .sh-sidebar {
-        height: 100% !important;
-        width: 100% !important;
-    }
-
-    .sh-sidebar hr {
-        width: 90%;
-        margin: 16px auto !important;
-        margin-bottom: 30px !important;
+        padding: 75px 20px 50px;
     }
 
     .sh-bar-block .sh-bar-item {
-        /*width: 100%;*/
+        width: 100%;
         display: block;
         padding: 8px 16px;
         text-align: left;
@@ -115,8 +101,9 @@
     }
 
     .sh-bar-item.sh-button:hover,
-    .sh-bar-item.sh-button:focus {
-        color: #e77925 !important;
+    .sh-bar-item.sh-button:focus { /* tava bugando .sh-bar-item.sh-button:visited */
+        color: #fff !important;
+        text-shadow: 1px 1px 5px #fff;
     }
 
     .sh-large i {
@@ -124,23 +111,15 @@
         position: relative;
         left: -15px;
         top: -10px;
-        color: #e77925;
+        color: #fff !important;
     }
 
     .sh-large span {
         font-size: 35px !important;
         position: relative;
-        left: -5px;
-        top: 0;
-    }
-
-    .sh-large span {
         left: -5px !important;
-    }
-
-    .sh-large span,
-    .caretRight {
-        color: #e77925;
+        top: 0;
+        color: #fff !important;
     }
 
     .sh-large {
@@ -175,6 +154,12 @@
     .caretRight {
         float: right;
         margin: auto;
+        color: #fff !important;
+    }
+
+    .sh-sidebar hr {
+        width: 90%;
+        margin: 16px auto !important;
     }
 
     /* Temporario - precisa ajustar no arquivo CDN depois */
@@ -202,21 +187,11 @@
         margin-left: 10px;
     }*/
 
-    /*.btnMenu {
+    .btnMenu {
         display: inline-block;
         scale: 1.1;
         margin-left: 10px;
         margin-top: 15px
-    }*/
-
-    /* Para Black Friday */
-    .btnMenu {
-        display: flex;
-        flex-direction: column-reverse;
-        padding-right: 130px;
-        align-items: stretch;
-        padding-bottom: 12px;
     }
-    /* Para Black Friday */
     /* Ajustes botoes lancamento e pronta entrega */
 }

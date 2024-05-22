@@ -130,7 +130,7 @@
         color: #fff
     }
 
-    #mobile-login__loggedIn .client-name {
+    #mobile-login__loggedIn #client_name {
         white-space: nowrap;
         position: absolute;
         top: 90px;
@@ -141,11 +141,15 @@
         /*opacity: 1*/
     }
     
-    #mobile-login__loggedIn .client-name p {
+    #mobile-login__loggedIn #client_name p {
         color: #fff !important;
         font-size: 20px;
         font-weight: 500;
         float: right
+    }
+    
+    #mobile-login__loggedIn #client_name_desktop {
+        display: none
     }
     
     #mobile-login__loggedIn #login__dropdown #name_caret {
