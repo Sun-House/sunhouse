@@ -2411,3 +2411,64 @@ img[src^="https://receiver.posclick.dinamize.com/"] {
     display: none
 }
 /* Quick Fix Erro Dinamize */
+
+/* Display de produto indisponivel - esgotado ou inativo */
+tr.product-item.unavailable.lookatme {
+    background-color: unset;
+    border-bottom: 10px solid #fff !important
+}
+
+td.product-image {
+    border-radius: 20px 0px 0px 20px;
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px
+}
+
+td.item-remove {
+    border-radius: 0px 20px 20px 0px;
+    -webkit-border-radius: 0px 20px 20px 0px;
+    -moz-border-radius: 0px 20px 20px 0px
+}
+
+td.item-unavailable-message {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px
+}
+
+td.shipping-date.empty {
+    text-transform: uppercase;
+    font-weight: 700 !important
+}
+
+td.shipping-date.empty span {
+    color: red !important
+}
+
+.shp-alert-shipping-unavailable {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px
+}
+
+.shp-alert-shipping-unavailable p {
+    font-size: 0;
+    margin-top: 6px
+}
+
+.shp-alert-shipping-unavailable p::after {
+    content: "Um ou mais itens estão indisponíveis! Remova-os do carrinho para simular o valor frete.";
+    font-size: 17px
+}
+
+.shp-alert-shipping-unavailable .shp-product-items.vtex-shipping-preview-0-x-productItems {
+    display: none
+}
+
+@media screen and (max-width: 1199px) {
+    td.item-unavailable-message {
+        position: unset !important;
+        padding: 5px !important
+    }
+}
+/* Display de produto indisponivel */

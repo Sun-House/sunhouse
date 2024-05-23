@@ -81,6 +81,13 @@
     -moz-border-radius: 30px !important
 }
 
+.account .myo-collapsed-order {
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -moz-border-radius: 20px !important
+}
+
 .account .vtex-pageHeader-link__container span {
     font-weight: 600;
     text-decoration: underline;
