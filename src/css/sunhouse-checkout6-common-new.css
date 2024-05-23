@@ -2446,9 +2446,9 @@ td.shipping-date.empty span {
 }
 
 .shp-alert-shipping-unavailable {
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important
 }
 
 .shp-alert-shipping-unavailable p {
