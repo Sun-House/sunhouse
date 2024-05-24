@@ -89,10 +89,8 @@ function loadButtons() {
                         
                         var wishedElement = element.querySelector(".wished");
                         if (wishedElement) {
-                            wishedElement.style.display = "none";
+                            wishedElement.style.visibility = "hidden";
                         }
-                    } else {
-                        console.log('Sem produtos indisponíveis');
                     }
                 });
             });
