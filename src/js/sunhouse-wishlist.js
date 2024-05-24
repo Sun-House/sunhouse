@@ -81,13 +81,13 @@ function loadButtons() {
                 });
 
                 // Valida se tiver produto indisponivel e o trata
-                var productTd = row.querySelectorAll("td");
+                var productTd = element.querySelectorAll("td");
 
                 productTd.forEach(function(td) {
                     if (td.textContent.trim() === "produto indisponível") {
                         td.style.whiteSpace = "unset";
                         
-                        var wishedElement = row.querySelector(".wished");
+                        var wishedElement = element.querySelector(".wished");
                         if (wishedElement) {
                             wishedElement.style.display = "none";
                         }
