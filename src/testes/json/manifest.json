@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+        "vtex.store-components": "3.x"
+    },
+
+    "image#example": {
+        "props": {
+            "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+            "maxHeight": 24
+        }
+    }
+}
