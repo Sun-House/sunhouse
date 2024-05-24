@@ -79,21 +79,22 @@ function loadButtons() {
                     // Chama a função que remove produto da lista, passando o skuId
                     removeFromWishlist(skuId);
                 });
-            });
 
-            var productTd = row.querySelectorAll("td");
+                // Valida se tiver produto indisponivel e o trata
+                var productTd = row.querySelectorAll("td");
 
-            productTd.forEach(function(td) {
-                if (td.textContent.trim() === "produto indisponível") {
-                    td.style.whiteSpace = "unset";
-                    
-                    var wishedElement = row.querySelector(".wished");
-                    if (wishedElement) {
-                        wishedElement.style.display = "none";
+                productTd.forEach(function(td) {
+                    if (td.textContent.trim() === "produto indisponível") {
+                        td.style.whiteSpace = "unset";
+                        
+                        var wishedElement = row.querySelector(".wished");
+                        if (wishedElement) {
+                            wishedElement.style.display = "none";
+                        }
+                    } else {
+                        console.log('Sem produtos indisponíveis');
                     }
-                } else {
-                    console.log('Sem produtos indisponíveis');
-                }
+                });
             });
         }, 1000);
         var loadingBg = document.getElementById('loading_bg');
