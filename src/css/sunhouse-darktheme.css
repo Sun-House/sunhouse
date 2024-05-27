@@ -480,6 +480,16 @@ body.institucional>.content a {
 .account #page-content .content * {
     color: #fff !important
 }
+
+.account #page-content .content .vtex-account__profile-edit input {
+    background-color: #0d1117 !important;
+    border-color: transparent !important
+}
+
+.account .vtex-profile-form__toggle-business-btn__wrapper button {
+    background-color: #69BD44 !important;
+    border-color: transparent !important
+}
 /* Pagina Minha Conta */
 
 /* Pagina Designers */
