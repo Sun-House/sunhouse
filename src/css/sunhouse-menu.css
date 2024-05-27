@@ -260,7 +260,7 @@ a.caretMain:after {
     /*all: unset;*/
     /* Old Tema - color: #e77925 !important; */
     font-weight: 600;
-    color: #F90041;
+    color: #F90041 !important;
     /*display: flex;*/
     display: inline-block;
     position: relative
