@@ -636,3 +636,31 @@ body.institucional>.content a {
     border-color: #212529
 }
 /* Pagina de Conta do Usuario */
+
+/* Minicart */
+#mini-cart__sidebar .offcanvas-header,
+#mini-cart__sidebar .offcanvas-body {
+    background-color: #0d1117 !important;
+    border-color: #333 !important
+}
+
+#mini-cart__sidebar .offcanvas-body {
+    border-bottom-color: #0d1117 !important
+}
+
+#minicart__promo-cta,
+#mini-cart__sidebar .vtexsc-productList tr,
+#mini-cart__sidebar .vtexsc-productList .cartSkuName * {
+    color: #fff !important
+}
+
+#mini-cart__sidebar .cartFooter,
+#mini-cart__sidebar .vtexsc-productList tbody tr:hover {
+    background-color: #333 !important
+}
+
+#mini-cart__sidebar .cartTotal {
+    background-color: #0d1117 !important;
+    color: #fff !important
+}
+/* Minicart */
