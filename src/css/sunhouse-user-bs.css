@@ -111,6 +111,19 @@
     transition: .2s ease;
     color: #FFDA00
 }
+
+.login-block #login__dropdown .welcome {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: .2s
+}
+
+.login-block #login__dropdown .welcome:hover {
+    width: 160px;
+    transition: .2s
+}
 /* Texto com Saudacao e Nome do Usuario Logado */
 
 @media screen and (max-width: 1199px) {
