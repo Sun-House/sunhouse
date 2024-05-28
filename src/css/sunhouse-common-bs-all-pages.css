@@ -3007,3 +3007,10 @@ Btn Comprar */
 }
 /* Minicart Block */
 /* Show on Loading some Pages */
+
+/* Ajuste all pages - SmartHint Busca Vazia Widget */
+#smarthint-most-popular .shelfRecomended {
+    margin-top: 50px !important;
+    padding-top: unset !important
+}
+/* Ajuste all pages - SmartHint Busca Vazia Widget */
