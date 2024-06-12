@@ -474,14 +474,14 @@
 }
 /* Responsivo */
 
-/* Fix para Display dos Modais Informativos */
-.institucional .bannerPrdSlick {
+/* Fix para Display dos Modais Informativos - ajustado no common-bs-all-pages */
+/*.institucional .bannerPrdSlick {
     z-index: 1048 !important
 }
 
 .institucional .topbar {
     z-index: 1049 !important
-}
+}*/
 /* Fix para Display dos Modais Informativos */
 
 .institucional .btn-ra {
