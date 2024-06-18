@@ -458,3 +458,19 @@ $(document).ready(function () {
         document.getElementById("title_outras-cores").style.display = "block";
     }
 });
+
+// Obtem e mostra codigo do produto abaixo do H1 de titulo do mesmo
+$(document).ready(function () {
+    var skuElement = document.getElementById("___rc-p-sku-ids");
+    var codigoProdutoElement = document.getElementById("codigo_produto");
+
+    if (skuElement && codigoProdutoElement) {
+        var skuValue = skuElement.value;
+
+        codigoProdutoElement.textContent = skuValue;
+
+        console.log(skuValue);
+    } else {
+        console.log("Erro ao encontrar e mostrar Codigo do Produto!");
+    }
+});
