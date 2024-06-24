@@ -284,8 +284,8 @@ a.caretMain:after {
     padding-bottom: 40px;
 }
 
-/* Bloco LaDecora */
-#block-info #block-card {
+/* Bloco LaDecora - INATIVO */
+/*#block-info #block-card {
     max-width: 218px !important;
 }
 
@@ -332,11 +332,11 @@ a.caretMain:after {
 #call-page {
     background-color: #FFDA00 !important;
     color: #F90041 !important;
-}
+}*/
 /* Bloco LaDecora */
 
 /* Footer Home */
-.footer.links *,
+/*.footer.links *,
 .footer.sac *,
 .footer.texts * {
     color: #fff !important;
@@ -346,7 +346,7 @@ a.caretMain:after {
 .footer.sac strong,
 .footer.texts strong {
     color: #f90041 !important;
-}
+}*/
 
 /*.footer.links,
 .footer.sac,
