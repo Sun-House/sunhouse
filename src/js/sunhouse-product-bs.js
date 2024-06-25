@@ -469,8 +469,9 @@ $(document).ready(function () {
 
         codigoProdutoElement.textContent = skuValue;
 
-        console.log(skuValue);
+        //console.log(skuValue);
     } else {
-        console.log("Erro ao encontrar e mostrar Codigo do Produto!");
+        //console.log("Erro ao encontrar e mostrar Codigo do Produto!");
+        codigoProdutoElement.textContent = 'Erro!';
     }
 });
