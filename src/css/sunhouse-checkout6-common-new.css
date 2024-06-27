@@ -2170,10 +2170,11 @@ header .seloTrustvox {
 
 }
 
+/* Ajustado via Css direto Checkout
 div>p.coupon-fields {
     margin-top: 45px !important;
     margin-bottom: 25px !important
-}
+}*/
 
 .cart-template .cart-links-bottom #cart-to-orderform,
 .orderform-template #payment-data-submit {
