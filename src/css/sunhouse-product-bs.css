@@ -2779,7 +2779,8 @@ Ajustes pre rebranding */
 .discount_color {
     color: #30b6a8 !important;
     /*color: #00b100;*/
-    background-color: unset !important
+    background-color: unset !important;
+    padding: 4px 10px 4px 0 !important
 }
 
 #highlight_discount {
