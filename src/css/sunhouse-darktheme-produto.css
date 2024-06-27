@@ -417,6 +417,10 @@ body.produto {
 /* Menu Black Friday */
 
 /* BacktoTop Produto */
+.produto #backToTop {
+    color: #FFDA00 !important
+}
+
 .produto #backToTop span {
     background-color: #0d1117 !important;
     box-shadow: 0 0 15px #0d1117 !important;

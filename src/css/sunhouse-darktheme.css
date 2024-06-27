@@ -387,6 +387,10 @@ body.institucional>.content a {
 /* SmartHint - Black Friday */
 
 /* BacktoTop Geral */
+#backToTop {
+    color: #FFDA00 !important
+}
+
 #backToTop span {
     background-color: #0d1117 !important;
     box-shadow: 0 0 15px #0d1117 !important
