@@ -247,6 +247,10 @@ div#smarthint-search-result {
         margin-right: unset !important
     }
 
+    .institucional .header__search {
+        padding-top: 22px !important
+    }
+
     .wrapHeader .header {
         padding-right: 15px;
         padding-left: 15px
