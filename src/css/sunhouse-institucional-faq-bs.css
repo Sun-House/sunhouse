@@ -50,3 +50,20 @@
     border-color: transparent;
     transition: .2s
 }
+
+@media screen and (max-width: 1199px) {
+    .faq #container_faq #faq_paragraph {
+        margin-bottom: 1rem !important
+    }
+    
+    .faq #col_faq-direita-pos:hover,
+    .faq #col_faq-direita-pre:hover {
+        background: unset;
+        box-shadow: unset;
+        border-radius: unset
+    }
+    
+    .faq .hr-vertical {
+        display: none !important
+    }
+}
