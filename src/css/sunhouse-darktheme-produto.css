@@ -617,3 +617,9 @@ body.produto {
     color: #fff !important
 }
 /* Minicart */
+
+/* Menu Desk Caret Color */
+a.caretMain:after {
+    border-top: 4px solid #FFDA00 !important
+}
+/* Menu Desk Caret Color */
