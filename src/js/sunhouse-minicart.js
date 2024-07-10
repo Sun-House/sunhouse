@@ -58,31 +58,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     
-    document.getElementById("minicart__promo-cta-btn").onclick = function () {
-        vtexjs.checkout.getOrderForm().then(function (orderForm) {
-            var code = "ARRAIAL10"
-            return vtexjs.checkout.addDiscountCoupon(code)
-        }).then(function (orderForm) {
-            console.log(orderForm)
-            console.log(orderForm.paymentData)
-            console.log(orderForm.totalizers)
+    //document.getElementById("minicart__promo-cta-btn").onclick = function () {
+        //vtexjs.checkout.getOrderForm().then(function (orderForm) {
+            //var code = "ARRAIAL10"
+            //return vtexjs.checkout.addDiscountCoupon(code)
+        //}).then(function (orderForm) {
+            //console.log(orderForm)
+            //console.log(orderForm.paymentData)
+            //console.log(orderForm.totalizers)
 
-            const Toast = Swal.mixin({
-                toast: true,
+            //const Toast = Swal.mixin({
+                //toast: true,
                 //position: "top-end",
-                position: "top",
-                showConfirmButton: false,
-                timer: 4000,
-                timerProgressBar: true,
-                didOpen: function (toast) {
-                    toast.onmouseenter = Swal.stopTimer;
-                    toast.onmouseleave = Swal.resumeTimer;
-                }
-            });
-            Toast.fire({
-                icon: "success",
-                title: "Cupom adicionado ao carrinho!"
-            });
-        });
-    };
+                //position: "top",
+                //showConfirmButton: false,
+                //timer: 4000,
+                //timerProgressBar: true,
+                //didOpen: function (toast) {
+                    //toast.onmouseenter = Swal.stopTimer;
+                    //toast.onmouseleave = Swal.resumeTimer;
+                //}
+            //});
+            //Toast.fire({
+                //icon: "success",
+                //title: "Cupom adicionado ao carrinho!"
+            //});
+        //});
+    //};
 });
