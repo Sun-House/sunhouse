@@ -854,26 +854,3 @@
     }
 }
 /* Bloco Trust Home */
-
-/* Banner Principal */
-#banner_mobile {
-    display: none
-}
-
-@media screen and (max-width: 1199px) {
-    #banner_desktop {
-        display: none
-    }
-    
-    #banner_mobile {
-        display: block !important;
-        width: 100%;
-        margin: 24px auto 0;
-        padding: 20px
-    }
-
-    #banner_mobile img {
-        border-radius: 20px
-    }
-}
-/* Banner Principal */
