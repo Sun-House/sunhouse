@@ -2511,6 +2511,11 @@ body.black-friday .catalogIntro {
     transition-timing-function: ease-in-out;
     transition: .2s;
 }
+
+#buy_now #buy_now_icon {
+    font-weight: 200;
+    padding-left: 5px
+}
 /* Botao Ver Produto Vitrines */
 
 /* Teste comportamental Menu - desativado para novo tema rebranding 

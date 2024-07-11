@@ -176,10 +176,10 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     --bs-btn-active-color: #000 !important;
 }
 
-#buy_now #buy_now_icon {
+/*#buy_now #buy_now_icon {
     font-weight: 200 !important;
     padding-left: 5px
-}
+}*/
 
 :not(.btn-check)+#buy_now:active {
     border-color: #fff
