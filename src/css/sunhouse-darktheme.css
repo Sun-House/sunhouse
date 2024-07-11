@@ -695,10 +695,12 @@ a.caretMain:after {
 
 #add_cart__shelf {
     background-color: #000 !important;
-    color: #FFDA00 !important
+    color: #FFDA00 !important;
+    padding: 10px !important;
+    border: 2px solid #000 !important
 }
 
 #add_cart__shelf:hover {
-    border-color: #0d1117 !important
+    border-color: #FFDA00 !important
 }
 /* New Catalog Shelf Buttons */
