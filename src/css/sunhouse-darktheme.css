@@ -697,4 +697,8 @@ a.caretMain:after {
     background-color: #000 !important;
     color: #FFDA00 !important
 }
+
+#add_cart__shelf:hover {
+    border-color: #0d1117 !important
+}
 /* New Catalog Shelf Buttons */
