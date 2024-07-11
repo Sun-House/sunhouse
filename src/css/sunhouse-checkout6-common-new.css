@@ -2113,8 +2113,15 @@ header .seloTrustvox {
     clear: inherit;
     margin-top: auto;
     min-width: auto;
-    margin-bottom: 20px
+    margin-top: 35px !important;
+    margin-bottom: 20px !important
 }
+
+/* Ajuste visual */
+#checkoutMainContainer>div.container.container-main.container-cart>div.checkout-container.row-fluid.cart-active>div.cart-template.full-cart.span12.active>div.summary-template-holder>div>div.span5.totalizers.summary-totalizers.cart-totalizers.pull-right>div.forms.coupon-column.summary-coupon-wrap.text-center>div.coupon.summary-coupon>form>fieldset::before {
+    display: none !important;
+}
+/* Ajuste visual */
 
 .cart-template .summary-template-holder .cart-totalizers .coupon-fieldset>div #cart-coupon-add {
     font-family: 'Montserrat';
