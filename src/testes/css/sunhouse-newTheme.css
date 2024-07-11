@@ -126,10 +126,10 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     color: #f90041;
 }
 
-.view-product {
+/*.view-product {
     background-color: #000 !important;
     color: #ffda00 !important;
-}
+}*/
 
 /*.checkbox-label { - migrado para o arquivo common-bs-all-pages
     background-color: #f90041;
