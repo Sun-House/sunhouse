@@ -630,3 +630,16 @@ a.caretMain:after {
     color: #fff !important
 }
 /* Popup SweetAlert */
+
+/* New Catalog Shelf Buttons */
+.view-product {
+    background-color: #FFDA00 !important;
+    color: #000 !important;
+    font-weight: 600 !important
+}
+
+#add_cart__shelf {
+    background-color: #000 !important;
+    color: #FFDA00 !important
+}
+/* New Catalog Shelf Buttons */
