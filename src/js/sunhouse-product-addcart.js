@@ -5,7 +5,7 @@ function fnPdpAddtoCart() {
     $("body").on("click", "#addCart_main", (function (a) {
         a.preventDefault();
         //var b = $(this).parents(".shelfProduct").attr("data-id");
-        var b = document.getElementById('codigo_produto');
+        var b = document.getElementById('codigo_produto').innerHTML;
         $.ajax({
             url: "/api/catalog_system/pub/products/search/?fq=productId:" + b,
             method: "GET",
