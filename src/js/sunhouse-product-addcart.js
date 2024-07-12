@@ -1,8 +1,11 @@
-// Nao sei se este arquivo esta em uso
-function fnAddtoCart() {
-    $("body").on("click", ".add-to-cart", (function (a) {
+// Nao esta em uso
+// Usar para addcart pdp
+
+function fnPdpAddtoCart() {
+    $("body").on("click", "#addCart_main", (function (a) {
         a.preventDefault();
-        var b = $(this).parents(".shelfProduct").attr("data-id");
+        //var b = $(this).parents(".shelfProduct").attr("data-id");
+        var b = document.getElementById('codigo_produto');
         $.ajax({
             url: "/api/catalog_system/pub/products/search/?fq=productId:" + b,
             method: "GET",
