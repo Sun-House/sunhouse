@@ -638,6 +638,10 @@ a.caretMain:after {
     font-weight: 600 !important
 }
 
+#buy_now #buy_now_icon {
+    font-weight: 600 !important
+}
+
 #add_cart__shelf {
     background-color: #000 !important;
     color: #FFDA00 !important;
