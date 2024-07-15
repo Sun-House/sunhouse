@@ -403,6 +403,7 @@ $(document).ready(function () {
 function moveElementos() {
     const prodDesc = document.getElementById('product-description');
     const prodFicha = document.getElementById('product-ficha');
+    const prodDim = document.getElementById('product-dimensions');
     const prodRate = document.getElementById('product-rate');
 
     if (window.matchMedia('(max-width: 1199px)').matches) {
@@ -410,19 +411,23 @@ function moveElementos() {
         // Move os elementos para um novo local no DOM
         const prodDescMob = document.getElementById('mobile_product-description');
         const prodFichaMob = document.getElementById('mobile_product-ficha');
+        const prodImgDimMob = document.getElementById('mobile_product-dimensions');
         const prodRateMob = document.getElementById('mobile_product-rate');
 
         prodDescMob.appendChild(prodDesc);
         prodFichaMob.appendChild(prodFicha);
+        prodImgDimMob.appendChild(prodDim);
         prodRateMob.appendChild(prodRate);
     } else {
         // Se a largura da tela for maior que 1199px, restaura a posição original dos elementos
         const prodDescDesk = document.getElementById('descricao-produto');
         const prodFichaDesk = document.getElementById('ficha-produto');
+        const prodDimDesk = document.getElementById('medidas-produto');
         const prodRateDesk = document.getElementById('rate-produto');
 
         prodDescDesk.appendChild(prodDesc);
         prodFichaDesk.appendChild(prodFicha);
+        prodDimDesk.appendChild(prodDim);
         prodRateDesk.appendChild(prodRate);
     }
 }
@@ -432,7 +437,7 @@ window.addEventListener('load', moveElementos);
 window.addEventListener('resize', moveElementos);
 
 
-// Reposicionamento Mobile Outras Cores
+// Reposicionamento Mobile - Outras Cores - Bloco Medidas
 function moveOutrasCores() {
     if ($(window).width() <= 1199) {
         $("#productContent__infos-similars-block").appendTo(".productContent__outras-cores-mobile");
