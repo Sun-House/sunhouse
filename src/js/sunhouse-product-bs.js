@@ -411,23 +411,23 @@ function moveElementos() {
         // Move os elementos para um novo local no DOM
         const prodDescMob = document.getElementById('mobile_product-description');
         const prodFichaMob = document.getElementById('mobile_product-ficha');
-        const prodImgDimMob = document.getElementById('mobile_product-dimensions');
+        //const prodImgDimMob = document.getElementById('mobile_product-dimensions');
         const prodRateMob = document.getElementById('mobile_product-rate');
 
         prodDescMob.appendChild(prodDesc);
         prodFichaMob.appendChild(prodFicha);
-        prodImgDimMob.appendChild(prodDim);
+        //prodImgDimMob.appendChild(prodDim);
         prodRateMob.appendChild(prodRate);
     } else {
         // Se a largura da tela for maior que 1199px, restaura a posição original dos elementos
         const prodDescDesk = document.getElementById('descricao-produto');
         const prodFichaDesk = document.getElementById('ficha-produto');
-        const prodDimDesk = document.getElementById('medidas-produto');
+        //const prodDimDesk = document.getElementById('medidas-produto');
         const prodRateDesk = document.getElementById('rate-produto');
 
         prodDescDesk.appendChild(prodDesc);
         prodFichaDesk.appendChild(prodFicha);
-        prodDimDesk.appendChild(prodDim);
+        //prodDimDesk.appendChild(prodDim);
         prodRateDesk.appendChild(prodRate);
     }
 }
