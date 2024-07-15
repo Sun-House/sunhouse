@@ -153,9 +153,9 @@ function flagsp() {
     //})
 //}
 
-function mobile() {
-    $(".productContent__images-dimensions").insertAfter(".productContent__infos");
-}
+//function mobile() {
+    //$(".productContent__images-dimensions").insertAfter(".productContent__infos");
+//}
 
 // Ajusta quantidades de produtos da Vitrine SmartHint
 function vitrinePdpSmartHint() {
@@ -186,7 +186,9 @@ $(document).ready((function () {
     }
     //window.innerWidth < 1200 ? mobile() : shelfs()
 
-    window.innerWidth < 1200 ? [mobile(), vitrinePdpSmartHint()] : shelfs()
+    //window.innerWidth < 1200 ? [mobile(), vitrinePdpSmartHint()] : shelfs()
+
+    window.innerWidth < 1200 ? [vitrinePdpSmartHint()] : shelfs()
 
     //if (window.innerWidth < 1200) {
         //mobile();
