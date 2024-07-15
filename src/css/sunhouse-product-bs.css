@@ -2902,3 +2902,11 @@ Ajustes pre rebranding */
     }
 }
 /* Price Block */
+
+/* Oculta medidas visuais produto no main block */
+@media screen and (max-width: 1199px) {
+    #medidas-produto-desktop {
+        display: none
+    }
+}
+/* Oculta medidas visuais produto no main block */
