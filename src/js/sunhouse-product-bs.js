@@ -384,29 +384,35 @@ window.addEventListener("load", function () {
 });
 
 // Abre direto a aba de avaliacoes quando clica no link Ver todas avaliacoes
+//$(document).ready(function () {
+    //$("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+        //$("#rate-tab").tab("show");
+    //});
+//});
+
 $(document).ready(function () {
-    $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
-        $("#rate-tab").tab("show");
+    // Product Description Tab
+    $("#btnScrollSt").click(function (){
+        // Ativa a tab descricao produto
+        $("").tab("show");
+
+        // Rola a tela até a posição da tab
+        $('html, body').animate({
+            scrollTop: $("").offset().top - 150
+        }, 100);
     });
-});
 
-
-$(document).ready(function () {
+    // Product Rate Tab
     $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
-        // Mostra a aba ou painel associado ao #rate-tab
+        // Ativa a tab avaliacoes
         $("#rate-tab").tab("show");
 
-        // Rola a tela até a posição do #rate-tab
+        // Rola a tela até a posição da tab
         $('html, body').animate({
             scrollTop: $("#rate-tab").offset().top - 150
         }, 100);
     });
 });
-
-
-
-
-
 
 // Mostra info de Marca e Loja do produto - Marketplace
 //window.addEventListener("load", function () {
@@ -545,19 +551,19 @@ $(document).ready(function () {
 });
 
 //
-$(document).ready(function () {
+//$(document).ready(function () {
     //
 
-        window.addEventListener('load', function() {
+        //window.addEventListener('load', function() {
             // Seleciona o elemento a ser copiado
-            var tableMeasures = document.getElementById('xis');
+            //var tableMeasures = document.getElementById('xis');
             
             // Cria uma cópia do elemento
-            var clonedElement = tableMeasures.cloneNode(true);
+            //var clonedElement = tableMeasures.cloneNode(true);
             
             // Insere a cópia no destino desejado
-            document.getElementById('destination').appendChild(clonedElement);
-        });
+            //document.getElementById('destination').appendChild(clonedElement);
+        //});
 
     //
-});
+//});
