@@ -394,11 +394,11 @@ $(document).ready(function () {
     // Product Description Tab
     $("#btnScrollSt").click(function (){
         // Ativa a tab descricao produto
-        $("").tab("show");
+        $("#descricao-tab").tab("show");
 
         // Rola a tela até a posição da tab
         $('html, body').animate({
-            scrollTop: $("").offset().top - 150
+            scrollTop: $("#descricao-tab").offset().top - 150
         }, 100);
     });
 
