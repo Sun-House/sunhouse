@@ -155,7 +155,7 @@ function flagsp() {
 
 function mobile() {
     //$(".productContent__images-dimensions").insertAfter(".productContent__infos");
-    $(".productContent__images-dimensions").insertAfter("#mobile_product-measures");
+    $(".productContent__images-dimensions").insertBefore("#productMontagem-second");
 }
 
 // Ajusta quantidades de produtos da Vitrine SmartHint
@@ -218,45 +218,6 @@ $(document).ready((function () {
         //})
     //}))
 //}));
-
-
-
-
-//
-
-$(document).ready(function () {
-
-    let btn = document.querySelector(".btnScroll"),
-        itn = document.querySelector(".productDescription");
-    
-    btn.addEventListener("click", (function () {
-        itn.scrollIntoView({
-            block: "start",
-            behavior: "smooth"
-        })
-    }))
-
-});
-
-$(document).ready(function () {
-
-    let btnt = document.querySelector(".btnOpn", ".btnOpnBanner"),
-        itnt = document.querySelector(".opinions");
-    
-    btnt.addEventListener("click", (function () {
-        itnt.scrollIntoView({
-            block: "start",
-            behavior: "smooth"
-        })
-    }))
-
-});
-
-//
-
-
-
-
 
 // Calcula frete automatico ao inserir CEP no input
 window.addEventListener("load", function () {
