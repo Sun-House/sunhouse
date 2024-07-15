@@ -153,9 +153,10 @@ function flagsp() {
     //})
 //}
 
-//function mobile() {
+function mobile() {
     //$(".productContent__images-dimensions").insertAfter(".productContent__infos");
-//}
+    $(".productContent__images-dimensions").insertAfter("#mobile_product-measures");
+}
 
 // Ajusta quantidades de produtos da Vitrine SmartHint
 function vitrinePdpSmartHint() {
@@ -186,9 +187,9 @@ $(document).ready((function () {
     }
     //window.innerWidth < 1200 ? mobile() : shelfs()
 
-    //window.innerWidth < 1200 ? [mobile(), vitrinePdpSmartHint()] : shelfs()
+    window.innerWidth < 1200 ? [mobile(), vitrinePdpSmartHint()] : shelfs()
 
-    window.innerWidth < 1200 ? [vitrinePdpSmartHint()] : shelfs()
+    //window.innerWidth < 1200 ? [vitrinePdpSmartHint()] : shelfs()
 
     //if (window.innerWidth < 1200) {
         //mobile();
@@ -196,25 +197,66 @@ $(document).ready((function () {
     //} else {
         //shelfs();
     //}
-})), $(document).ready((function () {
+}));
+
+//, $(document).ready((function () {
+    //let btn = document.querySelector(".btnScroll"),
+        //itn = document.querySelector(".productDescription");
+    //btn.addEventListener("click", (function () {
+        //itn.scrollIntoView({
+            //block: "start",
+            //behavior: "smooth"
+        //})
+    //}))
+//})), $(document).ready((function () {
+    //let btnt = document.querySelector(".btnOpn", ".btnOpnBanner"),
+        //itnt = document.querySelector(".opinions");
+    //btnt.addEventListener("click", (function () {
+        //itnt.scrollIntoView({
+            //block: "start",
+            //behavior: "smooth"
+        //})
+    //}))
+//}));
+
+
+
+
+//
+
+$(document).ready(function () {
+
     let btn = document.querySelector(".btnScroll"),
         itn = document.querySelector(".productDescription");
+    
     btn.addEventListener("click", (function () {
         itn.scrollIntoView({
             block: "start",
             behavior: "smooth"
         })
     }))
-})), $(document).ready((function () {
+
+});
+
+$(document).ready(function () {
+
     let btnt = document.querySelector(".btnOpn", ".btnOpnBanner"),
         itnt = document.querySelector(".opinions");
+    
     btnt.addEventListener("click", (function () {
         itnt.scrollIntoView({
             block: "start",
             behavior: "smooth"
         })
     }))
-}));
+
+});
+
+//
+
+
+
+
 
 // Calcula frete automatico ao inserir CEP no input
 window.addEventListener("load", function () {
@@ -347,6 +389,24 @@ $(document).ready(function () {
         $("#rate-tab").tab("show");
     });
 });
+
+
+$(document).ready(function () {
+    $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+        // Mostra a aba ou painel associado ao #rate-tab
+        $("#rate-tab").tab("show");
+
+        // Rola a tela até a posição do #rate-tab
+        $('html, body').animate({
+            scrollTop: $("#rate-tab").offset().top - 150
+        }, 100);
+    });
+});
+
+
+
+
+
 
 // Mostra info de Marca e Loja do produto - Marketplace
 //window.addEventListener("load", function () {
@@ -482,4 +542,22 @@ $(document).ready(function () {
         //console.log("Erro ao encontrar e mostrar Codigo do Produto!");
         codigoProdutoElement.textContent = 'Erro!';
     }
+});
+
+//
+$(document).ready(function () {
+    //
+
+        window.addEventListener('load', function() {
+            // Seleciona o elemento a ser copiado
+            var tableMeasures = document.getElementById('xis');
+            
+            // Cria uma cópia do elemento
+            var clonedElement = tableMeasures.cloneNode(true);
+            
+            // Insere a cópia no destino desejado
+            document.getElementById('destination').appendChild(clonedElement);
+        });
+
+    //
 });
