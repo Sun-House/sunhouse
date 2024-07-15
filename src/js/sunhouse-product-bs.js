@@ -340,7 +340,7 @@ window.addEventListener("load", function () {
 
 // Abre direto a aba de avaliacoes quando clica no link Ver todas avaliacoes
 $(document).ready(function () {
-    $("#all_opinions").click(function () {
+    $("#all_opinions, .productContent__options").click(function () {
         $("#rate-tab").tab("show");
     });
 });
