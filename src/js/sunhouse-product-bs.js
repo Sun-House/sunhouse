@@ -111,13 +111,13 @@ function shelfs() {
     })
 }
 
-function bindEvents() {
-    $(".productContent__options-opinions,.productContent__images-dimensions--rating").click((function () {
-        $("body,html").animate({
-            scrollTop: $("div.opinions").position().top - 104
-        })
-    }))
-}
+//function bindEvents() {
+    //$(".productContent__options-opinions,.productContent__images-dimensions--rating").click((function () {
+        //$("body,html").animate({
+            //scrollTop: $("div.opinions").position().top - 104
+        //})
+    //}))
+//}
 
 function setDesigners() {
     $(".productContent__images-flags .flag").each((function () {
@@ -169,7 +169,8 @@ function vitrinePdpSmartHint() {
 }
 
 $(document).ready((function () {
-    if (breadcrumb(), images(), ShippingValue(), bindEvents(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
+    //if (breadcrumb(), images(), ShippingValue(), bindEvents(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
+    if (breadcrumb(), images(), ShippingValue(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
         $('<div class="pdpDetalhes"><img src="https://sunhouse.vteximg.com.br/arquivos/pdp-detalhes.png" /></div>').insertAfter(".breadcrumb");
         var a = {
             url: "/api/catalog_system/pub/products/crossselling/similars/" + skuJson.productId,
@@ -340,7 +341,7 @@ window.addEventListener("load", function () {
 
 // Abre direto a aba de avaliacoes quando clica no link Ver todas avaliacoes
 $(document).ready(function () {
-    $("#all_opinions, .productContent__options").click(function () {
+    $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
         $("#rate-tab").tab("show");
     });
 });
@@ -403,7 +404,7 @@ $(document).ready(function () {
 function moveElementos() {
     const prodDesc = document.getElementById('product-description');
     const prodFicha = document.getElementById('product-ficha');
-    const prodDim = document.getElementById('product-dimensions');
+    //const prodDim = document.getElementById('product-dimensions');
     const prodRate = document.getElementById('product-rate');
 
     if (window.matchMedia('(max-width: 1199px)').matches) {
