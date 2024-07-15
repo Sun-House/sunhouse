@@ -556,13 +556,13 @@ $(document).ready(function () {
 
         //window.addEventListener('load', function() {
             // Seleciona o elemento a ser copiado
-            //var tableMeasures = document.getElementById('xis');
+            //var tableMeasures = document.getElementById('medidas-produto-desktop');
             
             // Cria uma cópia do elemento
-            //var clonedElement = tableMeasures.cloneNode(true);
+            //var tableMeasuresCloned = tableMeasures.cloneNode(true);
             
             // Insere a cópia no destino desejado
-            //document.getElementById('destination').appendChild(clonedElement);
+            //document.getElementById('mobile_product-measures').appendChild(clonedElement);
         //});
 
     //
