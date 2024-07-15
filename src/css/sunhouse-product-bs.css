@@ -1904,10 +1904,14 @@ th.name-field::after {
         max-width: 80% !important
     }
 
-    .produto .productContent__images-dimensions--rating {
+    /*.produto .productContent__images-dimensions--rating {
         width: 100% !important;
         min-height: unset !important;
         height: 95px !important
+    }*/
+
+    .produto .productContent__images-dimensions--rating {
+        display: none
     }
 }
 
@@ -2216,7 +2220,8 @@ Ajuste Insta - Migrar para todos os templates */
     }
 
     #container-productInfos-mobile {
-        display: block;
+        /*display: block;*/
+        display: flow-root;
         padding: 0 !important;
     }
 

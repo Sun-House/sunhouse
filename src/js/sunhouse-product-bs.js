@@ -155,7 +155,7 @@ function flagsp() {
 
 function mobile() {
     //$(".productContent__images-dimensions").insertAfter(".productContent__infos");
-    $(".productContent__images-dimensions").insertBefore("#productMontagem-second");
+    $(".productContent__images-dimensions").insertAfter("#medidasNEW");
 }
 
 // Ajusta quantidades de produtos da Vitrine SmartHint
