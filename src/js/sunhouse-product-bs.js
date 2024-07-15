@@ -352,27 +352,51 @@ window.addEventListener("load", function () {
 //});
 
 $(document).ready(function () {
-    // Product Description Tab
-    $("#btnScrollSt").click(function (){
-        // Ativa a tab descricao produto
-        $("#descricao-tab").tab("show");
+    if ($(window).width() < 1199) {
+        // Product Description Tab
+        $("#btnScrollSt").click(function () {
+            // Ativa a tab descricao produto
+            $("#descricao-accordion").collapse("show");
 
-        // Rola a tela até a posição da tab
-        $('html, body').animate({
-            scrollTop: $("#descricao-tab").offset().top - 150
-        }, 100);
-    });
+            // Rola a tela até a posição da tab
+            $('html, body').animate({
+                scrollTop: $("#descricao-tab").offset().top - 150
+            }, 100);
+        });
 
-    // Product Rate Tab
-    $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
-        // Ativa a tab avaliacoes
-        $("#rate-tab").tab("show");
+        // Product Rate Tab
+        $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+            // Ativa a tab avaliacoes
+            $("#rate-accordion").collapse("show");
 
-        // Rola a tela até a posição da tab
-        $('html, body').animate({
-            scrollTop: $("#rate-tab").offset().top - 150
-        }, 100);
-    });
+            // Rola a tela até a posição da tab
+            $('html, body').animate({
+                scrollTop: $("#rate-tab").offset().top - 150
+            }, 100);
+        });
+    } else {
+        // Product Description Tab
+        $("#btnScrollSt").click(function () {
+            // Ativa a tab descricao produto
+            $("#descricao-tab").tab("show");
+
+            // Rola a tela até a posição da tab
+            $('html, body').animate({
+                scrollTop: $("#descricao-tab").offset().top - 150
+            }, 100);
+        });
+
+        // Product Rate Tab
+        $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+            // Ativa a tab avaliacoes
+            $("#rate-tab").tab("show");
+
+            // Rola a tela até a posição da tab
+            $('html, body').animate({
+                scrollTop: $("#rate-tab").offset().top - 150
+            }, 100);
+        });
+    }
 });
 
 // Mostra info de Marca e Loja do produto - Marketplace
