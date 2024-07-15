@@ -351,50 +351,95 @@ window.addEventListener("load", function () {
     //});
 //});
 
-$(document).ready(function () {
-    if ($(window).width() < 1199) {
+//
+//$(document).ready(function () {
+    //if ($(window).width() < 1199) {
         // Product Description Tab
-        $("#btnScrollSt").click(function () {
+        //$("#btnScrollSt").click(function () {
             // Ativa a tab descricao produto
-            $("#descricao-accordion").collapse("show");
+            //$("#descricao-accordion").collapse("show");
 
             // Rola a tela até a posição da tab
-            $('html, body').animate({
-                scrollTop: $("#descricao-tab").offset().top - 150
-            }, 100);
-        });
+            //$('html, body').animate({
+                //scrollTop: $("#descricao-accordion").offset().top - 150
+            //}, 100);
+        //});
 
         // Product Rate Tab
-        $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+        //$("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
             // Ativa a tab avaliacoes
-            $("#rate-accordion").collapse("show");
+            //$("#rate-accordion").collapse("show");
 
             // Rola a tela até a posição da tab
-            $('html, body').animate({
-                scrollTop: $("#rate-tab").offset().top - 150
-            }, 100);
+            //$('html, body').animate({
+                //scrollTop: $("#rate-accordion").offset().top - 150
+            //}, 100);
+        //});
+    //} else {
+        // Product Description Tab
+        //$("#btnScrollSt").click(function () {
+            // Ativa a tab descricao produto
+            //$("#descricao-tab").tab("show");
+
+            // Rola a tela até a posição da tab
+            //$('html, body').animate({
+                //scrollTop: $("#descricao-tab").offset().top - 150
+            //}, 100);
+        //});
+
+        // Product Rate Tab
+        //$("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+            // Ativa a tab avaliacoes
+            //$("#rate-tab").tab("show");
+
+            // Rola a tela até a posição da tab
+            //$('html, body').animate({
+                //scrollTop: $("#rate-tab").offset().top - 150
+            //}, 100);
+        //});
+    //}
+//});
+
+// ainda nao testado - criado pelo chat
+$(document).ready(function () {
+    // Função para rolar a página até um elemento
+    function scrollToElement(element) {
+        $('html, body').animate({
+            scrollTop: $(element).offset().top - 150
+        }, 100);
+    }
+
+    if ($(window).width() < 1199) {
+        // Botão para a descrição do produto
+        $("#btnScrollSt").click(function () {
+            // Abre o accordion da descrição do produto
+            $("#descricao-accordion").collapse("show");
+            // Rola a tela até a posição do accordion
+            scrollToElement("#descricao-accordion");
+        });
+
+        // Botões para abrir a tab de avaliações do produto
+        $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+            // Abre o accordion de avaliações
+            $("#rate-accordion").collapse("show");
+            // Rola a tela até a posição do accordion
+            scrollToElement("#rate-accordion");
         });
     } else {
-        // Product Description Tab
+        // Botão para a descrição do produto
         $("#btnScrollSt").click(function () {
-            // Ativa a tab descricao produto
+            // Mostra a tab de descrição do produto
             $("#descricao-tab").tab("show");
-
             // Rola a tela até a posição da tab
-            $('html, body').animate({
-                scrollTop: $("#descricao-tab").offset().top - 150
-            }, 100);
+            scrollToElement("#descricao-tab");
         });
 
-        // Product Rate Tab
+        // Botões para abrir a tab de avaliações do produto
         $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
-            // Ativa a tab avaliacoes
+            // Mostra a tab de avaliações
             $("#rate-tab").tab("show");
-
             // Rola a tela até a posição da tab
-            $('html, body').animate({
-                scrollTop: $("#rate-tab").offset().top - 150
-            }, 100);
+            scrollToElement("#rate-tab");
         });
     }
 });
