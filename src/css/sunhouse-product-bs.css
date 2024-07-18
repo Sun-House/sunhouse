@@ -2915,3 +2915,16 @@ Ajustes pre rebranding */
     }
 }
 /* Oculta medidas visuais produto no main block */
+
+/* Ajuste Vitrines SmartHint */
+@media screen and (max-width: 1199px) {
+    .produto #add-to-cartBtn a.add-to-cart,
+    .produto #add-to-cartBtn a {
+        width: 90% !important
+    }
+
+    .produto .shelfProduct {
+        min-height: 360px !important
+    }
+}
+/* Ajuste Vitrines SmartHint */
