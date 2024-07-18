@@ -145,20 +145,21 @@
 div#smarthint-search-result {
     /*top: 85px !important;*/
     top: 170px !important;
-    /*height: calc(100% - 85px) !important*/
-    height: calc(100% - 60px) !important
+    height: calc(100% - 85px) !important
 }
 
 @media screen and (min-width:649px) {
     div#smarthint-search-result {
         /*top: 85px !important*/
-        top: 65px !important
+        top: 65px !important;
+        height: calc(100% - 60px) !important
     }
 }
 
 @media screen and (max-width: 648px) {
     div#smarthint-search-result {
-        top: 65px !important
+        top: 65px !important;
+        height: calc(100% - 60px) !important
     }
 }
 
