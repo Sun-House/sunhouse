@@ -8,24 +8,24 @@ function verifyShelf() {
     $(".shelfRecomended li").length < 1 && $(".shelfRecomended").hide()
 }
 
-//function images() {
-    //function a() {
-        //var a = setInterval((function () {
-            //$(".zoomPad #image-main").each((function () {
-                //if ($(this).attr("src").indexOf("495-495/") > 0) {
-                    //var b = $(this).attr("src").replace("495-495/", "700-700/");
-                    //$(this).attr("src", b)
-                //} else clearInterval(a)
-            //}))
-        //}))
-    //}
-    //a(), $(".productContent__images .thumbs li a").click((function () {
-        //a()
-    //})), $(".thumbs img").each((function () {
-        //var a = $(this).attr("src").replace("95-95/", "200-200/");
-        //$(this).attr("src", a)
-    //}))
-//}
+function images() {
+    function a() {
+        var a = setInterval((function () {
+            $(".zoomPad #image-main").each((function () {
+                if ($(this).attr("src").indexOf("495-495/") > 0) {
+                    var b = $(this).attr("src").replace("495-495/", "700-700/");
+                    $(this).attr("src", b)
+                } else clearInterval(a)
+            }))
+        }))
+    }
+    a(), $(".productContent__images .thumbs li a").click((function () {
+        a()
+    })), $(".thumbs img").each((function () {
+        var a = $(this).attr("src").replace("95-95/", "200-200/");
+        $(this).attr("src", a)
+    }))
+}
 
 // Modelo display precos antigo - DESABILITADO
 function setInfos() {
@@ -171,7 +171,7 @@ function vitrinePdpSmartHint() {
 
 $(document).ready((function () {
     //if (breadcrumb(), images(), ShippingValue(), bindEvents(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
-    if (breadcrumb(), ShippingValue(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
+    if (breadcrumb(), images(), ShippingValue(), setDesigners(), flagsp(), verifyShelf(), $(".flag.lp-outlet").length > 0) {
         $('<div class="pdpDetalhes"><img src="https://sunhouse.vteximg.com.br/arquivos/pdp-detalhes.png" /></div>').insertAfter(".breadcrumb");
         var a = {
             url: "/api/catalog_system/pub/products/crossselling/similars/" + skuJson.productId,
