@@ -419,11 +419,18 @@ $(document).ready(function () {
         });
 
         // Botões para abrir a tab de avaliações do produto
-        $("#all_opinions, .productContent__options, .productContent__images-dimensions--rating").click(function () {
+        $("#all_opinions, .productContent__images-dimensions--rating").click(function () {
             // Abre o accordion de avaliações
             $("#rate-accordion").collapse("show");
             // Rola a tela até a posição do accordion
             scrollToElement("#rate-accordion");
+        });
+
+        $(".productContent__options").click(function () {
+            // Abre o accordion de avaliações
+            $("#rate-accordion").collapse("show");
+            // Rola a tela até a posição do accordion
+            scrollToElement(".ts-button--more");
         });
     } else {
         // Botão para a descrição do produto
