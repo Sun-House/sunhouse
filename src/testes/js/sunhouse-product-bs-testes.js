@@ -598,7 +598,7 @@ $(document).ready(function () {
     //
 //});
 
-//
+// Funcoes de criacao do novo display de fotos do produto
 function imageWrapper() {
     // Seletor para os elementos <a> que contêm o atributo 'zoom'
     const zoomLinks = document.querySelectorAll('.apresentacao #show .thumbs li a#botaoZoom');
@@ -835,6 +835,7 @@ function zoomProductImage() {
     });
 }
 
+// Carrega funcoes de criacao do novo display de fotos do produto
 window.addEventListener('load', function() {
     imageWrapper();
     thumbsWrapper();
