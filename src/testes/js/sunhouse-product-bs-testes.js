@@ -597,3 +597,246 @@ $(document).ready(function () {
 
     //
 //});
+
+//
+function imageWrapper() {
+    // Seletor para os elementos <a> que contêm o atributo 'zoom'
+    const zoomLinks = document.querySelectorAll('.apresentacao #show .thumbs li a#botaoZoom');
+    
+    // Seletor para o contêiner onde os novos elementos serão adicionados
+    const carouselInner = document.querySelector('.productContent__product-images .productContent__product-images_main-block .carousel-inner');
+
+    // Verifica se os elementos existem antes de prosseguir
+    if (!zoomLinks || !carouselInner) {
+        console.error('Fn imageWrapper - Elementos necessários não foram encontrados no DOM.');
+        return;
+    }
+
+    zoomLinks.forEach((link, index) => {
+        // Captura o valor do atributo 'zoom'
+        const zoomSrc = link.getAttribute('zoom');
+        
+        // Cria um novo elemento 'div' com a classe 'carousel-item'
+        const carouselItem = document.createElement('div');
+        carouselItem.classList.add('carousel-item', 'zoom-container');
+        
+        // Adiciona a classe 'active' ao primeiro elemento criado
+        if (index === 0) {
+            carouselItem.classList.add('active');
+        }
+
+        // Cria um novo elemento 'div' de zoom para o 'carousel-item'
+        const zoomDiv = document.createElement('div');
+        zoomDiv.classList.add('zoom-overlay');
+
+        // Cria um novo elemento 'img' e define os atributos necessários
+        const imgElement = document.createElement('img');
+        imgElement.classList.add('d-block', 'w-100', 'shadow-1-strong', 'rounded', 'img-fluid', 'zoom-img');
+        imgElement.setAttribute('src', zoomSrc);
+
+        // Adiciona o elemento 'img' dentro da 'div' com a classe 'carousel-item'
+        zoomDiv.appendChild(imgElement);
+
+        // Adiciona a 'div' com a classe 'zoom-overlay' dentro do 'carousel-item'
+        carouselItem.appendChild(zoomDiv);
+
+        // Adiciona a 'div' com a classe 'carousel-item' dentro do 'carousel-inner'
+        carouselInner.appendChild(carouselItem);
+    });
+}
+
+function thumbsWrapper() {
+    // Seletor para os elementos <a> que contêm o atributo 'zoom'
+    const imgSrc = document.querySelectorAll('.apresentacao #show .thumbs li a#botaoZoom img');
+    
+    // Seletor para o contêiner onde os novos elementos serão adicionados
+    const carouselInner = document.querySelector('.productContent__product-images .productContent__product-images_thumbnails .carousel-inner');
+
+    // Verifica se os elementos existem antes de prosseguir
+    if (!imgSrc.length) {
+        console.error('Fn thumbsWrapper - Nenhum elemento com o seletor especificado foi encontrado.');
+        return;
+    }
+    if (!carouselInner) {
+        console.error('Fn thumbsWrapper - Elemento do carrossel não foi encontrado.');
+        return;
+    }
+
+    let currentCarouselItem = null;
+    let row = null;
+    let slideIndex = 0;
+
+    // Conjunto para rastrear src únicos
+    const srcSet = new Set();
+
+    imgSrc.forEach((link, index) => {
+        // Captura o valor do atributo 'src'
+        const imageSrc = link.getAttribute('src');
+
+        // Verifica se o src já foi adicionado
+        if (srcSet.has(imageSrc)) {
+            return; // Se já estiver no conjunto, não cria um novo item
+        }
+        
+        // Adiciona o src ao conjunto para rastreamento
+        srcSet.add(imageSrc);
+
+        // Se for o início de um novo grupo de até 3 itens, cria um novo 'carousel-item' e 'row'
+        if (index % 3 === 0) {
+            // Se não for o primeiro grupo, adiciona o 'carousel-item' ao contêiner
+            if (currentCarouselItem) {
+                carouselInner.appendChild(currentCarouselItem);
+            }
+
+            // Cria um novo 'carousel-item'
+            currentCarouselItem = document.createElement('div');
+            currentCarouselItem.classList.add('carousel-item');
+
+            // Adiciona a classe 'active' ao primeiro item criado
+            if (index === 0) {
+                currentCarouselItem.classList.add('active');
+            }
+
+            // Cria uma nova 'row'
+            row = document.createElement('div');
+            row.classList.add('row');
+
+            // Adiciona a 'row' ao 'carousel-item'
+            currentCarouselItem.appendChild(row);
+        }
+
+        // Cria um novo 'col' e adiciona ao 'row'
+        const col = document.createElement('div');
+        col.classList.add('col');
+
+        // Cria um novo 'button'
+        const button = document.createElement('button');
+        button.setAttribute('type', 'button');
+        button.setAttribute('data-bs-target', '#product_image_carousel');
+        button.setAttribute('data-bs-slide-to', slideIndex++);
+        button.setAttribute('aria-label', `Slide ${slideIndex}`);
+        if (index === 0) {
+            button.classList.add('active');
+            button.setAttribute('aria-current', 'true');
+        }
+
+        // Cria um novo 'img'
+        const imgElement = document.createElement('img');
+        imgElement.classList.add('d-block', 'w-100', 'shadow-1-strong', 'rounded', 'img-fluid');
+        imgElement.setAttribute('src', imageSrc);
+
+        // Adiciona o 'img' ao 'button'
+        button.appendChild(imgElement);
+
+        // Adiciona o 'button' ao 'col'
+        col.appendChild(button);
+
+        // Adiciona o 'col' ao 'row'
+        row.appendChild(col);
+    });
+
+    // Adiciona o último 'carousel-item' ao contêiner, se necessário
+    if (currentCarouselItem) {
+        carouselInner.appendChild(currentCarouselItem);
+    }
+}
+
+function zoomProductImage() {
+    const images = document.querySelectorAll('.zoom-img');
+
+    images.forEach(image => {
+        const container = image.closest('.zoom-container');
+        const overlay = container.querySelector('.zoom-overlay');
+
+        let isZoomed = false;
+
+        // Função para calcular a posição do transformOrigin
+        function calculatePosition(e, type) {
+            const { left, top, width, height } = container.getBoundingClientRect();
+
+            // Ajustes para a margem de segurança
+            const margin = -150; // Ajuste conforme necessário
+            const adjustedLeft = left - margin;
+            const adjustedTop = top - margin;
+            const adjustedWidth = width + (2 * margin);
+            const adjustedHeight = height + (2 * margin);
+
+            let clientX, clientY;
+
+            if (type === 'mouse') {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            } else if (type === 'touch') {
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            }
+
+            const x = ((clientX - adjustedLeft) / adjustedWidth) * 100;
+            const y = ((clientY - adjustedTop) / adjustedHeight) * 100;
+
+            image.style.transformOrigin = `${x}% ${y}%`;
+        }
+
+        // Eventos de mouse
+        container.addEventListener('mousemove', (e) => {
+            if (isZoomed) {
+                calculatePosition(e, 'mouse');
+            }
+        });
+
+        container.addEventListener('mouseleave', () => {
+            if (isZoomed) {
+                image.style.transformOrigin = 'center center';
+                image.style.transform = 'scale(1)';
+                container.classList.remove('zoom-active');
+                isZoomed = false;
+            }
+        });
+
+        container.addEventListener('click', () => {
+            isZoomed = !isZoomed;
+            if (isZoomed) {
+                container.classList.add('zoom-active');
+                image.style.transform = 'scale(2)';
+            } else {
+                container.classList.remove('zoom-active');
+                image.style.transform = 'scale(1)';
+                image.style.transformOrigin = 'center center';
+            }
+        });
+
+        // Eventos de toque
+        container.addEventListener('touchmove', (e) => {
+            if (isZoomed) {
+                calculatePosition(e, 'touch');
+            }
+        });
+
+        container.addEventListener('touchend', () => {
+            if (isZoomed) {
+                image.style.transformOrigin = 'center center';
+                image.style.transform = 'scale(1)';
+                container.classList.remove('zoom-active');
+                isZoomed = false;
+            }
+        });
+
+        container.addEventListener('touchstart', () => {
+            isZoomed = !isZoomed;
+            if (isZoomed) {
+                container.classList.add('zoom-active');
+                image.style.transform = 'scale(2)';
+            } else {
+                container.classList.remove('zoom-active');
+                image.style.transform = 'scale(1)';
+                image.style.transformOrigin = 'center center';
+            }
+        });
+    });
+}
+
+window.addEventListener('load', function() {
+    imageWrapper();
+    thumbsWrapper();
+    zoomProductImage();
+});

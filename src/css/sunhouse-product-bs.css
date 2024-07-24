@@ -2928,3 +2928,323 @@ Ajustes pre rebranding */
     }
 }
 /* Ajuste Vitrines SmartHint */
+
+/* Product Images 2024 */
+.productContent__product-images {
+    border-radius: 30px;
+    min-height: 680px;
+    min-width: 680px
+}
+
+/* Styles Main Carousel */
+.productContent__product-images_main-block {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    min-height: 680px
+}
+
+.productContent__product-images_main-block .carousel {
+    min-height: 675px
+}
+
+.productContent__product-images_main-block .carousel-item img {
+    box-shadow: unset !important
+}
+
+.productContent__product-images_main-block .carousel-control-prev-icon::after,
+.productContent__product-images_main-block .carousel-control-next-icon::after {
+    color: #F90041 !important
+}
+
+.productContent__product-images_main-block .carousel-item {
+    padding: 24px;
+    border-radius: 30px;
+    background: #fff
+}
+
+.productContent__product-images_main-block .carousel-item img {
+    border-radius: 30px !important
+}
+
+.productContent__product-images_main-block .carousel-control-prev:hover {
+    background: linear-gradient(to left, #ff000000, #ffda0066);
+    border-radius: 30px 0 0 30px
+}
+
+.productContent__product-images_main-block .carousel-control-next:hover {
+    background: linear-gradient(to right, #ff000000, #ffda0066);
+    border-radius: 0 30px 30px 0
+}
+
+.productContent__product-images_main-block .carousel-control-prev .carousel-control-prev-icon,
+.productContent__product-images_main-block .carousel-control-next .carousel-control-next-icon {
+    background: unset
+}
+
+.productContent__product-images_main-block .carousel-control-prev .carousel-control-prev-icon::after,
+.productContent__product-images_main-block .carousel-control-next .carousel-control-next-icon::after {
+    font-size: 35px;
+    font-family: bootstrap-icons !important
+}
+
+.productContent__product-images_main-block .carousel-control-prev .carousel-control-prev-icon::after {
+    content: "\F284"
+}
+
+.productContent__product-images_main-block .carousel-control-next .carousel-control-next-icon::after {
+    content: "\F285"
+}
+
+/* Images Zoom */
+.productContent__product-images_main-block .zoom-container {
+    position: relative;
+    overflow: hidden
+}
+
+.productContent__product-images_main-block .zoom-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    overflow: hidden
+}
+
+.productContent__product-images_main-block .zoom-active .zoom-overlay {
+    z-index: 38
+}
+
+.productContent__product-images_main-block .zoom-img {
+    transition: transform 0.2s ease-out;
+    cursor: zoom-in
+}
+
+.productContent__product-images_main-block .zoom-container.zoom-active .zoom-img {
+    z-index: 38;
+    cursor: zoom-out;
+    transition: none;
+    pointer-events: auto
+}
+/* Images Zoom */
+/* Styles Main Carousel */
+
+/* Styles Thumbnails */
+.productContent__product-images_thumbnails {
+    margin-top: 20px;
+    min-height: 200px
+}
+
+.productContent__product-images_thumbnails .carousel-indicators [data-bs-target] {
+    width: 200px
+}
+
+.productContent__product-images_thumbnails .carousel-indicators [data-bs-target] img {
+    border-radius: 30px !important
+}
+
+.productContent__product-images_thumbnails .carousel-control-prev-icon::after,
+.productContent__product-images_thumbnails .carousel-control-next-icon::after {
+    color: #F90041 !important
+}
+
+.productContent__product-images_thumbnails .col {
+    min-width: 234px;
+    max-width: 234px
+}
+
+.productContent__product-images_thumbnails .col button img {
+    border-radius: 30px;
+    background: #fff
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item > .row {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item {
+    display: none;
+    transition: transform 0.6s ease
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item button {
+    border: unset;
+    background: unset
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item button img {
+    border: 1px solid #ccc;
+    border-radius: 30px !important;
+    padding: 14px;
+    box-shadow: unset !important
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item button img:hover {
+    border: 4px solid#F90041
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item.active {
+    display: flex;
+    justify-content: center
+}
+
+.productContent__product-images_thumbnails .carousel-inner .carousel-item-next,
+.productContent__product-images_thumbnails .carousel-inner .carousel-item-prev {
+    display: flex
+}
+
+.productContent__product-images_thumbnails .carousel-control-prev:hover {
+    background: linear-gradient(to left, #ff000000, #ffda0066);
+    border-radius: 30px 0 0 30px
+}
+
+.productContent__product-images_thumbnails .carousel-control-next:hover {
+    background: linear-gradient(to right, #ff000000, #ffda0066);
+    border-radius: 0 30px 30px 0
+}
+
+.productContent__product-images_thumbnails .carousel-control-prev .carousel-control-prev-icon,
+.productContent__product-images_thumbnails .carousel-control-next .carousel-control-next-icon {
+    background: unset
+}
+
+.productContent__product-images_thumbnails .carousel-control-prev,
+.productContent__product-images_thumbnails .carousel-control-next {
+    width: 65px;
+    margin-top: -5px
+}
+
+.productContent__product-images_thumbnails .carousel-control-prev .carousel-control-prev-icon::after,
+.productContent__product-images_thumbnails .carousel-control-next .carousel-control-next-icon::after {
+    font-size: 30px;
+    font-family: bootstrap-icons !important
+}
+
+.productContent__product-images_thumbnails .carousel-control-prev .carousel-control-prev-icon::after {
+    content: "\F284";
+    margin-left: -25px
+}
+
+.productContent__product-images_thumbnails .carousel-control-next .carousel-control-next-icon::after {
+    content: "\F285";
+    padding-left: 14px
+}
+/* Styles Thumbnails */
+
+/* Loading image */
+.produto .lds-ring,
+.produto .lds-ring div {
+    box-sizing: border-box
+}
+
+.produto .lds-ring {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    top: 25%;
+    left: 45%;
+    color: #888
+}
+
+.produto .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid currentColor;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: currentColor transparent transparent transparent
+}
+
+.produto .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s
+}
+
+.produto .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s
+}
+
+.produto .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Loading image */
+
+/* Mobile */
+@media screen and (max-width: 1199px) {
+    .productContent__product-images {
+        min-height: auto;
+        min-width: 100%
+    }
+
+    .productContent__product-images_main-block,
+    .productContent__product-images_main-block .carousel {
+        min-height: 250px
+    }
+    
+    .productContent__product-images_main-block .carousel-control-prev:hover,
+    .productContent__product-images_main-block .carousel-control-next:hover,
+    .productContent__product-images_thumbnails .carousel-control-prev:hover,
+    .productContent__product-images_thumbnails .carousel-control-next:hover {
+        background: unset;
+        border-radius: unset
+    }
+
+    .productContent__product-images_thumbnails,
+    .productContent__product-images_thumbnails .carousel {
+        min-height: 82px
+    }
+
+    .productContent__product-images_thumbnails .carousel-inner .carousel-item .row {
+        --bs-gutter-x: unset
+    }
+
+    .productContent__product-images_thumbnails .col {
+        min-width: unset;
+        max-width: 122px
+    }
+
+    .productContent__product-images_thumbnails .col img {
+        max-height: 100px
+    }
+    
+    .productContent__product-images_thumbnails .carousel-inner .carousel-item button img {
+        border-radius: 20px !important
+    }
+
+    .productContent__product-images_thumbnails .carousel-inner .carousel-item button img:hover {
+        border-width: 3px
+    }
+
+    .productContent__product-images_thumbnails .carousel-control-prev .carousel-control-prev-icon::after {
+        margin-left: -18px
+    }
+
+    .productContent__product-images_thumbnails .carousel-control-next .carousel-control-next-icon::after {
+        padding-left: 10px
+    }
+    
+    /* Loading image */
+    .produto .lds-ring {
+        position: relative !important;
+        top: 90px;
+        left: 40%
+    }
+    /* Loading image */
+}
+/* Mobile */
+/* Product Images 2024 */
