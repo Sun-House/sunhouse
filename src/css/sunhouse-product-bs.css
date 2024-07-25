@@ -3209,7 +3209,8 @@ Ajustes pre rebranding */
     }
 
     .productContent__product-images_thumbnails,
-    .productContent__product-images_thumbnails .carousel {
+    .productContent__product-images_thumbnails .carousel,
+    .productContent__product-images_thumbnails #product_imageThumbs_carousel {
         min-height: 82px
     }
 
