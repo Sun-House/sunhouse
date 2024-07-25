@@ -541,9 +541,9 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 }
 
 @media screen and (max-width: 1199px){
-    .button-hidden {
+    /*.button-hidden {
         top: 140px !important;
-    }
+    }*/
     
     .button-hidden i {
         /*font-size: 50px !important;*/

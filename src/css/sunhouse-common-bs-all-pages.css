@@ -615,7 +615,7 @@ body>.header {
 @media screen and (max-width:1199px) {
     .header__search {
         width: 100%;
-        padding-top: 12px
+        /*padding-top: 12px - Dando erro na maioria das paginas */
     }
 }
 
@@ -1552,29 +1552,30 @@ body>.header {
     position: fixed !important;
     top: 70px !important;
     left: 25px !important;
-    z-index: 999 !important;
+    z-index: 999 !important
 }
 
 /*.button-hidden svg {
     width: 60px;
-    height: auto;
+    height: auto
 }*/
 
 .button-hidden i {
-    font-size: 60px!important;
+    font-size: 60px!important
 }
 
 @media screen and (max-width: 1199px) {
     #button-back {
         transition: .2s;
         top: -10px;
-        left: -50px;
+        left: -50px
     }
 
     .button-hidden {
-        top: 70px !important;
+        /*top: 70px !important;*/
+        top: 75px !important;
         left: 8px !important;
-        transition-timing-function: cubic-bezier(0.97, -0.11, 0, 1.27);
+        transition-timing-function: cubic-bezier(0.97, -0.11, 0, 1.27)
     }
 }
 /* Back Page Button */
