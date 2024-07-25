@@ -3261,3 +3261,12 @@ Ajustes pre rebranding */
 }
 /* Mobile */
 /* Product Images 2024 */
+
+/* Ajuste visual - UX Mobile */
+@media screen and (max-width: 1199px) {
+    .produto .breadcrumb,
+    .produto .breadcrumb_bs {
+        display: none !important
+    }
+}
+/* Ajuste visual - UX Mobile */
