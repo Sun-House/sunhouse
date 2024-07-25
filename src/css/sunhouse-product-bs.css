@@ -1516,7 +1516,8 @@ table.group.Escritorio {
 
 @media screen and (max-width:1199px) {
     .produto .productContent__options {
-        padding-top: 16px
+        /*padding-top: 16px*/
+        padding-top: unset
     }
 
     .produto .productContent__options-opinions {
@@ -1990,6 +1991,10 @@ th.name-field::after {
 }
 
 @media screen and (max-width:1199px) {
+    .produto .productContent__infos-similars {
+        display: none !important
+    }
+
     .produto .productContent__infos-similars .outras-cores ul {
         display: flex !important;
         flex-direction: row;
