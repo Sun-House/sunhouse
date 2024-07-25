@@ -1389,7 +1389,7 @@ table.group.Escritorio {
 
 @media screen and (max-width:1199px) {
     .freight-btn {
-        width: 35px !important;
+        /*width: 35px !important;*/
         margin: -44px 0 0 4px !important
         /*margin: -44px 5px 0 4px;
         margin: -44px 10px 0 4px !important;*/
