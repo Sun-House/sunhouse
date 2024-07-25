@@ -632,6 +632,7 @@ function imageWrapper() {
         // Cria um novo elemento 'img' e define os atributos necessários
         const imgElement = document.createElement('img');
         imgElement.classList.add('d-block', 'w-100', 'shadow-1-strong', 'rounded', 'img-fluid', 'zoom-img');
+        imgElement.id = 'zoomable-image';
         imgElement.setAttribute('src', zoomSrc);
 
         // Adiciona o elemento 'img' dentro da 'div' com a classe 'carousel-item'
@@ -648,7 +649,7 @@ function imageWrapper() {
 function thumbsWrapper() {
     // Seletor para os elementos <a> que contêm o atributo 'zoom'
     const imgSrc = document.querySelectorAll('.apresentacao #show .thumbs li a#botaoZoom img');
-    
+
     // Seletor para o contêiner onde os novos elementos serão adicionados
     const carouselInner = document.querySelector('.productContent__product-images .productContent__product-images_thumbnails .carousel-inner');
 
@@ -677,7 +678,7 @@ function thumbsWrapper() {
         if (srcSet.has(imageSrc)) {
             return; // Se já estiver no conjunto, não cria um novo item
         }
-        
+
         // Adiciona o src ao conjunto para rastreamento
         srcSet.add(imageSrc);
 
@@ -741,103 +742,102 @@ function thumbsWrapper() {
     }
 }
 
+function carouselOcultaSetas() {
+    // Oculta todas setas em caso de 1 foto - e apenas setas das thumbs em caso de 2-3 fotos
+    var carousel = document.querySelector('.productContent__product-images');
+    var carouselThumbs = document.getElementById('product_imageThumbs_carousel');
+    var items = carouselThumbs.querySelectorAll('.carousel-item .col');
+
+    if (items.length === 1) {
+        var controls = carousel.querySelectorAll('.carousel-control');
+        controls.forEach(function (control) {
+            control.style.display = 'none';
+        });
+    } else if (items.length === 2 || items.length === 3) {
+        var thumbControls = carousel.querySelectorAll('.control-thumb');
+        thumbControls.forEach(function (control) {
+            control.style.display = 'none';
+        });
+    }
+}
+
 function zoomProductImage() {
     const images = document.querySelectorAll('.zoom-img');
 
     images.forEach(image => {
-        const container = image.closest('.zoom-container');
-        const overlay = container.querySelector('.zoom-overlay');
+        if (window.innerWidth >= 1200) {
+            const container = image.closest('.zoom-container');
+            const overlay = container.querySelector('.zoom-overlay');
 
-        let isZoomed = false;
+            let isZoomed = false;
 
-        // Função para calcular a posição do transformOrigin
-        function calculatePosition(e, type) {
-            const { left, top, width, height } = container.getBoundingClientRect();
+            // Função para calcular a posição do transformOrigin
+            function calculatePosition(e, type) {
+                const {
+                    left,
+                    top,
+                    width,
+                    height
+                } = container.getBoundingClientRect();
 
-            // Ajustes para a margem de segurança
-            const margin = -150; // Ajuste conforme necessário
-            const adjustedLeft = left - margin;
-            const adjustedTop = top - margin;
-            const adjustedWidth = width + (2 * margin);
-            const adjustedHeight = height + (2 * margin);
+                // Ajustes para a margem de segurança
+                const margin = -150; // Ajuste conforme necessário
+                const adjustedLeft = left - margin;
+                const adjustedTop = top - margin;
+                const adjustedWidth = width + (2 * margin);
+                const adjustedHeight = height + (2 * margin);
 
-            let clientX, clientY;
+                let clientX, clientY;
 
-            if (type === 'mouse') {
-                clientX = e.clientX;
-                clientY = e.clientY;
-            } else if (type === 'touch') {
-                clientX = e.touches[0].clientX;
-                clientY = e.touches[0].clientY;
+                if (type === 'mouse') {
+                    clientX = e.clientX;
+                    clientY = e.clientY;
+                } else if (type === 'touch') {
+                    clientX = e.touches[0].clientX;
+                    clientY = e.touches[0].clientY;
+                }
+
+                const x = ((clientX - adjustedLeft) / adjustedWidth) * 100;
+                const y = ((clientY - adjustedTop) / adjustedHeight) * 100;
+
+                image.style.transformOrigin = `${x}% ${y}%`;
             }
 
-            const x = ((clientX - adjustedLeft) / adjustedWidth) * 100;
-            const y = ((clientY - adjustedTop) / adjustedHeight) * 100;
+            // Eventos de mouse
+            container.addEventListener('mousemove', (e) => {
+                if (isZoomed) {
+                    calculatePosition(e, 'mouse');
+                }
+            });
 
-            image.style.transformOrigin = `${x}% ${y}%`;
+            container.addEventListener('mouseleave', () => {
+                if (isZoomed) {
+                    image.style.transformOrigin = 'center center';
+                    image.style.transform = 'scale(1)';
+                    container.classList.remove('zoom-active');
+                    isZoomed = false;
+                }
+            });
+
+            container.addEventListener('click', () => {
+                isZoomed = !isZoomed;
+                if (isZoomed) {
+                    container.classList.add('zoom-active');
+                    image.style.transform = 'scale(2)';
+                } else {
+                    container.classList.remove('zoom-active');
+                    image.style.transform = 'scale(1)';
+                    image.style.transformOrigin = 'center center';
+                }
+            });
         }
-
-        // Eventos de mouse
-        container.addEventListener('mousemove', (e) => {
-            if (isZoomed) {
-                calculatePosition(e, 'mouse');
-            }
-        });
-
-        container.addEventListener('mouseleave', () => {
-            if (isZoomed) {
-                image.style.transformOrigin = 'center center';
-                image.style.transform = 'scale(1)';
-                container.classList.remove('zoom-active');
-                isZoomed = false;
-            }
-        });
-
-        container.addEventListener('click', () => {
-            isZoomed = !isZoomed;
-            if (isZoomed) {
-                container.classList.add('zoom-active');
-                image.style.transform = 'scale(2)';
-            } else {
-                container.classList.remove('zoom-active');
-                image.style.transform = 'scale(1)';
-                image.style.transformOrigin = 'center center';
-            }
-        });
-
-        // Eventos de toque
-        container.addEventListener('touchmove', (e) => {
-            if (isZoomed) {
-                calculatePosition(e, 'touch');
-            }
-        });
-
-        container.addEventListener('touchend', () => {
-            if (isZoomed) {
-                image.style.transformOrigin = 'center center';
-                image.style.transform = 'scale(1)';
-                container.classList.remove('zoom-active');
-                isZoomed = false;
-            }
-        });
-
-        container.addEventListener('touchstart', () => {
-            isZoomed = !isZoomed;
-            if (isZoomed) {
-                container.classList.add('zoom-active');
-                image.style.transform = 'scale(2)';
-            } else {
-                container.classList.remove('zoom-active');
-                image.style.transform = 'scale(1)';
-                image.style.transformOrigin = 'center center';
-            }
-        });
     });
 }
 
 // Carrega funcoes de criacao do novo display de fotos do produto
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     imageWrapper();
     thumbsWrapper();
     zoomProductImage();
+    carouselOcultaSetas();
 });

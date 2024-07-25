@@ -2943,7 +2943,7 @@ Ajustes pre rebranding */
     min-height: 680px
 }
 
-.productContent__product-images_main-block .carousel {
+.productContent__product-images_main-block .carousel { /* alterar para ID unico apos go live */
     min-height: 675px
 }
 
@@ -2963,7 +2963,7 @@ Ajustes pre rebranding */
 }
 
 .productContent__product-images_main-block .carousel-item img {
-    border-radius: 30px !important
+    border-radius: 20px !important
 }
 
 .productContent__product-images_main-block .carousel-control-prev:hover {
@@ -3032,6 +3032,10 @@ Ajustes pre rebranding */
 /* Styles Thumbnails */
 .productContent__product-images_thumbnails {
     margin-top: 20px;
+    min-height: 200px
+}
+
+.productContent__product-images_thumbnails #product_imageThumbs_carousel {
     min-height: 200px
 }
 
@@ -3175,11 +3179,11 @@ Ajustes pre rebranding */
 
 @keyframes lds-ring {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg)
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
 /* Loading image */
@@ -3245,6 +3249,12 @@ Ajustes pre rebranding */
         left: 40%
     }
     /* Loading image */
+
+    /* Zoom */
+    .produto .zoom-modal img {
+        cursor: zoom-in
+    }
+    /* Zoom */
 }
 /* Mobile */
 /* Product Images 2024 */
