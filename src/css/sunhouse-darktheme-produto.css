@@ -653,3 +653,20 @@ a.caretMain:after {
     border-color: #FFDA00 !important
 }
 /* New Catalog Shelf Buttons */
+
+/* Buy Button and Add Cart Button */
+#addCart_main {
+    background-color: #000;
+    color: #FFDA00
+}
+
+.buy-button.buy-button-ref {
+    background: #FFDA00 !important;
+    color: #000 !important;
+    font-weight: 500
+}
+
+.buy-button.buy-button-ref::after {
+    color: #000 !important
+}
+/* Buy Button and Add Cart Button */

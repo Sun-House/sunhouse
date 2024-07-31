@@ -3275,3 +3275,162 @@ Ajustes pre rebranding */
     }
 }
 /* Ajuste visual - UX Mobile */
+
+/* New Buy Button - Add to Cart Pdp Button */
+.productContent__infos-buyButton {
+    max-height: 80px
+}
+
+.produto .productContent__infos-buyButton a {
+    line-height: 68px !important;
+    font-size: 0
+}
+
+.produto .productContent__infos-buyButton a:before {
+    content: "Compre Agora";
+    top: -1px;
+    font-size: 26px
+}
+
+.buy-button.buy-button-ref {
+    position: relative;
+    top: -80px;
+    z-index: 99;
+    width: 85% !important;
+    background: #000 !important;
+    transition: .2s
+}
+
+.buy-button.buy-button-ref::after {
+    content: "\eb88" !important;
+    font-family: 'Material Symbols Outlined' !important;
+    color: #fff !important;
+    font-size: 32px !important;
+    height: unset !important;
+    margin-bottom: 10px
+}
+
+.buy-button.buy-button-ref:hover {
+    width: 101% !important;
+    opacity: 1 !important
+}
+
+.buy-button.buy-button-ref:active {
+    margin-left: 3px
+}
+
+#addCart_main {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background-color: #FFDA00;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 80px !important;
+    margin-left: 10px;
+    width: 98%;
+    transition: .2s
+}
+
+#addCart_main:hover {
+    text-align: right;
+    padding-right: 35px
+}
+
+#addCart_main .material-symbols-outlined {
+    right: -45px;
+    position: relative;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 600;
+    transition: .2s
+}
+
+#addCart_main:hover .material-symbols-outlined {
+    display: none
+}
+
+#addCart_main::after,
+#addCart_main::before {
+    display: none;
+    background: unset
+}
+
+#addCart_main:hover + .buy-button.buy-button-ref {
+    width: 30% !important;
+    font-size: 0
+}
+
+#addCart_main:hover + .buy-button.buy-button-ref::before {
+    font-size: 0
+}
+
+.productContent__infos-buyButton a::after,
+#addCart_main:hover + .buy-button.buy-button-ref::after {
+    background: unset !important
+}
+
+#addCart_main:hover + .buy-button.buy-button-ref::after {
+    margin-left: unset !important
+}
+
+@media screen and (max-width: 1199px) {
+    .productContent__infos-buyButton {
+        display: flex !important;
+        flex-direction: row-reverse
+    }
+
+    .buy-button.buy-button-ref {
+        top: 0
+    }
+
+    #addCart_main {
+        margin-left: 5px;
+        min-width: 80px;
+        width: 80px;
+        font-size: 0
+    }
+
+    #addCart_main .material-symbols-outlined {
+        right: 0
+    }
+
+    .produto .productContent__infos-buyButton a:before {
+        top: -3px;
+        font-size: 20px
+    }
+
+    .produto .productContent__infos-buyButton a:after,
+    #addCart_main:hover + .buy-button.buy-button-ref::after {
+        margin-left: 10px !important
+    }
+
+    #addCart_main:hover {
+        text-align: center;
+        padding-right: unset
+    }
+
+    #addCart_main:hover .material-symbols-outlined {
+        display: inline-block
+    }
+
+    #addCart_main:hover + .buy-button.buy-button-ref {
+        width: 85% !important;
+        font-size: 26px
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .produto .productContent__infos-buyButton a:before {
+        font-size: 17px
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .produto .productContent__infos-buyButton a:before {
+        font-size: 15px
+    }
+}
+/* New Buy Button - Add to Cart Pdp Button */
