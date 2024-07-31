@@ -2239,7 +2239,8 @@ body>.header {
 .content>ul li div img {
     width: 100%;
     height: auto;
-    max-width: 178px
+    max-width: 178px;
+    border-radius: 100%
 }
 
 .content>ul li strong {
