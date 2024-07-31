@@ -30,7 +30,8 @@
     width: 100%;
     min-width: 179px;
     max-width: 179px;
-    height: auto
+    height: auto;
+    border-radius: 100%
 }
 
 .autor > .content .phl__description {
