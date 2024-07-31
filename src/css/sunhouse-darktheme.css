@@ -512,15 +512,22 @@ body.institucional>.content a {
     border-color: #000 !important
 }
 
+.designers .authors span,
+.designers .authorsDesc p,
 .autor > .content .phl__description p,
 .autor > .content .pcollection > h2,
 .autor > .content .pcollection .shelfAutorItem__infos--name {
     color: #fff !important
 }
 
+.designers .header__menu,
 .autor .header__menu,
 .autor > .content .phl {
     border-bottom: 1px solid #333 !important
+}
+
+.designers .content ul li strong {
+    color: #FFDA00 !important
 }
 /* Pagina Designers */
 
