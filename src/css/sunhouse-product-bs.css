@@ -3340,7 +3340,8 @@ Ajustes pre rebranding */
 }
 
 #addCart_main .material-symbols-outlined {
-    right: -45px;
+    /*right: -45px;*/
+    right: -55px;
     position: relative;
     vertical-align: middle;
     font-size: 32px;
