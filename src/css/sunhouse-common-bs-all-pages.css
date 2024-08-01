@@ -1548,9 +1548,15 @@ body>.header {
     color: #F90041
 }
 
+@media screen and (min-width: 1200px) {
+    .button-hidden {
+        top: 125px !important
+    }
+}
+
 .button-hidden {
     position: fixed !important;
-    top: 70px !important;
+    top: 70px;
     left: 25px !important;
     z-index: 999 !important
 }

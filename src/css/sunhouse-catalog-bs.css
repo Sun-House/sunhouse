@@ -1318,9 +1318,9 @@ Ajuste temporario */
     font-size: 40px;
 }
 
-.button-hidden { /* Ajuste para header fixed */
+/*.button-hidden {
     top: 125px !important;
-}
+}*/
 
 .button-hidden i {
     font-size: 60px !important;
