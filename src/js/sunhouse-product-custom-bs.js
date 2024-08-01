@@ -22,11 +22,6 @@ function disableproduto() {
         if ($("#produtoLojaFisica").length) {
             $("#addCart_main").hide();
         }
-
-        // Adiciona classe para correcao visual mobile de quando o produto estiver esgotado
-        if ($(".productContent__infos-buyButton .unavailable-button").css("display") == "block") {
-            $(".productContent__infos-buyButton").addClass("has-unavailable-button");
-        }
     }
 }
 
@@ -121,3 +116,11 @@ $(document).ready((function () {
     $(".productContent__images-dimensions--weight strong:last").text(pesofinal + weightMeasureUnit)
 }));
 // Bloco medidas pdp FIM
+
+//
+// Adiciona classe para correcao visual mobile de quando o produto estiver esgotado
+$(document).ready(function() {
+    if ($(".productContent__infos-buyButton .unavailable-button").css("display") == "block") {
+        $(".productContent__infos-buyButton").addClass("has-unavailable-button");
+    }
+});
