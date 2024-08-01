@@ -3,17 +3,24 @@ function disableproduto() {
     this.montar = function() {
         var estilocss;
         $("div.productContent div.productContent__images div.productContent__images-flags p.flag.exclusivo-loja-fisica").length && ($(".portal-notify-me-ref").hide(),
-        $(".productContent__infos-comunication").hide(),
-        $(".unavailable-button").hide(),
-        $(".productContent__infos-freight").hide(),
-        $(".out_of_stock").hide(),
+            $(".productContent__infos-comunication").hide(),
+            $(".unavailable-button").hide(),
+            $(".productContent__infos-freight").hide(),
+            $(".out_of_stock").hide(),
+            $(".productContent__infos-buyButton").after('<div id="produtoLojaFisica"><h2 id="destaque">Produto<u style="text-decoration:underline"> DISPON&Iacute;EL PARA VENDA EXCLUSIVAMENTE</u> atrav&eacute;s das Nossas Lojas F&iacute;sicas ou via Atendimento Corporativo</h2><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/nossas-lojas" target="new"><u>Clique aqui</u></a> e veja as informa&ccedil;&otilde;es sobre as Nossas Lojas F&iacute;sicas</strong></p><br><p class="frases"><strong><u>Endere&ccedil;os e Telefones de contato:</u></strong></p><br><p class="frases"><strong><u>Loja 1:</u></strong> Rua Teodoro Sampaio, 1587 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 3082-2044 e (11) 3086-0916</p><br><p class="frases"><strong><u>Loja 2:</u></strong> Rua Teodoro Sampaio, 1749 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 2503-2996 e (11) 98111-7604</p><br><p class="frases"><strong><u>Loja 3:</u></strong> Rua Mateus Grou, 413 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 2506-4546 e (11) 96594-4223</p><br><p class="frases"><strong><u>Loja Outlet:</u></strong> Rua Doutor Gabriel Covelli, 58 - Parque Peruche - SP</p><p class="frases">Telefones: (11) 3816-2758 ou (11) 98935-8264</p><br><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/vendas-corporativas" target="new"><u>Clique aqui</u></a> e veja as informa&ccedil;&otilde;es sobre o Atendimento Corporativo</strong></p><br><p class="frases">Telefone Corporativo: (11) 2082-0432</p><p class="frases">E-mail Corporativo:<strong> Corporativo@SunHouse.com.br</strong></p></div>'),
+            ("block" == $(".buy-button").css("display") || "flex" == $(".buy-button").css("display")) && ($("#produtoLojaFisica").hide(),
+                $(".productContent__infos-comunication").show(),
+                $(".productContent__infos-freight").show()
+            )
+        );
+        // Adiciona a logica para esconder o elemento com id addCart_main se as condicoes atenderem
+        if ($(".unavailable-button").css("display") == "block") {
+            $("#addCart_main").hide();
+        }
         
-        //$(".productContent__infos-buyButton").hide(),
-        $(".productContent__infos-buyButton").after('<div id="produtoLojaFisica"><h2 id="destaque">Produto<u style="text-decoration:underline"> DISPON&Iacute;EL PARA VENDA EXCLUSIVAMENTE</u> atrav&eacute;s das Nossas Lojas F&iacute;sicas ou via Atendimento Corporativo</h2><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/nossas-lojas" target="new"><u>Clique aqui</u></a> e veja as informa&ccedil;&otilde;es sobre as Nossas Lojas F&iacute;sicas</strong></p><br><p class="frases"><strong><u>Endere&ccedil;os e Telefones de contato:</u></strong></p><br><p class="frases"><strong><u>Loja 1:</u></strong> Rua Teodoro Sampaio, 1587 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 3082-2044 e (11) 3086-0916</p><br><p class="frases"><strong><u>Loja 2:</u></strong> Rua Teodoro Sampaio, 1749 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 2503-2996 e (11) 98111-7604</p><br><p class="frases"><strong><u>Loja 3:</u></strong> Rua Mateus Grou, 413 - Pinheiros - CEP 05405-150 - SP</p><p class="frases">Telefones: (11) 2506-4546 e (11) 96594-4223</p><br><p class="frases"><strong><u>Loja Outlet:</u></strong> Rua Doutor Gabriel Covelli, 58 - Parque Peruche - SP</p><p class="frases">Telefones: (11) 3816-2758 ou (11) 98935-8264</p><br><p class="frases"><strong><a href="https://www.sunhouse.com.br/institucional/vendas-corporativas" target="new"><u>Clique aqui</u></a> e veja as informa&ccedil;&otilde;es sobre o Atendimento Corporativo</strong></p><br><p class="frases">Telefone Corporativo: (11) 2082-0432</p><p class="frases">E-mail Corporativo:<strong> Corporativo@SunHouse.com.br</strong></p></div>'),
-        ("block" == $(".buy-button").css("display") || "flex" == $(".buy-button").css("display")) && ($("#produtoLojaFisica").hide(),
-        
-        $(".productContent__infos-comunication").show(),
-        $(".productContent__infos-freight").show()))
+        if ($("#produtoLojaFisica").length) {
+            $("#addCart_main").hide();
+        }
     }
 }
 
