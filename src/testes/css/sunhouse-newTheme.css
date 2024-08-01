@@ -536,9 +536,9 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 /* Produto template */
 
 /* Ajuste Botao Back Page All Templates - HeaderFixed */
-.button-hidden {
+/*.button-hidden {
     top: 125px !important;
-}
+}*/
 
 @media screen and (max-width: 1199px){
     /*.button-hidden {
