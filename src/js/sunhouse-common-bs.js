@@ -28,13 +28,15 @@ $(document).ready((function () {
             }))
         }))
     })), $(".shelf li:not(.shelfProduct)").remove(), 
+    
     // funcao nova de insercao de atributo placeholder substitui essa
-    //$(".fulltext-search-box").val("Buscar Produtos..."),
-    //$(".fulltext-search-box").focus((function () {
-        //"Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
-        //"" == $(this).val() && $(this).val("Buscar Produtos...")
-        //}))
-    //})),
+    $(".fulltext-search-box").val("Buscar Produtos..."),
+    $(".fulltext-search-box").focus((function () {
+        "Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
+        "" == $(this).val() && $(this).val("Buscar Produtos...")
+        }))
+    })),
+
     setInterval((function () {
         $(".shelfProduct").each((function () {
             if (0 === $(this).find(".shelfProduct__image.hover img").length && $(this).find(".shelfProduct__image img").clone().appendTo($(this).find(".shelfProduct__image.hover")), 0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && !$(this).hasClass("pc")) {
