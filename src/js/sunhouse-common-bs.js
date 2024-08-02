@@ -27,11 +27,15 @@ $(document).ready((function () {
                 window.location = "/checkout"
             }))
         }))
-    })), $(".shelf li:not(.shelfProduct)").remove(), $(".fulltext-search-box").val("Buscar Produtos..."), $(".fulltext-search-box").focus((function () {
-        "Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
-            "" == $(this).val() && $(this).val("Buscar Produtos...")
-        }))
-    })), setInterval((function () {
+    })), $(".shelf li:not(.shelfProduct)").remove(), 
+    // funcao nova de insercao de atributo placeholder substitui essa
+    //$(".fulltext-search-box").val("Buscar Produtos..."),
+    //$(".fulltext-search-box").focus((function () {
+        //"Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
+        //"" == $(this).val() && $(this).val("Buscar Produtos...")
+        //}))
+    //})),
+    setInterval((function () {
         $(".shelfProduct").each((function () {
             if (0 === $(this).find(".shelfProduct__image.hover img").length && $(this).find(".shelfProduct__image img").clone().appendTo($(this).find(".shelfProduct__image.hover")), 0 > $(this).find(".shelfProduct__price").text().indexOf("Esgotado") && !$(this).hasClass("pc")) {
                 $(this).addClass("pc");
@@ -55,3 +59,12 @@ $(document).ready((function () {
         }))
     }), 500)
 }));
+
+// Funcao que atribui placeholder ao input de busca VTEX e SmartHint
+document.addEventListener('DOMContentLoaded', function () {
+    var seachInputs = document.querySelectorAll('.fulltext-search-box');
+
+    seachInputs.forEach(function(inputElement) {
+        inputElement.setAttribute('placeholder', 'Buscar Produtos...');
+    });
+});
