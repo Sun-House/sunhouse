@@ -19,7 +19,11 @@ function disableproduto() {
             $("#addCart_main").hide();
         }
         
-        if ($("#produtoLojaFisica").length) {
+        //if ($("#produtoLojaFisica").length) {
+            //$("#addCart_main").hide();
+        //}
+
+        if ($("#produtoLojaFisica").length && $("#produtoLojaFisica").css("display") !== "none") {
             $("#addCart_main").hide();
         }
     }
@@ -117,7 +121,6 @@ $(document).ready((function () {
 }));
 // Bloco medidas pdp FIM
 
-//
 // Adiciona classe para correcao visual mobile de quando o produto estiver esgotado
 $(document).ready(function() {
     if ($(".productContent__infos-buyButton .unavailable-button").css("display") == "block") {
