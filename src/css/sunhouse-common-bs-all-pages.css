@@ -2776,13 +2776,14 @@ Btn Comprar */
     .shelfProduct__name {
         line-clamp: 3;
         -webkit-line-clamp: 3;
+        max-width: unset !important
     }
 
     .shelfProduct__price-best,
     .shelfProduct__price-best span {
         font-size: 27px;
         white-space: nowrap;
-        letter-spacing: -1px;
+        letter-spacing: -1px
     }
 }
 /* Template Catalog - Ajustes */
