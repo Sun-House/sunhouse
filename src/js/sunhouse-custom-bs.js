@@ -5,6 +5,7 @@
 //});
 
 // Inicia Popper - Tooltips e Popovers
+//document.addEventListener('DOMContentLoaded', function () {
 $(document).ready(function () {
     const triggerList = document.querySelectorAll('[data-bs-toggle="tooltip"], [data-bs-toggle="popover"]');
 
