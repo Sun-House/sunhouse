@@ -32,9 +32,10 @@ $(document).ready((function () {
     // funcao nova de insercao de atributo placeholder substitui essa
     $(".fulltext-search-box").val("Buscar Produtos..."),
     $(".fulltext-search-box").focus((function () {
-        "Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
-        "" == $(this).val() && $(this).val("Buscar Produtos...")
-        }))
+        //"Buscar Produtos..." == $(this).val() && $(this).val(""), $(".fulltext-search-box").focusout((function () {
+        //"" == $(this).val() && $(this).val("Buscar Produtos...")
+        //}))
+        "Buscar Produtos..." == $(this).val() && $(this).val(""); // Limpa o campo se o valor for "Buscar Produtos..."
     })),
 
     setInterval((function () {
