@@ -51,9 +51,21 @@ $(document).ready((function () {
                 //
             }
         }))
-    }), 500), $(".shelfProduct").each((function () {
-        "" != $(this).find(".shelfProduct__image.hover").html() && $(this).addClass("hover-image")
-    })), vtexjs.checkout.getOrderForm().done((function (a) {
+    }), 500);
+    //$(".shelfProduct").each((function () {
+        //"" != $(this).find(".shelfProduct__image.hover").html() && $(this).addClass("hover-image")
+    //})),
+    
+    // Ajuste para nao ter hover - over - foto mobile
+    if (window.innerWidth > 1200) {
+        $(".shelfProduct").each(function () {
+            if ("" != $(this).find(".shelfProduct__image.hover").html()) {
+                $(this).addClass("hover-image");
+            }
+        });
+    };
+
+    vtexjs.checkout.getOrderForm().done((function (a) {
         $(".header__cart-items").text(a.items.length)
     })), window.innerWidth < 1200 && $(".header > a").insertBefore(".header > .header__search"), setInterval((function () {
         $(".shelfProduct").each((function () {
