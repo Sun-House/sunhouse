@@ -3298,7 +3298,7 @@ Ajustes pre rebranding */
     top: -80px;
     z-index: 99;
     width: 85% !important;
-    background: #000 !important;
+    /*background: #000 !important;*/
     transition: .2s
 }
 
