@@ -661,12 +661,12 @@ a.caretMain:after {
 }
 
 .buy-button.buy-button-ref {
-    background: #FFDA00 !important;
+    /*background: #FFDA00 !important;*/
     color: #000 !important;
     font-weight: 500
 }
 
-.buy-button.buy-button-ref::after {
+/*.buy-button.buy-button-ref::after {
     color: #000 !important
-}
+}*/
 /* Buy Button and Add Cart Button */
