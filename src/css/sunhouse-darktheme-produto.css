@@ -670,3 +670,21 @@ a.caretMain:after {
     color: #000 !important
 }*/
 /* Buy Button and Add Cart Button */
+
+/* Ajuste campo de busca */
+input.fulltext-search-box::placeholder {
+    color: #fff !important
+}
+
+input.fulltext-search-box::-webkit-input-placeholder {
+    color: #fff !important
+}
+
+input.fulltext-search-box::-moz-placeholder {
+    color: #fff !important
+}
+
+input.fulltext-search-box::-moz-placeholder {
+    color: #fff !important
+}
+/* Ajuste campo de busca */
