@@ -141,7 +141,8 @@ ol, ul {
     margin-right: auto;
     margin: 0 auto;
     max-width: 1200px !important;
-    padding: 24px 0 48px;
+    /*padding: 24px 0 48px;*/
+    padding: 24px 0 24px;
     box-sizing: border-box;
     background-color: inherit!important;
     display: flex;
