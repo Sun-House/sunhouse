@@ -1821,6 +1821,10 @@ th.name-field::after {
 }
 
 @media screen and (max-width:1199px) {
+    #medidasNEW h3,
+    #medidasOLD h3 {
+        padding-top: 0 !important
+    }
 
     .produto .prdFichatecnica tbody tr #colDois,
     .produto .prdFichatecnica tbody tr #colUm {
@@ -1909,7 +1913,8 @@ th.name-field::after {
 
 @media screen and (max-width:1199px) {
     .productDescription {
-        padding-top: 50px
+        /*padding-top: 50px*/
+        padding-top: 12px
     }
 
     .produto .productContent__infos-installment div {
