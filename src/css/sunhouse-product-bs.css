@@ -53,8 +53,19 @@ table.group.Escritorio {
         margin-left: 0
     }
 
-    #caracteristicas>table {
-        margin-left: 15px
+    #caracteristicas > table {
+        /*margin-left: 15px*/
+        margin-left: 0px;
+        width: 100% !important
+    }
+
+    #caracteristicas > table th {
+        border-radius: 30px 0 0 30px !important;
+        vertical-align: middle
+    }
+
+    #caracteristicas > table td {
+        border-radius: 0 30px 30px 0 !important
     }
 }
 
