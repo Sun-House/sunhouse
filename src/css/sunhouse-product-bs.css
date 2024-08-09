@@ -3422,7 +3422,12 @@ Ajustes pre rebranding */
 
     #addCart_main:hover + .buy-button.buy-button-ref {
         width: 85% !important;
-        font-size: 26px
+        /*font-size: 26px*/
+        font-size: 0
+    }
+
+    #addCart_main:hover + .buy-button.buy-button-ref::before {
+        font-size: 20px !important
     }
 }
 
