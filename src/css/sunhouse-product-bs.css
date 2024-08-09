@@ -3324,8 +3324,10 @@ Ajustes pre rebranding */
     position: relative;
     z-index: 1;
     display: block;
-    background-color: #FFDA00;
-    color: #000;
+    /*background-color: #FFDA00;
+    color: #000;*/
+    background-color: #000;
+    color: #fff;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
