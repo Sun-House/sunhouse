@@ -456,7 +456,8 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     color: #F90041;
 }
 
-.produto .productContent__infos-comunication {
+/* Info sobre cancalamento PDP */
+/*.produto .productContent__infos-comunication {
     font-size: 15px;
     white-space: nowrap;
 }
@@ -467,7 +468,7 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 
 .produto .productContent__options-opinions p {
     font-size: 16px;
-    /*white-space: nowrap;*/
+    / white-space: nowrap; /
 }
 
 .produto .productContent__images-dimensions li strong {
@@ -481,7 +482,8 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 
 .produto .productContent__infos-comunication i {
     background-image: unset !important;
-}
+}*/
+/* Info sobre cancalamento PDP */
 
 .produto .productContent__infos-freight fieldset .prefixo #txtCep {
     font-family: 'Montserrat' !important;
