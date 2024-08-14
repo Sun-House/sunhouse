@@ -456,7 +456,7 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     color: #F90041;
 }
 
-/* Info sobre cancalamento PDP */
+/* Info sobre politica devolucao PDP */
 /*.produto .productContent__infos-comunication {
     font-size: 15px;
     white-space: nowrap;
@@ -483,7 +483,7 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 .produto .productContent__infos-comunication i {
     background-image: unset !important;
 }*/
-/* Info sobre cancalamento PDP */
+/* Info sobre politica devolucao PDP */
 
 .produto .productContent__infos-freight fieldset .prefixo #txtCep {
     font-family: 'Montserrat' !important;
