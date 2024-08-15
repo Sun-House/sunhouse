@@ -427,13 +427,13 @@ $(document).ready(function () {
         });
         
         //$(".productContent__options").click(function () {
-        $(".productContent__options-opinions").click(function () {
+        //$(".productContent__options-opinions").click(function () {
             // Abre o accordion de avaliações
-            $("#rate-accordion").collapse("show");
+            //$("#rate-accordion").collapse("show");
             // Rola a tela até a posição do accordion
             //scrollToElement(".ts-button--more");
-            scrollToElement(".ts-customer-questions");
-        });
+            //scrollToElement(".ts-customer-questions");
+        //});
     } else {
         // Botão para a descrição do produto
         $("#btnScrollSt").click(function () {
@@ -452,13 +452,13 @@ $(document).ready(function () {
             scrollToElement("#rate-tab");
         });
 
-        $(".productContent__options-opinions").click(function () {
+        //$(".productContent__options-opinions").click(function () {
             // Abre o accordion de avaliações
-            $("#rate-accordion").collapse("show");
+            //$("#rate-accordion").collapse("show");
             // Rola a tela até a posição do accordion
             //scrollToElement(".ts-button--more");
-            scrollToElement(".ts-customer-questions");
-        });
+            //scrollToElement(".ts-customer-questions");
+        //});
     }
 });
 
