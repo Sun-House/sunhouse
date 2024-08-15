@@ -1891,9 +1891,29 @@ th.name-field::after {
     padding: 10px 10px 10px 0;
     font-size: 15px;
     font-weight: 500;
-    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-    font-family: Montserrat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*font-family: Montserrat;*/
     border: none
+}
+
+#btnScrollSt {
+    /*background-color: #e77925;*/
+    /*background-color: #F90041;*/
+    background-color: #FFDA00;
+    padding: 0px 18px 0px 18px;
+    border-radius: 5px 20px 20px 20px;
+    /*color: #fff;*/
+    color: #000;
+    /*margin-top: 20px;*/
+    margin-left: 0;
+    font-weight: 600;
+    transition: .2s
+}
+
+#btnScrollSt:hover {
+    /*scale: 1.05;*/
+    color: #F90041 !important;
+    transition: .2s
 }
 
 #on-title-wrap {
@@ -1902,17 +1922,6 @@ th.name-field::after {
     justify-content: space-between;
     align-items: center
     /*margin-top: 30px;*/
-}
-
-#btnScrollSt {
-    /*background-color: #e77925;*/
-    background-color: #F90041;
-    padding: 0px 18px 0px 18px;
-    border-radius: 5px 20px 20px 20px;
-    color: #fff;
-    /*margin-top: 20px;*/
-    margin-left: 0;
-    font-weight: 600
 }
 
 .productDescription {

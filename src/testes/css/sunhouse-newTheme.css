@@ -432,9 +432,9 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     color: #F90041 !important;
 }
 
-#btnScrollSt {
+/*#btnScrollSt {
     background-color: #FFDA00;
-    /*color: #F90041*/
+    / color: #F90041 /
     color: #000;
     transition: .3s;
 }
@@ -442,7 +442,7 @@ html.smarthint-voice-ativo input#smarthint-search-input {
 #btnScrollSt:hover {
     scale: 1.05;
     transition: .3s;
-}
+}*/
 
 .produto .productContent__infos-buyButton a {
     font-family: "Montserrat" !important;
