@@ -1418,7 +1418,7 @@ table.group.Escritorio {
 
 .produto .productContent__infos-similars {
     display: table;
-    padding-top: 24px;
+    /*padding-top: 24px;*/
     margin-bottom: 30px
 }
 
@@ -1554,6 +1554,7 @@ table.group.Escritorio {
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
+    margin-bottom: 24px
 }
 
 .produto .productContent__options-opinions i {
