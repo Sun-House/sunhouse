@@ -559,12 +559,12 @@ html.smarthint-voice-ativo input#smarthint-search-input {
     font-family: 'Montserrat';
 }
 
-.dropdown-content a:hover {
+/*.dropdown-content a:hover {
     background-color: #ddd;
     color: #F90041;
     transition: .5s;
     border-radius: 10px
-}
+}*/
 
 /* Para Menu Mobile */
 @media screen and (max-width: 1199px) {
