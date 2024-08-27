@@ -2891,7 +2891,8 @@ Ajustes pre rebranding */
 }
 
 .productContent__product-images_thumbnails .carousel-inner .carousel-item button img:hover {
-    border: 4px solid#F90041
+    border: 4px solid#F90041;
+    padding: 11px
 }
 
 .productContent__product-images_thumbnails .carousel-inner .carousel-item.active {
