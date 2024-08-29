@@ -1903,7 +1903,8 @@ th.name-field::after {
     /*background-color: #F90041;*/
     background-color: #FFDA00;
     padding: 0px 18px 0px 18px;
-    border-radius: 5px 20px 20px 20px;
+    /*border-radius: 5px 20px 20px 20px;*/
+    border-radius: 50px;
     /*color: #fff;*/
     color: #000;
     /*margin-top: 20px;*/
