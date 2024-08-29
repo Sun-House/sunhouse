@@ -2411,7 +2411,8 @@ Ajuste Insta - Migrar para todos os templates */
 }
 
 #promo-cta .bi-info-circle-fill:first-child {
-    color: #69bd44 !important
+    /*color: #69bd44 !important*/
+    color: #69bd44
 }
 
 #promo-cta #info {
