@@ -2614,8 +2614,8 @@ Ajustes pre rebranding */
     
     .outras-cores {
         display: block !important;
-        overflow-x: overlay !important;
-        overflow-y: hidden
+        /*overflow-x: overlay !important;
+        overflow-y: hidden*/
     }
     
     .outras-cores ul {
@@ -2803,7 +2803,7 @@ Ajustes pre rebranding */
 }
 
 /* Images Zoom */
-.productContent__product-images_main-block .zoom-container {
+/*.productContent__product-images_main-block .zoom-container {
     position: relative;
     overflow: hidden
 }
@@ -2832,7 +2832,7 @@ Ajustes pre rebranding */
     cursor: zoom-out;
     transition: none;
     pointer-events: auto
-}
+}*/
 /* Images Zoom */
 /* Styles Main Carousel */
 
