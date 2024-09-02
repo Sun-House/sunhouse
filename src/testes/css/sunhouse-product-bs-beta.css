@@ -81,7 +81,7 @@ table.group.Escritorio {
     /*border-radius: 5px 0 0 5px;*/
     border-radius: 20px 0 0 20px;
     padding-left: 10px !important;
-    /*border-right: 5px solid #fff*/
+    border-right: 5px solid #fff
 }
 
 /*#caracteristicas>table>tbody>tr>td {*/
@@ -106,7 +106,7 @@ table.group.Escritorio {
         width: auto;
         border-radius: 5px 0 0 5px;
         padding-left: 10px !important;
-        /*border-right: 5px solid #fff;*/
+        border-right: 5px solid #fff;
         padding-right: 0
     }
 
@@ -143,7 +143,7 @@ table.group.Escritorio {
     width: 51%;
     text-align: initial;
     margin: -5px;
-    /*border-right: 5px solid #fff*/
+    border-right: 5px solid #fff
 }
 
 @media screen and (max-width:1199px) {
@@ -196,7 +196,7 @@ table.group.Escritorio {
     min-width: 51%; /* New 25.03.24 - Pode bugar o mobile */
     text-align: initial;
     margin: -5px;
-    /*border-right: 5px solid #fff*/
+    border-right: 5px solid #fff
 }
 
 @media screen and (max-width:1199px) {
@@ -387,7 +387,7 @@ table.group.Escritorio {
     line-height: 12px;
     font-weight: 500;
     text-align: center;
-    /*color: #fff;*/
+    color: #fff;
     margin: 0 auto
 }
 
@@ -593,7 +593,7 @@ table.group.Escritorio {
     /*font-size: 25px;*/
     font-weight: 600;
     text-align: center;
-    /*color: #fff;*/
+    color: #fff;
     margin: 0 auto
 }
 
@@ -705,7 +705,7 @@ table.group.Escritorio {
     }
 }
 
-/*.produto .productContent__images .image-zoom .zoomPad {
+.produto .productContent__images .image-zoom .zoomPad {
     position: relative;
     overflow: hidden;
     border: 1px solid #ccc;
@@ -716,9 +716,9 @@ table.group.Escritorio {
 .produto .productContent__images .image-zoom .sku-rich-image-main {
     width: 100%;
     height: auto
-}*/
+}
 
-/*.produto .productContent__images .image-zoom .zoomWindow {
+.produto .productContent__images .image-zoom .zoomWindow {
     overflow: hidden;
     z-index: 9 !important;
     left: 0 !important;
@@ -726,7 +726,7 @@ table.group.Escritorio {
     width: 100%;
     height: 100%;
     background-color: #fff
-}*/
+}
 
 .produto .productContent__images-dimensions--height i,
 .produto .productContent__images-dimensions--length i,
@@ -994,14 +994,14 @@ table.group.Escritorio {
     top: -4px;
     left: 36px;
     font-size: 16px;
-    /*color: #fff*/
+    color: #ffff
 }
 
-/*@media screen and (max-width:350px) {
+@media screen and (max-width:350px) {
     .produto .productContent__infos-installment .installmentBenefit {
         display: none
     }
-}*/
+}
 
 /*.produto .productContent__infos-buyButton {
     padding-top: 18px
@@ -1013,7 +1013,7 @@ table.group.Escritorio {
     /*font-size: 24px;*/
     font-size: 28px;
     font-family: "Open Sans" !important;
-    /*color: #fff;*/
+    color: #fff;
     text-align: center;
     background: #00b100;
     line-height: 80px;
@@ -1052,12 +1052,13 @@ table.group.Escritorio {
     margin-left: 20px
 }
 
-/*@media screen and (max-width:1199px) and (max-width:350px) {
+@media screen and (max-width:1199px) and (max-width:350px) {
+
     .produto .productContent__infos-buyButton a:after,
     .produto .productContent__infos-buyButton a:before {
         display: none
     }
-}*/
+}
 
 .produto .productContent__infos-comunication {
     border-bottom: 1px solid #ccc;
@@ -1155,9 +1156,9 @@ table.group.Escritorio {
     margin-bottom: 24px;
 }
 
-/*.produto .productContent__infos-freight .freight-values * {
+.produto .productContent__infos-freight .freight-values * {
     border-color: #fff !important;
-}*/
+}
 
 .produto .productContent__infos-freight .freight-values table {
     width: 100%;
@@ -1254,7 +1255,7 @@ table.group.Escritorio {
     top: 6px
 }
 
-/*@media screen and (max-width:350px) {
+@media screen and (max-width:350px) {
     .produto .productContent__infos-freight #popupCalculoFreteWrapper:before {
         display: none
     }
@@ -1262,7 +1263,7 @@ table.group.Escritorio {
     .produto .productContent__infos-freight #popupCalculoFreteWrapper {
         margin-bottom: 1rem !important;
     }
-}*/
+}
 
 .produto .productContent__infos-freight #popupCalculoFreteWrapper:after {
     content: "Calcular Frete e Prazo de Entrega:";
@@ -1569,7 +1570,7 @@ table.group.Escritorio {
     float: left;
     font-size: 17px;
     font-weight: 400;
-    /*color: #fff;*/
+    color: #fff;
     background: #b145c2;
     padding: 10px 15px;
     border-radius: 20px;
@@ -1861,7 +1862,7 @@ th.name-field::after {
 /*#medidasNEW>ul>li>span*/
 #medidasNEW ul li span {
     text-align: start;
-    /*border-left: 5px solid #fff;*/
+    border-left: 5px solid #fff;
     padding: 5px;
     margin: -5px;
     font-weight: 400;
@@ -2234,9 +2235,9 @@ th.name-field::after {
     border-bottom: unset !important;
 }
 
-/*#productInfos-tabs .nav-link:focus {
+#productInfos-tabs .nav-link:focus {
     border-bottom-color: #fff !important;
-}*/
+}
 
 .productInfos hr {
     margin-top: 65px;
@@ -2360,7 +2361,7 @@ Ajuste Insta - Migrar para todos os templates */
 .unavailable-whatsapp-button {
     display: none;
     background-color: #25d366; /* Cor de fundo do botão */
-    /*color: #fff;*/ /* Cor do texto */
+    color: #fff; /* Cor do texto */
     padding: 10px 15px; /* Espaçamento interno do botão */
     border: none; /* Remove a borda do botão */
     border-radius: 30px; /* Borda arredondada */
@@ -2420,7 +2421,7 @@ Ajuste Insta - Migrar para todos os templates */
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 13px;
-    /*color: #fff;*/
+    color: #fff;
     position: relative
 }
 
@@ -2449,9 +2450,9 @@ Ajuste Insta - Migrar para todos os templates */
         color: #000;
     }
 
-    /*#promo-cta #info::before {
+    #promo-cta #info::before {
         color: #fff !important
-    }*/
+    }
 
     #promo-cta #info:hover,
     #promo-cta #info:focus {
@@ -2613,8 +2614,8 @@ Ajustes pre rebranding */
     
     .outras-cores {
         display: block !important;
-        /*overflow-x: overlay !important;
-        overflow-y: hidden*/
+        overflow-x: overlay !important;
+        overflow-y: hidden
     }
     
     .outras-cores ul {
@@ -2765,7 +2766,7 @@ Ajustes pre rebranding */
     padding: 24px;
     /*border-radius: 30px;*/
     border-radius: 28px;
-    /*background: #fff*/
+    background: #fff
 }
 
 .productContent__product-images_main-block .carousel-item img {
@@ -2802,7 +2803,7 @@ Ajustes pre rebranding */
 }
 
 /* Images Zoom */
-/*.productContent__product-images_main-block .zoom-container {
+.productContent__product-images_main-block .zoom-container {
     position: relative;
     overflow: hidden
 }
@@ -2831,7 +2832,7 @@ Ajustes pre rebranding */
     cursor: zoom-out;
     transition: none;
     pointer-events: auto
-}*/
+}
 /* Images Zoom */
 /* Styles Main Carousel */
 
@@ -2865,7 +2866,7 @@ Ajustes pre rebranding */
 
 .productContent__product-images_thumbnails .col button img {
     border-radius: 30px;
-    /*background: #fff*/
+    background: #fff
 }
 
 .productContent__product-images_thumbnails .carousel-inner .carousel-item > .row {
@@ -3104,7 +3105,7 @@ Ajustes pre rebranding */
 .buy-button.buy-button-ref::after {
     content: "\eb88" !important;
     font-family: 'Material Symbols Outlined' !important;
-    /*color: #fff !important;*/
+    color: #fff !important;
     font-size: 32px !important;
     height: unset !important;
     margin-bottom: 10px
@@ -3126,7 +3127,7 @@ Ajustes pre rebranding */
     /*background-color: #FFDA00;
     color: #000;*/
     background-color: #000;
-    /*color: #fff;*/
+    color: #fff;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -3230,17 +3231,17 @@ Ajustes pre rebranding */
     }
 }
 
-/*@media screen and (max-width: 410px) {
+@media screen and (max-width: 410px) {
     .produto .productContent__infos-buyButton a:before {
         font-size: 17px
     }
-}*/
+}
 
-/*@media screen and (max-width: 370px) {
+@media screen and (max-width: 370px) {
     .produto .productContent__infos-buyButton a:before {
         font-size: 15px
     }
-}*/
+}
 /* New Buy Button - Add to Cart Pdp Button */
 
 @media screen and (max-width: 1199px) {
@@ -3369,7 +3370,7 @@ Ajustes pre rebranding */
 }
 
 #highlight_discount {
-    /*color: #fff;*/
+    color: #fff;
     /*background-color: #00b100;*/
     background-color: #30b6a8;
     padding: 0 15px;
@@ -3504,7 +3505,7 @@ Ajustes pre rebranding */
         font-size: 13px;
         margin-top: -4px;
         margin-left: 5px;
-        /*color: #fff;*/
+        color: #fff;
         padding: 6px 8px
     }
 }
