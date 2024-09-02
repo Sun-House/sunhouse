@@ -1050,5 +1050,5 @@ function priceBlock() {
 }
 
 window.addEventListener('load', function () {
-    priceBlock();
+    //priceBlock();
 });
