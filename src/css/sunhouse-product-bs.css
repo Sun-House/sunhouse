@@ -648,7 +648,8 @@ table.group.Escritorio {
     .produto .productContent__images {
         width: 100%;
         box-sizing: border-box;
-        padding: 0 16px
+        padding: 0 16px;
+        margin-bottom: 24px
     }
 
     .produto .productContent__images .thumbs {
@@ -846,7 +847,8 @@ table.group.Escritorio {
     .produto .productContent__infos {
         width: 100%;
         box-sizing: border-box;
-        padding: 24px 16px
+        padding: 24px 16px;
+        float: unset !important
     }
 }
 
