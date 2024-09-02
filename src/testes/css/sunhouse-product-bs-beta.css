@@ -844,9 +844,12 @@ table.group.Escritorio {
 
 @media screen and (max-width:1199px) {
     .produto .productContent__infos {
-        width: 100%;
+        width: 100% !important;
         box-sizing: border-box;
-        padding: 24px 16px
+        padding: 24px 16px;
+        /* Teste bug navegacao */
+        float: unset !important
+        /* Teste bug navegacao */
     }
 }
 
