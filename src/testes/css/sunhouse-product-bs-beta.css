@@ -997,11 +997,11 @@ table.group.Escritorio {
     /*color: #fff*/
 }
 
-@media screen and (max-width:350px) {
+/*@media screen and (max-width:350px) {
     .produto .productContent__infos-installment .installmentBenefit {
         display: none
     }
-}
+}*/
 
 /*.produto .productContent__infos-buyButton {
     padding-top: 18px
@@ -1052,13 +1052,12 @@ table.group.Escritorio {
     margin-left: 20px
 }
 
-@media screen and (max-width:1199px) and (max-width:350px) {
-
+/*@media screen and (max-width:1199px) and (max-width:350px) {
     .produto .productContent__infos-buyButton a:after,
     .produto .productContent__infos-buyButton a:before {
         display: none
     }
-}
+}*/
 
 .produto .productContent__infos-comunication {
     border-bottom: 1px solid #ccc;
@@ -1255,7 +1254,7 @@ table.group.Escritorio {
     top: 6px
 }
 
-@media screen and (max-width:350px) {
+/*@media screen and (max-width:350px) {
     .produto .productContent__infos-freight #popupCalculoFreteWrapper:before {
         display: none
     }
@@ -1263,7 +1262,7 @@ table.group.Escritorio {
     .produto .productContent__infos-freight #popupCalculoFreteWrapper {
         margin-bottom: 1rem !important;
     }
-}
+}*/
 
 .produto .productContent__infos-freight #popupCalculoFreteWrapper:after {
     content: "Calcular Frete e Prazo de Entrega:";
@@ -3231,17 +3230,17 @@ Ajustes pre rebranding */
     }
 }
 
-@media screen and (max-width: 410px) {
+/*@media screen and (max-width: 410px) {
     .produto .productContent__infos-buyButton a:before {
         font-size: 17px
     }
-}
+}*/
 
-@media screen and (max-width: 370px) {
+/*@media screen and (max-width: 370px) {
     .produto .productContent__infos-buyButton a:before {
         font-size: 15px
     }
-}
+}*/
 /* New Buy Button - Add to Cart Pdp Button */
 
 @media screen and (max-width: 1199px) {
