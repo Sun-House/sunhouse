@@ -2117,6 +2117,7 @@ th.name-field::after {
 
     .productMontagem__info i {
         width: 60px;
+        flex-shrink: 0
     }
 
     #productMontagem-first {
@@ -2441,7 +2442,8 @@ Ajuste Insta - Migrar para todos os templates */
         margin: 35px 20px;
         display: flex !important;
         align-items: center;
-        justify-content: space-between
+        /*justify-content: space-between*/
+        justify-content: center
     }
 
     #promo-cta p {
