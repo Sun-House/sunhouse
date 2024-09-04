@@ -2117,6 +2117,7 @@ th.name-field::after {
 
     .productMontagem__info i {
         /*width: 60px;*/
+        width: auto !important;
         flex-shrink: 0;
         margin-right: auto !important
     }
