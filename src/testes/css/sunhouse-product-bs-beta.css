@@ -3517,13 +3517,3 @@ Ajustes pre rebranding */
     }
 }
 /* Price Block */
-
-/* TEMP */
-@media screen and (max-width:1199px) {
-    #mini-cart__sidebar .cartSkuImage,
-    #mini-cart__sidebar .cartSkuPrice,
-    #mini-cart__sidebar .cartSkuActions {
-        flex-shrink: 0
-    }
-}
-/* TEMP */

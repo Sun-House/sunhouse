@@ -245,10 +245,6 @@
         margin-top: 58px !important
     }
 
-    /*#minicart__promo-cta-btn {
-        display: block !important
-    }*/
-
     #minicart__promo-cta {
         height: 105px
     }
@@ -258,12 +254,29 @@
         opacity: 1
     }
 
+    #mini-cart__sidebar .cartSkuImage,
+    #mini-cart__sidebar .cartSkuPrice,
+    #mini-cart__sidebar .cartSkuActions {
+        flex-shrink: 0
+    }
+
     #mini-cart__sidebar .cartFooter {
-        width: 380px !important
+        width: 380px !important;
+        margin: 0 auto !important;
+        left: 15px;
+        right: 15px
     }
     
     .offcanvas-backdrop.show {
         opacity: 0 !important
     }
 }
+
+/* Ajuste Mobile para telas pequenas */
+@media screen and (max-width: 405px) {
+    #mini-cart__sidebar .cartFooter {
+        max-width: 300px !important
+    }
+}
+/* Ajuste Mobile para telas pequenas */
 /* Mobile */
