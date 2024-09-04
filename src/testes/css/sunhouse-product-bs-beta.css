@@ -648,7 +648,8 @@ table.group.Escritorio {
     .produto .productContent__images {
         width: 100%;
         box-sizing: border-box;
-        padding: 0 16px
+        padding: 0 16px;
+        margin-bottom: 24px
     }
 
     .produto .productContent__images .thumbs {
@@ -844,12 +845,11 @@ table.group.Escritorio {
 
 @media screen and (max-width:1199px) {
     .produto .productContent__infos {
-        width: 100% !important;
+        width: 100%;
         box-sizing: border-box;
         padding: 24px 16px;
-        /* Teste bug navegacao */
+        padding-bottom: 0 !important;
         float: unset !important
-        /* Teste bug navegacao */
     }
 }
 
@@ -1633,7 +1633,8 @@ table.group.Escritorio {
         width: 100%;
         box-sizing: border-box;
         padding: 24px 16px;
-        margin-top: 32px
+        padding-top: 0 !important;
+        margin-top: 0
     }
 }
 
@@ -2093,26 +2094,26 @@ th.name-field::after {
 
 #productMontagem-first,
 #productMontagem-second {
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 #productMontagem-first p,
 #productMontagem-second p {
-    margin-bottom: unset
+    margin-bottom: unset;
 }
 
 #productMontagem-first p,
 #productMontagem-second p {
-    font-weight: 500
+    font-weight: 500;
 }
 
 #productMontagem-second {
-    display: none !important
+    display: none !important;
 }
 
 @media screen and (max-width:1199px) {
     .productMontagem__info {
-        width: auto
+        width: auto;
     }
 
     .productMontagem__info i {
@@ -2123,12 +2124,12 @@ th.name-field::after {
     }
 
     #productMontagem-first {
-        display: none !important
+        display: none !important;
     }
 
     #productMontagem-second {
         display: flex !important;
-        align-items: center
+        align-items: center;
     }
 }
 /* Ajustes card info Montagem */
@@ -2442,16 +2443,12 @@ Ajuste Insta - Migrar para todos os templates */
         border-radius: 30px;
         margin-top: 25px !important;
         margin: 35px 20px;
-        display: flex !important;
         align-items: center;
         justify-content: space-between
-        /*justify-content: center*/
     }
 
     #promo-cta p {
         left: unset;
-        /*max-width: 200px !important
-        width: auto !important*/
     }
 
     #promo-cta #info {
