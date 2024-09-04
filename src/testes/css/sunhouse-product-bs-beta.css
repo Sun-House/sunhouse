@@ -2443,9 +2443,13 @@ Ajuste Insta - Migrar para todos os templates */
         justify-content: space-between
     }
 
-    #promo-cta p {
+    /*#promo-cta p {
+        min-width: 277px !important;
+    }*/
+
+    /*#promo-cta p {
         left: unset;
-    }
+    }*/
 
     #promo-cta #info {
         margin: 0;
