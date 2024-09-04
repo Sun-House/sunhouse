@@ -848,6 +848,7 @@ table.group.Escritorio {
         width: 100%;
         box-sizing: border-box;
         padding: 24px 16px;
+        padding-bottom: 0 !important;
         float: unset !important
     }
 }
@@ -1632,7 +1633,8 @@ table.group.Escritorio {
         width: 100%;
         box-sizing: border-box;
         padding: 24px 16px;
-        margin-top: 32px
+        padding-top: 0 !important;
+        margin-top: 0
     }
 }
 
