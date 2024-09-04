@@ -3520,7 +3520,9 @@ Ajustes pre rebranding */
 
 /* TEMP */
 @media screen and (max-width:1199px) {
-    td.cartSkuImage {
+    #mini-cart__sidebar .cartSkuImage,
+    #mini-cart__sidebar .cartSkuPrice,
+    #mini-cart__sidebar .cartSkuActions {
         flex-shrink: 0
     }
 }
