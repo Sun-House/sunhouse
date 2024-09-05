@@ -1048,7 +1048,7 @@ function priceBlock() {
         $(".out_of_stock").show();
     }
 
-    alert("carregou a function priceBlock");
+    //alert("carregou a function priceBlock");
 }
 
 window.addEventListener('load', function () {
