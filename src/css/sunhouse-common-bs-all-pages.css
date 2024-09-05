@@ -2669,7 +2669,7 @@ Modelo 1 */
     #dformNewsletter input {
         margin-bottom: 10px;
         margin-right: unset !important;
-        scale: 1
+        scale: 1 !important
     }
 
     #newsletter-send-icon {
