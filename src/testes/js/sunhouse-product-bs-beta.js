@@ -1051,6 +1051,6 @@ function priceBlock() {
     alert("carregou a function priceBlock");
 }
 
-//window.addEventListener('load', function () {
-    //priceBlock();
-//});
+window.addEventListener('load', function () {
+    priceBlock();
+});
