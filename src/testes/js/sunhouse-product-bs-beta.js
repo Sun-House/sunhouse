@@ -920,9 +920,11 @@ function priceBlock() {
                             let percentSubtraction = 0;
 
                             if (numero >= 1 && numero <= 3) {
-                                percentSubtraction = 3.96;
+                                //percentSubtraction = 3.96;
+                                percentSubtraction = 0;
                             } else if (numero >= 4 && numero <= 6) {
-                                percentSubtraction = 2;
+                                //percentSubtraction = 2;
+                                percentSubtraction = 0;
                             }
 
                             const originalValue = parseFloat(strongElement.textContent.replace(/[^\d,]/g,
