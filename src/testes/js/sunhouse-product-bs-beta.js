@@ -1049,6 +1049,7 @@ function priceBlock() {
         $(".payment_infos_list").hide();
         $(".out_of_stock").show();
     }
+
     //alert("carregou a function priceBlock");
 }
 
