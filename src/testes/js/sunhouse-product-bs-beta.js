@@ -969,10 +969,12 @@ function priceBlock() {
             }
 
             function calcularDescontos(valorAlvo) {
-                const desconto1 = valorAlvo * 0.0396;
+                //const desconto1 = valorAlvo * 0.0396;
+                const desconto1 = 0;
                 const valorComDesconto1 = valorAlvo - desconto1;
 
-                const desconto2 = valorAlvo * 0.02;
+                //const desconto2 = valorAlvo * 0.02;
+                const desconto2 = 0;
                 const valorComDesconto2 = valorAlvo - desconto2;
 
                 return [valorAlvo, valorComDesconto1, valorComDesconto2];
