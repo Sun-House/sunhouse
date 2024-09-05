@@ -1049,10 +1049,10 @@ function priceBlock() {
         $(".payment_infos_list").hide();
         $(".out_of_stock").show();
     }
-
     //alert("carregou a function priceBlock");
 }
 
-window.addEventListener('load', function () {
+//window.addEventListener('load', function () {
+document.addEventListener('DOMContentLoaded', function() {
     priceBlock();
 });

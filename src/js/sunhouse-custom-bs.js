@@ -6,7 +6,8 @@
 
 // Inicia Popper - Tooltips e Popovers
 //document.addEventListener('DOMContentLoaded', function () {
-$(document).ready(function () {
+//$(document).ready(function () {
+window.onload = function () {
     const triggerList = document.querySelectorAll('[data-bs-toggle="tooltip"], [data-bs-toggle="popover"]');
 
     if (triggerList.length > 0) {
@@ -18,4 +19,5 @@ $(document).ready(function () {
             }
         });
     }
-});
+};
+//});
