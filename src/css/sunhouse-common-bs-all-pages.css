@@ -2669,6 +2669,7 @@ Modelo 1 */
     #dformNewsletter input {
         margin-bottom: 10px;
         margin-right: unset !important;
+        scale: 1
     }
 
     #newsletter-send-icon {
