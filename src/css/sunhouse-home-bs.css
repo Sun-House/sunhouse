@@ -323,7 +323,8 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
         min-width: fit-content;
         flex-direction: row;
         /*margin: 18px 0 0 10px*/
-        margin: 3px 0 0 10px
+        margin: 3px 0 0 10px;
+        margin-left: -8px !important
     }
 
     .home .benefits-new ul li {
