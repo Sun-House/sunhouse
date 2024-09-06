@@ -127,6 +127,12 @@
 /* Texto com Saudacao e Nome do Usuario Logado */
 
 @media screen and (max-width: 1199px) {
+    #mobile-login__loggedIn {
+        position: relative;
+        left: 15px;
+        top: -75px
+    }
+
     .login-block {
         position: absolute;
         right: 100px;
