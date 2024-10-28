@@ -425,6 +425,12 @@ table.group.Escritorio {
     -moz-border-radius: 50px
 }
 
+@media screen and (max-width:1199px) {
+    .produto .productContent__images-flags .flag.black-friday {
+        height: 115px
+    }
+}
+
 .produto .productContent__images-flags .flag.black-friday::after,
 .produto .productContent__images-flags .flag.black-friday::before {
     all: unset !important

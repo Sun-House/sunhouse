@@ -1145,6 +1145,12 @@ body>.header {
     font-size: 0
 }
 
+@media screen and (max-width:1199px) {
+    .shelfProductImages>div .black-friday {
+        height: 60px
+    }
+}
+
 .shelfProductImages>div .flag.black-friday::after,
 .shelfProductImages>div .flag.black-friday::before {
     all: unset !important
