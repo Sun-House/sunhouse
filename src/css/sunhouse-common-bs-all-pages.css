@@ -1133,6 +1133,23 @@ body>.header {
     background-repeat: no-repeat
 }
 
+/* Flag Black Friday */
+.shelfProductImages>div .black-friday {
+    display: block;
+    background: url(https://sunhouse.vteximg.com.br/arquivos/black2024_Flag_2.png);
+    background-size: cover;
+    height: 110px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    font-size: 0
+}
+
+.shelfProductImages>div .flag.black-friday::after,
+.shelfProductImages>div .flag.black-friday::before {
+    all: unset !important
+}
+
 .shelfProductImages>div .black-friday {
     display: flex;
     flex-direction: column;
@@ -1165,6 +1182,7 @@ body>.header {
         font-size: 7px
     }
 }
+/* Flag Black Friday */
 
 .shelfProductImages>div .promocao-5-off::after {
     content: "-5%"
