@@ -414,6 +414,7 @@ table.group.Escritorio {
     }
 }
 
+/* Flag Black Friday */
 .produto .productContent__images-flags .flag.black-friday {
     display: flex;
     flex-direction: column;
@@ -422,12 +423,27 @@ table.group.Escritorio {
     font-weight: 500
 }
 
+.produto .productContent__images-flags .flag.black-friday {
+    display: block;
+    background: url(https://sunhouse.vteximg.com.br/arquivos/black2024_Flag_2.png);
+    background-size: cover;
+    height: 135px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px
+}
+
 .produto .productContent__images-flags .flag.black-friday:before {
     content: "BLACK";
     font-size: 13px;
     font-weight: 600;
     color: #F90041;
     margin-bottom: -2px;
+}
+
+.produto .productContent__images-flags .flag.black-friday::after,
+.produto .productContent__images-flags .flag.black-friday::before {
+    all: unset !important
 }
 
 @media screen and (max-width:1199px) {
@@ -470,6 +486,7 @@ table.group.Escritorio {
         left: 16px
     }
 }
+/* Flag Black Friday */
 
 .produto .productContent__images-flags .flag.promocao-5-off:after {
     content: "-5%"
