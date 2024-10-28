@@ -1153,7 +1153,7 @@ body>.header {
 .shelfProductImages>div .black-friday {
     display: flex;
     flex-direction: column;
-    background: #000;
+    /*background: #000;*/
     font-size: 0;
     font-weight: 500
 }
