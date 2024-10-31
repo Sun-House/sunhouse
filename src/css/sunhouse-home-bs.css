@@ -255,8 +255,10 @@ PODE IMPACTAR NEGATIVAMENTE NO NOVO MODELO ABAIXO: */
 
 .home .benefits-new .benefits-round-content #benefits__dev-number {
     float: left;
-    font-size: 47px;
-    line-height: 40px;
+    /*font-size: 47px;
+    line-height: 40px;*/
+    font-size: 40px;
+    line-height: 35px;
     font-weight: 900;
     padding-right: 6px
 }
