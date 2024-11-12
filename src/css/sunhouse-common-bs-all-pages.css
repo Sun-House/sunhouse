@@ -1341,7 +1341,8 @@ body>.header {
     }
 }
 
-.shelfProductImages>div .vitrine-home---lancamento {
+.shelfProductImages>div .vitrine-home---lancamento,
+.shelfProductImages>div .lancamento {
     display: block;
     background: url(https://sunhouse.vteximg.com.br/arquivos/flag-lancamento.png);
     background-size: cover;
